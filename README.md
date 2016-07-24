@@ -23,7 +23,7 @@ In edit mode, you can change properties for selected component.
 You can drag selected component editor and place it in any position. 
 To delete an item from the page, select it and press the delete key.
 
-![switch_edit.gif](https://firebasestorage.googleapis.com/v0/b/paperbits-cdn-7617b.appspot.com/o/switch_edit.gif?alt=media&token=c65a651a-12e5-4628-82ba-1e70a512fb3f "switch_edit.gif")
+![switch_edit.gif](https://firebasestorage.googleapis.com/v0/b/paperbits-cdn.appspot.com/o/switch-edit.gif?alt=media&token=4e43d530-4dbb-492f-8876-f80d3ba0818d "switch_edit.gif")
 
 ### Text edit 
 ```html
@@ -39,11 +39,11 @@ You can add a picture element on a page by drag it from file explorer and drop i
 After the drop, you will see a notification popup to upload the picture to the media library. (Also, you can upload pictures directly to the media library)
 As soon as picture file will be uploaded, it will be accessible through the media library for drag and drop on a page. 
 
-![switch_edit.gif](https://firebasestorage.googleapis.com/v0/b/paperbits-cdn-7617b.appspot.com/o/picture_upload.gif?alt=media&token=d29e3e4c-bbcf-4bf2-8161-e49368915c0a "picture_upload.gif")
+![switch_edit.gif](https://firebasestorage.googleapis.com/v0/b/paperbits-cdn.appspot.com/o/picture-upload.gif?alt=media&token=15baf6c8-7bb5-44ef-b946-16125d841b2d "picture_upload.gif")
 
 Another approach adding a picture on a page is drag and drop picture widget from the widget library and upload a picture file through the picture editor.
 
-![switch_edit.gif](https://firebasestorage.googleapis.com/v0/b/paperbits-cdn-7617b.appspot.com/o/picture_upload_from_lib.gif?alt=media&token=dfcc793a-778a-4c0e-91d5-b6eb7a84beac "picture_uploadpicture_upload_from_lib.gif")
+![switch_edit.gif](https://firebasestorage.googleapis.com/v0/b/paperbits-cdn.appspot.com/o/picture_uploadpicture_upload_from_lib.gif?alt=media&token=cc9a6487-5db8-4e5a-9fc9-9d01bf567f9f "picture_uploadpicture_upload_from_lib.gif")
 
 ## Installation
 PaperBits requires [Node.js](https://nodejs.org/) v5+ and [TypeScript](http://www.typescriptlang.org/) to run.
