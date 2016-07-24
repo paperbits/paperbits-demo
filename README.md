@@ -2,9 +2,9 @@
 
 This repository shows an example how developers can use [PaperBits](https://github.com/paperbits/paperbits-knockout) library to build their own web app with a nice online content editing capability. 
 
-You can see and play online with content editing capability on [paperbits.io](https://paperbits.io). Just follow tutorial steps (floating hints)
+You can see and play online with content editing capability on [paperbits.io](https://paperbits.io). Just follow tutorial steps.
 
-For your conveniences you can use and extend PaperBits library build on top of your favorite javascript framework [Knockout](https://github.com/paperbits/paperbits-knockout), [Angular](https://github.com/paperbits/paperbits-angular) or [Aurelia](https://github.com/paperbits/paperbits-aurelia).
+For your convenience you can use and extend PaperBits library built on top of your favorite javascript framework [Knockout](https://github.com/paperbits/paperbits-knockout), [Angular](https://github.com/paperbits/paperbits-angular) or [Aurelia](https://github.com/paperbits/paperbits-aurelia).
 
 Please check out detailed [documentation](https://github.com/paperbits/paperbits-knockout/wiki/Documentation) page,  [getting started](https://github.com/paperbits/paperbits-knockout/wiki/Documentation#getting-started) guides and repo with [samples](https://github.com/paperbits/paperbits-samples).
 
@@ -13,10 +13,10 @@ If you have a website and need quickly extend it with web content edit functiona
 
 #### Add script and styles on your page
 ```html
-<script src="https://cdn.paperbits.io/everything.min.js"></script>
-<link href="https://cdn.paperbits.io/styles.css" rel="stylesheet" type="text/css">
+<script src="https://cdn.paperbits.io/everything.min.js" type="text/javascript"></script>
+<link href="https://cdn.paperbits.io/everything.min.css" rel="stylesheet" type="text/css">
 ```
-We support several web components with online content editing capability.
+We support several web components with content editing capability.
 You can see component borders when you hover a mouse over it. You can change a selection for an active component.
 To switch to content edit mode just double click on a component and escape key for exit. 
 In edit mode, you can change properties for selected component.
