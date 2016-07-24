@@ -1,0 +1,23 @@
+<!-- ko if: layout() === "polaroid" -->
+<div class="picture polaroid" data-bind="css: animation">
+    <img class="content" data-bind="attr: { src: sourceUrl }" />
+    <!-- ko if: caption() -->
+    <label class="picture-caption" data-bind="text: caption"></label>
+    <!-- /ko -->
+</div>
+<!-- /ko -->
+
+<!-- ko if: layout() === "circle" -->
+<div class="picture circle" data-bind="css: animation, attr: { title: caption }">
+    <div class="content" data-bind="background: { url: sourceUrl }"></div>
+</div>
+<!-- /ko -->
+
+<!-- ko if: layout() === "noframe" -->
+<div class="picture noframe" data-bind="css: animation">
+    <img class="content" data-bind="attr: { src: sourceUrl }" />
+    <!-- ko if: caption() -->
+    <label class="picture-caption" data-bind="text: caption"></label>
+    <!-- /ko -->
+</div>
+<!-- /ko -->

@@ -1,0 +1,96 @@
+﻿@import "variables.less";
+@import "mixins.less";
+@import "icons.less";
+.vienna-form {
+    margin: 0;
+    padding: 0;
+    border: none;
+    .vienna-form-group {
+        display: block;
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+    .help {
+        width: @workshop-help-button-size;
+        height: @workshop-help-button-size;
+        line-height: @workshop-help-button-size;
+        border: 1px solid @button-border-color;
+        display: inline-block;
+        border-radius: 50%;
+        float: right;
+        text-align: center;
+        font-family: @help-button-font-family;
+        font-size: @help-button-font-size;
+        color: @link-color;
+        font-weight: bold;
+        &:hover {
+            background: @hover-color;
+            cursor: pointer;
+        }
+    }
+    label {
+        width: 100%;
+        padding-bottom: 5px;
+        display: block;
+        font-weight: @font-weight-base;
+    }
+    input[type=text], input[type=search], textarea {
+        padding: 9px;
+        font-family: @font-family-base;
+        font-weight: @font-weight-base;
+        font-size: @textbox-font-size;
+        &::-webkit-input-placeholder {
+            font-style: italic;
+        }
+        &::-moz-placeholder {
+            font-style: italic;
+        }
+        &:-ms-input-placeholder {
+            font-style: italic;
+        }
+        .box-shadow(inset 0px 0px 1px 1px rgba(0, 0, 0, 0.15));
+        box-sizing: border-box;
+        border: none;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    input[type=radio] {
+        margin: 0 5px;
+    }
+    .vienna-dropzone {
+        margin-bottom: 20px;
+    }
+    .textbox {
+        padding: 9px;
+        font-family: @font-family-base;
+        font-weight: @font-weight-base;
+        font-size: @textbox-font-size;
+        &::-webkit-input-placeholder {
+            font-style: italic;
+        }
+        &::-moz-placeholder {
+            font-style: italic;
+        }
+        &:-ms-input-placeholder {
+            font-style: italic;
+        }
+        .box-shadow(inset 0px 0px 1px 1px rgba(0, 0, 0, 0.15));
+        box-sizing: border-box;
+        border: none;
+    }
+    .vienna-control-textbox {
+        .textbox();
+        width: 100%;
+    }
+    textarea {
+        .textbox();
+        resize: vertical;
+        min-height: 100px;
+    }
+    input[type=search] {
+        background-image: @img-url-icon-localsearch;
+        background-position: 98% center;
+        background-repeat: no-repeat;
+        background-size: auto 80%;
+    }
+}

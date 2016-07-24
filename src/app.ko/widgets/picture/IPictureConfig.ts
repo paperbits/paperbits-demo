@@ -1,0 +1,3 @@
+﻿module Vienna.Widgets.Picture {
+
+}

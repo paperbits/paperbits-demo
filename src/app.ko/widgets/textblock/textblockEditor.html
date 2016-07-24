@@ -1,0 +1,8 @@
+﻿<!--ko if:  viewManager.contextualToolboxVisible() && pluginNames().length > 0-->
+<div class="vienna-toolbox vienna-toolbox-contextual">
+    <!-- ko foreach: { data: pluginNames, as: 'name' } -->
+    <!-- ko component: name -->
+    <!-- /ko -->
+    <!-- /ko -->
+</div>
+<!-- /ko -->

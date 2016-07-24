@@ -1,0 +1,150 @@
+html, body {
+    height: 100%;
+}
+
+.navbar {
+    background: none;
+}
+
+.navbar-default {
+    border: none;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 850px;
+    }
+}
+
+//ATTACHED
+.aloha-editable a {
+    cursor: text;
+}
+
+.tmp {
+    // TODO: Remove .container after vienna classes are isolated.
+    h1 {
+        font-weight: normal;
+        line-height: 1.1;
+        color: inherit;
+        font-size: 2.7em;
+    }
+    h2 {
+        font-weight: normal;
+        line-height: 1.1;
+        color: inherit;
+        margin-top: 40px;
+        font-size: 1.8em;
+        text-transform: lowercase;
+    }
+    h1 {
+        font-family: "Kristen-ITC";
+        font-weight: 700;
+        font-style: normal;
+        font-size: 45px;
+        line-height: 1.04;
+        letter-spacing: -0.016em;
+    }
+    blockquote {
+        font-style: italic;
+        line-height: 1.2;
+        font-size: 1.7em;
+        border: none;
+        color: lightgray;
+    }
+    blockquote::before {
+        content: open-quote;
+        font-family: Arial;
+        font-weight: bold;
+    }
+    blockquote::after {
+        content: close-quote;
+        font-family: Arial;
+        font-weight: bold;
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+        li {
+            list-style: none;
+            background-image: url('../images/checkmark.svg');
+            background-position: left center;
+            background-repeat: no-repeat;
+            background-size: 2em 2em;
+            padding: .5em 2.5em;
+        }
+    }
+}
+
+footer {
+    font-size: 14px;
+    ul {
+        padding: 0;
+        li {
+            list-style: none;
+            padding: 0;
+        }
+    }
+}
+
+.logo {
+    background-image: url('/images/paperbits.svg');
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: left center;
+    text-transform: lowercase;
+    font-size: 0.8em;
+    padding-left: 1em;
+    color: #5B5F61;
+}
+
+.form-inline {
+    font-size: 0;
+    .form-control {
+        border-radius: 20px;
+        margin-bottom: 10px;
+    }
+    .btn-primary {
+        border-radius: 20px;
+        display: block;
+        width: 100%;
+    }
+    @media (min-width: 768px) {
+        .form-control {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            display: inline-block;
+            margin: 0;
+            max-width: 210px;
+        }
+        .btn-primary {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            display: inline-block;
+            margin: 0;
+            width: auto;
+        }
+    }
+}
+
+paper-textblock {
+    li {
+        margin-top: 20px;
+    }
+    ul {
+        padding: 0;
+        list-style: none;
+        li {
+            background-image: url(/images/checkmark.svg);
+            background-size: auto 2em;
+            background-repeat: no-repeat;
+            background-position: left center;
+            padding-left: 40px;
+        }
+    }
+}
+
+follow-us {
+    display: block;
+    margin: 70px 0;
+}

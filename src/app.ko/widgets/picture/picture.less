@@ -1,0 +1,46 @@
+﻿@import "../../../styles/layouts.less";
+@import "../../../styles/mixins.less";
+paper-picture {
+    .picture {
+        padding: 10px;
+        .content {
+            .no-drag();
+            width: 100%;
+            position: relative;
+        }
+        &.noframe {
+            .picture-caption {
+                padding: 0;
+                margin: 0;
+                margin-top: 5px;
+                font-weight: normal;
+                text-align: center;
+                width: 100%;
+            }
+        }
+        &.polaroid {
+            box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.15);
+            .picture-caption {
+                font-size: 0.8em;
+                line-height: 2.5em;
+                padding: 0;
+                margin: 0;
+                margin-top: 5px;
+                font-style: italic;
+                width: 100%;
+            }
+        }
+        &.circle {
+            box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.15);
+            border-radius: 50%;
+            .content {
+                display: block;
+                padding-top: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: auto 100%;
+                border-radius: 50%;
+            }
+        }
+    }
+}

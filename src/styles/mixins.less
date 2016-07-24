@@ -1,0 +1,91 @@
+﻿@import "variables.less";
+
+.surface {
+    .box-shadow(1px 1px 2px 2px rgba(0,0,0,0.15));
+    padding: 7px 7px;
+    margin: 0;
+    background-color: @surface-background;
+    border-radius: @toolbox-border-radius;
+    font-family: @font-family-base;
+    font-weight: @font-weight-base;
+    z-index: @z-index-base;
+    list-style: none;
+    -webkit-user-select: none;
+    /*pointer-events: none;*/
+    font-size: @font-size-base;
+
+    h1 {
+        font-family: @font-family-base;
+        font-size: @workshop-header-font-size;
+        font-weight: @font-weight-headers;
+        color: @color-base;
+        margin: 0;
+        line-height: 1em;
+    }
+}
+
+.box-shadow(@shadow) {
+    -webkit-box-shadow: @shadow; // iOS <4.3 & Android <4.1
+    box-shadow: @shadow;
+}
+
+// Box sizing
+.box-sizing(@boxmodel) {
+    -webkit-box-sizing: @boxmodel;
+    -moz-box-sizing: @boxmodel;
+    box-sizing: @boxmodel;
+}
+
+.hide-text() {
+    text-indent: -9999px;
+    white-space: nowrap;
+}
+
+.text-overflow() {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+.no-select {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.no-drag {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -ms-user-drag: none;
+    user-drag: none;
+}
+
+.no-pointer-events {
+    pointer-events: none;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.selection(@size: 10px) {
+    &:before {
+        background-image: data-uri("../svgs/vienna-selection-bottomleft.svg"), data-uri("../svgs/vienna-selection-bottomright.svg"), data-uri("../svgs/vienna-selection-topleft.svg"), data-uri("../svgs/vienna-selection-topright.svg");
+        background-position: bottom left, bottom right, top left, top right;
+        background-repeat: no-repeat;
+        background-size: @size;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        content: '';
+        z-index: @z-index-selection;
+        .no-pointer-events();
+    }
+}

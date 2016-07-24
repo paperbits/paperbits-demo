@@ -1,0 +1,61 @@
+﻿@import "variables.less";
+@import "mixins.less";
+
+.vienna-button-round {
+    border-radius: 50px;
+    width: 70px;
+    height: 70px;
+    border: 1px dashed #ccc;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.vienna-button {
+    border: none;
+    background: none;
+    font-family: @font-family-base;
+    font-size: @font-size-base;
+    text-transform: lowercase;
+    line-height: @workshop-button-height;
+    .no-select();
+    &:hover, &:focus {
+        background: @hover-color;
+        outline: 1px dashed @button-border-color;
+        cursor: pointer;
+    }
+    .vienna-icon {
+        display: inline-block;
+        height: @workshop-button-height;
+        padding: 0;
+        padding-left: @workshop-button-height + .3;
+        background-size: @workshop-button-height @workshop-button-height;
+        background-position: left center;
+    }
+    &.vienna-button-tall {
+        .vienna-icon {
+            height: auto;
+            padding: 0;
+            padding-top: @workshop-button-height - .3;
+            background-position: top center;
+        }
+    }
+}
+
+.vienna-button-group {
+    padding-top: @workshop-padding;
+}
+
+.vienna-button-close {
+    float: right;
+    background: none;
+    border: medium none;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    width: 25px;
+    height: 25px;
+    display: block;
+    
+    text-align: center;
+    line-height: 25px;
+}

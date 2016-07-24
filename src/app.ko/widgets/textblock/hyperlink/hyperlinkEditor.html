@@ -1,0 +1,21 @@
+<div class="vienna-toolbox-dropdown vienna-balloon vienna-balloon-top" data-bind="balloon: { isOpen: isOpen }">
+    <div class="vienna-toolbox-button" data-balloon-toggle data-bind="css: { 'vienna-toolbox-button-is-active': hyperlinkSelected() }">
+        <!--TODO: Make separate component and inlcude it into balloon content as tag <hyperlink-editor>-->
+        <a href="#" class="vienna-icon vienna-icon-hyperlink">Hyperlink</a>
+        <div class="vienna-balloon-content ">
+            <h1>Hyperlink</h1>
+            <hr/>
+            <p>What do you want to link to?</p>
+            <input class="vienna-control-textbox" data-bind="textInput: href" type="text" placeholder="/about" />
+            <button class="vienna-button" data-bind="click: openPageSelector">
+                <span class="vienna-icon vienna-icons-pickpage">Pick a page</span>
+            </button>
+            <button class="vienna-button" data-bind="click: openMediaSelector">
+                <span class="vienna-icon vienna-icons-pickpage">Pick a media</span>
+            </button>
+            <button class="vienna-button" data-bind="visible: href() != null, click: removeHyperlink">
+                <span class="vienna-icon vienna-icon-deletehyperlink">Remove hyperlink</span>
+            </button>
+        </div>
+    </div>
+</div>

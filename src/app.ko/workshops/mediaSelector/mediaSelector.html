@@ -1,0 +1,12 @@
+<div class="vienna-toolbox vienna-widget-editor" data-bind="surface: {}">
+    <a href="#" class="vienna-button-close" data-bind="click: closeEditor">&#10006;</a>
+    <h1 class="vienna-icon vienna-icons-pickpage">
+        Pick a media
+    </h1>
+    <hr />
+    <ul class="vienna-list" data-bind="foreach: mediaItems, scrollable: {}">
+        <li class="vienna-list-item">
+            <a href="#" class="vienna-icon vienna-icon-page" data-bind="click: $parent.selectMediaItem, text: filename"></a>
+        </li>
+    </ul>
+</div>

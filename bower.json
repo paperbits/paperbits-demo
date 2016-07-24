@@ -1,0 +1,40 @@
+{
+    "name": "vienna",
+    "version": "1.0.0",
+    "private": true,
+    "dependencies": {
+        "handlebars": "~4.0.5",
+        "interact": "1.2.4",
+        "inversify": "~1.0.0",
+        "jquery": "2.1.3",
+        "moment": "~2.10.0",
+        "underscore": "1.8.3",
+        "knockout": "^3.4.0",
+        "lity": "^1.6.4",
+        "jquery.nicescroll": "^3.6.8",
+        "bootstrap": "^3.3.6",
+        "bower-knockout-mapping": "^2.6.0",
+        "ace-builds": "^1.2.3",
+        "google-maps": "^3.2.1",
+        "firebase": "^3.0.5",
+        "jquery.scrollintoview": "*",
+        "es6-promise-polyfill": "^1.1.1"
+    },
+    "overrides": {
+        "jquery.nicescroll": {
+            "main": [
+                "jquery.nicescroll.min.js"
+            ]
+        },
+        "jquery.scrollintoview": {
+            "main": [
+                "jquery.scrollintoview.min.js"
+            ]
+        },
+        "ace-builds": {
+            "main": [
+                "src-min-noconflict/ace.js"
+            ]
+        }
+    }
+}

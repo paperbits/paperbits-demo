@@ -1,0 +1,102 @@
+﻿@import "variables.less";
+@import "mixins.less";
+@import "icons.less";
+
+@vienna-list-item-size: 2.5em;
+
+.vienna-list {
+    max-height: @workshop-max-height;
+    width: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+    text-align: justify;
+    position: relative;
+
+    .vienna-list-item {
+        background: #fff;
+
+        .vienna-icon {
+            padding-left: 40px !important;
+            background-position: 5px center;
+            background-size: auto 70%;
+        }
+
+        a {
+            display: inline-block;
+            height: @vienna-list-item-size;
+            line-height: @vienna-list-item-size;
+            text-decoration: none;
+            padding: 0 10px;
+        }
+
+        a:hover {
+            text-decoration: none;
+            cursor: pointer;
+            position: relative;
+
+            .selection();
+        }
+
+        a:focus {
+            text-decoration: none;
+            cursor: pointer;
+            position: relative;
+            outline: none;
+
+            .selection(15px);
+        }
+
+        .vienna-list-item-collapse {
+            padding: 0 10px;
+            width: @vienna-list-item-size;
+            height: @vienna-list-item-size;
+            line-height: @vienna-list-item-size;
+            display: inline-block;
+            text-align: center;
+            cursor: pointer;
+            background: none;
+            .vienna-icons-collapse();
+            .hide-text();
+
+            &.vienna-list-item-collapsed {
+                .vienna-icons-expand();
+            }
+        }
+
+        .vienna-list-item-handle {
+            padding: 0 10px;
+            width: @vienna-list-item-size;
+            height: @vienna-list-item-size;
+            line-height: @vienna-list-item-size;
+            display: inline-block;
+            text-align: center;
+            cursor: pointer;
+            background: none;
+            cursor: -webkit-grab;
+            .vienna-icons-draghandle();
+            .hide-text();
+        }
+
+        .vienna-list-item-children {
+            padding-left: 2.75em;
+        }
+
+        &.selected {
+            background: #ffffff; /* Old browsers */
+            background: -moz-linear-gradient(left, #ffffff 0%, #F1F2F2 100%); /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(100%,#F1F2F2)); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(left, #ffffff 0%,#F1F2F2 100%); /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(left, #ffffff 0%,#F1F2F2 100%); /* Opera 11.10+ */
+            background: -ms-linear-gradient(left, #ffffff 0%,#F1F2F2 100%); /* IE10+ */
+            background: linear-gradient(to right, #ffffff 0%,#F1F2F2 100%); /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#F1F2F2',GradientType=1 ); /* IE6-9 */
+        }
+
+        &.dragged {
+            box-shadow: 0px 0px 2px 2px rgba(128, 128, 128, 0.4);
+            transform: scale(1.07);
+            transition: transform .1s ease-in-out;
+            min-width: 200px;
+        }
+    }
+}

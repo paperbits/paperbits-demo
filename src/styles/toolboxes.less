@@ -1,0 +1,127 @@
+﻿@import "variables.less";
+@import "mixins.less";
+@import "icons.less";
+@import "animation.less";
+@import "layouts.less";
+toolbox {
+    position: fixed;
+    z-index: @z-index-base;
+    min-width: 500px;
+    top: 50px;
+    left: 200px;
+    .vienna-animation-fadein();
+    .no-select();
+}
+
+.vienna-toolbox {
+    .surface();
+    .vienna-animation-fadein();
+    .vienna-toolbox-button {
+        line-height: @toolbox-button-size - (@toolbox-button-padding * 2);
+        min-width: @toolbox-button-size;
+        height: @toolbox-button-size;
+        display: inline-block;
+        padding: @toolbox-button-padding;
+        box-sizing: border-box;
+        border: none;
+        background-color: transparent;
+        text-decoration: none;
+        position: relative;
+        .no-select();
+        .no-drag();
+        &:focus, &:hover {
+            outline: none;
+            .selection();
+        }
+        &.vienna-toolbox-button-is-active {
+            background-color: @toolbox-button-active-bg;
+            border: 1px solid @toolbox-button-active-border;
+            border-radius: 20px;
+        }
+        &.vienna-toolbox-button-is-active .vienna-icon {
+            position: relative;
+            display: block;
+            width: 45px;
+            height: 45px;
+        }
+        .vienna-icon {
+            .hide-text();
+            display: block;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        .vienna-text {
+            display: block;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+    }
+
+    .vienna-toolbox-splitter {
+        height: 1px;
+        border: none;
+        border-bottom: 1px solid lightgray;
+    }
+    .vienna-toolbox-primary {
+        height: 100%;
+        top: 0;
+        left: 0;
+        float: left;
+        .vienna-toolbox-button {
+            filter: grayscale(80%);
+            -webkit-filter: grayscale(80%);
+            &.vienna-toolbox-button-is-open, &:hover {
+                filter: grayscale(0%);
+                -webkit-filter: grayscale(0%);
+            }
+        }
+        li {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background: none;
+        }
+    }
+    &.vienna-toolbox-contextual {
+        border-radius: @toolbox-border-radius;
+        white-space: nowrap;
+        .vienna-toolbox-dropdown {
+            text-decoration: none;
+        }
+    }
+    &.vienna-toolbox-resizable {
+        resize: horizontal;
+    }
+    .vienna-clickable {
+        outline: 1px dashed @button-border-color;
+        cursor: pointer;
+        padding: 10px;
+    }
+    hr {
+        display: block;
+        border: none;
+        border-bottom: 1px solid #E6E7E8;
+        height: 1px;
+        width: 100%;
+        margin: 15px 0;
+    }
+    a {
+        color: #333;
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    h1 {
+        font-family: @font-family-base;
+        font-size: @toolbox-header-h1;
+    }
+    &::after {
+        clear: both;
+        content: '';
+        display: block;
+    }
+}

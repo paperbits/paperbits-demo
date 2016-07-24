@@ -1,0 +1,62 @@
+﻿@import "variables.less";
+@import "buttons.less";
+
+.vienna-toolbox-button.vienna-toolbox-button-formatting {
+    min-width: 100px;
+    text-align: center;
+}
+
+.tools-paragraph-style {
+    display: block;
+    padding: 5px 10px;
+    margin: -5px;
+    text-decoration: none;
+
+    &:hover {
+        background: lightgray;
+    }
+
+    &:active, &:visited {
+        color: inherit;
+    }
+}
+
+.tools-paragraph-style {
+    &:last-child {
+        border: none;
+    }
+}
+
+.tools-paragraph-style-normal {
+    .tools-paragraph-style();
+}
+
+.tools-paragraph-style-h1 {
+    .tools-paragraph-style();
+    font-size: 2.6em;
+}
+
+.tools-paragraph-style-h2 {
+    .tools-paragraph-style();
+    font-size: 2.3em;
+}
+
+.tools-paragraph-style-h3 {
+    .tools-paragraph-style();
+    font-size: 1.7em;
+}
+
+.tools-paragraph-style-h4 {
+    .tools-paragraph-style();
+    font-size: 1.4em;
+}
+
+.tools-paragraph-style-h5 {
+    .tools-paragraph-style();
+    font-size: 1em;
+}
+
+.tools-paragraph-style-h6 {
+    .tools-paragraph-style();
+    font-size: 0.85em;
+}

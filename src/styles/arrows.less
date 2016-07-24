@@ -1,0 +1,60 @@
+﻿@import "animation.less";
+@import "variables.less";
+@media (min-width: @screen-lg) {
+    .vienna-arrow-self {
+        background-image: data-uri("../svgs/vienna-arrow.svg");
+        background-size: auto 80%;
+        background-repeat: no-repeat;
+        display: block;
+        content: '';
+        width: 150px;
+        height: 150px;
+    }
+    .vienna-arrow {
+        .no-pointer-events();
+        .vienna-animation-shake();
+        position: absolute;
+        font-family: Segoe Script;
+        font-size: 20px;
+        z-index: 9999;
+        max-width: 150px;
+        text-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
+        .step-number {
+            display: inline-block;
+            width: 1.4em;
+            height: 1.4em;
+            background: #D2E28B;
+            border-radius: 50%;
+            position: absolute;
+            left: -1.6em;
+            text-align: center;
+            color: white;
+        }
+        &.vienna-arrow-left {
+            &:after {
+                transform: rotate(135deg);
+            }
+            &:before {
+                transform: rotate(45deg) scale(-1, 1);;
+            }
+        }
+        &.vienna-arrow-right {
+            &:after {
+                transform: rotate(-135deg) scale(-1, 1);
+            }
+        }
+        &.vienna-arrow-top {
+            &:after {
+                .vienna-arrow-self();
+            }
+        }
+        &.vienna-arrow-bottom {
+            &:before {
+                .vienna-arrow-self();
+            }
+        }
+        &.vienna-arrow-fixed {
+            position: fixed;
+        }
+    }
+}

@@ -1,0 +1,7 @@
+<ul class="vienna-list" data-bind="foreach: widgets, scrollable: {}">
+    <li class="vienna-list-item">
+        <a href="#"
+           class="vienna-icon vienna-icon-widgets"
+           data-bind="text: title, dragsource: { sticky: true, payload: $data, ondragstart: $parent.onDragStart, ondragend: $parent.onDragEnd }"></a>
+    </li>
+</ul>

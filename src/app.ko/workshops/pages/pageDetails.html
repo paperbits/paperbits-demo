@@ -1,0 +1,35 @@
+<fieldset class="vienna-form">
+    <label><span class="help">?</span>Page title</label>
+    <input type="text" class="vienna-control-textbox"  data-bind="value: title" placeholder="i.e. Orders" />
+
+    <label><span class="help">?</span>Permalink</label>
+    <input type="text" class="vienna-control-textbox" data-bind="value: permalinkUrl" placeholder="http://www.site.com/" />
+
+    <label><span class="help">?</span>Description</label>
+    <input type="text" class="vienna-control-textbox" data-bind="value: description" />
+
+    <label><span class="help">?</span>Keywords</label>
+    <input type="text" class="vienna-control-textbox" data-bind="value: keywords" />
+</fieldset>
+<div class="vienna-button-group">
+    <button class="vienna-button">
+        <span class="vienna-icon vienna-icon-deletepage" data-bind="click: deletePage">Delete this page</span>
+        <!--<span class="vienna-icon vienna-icon-deletepage">Delete this page</span>-->
+    </button>
+
+    <!--div class="vienna-balloon vienna-balloon-top" data-bind="balloon: { }">
+        <button data-balloon-toggle>
+            <span>Normal</span>
+            <div class="vienna-balloon-content">
+                <b>Please confirm</b>
+                <div>Are you sure you want to delete this page?</div>
+                <div class="vienna-button-round">
+                    Yes
+                </div>
+                <div class="vienna-button-round">
+                    No
+                </div>
+            </div>
+        </button>
+    </div>-->
+</div>

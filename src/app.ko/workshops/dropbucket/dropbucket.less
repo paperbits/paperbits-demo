@@ -1,0 +1,62 @@
+﻿@import "../../../styles/variables.less";
+@import "../../../styles/toolboxes.less";
+@import "../../../styles/animation.less";
+@import "../../../styles/icons.less";
+@import "../../../styles/buttons.less";
+
+@vienna-droppedcontent-preview-size: 70px;
+
+dropbucket {
+    right: 20px;
+    bottom: 20px;
+    position: fixed;
+
+    .vienna-droppedcontent {
+        .vienna-toolbox();
+        // .vienna-animation-slideleft();
+        position: relative;
+        border-radius: @toolbox-border-radius;
+
+        padding-right: 50px;
+    }
+
+    .vienna-droppedcontent-preview {
+        width: @vienna-droppedcontent-preview-size;
+        height: @vienna-droppedcontent-preview-size;
+        border-radius: 20px;
+        background-image: data-uri("../svgs/vienna-icons-unknown.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-clip: padding-box;
+        display: block;
+        float: left;
+    }
+
+    .vienna-droppedcontent-details {
+        margin: 10px;
+        float: left;
+
+        .vienna-droppedcontent-details-description {
+            display: inline-block;
+            max-width: 120px;
+            .text-overflow();
+        }
+    }
+
+    .vienna-list-item {
+        position: relative;
+    }
+
+
+    .vienna-button {
+        height: @vienna-droppedcontent-preview-size;
+    }
+
+    .vienna-button-close {
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        transform: translate(0, -50%);
+    }
+}

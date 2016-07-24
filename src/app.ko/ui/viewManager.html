@@ -1,0 +1,28 @@
+﻿<div class="vienna-indicators" data-bind="foreach: progressIndicators">
+    <!--ko if: complete()-->
+    <div class="vienna-indicator">
+        <div class="vienna-indicator-success">
+        </div>
+        <div class="vienna-indicator-text">
+            <h1 data-bind="text: title"></h1>
+            <p data-bind="text: content"></p>
+        </div>
+        <button class="vienna-button-close">✖</button>
+    </div>
+    <!--/ko-->
+    <!--ko if: !complete()-->
+    <div class="vienna-indicator">
+        <div class="vienna-indicator-progress" data-bind="text: progress() + '%'">
+        </div>
+        <div class="vienna-indicator-text">
+            <h1 data-bind="text: title"></h1>
+            <p data-bind="text: content"></p>
+        </div>
+        <button class="vienna-button-close">✖</button>
+    </div>
+    <!--/ko-->
+</div>
+
+<!-- ko with: widgetEditor()-->
+<div data-bind="component: { name: name, params: params }"></div>
+<!--/ko-->
