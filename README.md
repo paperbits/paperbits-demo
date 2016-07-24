@@ -4,7 +4,7 @@ This repository shows an example how developers can use [PaperBits](https://gith
 
 You can see and play online with content editing capability on [paperbits.io](https://paperbits.io). Just follow tutorial steps (floating hints)
 
-For your conveniences you can use and extend PaperBits library build on top of your favorite javascript framework [KnockoutJS](https://github.com/paperbits/paperbits-knockout), [AgularJS](https://github.com/paperbits/paperbits-aurelia) or [Aurelia](https://github.com/paperbits/paperbits-angular).
+For your conveniences you can use and extend PaperBits library build on top of your favorite javascript framework [Knockout](https://github.com/paperbits/paperbits-knockout), [Angular](https://github.com/paperbits/paperbits-angular) or [Aurelia](https://github.com/paperbits/paperbits-aurelia).
 
 Please check out detailed [documentation](https://github.com/paperbits/paperbits-knockout/wiki/Documentation) page,  [getting started](https://github.com/paperbits/paperbits-knockout/wiki/Documentation#getting-started) guides and repo with [samples](https://github.com/paperbits/paperbits-samples).
 
