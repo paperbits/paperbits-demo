@@ -1,74 +1,58 @@
 # PaperBits Demo
 
-This repository shows an example how developers can use [PaperBits](https://github.com/paperbits/paperbits-knockout) library to build their own web app with a nice online content editing capability. 
+This repository shows an example of how using PaperBits you can enable advanced content authoring tools in your web apps.
 
-You can see and play online with content editing capability on [paperbits.io](https://paperbits.io). Just follow tutorial steps.
-
-For your convenience you can use and extend PaperBits library built on top of your favorite javascript framework [Knockout](https://github.com/paperbits/paperbits-knockout), [Angular](https://github.com/paperbits/paperbits-angular) or [Aurelia](https://github.com/paperbits/paperbits-aurelia).
-
-Please check out detailed [documentation](https://github.com/paperbits/paperbits-knockout/wiki/Documentation) page,  [getting started](https://github.com/paperbits/paperbits-knockout/wiki/Documentation#getting-started) guides and repo with [samples](https://github.com/paperbits/paperbits-samples).
+Please explore the [DEMO](https://paperbits.io), check out the [documentation](https://github.com/paperbits/paperbits-knockout/wiki) and [samples repository](https://github.com/paperbits/paperbits-samples).
 
 ## Basic functionality overview
-If you have a website and need quickly extend it with web content edit functionality. You can easily add **PaperBits** library and get on your website flexible and light tools to create and edit all kinds of web content.
+PaperBits is all about widgets and editors. Widgets are reusable blocks that make up the page content and Editors are tools that help to manage what and how widgets display.
 
-#### Add script and styles on your page
+A widget can be switched to **editing mode** by double clicking on it. This brings up an editor where you can change widget's properties as you need.
+ 
+
+### Text block
+The simplest and most used element on a page is the text block:
 ```html
-<script src="https://cdn.paperbits.io/everything.min.js" type="text/javascript"></script>
-<link href="https://cdn.paperbits.io/everything.min.css" rel="stylesheet" type="text/css">
+<paper-textblock>
+    Lorem ipsum dolor sit amet, nibh nec vitae ut magnis...
+</paper-textblock>
 ```
-We support several web components with content editing capability.
-You can see component borders when you hover a mouse over it. You can change a selection for an active component.
-To switch to content edit mode just double click on a component and escape key for exit. 
-In edit mode, you can change properties for selected component.
-You can drag selected component editor and place it in any position. 
-To delete an item from the page, select it and press the delete key.
-
+The editor for text block widget supports common set of text styling features like alignment, font weight, lists, etc., and, as the project moves forward, its functionality will be extended with other useful tools like real-time collaboration, text-proofing, leaving comments, etc.  
 ![switch_edit.gif](https://firebasestorage.googleapis.com/v0/b/paperbits-cdn.appspot.com/o/switch-edit.gif?alt=media&token=4e43d530-4dbb-492f-8876-f80d3ba0818d "switch_edit.gif")
+   
 
-### Text edit 
-```html
-<paper-textblock></paper-textblock>
-```
-Textblock component support standard set of text styling features.
+### Picture
 
-### Picture edit 
 ```html
 <paper-picture src="https://paperbits.io/images/pen-fight.svg" layout="noframe"></paper-picture>
 ```
-You can add a picture element on a page by drag it from file explorer and drop it on a page. 
-After the drop, you will see a notification popup to upload the picture to the media library. (Also, you can upload pictures directly to the media library)
-As soon as picture file will be uploaded, it will be accessible through the media library for drag and drop on a page. 
+The easiest way to add a picture to the content is to drag and drop a file on a page or paste it from the clipboard. New files appear as a thumbnail in a small window called "drop bucket". From there you can either drag it directly to the content or click "upload" button to place it into media library for later use. 
 
 ![switch_edit.gif](https://firebasestorage.googleapis.com/v0/b/paperbits-cdn.appspot.com/o/picture-upload.gif?alt=media&token=15baf6c8-7bb5-44ef-b946-16125d841b2d "picture_upload.gif")
 
-Another approach adding a picture on a page is drag and drop picture widget from the widget library and upload a picture file through the picture editor.
+Another way is to drag the picture widget from "widgets library" and specify an image using the editor.
 
 ![switch_edit.gif](https://firebasestorage.googleapis.com/v0/b/paperbits-cdn.appspot.com/o/picture_uploadpicture_upload_from_lib.gif?alt=media&token=cc9a6487-5db8-4e5a-9fc9-9d01bf567f9f "picture_uploadpicture_upload_from_lib.gif")
 
-## Installation
-PaperBits requires [Node.js](https://nodejs.org/) v5+ and [TypeScript](http://www.typescriptlang.org/) to run.
 
-You need TypeScript, Bower and Gulp installed globally:
-```sh
-$ npm install -g typescript
-$ npm install -g typings 
-$ npm install -g bower 
-$ npm install -g gulp
+### Layout
+```html
+<paper-layout>...</paper-layout>
 ```
-Clone PaperBits demo repo from GitHub
-```sh
-$ git clone [git-repo-url] paperbits-demo
-```
-Install required packages
-```sh
-$ cd paperbits-demo
-$ npm install
-$ bower install
-```
-Install required typings
-```sh
-$ cd src
-$ typings install
-```
-# License
-[GNU GPL 3](https://github.com/paperbits/paperbits-demo/blob/master/LICENSE)
+The layout is another widget that represents the responsive grid, cells of which are also widgets making up its rows and columns. The cells can be rearranged withing the grid using same drag and drop interface.
+### Navigation
+< TO BE FINISHED >
+
+### Drop bucket
+< TO BE FINISHED >
+### Pages
+< TO BE FINISHED >
+
+
+
+
+
+
+
+
+
