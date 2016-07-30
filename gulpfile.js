@@ -6,8 +6,7 @@ var concat = require("gulp-concat");
 var webserver = require("gulp-webserver");
 var uglify = require("gulp-uglify");
 var filter = require("gulp-filter");
-var exec = require("child_process").exec;
-var argv = require('yargs').argv;
+var generate = require("./firebase/generate.js");
 var typescript = require("typescript");
 var typescriptCompiler = require("gulp-typescript");
 var sourcemaps = require("gulp-sourcemaps");
@@ -42,7 +41,7 @@ gulp.task("typescript", function () {
     var tsResult = tsProject
         .src()
         .pipe(sourcemaps.init())
-        .pipe(typescriptCompiler(tsProject))
+        .pipe(typescriptCompiler(tsProject));
 
     return tsResult.js
         .pipe(concat('vienna.js'))
@@ -65,18 +64,12 @@ gulp.task("vendor-scripts", function () {
     return gulp.src(files)
         .pipe(jsFilesFilter)
         .pipe(concat("vendor.js"))
-        .pipe(uglify())
+        //.pipe(uglify())
         .pipe(gulp.dest("public/scripts"));
 });
 
-gulp.task("vendor-styles", function () {
-    var files = bower();
-    var cssFilesFilter = filter("**/*.css", { restore: true });
-
-    return gulp.src(files)
-        .pipe(cssFilesFilter)
-        .pipe(concat("vendor.css"))
-        .pipe(gulp.dest("public/styles"));
+gulp.task("generate", function () {
+    generate();
 });
 
 gulp.task("serve", ["build", "build-theme", "watch"], function () {
@@ -110,7 +103,7 @@ gulp.task("theme-styles", function () {
         .pipe(gulp.dest("public/styles"));
 });
 
-gulp.task("build", ["styles", "fonts", "typescript", "templates", "vendor-scripts", "vendor-styles"]);
+gulp.task("build", ["styles", "fonts", "typescript", "templates", "vendor-scripts"]);
 gulp.task("build-theme", ["theme", "theme-styles"]);
 
 gulp.task("watch", function () {
@@ -121,4 +114,4 @@ gulp.task("watch", function () {
 });
 
 gulp.task("default", ["build", "build-theme", "watch"]);
-gulp.task("build-all", ["build", "build-theme"])
+gulp.task("build-all", ["build", "build-theme"]);
