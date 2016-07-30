@@ -6,7 +6,6 @@ var concat = require("gulp-concat");
 var webserver = require("gulp-webserver");
 var uglify = require("gulp-uglify");
 var filter = require("gulp-filter");
-var generate = require("./firebase/generate.js");
 var typescript = require("typescript");
 var typescriptCompiler = require("gulp-typescript");
 var sourcemaps = require("gulp-sourcemaps");
@@ -66,10 +65,6 @@ gulp.task("vendor-scripts", function () {
         .pipe(concat("vendor.js"))
         //.pipe(uglify())
         .pipe(gulp.dest("public/scripts"));
-});
-
-gulp.task("generate", function () {
-    generate();
 });
 
 gulp.task("serve", ["build", "build-theme", "watch"], function () {
