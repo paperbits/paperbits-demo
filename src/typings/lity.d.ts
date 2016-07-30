@@ -1,1 +1,0 @@
-﻿declare var lity: any;
