@@ -159,6 +159,21 @@
     <dropbucket></dropbucket>
     <analytics></analytics>
     <gtm></gtm>
+
+    <script>
+        $(function() {
+            var injector = new Vienna.InversifyInjector();
+
+            Vienna.registerContainer(injector);
+            Vienna.registerComponents(injector);
+            Vienna.registerLoaders(injector);
+
+            injector.bindSingleton("tutorialScenario", Vienna.TutorialScenario);
+            injector.resolve("tutorialScenario");
+            
+            ko.applyBindings();
+        });
+    </script>
 </body>
 
 </html>
