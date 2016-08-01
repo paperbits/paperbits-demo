@@ -72,7 +72,7 @@ Widgets library introduces a set of widgets and snippets that you can add to the
 
 
 ## Setting up dev environment
-PaperBits requires [Node.js](https://nodejs.org/) v5+ and [TypeScript](http://www.typescriptlang.org/) to run. Also you will need TypeScript, Bower and Gulp installed globally:
+PaperBits requires [Node.js](https://nodejs.org/) v5+. Also you will need [TypeScript](http://www.typescriptlang.org/), [Bower](https://bower.io/) and [Gulp](http://gulpjs.com/) installed globally:
 ```sh
 $ npm install -g typescript
 $ npm install -g bower 
