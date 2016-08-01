@@ -66,7 +66,7 @@ Navigation workshop helps managing complex hierarchical menus using a keyboard a
 Media library helps managing uploaded files.
 
 ### Widgets library
-Widgets workshop introduces a set of widgets and snippets that you can put into the content.
+Widgets library introduces a set of widgets and snippets that you can add to the content.
 
 ![Adding picture through widgets library](https://firebasestorage.googleapis.com/v0/b/paperbits-cdn.appspot.com/o/picture_uploadpicture_upload_from_lib.gif?alt=media&token=cc9a6487-5db8-4e5a-9fc9-9d01bf567f9f "picture_uploadpicture_upload_from_lib.gif")
 
