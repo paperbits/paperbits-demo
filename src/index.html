@@ -2,14 +2,19 @@
 <html lang="en">
 
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
     <title>PaperBits - Content authoring tools for web apps</title>
 
-    <meta name="description" content="This is an Open Source product, which offers a set of components and tools for developing web applications with rich content authoring capabilities.">
+    <meta name="description" content="Components and tools for developing web applications with rich content authoring capabilities.">
     <meta name="keywords" content="authoring tools, components, visual editor, drag & drop, Open source, javascript framework, content management">
-    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta name="author" content="Vienna LLC">
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta property="og:site_name" content="PaperBits" />
     <meta property="og:title" content="Content authoring tools for web apps" />
+    <meta property="og:description" content="Components and tools for developing web applications with rich content authoring capabilities." />
     <meta property="og:url" content="http://paperbits.io/" />
     <meta property="og:type" content="website" />
 
@@ -19,6 +24,16 @@
 
     <script src="https://cdn.paperbits.io/scripts/everything.min.js" type="text/javascript"></script>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+    <script type='application/ld+json'> 
+{
+  "@context": "http://www.schema.org",
+  "@type": "product",
+  "brand": "PaperBits",
+  "name": "Content authoring tools for web apps",
+  "description": "Components and tools for developing web applications with rich content authoring capabilities."
+}
+    </script>
 </head>
 
 <body>
@@ -55,11 +70,11 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <paper-textblock>
+                        <paper-text>
                             <h1 class="text-center">Content authoring tools for web apps</h1>
                             <p class="text-center">This is an Open Source product, which offers a set of components and tools for developing web
                                 applications with rich content authoring capabilities.</p>
-                        </paper-textblock>
+                        </paper-text>
                     </div>
                 </div>
 
@@ -69,7 +84,7 @@
                                 they do, they can 't break your design!"></paper-picture>
                     </div>
                     <div class="col-md-6">
-                        <paper-textblock>
+                        <paper-text>
                             <h3>Your users
                                 <u>can</u>...</h3>
                             <ul>
@@ -86,12 +101,12 @@
                                     <a href="#">work offline</a>
                                 </li>
                             </ul>
-                        </paper-textblock>
+                        </paper-text>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-6">
-                        <paper-textblock>
+                        <paper-text>
                             <h3>You
                                 <u>can</u>...</h3>
                             <ul>
@@ -111,7 +126,7 @@
                                     <a href="#"><i>always</i> get help</a>
                                 </li>
                             </ul>
-                        </paper-textblock>
+                        </paper-text>
                     </div>
                     <div class="col-md-6">
                         <paper-picture src="https://paperbits.io/images/plane-launch.svg" layout="noframe" caption="No matter which stack you choose..."></paper-picture>
@@ -159,21 +174,6 @@
     <dropbucket></dropbucket>
     <analytics></analytics>
     <gtm></gtm>
-
-    <script>
-        $(function() {
-            var injector = new Vienna.InversifyInjector();
-
-            Vienna.registerContainer(injector);
-            Vienna.registerComponents(injector);
-            Vienna.registerLoaders(injector);
-
-            injector.bindSingleton("tutorialScenario", Vienna.TutorialScenario);
-            injector.resolve("tutorialScenario");
-            
-            ko.applyBindings();
-        });
-    </script>
 </body>
 
 </html>
