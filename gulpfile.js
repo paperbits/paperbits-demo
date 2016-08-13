@@ -12,7 +12,7 @@ function handleErrors(error) {
     this.emit("end");
 }
 
-gulp.task("serve", ["build", "build-theme", "watch"], function () {
+gulp.task("serve", ["build", "watch"], function () {
     return gulp.src("public")
         .pipe(webserver({
             port: "80",
@@ -24,6 +24,7 @@ gulp.task("serve", ["build", "build-theme", "watch"], function () {
 
 gulp.task("theme", function () {
     return gulp.src([
+        "src/favicon.ico",
         "src/fonts/**/*.*",
         "src/images/**/*.*",
         "src/*.html",
