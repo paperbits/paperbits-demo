@@ -28,9 +28,9 @@ A widget is switched to **editing mode** by double clicking/tapping on it. This 
 ### Text block widget
 A text block is the simplest and most used element on a page. 
 ```html
-<paper-textblock>
+<paper-text>
     Lorem ipsum dolor sit amet, nibh nec vitae ut magnis...
-</paper-textblock>
+</paper-text>
 ```
 Its editor supports common set of text stylings like alignment, font weight, ordered/unordered list, etc., and, as the project moves on, its functionality gets extended with other useful tools like real-time collaboration, text-proofing, leaving comments, etc.
   
