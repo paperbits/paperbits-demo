@@ -56,7 +56,7 @@ gulp.task("theme-scripts", function () {
 
     return tsResult.js
         .pipe(concat("paperbits-demo.min.js"))
-        .pipe(uglify())
+        .pipe(uglify({ mangle: false }))
         .pipe(gulp.dest("public/scripts"));
 });
 
