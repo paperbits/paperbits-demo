@@ -86,6 +86,8 @@ Install required packages
 ```sh
 $ npm install
 $ bower install
+$ cd src
+$ typings install
 ```
 Launch demo website
 ```sh
