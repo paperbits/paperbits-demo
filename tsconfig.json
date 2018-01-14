@@ -1,19 +1,26 @@
 {
     "compilerOptions": {
         "target": "es5",
+        "module": "commonjs",
+        "moduleResolution": "node",
         "declaration": false,
         "noImplicitAny": false,
+        "noStrictGenericChecks": true,
         "removeComments": true,
         "noLib": false,
-        "emitDecoratorMetadata": true,
+        "skipLibCheck": true,
         "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
         "allowUnreachableCode": true,
         "listFiles": false,
-        "inlineSourceMap": true,
-        "inlineSources": true
+        "sourceMap": true,
+        "allowSyntheticDefaultImports": true,
+        //"jsx": "react"
     },
+    "include": [
+        "./src/**/*.ts"
+    ],
     "exclude": [
-        "bower_components",
         "node_modules"
     ]
 }

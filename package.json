@@ -1,20 +1,43 @@
 {
   "name": "paperbits-demo",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.0.0",
   "description": "An example of using PaperBits to build web apps with rich content editing capability.",
   "license": "GPL2",
+  "keywords": [
+    "paperbits",
+    "demo"
+  ],
   "devDependencies": {
-    "bower": "^1.3.1",
-    "gulp": "^3.9.0",
-    "gulp-autoprefixer": "^3.1.0",
-    "gulp-concat": "^2.6.0",
-    "gulp-filter": "^4.0.0",
-    "gulp-less": "^3.0.3",
-    "gulp-typescript": "^2.13.6",
-    "gulp-uglify": "^2.0.0",
-    "gulp-webserver": "^0.9.1",
-    "main-bower-files": "^2.8.0",
-    "typescript": "^2.0.0"
+    "autoprefixer": "^7.2.4",
+    "awesome-typescript-loader": "^3.4.1",
+    "copy-webpack-plugin": "^4.3.1",
+    "css-loader": "^0.28.7",
+    "del": "^3.0.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.6",
+    "gulp": "^3.9.1",
+    "gutil": "^1.6.4",
+    "html-loader": "^0.5.1",
+    "merge2": "^1.2.0",
+    "path": "^0.12.7",
+    "postcss-loader": "^2.0.6",
+    "run-sequence": "^2.2.1",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.1",
+    "ts-loader": "^2.3.6",
+    "typescript": "2.6.2",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.10.0"
+  },
+  "dependencies": {
+    "@paperbits/common": "0.0.43",
+    "@paperbits/knockout": "0.0.44",
+    "es6-shim": "^0.35.3",
+    "firebase": "4.4.0",
+    "jquery": "^3.2.1",
+    "knockout": "^3.4.2",
+    "setimmediate": "^1.0.5"
   }
 }

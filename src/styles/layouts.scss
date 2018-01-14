@@ -1,0 +1,15 @@
+section {
+    padding: 10px;
+
+    .row {
+        padding: 10px;
+
+        .col-flex {
+            padding: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: start;
+            align-items: start;
+        }
+    }
+}

@@ -1,6 +1,3 @@
 node_modules/
-bower_components/
-public/
-src/typings/globals/
-.idea/
+dist/
 .vscode/

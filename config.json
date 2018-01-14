@@ -1,0 +1,26 @@
+{
+    "default": {
+        "tenantId": "default",
+        "firebase": {
+            "apiKey": "AIzaSyB5OCRbwJpE2tDYsMkDXZAVugGCyvYvXsI",
+            "authDomain": "project-7669095260722476815.firebaseapp.com",
+            "databaseURL": "https://project-7669095260722476815.firebaseio.com",
+            "projectId": "project-7669095260722476815",
+            "storageBucket": "project-7669095260722476815.appspot.com",
+            "auth": {
+                "google": {
+                    "scopes": []
+                }
+            }
+        },
+        "googlemaps": {
+            "apiKey": "AIzaSyC7eT_xRPt3EjX3GuzSvlaZzJmlyFxvFFs"
+        },
+        "intercom": {
+            "appId": "l560nd3j"
+        },
+        "gtm": {
+            "containerId": "GTM-NZM93W"
+        }
+    }
+}

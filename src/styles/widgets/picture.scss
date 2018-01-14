@@ -1,0 +1,50 @@
+﻿.picture {
+    text-align: center;
+    max-width: 100%;
+
+    * {
+        pointer-events: none;
+    }
+
+    .content {
+        //@include no-drag();
+        position: relative;
+        max-width: 100%;
+    }
+
+    &.noframe {
+        .picture-caption {
+            padding: 0;
+            margin: 5px 0 0;
+            font-weight: normal;
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+    &.polaroid {
+        box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.15);
+
+        .picture-caption {
+            font-size: .8em;
+            line-height: 2.5em;
+            padding: 0;
+            margin: 5px 0 0;
+            font-style: italic;
+            width: 100%;
+        }
+    }
+
+    &.circle {
+        border-radius: 50%;
+        overflow: hidden;
+    }
+}
+
+img:not([src]) {
+    min-width: 270px;
+    height: 200px;
+    line-height: 200px;
+    border: 1px dashed #444444;
+    opacity: .3;
+}

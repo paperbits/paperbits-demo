@@ -1,0 +1,54 @@
+{
+    "paperbits.io": {
+        "tenantId": "default",
+        "firebase": {
+            "apiKey": "AIzaSyB5OCRbwJpE2tDYsMkDXZAVugGCyvYvXsI",
+            "authDomain": "project-7669095260722476815.firebaseapp.com",
+            "databaseURL": "https://project-7669095260722476815.firebaseio.com",
+            "projectId": "project-7669095260722476815",
+            "storageBucket": "project-7669095260722476815.appspot.com",
+            "messagingSenderId": "356699480563",
+            "auth": {
+                "basic": {
+                    "email": "test@test.com",
+                    "password": "test@test.com"
+                }
+            }
+        },
+        "googlemaps": {
+            "apiKey": "AIzaSyBDwOTSpeeeqgc5pCmrbdoVVMvgGyt_rzo"
+        },
+        "intercom": {
+            "appId": "l560nd3j"
+        },
+        "gtm": {
+            "containerId": "GTM-NKC8HD"
+        }
+    },
+    "default": {
+        "tenantId": "default",
+        "firebase": {
+            "apiKey": "AIzaSyB5OCRbwJpE2tDYsMkDXZAVugGCyvYvXsI",
+            "authDomain": "project-7669095260722476815.firebaseapp.com",
+            "databaseURL": "https://project-7669095260722476815.firebaseio.com",
+            "projectId": "project-7669095260722476815",
+            "storageBucket": "project-7669095260722476815.appspot.com",
+            "messagingSenderId": "356699480563",
+            "auth": {
+                "basic": {
+                    "email": "test@test.com",
+                    "password": "test@test.com"
+                }
+            }
+        },
+        "googlemaps": {
+            "apiKey": "AIzaSyBDwOTSpeeeqgc5pCmrbdoVVMvgGyt_rzo"
+        },
+        "intercom": {
+            "appId": "l560nd3j"
+        },
+        "gtm": {
+            "containerId": "GTM-NZM93W"
+        }
+    }
+}

@@ -1,0 +1,66 @@
+@import "variables.scss";
+
+.navbar-expand,
+.navbar-expand-lg,
+.navbar-expand-md,
+.navbar-expand-sm {
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #4C4C4C;
+    padding: 15px 18px;
+    white-space: nowrap;
+}
+
+.navbar {
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+    line-height: 20px;
+    width: 100%;
+
+    .nav-item {
+        text-align: center;
+
+        .nav-link {
+            display: inline-block;
+        }
+    }
+}
+
+.navbar-default {
+    .navbar-nav {
+        .nav-item {
+            .nav-link {
+                font-size: 15px;
+                font-weight: 400;
+                text-transform: uppercase;
+                color: #4C4C4C;
+                padding: 15px 18px;
+            }
+
+            &.active,
+            &:focus,
+            &:hover {
+                .nav-link {
+                    color: #e16640 !important;
+                }
+            }
+        }
+    }
+}
+
+.navbar-brand {
+    padding: 7px 15px;
+}
+@media (min-width: $breakpoint-md) {
+    .navbar {
+        padding: 0 !important;
+        width: auto !important;
+    }
+
+    .navbar-toggler {
+        display: none;
+    }
+}
