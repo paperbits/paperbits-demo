@@ -1,3 +1,11 @@
+@import "navbar.scss";
+@import "layouts.scss";
+@import "variables.scss";
+@import "widgets/widgets.scss";
+@import "widgets/textblock.scss";
+@import "widgets/form.scss";
+@import "intentions.scss";
+
 @font-face {
   font-family: 'Kristen-ITC';
   src: url('/theme/fonts/Kristen-ITC.eot'); /* IE9 Compat Modes */
@@ -14,10 +22,7 @@
 }
 
 body {
-    font-family: 'Kristen-ITC';
+    font-family: "Kristen-ITC";
+    font-size: $font-size-base;
 }
 
-@import "navbar.scss";
-@import "layouts.scss";
-@import "widgets/widgets.scss";
-@import "intentions.scss";

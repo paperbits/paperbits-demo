@@ -42,9 +42,29 @@
 }
 
 img:not([src]) {
-    min-width: 270px;
-    height: 200px;
-    line-height: 200px;
-    border: 1px dashed #444444;
-    opacity: .3;
+    width: 270px;
+    height: 270px;
+    display: block;
+    position: relative;
+
+    &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #fff;
+        content: "";
+    }
+
+    &:after {
+        content: attr(alt);
+        line-height: 270px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0) 10px, rgba(0, 0, 0, 0.05) 10px, rgba(0, 0, 0, 0.05) 20px);
+    }
 }

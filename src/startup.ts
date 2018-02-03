@@ -12,7 +12,8 @@ import { ComponentRegistrationEditors } from "@paperbits/knockout/registrations/
 import { KnockoutRegistrationCommon } from "@paperbits/knockout/registrations/knockout.common";
 import { KnockoutRegistrationWidgets } from "@paperbits/knockout/registrations/knockout.widgets";
 import { KnockoutRegistrationLoaders } from "@paperbits/knockout/registrations/knockout.loaders";
-import { FirebaseModule } from "@paperbits/firebase/firebase.module";
+//import { FirebaseModule } from "@paperbits/firebase/firebase.module";
+import { StaticStorageModule } from "./storage/staticStorage.module";
 import { GlobalEventHandler } from "@paperbits/common/events/globalEventHandler";
 import { IEventManager } from "@paperbits/common/events/IEventManager";
 import { SlateModule } from "@paperbits/slate/slate.module";
@@ -57,6 +58,10 @@ import { Substitute7ModelBinder } from "@paperbits/knockout/widgets/substitute7/
 import { Substitute7ViewModelBinder } from "@paperbits/knockout/widgets/substitute7/substitute7ViewModelBinder";
 import { Substitute8ModelBinder } from "@paperbits/knockout/widgets/substitute8/substitute8ModelBinder";
 import { Substitute8ViewModelBinder } from "@paperbits/knockout/widgets/substitute8/substitute8ViewModelBinder";
+
+import { FormModelBinder } from "@paperbits/common/widgets/form/formModelBinder";
+import { FormViewModelBinder } from "@paperbits/knockout/widgets/form/formViewModelBinder";
+
 import { OfflineObjectStorage } from "@paperbits/common/persistence/offlineObjectStorage";
 import { AnchorMiddleware } from "@paperbits/common/persistence/AnchorMiddleware";
 import { IntentionsBuilder } from "@paperbits/common/appearence/intentionsBuilder";
@@ -76,7 +81,8 @@ $(() => {
     injector.bindModule(new KnockoutRegistrationLoaders());
     injector.bindModule(new KnockoutRegistrationCommon());
     injector.bindModule(new KnockoutRegistrationWidgets());
-    injector.bindModule(new FirebaseModule());
+    // injector.bindModule(new FirebaseModule());
+    injector.bindModule(new StaticStorageModule());
     injector.bindModule(new ThemeModule());
 
     let modelBinders = new Array();
@@ -121,6 +127,9 @@ $(() => {
     injector.bind("videoPlayerViewModelBinder", VideoPlayerViewModelBinder);
     injector.bind("mapViewModelBinder", MapViewModelBinder);
 
+    modelBinders.push(injector.resolve("formModelBinder"));
+    injector.bind("formViewModelBinder", FormViewModelBinder);
+    viewModelBinders.push(injector.resolve("formViewModelBinder"));
 
     viewModelBinders.push(injector.resolve("pageViewModelBinder"));
     viewModelBinders.push(injector.resolve("sectionViewModelBinder"));
@@ -133,47 +142,6 @@ $(() => {
     viewModelBinders.push(injector.resolve("youtubePlayerViewModelBinder"));
     viewModelBinders.push(injector.resolve("videoPlayerViewModelBinder"));
     viewModelBinders.push(injector.resolve("mapViewModelBinder"));
-
-
-    injector.bind("substitute1ModelBinder", Substitute1ModelBinder);
-    modelBinders.push(injector.resolve("substitute1ModelBinder"));
-    injector.bind("substitute1ViewModelBinder", Substitute1ViewModelBinder);
-    viewModelBinders.push(injector.resolve("substitute1ViewModelBinder"));
-
-    injector.bind("substitute2ModelBinder", Substitute2ModelBinder);
-    modelBinders.push(injector.resolve("substitute2ModelBinder"));
-    injector.bind("substitute2ViewModelBinder", Substitute2ViewModelBinder);
-    viewModelBinders.push(injector.resolve("substitute2ViewModelBinder"));
-
-    injector.bind("substitute3ModelBinder", Substitute3ModelBinder);
-    modelBinders.push(injector.resolve("substitute3ModelBinder"));
-    injector.bind("substitute3ViewModelBinder", Substitute3ViewModelBinder);
-    viewModelBinders.push(injector.resolve("substitute3ViewModelBinder"));
-
-    injector.bind("substitute4ModelBinder", Substitute4ModelBinder);
-    modelBinders.push(injector.resolve("substitute4ModelBinder"));
-    injector.bind("substitute4ViewModelBinder", Substitute4ViewModelBinder);
-    viewModelBinders.push(injector.resolve("substitute4ViewModelBinder"));
-
-    injector.bind("substitute5ModelBinder", Substitute5ModelBinder);
-    modelBinders.push(injector.resolve("substitute5ModelBinder"));
-    injector.bind("substitute5ViewModelBinder", Substitute5ViewModelBinder);
-    viewModelBinders.push(injector.resolve("substitute5ViewModelBinder"));
-
-    injector.bind("substitute6ModelBinder", Substitute6ModelBinder);
-    modelBinders.push(injector.resolve("substitute6ModelBinder"));
-    injector.bind("substitute6ViewModelBinder", Substitute6ViewModelBinder);
-    viewModelBinders.push(injector.resolve("substitute6ViewModelBinder"));
-
-    injector.bind("substitute7ModelBinder", Substitute7ModelBinder);
-    modelBinders.push(injector.resolve("substitute7ModelBinder"));
-    injector.bind("substitute7ViewModelBinder", Substitute7ViewModelBinder);
-    viewModelBinders.push(injector.resolve("substitute7ViewModelBinder"));
-
-    injector.bind("substitute8ModelBinder", Substitute8ModelBinder);
-    modelBinders.push(injector.resolve("substitute8ModelBinder"));
-    injector.bind("substitute8ViewModelBinder", Substitute8ViewModelBinder);
-    viewModelBinders.push(injector.resolve("substitute8ViewModelBinder"));
 
 
     /*** Autostart ***/

@@ -4,12 +4,8 @@
 .navbar-expand-lg,
 .navbar-expand-md,
 .navbar-expand-sm {
-    font-size: 15px;
     font-weight: 400;
-    text-transform: uppercase;
-    color: #4C4C4C;
-    padding: 15px 18px;
-    white-space: nowrap;
+    text-transform: lowercase;
 }
 
 .navbar {
@@ -25,6 +21,8 @@
 
         .nav-link {
             display: inline-block;
+            padding: 15px 20px;
+            color: #5CC6D0;
         }
     }
 }
