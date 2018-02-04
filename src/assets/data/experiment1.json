@@ -1,2535 +1,1736 @@
 {
-      "blocks" : {
-        "0d1934f7-446c-34a0-ccb4-82e44cae890f" : {
-          "content" : {
-            "background" : {
-              "position" : "center center",
-              "size" : "cover"
-            },
-            "layout" : "container",
-            "nodes" : [ {
-              "nodes" : [ {
-                "alignment" : {
-                  "xl" : "center center"
+  "blocks": {
+    "0d1934f7-446c-34a0-ccb4-82e44cae890f": {
+      "content": {
+        "background": {
+          "position": "center center",
+          "size": "cover"
+        },
+        "layout": "container",
+        "nodes": [
+          {
+            "nodes": [
+              {
+                "alignment": {
+                  "xl": "center center"
                 },
-                "nodes" : [ {
-                  "animation" : "none",
-                  "caption" : "Picture",
-                  "layout" : "noframe",
-                  "object" : "block",
-                  "sourceKey" : "permalinks/c7a63e62-bfb9-464a-ce18-662564681a72",
-                  "type" : "picture"
-                } ],
-                "object" : "block",
-                "size" : {
-                  "lg" : "12",
-                  "md" : "12",
-                  "sm" : "12"
+                "nodes": [
+                  {
+                    "animation": "none",
+                    "caption": "Picture",
+                    "layout": "noframe",
+                    "object": "block",
+                    "sourceKey": "permalinks/c7a63e62-bfb9-464a-ce18-662564681a72",
+                    "type": "picture"
+                  }
+                ],
+                "object": "block",
+                "size": {
+                  "lg": "12",
+                  "md": "12",
+                  "sm": "12"
                 },
-                "type" : "layout-column"
-              } ],
-              "object" : "block",
-              "type" : "layout-row"
-            }, {
-              "nodes" : [ {
-                "nodes" : [ {
-                  "nodes" : [ {
-                    "data" : {
-                      "alignment" : "align-center",
-                      "categories" : {
-                        "alignment" : [ "text.alignment.viewports.xl.alignedCenter", "text.alignment.viewports.xs.alignedLeft", "text.alignment.viewports.sm.alignedCenter" ]
-                      }
-                    },
-                    "isVoid" : false,
-                    "nodes" : [ {
-                      "leaves" : [ {
-                        "object" : "leaf",
-                        "text" : "Content authoring tools for web apps"
-                      } ],
-                      "object" : "text"
-                    } ],
-                    "object" : "block",
-                    "type" : "heading-one"
-                  }, {
-                    "data" : {
-                      "alignment" : "align-center",
-                      "categories" : {
-                        "alignment" : [ "text.alignment.viewports.xl.alignedCenter", "text.alignment.viewports.xs.alignedLeft", "text.alignment.viewports.sm.alignedCenter" ]
-                      }
-                    },
-                    "isVoid" : false,
-                    "nodes" : [ {
-                      "leaves" : [ {
-                        "object" : "leaf",
-                        "text" : "This is an Open Source product which offers a set of components and tools for developing web applications with rich content authoring capabilities."
-                      } ],
-                      "object" : "text"
-                    } ],
-                    "object" : "block",
-                    "type" : "paragraph"
-                  } ],
-                  "object" : "widget",
-                  "type" : "text"
-                } ],
-                "object" : "block",
-                "size" : {
-                  "lg" : "12",
-                  "md" : "12",
-                  "sm" : "12"
-                },
-                "type" : "layout-column"
-              } ],
-              "object" : "block",
-              "type" : "layout-row"
-            } ],
-            "object" : "block",
-            "padding" : "with-padding",
-            "snapping" : "none",
-            "type" : "layout-section"
+                "type": "layout-column"
+              }
+            ],
+            "object": "block",
+            "type": "layout-row"
           },
-          "description" : "",
-          "key" : "blocks/0d1934f7-446c-34a0-ccb4-82e44cae890f",
-          "title" : "Cool"
-        },
-        "aeff4ae2-4ad0-0887-7082-d7b2ad67e55d" : {
-          "content" : {
-            "layout" : "container",
-            "nodes" : [ {
-              "nodes" : [ {
-                "nodes" : [ {
-                  "animation" : "none",
-                  "caption" : "Picture",
-                  "layout" : "noframe",
-                  "object" : "block",
-                  "type" : "picture"
-                } ],
-                "object" : "block",
-                "size" : {
-                  "lg" : "4",
-                  "sm" : 6
-                },
-                "type" : "layout-column"
-              }, {
-                "alignment" : {
-                  "lg" : "center start"
-                },
-                "nodes" : [ {
-                  "nodes" : [ {
-                    "data" : {
-                      "categories" : {
-                        "alignment" : [ "alignedLeft-lg" ]
-                      }
-                    },
-                    "nodes" : [ {
-                      "leaves" : [ {
-                        "text" : "Heading"
-                      } ],
-                      "object" : "text"
-                    } ],
-                    "object" : "block",
-                    "type" : "heading-three"
-                  }, {
-                    "isVoid" : false,
-                    "nodes" : [ {
-                      "leaves" : [ {
-                        "text" : "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna."
-                      } ],
-                      "object" : "text"
-                    } ],
-                    "object" : "block",
-                    "type" : "paragraph"
-                  } ],
-                  "object" : "widget",
-                  "type" : "text"
-                }, {
-                  "hyperlink" : {
-                    "href" : "/blog/new-party-creation-flow",
-                    "permalinkKey" : "permalinks/b97d538e-5724-c9d4-d603-38ffd7e6dfa5",
-                    "target" : "_blank"
-                  },
-                  "label" : "Button",
-                  "object" : "block",
-                  "size" : "medium",
-                  "style" : "primary",
-                  "type" : "button"
-                } ],
-                "object" : "block",
-                "size" : {
-                  "lg" : "8"
-                },
-                "type" : "layout-column"
-              } ],
-              "object" : "block",
-              "type" : "layout-row"
-            } ],
-            "object" : "block",
-            "padding" : "with-padding",
-            "type" : "layout-section"
-          },
-          "description" : "Block description",
-          "key" : "aeff4ae2-4ad0-0887-7082-d7b2ad67e55d",
-          "title" : "Blog post list item"
-        }
-      },
-      "files" : {
-        "7fe21f13-d1dd-00c1-c00e-a296b2cdcdca" : {
-          "key" : "files/7fe21f13-d1dd-00c1-c00e-a296b2cdcdca",
-          "nodes" : [ {
-            "background" : {
-              "color" : "#ffffff",
-              "position" : "center center",
-              "size" : "cover"
-            },
-            "layout" : "container",
-            "nodes" : [ {
-              "nodes" : [ {
-                "alignment" : {
-                  "lg" : "middle end",
-                  "md" : "middle end",
-                  "sm" : "middle end",
-                  "xl" : "middle end"
-                },
-                "nodes" : [ {
-                  "object" : "block",
-                  "pictureSourceKey" : "permalinks/4cfcb0a0-4839-26de-6057-038bc28622ff",
-                  "rootKey" : "navigationItems/main",
-                  "type" : "navbar"
-                } ],
-                "object" : "block",
-                "size" : {
-                  "lg" : "12",
-                  "md" : "12",
-                  "sm" : "12"
-                },
-                "type" : "layout-column"
-              } ],
-              "object" : "block",
-              "type" : "layout-row"
-            } ],
-            "object" : "block",
-            "padding" : "without-padding",
-            "snapping" : "none",
-            "type" : "layout-section"
-          }, {
-            "nodes" : [ {
-              "background" : {
-                "position" : "center center",
-                "size" : "cover"
-              },
-              "layout" : "container",
-              "nodes" : [ {
-                "nodes" : [ {
-                  "alignment" : {
-                    "xl" : "center center"
-                  },
-                  "nodes" : [ {
-                    "animation" : "none",
-                    "caption" : "Picture",
-                    "layout" : "noframe",
-                    "object" : "block",
-                    "sourceKey" : "permalinks/c7a63e62-bfb9-464a-ce18-662564681a72",
-                    "type" : "picture"
-                  } ],
-                  "object" : "block",
-                  "size" : {
-                    "lg" : "12",
-                    "md" : "12",
-                    "sm" : "12"
-                  },
-                  "type" : "layout-column"
-                } ],
-                "object" : "block",
-                "type" : "layout-row"
-              }, {
-                "nodes" : [ {
-                  "nodes" : [ {
-                    "nodes" : [ {
-                      "data" : {
-                        "alignment" : "align-center",
-                        "categories" : {
-                          "alignment" : [ "text.alignment.viewports.xl.alignedCenter", "text.alignment.viewports.xs.alignedLeft", "text.alignment.viewports.sm.alignedCenter" ]
-                        }
+          {
+            "nodes": [
+              {
+                "nodes": [
+                  {
+                    "nodes": [
+                      {
+                        "data": {
+                          "alignment": "align-center",
+                          "categories": {
+                            "alignment": [
+                              "text.alignment.viewports.xl.alignedCenter",
+                              "text.alignment.viewports.xs.alignedLeft",
+                              "text.alignment.viewports.sm.alignedCenter"
+                            ]
+                          }
+                        },
+                        "isVoid": false,
+                        "nodes": [
+                          {
+                            "leaves": [
+                              {
+                                "object": "leaf",
+                                "text": "Content authoring tools for web apps"
+                              }
+                            ],
+                            "object": "text"
+                          }
+                        ],
+                        "object": "block",
+                        "type": "heading-one"
                       },
-                      "isVoid" : false,
-                      "nodes" : [ {
-                        "leaves" : [ {
-                          "object" : "leaf",
-                          "text" : "Content authoring tools for web apps"
-                        } ],
-                        "object" : "text"
-                      } ],
-                      "object" : "block",
-                      "type" : "heading-one"
-                    }, {
-                      "data" : {
-                        "alignment" : "align-center",
-                        "categories" : {
-                          "alignment" : [ "text.alignment.viewports.xl.alignedCenter", "text.alignment.viewports.xs.alignedLeft", "text.alignment.viewports.sm.alignedCenter" ]
-                        }
-                      },
-                      "isVoid" : false,
-                      "nodes" : [ {
-                        "leaves" : [ {
-                          "object" : "leaf",
-                          "text" : "This is an Open Source product which offers a set of components and tools for developing web applications with rich content authoring capabilities."
-                        } ],
-                        "object" : "text"
-                      } ],
-                      "object" : "block",
-                      "type" : "paragraph"
-                    } ],
-                    "object" : "widget",
-                    "type" : "text"
-                  } ],
-                  "object" : "block",
-                  "size" : {
-                    "lg" : "12",
-                    "md" : "12",
-                    "sm" : "12"
-                  },
-                  "type" : "layout-column"
-                } ],
-                "object" : "block",
-                "type" : "layout-row"
-              } ],
-              "object" : "block",
-              "padding" : "with-padding",
-              "snapping" : "none",
-              "type" : "layout-section"
-            }, {
-              "background" : {
-                "position" : "center center",
-                "size" : "contain"
-              },
-              "layout" : "container",
-              "nodes" : [ {
-                "nodes" : [ {
-                  "nodes" : [ {
-                    "nodes" : [ {
-                      "data" : {
-                        "categories" : {
-                          "alignment" : [ "text.alignment.viewports.xl.alignedCenter" ]
-                        }
-                      },
-                      "isVoid" : false,
-                      "nodes" : [ {
-                        "leaves" : [ {
-                          "object" : "leaf",
-                          "text" : "Outputs JSON"
-                        } ],
-                        "object" : "text"
-                      } ],
-                      "object" : "block",
-                      "type" : "heading-two"
-                    }, {
-                      "data" : {
-                        "categories" : {
-                          "alignment" : [ "text.alignment.viewports.xl.alignedCenter" ]
-                        }
-                      },
-                      "isVoid" : false,
-                      "nodes" : [ {
-                        "leaves" : [ {
-                          "object" : "leaf",
-                          "text" : "Produces description of the content abstract from framework or theme."
-                        } ],
-                        "object" : "text"
-                      } ],
-                      "object" : "block",
-                      "type" : "paragraph"
-                    } ],
-                    "object" : "widget",
-                    "type" : "text"
-                  } ],
-                  "object" : "block",
-                  "size" : {
-                    "lg" : "12",
-                    "md" : "12",
-                    "sm" : "12"
-                  },
-                  "type" : "layout-column"
-                } ],
-                "object" : "block",
-                "type" : "layout-row"
-              }, {
-                "nodes" : [ {
-                  "alignment" : {
-                    "xl" : "center center"
-                  },
-                  "nodes" : [ {
-                    "nodes" : [ {
-                      "data" : {
-                        "categories" : {
-                          "alignment" : [ "text.alignment.viewports.xl.alignedCenter" ]
-                        }
-                      },
-                      "isVoid" : false,
-                      "nodes" : [ {
-                        "leaves" : [ {
-                          "object" : "leaf",
-                          "text" : "A line of text in "
-                        }, {
-                          "marks" : [ {
-                            "object" : "mark",
-                            "type" : "bold"
-                          } ],
-                          "object" : "leaf",
-                          "text" : "paragraph"
-                        } ],
-                        "object" : "text"
-                      } ],
-                      "object" : "block",
-                      "type" : "code"
-                    } ],
-                    "object" : "widget",
-                    "type" : "text"
-                  } ],
-                  "object" : "block",
-                  "size" : {
-                    "lg" : "6",
-                    "md" : "6",
-                    "sm" : "6"
-                  },
-                  "type" : "layout-column"
-                }, {
-                  "nodes" : [ {
-                    "animation" : "none",
-                    "caption" : "json-output-example.svg",
-                    "layout" : "noframe",
-                    "object" : "block",
-                    "sourceKey" : "permalinks/e0e5eb90-7ebe-e85a-dedb-ea17daf73201",
-                    "type" : "picture"
-                  } ],
-                  "object" : "block",
-                  "size" : {
-                    "lg" : "6",
-                    "md" : "6",
-                    "sm" : "6"
-                  },
-                  "type" : "layout-column"
-                } ],
-                "object" : "block",
-                "type" : "layout-row"
-              } ],
-              "object" : "block",
-              "padding" : "with-padding",
-              "snapping" : "none",
-              "type" : "layout-section"
-            }, {
-              "background" : {
-                "position" : "center center",
-                "size" : "contain"
-              },
-              "layout" : "container",
-              "nodes" : [ {
-                "nodes" : [ {
-                  "nodes" : [ {
-                    "nodes" : [ {
-                      "data" : {
-                        "categories" : {
-                          "alignment" : [ "text.alignment.viewports.xl.alignedCenter" ]
-                        }
-                      },
-                      "isVoid" : false,
-                      "nodes" : [ {
-                        "leaves" : [ {
-                          "object" : "leaf",
-                          "text" : "Getting started"
-                        } ],
-                        "object" : "text"
-                      } ],
-                      "object" : "block",
-                      "type" : "heading-two"
-                    } ],
-                    "object" : "widget",
-                    "type" : "text"
-                  } ],
-                  "object" : "block",
-                  "size" : {
-                    "lg" : "12",
-                    "md" : "12",
-                    "sm" : "12"
-                  },
-                  "type" : "layout-column"
-                } ],
-                "object" : "block",
-                "type" : "layout-row"
-              }, {
-                "nodes" : [ {
-                  "nodes" : [ {
-                    "animation" : "none",
-                    "caption" : "Picture",
-                    "layout" : "noframe",
-                    "object" : "block",
-                    "sourceKey" : "permalinks/8e7766d2-c970-df1c-c2a9-880d0d4abe52",
-                    "type" : "picture"
-                  } ],
-                  "object" : "block",
-                  "size" : {
-                    "lg" : "12",
-                    "md" : "12",
-                    "sm" : "12"
-                  },
-                  "type" : "layout-column"
-                } ],
-                "object" : "block",
-                "type" : "layout-row"
-              } ],
-              "object" : "block",
-              "padding" : "with-padding",
-              "snapping" : "none",
-              "type" : "layout-section"
-            }, {
-              "background" : {
-                "position" : "center center",
-                "size" : "contain"
-              },
-              "layout" : "container",
-              "nodes" : [ {
-                "nodes" : [ {
-                  "nodes" : [ {
-                    "nodes" : [ {
-                      "data" : {
-                        "categories" : {
-                          "alignment" : [ "text.alignment.viewports.xl.alignedCenter" ]
-                        }
-                      },
-                      "isVoid" : false,
-                      "nodes" : [ {
-                        "leaves" : [ {
-                          "object" : "leaf",
-                          "text" : "Frameworks"
-                        } ],
-                        "object" : "text"
-                      } ],
-                      "object" : "block",
-                      "type" : "heading-two"
-                    } ],
-                    "object" : "widget",
-                    "type" : "text"
-                  } ],
-                  "object" : "block",
-                  "size" : {
-                    "lg" : "12",
-                    "md" : "12",
-                    "sm" : "12"
-                  },
-                  "type" : "layout-column"
-                } ],
-                "object" : "block",
-                "type" : "layout-row"
-              }, {
-                "nodes" : [ {
-                  "nodes" : [ {
-                    "animation" : "none",
-                    "caption" : "Picture",
-                    "layout" : "noframe",
-                    "object" : "block",
-                    "sourceKey" : "permalinks/bb88e60f-80b3-65b2-1bf3-703e55dfd0f9",
-                    "type" : "picture"
-                  } ],
-                  "object" : "block",
-                  "size" : {
-                    "lg" : "12",
-                    "md" : "12",
-                    "sm" : "12"
-                  },
-                  "type" : "layout-column"
-                } ],
-                "object" : "block",
-                "type" : "layout-row"
-              } ],
-              "object" : "block",
-              "padding" : "with-padding",
-              "snapping" : "none",
-              "type" : "layout-section"
-            }, {
-              "background" : {
-                "position" : "center center",
-                "size" : "contain"
-              },
-              "layout" : "container",
-              "nodes" : [ {
-                "nodes" : [ {
-                  "nodes" : [ {
-                    "nodes" : [ {
-                      "data" : {
-                        "categories" : {
-                          "alignment" : [ "text.alignment.viewports.xl.alignedCenter" ]
-                        }
-                      },
-                      "isVoid" : false,
-                      "nodes" : [ {
-                        "leaves" : [ {
-                          "object" : "leaf",
-                          "text" : "Offline-first"
-                        } ],
-                        "object" : "text"
-                      } ],
-                      "object" : "block",
-                      "type" : "heading-two"
-                    } ],
-                    "object" : "widget",
-                    "type" : "text"
-                  } ],
-                  "object" : "block",
-                  "size" : {
-                    "lg" : "12",
-                    "md" : "12",
-                    "sm" : "12"
-                  },
-                  "type" : "layout-column"
-                } ],
-                "object" : "block",
-                "type" : "layout-row"
-              } ],
-              "object" : "block",
-              "padding" : "with-padding",
-              "snapping" : "none",
-              "type" : "layout-section"
-            }, {
-              "background" : {
-                "position" : "center center",
-                "size" : "contain"
-              },
-              "layout" : "container",
-              "nodes" : [ {
-                "nodes" : [ {
-                  "nodes" : [ {
-                    "nodes" : [ {
-                      "data" : {
-                        "categories" : {
-                          "alignment" : [ "text.alignment.viewports.xl.alignedCenter" ]
-                        }
-                      },
-                      "isVoid" : false,
-                      "nodes" : [ {
-                        "leaves" : [ {
-                          "object" : "leaf",
-                          "text" : "API-first"
-                        } ],
-                        "object" : "text"
-                      } ],
-                      "object" : "block",
-                      "type" : "heading-two"
-                    } ],
-                    "object" : "widget",
-                    "type" : "text"
-                  } ],
-                  "object" : "block",
-                  "size" : {
-                    "lg" : "12",
-                    "md" : "12",
-                    "sm" : "12"
-                  },
-                  "type" : "layout-column"
-                } ],
-                "object" : "block",
-                "type" : "layout-row"
-              } ],
-              "object" : "block",
-              "padding" : "with-padding",
-              "snapping" : "none",
-              "type" : "layout-section"
-            } ],
-            "object" : "block",
-            "type" : "page"
-          }, {
-            "background" : {
-              "color" : "#ffffff",
-              "position" : "center center",
-              "size" : "cover"
-            },
-            "layout" : "container",
-            "nodes" : [ {
-              "nodes" : [ {
-                "alignment" : {
-                  "lg" : "top end",
-                  "md" : "top end",
-                  "sm" : "top center",
-                  "xl" : "top start"
-                },
-                "nodes" : [ {
-                  "nodes" : [ {
-                    "data" : {
-                      "categories" : {
-                        "alignment" : [ "text.alignment.viewports.xs.alignedCenter", "text.alignment.viewports.sm.alignedCenter", "text.alignment.viewports.xl.alignedLeft" ]
+                      {
+                        "data": {
+                          "alignment": "align-center",
+                          "categories": {
+                            "alignment": [
+                              "text.alignment.viewports.xl.alignedCenter",
+                              "text.alignment.viewports.xs.alignedLeft",
+                              "text.alignment.viewports.sm.alignedCenter"
+                            ]
+                          }
+                        },
+                        "isVoid": false,
+                        "nodes": [
+                          {
+                            "leaves": [
+                              {
+                                "object": "leaf",
+                                "text": "This is an Open Source product which offers a set of components and tools for developing web applications with rich content authoring capabilities."
+                              }
+                            ],
+                            "object": "text"
+                          }
+                        ],
+                        "object": "block",
+                        "type": "paragraph"
                       }
-                    },
-                    "isVoid" : false,
-                    "nodes" : [ {
-                      "leaves" : [ {
-                        "object" : "leaf",
-                        "text" : "Company"
-                      } ],
-                      "object" : "text"
-                    } ],
-                    "object" : "block",
-                    "type" : "paragraph"
-                  }, {
-                    "data" : {
-                      "categories" : {
-                        "alignment" : [ "text.alignment.viewports.sm.alignedCenter", "text.alignment.viewports.xl.alignedLeft" ]
-                      }
-                    },
-                    "isVoid" : false,
-                    "nodes" : [ {
-                      "leaves" : [ {
-                        "object" : "leaf",
-                        "text" : ""
-                      } ],
-                      "object" : "text"
-                    }, {
-                      "data" : {
-                        "href" : "mailto:support@paperbits.io",
-                        "target" : "_blank"
-                      },
-                      "isVoid" : false,
-                      "nodes" : [ {
-                        "leaves" : [ {
-                          "object" : "leaf",
-                          "text" : "support"
-                        } ],
-                        "object" : "text"
-                      } ],
-                      "object" : "inline",
-                      "type" : "link"
-                    }, {
-                      "leaves" : [ {
-                        "object" : "leaf",
-                        "text" : ""
-                      } ],
-                      "object" : "text"
-                    } ],
-                    "object" : "block",
-                    "type" : "paragraph"
-                  }, {
-                    "data" : {
-                      "categories" : {
-                        "alignment" : [ "text.alignment.viewports.sm.alignedCenter", "text.alignment.viewports.xl.alignedLeft" ]
-                      }
-                    },
-                    "isVoid" : false,
-                    "nodes" : [ {
-                      "leaves" : [ {
-                        "object" : "leaf",
-                        "text" : ""
-                      } ],
-                      "object" : "text"
-                    }, {
-                      "data" : {
-                        "href" : "https://github.com/paperbits/paperbits-demo/wiki/terms-of-use",
-                        "target" : "_blank"
-                      },
-                      "isVoid" : false,
-                      "nodes" : [ {
-                        "leaves" : [ {
-                          "object" : "leaf",
-                          "text" : "terms of use"
-                        } ],
-                        "object" : "text"
-                      } ],
-                      "object" : "inline",
-                      "type" : "link"
-                    }, {
-                      "leaves" : [ {
-                        "object" : "leaf",
-                        "text" : ""
-                      } ],
-                      "object" : "text"
-                    } ],
-                    "object" : "block",
-                    "type" : "paragraph"
-                  }, {
-                    "data" : {
-                      "categories" : {
-                        "alignment" : [ "text.alignment.viewports.sm.alignedCenter", "text.alignment.viewports.xl.alignedLeft" ]
-                      }
-                    },
-                    "isVoid" : false,
-                    "nodes" : [ {
-                      "leaves" : [ {
-                        "object" : "leaf",
-                        "text" : ""
-                      } ],
-                      "object" : "text"
-                    }, {
-                      "data" : {
-                        "href" : "https://github.com/paperbits/paperbits-demo/wiki/privacy-policy",
-                        "target" : "_blank"
-                      },
-                      "isVoid" : false,
-                      "nodes" : [ {
-                        "leaves" : [ {
-                          "object" : "leaf",
-                          "text" : "privacy policy"
-                        } ],
-                        "object" : "text"
-                      } ],
-                      "object" : "inline",
-                      "type" : "link"
-                    }, {
-                      "leaves" : [ {
-                        "object" : "leaf",
-                        "text" : ""
-                      } ],
-                      "object" : "text"
-                    } ],
-                    "object" : "block",
-                    "type" : "paragraph"
-                  } ],
-                  "object" : "widget",
-                  "type" : "text"
-                } ],
-                "object" : "block",
-                "size" : {
-                  "md" : "4"
+                    ],
+                    "object": "widget",
+                    "type": "text"
+                  }
+                ],
+                "object": "block",
+                "size": {
+                  "lg": "12",
+                  "md": "12",
+                  "sm": "12"
                 },
-                "type" : "layout-column"
-              }, {
-                "alignment" : {
-                  "lg" : "top end",
-                  "md" : "top end",
-                  "sm" : "top center",
-                  "xl" : "top start"
-                },
-                "nodes" : [ {
-                  "nodes" : [ {
-                    "data" : {
-                      "categories" : {
-                        "alignment" : [ "text.alignment.viewports.xs.alignedCenter", "text.alignment.viewports.sm.alignedCenter", "text.alignment.viewports.xl.alignedLeft" ]
-                      }
-                    },
-                    "isVoid" : false,
-                    "nodes" : [ {
-                      "leaves" : [ {
-                        "object" : "leaf",
-                        "text" : "Resources"
-                      } ],
-                      "object" : "text"
-                    } ],
-                    "object" : "block",
-                    "type" : "paragraph"
-                  }, {
-                    "data" : {
-                      "categories" : {
-                        "alignment" : [ "text.alignment.viewports.sm.alignedCenter", "text.alignment.viewports.xl.alignedLeft" ]
-                      }
-                    },
-                    "isVoid" : false,
-                    "nodes" : [ {
-                      "leaves" : [ {
-                        "object" : "leaf",
-                        "text" : ""
-                      } ],
-                      "object" : "text"
-                    }, {
-                      "data" : {
-                        "href" : "https://github.com/paperbits/paperbits-knockout/wiki/f.a.q.",
-                        "target" : "_blank"
-                      },
-                      "isVoid" : false,
-                      "nodes" : [ {
-                        "leaves" : [ {
-                          "object" : "leaf",
-                          "text" : "f.a.q."
-                        } ],
-                        "object" : "text"
-                      } ],
-                      "object" : "inline",
-                      "type" : "link"
-                    }, {
-                      "leaves" : [ {
-                        "object" : "leaf",
-                        "text" : ""
-                      } ],
-                      "object" : "text"
-                    } ],
-                    "object" : "block",
-                    "type" : "paragraph"
-                  }, {
-                    "data" : {
-                      "categories" : {
-                        "alignment" : [ "text.alignment.viewports.sm.alignedCenter", "text.alignment.viewports.xl.alignedLeft" ]
-                      }
-                    },
-                    "isVoid" : false,
-                    "nodes" : [ {
-                      "leaves" : [ {
-                        "object" : "leaf",
-                        "text" : ""
-                      } ],
-                      "object" : "text"
-                    }, {
-                      "data" : {
-                        "href" : "https://github.com/paperbits/paperbits-knockout/wiki",
-                        "target" : "_blank"
-                      },
-                      "isVoid" : false,
-                      "nodes" : [ {
-                        "leaves" : [ {
-                          "object" : "leaf",
-                          "text" : "documentation"
-                        } ],
-                        "object" : "text"
-                      } ],
-                      "object" : "inline",
-                      "type" : "link"
-                    }, {
-                      "leaves" : [ {
-                        "object" : "leaf",
-                        "text" : ""
-                      } ],
-                      "object" : "text"
-                    } ],
-                    "object" : "block",
-                    "type" : "paragraph"
-                  } ],
-                  "object" : "widget",
-                  "type" : "text"
-                } ],
-                "object" : "block",
-                "size" : {
-                  "md" : "4"
-                },
-                "type" : "layout-column"
-              }, {
-                "alignment" : {
-                  "lg" : "top end",
-                  "md" : "top end",
-                  "sm" : "top end",
-                  "xl" : "top start"
-                },
-                "nodes" : [ {
-                  "nodes" : [ {
-                    "data" : {
-                      "categories" : {
-                        "alignment" : [ "text.alignment.viewports.xs.alignedCenter", "text.alignment.viewports.xl.alignedLeft" ]
-                      }
-                    },
-                    "isVoid" : false,
-                    "nodes" : [ {
-                      "leaves" : [ {
-                        "object" : "leaf",
-                        "text" : "Community"
-                      } ],
-                      "object" : "text"
-                    } ],
-                    "object" : "block",
-                    "type" : "paragraph"
-                  }, {
-                    "data" : {
-                      "categories" : {
-                        "alignment" : [ "text.alignment.viewports.xl.alignedLeft" ]
-                      }
-                    },
-                    "isVoid" : false,
-                    "nodes" : [ {
-                      "leaves" : [ {
-                        "object" : "leaf",
-                        "text" : ""
-                      } ],
-                      "object" : "text"
-                    }, {
-                      "data" : {
-                        "href" : "https://twitter.com/paperbitsproj",
-                        "target" : "_blank"
-                      },
-                      "isVoid" : false,
-                      "nodes" : [ {
-                        "leaves" : [ {
-                          "object" : "leaf",
-                          "text" : "twitter"
-                        } ],
-                        "object" : "text"
-                      } ],
-                      "object" : "inline",
-                      "type" : "link"
-                    }, {
-                      "leaves" : [ {
-                        "object" : "leaf",
-                        "text" : ""
-                      } ],
-                      "object" : "text"
-                    } ],
-                    "object" : "block",
-                    "type" : "paragraph"
-                  }, {
-                    "data" : {
-                      "categories" : {
-                        "alignment" : [ "text.alignment.viewports.xl.alignedLeft" ]
-                      }
-                    },
-                    "isVoid" : false,
-                    "nodes" : [ {
-                      "leaves" : [ {
-                        "object" : "leaf",
-                        "text" : ""
-                      } ],
-                      "object" : "text"
-                    }, {
-                      "data" : {
-                        "href" : "https://www.linkedin.com/company/paperbits",
-                        "target" : "_blank"
-                      },
-                      "isVoid" : false,
-                      "nodes" : [ {
-                        "leaves" : [ {
-                          "object" : "leaf",
-                          "text" : "linkedin"
-                        } ],
-                        "object" : "text"
-                      } ],
-                      "object" : "inline",
-                      "type" : "link"
-                    }, {
-                      "leaves" : [ {
-                        "object" : "leaf",
-                        "text" : ""
-                      } ],
-                      "object" : "text"
-                    } ],
-                    "object" : "block",
-                    "type" : "paragraph"
-                  } ],
-                  "object" : "widget",
-                  "type" : "text"
-                } ],
-                "object" : "block",
-                "size" : {
-                  "lg" : "4",
-                  "md" : "4",
-                  "sm" : "4"
-                },
-                "type" : "layout-column"
-              } ],
-              "object" : "block",
-              "type" : "layout-row"
-            }, {
-              "nodes" : [ {
-                "nodes" : [ {
-                  "nodes" : [ {
-                    "data" : {
-                      "alignment" : "align-center",
-                      "categories" : {
-                        "alignment" : [ "text.alignment.viewports.xs.alignedCenter", "text.alignment.viewports.xl.alignedCenter" ]
-                      }
-                    },
-                    "isVoid" : false,
-                    "nodes" : [ {
-                      "leaves" : [ {
-                        "marks" : [ {
-                          "data" : {
-                            "style" : {
-                              "color" : "#2a2f30"
-                            }
-                          },
-                          "object" : "mark",
-                          "type" : "styled"
-                        } ],
-                        "object" : "leaf",
-                        "text" : "© 2018 Vienna LLC. All rights reserved."
-                      } ],
-                      "object" : "text"
-                    } ],
-                    "object" : "block",
-                    "type" : "paragraph"
-                  } ],
-                  "object" : "widget",
-                  "type" : "text"
-                } ],
-                "object" : "block",
-                "size" : {
-                  "md" : "12"
-                },
-                "type" : "layout-column"
-              } ],
-              "object" : "block",
-              "type" : "layout-row"
-            } ],
-            "object" : "block",
-            "padding" : "with-padding",
-            "snapping" : "none",
-            "type" : "layout-section"
-          } ],
-          "object" : "block",
-          "type" : "layout"
-        },
-        "84c722a7-e724-2942-8931-937578400254" : {
-          "key" : "files/84c722a7-e724-2942-8931-937578400254",
-          "nodes" : [ {
-            "background" : {
-              "color" : "transparent",
-              "picture" : {
-                "repeat" : "no-repeat",
-                "sourcePermalinkKey" : "permalinks/b6dffe3a-3dfb-a691-beeb-1d9b3577a0e5"
-              },
-              "position" : "center center",
-              "size" : "cover"
-            },
-            "layout" : "container",
-            "nodes" : [ {
-              "nodes" : [ {
-                "object" : "block",
-                "size" : {
-                  "md" : "6"
-                },
-                "type" : "layout-column"
-              }, {
-                "alignment" : {
-                  "lg" : "middle start",
-                  "md" : "middle start",
-                  "sm" : "middle start"
-                },
-                "nodes" : [ {
-                  "nodes" : [ {
-                    "nodes" : [ {
-                      "object" : "text",
-                      "text" : ""
-                    } ],
-                    "object" : "block",
-                    "type" : "paragraph"
-                  }, {
-                    "nodes" : [ {
-                      "object" : "text",
-                      "text" : "Reservation, Waitlist, Table and Loyalty Management"
-                    } ],
-                    "object" : "block",
-                    "type" : "paragraph"
-                  }, {
-                    "nodes" : [ {
-                      "object" : "text",
-                      "text" : "\rOffer exceptional dining experiences - One guest at a time"
-                    } ],
-                    "object" : "block",
-                    "type" : "heading-one"
-                  } ],
-                  "object" : "widget",
-                  "type" : "text"
-                }, {
-                  "label" : "Schedule demo",
-                  "object" : "block",
-                  "size" : "large",
-                  "style" : "primary",
-                  "type" : "button"
-                }, {
-                  "label" : "Learn more",
-                  "object" : "block",
-                  "size" : "large",
-                  "style" : "default",
-                  "type" : "button"
-                } ],
-                "object" : "block",
-                "size" : {
-                  "md" : "6"
-                },
-                "type" : "layout-column"
-              } ],
-              "object" : "block",
-              "type" : "layout-row"
-            } ],
-            "object" : "block",
-            "padding" : "with-padding",
-            "snapping" : "none",
-            "type" : "layout-section"
-          }, {
-            "background" : {
-              "color" : "transparent",
-              "picture" : {
-                "repeat" : "no-repeat",
-                "sourcePermalinkKey" : "permalinks/64708262-8fd6-d041-89bc-f4f4ce3c0c07"
-              },
-              "position" : "center center",
-              "size" : "cover"
-            },
-            "layout" : "container",
-            "nodes" : [ {
-              "nodes" : [ {
-                "nodes" : [ {
-                  "nodes" : [ {
-                    "data" : {
-                      "alignment" : "align-center"
-                    },
-                    "nodes" : [ {
-                      "leaves" : [ {
-                        "marks" : [ {
-                          "data" : {
-                            "style" : {
-                              "color" : "#ffffff"
-                            }
-                          },
-                          "type" : "styled"
-                        } ],
-                        "text" : "Modern, Customizable Front-Of-House System"
-                      } ],
-                      "object" : "text"
-                    } ],
-                    "object" : "block",
-                    "type" : "heading-two"
-                  }, {
-                    "data" : {
-                      "alignment" : "align-center"
-                    },
-                    "nodes" : [ {
-                      "leaves" : [ {
-                        "marks" : [ {
-                          "data" : {
-                            "style" : {
-                              "color" : "#ffffff"
-                            }
-                          },
-                          "type" : "styled"
-                        } ],
-                        "text" : "Wait List, Reservation, and Loyalty management for restaurants"
-                      } ],
-                      "object" : "text"
-                    } ],
-                    "object" : "block",
-                    "type" : "paragraph"
-                  } ],
-                  "object" : "widget",
-                  "type" : "text"
-                } ],
-                "object" : "block",
-                "size" : {
-                  "md" : "12"
-                },
-                "type" : "layout-column"
-              } ],
-              "object" : "block",
-              "type" : "layout-row"
-            } ],
-            "object" : "block",
-            "padding" : "with-padding",
-            "snapping" : "none",
-            "type" : "layout-section"
-          }, {
-            "background" : {
-              "color" : "#f8f8f8",
-              "position" : "center center",
-              "size" : "cover"
-            },
-            "layout" : "container",
-            "nodes" : [ {
-              "nodes" : [ {
-                "alignment" : {
-                  "lg" : "middle start",
-                  "md" : "middle start",
-                  "sm" : "middle start"
-                },
-                "nodes" : [ {
-                  "nodes" : [ {
-                    "nodes" : [ {
-                      "object" : "text",
-                      "text" : "Reservations System\r"
-                    } ],
-                    "object" : "block",
-                    "type" : "heading-three"
-                  }, {
-                    "nodes" : [ {
-                      "object" : "text",
-                      "text" : "Remain in control while serving more diners. Accept reservations from your website or the Hostme mobile application. Leverage our unique \"Hybrid\" reservation mode to protect your restaurant from no-shows. Avoid double booking with the Hostme conflict validation algorithm."
-                    } ],
-                    "object" : "block",
-                    "type" : "paragraph"
-                  } ],
-                  "object" : "widget",
-                  "type" : "text"
-                }, {
-                  "label" : "Learn more",
-                  "object" : "block",
-                  "style" : "primary",
-                  "type" : "button"
-                } ],
-                "object" : "block",
-                "size" : {
-                  "md" : "6"
-                },
-                "type" : "layout-column"
-              }, {
-                "nodes" : [ {
-                  "animation" : "none",
-                  "caption" : "main-img-1@2x.png",
-                  "layout" : "noframe",
-                  "object" : "block",
-                  "sourceKey" : "permalinks/387f8806-06e9-0393-b780-0c8fd06d10b6",
-                  "type" : "picture"
-                } ],
-                "object" : "block",
-                "size" : {
-                  "md" : "6"
-                },
-                "type" : "layout-column"
-              } ],
-              "object" : "block",
-              "type" : "layout-row"
-            } ],
-            "object" : "block",
-            "padding" : "with-padding",
-            "snapping" : "none",
-            "type" : "layout-section"
-          }, {
-            "background" : {
-              "color" : "#eef1f2",
-              "position" : "center center",
-              "size" : "cover"
-            },
-            "layout" : "container",
-            "nodes" : [ {
-              "nodes" : [ {
-                "nodes" : [ {
-                  "animation" : "none",
-                  "caption" : "main-img-2@2x.png",
-                  "layout" : "noframe",
-                  "object" : "block",
-                  "sourceKey" : "permalinks/dd42f3a1-3741-5a51-dce1-cc4916ea3f47",
-                  "type" : "picture"
-                } ],
-                "object" : "block",
-                "size" : {
-                  "md" : "6"
-                },
-                "type" : "layout-column"
-              }, {
-                "alignment" : {
-                  "lg" : "middle start",
-                  "md" : "middle start",
-                  "sm" : "middle start"
-                },
-                "nodes" : [ {
-                  "nodes" : [ {
-                    "nodes" : [ {
-                      "object" : "text",
-                      "text" : "Table Management\r"
-                    } ],
-                    "object" : "block",
-                    "type" : "heading-three"
-                  }, {
-                    "nodes" : [ {
-                      "object" : "text",
-                      "text" : "Improve host efficiency and maximize seat utilization. Create a floor map of any complexity. Track restaurant occupancy. Assign reservations or walk-ins to a table in one click. Avoid double booking with our conflict validation algorithm.."
-                    } ],
-                    "object" : "block",
-                    "type" : "paragraph"
-                  } ],
-                  "object" : "widget",
-                  "type" : "text"
-                }, {
-                  "label" : "Learn more",
-                  "object" : "block",
-                  "style" : "primary",
-                  "type" : "button"
-                } ],
-                "object" : "block",
-                "size" : {
-                  "md" : "6"
-                },
-                "type" : "layout-column"
-              } ],
-              "object" : "block",
-              "type" : "layout-row"
-            } ],
-            "object" : "block",
-            "padding" : "with-padding",
-            "snapping" : "none",
-            "type" : "layout-section"
-          }, {
-            "background" : {
-              "color" : "#f8f8f8",
-              "position" : "center center",
-              "size" : "cover"
-            },
-            "layout" : "container",
-            "nodes" : [ {
-              "nodes" : [ {
-                "alignment" : {
-                  "lg" : "middle start",
-                  "md" : "middle start",
-                  "sm" : "middle start"
-                },
-                "nodes" : [ {
-                  "nodes" : [ {
-                    "nodes" : [ {
-                      "object" : "text",
-                      "text" : "Wait List\r"
-                    } ],
-                    "object" : "block",
-                    "type" : "heading-three"
-                  }, {
-                    "nodes" : [ {
-                      "object" : "text",
-                      "text" : "Seat parties faster and increase efficiency at the host stand. Notify guests when their table is ready using their phone. Track who waited an excessively long time and reward them with loyalty points or a free drink. Eliminate costly pager losses."
-                    } ],
-                    "object" : "block",
-                    "type" : "paragraph"
-                  } ],
-                  "object" : "widget",
-                  "type" : "text"
-                }, {
-                  "label" : "Learn more",
-                  "object" : "block",
-                  "style" : "primary",
-                  "type" : "button"
-                } ],
-                "object" : "block",
-                "size" : {
-                  "md" : "6"
-                },
-                "type" : "layout-column"
-              }, {
-                "nodes" : [ {
-                  "animation" : "none",
-                  "caption" : "comm@2x.png",
-                  "layout" : "noframe",
-                  "object" : "block",
-                  "sourceKey" : "permalinks/f04994a0-3608-4f2c-842f-dfd886349059",
-                  "type" : "picture"
-                } ],
-                "object" : "block",
-                "size" : {
-                  "md" : "6"
-                },
-                "type" : "layout-column"
-              } ],
-              "object" : "block",
-              "type" : "layout-row"
-            } ],
-            "object" : "block",
-            "padding" : "without-padding",
-            "snapping" : "none",
-            "type" : "layout-section"
-          }, {
-            "background" : {
-              "color" : "#eef1f2",
-              "position" : "center center",
-              "size" : "cover"
-            },
-            "layout" : "container",
-            "nodes" : [ {
-              "nodes" : [ {
-                "nodes" : [ {
-                  "animation" : "none",
-                  "caption" : "main-img-4@2x.png",
-                  "layout" : "noframe",
-                  "object" : "block",
-                  "sourceKey" : "permalinks/a4287b34-076a-c4a8-ad4b-2d0dd7bbe082",
-                  "type" : "picture"
-                } ],
-                "object" : "block",
-                "size" : {
-                  "md" : "6"
-                },
-                "type" : "layout-column"
-              }, {
-                "alignment" : {
-                  "lg" : "middle start",
-                  "md" : "middle start",
-                  "sm" : "middle start"
-                },
-                "nodes" : [ {
-                  "nodes" : [ {
-                    "nodes" : [ {
-                      "object" : "text",
-                      "text" : "Loyalty System\r"
-                    } ],
-                    "object" : "block",
-                    "type" : "heading-three"
-                  }, {
-                    "nodes" : [ {
-                      "object" : "text",
-                      "text" : "Loyalty program that matches your restaurant and your guests. Get your loyalty program up-and-running in no time. Let your guests enroll while they are waiting for their table or right after they are seated. Fill tables on days when it's usually slow with customized reward rules."
-                    } ],
-                    "object" : "block",
-                    "type" : "paragraph"
-                  } ],
-                  "object" : "widget",
-                  "type" : "text"
-                }, {
-                  "label" : "Learn more",
-                  "object" : "block",
-                  "style" : "primary",
-                  "type" : "button"
-                } ],
-                "object" : "block",
-                "size" : {
-                  "md" : "6"
-                },
-                "type" : "layout-column"
-              } ],
-              "object" : "block",
-              "type" : "layout-row"
-            } ],
-            "object" : "block",
-            "padding" : "with-padding",
-            "snapping" : "none",
-            "type" : "layout-section"
-          } ],
-          "object" : "block",
-          "type" : "page"
-        },
-        "a74a4283-a58c-c51f-382b-116c2fdf645a" : {
-          "key" : "files/a74a4283-a58c-c51f-382b-116c2fdf645a",
-          "nodes" : [ {
-            "nodes" : [ {
-              "align" : {
-                "md" : "center"
-              },
-              "nodes" : [ {
-                "nodes" : [ {
-                  "nodes" : [ {
-                    "nodes" : [ {
-                      "data" : {
-                        "href" : ""
-                      },
-                      "nodes" : [ {
-                        "object" : "text",
-                        "text" : "Learn from Kafe Leopolds how to manage crowd in popular places\r"
-                      } ],
-                      "object" : "inline",
-                      "type" : "link"
-                    } ],
-                    "object" : "block",
-                    "type" : "paragraph"
-                  }, {
-                    "nodes" : [ {
-                      "data" : {
-                        "href" : ""
-                      },
-                      "nodes" : [ {
-                        "object" : "text",
-                        "text" : "Don't wait at your favorite restaurant ever again!\r"
-                      } ],
-                      "object" : "inline",
-                      "type" : "link"
-                    } ],
-                    "object" : "block",
-                    "type" : "paragraph"
-                  }, {
-                    "nodes" : [ {
-                      "object" : "text",
-                      "text" : "Understanding OpenTable's game plan and how to cut your bill without losing customers"
-                    } ],
-                    "object" : "block",
-                    "type" : "paragraph"
-                  } ],
-                  "object" : "widget",
-                  "type" : "text"
-                } ],
-                "object" : "block",
-                "size" : {
-                  "md" : "12"
-                },
-                "type" : "layout-column"
-              } ],
-              "object" : "block",
-              "type" : "layout-row"
-            } ],
-            "object" : "block",
-            "type" : "layout-section"
-          } ],
-          "object" : "block",
-          "type" : "page"
-        },
-        "aae86ccd-61f5-1dbe-d7ff-b0f105f7a65c" : {
-          "key" : "files/aae86ccd-61f5-1dbe-d7ff-b0f105f7a65c",
-          "nodes" : [ {
-            "background" : {
-              "color" : "#f8f8f8",
-              "position" : "center center",
-              "size" : "cover"
-            },
-            "layout" : "container",
-            "nodes" : [ {
-              "nodes" : [ {
-                "alignment" : {
-                  "xl" : "center center"
-                },
-                "nodes" : [ {
-                  "nodes" : [ {
-                    "data" : {
-                      "alignment" : "align-center",
-                      "categories" : {
-                        "alignment" : "alignedCenter"
-                      }
-                    },
-                    "isVoid" : false,
-                    "nodes" : [ {
-                      "leaves" : [ {
-                        "marks" : [ {
-                          "data" : {
-                            "style" : {
-                              "color" : "#2a2f30"
-                            }
-                          },
-                          "object" : "mark",
-                          "type" : "styled"
-                        } ],
-                        "object" : "leaf",
-                        "text" : "About"
-                      } ],
-                      "object" : "text"
-                    } ],
-                    "object" : "block",
-                    "type" : "heading-one"
-                  }, {
-                    "data" : {
-                      "alignment" : "align-center",
-                      "categories" : {
-                        "alignment" : "alignedCenter"
-                      }
-                    },
-                    "isVoid" : false,
-                    "nodes" : [ {
-                      "leaves" : [ {
-                        "object" : "leaf",
-                        "text" : ""
-                      } ],
-                      "object" : "text"
-                    } ],
-                    "object" : "block",
-                    "type" : "paragraph"
-                  }, {
-                    "data" : {
-                      "alignment" : "align-center",
-                      "categories" : {
-                        "alignment" : "alignedCenter"
-                      }
-                    },
-                    "isVoid" : false,
-                    "nodes" : [ {
-                      "leaves" : [ {
-                        "object" : "leaf",
-                        "text" : ""
-                      } ],
-                      "object" : "text"
-                    } ],
-                    "object" : "block",
-                    "type" : "paragraph"
-                  } ],
-                  "object" : "widget",
-                  "type" : "text"
-                } ],
-                "object" : "block",
-                "size" : {
-                  "lg" : "12",
-                  "md" : "12",
-                  "sm" : "12"
-                },
-                "type" : "layout-column"
-              } ],
-              "object" : "block",
-              "type" : "layout-row"
-            } ],
-            "object" : "block",
-            "padding" : "with-padding",
-            "snapping" : "none",
-            "type" : "layout-section"
-          } ],
-          "object" : "block",
-          "type" : "page"
-        },
-        "b6913394-d816-1625-ffcf-54a521d048c1" : {
-          "key" : "files/b6913394-d816-1625-ffcf-54a521d048c1",
-          "nodes" : [ {
-            "background" : {
-              "position" : "center center",
-              "size" : "cover"
-            },
-            "layout" : "container",
-            "nodes" : [ {
-              "nodes" : [ {
-                "nodes" : [ {
-                  "caption" : "Picture",
-                  "layout" : "noframe",
-                  "object" : "block",
-                  "sourceKey" : "permalinks/275773e2-9018-4646-7d06-7f5cea3660fc",
-                  "type" : "picture"
-                } ],
-                "object" : "block",
-                "size" : {
-                  "lg" : "12",
-                  "md" : "12",
-                  "sm" : "12"
-                },
-                "type" : "layout-column"
-              } ],
-              "object" : "block",
-              "type" : "layout-row"
-            } ],
-            "object" : "block",
-            "padding" : "with-padding",
-            "snapping" : "none",
-            "type" : "layout-section"
-          } ],
-          "object" : "block",
-          "type" : "page"
-        },
-        "ca4052ac-e4f4-82a8-e341-be5517db366f" : {
-          "key" : "files/ca4052ac-e4f4-82a8-e341-be5517db366f",
-          "nodes" : [ {
-            "background" : {
-              "position" : "center center",
-              "size" : "contain"
-            },
-            "layout" : "container",
-            "object" : "block",
-            "padding" : "with-padding",
-            "snapping" : "none",
-            "type" : "layout-section"
-          } ],
-          "object" : "block",
-          "type" : "page"
-        },
-        "ffdcdb4e-bad4-dfd7-3e9c-c0b2a917b66a" : {
-          "key" : "files/ffdcdb4e-bad4-dfd7-3e9c-c0b2a917b66a",
-          "nodes" : [ {
-            "background" : {
-              "position" : "center center",
-              "size" : "cover"
-            },
-            "layout" : "container",
-            "nodes" : [ {
-              "nodes" : [ {
-                "alignment" : {
-                  "xl" : "center center"
-                },
-                "nodes" : [ {
-                  "animation" : "none",
-                  "caption" : "Picture",
-                  "layout" : "noframe",
-                  "object" : "block",
-                  "sourceKey" : "permalinks/c7a63e62-bfb9-464a-ce18-662564681a72",
-                  "type" : "picture"
-                } ],
-                "object" : "block",
-                "size" : {
-                  "lg" : "12",
-                  "md" : "12",
-                  "sm" : "12"
-                },
-                "type" : "layout-column"
-              } ],
-              "object" : "block",
-              "type" : "layout-row"
-            }, {
-              "nodes" : [ {
-                "nodes" : [ {
-                  "nodes" : [ {
-                    "data" : {
-                      "alignment" : "align-center",
-                      "categories" : {
-                        "alignment" : [ "text.alignment.viewports.xl.alignedCenter", "text.alignment.viewports.xs.alignedLeft", "text.alignment.viewports.sm.alignedCenter" ]
-                      }
-                    },
-                    "isVoid" : false,
-                    "nodes" : [ {
-                      "leaves" : [ {
-                        "object" : "leaf",
-                        "text" : "Content authoring tools for web apps"
-                      } ],
-                      "object" : "text"
-                    } ],
-                    "object" : "block",
-                    "type" : "heading-one"
-                  }, {
-                    "data" : {
-                      "alignment" : "align-center",
-                      "categories" : {
-                        "alignment" : [ "text.alignment.viewports.xl.alignedCenter", "text.alignment.viewports.xs.alignedLeft", "text.alignment.viewports.sm.alignedCenter" ]
-                      }
-                    },
-                    "isVoid" : false,
-                    "nodes" : [ {
-                      "leaves" : [ {
-                        "object" : "leaf",
-                        "text" : "This is an Open Source product which offers a set of components and tools for developing web applications with rich content authoring capabilities."
-                      } ],
-                      "object" : "text"
-                    } ],
-                    "object" : "block",
-                    "type" : "paragraph"
-                  } ],
-                  "object" : "widget",
-                  "type" : "text"
-                } ],
-                "object" : "block",
-                "size" : {
-                  "lg" : "12",
-                  "md" : "12",
-                  "sm" : "12"
-                },
-                "type" : "layout-column"
-              } ],
-              "object" : "block",
-              "type" : "layout-row"
-            } ],
-            "object" : "block",
-            "padding" : "with-padding",
-            "snapping" : "none",
-            "type" : "layout-section"
-          }, {
-            "background" : {
-              "position" : "center center",
-              "size" : "contain"
-            },
-            "layout" : "container",
-            "nodes" : [ {
-              "nodes" : [ {
-                "nodes" : [ {
-                  "nodes" : [ {
-                    "data" : {
-                      "categories" : {
-                        "alignment" : [ "text.alignment.viewports.xl.alignedCenter" ]
-                      }
-                    },
-                    "isVoid" : false,
-                    "nodes" : [ {
-                      "leaves" : [ {
-                        "object" : "leaf",
-                        "text" : "Outputs JSON"
-                      } ],
-                      "object" : "text"
-                    } ],
-                    "object" : "block",
-                    "type" : "heading-two"
-                  }, {
-                    "data" : {
-                      "categories" : {
-                        "alignment" : [ "text.alignment.viewports.xl.alignedCenter" ]
-                      }
-                    },
-                    "isVoid" : false,
-                    "nodes" : [ {
-                      "leaves" : [ {
-                        "object" : "leaf",
-                        "text" : "Produces description of the content abstract from framework or theme."
-                      } ],
-                      "object" : "text"
-                    } ],
-                    "object" : "block",
-                    "type" : "paragraph"
-                  } ],
-                  "object" : "widget",
-                  "type" : "text"
-                } ],
-                "object" : "block",
-                "size" : {
-                  "lg" : "12",
-                  "md" : "12",
-                  "sm" : "12"
-                },
-                "type" : "layout-column"
-              } ],
-              "object" : "block",
-              "type" : "layout-row"
-            }, {
-              "nodes" : [ {
-                "alignment" : {
-                  "xl" : "center center"
-                },
-                "nodes" : [ {
-                  "nodes" : [ {
-                    "data" : {
-                      "categories" : {
-                        "alignment" : [ "text.alignment.viewports.xl.alignedCenter" ]
-                      }
-                    },
-                    "isVoid" : false,
-                    "nodes" : [ {
-                      "leaves" : [ {
-                        "object" : "leaf",
-                        "text" : "A line of text in "
-                      }, {
-                        "marks" : [ {
-                          "object" : "mark",
-                          "type" : "bold"
-                        } ],
-                        "object" : "leaf",
-                        "text" : "paragraph"
-                      } ],
-                      "object" : "text"
-                    } ],
-                    "object" : "block",
-                    "type" : "code"
-                  } ],
-                  "object" : "widget",
-                  "type" : "text"
-                } ],
-                "object" : "block",
-                "size" : {
-                  "lg" : "6",
-                  "md" : "6",
-                  "sm" : "6"
-                },
-                "type" : "layout-column"
-              }, {
-                "nodes" : [ {
-                  "animation" : "none",
-                  "caption" : "json-output-example.svg",
-                  "layout" : "noframe",
-                  "object" : "block",
-                  "sourceKey" : "permalinks/e0e5eb90-7ebe-e85a-dedb-ea17daf73201",
-                  "type" : "picture"
-                } ],
-                "object" : "block",
-                "size" : {
-                  "lg" : "6",
-                  "md" : "6",
-                  "sm" : "6"
-                },
-                "type" : "layout-column"
-              } ],
-              "object" : "block",
-              "type" : "layout-row"
-            } ],
-            "object" : "block",
-            "padding" : "with-padding",
-            "snapping" : "none",
-            "type" : "layout-section"
-          }, {
-            "background" : {
-              "position" : "center center",
-              "size" : "contain"
-            },
-            "layout" : "container",
-            "nodes" : [ {
-              "nodes" : [ {
-                "nodes" : [ {
-                  "nodes" : [ {
-                    "data" : {
-                      "categories" : {
-                        "alignment" : [ "text.alignment.viewports.xl.alignedCenter" ]
-                      }
-                    },
-                    "isVoid" : false,
-                    "nodes" : [ {
-                      "leaves" : [ {
-                        "object" : "leaf",
-                        "text" : "Getting started"
-                      } ],
-                      "object" : "text"
-                    } ],
-                    "object" : "block",
-                    "type" : "heading-two"
-                  } ],
-                  "object" : "widget",
-                  "type" : "text"
-                } ],
-                "object" : "block",
-                "size" : {
-                  "lg" : "12",
-                  "md" : "12",
-                  "sm" : "12"
-                },
-                "type" : "layout-column"
-              } ],
-              "object" : "block",
-              "type" : "layout-row"
-            }, {
-              "nodes" : [ {
-                "nodes" : [ {
-                  "animation" : "none",
-                  "caption" : "Picture",
-                  "layout" : "noframe",
-                  "object" : "block",
-                  "sourceKey" : "permalinks/8e7766d2-c970-df1c-c2a9-880d0d4abe52",
-                  "type" : "picture"
-                } ],
-                "object" : "block",
-                "size" : {
-                  "lg" : "12",
-                  "md" : "12",
-                  "sm" : "12"
-                },
-                "type" : "layout-column"
-              } ],
-              "object" : "block",
-              "type" : "layout-row"
-            } ],
-            "object" : "block",
-            "padding" : "with-padding",
-            "snapping" : "none",
-            "type" : "layout-section"
-          }, {
-            "background" : {
-              "position" : "center center",
-              "size" : "contain"
-            },
-            "layout" : "container",
-            "nodes" : [ {
-              "nodes" : [ {
-                "nodes" : [ {
-                  "nodes" : [ {
-                    "data" : {
-                      "categories" : {
-                        "alignment" : [ "text.alignment.viewports.xl.alignedCenter" ]
-                      }
-                    },
-                    "isVoid" : false,
-                    "nodes" : [ {
-                      "leaves" : [ {
-                        "object" : "leaf",
-                        "text" : "Frameworks"
-                      } ],
-                      "object" : "text"
-                    } ],
-                    "object" : "block",
-                    "type" : "heading-two"
-                  } ],
-                  "object" : "widget",
-                  "type" : "text"
-                } ],
-                "object" : "block",
-                "size" : {
-                  "lg" : "12",
-                  "md" : "12",
-                  "sm" : "12"
-                },
-                "type" : "layout-column"
-              } ],
-              "object" : "block",
-              "type" : "layout-row"
-            }, {
-              "nodes" : [ {
-                "nodes" : [ {
-                  "animation" : "none",
-                  "caption" : "Picture",
-                  "layout" : "noframe",
-                  "object" : "block",
-                  "sourceKey" : "permalinks/bb88e60f-80b3-65b2-1bf3-703e55dfd0f9",
-                  "type" : "picture"
-                } ],
-                "object" : "block",
-                "size" : {
-                  "lg" : "12",
-                  "md" : "12",
-                  "sm" : "12"
-                },
-                "type" : "layout-column"
-              } ],
-              "object" : "block",
-              "type" : "layout-row"
-            } ],
-            "object" : "block",
-            "padding" : "with-padding",
-            "snapping" : "none",
-            "type" : "layout-section"
-          }, {
-            "background" : {
-              "position" : "center center",
-              "size" : "contain"
-            },
-            "layout" : "container",
-            "nodes" : [ {
-              "nodes" : [ {
-                "nodes" : [ {
-                  "nodes" : [ {
-                    "data" : {
-                      "categories" : {
-                        "alignment" : [ "text.alignment.viewports.xl.alignedCenter" ]
-                      }
-                    },
-                    "isVoid" : false,
-                    "nodes" : [ {
-                      "leaves" : [ {
-                        "object" : "leaf",
-                        "text" : "Offline-first"
-                      } ],
-                      "object" : "text"
-                    } ],
-                    "object" : "block",
-                    "type" : "heading-two"
-                  } ],
-                  "object" : "widget",
-                  "type" : "text"
-                } ],
-                "object" : "block",
-                "size" : {
-                  "lg" : "12",
-                  "md" : "12",
-                  "sm" : "12"
-                },
-                "type" : "layout-column"
-              } ],
-              "object" : "block",
-              "type" : "layout-row"
-            } ],
-            "object" : "block",
-            "padding" : "with-padding",
-            "snapping" : "none",
-            "type" : "layout-section"
-          }, {
-            "background" : {
-              "position" : "center center",
-              "size" : "contain"
-            },
-            "layout" : "container",
-            "nodes" : [ {
-              "nodes" : [ {
-                "nodes" : [ {
-                  "nodes" : [ {
-                    "data" : {
-                      "categories" : {
-                        "alignment" : [ "text.alignment.viewports.xl.alignedCenter" ]
-                      }
-                    },
-                    "isVoid" : false,
-                    "nodes" : [ {
-                      "leaves" : [ {
-                        "object" : "leaf",
-                        "text" : "API-first"
-                      } ],
-                      "object" : "text"
-                    } ],
-                    "object" : "block",
-                    "type" : "heading-two"
-                  } ],
-                  "object" : "widget",
-                  "type" : "text"
-                } ],
-                "object" : "block",
-                "size" : {
-                  "lg" : "12",
-                  "md" : "12",
-                  "sm" : "12"
-                },
-                "type" : "layout-column"
-              } ],
-              "object" : "block",
-              "type" : "layout-row"
-            } ],
-            "object" : "block",
-            "padding" : "with-padding",
-            "snapping" : "none",
-            "type" : "layout-section"
-          } ],
-          "object" : "block",
-          "type" : "page"
-        }
-      },
-      "groups" : {
-        "admin" : {
-          "name" : "Administrator"
-        }
-      },
-      "layouts" : {
-        "e5de2977-1176-6b9d-f4ef-50c77ea1c60f" : {
-          "contentKey" : "files/7fe21f13-d1dd-00c1-c00e-a296b2cdcdca",
-          "description" : "default layout",
-          "key" : "layouts/e5de2977-1176-6b9d-f4ef-50c77ea1c60f",
-          "keywords" : "key",
-          "title" : "default",
-          "uriTemplate" : "/"
-        }
-      },
-      "navigationItems" : {
-        "main" : {
-          "key" : "navigationItems/main",
-          "label" : "Main menu",
-          "navigationItems" : [ {
-            "externalUrl" : "https://github.com/paperbits/paperbits-knockout/wiki",
-            "key" : "69a17e43-9ba1-00ff-51d4-8a13bfb11294",
-            "label" : "Docs"
-          }, {
-            "key" : "cd1e5fde-8a9a-4b2b-a9f8-82f0bcb3c48c",
-            "label" : "About",
-            "permalinkKey" : "permalinks/3f2f6620-7c84-b265-597a-8a7ea9cb907c"
-          }, {
-            "key" : "000ef996-5895-ff21-1883-b1f415def573",
-            "label" : "Blog",
-            "permalinkKey" : "permalinks/53cd1571-5da7-b592-99ec-ab14600e8114"
-          }, {
-            "externalUrl" : "https://github.com/paperbits",
-            "key" : "e815a458-4562-7c58-8f11-9c65334d0d46",
-            "label" : "Github"
-          } ]
-        }
-      },
-      "pages" : {
-        "785adeeb-c369-3a32-0003-693c724046b6" : {
-          "contentKey" : "files/aae86ccd-61f5-1dbe-d7ff-b0f105f7a65c",
-          "description" : "",
-          "key" : "pages/785adeeb-c369-3a32-0003-693c724046b6",
-          "keywords" : "",
-          "permalinkKey" : "permalinks/3f2f6620-7c84-b265-597a-8a7ea9cb907c",
-          "title" : "About"
-        },
-        "b56b71e3-2868-91bd-c8a0-5b8ea62dc558" : {
-          "contentKey" : "files/ca4052ac-e4f4-82a8-e341-be5517db366f",
-          "description" : "",
-          "key" : "pages/b56b71e3-2868-91bd-c8a0-5b8ea62dc558",
-          "keywords" : "",
-          "permalinkKey" : "permalinks/53cd1571-5da7-b592-99ec-ab14600e8114",
-          "title" : "Blog"
-        },
-        "e0987ca1-f458-b546-7697-7be594b35583" : {
-          "contentKey" : "files/ffdcdb4e-bad4-dfd7-3e9c-c0b2a917b66a",
-          "description" : "",
-          "key" : "pages/e0987ca1-f458-b546-7697-7be594b35583",
-          "keywords" : "",
-          "permalinkKey" : "permalinks/57e1dda7-b467-9813-4d99-e5fae7684756",
-          "title" : "Home"
-        },
-        "f95c292b-b40b-e2cd-b5dc-71fffc97083d" : {
-          "contentKey" : "files/b6913394-d816-1625-ffcf-54a521d048c1",
-          "description" : "",
-          "key" : "pages/f95c292b-b40b-e2cd-b5dc-71fffc97083d",
-          "keywords" : "",
-          "permalinkKey" : "permalinks/c09980ce-64dd-cff1-5114-ae13ec29a4ba",
-          "title" : "404"
-        }
-      },
-      "permalinks" : {
-        "0b00c039-94fb-233e-5e74-e21f21c78ab3" : {
-          "key" : "permalinks/0b00c039-94fb-233e-5e74-e21f21c78ab3",
-          "targetKey" : "uploads/0ef739dd-f1c7-6f2b-4dfb-358f4ee5d2f6",
-          "uri" : "/content/checkmark.svg"
-        },
-        "16aa747c-5b1a-8fbf-9473-6c345f611cb8" : {
-          "key" : "permalinks/16aa747c-5b1a-8fbf-9473-6c345f611cb8",
-          "targetKey" : "uploads/e7c09fdb-372a-d878-9f46-e4cba80e57f0",
-          "uri" : "/content/pen-and-ruler.svg"
-        },
-        "1f0d7238-1bb7-1d88-c754-26d46e67e5f0" : {
-          "key" : "permalinks/1f0d7238-1bb7-1d88-c754-26d46e67e5f0",
-          "targetKey" : "uploads/9530cb42-5465-0938-adfb-9a906b15945d",
-          "uri" : "/content/pen-and-ruler.svg"
-        },
-        "26dc1a4a-e193-4ce5-9833-66ce8d4b71e6" : {
-          "key" : "permalinks/26dc1a4a-e193-4ce5-9833-66ce8d4b71e6",
-          "targetKey" : "uploads/69bdd360-3f3d-0617-eb6f-32f50c4c6558",
-          "uri" : "/content/wait-cover.jpg"
-        },
-        "275773e2-9018-4646-7d06-7f5cea3660fc" : {
-          "key" : "permalinks/275773e2-9018-4646-7d06-7f5cea3660fc",
-          "targetKey" : "uploads/92c8f9aa-e2d1-7a73-1cdd-1b9e39ba41e4",
-          "uri" : "/content/finding-way.svg"
-        },
-        "2cfaf575-6704-802a-af89-8f83fb0b249e" : {
-          "key" : "permalinks/2cfaf575-6704-802a-af89-8f83fb0b249e",
-          "targetKey" : "uploads/528f762d-90bb-0f3f-8820-fa3bd5533670",
-          "uri" : "/content/logo@2x.png"
-        },
-        "373dede2-82ce-3ecd-0fe0-a8b1d85e23d7" : {
-          "key" : "permalinks/373dede2-82ce-3ecd-0fe0-a8b1d85e23d7",
-          "targetKey" : "uploads/3423f56f-b1e5-b1ee-3ecb-96199a58af3d",
-          "uri" : "/content/bb-cover.jpg"
-        },
-        "387f8806-06e9-0393-b780-0c8fd06d10b6" : {
-          "key" : "permalinks/387f8806-06e9-0393-b780-0c8fd06d10b6",
-          "targetKey" : "uploads/4773a7fd-b139-d396-ee67-1d6fe39ff222",
-          "uri" : "/content/main-img-1@2x.png"
-        },
-        "3f2f6620-7c84-b265-597a-8a7ea9cb907c" : {
-          "key" : "permalinks/3f2f6620-7c84-b265-597a-8a7ea9cb907c",
-          "targetKey" : "pages/785adeeb-c369-3a32-0003-693c724046b6",
-          "uri" : "/about"
-        },
-        "414308da-dcd7-d6db-0154-e88c42872280" : {
-          "key" : "permalinks/414308da-dcd7-d6db-0154-e88c42872280",
-          "targetKey" : "uploads/11fef61d-3b8b-e856-134c-50815084c1a2",
-          "uri" : "/content/wait-cover.jpg"
-        },
-        "46e0458b-42cd-c685-2d1b-f59e971275e9" : {
-          "key" : "permalinks/46e0458b-42cd-c685-2d1b-f59e971275e9",
-          "targetKey" : "uploads/9f65bb2b-75ed-25a7-cc9b-441c6821075b",
-          "uri" : "/content/pen-and-ruler.svg"
-        },
-        "487e2667-f0ec-9207-0b05-0a0d5fe029a0" : {
-          "key" : "permalinks/487e2667-f0ec-9207-0b05-0a0d5fe029a0",
-          "targetKey" : "uploads/be92441a-d818-4fff-6a53-31017c681210",
-          "uri" : "/content/favicon.ico"
-        },
-        "4cfcb0a0-4839-26de-6057-038bc28622ff" : {
-          "key" : "permalinks/4cfcb0a0-4839-26de-6057-038bc28622ff",
-          "targetKey" : "uploads/09bf17e5-3828-86c3-2c5a-96af1f3a0493",
-          "uri" : "/content/logo.svg"
-        },
-        "53cd1571-5da7-b592-99ec-ab14600e8114" : {
-          "key" : "permalinks/53cd1571-5da7-b592-99ec-ab14600e8114",
-          "targetKey" : "pages/b56b71e3-2868-91bd-c8a0-5b8ea62dc558",
-          "uri" : "/blog"
-        },
-        "57e1dda7-b467-9813-4d99-e5fae7684756" : {
-          "key" : "permalinks/57e1dda7-b467-9813-4d99-e5fae7684756",
-          "targetKey" : "pages/e0987ca1-f458-b546-7697-7be594b35583",
-          "uri" : "/"
-        },
-        "5a28503e-06ff-6b73-57e9-3c2439283e9e" : {
-          "key" : "permalinks/5a28503e-06ff-6b73-57e9-3c2439283e9e",
-          "targetKey" : "uploads/5a28503e-06ff-6b73-57e9-3c2439283e9e",
-          "uri" : "/content/math 1-13 001.jpg"
-        },
-        "64708262-8fd6-d041-89bc-f4f4ce3c0c07" : {
-          "key" : "permalinks/64708262-8fd6-d041-89bc-f4f4ce3c0c07",
-          "targetKey" : "uploads/a4bd0e22-6c46-6b16-eb5b-904e4c420bd9",
-          "uri" : "/content/service-bg.jpg"
-        },
-        "68bd01c5-aad4-218c-9cf5-04a46dcb7931" : {
-          "key" : "permalinks/68bd01c5-aad4-218c-9cf5-04a46dcb7931",
-          "targetKey" : "uploads/485d52ec-aafb-bf9f-ac07-b523301f17b3",
-          "uri" : "/content/leopold-cover.jpg"
-        },
-        "6b53d195-3eda-2eb9-8028-fd347aa14feb" : {
-          "key" : "permalinks/6b53d195-3eda-2eb9-8028-fd347aa14feb",
-          "targetKey" : "uploads/f63dd70f-8db5-1fe1-90e8-bb729fc9a771",
-          "uri" : "/content/news-online-reservation-page.png"
-        },
-        "6d61fb47-a96b-d9d6-ec7f-47ef61da60f1" : {
-          "key" : "permalinks/6d61fb47-a96b-d9d6-ec7f-47ef61da60f1",
-          "targetKey" : "uploads/e46cc7ae-f68a-274f-12b4-e16432b911f0",
-          "uri" : "/content/widget-desktop-site.jpg"
-        },
-        "72ddccf7-b53e-37bd-cee5-0cdedc83ee8e" : {
-          "key" : "permalinks/72ddccf7-b53e-37bd-cee5-0cdedc83ee8e",
-          "targetKey" : "uploads/5f1625e4-2805-ab43-ac32-c3e581c08226",
-          "uri" : "/content/news-new-reservation-widget.png"
-        },
-        "85c02015-9c28-b3ab-c703-88fe78f2f0ff" : {
-          "key" : "permalinks/85c02015-9c28-b3ab-c703-88fe78f2f0ff",
-          "targetKey" : "uploads/37b55285-cf44-3e0e-ad1c-7b9d11410664",
-          "uri" : "/content/json-output-example.svg"
-        },
-        "8e7766d2-c970-df1c-c2a9-880d0d4abe52" : {
-          "key" : "permalinks/8e7766d2-c970-df1c-c2a9-880d0d4abe52",
-          "targetKey" : "uploads/8e7766d2-c970-df1c-c2a9-880d0d4abe52",
-          "uri" : "/content/getting-started.svg"
-        },
-        "96562577-5dc3-2644-b510-757acbbdabd3" : {
-          "key" : "permalinks/96562577-5dc3-2644-b510-757acbbdabd3",
-          "targetKey" : "uploads/8b7bdb01-5ea3-3b39-7a21-6f32e6f58bf0",
-          "uri" : "/content/pen-fight.svg"
-        },
-        "a3311ec4-4521-12a5-9a49-a65deae36c8e" : {
-          "key" : "permalinks/a3311ec4-4521-12a5-9a49-a65deae36c8e",
-          "targetKey" : "uploads/345b447b-3ddb-1226-8c00-9fa9a1d1dded",
-          "uri" : "/content/bb.jpg"
-        },
-        "a3b978d6-a611-8b83-c2f5-8dd1812427c7" : {
-          "key" : "permalinks/a3b978d6-a611-8b83-c2f5-8dd1812427c7",
-          "targetKey" : "uploads/bd82e36e-6238-9d38-3869-1639da1354c5",
-          "uri" : "/content/opentable-how-search-result.png"
-        },
-        "a4287b34-076a-c4a8-ad4b-2d0dd7bbe082" : {
-          "key" : "permalinks/a4287b34-076a-c4a8-ad4b-2d0dd7bbe082",
-          "targetKey" : "uploads/ee95207d-2d2a-425c-81f5-a9689a15836a",
-          "uri" : "/content/main-img-4@2x.png"
-        },
-        "b097ccd8-f4ca-3a3a-7cda-da672f44e427" : {
-          "key" : "permalinks/b097ccd8-f4ca-3a3a-7cda-da672f44e427",
-          "targetKey" : "uploads/122cb406-8d83-46d1-2519-aa077f693e55",
-          "uri" : "/content/wait.jpg"
-        },
-        "b2bd59d6-1994-9bef-889a-92a0a2fce3b6" : {
-          "key" : "permalinks/b2bd59d6-1994-9bef-889a-92a0a2fce3b6",
-          "targetKey" : "uploads/b4c9720c-d790-8392-d8ff-f09b6302c062",
-          "uri" : "/content/5-technologies.jpg"
-        },
-        "b6dffe3a-3dfb-a691-beeb-1d9b3577a0e5" : {
-          "key" : "permalinks/b6dffe3a-3dfb-a691-beeb-1d9b3577a0e5",
-          "targetKey" : "uploads/04b0622e-f88d-e5ff-11a8-cbfa0e2d379b",
-          "uri" : "/content/header-bg-2-right@2x.jpg"
-        },
-        "bb88e60f-80b3-65b2-1bf3-703e55dfd0f9" : {
-          "key" : "permalinks/bb88e60f-80b3-65b2-1bf3-703e55dfd0f9",
-          "targetKey" : "uploads/bb88e60f-80b3-65b2-1bf3-703e55dfd0f9",
-          "uri" : "/content/frameworks.svg"
-        },
-        "bd3fbac8-e823-a795-84ce-3dfe4407f9a9" : {
-          "key" : "permalinks/bd3fbac8-e823-a795-84ce-3dfe4407f9a9",
-          "targetKey" : "uploads/4e8ad344-7a23-0f31-ae37-705c824260bc",
-          "uri" : "/content/leopold.jpg"
-        },
-        "c09980ce-64dd-cff1-5114-ae13ec29a4ba" : {
-          "key" : "permalinks/c09980ce-64dd-cff1-5114-ae13ec29a4ba",
-          "targetKey" : "pages/f95c292b-b40b-e2cd-b5dc-71fffc97083d",
-          "uri" : "/404.html"
-        },
-        "c7a63e62-bfb9-464a-ce18-662564681a72" : {
-          "key" : "permalinks/c7a63e62-bfb9-464a-ce18-662564681a72",
-          "targetKey" : "uploads/f0b568bf-703a-0fa5-58b0-5b4574b18b93",
-          "uri" : "/content/pen-and-ruler.svg"
-        },
-        "ca4ad134-875c-bbad-be98-047557eaceb7" : {
-          "key" : "permalinks/ca4ad134-875c-bbad-be98-047557eaceb7",
-          "targetKey" : "uploads/68aa54b5-9780-b1ed-6020-fbcb7933dc26",
-          "uri" : "/content/favicon.ico"
-        },
-        "d1fde25a-c1d0-5bd6-8c1c-d1a4196dff1b" : {
-          "key" : "permalinks/d1fde25a-c1d0-5bd6-8c1c-d1a4196dff1b",
-          "targetKey" : "uploads/10250c44-500e-313f-8411-7d003ffb5be9",
-          "uri" : "/content/pen-and-ruler.svg"
-        },
-        "d5359bd1-143e-e342-2637-b42af94e0785" : {
-          "key" : "permalinks/d5359bd1-143e-e342-2637-b42af94e0785",
-          "targetKey" : "uploads/350b10ca-9a15-7fbb-5bc4-ea5260936803",
-          "uri" : "/content/plane-launch.svg"
-        },
-        "dd42f3a1-3741-5a51-dce1-cc4916ea3f47" : {
-          "key" : "permalinks/dd42f3a1-3741-5a51-dce1-cc4916ea3f47",
-          "targetKey" : "uploads/f4adaea6-4a46-4a08-9a6d-5a0a4973e1e5",
-          "uri" : "/content/main-img-2@2x.png"
-        },
-        "de69895e-3232-c767-53e6-49ed801557b8" : {
-          "key" : "permalinks/de69895e-3232-c767-53e6-49ed801557b8",
-          "targetKey" : "uploads/bf423581-8039-b02c-0fe8-7d678534a568",
-          "uri" : "/content/Ph03nyx-Super-Mario-Mushroom-1UP.ico"
-        },
-        "e0e5eb90-7ebe-e85a-dedb-ea17daf73201" : {
-          "key" : "permalinks/e0e5eb90-7ebe-e85a-dedb-ea17daf73201",
-          "targetKey" : "uploads/e688898b-b9a2-240f-6da0-346b6b0d02e1",
-          "uri" : "/content/json-output-example.svg"
-        },
-        "e248c292-ad5e-94e6-cb1f-2f3c891a63ee" : {
-          "key" : "permalinks/e248c292-ad5e-94e6-cb1f-2f3c891a63ee",
-          "targetKey" : "uploads/7933f345-d7d1-4955-c921-4fc05ea2e2b4",
-          "uri" : "/content/about-cover@2x.jpg"
-        },
-        "e690279b-f576-85aa-40c7-39361c52eca4" : {
-          "key" : "permalinks/e690279b-f576-85aa-40c7-39361c52eca4",
-          "targetKey" : "uploads/aa0f7a40-b835-54d9-4b5f-9e8dbe2b5531",
-          "uri" : "/content/opentable-how-reservations-source.png"
-        },
-        "ed0395c1-d415-43ab-8fcd-cf433021d678" : {
-          "key" : "permalinks/ed0395c1-d415-43ab-8fcd-cf433021d678",
-          "targetKey" : "uploads/5807c527-6532-e79f-8c5b-0ac17ca39b67",
-          "uri" : "/content/valentine3.jpg"
-        },
-        "f04994a0-3608-4f2c-842f-dfd886349059" : {
-          "key" : "permalinks/f04994a0-3608-4f2c-842f-dfd886349059",
-          "targetKey" : "uploads/1d9962f4-6dd3-3676-073d-ec37c4643b35",
-          "uri" : "/content/comm@2x.png"
-        },
-        "f0d5a02d-ad62-5a89-8b0e-dc3eb135e72c" : {
-          "key" : "permalinks/f0d5a02d-ad62-5a89-8b0e-dc3eb135e72c",
-          "targetKey" : "uploads/1238530a-b7fb-0041-1cc6-9be5c482f1bd",
-          "uri" : "/content/pen-and-ruler.svg"
-        }
-      },
-      "settings" : {
-        "config" : {
-          "gtm" : {
-            "containerId" : "GTM-NZM93W",
-            "dataLayerName" : "GTM-NZM93W"
-          },
-          "intercom" : {
-            "appId" : "l560nd3j"
+                "type": "layout-column"
+              }
+            ],
+            "object": "block",
+            "type": "layout-row"
           }
-        },
-        "description" : "This is an Open Source product, which offers a set of components and tools for developing web applications with rich content authoring capabilities.",
-        "integration" : {
-          "googlemaps" : {
-            "apiKey" : "AIzaSyC7eT_xRPt3EjX3GuzSvlaZzJmlyFxvFFs"
-          },
-          "gtm" : {
-            "containerId" : "GTM-NZM93W",
-            "dataLayerName" : "GTM-NZM93W"
-          },
-          "intercom" : {
-            "appId" : "l560nd3j"
-          }
-        },
-        "keywords" : "authoring tools, components, visual editor, drag & drop, Open source, javascript framework, content management",
-        "site" : {
-          "description" : "This is an Open Source product, which offers a set of components and tools for developing web applications with rich content authoring capabilities.",
-          "faviconPermalinkKey" : "permalinks/ca4ad134-875c-bbad-be98-047557eaceb7",
-          "keywords" : "authoring tools, components, visual editor, drag & drop, Open source, javascript framework, content management",
-          "title" : "Paperbits - Content authoring tools for web apps!"
-        },
-        "title" : "PaperBits - Content authoring tools for web apps!"
+        ],
+        "object": "block",
+        "padding": "with-padding",
+        "snapping": "none",
+        "type": "layout-section"
       },
-      "uploads" : {
-        "09bf17e5-3828-86c3-2c5a-96af1f3a0493" : {
-          "contentType" : "image/svg+xml",
-          "description" : "",
-          "downloadUrl" : "https://firebasestorage.googleapis.com/v0/b/project-7669095260722476815.appspot.com/o/tenants%2Fdefault%2F4cfcb0a0-4839-26de-6057-038bc28622ff?alt=media&token=ac7ebdfa-903c-41f7-b9ae-f6ca6f1b6714",
-          "filename" : "logo.svg",
-          "key" : "uploads/09bf17e5-3828-86c3-2c5a-96af1f3a0493",
-          "keywords" : "",
-          "permalinkKey" : "permalinks/4cfcb0a0-4839-26de-6057-038bc28622ff"
+      "description": "",
+      "key": "blocks/0d1934f7-446c-34a0-ccb4-82e44cae890f",
+      "title": "Cool"
+    },
+    "aeff4ae2-4ad0-0887-7082-d7b2ad67e55d": {
+      "content": {
+        "layout": "container",
+        "nodes": [
+          {
+            "nodes": [
+              {
+                "nodes": [
+                  {
+                    "animation": "none",
+                    "caption": "Picture",
+                    "layout": "noframe",
+                    "object": "block",
+                    "type": "picture"
+                  }
+                ],
+                "object": "block",
+                "size": {
+                  "lg": "4",
+                  "sm": 6
+                },
+                "type": "layout-column"
+              },
+              {
+                "alignment": {
+                  "lg": "center start"
+                },
+                "nodes": [
+                  {
+                    "nodes": [
+                      {
+                        "data": {
+                          "categories": {
+                            "alignment": [
+                              "alignedLeft-lg"
+                            ]
+                          }
+                        },
+                        "nodes": [
+                          {
+                            "leaves": [
+                              {
+                                "text": "Heading"
+                              }
+                            ],
+                            "object": "text"
+                          }
+                        ],
+                        "object": "block",
+                        "type": "heading-three"
+                      },
+                      {
+                        "isVoid": false,
+                        "nodes": [
+                          {
+                            "leaves": [
+                              {
+                                "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna."
+                              }
+                            ],
+                            "object": "text"
+                          }
+                        ],
+                        "object": "block",
+                        "type": "paragraph"
+                      }
+                    ],
+                    "object": "widget",
+                    "type": "text"
+                  },
+                  {
+                    "hyperlink": {
+                      "href": "/blog/new-party-creation-flow",
+                      "permalinkKey": "permalinks/b97d538e-5724-c9d4-d603-38ffd7e6dfa5",
+                      "target": "_blank"
+                    },
+                    "label": "Button",
+                    "object": "block",
+                    "size": "medium",
+                    "style": "primary",
+                    "type": "button"
+                  }
+                ],
+                "object": "block",
+                "size": {
+                  "lg": "8"
+                },
+                "type": "layout-column"
+              }
+            ],
+            "object": "block",
+            "type": "layout-row"
+          }
+        ],
+        "object": "block",
+        "padding": "with-padding",
+        "type": "layout-section"
+      },
+      "description": "Block description",
+      "key": "aeff4ae2-4ad0-0887-7082-d7b2ad67e55d",
+      "title": "Blog post list item"
+    }
+  },
+  "files": {
+    "7fe21f13-d1dd-00c1-c00e-a296b2cdcdca": {
+      "key": "files/7fe21f13-d1dd-00c1-c00e-a296b2cdcdca",
+      "nodes": [
+        {
+          "background": {
+            "color": "#ffffff",
+            "position": "center center",
+            "size": "cover"
+          },
+          "layout": "container",
+          "nodes": [
+            {
+              "nodes": [
+                {
+                  "alignment": {
+                    "lg": "middle end",
+                    "md": "middle end",
+                    "sm": "middle end",
+                    "xl": "middle end"
+                  },
+                  "nodes": [
+                    {
+                      "object": "block",
+                      "pictureSourceKey": "permalinks/4cfcb0a0-4839-26de-6057-038bc28622ff",
+                      "rootKey": "navigationItems/main",
+                      "type": "navbar"
+                    }
+                  ],
+                  "object": "block",
+                  "size": {
+                    "lg": "12",
+                    "md": "12",
+                    "sm": "12"
+                  },
+                  "type": "layout-column"
+                }
+              ],
+              "object": "block",
+              "type": "layout-row"
+            }
+          ],
+          "object": "block",
+          "padding": "without-padding",
+          "snapping": "none",
+          "type": "layout-section"
         },
-        "350b10ca-9a15-7fbb-5bc4-ea5260936803" : {
-          "contentType" : "image/svg+xml",
-          "description" : "",
-          "downloadUrl" : "https://firebasestorage.googleapis.com/v0/b/project-7669095260722476815.appspot.com/o/tenants%2Fdefault%2Fd5359bd1-143e-e342-2637-b42af94e0785?alt=media&token=ff7de7f7-be80-426e-b37e-30a26544d1a5",
-          "filename" : "plane-launch.svg",
-          "key" : "uploads/350b10ca-9a15-7fbb-5bc4-ea5260936803",
-          "keywords" : "",
-          "permalinkKey" : "permalinks/d5359bd1-143e-e342-2637-b42af94e0785"
+        {
+          "object": "block",
+          "type": "page"
         },
-        "68aa54b5-9780-b1ed-6020-fbcb7933dc26" : {
-          "contentType" : "image/x-icon",
-          "description" : "",
-          "downloadUrl" : "https://firebasestorage.googleapis.com/v0/b/project-7669095260722476815.appspot.com/o/tenants%2Fdefault%2Ffavicon.ico?alt=media&token=4d33e214-11f6-4488-9671-6ef77fda3d43",
-          "filename" : "favicon.ico",
-          "key" : "uploads/68aa54b5-9780-b1ed-6020-fbcb7933dc26",
-          "keywords" : "",
-          "permalinkKey" : "permalinks/ca4ad134-875c-bbad-be98-047557eaceb7"
-        },
-        "8b7bdb01-5ea3-3b39-7a21-6f32e6f58bf0" : {
-          "contentType" : "image/svg+xml",
-          "description" : "",
-          "downloadUrl" : "https://firebasestorage.googleapis.com/v0/b/project-7669095260722476815.appspot.com/o/tenants%2Fdefault%2F96562577-5dc3-2644-b510-757acbbdabd3?alt=media&token=5e06d546-8355-43f0-8de8-cc941cc01bea",
-          "filename" : "pen-fight.svg",
-          "key" : "uploads/8b7bdb01-5ea3-3b39-7a21-6f32e6f58bf0",
-          "keywords" : "",
-          "permalinkKey" : "permalinks/96562577-5dc3-2644-b510-757acbbdabd3"
-        },
-        "8e7766d2-c970-df1c-c2a9-880d0d4abe52" : {
-          "blobKey" : "8e7766d2-c970-df1c-c2a9-880d0d4abe52",
-          "contentType" : "image/svg+xml",
-          "description" : "",
-          "downloadUrl" : "https://firebasestorage.googleapis.com/v0/b/project-7669095260722476815.appspot.com/o/tenants%2Fdefault%2F8e7766d2-c970-df1c-c2a9-880d0d4abe52?alt=media&token=c64bc1fb-737b-4281-b461-4e961a7965aa",
-          "filename" : "getting-started.svg",
-          "key" : "uploads/8e7766d2-c970-df1c-c2a9-880d0d4abe52",
-          "keywords" : "",
-          "permalinkKey" : "permalinks/8e7766d2-c970-df1c-c2a9-880d0d4abe52"
-        },
-        "92c8f9aa-e2d1-7a73-1cdd-1b9e39ba41e4" : {
-          "contentType" : "image/svg+xml",
-          "description" : "",
-          "downloadUrl" : "https://firebasestorage.googleapis.com/v0/b/project-7669095260722476815.appspot.com/o/tenants%2Fdefault%2Ffinding-way.svg?alt=media&token=92c66137-8d3a-473f-bbdd-37901a6b8ce2",
-          "filename" : "finding-way.svg",
-          "key" : "uploads/92c8f9aa-e2d1-7a73-1cdd-1b9e39ba41e4",
-          "keywords" : "",
-          "permalinkKey" : "permalinks/275773e2-9018-4646-7d06-7f5cea3660fc"
-        },
-        "bb88e60f-80b3-65b2-1bf3-703e55dfd0f9" : {
-          "blobKey" : "bb88e60f-80b3-65b2-1bf3-703e55dfd0f9",
-          "contentType" : "image/svg+xml",
-          "description" : "",
-          "downloadUrl" : "https://firebasestorage.googleapis.com/v0/b/project-7669095260722476815.appspot.com/o/tenants%2Fdefault%2Fbb88e60f-80b3-65b2-1bf3-703e55dfd0f9?alt=media&token=59c8c582-238d-4755-859b-a788b8271ef9",
-          "filename" : "frameworks.svg",
-          "key" : "uploads/bb88e60f-80b3-65b2-1bf3-703e55dfd0f9",
-          "keywords" : "",
-          "permalinkKey" : "permalinks/bb88e60f-80b3-65b2-1bf3-703e55dfd0f9"
-        },
-        "bf423581-8039-b02c-0fe8-7d678534a568" : {
-          "contentType" : "image/x-icon",
-          "description" : "",
-          "downloadUrl" : "https://firebasestorage.googleapis.com/v0/b/project-7669095260722476815.appspot.com/o/tenants%2Fdefault%2FPh03nyx-Super-Mario-Mushroom-1UP.ico?alt=media&token=c8ebe2f2-0b05-4991-9f90-25bb56b44938",
-          "filename" : "Ph03nyx-Super-Mario-Mushroom-1UP.ico",
-          "key" : "uploads/bf423581-8039-b02c-0fe8-7d678534a568",
-          "keywords" : "",
-          "permalinkKey" : "permalinks/de69895e-3232-c767-53e6-49ed801557b8"
-        },
-        "e688898b-b9a2-240f-6da0-346b6b0d02e1" : {
-          "contentType" : "image/svg+xml",
-          "description" : "",
-          "downloadUrl" : "https://firebasestorage.googleapis.com/v0/b/project-7669095260722476815.appspot.com/o/tenants%2Fdefault%2Fe0e5eb90-7ebe-e85a-dedb-ea17daf73201?alt=media&token=1f9ebe05-87ec-4f48-a6e8-daf280a1eb3e",
-          "filename" : "json-output-example.svg",
-          "key" : "uploads/e688898b-b9a2-240f-6da0-346b6b0d02e1",
-          "keywords" : "",
-          "permalinkKey" : "permalinks/e0e5eb90-7ebe-e85a-dedb-ea17daf73201"
-        },
-        "f0b568bf-703a-0fa5-58b0-5b4574b18b93" : {
-          "contentType" : "image/svg+xml",
-          "description" : "",
-          "downloadUrl" : "https://firebasestorage.googleapis.com/v0/b/project-7669095260722476815.appspot.com/o/tenants%2Fdefault%2Fc7a63e62-bfb9-464a-ce18-662564681a72?alt=media&token=19a6c922-134b-4c0a-923a-173852d40063",
-          "filename" : "pen-and-ruler.svg",
-          "key" : "uploads/f0b568bf-703a-0fa5-58b0-5b4574b18b93",
-          "keywords" : "",
-          "permalinkKey" : "permalinks/c7a63e62-bfb9-464a-ce18-662564681a72"
+        {
+          "background": {
+            "color": "#ffffff",
+            "position": "center center",
+            "size": "cover"
+          },
+          "layout": "container",
+          "nodes": [
+            {
+              "nodes": [
+                {
+                  "nodes": [
+                    {
+                      "nodes": [
+                        {
+                          "data": {
+                            "alignment": "align-center",
+                            "categories": {
+                              "alignment": [
+                                "text.alignment.viewports.xs.alignedCenter",
+                                "text.alignment.viewports.xl.alignedCenter"
+                              ]
+                            },
+                            "intentions": {
+                              "text": {
+                                "alignment": {
+                                  "viewports": {
+                                    "xl": "alignedCenter"
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "isVoid": false,
+                          "nodes": [
+                            {
+                              "leaves": [
+                                {
+                                  "marks": [
+                                    {
+                                      "data": {
+                                        "style": {
+                                          "color": "#2a2f30"
+                                        }
+                                      },
+                                      "object": "mark",
+                                      "type": "styled"
+                                    }
+                                  ],
+                                  "object": "leaf",
+                                  "text": "© 2018 Vienna LLC. All rights reserved."
+                                }
+                              ],
+                              "object": "text"
+                            }
+                          ],
+                          "object": "block",
+                          "type": "paragraph"
+                        }
+                      ],
+                      "object": "widget",
+                      "type": "text"
+                    }
+                  ],
+                  "object": "block",
+                  "size": {
+                    "md": "12"
+                  },
+                  "type": "layout-column"
+                }
+              ],
+              "object": "block",
+              "type": "layout-row"
+            }
+          ],
+          "object": "block",
+          "padding": "with-padding",
+          "snapping": "none",
+          "type": "layout-section"
         }
+      ],
+      "object": "block",
+      "type": "layout"
+    },
+    "84c722a7-e724-2942-8931-937578400254": {
+      "key": "files/84c722a7-e724-2942-8931-937578400254",
+      "nodes": [
+        {
+          "background": {
+            "color": "transparent",
+            "picture": {
+              "repeat": "no-repeat",
+              "sourcePermalinkKey": "permalinks/b6dffe3a-3dfb-a691-beeb-1d9b3577a0e5"
+            },
+            "position": "center center",
+            "size": "cover"
+          },
+          "layout": "container",
+          "nodes": [
+            {
+              "nodes": [
+                {
+                  "object": "block",
+                  "size": {
+                    "md": "6"
+                  },
+                  "type": "layout-column"
+                },
+                {
+                  "alignment": {
+                    "lg": "middle start",
+                    "md": "middle start",
+                    "sm": "middle start"
+                  },
+                  "nodes": [
+                    {
+                      "nodes": [
+                        {
+                          "nodes": [
+                            {
+                              "object": "text",
+                              "text": ""
+                            }
+                          ],
+                          "object": "block",
+                          "type": "paragraph"
+                        },
+                        {
+                          "nodes": [
+                            {
+                              "object": "text",
+                              "text": "Reservation, Waitlist, Table and Loyalty Management"
+                            }
+                          ],
+                          "object": "block",
+                          "type": "paragraph"
+                        },
+                        {
+                          "nodes": [
+                            {
+                              "object": "text",
+                              "text": "\rOffer exceptional dining experiences - One guest at a time"
+                            }
+                          ],
+                          "object": "block",
+                          "type": "heading-one"
+                        }
+                      ],
+                      "object": "widget",
+                      "type": "text"
+                    },
+                    {
+                      "label": "Schedule demo",
+                      "object": "block",
+                      "size": "large",
+                      "style": "primary",
+                      "type": "button"
+                    },
+                    {
+                      "label": "Learn more",
+                      "object": "block",
+                      "size": "large",
+                      "style": "default",
+                      "type": "button"
+                    }
+                  ],
+                  "object": "block",
+                  "size": {
+                    "md": "6"
+                  },
+                  "type": "layout-column"
+                }
+              ],
+              "object": "block",
+              "type": "layout-row"
+            }
+          ],
+          "object": "block",
+          "padding": "with-padding",
+          "snapping": "none",
+          "type": "layout-section"
+        },
+        {
+          "background": {
+            "color": "transparent",
+            "picture": {
+              "repeat": "no-repeat",
+              "sourcePermalinkKey": "permalinks/64708262-8fd6-d041-89bc-f4f4ce3c0c07"
+            },
+            "position": "center center",
+            "size": "cover"
+          },
+          "layout": "container",
+          "nodes": [
+            {
+              "nodes": [
+                {
+                  "nodes": [
+                    {
+                      "nodes": [
+                        {
+                          "data": {
+                            "alignment": "align-center"
+                          },
+                          "nodes": [
+                            {
+                              "leaves": [
+                                {
+                                  "marks": [
+                                    {
+                                      "data": {
+                                        "style": {
+                                          "color": "#ffffff"
+                                        }
+                                      },
+                                      "type": "styled"
+                                    }
+                                  ],
+                                  "text": "Modern, Customizable Front-Of-House System"
+                                }
+                              ],
+                              "object": "text"
+                            }
+                          ],
+                          "object": "block",
+                          "type": "heading-two"
+                        },
+                        {
+                          "data": {
+                            "alignment": "align-center"
+                          },
+                          "nodes": [
+                            {
+                              "leaves": [
+                                {
+                                  "marks": [
+                                    {
+                                      "data": {
+                                        "style": {
+                                          "color": "#ffffff"
+                                        }
+                                      },
+                                      "type": "styled"
+                                    }
+                                  ],
+                                  "text": "Wait List, Reservation, and Loyalty management for restaurants"
+                                }
+                              ],
+                              "object": "text"
+                            }
+                          ],
+                          "object": "block",
+                          "type": "paragraph"
+                        }
+                      ],
+                      "object": "widget",
+                      "type": "text"
+                    }
+                  ],
+                  "object": "block",
+                  "size": {
+                    "md": "12"
+                  },
+                  "type": "layout-column"
+                }
+              ],
+              "object": "block",
+              "type": "layout-row"
+            }
+          ],
+          "object": "block",
+          "padding": "with-padding",
+          "snapping": "none",
+          "type": "layout-section"
+        },
+        {
+          "background": {
+            "color": "#f8f8f8",
+            "position": "center center",
+            "size": "cover"
+          },
+          "layout": "container",
+          "nodes": [
+            {
+              "nodes": [
+                {
+                  "alignment": {
+                    "lg": "middle start",
+                    "md": "middle start",
+                    "sm": "middle start"
+                  },
+                  "nodes": [
+                    {
+                      "nodes": [
+                        {
+                          "nodes": [
+                            {
+                              "object": "text",
+                              "text": "Reservations System\r"
+                            }
+                          ],
+                          "object": "block",
+                          "type": "heading-three"
+                        },
+                        {
+                          "nodes": [
+                            {
+                              "object": "text",
+                              "text": "Remain in control while serving more diners. Accept reservations from your website or the Hostme mobile application. Leverage our unique \"Hybrid\" reservation mode to protect your restaurant from no-shows. Avoid double booking with the Hostme conflict validation algorithm."
+                            }
+                          ],
+                          "object": "block",
+                          "type": "paragraph"
+                        }
+                      ],
+                      "object": "widget",
+                      "type": "text"
+                    },
+                    {
+                      "label": "Learn more",
+                      "object": "block",
+                      "style": "primary",
+                      "type": "button"
+                    }
+                  ],
+                  "object": "block",
+                  "size": {
+                    "md": "6"
+                  },
+                  "type": "layout-column"
+                },
+                {
+                  "nodes": [
+                    {
+                      "animation": "none",
+                      "caption": "main-img-1@2x.png",
+                      "layout": "noframe",
+                      "object": "block",
+                      "sourceKey": "permalinks/387f8806-06e9-0393-b780-0c8fd06d10b6",
+                      "type": "picture"
+                    }
+                  ],
+                  "object": "block",
+                  "size": {
+                    "md": "6"
+                  },
+                  "type": "layout-column"
+                }
+              ],
+              "object": "block",
+              "type": "layout-row"
+            }
+          ],
+          "object": "block",
+          "padding": "with-padding",
+          "snapping": "none",
+          "type": "layout-section"
+        },
+        {
+          "background": {
+            "color": "#eef1f2",
+            "position": "center center",
+            "size": "cover"
+          },
+          "layout": "container",
+          "nodes": [
+            {
+              "nodes": [
+                {
+                  "nodes": [
+                    {
+                      "animation": "none",
+                      "caption": "main-img-2@2x.png",
+                      "layout": "noframe",
+                      "object": "block",
+                      "sourceKey": "permalinks/dd42f3a1-3741-5a51-dce1-cc4916ea3f47",
+                      "type": "picture"
+                    }
+                  ],
+                  "object": "block",
+                  "size": {
+                    "md": "6"
+                  },
+                  "type": "layout-column"
+                },
+                {
+                  "alignment": {
+                    "lg": "middle start",
+                    "md": "middle start",
+                    "sm": "middle start"
+                  },
+                  "nodes": [
+                    {
+                      "nodes": [
+                        {
+                          "nodes": [
+                            {
+                              "object": "text",
+                              "text": "Table Management\r"
+                            }
+                          ],
+                          "object": "block",
+                          "type": "heading-three"
+                        },
+                        {
+                          "nodes": [
+                            {
+                              "object": "text",
+                              "text": "Improve host efficiency and maximize seat utilization. Create a floor map of any complexity. Track restaurant occupancy. Assign reservations or walk-ins to a table in one click. Avoid double booking with our conflict validation algorithm.."
+                            }
+                          ],
+                          "object": "block",
+                          "type": "paragraph"
+                        }
+                      ],
+                      "object": "widget",
+                      "type": "text"
+                    },
+                    {
+                      "label": "Learn more",
+                      "object": "block",
+                      "style": "primary",
+                      "type": "button"
+                    }
+                  ],
+                  "object": "block",
+                  "size": {
+                    "md": "6"
+                  },
+                  "type": "layout-column"
+                }
+              ],
+              "object": "block",
+              "type": "layout-row"
+            }
+          ],
+          "object": "block",
+          "padding": "with-padding",
+          "snapping": "none",
+          "type": "layout-section"
+        },
+        {
+          "background": {
+            "color": "#f8f8f8",
+            "position": "center center",
+            "size": "cover"
+          },
+          "layout": "container",
+          "nodes": [
+            {
+              "nodes": [
+                {
+                  "alignment": {
+                    "lg": "middle start",
+                    "md": "middle start",
+                    "sm": "middle start"
+                  },
+                  "nodes": [
+                    {
+                      "nodes": [
+                        {
+                          "nodes": [
+                            {
+                              "object": "text",
+                              "text": "Wait List\r"
+                            }
+                          ],
+                          "object": "block",
+                          "type": "heading-three"
+                        },
+                        {
+                          "nodes": [
+                            {
+                              "object": "text",
+                              "text": "Seat parties faster and increase efficiency at the host stand. Notify guests when their table is ready using their phone. Track who waited an excessively long time and reward them with loyalty points or a free drink. Eliminate costly pager losses."
+                            }
+                          ],
+                          "object": "block",
+                          "type": "paragraph"
+                        }
+                      ],
+                      "object": "widget",
+                      "type": "text"
+                    },
+                    {
+                      "label": "Learn more",
+                      "object": "block",
+                      "style": "primary",
+                      "type": "button"
+                    }
+                  ],
+                  "object": "block",
+                  "size": {
+                    "md": "6"
+                  },
+                  "type": "layout-column"
+                },
+                {
+                  "nodes": [
+                    {
+                      "animation": "none",
+                      "caption": "comm@2x.png",
+                      "layout": "noframe",
+                      "object": "block",
+                      "sourceKey": "permalinks/f04994a0-3608-4f2c-842f-dfd886349059",
+                      "type": "picture"
+                    }
+                  ],
+                  "object": "block",
+                  "size": {
+                    "md": "6"
+                  },
+                  "type": "layout-column"
+                }
+              ],
+              "object": "block",
+              "type": "layout-row"
+            }
+          ],
+          "object": "block",
+          "padding": "without-padding",
+          "snapping": "none",
+          "type": "layout-section"
+        },
+        {
+          "background": {
+            "color": "#eef1f2",
+            "position": "center center",
+            "size": "cover"
+          },
+          "layout": "container",
+          "nodes": [
+            {
+              "nodes": [
+                {
+                  "nodes": [
+                    {
+                      "animation": "none",
+                      "caption": "main-img-4@2x.png",
+                      "layout": "noframe",
+                      "object": "block",
+                      "sourceKey": "permalinks/a4287b34-076a-c4a8-ad4b-2d0dd7bbe082",
+                      "type": "picture"
+                    }
+                  ],
+                  "object": "block",
+                  "size": {
+                    "md": "6"
+                  },
+                  "type": "layout-column"
+                },
+                {
+                  "alignment": {
+                    "lg": "middle start",
+                    "md": "middle start",
+                    "sm": "middle start"
+                  },
+                  "nodes": [
+                    {
+                      "nodes": [
+                        {
+                          "nodes": [
+                            {
+                              "object": "text",
+                              "text": "Loyalty System\r"
+                            }
+                          ],
+                          "object": "block",
+                          "type": "heading-three"
+                        },
+                        {
+                          "nodes": [
+                            {
+                              "object": "text",
+                              "text": "Loyalty program that matches your restaurant and your guests. Get your loyalty program up-and-running in no time. Let your guests enroll while they are waiting for their table or right after they are seated. Fill tables on days when it's usually slow with customized reward rules."
+                            }
+                          ],
+                          "object": "block",
+                          "type": "paragraph"
+                        }
+                      ],
+                      "object": "widget",
+                      "type": "text"
+                    },
+                    {
+                      "label": "Learn more",
+                      "object": "block",
+                      "style": "primary",
+                      "type": "button"
+                    }
+                  ],
+                  "object": "block",
+                  "size": {
+                    "md": "6"
+                  },
+                  "type": "layout-column"
+                }
+              ],
+              "object": "block",
+              "type": "layout-row"
+            }
+          ],
+          "object": "block",
+          "padding": "with-padding",
+          "snapping": "none",
+          "type": "layout-section"
+        }
+      ],
+      "object": "block",
+      "type": "page"
+    },
+    "a74a4283-a58c-c51f-382b-116c2fdf645a": {
+      "key": "files/a74a4283-a58c-c51f-382b-116c2fdf645a",
+      "nodes": [
+        {
+          "nodes": [
+            {
+              "align": {
+                "md": "center"
+              },
+              "nodes": [
+                {
+                  "nodes": [
+                    {
+                      "nodes": [
+                        {
+                          "nodes": [
+                            {
+                              "data": {
+                                "href": ""
+                              },
+                              "nodes": [
+                                {
+                                  "object": "text",
+                                  "text": "Learn from Kafe Leopolds how to manage crowd in popular places\r"
+                                }
+                              ],
+                              "object": "inline",
+                              "type": "link"
+                            }
+                          ],
+                          "object": "block",
+                          "type": "paragraph"
+                        },
+                        {
+                          "nodes": [
+                            {
+                              "data": {
+                                "href": ""
+                              },
+                              "nodes": [
+                                {
+                                  "object": "text",
+                                  "text": "Don't wait at your favorite restaurant ever again!\r"
+                                }
+                              ],
+                              "object": "inline",
+                              "type": "link"
+                            }
+                          ],
+                          "object": "block",
+                          "type": "paragraph"
+                        },
+                        {
+                          "nodes": [
+                            {
+                              "object": "text",
+                              "text": "Understanding OpenTable's game plan and how to cut your bill without losing customers"
+                            }
+                          ],
+                          "object": "block",
+                          "type": "paragraph"
+                        }
+                      ],
+                      "object": "widget",
+                      "type": "text"
+                    }
+                  ],
+                  "object": "block",
+                  "size": {
+                    "md": "12"
+                  },
+                  "type": "layout-column"
+                }
+              ],
+              "object": "block",
+              "type": "layout-row"
+            }
+          ],
+          "object": "block",
+          "type": "layout-section"
+        }
+      ],
+      "object": "block",
+      "type": "page"
+    },
+    "aae86ccd-61f5-1dbe-d7ff-b0f105f7a65c": {
+      "key": "files/aae86ccd-61f5-1dbe-d7ff-b0f105f7a65c",
+      "nodes": [
+        {
+          "background": {
+            "color": "#f8f8f8",
+            "position": "center center",
+            "size": "cover"
+          },
+          "layout": "container",
+          "nodes": [
+            {
+              "nodes": [
+                {
+                  "alignment": {
+                    "xl": "center center"
+                  },
+                  "nodes": [
+                    {
+                      "nodes": [
+                        {
+                          "data": {
+                            "alignment": "align-center",
+                            "categories": {
+                              "alignment": "alignedCenter"
+                            }
+                          },
+                          "isVoid": false,
+                          "nodes": [
+                            {
+                              "leaves": [
+                                {
+                                  "marks": [
+                                    {
+                                      "data": {
+                                        "style": {
+                                          "color": "#2a2f30"
+                                        }
+                                      },
+                                      "object": "mark",
+                                      "type": "styled"
+                                    }
+                                  ],
+                                  "object": "leaf",
+                                  "text": "About"
+                                }
+                              ],
+                              "object": "text"
+                            }
+                          ],
+                          "object": "block",
+                          "type": "heading-one"
+                        },
+                        {
+                          "data": {
+                            "alignment": "align-center",
+                            "categories": {
+                              "alignment": "alignedCenter"
+                            }
+                          },
+                          "isVoid": false,
+                          "nodes": [
+                            {
+                              "leaves": [
+                                {
+                                  "object": "leaf",
+                                  "text": ""
+                                }
+                              ],
+                              "object": "text"
+                            }
+                          ],
+                          "object": "block",
+                          "type": "paragraph"
+                        },
+                        {
+                          "data": {
+                            "alignment": "align-center",
+                            "categories": {
+                              "alignment": "alignedCenter"
+                            }
+                          },
+                          "isVoid": false,
+                          "nodes": [
+                            {
+                              "leaves": [
+                                {
+                                  "object": "leaf",
+                                  "text": ""
+                                }
+                              ],
+                              "object": "text"
+                            }
+                          ],
+                          "object": "block",
+                          "type": "paragraph"
+                        }
+                      ],
+                      "object": "widget",
+                      "type": "text"
+                    }
+                  ],
+                  "object": "block",
+                  "size": {
+                    "lg": "12",
+                    "md": "12",
+                    "sm": "12"
+                  },
+                  "type": "layout-column"
+                }
+              ],
+              "object": "block",
+              "type": "layout-row"
+            }
+          ],
+          "object": "block",
+          "padding": "with-padding",
+          "snapping": "none",
+          "type": "layout-section"
+        }
+      ],
+      "object": "block",
+      "type": "page"
+    },
+    "b6913394-d816-1625-ffcf-54a521d048c1": {
+      "key": "files/b6913394-d816-1625-ffcf-54a521d048c1",
+      "nodes": [
+        {
+          "background": {
+            "position": "center center",
+            "size": "cover"
+          },
+          "layout": "container",
+          "nodes": [
+            {
+              "nodes": [
+                {
+                  "nodes": [
+                    {
+                      "caption": "Picture",
+                      "layout": "noframe",
+                      "object": "block",
+                      "sourceKey": "permalinks/275773e2-9018-4646-7d06-7f5cea3660fc",
+                      "type": "picture"
+                    }
+                  ],
+                  "object": "block",
+                  "size": {
+                    "lg": "12",
+                    "md": "12",
+                    "sm": "12"
+                  },
+                  "type": "layout-column"
+                }
+              ],
+              "object": "block",
+              "type": "layout-row"
+            }
+          ],
+          "object": "block",
+          "padding": "with-padding",
+          "snapping": "none",
+          "type": "layout-section"
+        }
+      ],
+      "object": "block",
+      "type": "page"
+    },
+    "ca4052ac-e4f4-82a8-e341-be5517db366f": {
+      "key": "files/ca4052ac-e4f4-82a8-e341-be5517db366f",
+      "nodes": [
+        {
+          "background": {
+            "position": "center center",
+            "size": "contain"
+          },
+          "layout": "container",
+          "object": "block",
+          "padding": "with-padding",
+          "snapping": "none",
+          "type": "layout-section"
+        }
+      ],
+      "object": "block",
+      "type": "page"
+    },
+    "ffdcdb4e-bad4-dfd7-3e9c-c0b2a917b66a": {
+      "key": "files/ffdcdb4e-bad4-dfd7-3e9c-c0b2a917b66a",
+      "nodes": [
+        {
+          "background": {
+            "position": "center center",
+            "size": "cover"
+          },
+          "layout": "container",
+          "nodes": [
+            {
+              "nodes": [
+                {
+                  "alignment": {
+                    "xl": "center center"
+                  },
+                  "nodes": [
+                    {
+                      "animation": "none",
+                      "caption": "Picture",
+                      "layout": "noframe",
+                      "object": "block",
+                      "sourceKey": "permalinks/c7a63e62-bfb9-464a-ce18-662564681a72",
+                      "type": "picture"
+                    }
+                  ],
+                  "object": "block",
+                  "size": {
+                    "lg": "12",
+                    "md": "12",
+                    "sm": "12"
+                  },
+                  "type": "layout-column"
+                }
+              ],
+              "object": "block",
+              "type": "layout-row"
+            },
+            {
+              "nodes": [
+                {
+                  "nodes": [
+                    {
+                      "nodes": [
+                        {
+                          "data": {
+                            "alignment": "align-center",
+                            "categories": {
+                              "alignment": [
+                                "text.alignment.viewports.xl.alignedCenter",
+                                "text.alignment.viewports.xs.alignedLeft",
+                                "text.alignment.viewports.sm.alignedCenter"
+                              ]
+                            },
+                            "intentions": {
+                              "text": {
+                                "alignment": {
+                                  "viewports": {
+                                    "xl": "alignedCenter"
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "isVoid": false,
+                          "nodes": [
+                            {
+                              "leaves": [
+                                {
+                                  "object": "leaf",
+                                  "text": "Content authoring tools for web apps"
+                                }
+                              ],
+                              "object": "text"
+                            }
+                          ],
+                          "object": "block",
+                          "type": "heading-one"
+                        },
+                        {
+                          "data": {
+                            "alignment": "align-center",
+                            "categories": {
+                              "alignment": [
+                                "text.alignment.viewports.xl.alignedCenter",
+                                "text.alignment.viewports.xs.alignedLeft",
+                                "text.alignment.viewports.sm.alignedCenter"
+                              ]
+                            },
+                            "intentions": {
+                              "text": {
+                                "alignment": {
+                                  "viewports": {
+                                    "xl": "alignedCenter"
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "isVoid": false,
+                          "nodes": [
+                            {
+                              "leaves": [
+                                {
+                                  "object": "leaf",
+                                  "text": "This is an Open Source product which offers a set of components and tools for developing web applications with rich content authoring capabilities."
+                                }
+                              ],
+                              "object": "text"
+                            }
+                          ],
+                          "object": "block",
+                          "type": "paragraph"
+                        }
+                      ],
+                      "object": "widget",
+                      "type": "text"
+                    },
+                    {
+                      "object": "block",
+                      "type": "form"
+                    }
+                  ],
+                  "object": "block",
+                  "size": {
+                    "lg": "12",
+                    "md": "12",
+                    "sm": "12"
+                  },
+                  "type": "layout-column"
+                }
+              ],
+              "object": "block",
+              "type": "layout-row"
+            }
+          ],
+          "object": "block",
+          "padding": "with-padding",
+          "snapping": "none",
+          "type": "layout-section"
+        }
+      ],
+      "object": "block",
+      "type": "page"
+    }
+  },
+  "groups": {
+    "admin": {
+      "name": "Administrator"
+    }
+  },
+  "layouts": {
+    "e5de2977-1176-6b9d-f4ef-50c77ea1c60f": {
+      "contentKey": "files/7fe21f13-d1dd-00c1-c00e-a296b2cdcdca",
+      "description": "default layout",
+      "key": "layouts/e5de2977-1176-6b9d-f4ef-50c77ea1c60f",
+      "keywords": "key",
+      "title": "default",
+      "uriTemplate": "/"
+    }
+  },
+  "navigationItems": {
+    "main": {
+      "key": "navigationItems/main",
+      "label": "Main menu",
+      "navigationItems": [
+        {
+          "externalUrl": "https://github.com/paperbits/paperbits-knockout/wiki",
+          "key": "69a17e43-9ba1-00ff-51d4-8a13bfb11294",
+          "label": "Docs"
+        },
+        {
+          "key": "cd1e5fde-8a9a-4b2b-a9f8-82f0bcb3c48c",
+          "label": "About",
+          "permalinkKey": "permalinks/3f2f6620-7c84-b265-597a-8a7ea9cb907c"
+        },
+        {
+          "key": "000ef996-5895-ff21-1883-b1f415def573",
+          "label": "Blog",
+          "permalinkKey": "permalinks/53cd1571-5da7-b592-99ec-ab14600e8114"
+        },
+        {
+          "externalUrl": "https://github.com/paperbits",
+          "key": "e815a458-4562-7c58-8f11-9c65334d0d46",
+          "label": "Github"
+        }
+      ]
+    }
+  },
+  "pages": {
+    "785adeeb-c369-3a32-0003-693c724046b6": {
+      "contentKey": "files/aae86ccd-61f5-1dbe-d7ff-b0f105f7a65c",
+      "description": "",
+      "key": "pages/785adeeb-c369-3a32-0003-693c724046b6",
+      "keywords": "",
+      "permalinkKey": "permalinks/3f2f6620-7c84-b265-597a-8a7ea9cb907c",
+      "title": "About"
+    },
+    "b56b71e3-2868-91bd-c8a0-5b8ea62dc558": {
+      "contentKey": "files/ca4052ac-e4f4-82a8-e341-be5517db366f",
+      "description": "",
+      "key": "pages/b56b71e3-2868-91bd-c8a0-5b8ea62dc558",
+      "keywords": "",
+      "permalinkKey": "permalinks/53cd1571-5da7-b592-99ec-ab14600e8114",
+      "title": "Blog"
+    },
+    "e0987ca1-f458-b546-7697-7be594b35583": {
+      "contentKey": "files/ffdcdb4e-bad4-dfd7-3e9c-c0b2a917b66a",
+      "description": "",
+      "key": "pages/e0987ca1-f458-b546-7697-7be594b35583",
+      "keywords": "",
+      "permalinkKey": "permalinks/57e1dda7-b467-9813-4d99-e5fae7684756",
+      "title": "Home"
+    },
+    "f95c292b-b40b-e2cd-b5dc-71fffc97083d": {
+      "contentKey": "files/b6913394-d816-1625-ffcf-54a521d048c1",
+      "description": "",
+      "key": "pages/f95c292b-b40b-e2cd-b5dc-71fffc97083d",
+      "keywords": "",
+      "permalinkKey": "permalinks/c09980ce-64dd-cff1-5114-ae13ec29a4ba",
+      "title": "404"
+    }
+  },
+  "permalinks": {
+    "0b00c039-94fb-233e-5e74-e21f21c78ab3": {
+      "key": "permalinks/0b00c039-94fb-233e-5e74-e21f21c78ab3",
+      "targetKey": "uploads/0ef739dd-f1c7-6f2b-4dfb-358f4ee5d2f6",
+      "uri": "/content/checkmark.svg"
+    },
+    "16aa747c-5b1a-8fbf-9473-6c345f611cb8": {
+      "key": "permalinks/16aa747c-5b1a-8fbf-9473-6c345f611cb8",
+      "targetKey": "uploads/e7c09fdb-372a-d878-9f46-e4cba80e57f0",
+      "uri": "/content/pen-and-ruler.svg"
+    },
+    "1f0d7238-1bb7-1d88-c754-26d46e67e5f0": {
+      "key": "permalinks/1f0d7238-1bb7-1d88-c754-26d46e67e5f0",
+      "targetKey": "uploads/9530cb42-5465-0938-adfb-9a906b15945d",
+      "uri": "/content/pen-and-ruler.svg"
+    },
+    "26dc1a4a-e193-4ce5-9833-66ce8d4b71e6": {
+      "key": "permalinks/26dc1a4a-e193-4ce5-9833-66ce8d4b71e6",
+      "targetKey": "uploads/69bdd360-3f3d-0617-eb6f-32f50c4c6558",
+      "uri": "/content/wait-cover.jpg"
+    },
+    "275773e2-9018-4646-7d06-7f5cea3660fc": {
+      "key": "permalinks/275773e2-9018-4646-7d06-7f5cea3660fc",
+      "targetKey": "uploads/92c8f9aa-e2d1-7a73-1cdd-1b9e39ba41e4",
+      "uri": "/content/finding-way.svg"
+    },
+    "2cfaf575-6704-802a-af89-8f83fb0b249e": {
+      "key": "permalinks/2cfaf575-6704-802a-af89-8f83fb0b249e",
+      "targetKey": "uploads/528f762d-90bb-0f3f-8820-fa3bd5533670",
+      "uri": "/content/logo@2x.png"
+    },
+    "373dede2-82ce-3ecd-0fe0-a8b1d85e23d7": {
+      "key": "permalinks/373dede2-82ce-3ecd-0fe0-a8b1d85e23d7",
+      "targetKey": "uploads/3423f56f-b1e5-b1ee-3ecb-96199a58af3d",
+      "uri": "/content/bb-cover.jpg"
+    },
+    "387f8806-06e9-0393-b780-0c8fd06d10b6": {
+      "key": "permalinks/387f8806-06e9-0393-b780-0c8fd06d10b6",
+      "targetKey": "uploads/4773a7fd-b139-d396-ee67-1d6fe39ff222",
+      "uri": "/content/main-img-1@2x.png"
+    },
+    "3f2f6620-7c84-b265-597a-8a7ea9cb907c": {
+      "key": "permalinks/3f2f6620-7c84-b265-597a-8a7ea9cb907c",
+      "targetKey": "pages/785adeeb-c369-3a32-0003-693c724046b6",
+      "uri": "/about"
+    },
+    "414308da-dcd7-d6db-0154-e88c42872280": {
+      "key": "permalinks/414308da-dcd7-d6db-0154-e88c42872280",
+      "targetKey": "uploads/11fef61d-3b8b-e856-134c-50815084c1a2",
+      "uri": "/content/wait-cover.jpg"
+    },
+    "46e0458b-42cd-c685-2d1b-f59e971275e9": {
+      "key": "permalinks/46e0458b-42cd-c685-2d1b-f59e971275e9",
+      "targetKey": "uploads/9f65bb2b-75ed-25a7-cc9b-441c6821075b",
+      "uri": "/content/pen-and-ruler.svg"
+    },
+    "487e2667-f0ec-9207-0b05-0a0d5fe029a0": {
+      "key": "permalinks/487e2667-f0ec-9207-0b05-0a0d5fe029a0",
+      "targetKey": "uploads/be92441a-d818-4fff-6a53-31017c681210",
+      "uri": "/content/favicon.ico"
+    },
+    "4cfcb0a0-4839-26de-6057-038bc28622ff": {
+      "key": "permalinks/4cfcb0a0-4839-26de-6057-038bc28622ff",
+      "targetKey": "uploads/09bf17e5-3828-86c3-2c5a-96af1f3a0493",
+      "uri": "/content/logo.svg"
+    },
+    "53cd1571-5da7-b592-99ec-ab14600e8114": {
+      "key": "permalinks/53cd1571-5da7-b592-99ec-ab14600e8114",
+      "targetKey": "pages/b56b71e3-2868-91bd-c8a0-5b8ea62dc558",
+      "uri": "/blog"
+    },
+    "57e1dda7-b467-9813-4d99-e5fae7684756": {
+      "key": "permalinks/57e1dda7-b467-9813-4d99-e5fae7684756",
+      "targetKey": "pages/e0987ca1-f458-b546-7697-7be594b35583",
+      "uri": "/"
+    },
+    "5a28503e-06ff-6b73-57e9-3c2439283e9e": {
+      "key": "permalinks/5a28503e-06ff-6b73-57e9-3c2439283e9e",
+      "targetKey": "uploads/5a28503e-06ff-6b73-57e9-3c2439283e9e",
+      "uri": "/content/math 1-13 001.jpg"
+    },
+    "64708262-8fd6-d041-89bc-f4f4ce3c0c07": {
+      "key": "permalinks/64708262-8fd6-d041-89bc-f4f4ce3c0c07",
+      "targetKey": "uploads/a4bd0e22-6c46-6b16-eb5b-904e4c420bd9",
+      "uri": "/content/service-bg.jpg"
+    },
+    "68bd01c5-aad4-218c-9cf5-04a46dcb7931": {
+      "key": "permalinks/68bd01c5-aad4-218c-9cf5-04a46dcb7931",
+      "targetKey": "uploads/485d52ec-aafb-bf9f-ac07-b523301f17b3",
+      "uri": "/content/leopold-cover.jpg"
+    },
+    "6b53d195-3eda-2eb9-8028-fd347aa14feb": {
+      "key": "permalinks/6b53d195-3eda-2eb9-8028-fd347aa14feb",
+      "targetKey": "uploads/f63dd70f-8db5-1fe1-90e8-bb729fc9a771",
+      "uri": "/content/news-online-reservation-page.png"
+    },
+    "6d61fb47-a96b-d9d6-ec7f-47ef61da60f1": {
+      "key": "permalinks/6d61fb47-a96b-d9d6-ec7f-47ef61da60f1",
+      "targetKey": "uploads/e46cc7ae-f68a-274f-12b4-e16432b911f0",
+      "uri": "/content/widget-desktop-site.jpg"
+    },
+    "72ddccf7-b53e-37bd-cee5-0cdedc83ee8e": {
+      "key": "permalinks/72ddccf7-b53e-37bd-cee5-0cdedc83ee8e",
+      "targetKey": "uploads/5f1625e4-2805-ab43-ac32-c3e581c08226",
+      "uri": "/content/news-new-reservation-widget.png"
+    },
+    "85c02015-9c28-b3ab-c703-88fe78f2f0ff": {
+      "key": "permalinks/85c02015-9c28-b3ab-c703-88fe78f2f0ff",
+      "targetKey": "uploads/37b55285-cf44-3e0e-ad1c-7b9d11410664",
+      "uri": "/content/json-output-example.svg"
+    },
+    "8e7766d2-c970-df1c-c2a9-880d0d4abe52": {
+      "key": "permalinks/8e7766d2-c970-df1c-c2a9-880d0d4abe52",
+      "targetKey": "uploads/8e7766d2-c970-df1c-c2a9-880d0d4abe52",
+      "uri": "/content/getting-started.svg"
+    },
+    "96562577-5dc3-2644-b510-757acbbdabd3": {
+      "key": "permalinks/96562577-5dc3-2644-b510-757acbbdabd3",
+      "targetKey": "uploads/8b7bdb01-5ea3-3b39-7a21-6f32e6f58bf0",
+      "uri": "/content/pen-fight.svg"
+    },
+    "a3311ec4-4521-12a5-9a49-a65deae36c8e": {
+      "key": "permalinks/a3311ec4-4521-12a5-9a49-a65deae36c8e",
+      "targetKey": "uploads/345b447b-3ddb-1226-8c00-9fa9a1d1dded",
+      "uri": "/content/bb.jpg"
+    },
+    "a3b978d6-a611-8b83-c2f5-8dd1812427c7": {
+      "key": "permalinks/a3b978d6-a611-8b83-c2f5-8dd1812427c7",
+      "targetKey": "uploads/bd82e36e-6238-9d38-3869-1639da1354c5",
+      "uri": "/content/opentable-how-search-result.png"
+    },
+    "a4287b34-076a-c4a8-ad4b-2d0dd7bbe082": {
+      "key": "permalinks/a4287b34-076a-c4a8-ad4b-2d0dd7bbe082",
+      "targetKey": "uploads/ee95207d-2d2a-425c-81f5-a9689a15836a",
+      "uri": "/content/main-img-4@2x.png"
+    },
+    "b097ccd8-f4ca-3a3a-7cda-da672f44e427": {
+      "key": "permalinks/b097ccd8-f4ca-3a3a-7cda-da672f44e427",
+      "targetKey": "uploads/122cb406-8d83-46d1-2519-aa077f693e55",
+      "uri": "/content/wait.jpg"
+    },
+    "b2bd59d6-1994-9bef-889a-92a0a2fce3b6": {
+      "key": "permalinks/b2bd59d6-1994-9bef-889a-92a0a2fce3b6",
+      "targetKey": "uploads/b4c9720c-d790-8392-d8ff-f09b6302c062",
+      "uri": "/content/5-technologies.jpg"
+    },
+    "b6dffe3a-3dfb-a691-beeb-1d9b3577a0e5": {
+      "key": "permalinks/b6dffe3a-3dfb-a691-beeb-1d9b3577a0e5",
+      "targetKey": "uploads/04b0622e-f88d-e5ff-11a8-cbfa0e2d379b",
+      "uri": "/content/header-bg-2-right@2x.jpg"
+    },
+    "bb88e60f-80b3-65b2-1bf3-703e55dfd0f9": {
+      "key": "permalinks/bb88e60f-80b3-65b2-1bf3-703e55dfd0f9",
+      "targetKey": "uploads/bb88e60f-80b3-65b2-1bf3-703e55dfd0f9",
+      "uri": "/content/frameworks.svg"
+    },
+    "bd3fbac8-e823-a795-84ce-3dfe4407f9a9": {
+      "key": "permalinks/bd3fbac8-e823-a795-84ce-3dfe4407f9a9",
+      "targetKey": "uploads/4e8ad344-7a23-0f31-ae37-705c824260bc",
+      "uri": "/content/leopold.jpg"
+    },
+    "c09980ce-64dd-cff1-5114-ae13ec29a4ba": {
+      "key": "permalinks/c09980ce-64dd-cff1-5114-ae13ec29a4ba",
+      "targetKey": "pages/f95c292b-b40b-e2cd-b5dc-71fffc97083d",
+      "uri": "/404.html"
+    },
+    "c7a63e62-bfb9-464a-ce18-662564681a72": {
+      "key": "permalinks/c7a63e62-bfb9-464a-ce18-662564681a72",
+      "targetKey": "uploads/f0b568bf-703a-0fa5-58b0-5b4574b18b93",
+      "uri": "/content/pen-and-ruler.svg"
+    },
+    "ca4ad134-875c-bbad-be98-047557eaceb7": {
+      "key": "permalinks/ca4ad134-875c-bbad-be98-047557eaceb7",
+      "targetKey": "uploads/68aa54b5-9780-b1ed-6020-fbcb7933dc26",
+      "uri": "/content/favicon.ico"
+    },
+    "d1fde25a-c1d0-5bd6-8c1c-d1a4196dff1b": {
+      "key": "permalinks/d1fde25a-c1d0-5bd6-8c1c-d1a4196dff1b",
+      "targetKey": "uploads/10250c44-500e-313f-8411-7d003ffb5be9",
+      "uri": "/content/pen-and-ruler.svg"
+    },
+    "d5359bd1-143e-e342-2637-b42af94e0785": {
+      "key": "permalinks/d5359bd1-143e-e342-2637-b42af94e0785",
+      "targetKey": "uploads/350b10ca-9a15-7fbb-5bc4-ea5260936803",
+      "uri": "/content/plane-launch.svg"
+    },
+    "dd42f3a1-3741-5a51-dce1-cc4916ea3f47": {
+      "key": "permalinks/dd42f3a1-3741-5a51-dce1-cc4916ea3f47",
+      "targetKey": "uploads/f4adaea6-4a46-4a08-9a6d-5a0a4973e1e5",
+      "uri": "/content/main-img-2@2x.png"
+    },
+    "de69895e-3232-c767-53e6-49ed801557b8": {
+      "key": "permalinks/de69895e-3232-c767-53e6-49ed801557b8",
+      "targetKey": "uploads/bf423581-8039-b02c-0fe8-7d678534a568",
+      "uri": "/content/Ph03nyx-Super-Mario-Mushroom-1UP.ico"
+    },
+    "e0e5eb90-7ebe-e85a-dedb-ea17daf73201": {
+      "key": "permalinks/e0e5eb90-7ebe-e85a-dedb-ea17daf73201",
+      "targetKey": "uploads/e688898b-b9a2-240f-6da0-346b6b0d02e1",
+      "uri": "/content/json-output-example.svg"
+    },
+    "e248c292-ad5e-94e6-cb1f-2f3c891a63ee": {
+      "key": "permalinks/e248c292-ad5e-94e6-cb1f-2f3c891a63ee",
+      "targetKey": "uploads/7933f345-d7d1-4955-c921-4fc05ea2e2b4",
+      "uri": "/content/about-cover@2x.jpg"
+    },
+    "e690279b-f576-85aa-40c7-39361c52eca4": {
+      "key": "permalinks/e690279b-f576-85aa-40c7-39361c52eca4",
+      "targetKey": "uploads/aa0f7a40-b835-54d9-4b5f-9e8dbe2b5531",
+      "uri": "/content/opentable-how-reservations-source.png"
+    },
+    "ed0395c1-d415-43ab-8fcd-cf433021d678": {
+      "key": "permalinks/ed0395c1-d415-43ab-8fcd-cf433021d678",
+      "targetKey": "uploads/5807c527-6532-e79f-8c5b-0ac17ca39b67",
+      "uri": "/content/valentine3.jpg"
+    },
+    "f04994a0-3608-4f2c-842f-dfd886349059": {
+      "key": "permalinks/f04994a0-3608-4f2c-842f-dfd886349059",
+      "targetKey": "uploads/1d9962f4-6dd3-3676-073d-ec37c4643b35",
+      "uri": "/content/comm@2x.png"
+    },
+    "f0d5a02d-ad62-5a89-8b0e-dc3eb135e72c": {
+      "key": "permalinks/f0d5a02d-ad62-5a89-8b0e-dc3eb135e72c",
+      "targetKey": "uploads/1238530a-b7fb-0041-1cc6-9be5c482f1bd",
+      "uri": "/content/pen-and-ruler.svg"
+    }
+  },
+  "settings": {
+    "config": {
+      "gtm": {
+        "containerId": "GTM-NZM93W",
+        "dataLayerName": "GTM-NZM93W"
+      },
+      "intercom": {
+        "appId": "l560nd3j"
       }
+    },
+    "description": "This is an Open Source product, which offers a set of components and tools for developing web applications with rich content authoring capabilities.",
+    "integration": {
+      "googlemaps": {
+        "apiKey": "AIzaSyC7eT_xRPt3EjX3GuzSvlaZzJmlyFxvFFs"
+      },
+      "gtm": {
+        "containerId": "GTM-NZM93W",
+        "dataLayerName": "GTM-NZM93W"
+      },
+      "intercom": {
+        "appId": "l560nd3j"
+      }
+    },
+    "keywords": "authoring tools, components, visual editor, drag & drop, Open source, javascript framework, content management",
+    "site": {
+      "description": "This is an Open Source product, which offers a set of components and tools for developing web applications with rich content authoring capabilities.",
+      "faviconPermalinkKey": "permalinks/ca4ad134-875c-bbad-be98-047557eaceb7",
+      "keywords": "authoring tools, components, visual editor, drag & drop, Open source, javascript framework, content management",
+      "title": "Paperbits - Content authoring tools for web apps!"
+    },
+    "title": "PaperBits - Content authoring tools for web apps!"
+  },
+  "uploads": {
+    "09bf17e5-3828-86c3-2c5a-96af1f3a0493": {
+      "contentType": "image/svg+xml",
+      "description": "",
+      "downloadUrl": "https://firebasestorage.googleapis.com/v0/b/project-7669095260722476815.appspot.com/o/tenants%2Fdefault%2F4cfcb0a0-4839-26de-6057-038bc28622ff?alt=media&token=ac7ebdfa-903c-41f7-b9ae-f6ca6f1b6714",
+      "filename": "logo.svg",
+      "key": "uploads/09bf17e5-3828-86c3-2c5a-96af1f3a0493",
+      "keywords": "",
+      "permalinkKey": "permalinks/4cfcb0a0-4839-26de-6057-038bc28622ff"
+    },
+    "350b10ca-9a15-7fbb-5bc4-ea5260936803": {
+      "contentType": "image/svg+xml",
+      "description": "",
+      "downloadUrl": "https://firebasestorage.googleapis.com/v0/b/project-7669095260722476815.appspot.com/o/tenants%2Fdefault%2Fd5359bd1-143e-e342-2637-b42af94e0785?alt=media&token=ff7de7f7-be80-426e-b37e-30a26544d1a5",
+      "filename": "plane-launch.svg",
+      "key": "uploads/350b10ca-9a15-7fbb-5bc4-ea5260936803",
+      "keywords": "",
+      "permalinkKey": "permalinks/d5359bd1-143e-e342-2637-b42af94e0785"
+    },
+    "68aa54b5-9780-b1ed-6020-fbcb7933dc26": {
+      "contentType": "image/x-icon",
+      "description": "",
+      "downloadUrl": "https://firebasestorage.googleapis.com/v0/b/project-7669095260722476815.appspot.com/o/tenants%2Fdefault%2Ffavicon.ico?alt=media&token=4d33e214-11f6-4488-9671-6ef77fda3d43",
+      "filename": "favicon.ico",
+      "key": "uploads/68aa54b5-9780-b1ed-6020-fbcb7933dc26",
+      "keywords": "",
+      "permalinkKey": "permalinks/ca4ad134-875c-bbad-be98-047557eaceb7"
+    },
+    "8b7bdb01-5ea3-3b39-7a21-6f32e6f58bf0": {
+      "contentType": "image/svg+xml",
+      "description": "",
+      "downloadUrl": "https://firebasestorage.googleapis.com/v0/b/project-7669095260722476815.appspot.com/o/tenants%2Fdefault%2F96562577-5dc3-2644-b510-757acbbdabd3?alt=media&token=5e06d546-8355-43f0-8de8-cc941cc01bea",
+      "filename": "pen-fight.svg",
+      "key": "uploads/8b7bdb01-5ea3-3b39-7a21-6f32e6f58bf0",
+      "keywords": "",
+      "permalinkKey": "permalinks/96562577-5dc3-2644-b510-757acbbdabd3"
+    },
+    "8e7766d2-c970-df1c-c2a9-880d0d4abe52": {
+      "blobKey": "8e7766d2-c970-df1c-c2a9-880d0d4abe52",
+      "contentType": "image/svg+xml",
+      "description": "",
+      "downloadUrl": "https://firebasestorage.googleapis.com/v0/b/project-7669095260722476815.appspot.com/o/tenants%2Fdefault%2F8e7766d2-c970-df1c-c2a9-880d0d4abe52?alt=media&token=c64bc1fb-737b-4281-b461-4e961a7965aa",
+      "filename": "getting-started.svg",
+      "key": "uploads/8e7766d2-c970-df1c-c2a9-880d0d4abe52",
+      "keywords": "",
+      "permalinkKey": "permalinks/8e7766d2-c970-df1c-c2a9-880d0d4abe52"
+    },
+    "92c8f9aa-e2d1-7a73-1cdd-1b9e39ba41e4": {
+      "contentType": "image/svg+xml",
+      "description": "",
+      "downloadUrl": "https://firebasestorage.googleapis.com/v0/b/project-7669095260722476815.appspot.com/o/tenants%2Fdefault%2Ffinding-way.svg?alt=media&token=92c66137-8d3a-473f-bbdd-37901a6b8ce2",
+      "filename": "finding-way.svg",
+      "key": "uploads/92c8f9aa-e2d1-7a73-1cdd-1b9e39ba41e4",
+      "keywords": "",
+      "permalinkKey": "permalinks/275773e2-9018-4646-7d06-7f5cea3660fc"
+    },
+    "bb88e60f-80b3-65b2-1bf3-703e55dfd0f9": {
+      "blobKey": "bb88e60f-80b3-65b2-1bf3-703e55dfd0f9",
+      "contentType": "image/svg+xml",
+      "description": "",
+      "downloadUrl": "https://firebasestorage.googleapis.com/v0/b/project-7669095260722476815.appspot.com/o/tenants%2Fdefault%2Fbb88e60f-80b3-65b2-1bf3-703e55dfd0f9?alt=media&token=59c8c582-238d-4755-859b-a788b8271ef9",
+      "filename": "frameworks.svg",
+      "key": "uploads/bb88e60f-80b3-65b2-1bf3-703e55dfd0f9",
+      "keywords": "",
+      "permalinkKey": "permalinks/bb88e60f-80b3-65b2-1bf3-703e55dfd0f9"
+    },
+    "bf423581-8039-b02c-0fe8-7d678534a568": {
+      "contentType": "image/x-icon",
+      "description": "",
+      "downloadUrl": "https://firebasestorage.googleapis.com/v0/b/project-7669095260722476815.appspot.com/o/tenants%2Fdefault%2FPh03nyx-Super-Mario-Mushroom-1UP.ico?alt=media&token=c8ebe2f2-0b05-4991-9f90-25bb56b44938",
+      "filename": "Ph03nyx-Super-Mario-Mushroom-1UP.ico",
+      "key": "uploads/bf423581-8039-b02c-0fe8-7d678534a568",
+      "keywords": "",
+      "permalinkKey": "permalinks/de69895e-3232-c767-53e6-49ed801557b8"
+    },
+    "e688898b-b9a2-240f-6da0-346b6b0d02e1": {
+      "contentType": "image/svg+xml",
+      "description": "",
+      "downloadUrl": "https://firebasestorage.googleapis.com/v0/b/project-7669095260722476815.appspot.com/o/tenants%2Fdefault%2Fe0e5eb90-7ebe-e85a-dedb-ea17daf73201?alt=media&token=1f9ebe05-87ec-4f48-a6e8-daf280a1eb3e",
+      "filename": "json-output-example.svg",
+      "key": "uploads/e688898b-b9a2-240f-6da0-346b6b0d02e1",
+      "keywords": "",
+      "permalinkKey": "permalinks/e0e5eb90-7ebe-e85a-dedb-ea17daf73201"
+    },
+    "f0b568bf-703a-0fa5-58b0-5b4574b18b93": {
+      "contentType": "image/svg+xml",
+      "description": "",
+      "downloadUrl": "https://firebasestorage.googleapis.com/v0/b/project-7669095260722476815.appspot.com/o/tenants%2Fdefault%2Fc7a63e62-bfb9-464a-ce18-662564681a72?alt=media&token=19a6c922-134b-4c0a-923a-173852d40063",
+      "filename": "pen-and-ruler.svg",
+      "key": "uploads/f0b568bf-703a-0fa5-58b0-5b4574b18b93",
+      "keywords": "",
+      "permalinkKey": "permalinks/c7a63e62-bfb9-464a-ce18-662564681a72"
+    }
+  }
 }
