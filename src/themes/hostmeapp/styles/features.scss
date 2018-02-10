@@ -1,0 +1,60 @@
+/* 13. FEATURES SECTION STYLES */
+
+.features-section {
+	padding: 140px 0 90px;
+}
+
+.section-title {
+	margin-bottom: 80px;
+}
+
+.section-title > h2 {
+	font-size: 40px;
+	font-weight: 300;
+	color: #222;
+	text-transform: capitalize;
+	margin-bottom: 17px;
+	margin-top: -20px;
+	line-height: 52px;
+}
+
+.section-title > p {
+	font-size: 16px;
+	line-height: 26px;
+	font-weight: 400;
+	color: #8a8a8a;
+}
+
+.single-feature {
+	margin-bottom: 50px;
+}
+
+.single-feature:hover i {
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+.single-feature > i {
+	font-size: 30px;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+.single-feature > h4 {
+	margin-left: 55px;
+	font-size: 22px;
+	font-weight: 500;
+	color: #484848;
+	margin-top: 0;
+	line-height: 1.4;
+}
+
+.single-feature > p {
+	margin-left: 55px;
+	font-size: 15px;
+	line-height: 24px;
+	font-weight: 500;
+	color: #929292;
+}

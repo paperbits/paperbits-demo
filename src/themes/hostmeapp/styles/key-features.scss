@@ -1,0 +1,55 @@
+/* 10. KEY FEATURES SECTION STYLES
+-------------------------------------------------*/
+.key-features-section {
+	padding: 70px 0;
+}
+
+.single-key-feature {
+	padding: 0 70px;
+}
+
+.single-key-feature:hover i {
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+.key-features-section .col-md-4 {
+	border-right: 1px solid #ddd;
+}
+
+.key-features-section .col-md-4:last-child {
+	border-right: none;
+}
+
+.single-key-feature > i {
+	font-size: 50px;
+	background: #fff;
+	height: 110px;
+	width: 110px;
+	border-radius: 100%;
+	line-height: 110px;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+.single-key-feature-details {
+}
+
+.single-key-feature-details > h3 {
+	font-size: 20px;
+	font-weight: 600;
+	color: #222;
+	line-height: 1.4;
+	margin-top: 30px;
+	margin-bottom: 7px;
+}
+
+.single-key-feature-details > p {
+	color: #777;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 24px;
+	margin: 0;
+}

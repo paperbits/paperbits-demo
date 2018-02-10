@@ -19,10 +19,6 @@ import { IEventManager } from "@paperbits/common/events/IEventManager";
 import { SlateModule } from "@paperbits/slate/slate.module";
 import { IModelBinder } from "@paperbits/common/editing/IModelBinder";
 import { ModelBinderSelector } from "@paperbits/common/widgets/modelBinderSelector";
-
-// import { intentions } from "./themes/hostmeapp/intentions";
-// import { ThemeModule } from "./themes/hostmeapp/scripts/theme.module";
-import { ThemeModule } from "./scripts/theme.module";
 import { theme } from "@paperbits/knockout/application/theme";
 
 import { PageViewModelBinder } from "@paperbits/knockout/widgets/page/pageViewModelBinder";
@@ -42,23 +38,6 @@ import { SliderViewModelBinder } from "@paperbits/knockout/widgets/slider/slider
 import { IViewModelBinder } from "@paperbits/common/widgets/IViewModelBinder";
 import { ViewModelBinderSelector } from "@paperbits/knockout/widgets/viewModelBinderSelector";
 
-import { Substitute1ModelBinder } from "@paperbits/knockout/widgets/substitute1/substitute1ModelBinder";
-import { Substitute1ViewModelBinder } from "@paperbits/knockout/widgets/substitute1/substitute1ViewModelBinder";
-import { Substitute2ModelBinder } from "@paperbits/knockout/widgets/substitute2/substitute2ModelBinder";
-import { Substitute2ViewModelBinder } from "@paperbits/knockout/widgets/substitute2/substitute2ViewModelBinder";
-import { Substitute3ModelBinder } from "@paperbits/knockout/widgets/substitute3/substitute3ModelBinder";
-import { Substitute3ViewModelBinder } from "@paperbits/knockout/widgets/substitute3/substitute3ViewModelBinder";
-import { Substitute4ModelBinder } from "@paperbits/knockout/widgets/substitute4/substitute4ModelBinder";
-import { Substitute4ViewModelBinder } from "@paperbits/knockout/widgets/substitute4/substitute4ViewModelBinder";
-import { Substitute5ModelBinder } from "@paperbits/knockout/widgets/substitute5/substitute5ModelBinder";
-import { Substitute5ViewModelBinder } from "@paperbits/knockout/widgets/substitute5/substitute5ViewModelBinder";
-import { Substitute6ModelBinder } from "@paperbits/knockout/widgets/substitute6/substitute6ModelBinder";
-import { Substitute6ViewModelBinder } from "@paperbits/knockout/widgets/substitute6/substitute6ViewModelBinder";
-import { Substitute7ModelBinder } from "@paperbits/knockout/widgets/substitute7/substitute7ModelBinder";
-import { Substitute7ViewModelBinder } from "@paperbits/knockout/widgets/substitute7/substitute7ViewModelBinder";
-import { Substitute8ModelBinder } from "@paperbits/knockout/widgets/substitute8/substitute8ModelBinder";
-import { Substitute8ViewModelBinder } from "@paperbits/knockout/widgets/substitute8/substitute8ViewModelBinder";
-
 import { FormModelBinder } from "@paperbits/common/widgets/form/formModelBinder";
 import { FormViewModelBinder } from "@paperbits/knockout/widgets/form/formViewModelBinder";
 
@@ -67,7 +46,6 @@ import { AnchorMiddleware } from "@paperbits/common/persistence/AnchorMiddleware
 import { IntentionsBuilder } from "@paperbits/common/appearence/intentionsBuilder";
 import { IntentionsProvider } from "@paperbits/knockout/application/intentionsProvider";
 import { IIntentionsBuilder } from "@paperbits/common/appearence/intention";
-
 
 $(() => {
     var injector = new InversifyInjector();
@@ -83,7 +61,6 @@ $(() => {
     injector.bindModule(new KnockoutRegistrationWidgets());
     // injector.bindModule(new FirebaseModule());
     injector.bindModule(new StaticStorageModule());
-    injector.bindModule(new ThemeModule());
 
     let modelBinders = new Array();
     injector.bindInstance("modelBinderSelector", new ModelBinderSelector(modelBinders));

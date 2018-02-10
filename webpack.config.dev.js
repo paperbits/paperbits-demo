@@ -3,6 +3,9 @@ const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
+const selectedTheme = "paperbits";
+// const selectedTheme = "hostmeapp";
+
 const extractSass = new ExtractTextPlugin({
     filename: (resultPath) => {
         let path = resultPath('./[name].css');
@@ -15,7 +18,7 @@ const extractSass = new ExtractTextPlugin({
 module.exports = {
     entry: {
         "scripts/paperbits": ['./src/startup.ts', './node_modules/@paperbits/knockout/styles/vienna.scss'],
-        "theme/scripts/theme": [`./src/scripts/index.ts`, `./src/styles/styles.scss`]
+        "theme/scripts/theme": [`./src/themes/${selectedTheme}/scripts/index.ts`, `./src/themes/${selectedTheme}/styles/styles.scss`]
     },
     output: {
         filename: './[name].js',
@@ -67,9 +70,10 @@ module.exports = {
          */
         new CopyWebpackPlugin([
             { from: './node_modules/@paperbits/knockout/assets' },     
-            { from: './node_modules/@paperbits/knockout/styles/fonts', to: 'css/fonts' },        
-            { from: './src/assets', to: "theme"},
-            { from: './config.json'}      
+            { from: './node_modules/@paperbits/knockout/styles/fonts', to: 'css/fonts' },  
+            { from: `./src/data`, to: "data"},      
+            { from: `./src/themes/${selectedTheme}/assets`, to: "theme"},
+            { from: `./src/themes/${selectedTheme}/config.json`}      
         ]),
         //new webpack.optimize.ModuleConcatenationPlugin(),   
         new webpack.HotModuleReplacementPlugin()      

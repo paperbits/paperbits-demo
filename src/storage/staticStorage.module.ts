@@ -19,7 +19,7 @@ export class StaticStorageModule implements IInjectorModule {
 
         injector.bindSingletonFactory<IObjectStorage>("objectStorage", (ctx: IInjector) => {
             const httpClient = ctx.resolve<IHttpClient>("httpClient");
-            const datasourceUrl = `theme/data/experiment1.json`;
+            const datasourceUrl = "data/experiment1.json";
             const offlineObjectStorage = ctx.resolve<OfflineObjectStorage>("offlineObjectStorage");
             const objectStorage = new StaticObjectStorage(datasourceUrl, httpClient);
 

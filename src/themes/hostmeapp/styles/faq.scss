@@ -1,0 +1,31 @@
+/* 19. FAQ SECTION STYLES */
+
+.faq-section {
+	padding: 180px 0 90px;
+}
+
+.single-question {
+	margin-bottom: 50px;
+	padding-right: 50px;
+}
+
+.question-number {
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.single-question > h4 {
+	font-size: 22px;
+	color: #222;
+	font-weight: 400;
+	margin-bottom: 15px;
+	margin-left: 35px;
+}
+
+.single-question > p {
+	margin-left: 35px;
+	font-size: 15px;
+	line-height: 24px;
+	color: #8a8a8a;
+	font-weight: 500;
+}
