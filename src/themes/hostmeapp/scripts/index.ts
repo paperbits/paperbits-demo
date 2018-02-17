@@ -1,1 +1,0 @@
-import "./sticky-shadow";

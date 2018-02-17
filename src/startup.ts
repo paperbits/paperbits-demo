@@ -2,7 +2,6 @@ import "es6-shim";
 import "setimmediate";
 import "@paperbits/knockout/registrations/knockout.editors";
 
-import * as $ from "jquery/dist/jquery";
 import * as ko from "knockout";
 import { IntercomService } from "@paperbits/common/intercom/intercomService";
 import { IInjector, IInjectorModule } from "@paperbits/common/injection";
@@ -47,7 +46,8 @@ import { IntentionsBuilder } from "@paperbits/common/appearence/intentionsBuilde
 import { IntentionsProvider } from "@paperbits/knockout/application/intentionsProvider";
 import { IIntentionsBuilder } from "@paperbits/common/appearence/intention";
 
-$(() => {
+
+document.addEventListener("DOMContentLoaded", () => {
     var injector = new InversifyInjector();
 
     const intentionsBuilder: IIntentionsBuilder = new IntentionsBuilder(theme);
