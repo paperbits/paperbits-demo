@@ -42,9 +42,9 @@ import { FormViewModelBinder } from "@paperbits/knockout/widgets/form/formViewMo
 
 import { OfflineObjectStorage } from "@paperbits/common/persistence/offlineObjectStorage";
 import { AnchorMiddleware } from "@paperbits/common/persistence/AnchorMiddleware";
-import { IntentionsBuilder } from "@paperbits/common/appearence/intentionsBuilder";
+import { IntentionsBuilder } from "@paperbits/common/appearance/intentionsBuilder";
 import { IntentionsProvider } from "@paperbits/knockout/application/intentionsProvider";
-import { IIntentionsBuilder } from "@paperbits/common/appearence/intention";
+import { IIntentionsBuilder } from "@paperbits/common/appearance/intention";
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -139,6 +139,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     offlineObjectStorage.registerMiddleware(anchorMiddleware);
 
+    ko.options["createChildContextWithAs"] = true;
     ko.applyBindings();
 });
 
