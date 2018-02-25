@@ -29,15 +29,16 @@
         "ts-loader": "^2.3.6",
         "typescript": "2.6.2",
         "url-loader": "^0.6.2",
-        "webpack": "^3.10.0",
+        "webpack": "^3.11.0",
         "webpack-dev-server": "^2.10.0"
     },
     "dependencies": {
         "@paperbits/common": "0.0.57",
         "@paperbits/knockout": "0.0.57",
+        "@paperbits/publishing": "0.0.7",
         "es6-shim": "^0.35.3",
-        "firebase": "4.4.0",
         "knockout": "^3.4.2",
-        "setimmediate": "^1.0.5"
+        "setimmediate": "^1.0.5",
+        "xhr2": "^0.1.4"
     }
 }

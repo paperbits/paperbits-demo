@@ -5,15 +5,15 @@ import { IObjectStorage } from "@paperbits/common/persistence/IObjectStorage";
 
 
 export class StaticObjectStorage implements IObjectStorage {
-    private storageDataObject: Object;
+    protected storageDataObject: Object;
     private splitter = "/";
 
     constructor(
-        private readonly datasourceUrl: string,
-        private readonly httpClient: IHttpClient
+        protected readonly datasourceUrl: string,
+        protected readonly httpClient: IHttpClient
     ) { }
 
-    private async getData(): Promise<Object> {
+    protected async getData(): Promise<Object> {
         if (!this.storageDataObject) {
             const response = await this.httpClient.send({
                 url: this.datasourceUrl,

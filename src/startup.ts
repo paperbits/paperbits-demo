@@ -104,6 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
     injector.bind("videoPlayerViewModelBinder", VideoPlayerViewModelBinder);
     injector.bind("mapViewModelBinder", MapViewModelBinder);
 
+    injector.bind("formModelBinder", FormModelBinder);
     modelBinders.push(injector.resolve("formModelBinder"));
     injector.bind("formViewModelBinder", FormViewModelBinder);
     viewModelBinders.push(injector.resolve("formViewModelBinder"));

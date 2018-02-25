@@ -16,13 +16,16 @@ const extractSass = new ExtractTextPlugin({
 });
 
 module.exports = {
+    target: 'node', 
     entry: {
-        "scripts/paperbits": ['./src/startup.ts', './node_modules/@paperbits/knockout/styles/vienna.scss'],
+        "publisher": ['./src/publisher.ts'],
         "theme/scripts/theme": [`./src/themes/${selectedTheme}/scripts/index.ts`, `./src/themes/${selectedTheme}/styles/styles.scss`]
     },
     output: {
         filename: './[name].js',
-        path: path.resolve(__dirname, 'dist/dev')
+        path: path.resolve(__dirname, 'dist/dev'),
+        library: 'paperbitsPublisher',	
+        libraryTarget: 'commonjs2'
     },
     devtool: 'source-map',
     module: {
@@ -68,33 +71,14 @@ module.exports = {
          *
          * See: https://www.npmjs.com/package/copy-webpack-plugin
          */
-        new CopyWebpackPlugin([
-            { from: './node_modules/@paperbits/knockout/assets' },     
-            { from: './node_modules/@paperbits/knockout/styles/fonts', to: 'css/fonts' },  
-            { from: `./src/data`, to: "data"},      
+        new CopyWebpackPlugin([   
             { from: `./src/themes/${selectedTheme}/assets`, to: "theme"},
-            { from: `./src/themes/${selectedTheme}/config.json`},
             { from: `./src/themes/${selectedTheme}/config.publishing.json`}  
         ]),
-        //new webpack.optimize.ModuleConcatenationPlugin(),   
-        new webpack.HotModuleReplacementPlugin()      
-        /**
-         * Webpack plugin to optimize a JavaScript file for faster initial load
-         * by wrapping eagerly-invoked functions.
-         *
-         * See: https://github.com/vigneshshanmugam/optimize-js-plugin
-         */
-        // new OptimizeJsPlugin({            
-        //     sourceMap: false
-        // }),
-        // new webpack.optimize.UglifyJsPlugin({
-        //     ie8: false,        
-        //     ecma: 5,        
-        //     mangle: false, 
-        //     output: { 
-        //         comments: false,
-        //         beautify: false
-        //     } 
+        // new webpack.DefinePlugin({	
+        //     'process.env': {	
+        //       'NODE_ENV': JSON.stringify('production'),	
+        //     }	
         // })
     ],
     resolve: {

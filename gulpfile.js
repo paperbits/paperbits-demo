@@ -24,11 +24,25 @@ gulp.task("webpack-dev", ["clean"], (callback) => {
     });
 });
 
+gulp.task("webpack-publish", ["clean"], (callback) => {
+    var webPackConfig = require("./webpack.config.publish.js");
+    webpack(webPackConfig, function (err, stats) {
+        if (err) throw new gutil.PluginError("webpack", err);
+
+        gutil.log("[webpack-publish]", stats.toString({
+            colors: true,
+            progress: true
+        }));
+
+        callback();
+    });
+});
+
 gulp.task("server", ["webpack-dev"], () => {
     const webPackConfig = require("./webpack.config.dev.js");
     const options = {
         host: "0.0.0.0",
-        contentBase: "./dist",
+        contentBase: "./dist/dev",
         hot: true
     };
     webpackDevServer.addDevServerEntrypoints(webPackConfig, options);
@@ -37,6 +51,30 @@ gulp.task("server", ["webpack-dev"], () => {
     server.listen(8080, "localhost", function (err) {
         if (err) throw new gutil.PluginError("webpack-dev-server", err);
         gutil.log("[webpack-dev-server]", "http://localhost:8080/webpack-dev-server/index.html");
+    });
+});
+
+
+gulp.task("publish", ["webpack-publish"], () => {
+    const pub = require("./dist/dev/publisher.js");
+    const inputBasePath = "./dist/dev/theme";
+    const outputBasePath = "./dist/published";
+    const indexFilePath = "./dist/dev/theme/index.html";
+    const settingsConfigPath = "./dist/dev/config.publishing.json";
+
+    gulp.src([`${inputBasePath}/**/*.*`, `!${indexFilePath}`]).pipe(gulp.dest(`${outputBasePath}/theme`));
+
+    const publisher = new pub.Publisher(inputBasePath, outputBasePath, indexFilePath, settingsConfigPath);
+    const publishPromise = publisher.publish();
+
+    publishPromise.then((result) => {
+        console.log("DONE");
+        process.exit();
+    });
+
+    publishPromise.catch((error) => {
+        console.log(error);
+        process.exit();
     });
 });
 
