@@ -35,7 +35,7 @@
     "dependencies": {
         "@paperbits/common": "0.0.60",
         "@paperbits/knockout": "0.0.60",
-        "@paperbits/publishing": "0.0.8",
+        "@paperbits/publishing": "0.0.9",
         "es6-shim": "^0.35.3",
         "knockout": "^3.4.2",
         "setimmediate": "^1.0.5",

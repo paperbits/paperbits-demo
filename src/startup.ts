@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     })
 
-    let viewModelBinders = new Array<IViewModelBinder>();
+    let viewModelBinders = new Array<IViewModelBinder<any, any>>();
     injector.bindInstance("viewModelBinderSelector", new ViewModelBinderSelector(viewModelBinders));
     injector.bind("pageViewModelBinder", PageViewModelBinder);
     injector.bind("layoutViewModelBinder", LayoutViewModelBinder);

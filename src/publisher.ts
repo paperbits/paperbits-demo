@@ -1,5 +1,6 @@
 import "setimmediate";
 import * as fs from "fs";
+import * as path from "path";
 import * as ko from "knockout";
 
 import { IInjector, IInjectorModule } from "@paperbits/common/injection";
@@ -42,18 +43,23 @@ import { FormModelBinder } from "@paperbits/common/widgets/form/formModelBinder"
 import { FormViewModelBinder } from "@paperbits/knockout/widgets/form/formViewModelBinder";
 import { SlateModule } from "@paperbits/slate/slate.module";
 import { StaticLocalStorageModule } from "./storage/staticLocalStorage.module";
+import { StaticSettingsProvider } from "./storage/staticSettingsProvider";
+import { FileSystemBlobStorage } from "@paperbits/publishing/node/filesystemBlobStorage";
+import { StaticRouteHandler } from "./storage/staticRouteHandler";
 
 export class Publisher {
-    constructor(private inputBasePath?, private outputBasePath?, private indexFilePath?, private settingsConfigPath?) {
-        this.inputBasePath = inputBasePath || "./dist/server";
-        this.outputBasePath = outputBasePath || "./dist/published";
-        this.indexFilePath = indexFilePath || `${this.inputBasePath}/assets/index.html`;
+    constructor(private inputBasePath, private outputBasePath, private indexFilePath, private settingsConfigPath?) {
+        this.inputBasePath = inputBasePath;
+        this.outputBasePath = outputBasePath;
+        this.indexFilePath = indexFilePath;
         this.settingsConfigPath = settingsConfigPath || `${this.inputBasePath}/config.publishing.json`;
     }
 
     public async publish(): Promise<void> {
-        const publishNodeModule = new PublishingNodeModule(this.inputBasePath, this.outputBasePath, this.indexFilePath, this.settingsConfigPath);
-        await publishNodeModule.initDocument();
+        let html = await this.loadFileAsString(this.indexFilePath);
+        
+        const publishNodeModule = new PublishingNodeModule(html);
+        publishNodeModule.initDocument();
         
         const injector = new InversifyInjector();
     
@@ -68,9 +74,16 @@ export class Publisher {
         
         const staticLocalStorage = new StaticLocalStorageModule();
         staticLocalStorage.setDataSourceUrl("./src/data/experiment1.json");
-        injector.bindModule(staticLocalStorage);      
+        injector.bindModule(staticLocalStorage);        
+
+        const configJson = await this.loadFileAsString(this.settingsConfigPath);
+        const settings = JSON.parse(configJson);
+        injector.bindInstance("settingsProvider", new StaticSettingsProvider(settings));
+        injector.bindSingleton("routeHandler", StaticRouteHandler);
         
-        await publishNodeModule.registerComponents(injector);
+        injector.bindInstance("inputBlobStorage", new FileSystemBlobStorage(path.resolve(this.inputBasePath)));
+        injector.bindInstance("outputBlobStorage", new FileSystemBlobStorage(path.resolve(this.outputBasePath)));
+        publishNodeModule.registerComponents(injector);
     
         let modelBinders = new Array<IModelBinder>();
         injector.bindInstance("modelBinderSelector", new ModelBinderSelector(modelBinders));
@@ -97,7 +110,7 @@ export class Publisher {
         })
     
     
-        let viewModelBinders = new Array<IViewModelBinder>();
+        let viewModelBinders = new Array<IViewModelBinder<any, any>>();
         injector.bindInstance("viewModelBinderSelector", new ViewModelBinderSelector(viewModelBinders));
         injector.bind("pageViewModelBinder", PageViewModelBinder);
         injector.bind("layoutViewModelBinder", LayoutViewModelBinder);
@@ -151,5 +164,18 @@ export class Publisher {
         catch (error) {
             console.log(error);
         }
+    }
+
+    private async loadFileAsString(filepath: string): Promise<string> {
+        return new Promise<string>((resolve, reject) => {
+            fs.readFile(filepath, "utf8", (error, content) => {
+                if (error) {
+                    reject(error);
+                    return;
+                }
+    
+                resolve(content);
+            });
+        });
     }
 }
