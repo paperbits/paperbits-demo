@@ -10,7 +10,10 @@ export class StaticBlobStorage implements IBlobStorage {
 
     public async uploadBlob(blobKey: string, content: Uint8Array, contentType?: string): ProgressPromise<void> {
         return new ProgressPromise<void>((resolve, reject, progress) => {
-            this.storageDataObject[blobKey] = Utils.arrayBufferToBase64(content);
+            const base64String = Utils.arrayBufferToBase64(content);
+
+            this.storageDataObject[blobKey] = `data:${contentType};base64,${base64String}`;
+
             resolve();
         });
     }
