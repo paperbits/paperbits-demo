@@ -4,7 +4,7 @@
         "lib": [ "es2015", "dom" ],
         "module": "commonjs",
         "moduleResolution": "node",
-        "declaration": false,
+        "declaration": true,
         "noImplicitAny": false,
         "noStrictGenericChecks": true,
         "removeComments": true,
