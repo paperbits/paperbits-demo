@@ -4,25 +4,7 @@
 @import "widgets/widgets.scss";
 @import "widgets/textblock.scss";
 @import "widgets/form.scss";
+@import "widgets/button.scss";
+@import "widgets/navbar.scss";
 @import "intentions.scss";
-
-@font-face {
-  font-family: 'Kristen-ITC';
-  src: url('/theme/fonts/Kristen-ITC.eot'); /* IE9 Compat Modes */
-  src: url('/theme/fonts/Kristen-ITC.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('/theme/fonts/Kristen-ITC.woff2') format('woff2'), /* Super Modern Browsers */
-       url('/theme/fonts/Kristen-ITC.woff') format('woff'), /* Pretty Modern Browsers */
-       url('/theme/fonts/Kristen-ITC.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('/theme/fonts/Kristen-ITC.svg#svgFontName') format('svg'); /* Legacy iOS */
-}
-
-@font-face {
-  font-family: 'Segoe-Script';
-  src: url('/theme/fonts/Segoe-Script.ttf') format('truetype');
-}
-
-body {
-    font-family: "Kristen-ITC";
-    font-size: $font-size-base;
-}
-
+@import "type.scss";

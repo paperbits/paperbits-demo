@@ -5,5 +5,13 @@ $breakpoint-md: 768px;
 $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
 
+$font-size-base: calc(6px + 1vw);
+$font-size-h1: calc(32px + 1vw);
+$font-size-h2: calc(14px + 1vw);
+$font-size-h3: calc(12px + 1vw);
+$font-size-h4: calc(10px + 1vw);
+$font-size-h5: calc(8px + 1vw);
+$font-size-h6: $font-size-base;
 
-$font-size-base: 25px;
+$font-family-base: Arial, Helvetica, sans-serif;
+$font-family-script: JollyGoodSans-Basic, Tahoma, Geneva, Verdana, sans-serif;

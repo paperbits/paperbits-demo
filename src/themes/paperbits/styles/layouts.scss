@@ -12,4 +12,8 @@ section {
             align-items: start;
         }
     }
+
+    &.with-padding {
+        padding: 40px;
+    }
 }

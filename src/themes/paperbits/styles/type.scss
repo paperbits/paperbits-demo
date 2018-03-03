@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'JollyGoodSans-Basic';
+    src: url('/theme/fonts/JollyGoodSans-Basic-webfont.woff2') format('woff2'),
+         url('/theme/fonts/JollyGoodSans-Basic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: $font-size-base;
+    color: #5B5F61;
+}
+
+ol,
+p,
+ul {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+h1 {
+    font-size: $font-size-h1;
+}
+
+h2 {
+    font-size: $font-size-h2;
+    margin-top: 30px;
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    font-size: $font-size-h3;
+}
+
+h4 {
+    font-size: $font-size-h4;
+    margin-bottom: 1.5rem;
+}
+
+h5 {
+    font-size: $font-size-h5;
+}
+
+h6 {
+    font-size: $font-size-h6;
+}
+
+.text-font-script {
+    font-family: $font-family-script;
+}
+
+.lead {
+    font-size: 1.5em;
+}
+
+.numbers {
+    list-style-type: decimal
+}
+
+.upper-alpha {
+    list-style-type: upper-alpha
+}
+
+.lower-alpha {
+    list-style-type: lower-alpha
+}
+
+.lower-roman {
+    list-style-type: lower-roman
+}
+
+.upper-roman {
+    list-style-type: upper-roman
+}
+
+.disc {
+    list-style-type: disc
+}
+
+.circle {
+    list-style-type: circle
+}
+
+.square {
+    list-style-type: square
+}
+
+.none {
+    list-style-type: none
+}
+
