@@ -9,14 +9,12 @@ export class StaticBlobStorage implements IBlobStorage {
     private storageDataObject = {};
 
     public async uploadBlob(blobKey: string, content: Uint8Array, contentType?: string): ProgressPromise<void> {
-        // return new ProgressPromise<void>((resolve, reject, progress) => {
-        //     Utils.readBlobAsDataUrl(file).then(url => {
-        //         this.storageDataObject[blobKey] = url;
-        //         resolve();
-        //     }, null, progress);
-        // });
+        return new ProgressPromise<void>((resolve, reject, progress) => {
+            this.storageDataObject[blobKey] = Utils.arrayBufferToBase64(content);
+            resolve();
+        });
     }
-    
+
     public async getDownloadUrl(fileName: string): Promise<string> {
         const downloadUrl = this.storageDataObject[fileName];
 
