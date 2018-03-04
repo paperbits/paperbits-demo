@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>404 | PaperBits™</title>
+    <link href="favicon.ico" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+
+    <link rel="stylesheet" href="styles/theme.css" type="text/css" />
+
+    <script src="scripts/vienna.js" type="text/javascript"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+    <script>(function(){
+        var w=window;var ic=w.Intercom;
+        if(typeof ic==="function"){
+            ic('reattach_activator');ic('update',intercomSettings);}
+        else{
+            var d=document;
+            var i=function(){i.c(arguments)};
+            i.q=[];
+            i.c=function(args){
+                i.q.push(args)
+            };
+            w.Intercom=i;
+            function l(){
+                var s=d.createElement('script');
+                s.type='text/javascript';
+                s.async=true;
+                s.src='https://widget.intercom.io/widget/l560nd3j';
+                var x=d.getElementsByTagName('script')[0];
+                x.parentNode.insertBefore(s,x);
+            }
+            if(w.attachEvent){
+                w.attachEvent('onload',l);
+            }else{
+                w.addEventListener('load',l,false);
+            }
+        }
+    })();
+
+    window.Intercom("boot", {
+        app_id: "l560nd3j"
+    });
+
+    </script>
+    <script>
+        function follow(){
+            window.Intercom("update", {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                created_at: (new Date).getTime()
+            });
+        }
+    </script>
+</head>
+
+<body>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <img src="https://paperbits.io/images/finding-way.svg" />
+                <h1>404</h1>
+                <p>The page you are looking for does not exists.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -126,6 +126,752 @@
     }
   },
   "files" : {
+    "0821fa4a-4f91-6682-ef83-43d28da7784e" : {
+      "key" : "files/0821fa4a-4f91-6682-ef83-43d28da7784e",
+      "nodes" : [ {
+        "background" : {
+          "position" : "center center",
+          "size" : "contain"
+        },
+        "layout" : "container",
+        "nodes" : [ {
+          "nodes" : [ {
+            "nodes" : [ {
+              "nodes" : [ {
+                "data" : {
+                  "intentions" : {
+                    "text" : {
+                      "alignment" : {
+                        "xl" : "left"
+                      }
+                    }
+                  }
+                },
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Privacy policy\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "heading-one"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Vienna LLC (\"us\", \"we\", or \"our\") operates the https://paperbits.io website (the \"Service\").\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "This page informs you of our policies regarding the collection, use and disclosure of Personal Information when you use our Service.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "We will not use or share your information with anyone except as described in this Privacy Policy.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "We use your Personal Information for providing and improving the Service. By using the Service, you agree to the collection and use of information in accordance with this policy. Unless otherwise defined in this Privacy Policy, terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, accessible at https://paperbits.io\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Information Collection And Use\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "heading-two"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "While using our Service, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you. Personally identifiable information may include, but is not limited to, your email address, name (\"Personal Information\"). We collect this information for the purpose of providing the Service, identifying and communicating with you, responding to your requests/inquiries, servicing your purchase orders, and improving our services.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Log Data\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "heading-two"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "We may also collect information that your browser sends whenever you visit our Service (\"Log Data\"). This Log Data may include information such as your computer's Internet Protocol (\"IP\") address, browser type, browser version, the pages of our Service that you visit, the time and date of your visit, the time spent on those pages and other statistics.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "In addition, we may use third party services such as Google Analytics that collect, monitor and analyze this type of information in order to increase our Service's functionality. These third party service providers have their own privacy policies addressing how they use such information.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Cookies\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "heading-two"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Cookies are files with a small amount of data, which may include an anonymous unique identifier. Cookies are sent to your browser from a web site and transferred to your device. We use cookies to collect information in order to improve our services for you.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. The Help feature on most browsers provide information on how to accept cookies, disable cookies or to notify you when receiving a new cookie.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "If you do not accept cookies, you may not be able to use some features of our Service and we recommend that you leave them turned on.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Behavioral Remarketing\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "heading-two"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Vienna LLC uses remarketing services to advertise on third party web sites to you after you visited our Service. We, and our third party vendors, use cookies to inform, optimize and serve ads based on your past visits to our Service.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Google\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "heading-two"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Google AdWords remarketing service is provided by Google Inc.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "You can opt-out of Google Analytics for Display Advertising and customize the Google Display Network ads by visiting the Google Ads Settings page: http://www.google.com/settings/ads\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Google also recommends installing the Google Analytics Opt-out Browser Add-on - https://tools.google.com/dlpage/gaoptout - for your web browser. Google Analytics Opt-out Browser Add-on provides visitors with the ability to prevent their data from being collected and used by Google Analytics.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "For more information on the privacy practices of Google, please visit the Google Privacy & Terms web page: http://www.google.com/intl/en/policies/privacy/\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Twitter\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "heading-two"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Twitter remarketing service is provided by Twitter Inc.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "You can opt-out from Twitter's interest-based ads by following their instructions: https://support.twitter.com/articles/20170405\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "You can learn more about the privacy practices and policies of Twitter by visiting their Privacy Policy page: https://twitter.com/privacy\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Facebook\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "heading-two"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Facebook remarketing service is provided by Facebook Inc.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "You can learn more about interest-based advertising from Facebook by visiting this page: https://www.facebook.com/help/164968693837950\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "To opt-out from Facebook's interest-based ads follow these instructions from Facebook: https://www.facebook.com/about/ads/#568137493302217\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Facebook adheres the Self-Regulatory Principles for Online Behavioral Advertising established by the Digital Advertising Alliance. You can also opt-out from Facebook and other participating companies through the Digital Advertising Alliance in the USA http://www.aboutads.info/choices/, the Digital Advertising Alliance of Canada in Canada http://youradchoices.ca/ or the European Interactive Digital Advertising Alliance in Europe http://www.youronlinechoices.eu/, or opt-out using your mobile device settings.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "For more information on the privacy practices of Facebook, please visit Facebook's Data Policy: https://www.facebook.com/privacy/explanation\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Do Not Track Disclosure\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "heading-two"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "We support Do Not Track (\"DNT\"). Do Not Track is a preference you can set in your web browser to inform websites that you do not want to be tracked.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "You can enable or disable Do Not Track by visiting the Preferences or Settings page of your web browser.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Service Providers\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "heading-two"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "We may employ third party companies and individuals to facilitate our Service, to provide the Service on our behalf, to perform Service-related services and/or to assist us in analyzing how our Service is used.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "These third parties have access to your Personal Information only to perform specific tasks on our behalf and are obligated not to disclose or use your information for any other purpose.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Communications\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "heading-two"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "We may use your Personal Information to contact you with newsletters, marketing or promotional materials and other information that may be of interest to you. You may opt out of receiving any, or all, of these communications from us by following the unsubscribe link or instructions provided in any email we send or by contacting us.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Compliance With Laws\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "heading-two"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "We will disclose your Personal Information where required to do so by law or subpoena or if we believe that such action is necessary to comply with the law and the reasonable requests of law enforcement or to protect the security or integrity of our Service.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Business Transaction\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "heading-two"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "If Vienna LLC is involved in a merger, acquisition or asset sale, your Personal Information may be transferred as a business asset. In such cases, we will provide notice before your Personal Information is transferred and/or becomes subject to a different Privacy Policy.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Security\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "heading-two"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "The security of your Personal Information is important to us, and we strive to implement and maintain reasonable, commercially acceptable security procedures and practices appropriate to the nature of the information we store, in order to protect it from unauthorized access, destruction, use, modification, or disclosure.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "However, please be aware that no method of transmission over the internet, or method of electronic storage is 100% secure and we are unable to guarantee the absolute security of the Personal Information we have collected from you.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "International Transfer\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "heading-two"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Your information, including Personal Information, may be transferred to — and maintained on — computers located outside of your state, province, country or other governmental jurisdiction where the data protection laws may differ than those from your jurisdiction.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "If you are located outside United States and choose to provide information to us, please note that we transfer the information, including Personal Information, to United States and process it there.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Your consent to this Privacy Policy followed by your submission of such information represents your agreement to that transfer.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Links To Other Sites\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "heading-two"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Our Service may contain links to other sites that are not operated by us. If you click on a third party link, you will be directed to that third party's site. We strongly advise you to review the Privacy Policy of every site you visit.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "We have no control over, and assume no responsibility for the content, privacy policies or practices of any third party sites or services.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Children's Privacy\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "heading-two"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Only persons age 18 or older have permission to access our Service. Our Service does not address anyone under the age of 13 (\"Children\").\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "We do not knowingly collect personally identifiable information from children under 13. If you are a parent or guardian and you learn that your Children have provided us with Personal Information, please contact us. If we become aware that we have collected Personal Information from a children under age 13 without verification of parental consent, we take steps to remove that information from our servers.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Changes To This Privacy Policy\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "heading-two"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "This Privacy Policy is effective as of June 18, 2016 and will remain in effect except with respect to any changes in its provisions in the future, which will be in effect immediately after being posted on this page.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "We reserve the right to update or change our Privacy Policy at any time and you should check this Privacy Policy periodically. Your continued use of the Service after we post any modifications to the Privacy Policy on this page will constitute your acknowledgment of the modifications and your consent to abide and be bound by the modified Privacy Policy.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "If we make any material changes to this Privacy Policy, we will notify you either through the email address you have provided us, or by placing a prominent notice on our website.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Contact Us\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "heading-two"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "If you have any questions about this Privacy Policy, please "
+                  } ],
+                  "object" : "text"
+                }, {
+                  "data" : {
+                    "href" : "mailto:support@paperbits.io",
+                    "target" : "_blank"
+                  },
+                  "isVoid" : false,
+                  "nodes" : [ {
+                    "leaves" : [ {
+                      "object" : "leaf",
+                      "text" : "contact us"
+                    } ],
+                    "object" : "text"
+                  } ],
+                  "object" : "inline",
+                  "type" : "link"
+                }, {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : ".\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              } ],
+              "object" : "widget",
+              "type" : "text"
+            } ],
+            "object" : "block",
+            "size" : {
+              "lg" : "12",
+              "md" : "12",
+              "sm" : "12"
+            },
+            "type" : "layout-column"
+          } ],
+          "object" : "block",
+          "type" : "layout-row"
+        } ],
+        "object" : "block",
+        "padding" : "with-padding",
+        "snapping" : "none",
+        "type" : "layout-section"
+      } ],
+      "object" : "block",
+      "type" : "page"
+    },
     "0ba7df21-7982-3bbc-7088-4fe311a861f6" : {
       "key" : "files/0ba7df21-7982-3bbc-7088-4fe311a861f6",
       "nodes" : [ {
@@ -133,7 +879,7 @@
           "position" : "center center",
           "size" : "contain"
         },
-        "layout" : "container",
+        "layout" : "container-thinner",
         "nodes" : [ {
           "align" : {
             "md" : "center"
@@ -151,17 +897,6 @@
                 } ],
                 "object" : "block",
                 "type" : "heading-one"
-              }, {
-                "isVoid" : false,
-                "nodes" : [ {
-                  "leaves" : [ {
-                    "object" : "leaf",
-                    "text" : ""
-                  } ],
-                  "object" : "text"
-                } ],
-                "object" : "block",
-                "type" : "paragraph"
               }, {
                 "isVoid" : false,
                 "nodes" : [ {
@@ -201,17 +936,6 @@
                   "leaves" : [ {
                     "object" : "leaf",
                     "text" : "However, to make it possible, the content (presentation) has to be separated from the code (implementation). Those who once came to the same conclusion most likely know about Markdown, which is fantastic when you need to process simple hypertext. Though, when it comes to complex structures like responsive grids, one may need to look for other techniques.\r"
-                  } ],
-                  "object" : "text"
-                } ],
-                "object" : "block",
-                "type" : "paragraph"
-              }, {
-                "isVoid" : false,
-                "nodes" : [ {
-                  "leaves" : [ {
-                    "object" : "leaf",
-                    "text" : "\r"
                   } ],
                   "object" : "text"
                 } ],
@@ -332,17 +1056,6 @@
                 "nodes" : [ {
                   "leaves" : [ {
                     "object" : "leaf",
-                    "text" : "\r"
-                  } ],
-                  "object" : "text"
-                } ],
-                "object" : "block",
-                "type" : "paragraph"
-              }, {
-                "isVoid" : false,
-                "nodes" : [ {
-                  "leaves" : [ {
-                    "object" : "leaf",
                     "text" : "Isomorphic code\r"
                   } ],
                   "object" : "text"
@@ -376,17 +1089,6 @@
                 "nodes" : [ {
                   "leaves" : [ {
                     "object" : "leaf",
-                    "text" : "\r"
-                  } ],
-                  "object" : "text"
-                } ],
-                "object" : "block",
-                "type" : "paragraph"
-              }, {
-                "isVoid" : false,
-                "nodes" : [ {
-                  "leaves" : [ {
-                    "object" : "leaf",
                     "text" : "Offline-first\r"
                   } ],
                   "object" : "text"
@@ -410,17 +1112,6 @@
                   "leaves" : [ {
                     "object" : "leaf",
                     "text" : "Our authoring tools are meant to make users more productive.  So we use modern techniques like Service workers and IndexedDB to minimize dependency on the network and to significantly reduce traffic between client and server. \r"
-                  } ],
-                  "object" : "text"
-                } ],
-                "object" : "block",
-                "type" : "paragraph"
-              }, {
-                "isVoid" : false,
-                "nodes" : [ {
-                  "leaves" : [ {
-                    "object" : "leaf",
-                    "text" : "\r"
                   } ],
                   "object" : "text"
                 } ],
@@ -496,475 +1187,6 @@
       "object" : "block",
       "type" : "page"
     },
-    "1c9b4755-23da-0edb-576e-bd73be0d1cf9" : {
-      "key" : "files/1c9b4755-23da-0edb-576e-bd73be0d1cf9",
-      "nodes" : [ {
-        "background" : {
-          "position" : "center center",
-          "size" : "contain"
-        },
-        "layout" : "container",
-        "nodes" : [ {
-          "nodes" : [ {
-            "nodes" : [ {
-              "nodes" : [ {
-                "isVoid" : false,
-                "nodes" : [ {
-                  "leaves" : [ {
-                    "object" : "leaf",
-                    "text" : "How to create my first website with Paperbits"
-                  } ],
-                  "object" : "text"
-                } ],
-                "object" : "block",
-                "type" : "heading-one"
-              } ],
-              "object" : "widget",
-              "type" : "text"
-            } ],
-            "object" : "block",
-            "size" : {
-              "lg" : "12",
-              "md" : "12",
-              "sm" : "12"
-            },
-            "type" : "layout-column"
-          } ],
-          "object" : "block",
-          "type" : "layout-row"
-        } ],
-        "object" : "block",
-        "padding" : "with-padding",
-        "snapping" : "none",
-        "type" : "layout-section"
-      }, {
-        "background" : {
-          "position" : "center center",
-          "size" : "contain"
-        },
-        "layout" : "container",
-        "nodes" : [ {
-          "nodes" : [ {
-            "nodes" : [ {
-              "nodes" : [ {
-                "isVoid" : false,
-                "nodes" : [ {
-                  "leaves" : [ {
-                    "object" : "leaf",
-                    "text" : "On this page:"
-                  } ],
-                  "object" : "text"
-                } ],
-                "object" : "block",
-                "type" : "paragraph"
-              }, {
-                "isVoid" : false,
-                "nodes" : [ {
-                  "isVoid" : false,
-                  "nodes" : [ {
-                    "leaves" : [ {
-                      "object" : "leaf",
-                      "text" : "Overview"
-                    } ],
-                    "object" : "text"
-                  } ],
-                  "object" : "block",
-                  "type" : "list-item"
-                }, {
-                  "isVoid" : false,
-                  "nodes" : [ {
-                    "leaves" : [ {
-                      "object" : "leaf",
-                      "text" : "Prerequisites"
-                    } ],
-                    "object" : "text"
-                  } ],
-                  "object" : "block",
-                  "type" : "list-item"
-                }, {
-                  "isVoid" : false,
-                  "nodes" : [ {
-                    "leaves" : [ {
-                      "object" : "leaf",
-                      "text" : "Steps"
-                    } ],
-                    "object" : "text"
-                  } ],
-                  "object" : "block",
-                  "type" : "list-item"
-                }, {
-                  "isVoid" : false,
-                  "nodes" : [ {
-                    "leaves" : [ {
-                      "object" : "leaf",
-                      "text" : "What's next"
-                    } ],
-                    "object" : "text"
-                  } ],
-                  "object" : "block",
-                  "type" : "list-item"
-                } ],
-                "object" : "block",
-                "type" : "bulleted-list"
-              } ],
-              "object" : "widget",
-              "type" : "text"
-            } ],
-            "object" : "block",
-            "size" : {
-              "lg" : "12",
-              "md" : "12",
-              "sm" : "12"
-            },
-            "type" : "layout-column"
-          } ],
-          "object" : "block",
-          "type" : "layout-row"
-        } ],
-        "object" : "block",
-        "padding" : "with-padding",
-        "snapping" : "none",
-        "type" : "layout-section"
-      }, {
-        "background" : {
-          "position" : "center center",
-          "size" : "contain"
-        },
-        "layout" : "container",
-        "nodes" : [ {
-          "nodes" : [ {
-            "nodes" : [ {
-              "nodes" : [ {
-                "isVoid" : false,
-                "nodes" : [ {
-                  "leaves" : [ {
-                    "object" : "leaf",
-                    "text" : "Overview"
-                  } ],
-                  "object" : "text"
-                } ],
-                "object" : "block",
-                "type" : "heading-two"
-              }, {
-                "isVoid" : false,
-                "nodes" : [ {
-                  "leaves" : [ {
-                    "object" : "leaf",
-                    "text" : "This tutorial uses the preset boilerplate website which is available on GitHub. For demo purposes, we will use Firebase real-time database as a storage and hosting platform. "
-                  } ],
-                  "object" : "text"
-                } ],
-                "object" : "block",
-                "type" : "paragraph"
-              }, {
-                "isVoid" : false,
-                "nodes" : [ {
-                  "leaves" : [ {
-                    "object" : "leaf",
-                    "text" : "By the end of this tutorial, you will have a working website available from around the world, the editor, that you can deploy or run locally, and learn how to publish the generated static content to Firebase and store the content there."
-                  } ],
-                  "object" : "text"
-                } ],
-                "object" : "block",
-                "type" : "paragraph"
-              } ],
-              "object" : "widget",
-              "type" : "text"
-            } ],
-            "object" : "block",
-            "size" : {
-              "lg" : "12",
-              "md" : "12",
-              "sm" : "12"
-            },
-            "type" : "layout-column"
-          } ],
-          "object" : "block",
-          "type" : "layout-row"
-        }, {
-          "nodes" : [ {
-            "nodes" : [ {
-              "nodes" : [ {
-                "isVoid" : false,
-                "nodes" : [ {
-                  "leaves" : [ {
-                    "object" : "leaf",
-                    "text" : "Prerequisites"
-                  } ],
-                  "object" : "text"
-                } ],
-                "object" : "block",
-                "type" : "heading-two"
-              }, {
-                "isVoid" : false,
-                "nodes" : [ {
-                  "isVoid" : false,
-                  "nodes" : [ {
-                    "leaves" : [ {
-                      "object" : "leaf",
-                      "text" : "You need have a Firebase account. Follow this "
-                    } ],
-                    "object" : "text"
-                  }, {
-                    "data" : {
-                      "href" : "https://firebase.google.com/",
-                      "target" : "_blank"
-                    },
-                    "isVoid" : false,
-                    "nodes" : [ {
-                      "leaves" : [ {
-                        "object" : "leaf",
-                        "text" : "link"
-                      } ],
-                      "object" : "text"
-                    } ],
-                    "object" : "inline",
-                    "type" : "link"
-                  }, {
-                    "leaves" : [ {
-                      "object" : "leaf",
-                      "text" : " to sign in and create a Firebase account if don't have one."
-                    } ],
-                    "object" : "text"
-                  } ],
-                  "object" : "block",
-                  "type" : "list-item"
-                } ],
-                "object" : "block",
-                "type" : "bulleted-list"
-              } ],
-              "object" : "widget",
-              "type" : "text"
-            }, {
-              "nodes" : [ {
-                "isVoid" : false,
-                "nodes" : [ {
-                  "leaves" : [ {
-                    "object" : "leaf",
-                    "text" : "Steps"
-                  } ],
-                  "object" : "text"
-                } ],
-                "object" : "block",
-                "type" : "heading-two"
-              }, {
-                "isVoid" : false,
-                "nodes" : [ {
-                  "isVoid" : false,
-                  "nodes" : [ {
-                    "leaves" : [ {
-                      "object" : "leaf",
-                      "text" : "Clone the "
-                    } ],
-                    "object" : "text"
-                  }, {
-                    "data" : {
-                      "href" : "https://github.com/paperbits/paperbits-demo",
-                      "target" : "_blank"
-                    },
-                    "isVoid" : false,
-                    "nodes" : [ {
-                      "leaves" : [ {
-                        "object" : "leaf",
-                        "text" : "paperbits-demo"
-                      } ],
-                      "object" : "text"
-                    } ],
-                    "object" : "inline",
-                    "type" : "link"
-                  }, {
-                    "leaves" : [ {
-                      "object" : "leaf",
-                      "text" : " repository into that folder"
-                    } ],
-                    "object" : "text"
-                  } ],
-                  "object" : "block",
-                  "type" : "list-item"
-                } ],
-                "object" : "block",
-                "type" : "bulleted-list"
-              }, {
-                "isVoid" : false,
-                "nodes" : [ {
-                  "leaves" : [ {
-                    "object" : "leaf",
-                    "text" : "clone https://github.com/paperbits/paperbits-demo.git "
-                  } ],
-                  "object" : "text"
-                } ],
-                "object" : "block",
-                "type" : "code"
-              }, {
-                "isVoid" : false,
-                "nodes" : [ {
-                  "isVoid" : false,
-                  "nodes" : [ {
-                    "leaves" : [ {
-                      "object" : "leaf",
-                      "text" : "If you don't have a git installed download the zip archive and unzip into the 'paperbits-demo' directory."
-                    } ],
-                    "object" : "text"
-                  } ],
-                  "object" : "block",
-                  "type" : "list-item"
-                }, {
-                  "isVoid" : false,
-                  "nodes" : [ {
-                    "leaves" : [ {
-                      "object" : "leaf",
-                      "text" : "Run this script to install dependencies: "
-                    } ],
-                    "object" : "text"
-                  } ],
-                  "object" : "block",
-                  "type" : "list-item"
-                } ],
-                "object" : "block",
-                "type" : "bulleted-list"
-              }, {
-                "isVoid" : false,
-                "nodes" : [ {
-                  "leaves" : [ {
-                    "object" : "leaf",
-                    "text" : "cd paperbits-demo"
-                  } ],
-                  "object" : "text"
-                } ],
-                "object" : "block",
-                "type" : "code"
-              }, {
-                "isVoid" : false,
-                "nodes" : [ {
-                  "leaves" : [ {
-                    "object" : "leaf",
-                    "text" : "npm install "
-                  } ],
-                  "object" : "text"
-                } ],
-                "object" : "block",
-                "type" : "code"
-              }, {
-                "isVoid" : false,
-                "nodes" : [ {
-                  "isVoid" : false,
-                  "nodes" : [ {
-                    "leaves" : [ {
-                      "object" : "leaf",
-                      "text" : "To run editor locally run the following command:"
-                    } ],
-                    "object" : "text"
-                  } ],
-                  "object" : "block",
-                  "type" : "list-item"
-                } ],
-                "object" : "block",
-                "type" : "bulleted-list"
-              }, {
-                "isVoid" : false,
-                "nodes" : [ {
-                  "leaves" : [ {
-                    "object" : "leaf",
-                    "text" : "npm start"
-                  } ],
-                  "object" : "text"
-                } ],
-                "object" : "block",
-                "type" : "code"
-              }, {
-                "isVoid" : false,
-                "nodes" : [ {
-                  "isVoid" : false,
-                  "nodes" : [ {
-                    "leaves" : [ {
-                      "object" : "leaf",
-                      "text" : "Open browser and go to the: http://localhost:8080. On the opened page you will see the fully functional editor. You can start to edit content, add pages, upload images or try any other Paperbits feature to evaluate its functionality. In this demo all content is stored in the browser's local storage."
-                    } ],
-                    "object" : "text"
-                  } ],
-                  "object" : "block",
-                  "type" : "list-item"
-                }, {
-                  "isVoid" : false,
-                  "nodes" : [ {
-                    "leaves" : [ {
-                      "object" : "leaf",
-                      "text" : "To add a real storage you need to configure FIrebase in the paperbits-demo configuration file. In the editor you use "
-                    } ],
-                    "object" : "text"
-                  } ],
-                  "object" : "block",
-                  "type" : "list-item"
-                } ],
-                "object" : "block",
-                "type" : "bulleted-list"
-              } ],
-              "object" : "widget",
-              "type" : "text"
-            } ],
-            "object" : "block",
-            "size" : {
-              "lg" : "12",
-              "md" : "12",
-              "sm" : "12"
-            },
-            "type" : "layout-column"
-          } ],
-          "object" : "block",
-          "type" : "layout-row"
-        }, {
-          "nodes" : [ {
-            "nodes" : [ {
-              "animation" : "none",
-              "caption" : "Picture",
-              "layout" : "noframe",
-              "object" : "block",
-              "sourceKey" : "permalinks/8e7766d2-c970-df1c-c2a9-880d0d4abe52",
-              "type" : "picture"
-            } ],
-            "object" : "block",
-            "size" : {
-              "lg" : "3",
-              "md" : "3",
-              "sm" : "3"
-            },
-            "type" : "layout-column"
-          }, {
-            "nodes" : [ {
-              "nodes" : [ {
-                "isVoid" : false,
-                "nodes" : [ {
-                  "leaves" : [ {
-                    "object" : "leaf",
-                    "text" : ""
-                  } ],
-                  "object" : "text"
-                } ],
-                "object" : "block",
-                "type" : "paragraph"
-              } ],
-              "object" : "widget",
-              "type" : "text"
-            } ],
-            "object" : "block",
-            "size" : {
-              "lg" : "9",
-              "md" : "9",
-              "sm" : "9"
-            },
-            "type" : "layout-column"
-          } ],
-          "object" : "block",
-          "type" : "layout-row"
-        } ],
-        "object" : "block",
-        "padding" : "with-padding",
-        "snapping" : "none",
-        "type" : "layout-section"
-      } ],
-      "object" : "block",
-      "type" : "page"
-    },
     "302a5dba-8d6b-7ccf-daec-c70c56682414" : {
       "key" : "files/302a5dba-8d6b-7ccf-daec-c70c56682414",
       "nodes" : [ {
@@ -972,7 +1194,7 @@
           "position" : "center center",
           "size" : "contain"
         },
-        "layout" : "container",
+        "layout" : "container-thinner",
         "nodes" : [ {
           "align" : {
             "md" : "center"
@@ -1006,7 +1228,7 @@
                 "nodes" : [ {
                   "leaves" : [ {
                     "object" : "leaf",
-                    "text" : "Though, implementing simple, intuitive tools that every person can use efficiently is a very challenging task that requires considerable UX design and programming resource. So, before crafting another page builder or email template editor, just think about what will you need. It at least required the following:\r"
+                    "text" : "Though, implementing simple, intuitive tools that every person can undesrtand and use efficiently is a very challenging task that requires considerable UX design and programming resources. So, before crafting another page builder or email template editor, just think about what will you need. It at least requires the following:\r"
                   } ],
                   "object" : "text"
                 } ],
@@ -1015,71 +1237,117 @@
               }, {
                 "isVoid" : false,
                 "nodes" : [ {
+                  "data" : {
+                    "intentions" : {
+                      "container" : {
+                        "list" : {
+                          "unordered" : {
+                            "disc" : true
+                          }
+                        }
+                      }
+                    }
+                  },
                   "isVoid" : false,
                   "nodes" : [ {
-                    "leaves" : [ {
-                      "object" : "leaf",
-                      "text" : "responsive grid system and an editor for it;\r"
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "isVoid" : false,
+                      "nodes" : [ {
+                        "leaves" : [ {
+                          "object" : "leaf",
+                          "text" : "responsive grid system;\r"
+                        } ],
+                        "object" : "text"
+                      } ],
+                      "object" : "block",
+                      "type" : "paragraph"
                     } ],
-                    "object" : "text"
+                    "object" : "block",
+                    "type" : "list-item"
+                  }, {
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "isVoid" : false,
+                      "nodes" : [ {
+                        "leaves" : [ {
+                          "object" : "leaf",
+                          "text" : "drag & drop framework;\r"
+                        } ],
+                        "object" : "text"
+                      } ],
+                      "object" : "block",
+                      "type" : "paragraph"
+                    } ],
+                    "object" : "block",
+                    "type" : "list-item"
+                  }, {
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "isVoid" : false,
+                      "nodes" : [ {
+                        "leaves" : [ {
+                          "object" : "leaf",
+                          "text" : "media library;\r"
+                        } ],
+                        "object" : "text"
+                      } ],
+                      "object" : "block",
+                      "type" : "paragraph"
+                    } ],
+                    "object" : "block",
+                    "type" : "list-item"
+                  }, {
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "isVoid" : false,
+                      "nodes" : [ {
+                        "leaves" : [ {
+                          "object" : "leaf",
+                          "text" : "form-factor controls;\r"
+                        } ],
+                        "object" : "text"
+                      } ],
+                      "object" : "block",
+                      "type" : "paragraph"
+                    } ],
+                    "object" : "block",
+                    "type" : "list-item"
+                  }, {
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "isVoid" : false,
+                      "nodes" : [ {
+                        "leaves" : [ {
+                          "object" : "leaf",
+                          "text" : "touch screen support;\r"
+                        } ],
+                        "object" : "text"
+                      } ],
+                      "object" : "block",
+                      "type" : "paragraph"
+                    } ],
+                    "object" : "block",
+                    "type" : "list-item"
+                  }, {
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "isVoid" : false,
+                      "nodes" : [ {
+                        "leaves" : [ {
+                          "object" : "leaf",
+                          "text" : "user input validation;\r"
+                        } ],
+                        "object" : "text"
+                      } ],
+                      "object" : "block",
+                      "type" : "paragraph"
+                    } ],
+                    "object" : "block",
+                    "type" : "list-item"
                   } ],
                   "object" : "block",
-                  "type" : "list-item"
-                }, {
-                  "isVoid" : false,
-                  "nodes" : [ {
-                    "leaves" : [ {
-                      "object" : "leaf",
-                      "text" : "drag & drop framework (plus externally dropped files handling);\r"
-                    } ],
-                    "object" : "text"
-                  } ],
-                  "object" : "block",
-                  "type" : "list-item"
-                }, {
-                  "isVoid" : false,
-                  "nodes" : [ {
-                    "leaves" : [ {
-                      "object" : "leaf",
-                      "text" : "media library and image editing;\r"
-                    } ],
-                    "object" : "text"
-                  } ],
-                  "object" : "block",
-                  "type" : "list-item"
-                }, {
-                  "isVoid" : false,
-                  "nodes" : [ {
-                    "leaves" : [ {
-                      "object" : "leaf",
-                      "text" : "form-factor controls (to switch between for desktop, tablet, and mobile);\r"
-                    } ],
-                    "object" : "text"
-                  } ],
-                  "object" : "block",
-                  "type" : "list-item"
-                }, {
-                  "isVoid" : false,
-                  "nodes" : [ {
-                    "leaves" : [ {
-                      "object" : "leaf",
-                      "text" : "touch screen support;\r"
-                    } ],
-                    "object" : "text"
-                  } ],
-                  "object" : "block",
-                  "type" : "list-item"
-                }, {
-                  "isVoid" : false,
-                  "nodes" : [ {
-                    "leaves" : [ {
-                      "object" : "leaf",
-                      "text" : "user input validation;\r"
-                    } ],
-                    "object" : "text"
-                  } ],
-                  "object" : "block",
-                  "type" : "list-item"
+                  "type" : "list"
                 } ],
                 "object" : "block",
                 "type" : "bulleted-list"
@@ -1150,104 +1418,135 @@
                 "object" : "block",
                 "type" : "paragraph"
               }, {
+                "data" : {
+                  "intentions" : {
+                    "container" : {
+                      "list" : {
+                        "unordered" : {
+                          "disc" : true
+                        }
+                      }
+                    }
+                  }
+                },
                 "isVoid" : false,
                 "nodes" : [ {
-                  "leaves" : [ {
-                    "object" : "leaf",
-                    "text" : ""
-                  } ],
-                  "object" : "text"
-                }, {
-                  "data" : {
-                    "href" : "/blog/key-concepts",
-                    "permalinkKey" : "permalinks/17aa0884-88c0-8b1d-3856-38f9f1b04cf0",
-                    "target" : "_blank"
-                  },
                   "isVoid" : false,
                   "nodes" : [ {
-                    "leaves" : [ {
-                      "object" : "leaf",
-                      "text" : "Key concepts"
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "leaves" : [ {
+                        "object" : "leaf",
+                        "text" : ""
+                      } ],
+                      "object" : "text"
+                    }, {
+                      "data" : {
+                        "href" : "/blog/key-concepts",
+                        "permalinkKey" : "permalinks/17aa0884-88c0-8b1d-3856-38f9f1b04cf0",
+                        "target" : "_blank"
+                      },
+                      "isVoid" : false,
+                      "nodes" : [ {
+                        "leaves" : [ {
+                          "object" : "leaf",
+                          "text" : "Key concepts"
+                        } ],
+                        "object" : "text"
+                      } ],
+                      "object" : "inline",
+                      "type" : "link"
+                    }, {
+                      "leaves" : [ {
+                        "object" : "leaf",
+                        "text" : ""
+                      } ],
+                      "object" : "text"
                     } ],
-                    "object" : "text"
+                    "object" : "block",
+                    "type" : "paragraph"
                   } ],
-                  "object" : "inline",
-                  "type" : "link"
+                  "object" : "block",
+                  "type" : "list-item"
                 }, {
-                  "leaves" : [ {
-                    "object" : "leaf",
-                    "text" : ""
-                  } ],
-                  "object" : "text"
-                } ],
-                "object" : "block",
-                "type" : "paragraph"
-              }, {
-                "isVoid" : false,
-                "nodes" : [ {
-                  "leaves" : [ {
-                    "object" : "leaf",
-                    "text" : ""
-                  } ],
-                  "object" : "text"
-                }, {
-                  "data" : {
-                    "href" : "/features",
-                    "permalinkKey" : "permalinks/00cb6c38-f172-8382-2ef5-348d3b88b387",
-                    "target" : "_blank"
-                  },
                   "isVoid" : false,
                   "nodes" : [ {
-                    "leaves" : [ {
-                      "object" : "leaf",
-                      "text" : "Feature index"
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "leaves" : [ {
+                        "object" : "leaf",
+                        "text" : ""
+                      } ],
+                      "object" : "text"
+                    }, {
+                      "data" : {
+                        "href" : "/features",
+                        "permalinkKey" : "permalinks/00cb6c38-f172-8382-2ef5-348d3b88b387",
+                        "target" : "_blank"
+                      },
+                      "isVoid" : false,
+                      "nodes" : [ {
+                        "leaves" : [ {
+                          "object" : "leaf",
+                          "text" : "Feature index"
+                        } ],
+                        "object" : "text"
+                      } ],
+                      "object" : "inline",
+                      "type" : "link"
+                    }, {
+                      "leaves" : [ {
+                        "object" : "leaf",
+                        "text" : ""
+                      } ],
+                      "object" : "text"
                     } ],
-                    "object" : "text"
+                    "object" : "block",
+                    "type" : "paragraph"
                   } ],
-                  "object" : "inline",
-                  "type" : "link"
+                  "object" : "block",
+                  "type" : "list-item"
                 }, {
-                  "leaves" : [ {
-                    "object" : "leaf",
-                    "text" : ""
-                  } ],
-                  "object" : "text"
-                } ],
-                "object" : "block",
-                "type" : "paragraph"
-              }, {
-                "isVoid" : false,
-                "nodes" : [ {
-                  "leaves" : [ {
-                    "object" : "leaf",
-                    "text" : ""
-                  } ],
-                  "object" : "text"
-                }, {
-                  "data" : {
-                    "href" : "/roadmap",
-                    "permalinkKey" : "permalinks/f7be3fb1-d18b-24fc-1f8e-c1150f29c426",
-                    "target" : "_blank"
-                  },
                   "isVoid" : false,
                   "nodes" : [ {
-                    "leaves" : [ {
-                      "object" : "leaf",
-                      "text" : "Roadmap"
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "leaves" : [ {
+                        "object" : "leaf",
+                        "text" : ""
+                      } ],
+                      "object" : "text"
+                    }, {
+                      "data" : {
+                        "href" : "/roadmap",
+                        "permalinkKey" : "permalinks/f7be3fb1-d18b-24fc-1f8e-c1150f29c426",
+                        "target" : "_blank"
+                      },
+                      "isVoid" : false,
+                      "nodes" : [ {
+                        "leaves" : [ {
+                          "object" : "leaf",
+                          "text" : "Roadmap"
+                        } ],
+                        "object" : "text"
+                      } ],
+                      "object" : "inline",
+                      "type" : "link"
+                    }, {
+                      "leaves" : [ {
+                        "object" : "leaf",
+                        "text" : ""
+                      } ],
+                      "object" : "text"
                     } ],
-                    "object" : "text"
+                    "object" : "block",
+                    "type" : "paragraph"
                   } ],
-                  "object" : "inline",
-                  "type" : "link"
-                }, {
-                  "leaves" : [ {
-                    "object" : "leaf",
-                    "text" : ""
-                  } ],
-                  "object" : "text"
+                  "object" : "block",
+                  "type" : "list-item"
                 } ],
                 "object" : "block",
-                "type" : "paragraph"
+                "type" : "list"
               }, {
                 "isVoid" : false,
                 "nodes" : [ {
@@ -1260,27 +1559,95 @@
                 "object" : "block",
                 "type" : "paragraph"
               }, {
+                "data" : {
+                  "intentions" : {
+                    "container" : {
+                      "list" : {
+                        "unordered" : {
+                          "disc" : true
+                        }
+                      }
+                    }
+                  }
+                },
                 "isVoid" : false,
                 "nodes" : [ {
-                  "leaves" : [ {
-                    "object" : "leaf",
-                    "text" : "- Twitter\r"
+                  "isVoid" : false,
+                  "nodes" : [ {
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "leaves" : [ {
+                        "object" : "leaf",
+                        "text" : ""
+                      } ],
+                      "object" : "text"
+                    }, {
+                      "data" : {
+                        "href" : "https://twitter.com/paperbitsproj",
+                        "target" : "_blank"
+                      },
+                      "isVoid" : false,
+                      "nodes" : [ {
+                        "leaves" : [ {
+                          "object" : "leaf",
+                          "text" : "Twitter\r"
+                        } ],
+                        "object" : "text"
+                      } ],
+                      "object" : "inline",
+                      "type" : "link"
+                    }, {
+                      "leaves" : [ {
+                        "object" : "leaf",
+                        "text" : ""
+                      } ],
+                      "object" : "text"
+                    } ],
+                    "object" : "block",
+                    "type" : "paragraph"
                   } ],
-                  "object" : "text"
+                  "object" : "block",
+                  "type" : "list-item"
+                }, {
+                  "isVoid" : false,
+                  "nodes" : [ {
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "leaves" : [ {
+                        "object" : "leaf",
+                        "text" : ""
+                      } ],
+                      "object" : "text"
+                    }, {
+                      "data" : {
+                        "href" : "https://www.linkedin.com/company/paperbits",
+                        "target" : "_blank"
+                      },
+                      "isVoid" : false,
+                      "nodes" : [ {
+                        "leaves" : [ {
+                          "object" : "leaf",
+                          "text" : "Linked-In\r"
+                        } ],
+                        "object" : "text"
+                      } ],
+                      "object" : "inline",
+                      "type" : "link"
+                    }, {
+                      "leaves" : [ {
+                        "object" : "leaf",
+                        "text" : ""
+                      } ],
+                      "object" : "text"
+                    } ],
+                    "object" : "block",
+                    "type" : "paragraph"
+                  } ],
+                  "object" : "block",
+                  "type" : "list-item"
                 } ],
                 "object" : "block",
-                "type" : "paragraph"
-              }, {
-                "isVoid" : false,
-                "nodes" : [ {
-                  "leaves" : [ {
-                    "object" : "leaf",
-                    "text" : "- Linked-In\r"
-                  } ],
-                  "object" : "text"
-                } ],
-                "object" : "block",
-                "type" : "paragraph"
+                "type" : "list"
               }, {
                 "isVoid" : false,
                 "nodes" : [ {
@@ -1293,16 +1660,59 @@
                 "object" : "block",
                 "type" : "paragraph"
               }, {
+                "data" : {
+                  "intentions" : {
+                    "container" : {
+                      "list" : {
+                        "unordered" : {
+                          "disc" : true
+                        }
+                      }
+                    }
+                  }
+                },
                 "isVoid" : false,
                 "nodes" : [ {
-                  "leaves" : [ {
-                    "object" : "leaf",
-                    "text" : "- Contributor's guide."
+                  "isVoid" : false,
+                  "nodes" : [ {
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "leaves" : [ {
+                        "object" : "leaf",
+                        "text" : ""
+                      } ],
+                      "object" : "text"
+                    }, {
+                      "data" : {
+                        "href" : "/contribution",
+                        "permalinkKey" : "permalinks/523c71a7-790f-4f30-adb1-2268047a2733",
+                        "target" : "_blank"
+                      },
+                      "isVoid" : false,
+                      "nodes" : [ {
+                        "leaves" : [ {
+                          "object" : "leaf",
+                          "text" : "Contributor's guide"
+                        } ],
+                        "object" : "text"
+                      } ],
+                      "object" : "inline",
+                      "type" : "link"
+                    }, {
+                      "leaves" : [ {
+                        "object" : "leaf",
+                        "text" : ""
+                      } ],
+                      "object" : "text"
+                    } ],
+                    "object" : "block",
+                    "type" : "paragraph"
                   } ],
-                  "object" : "text"
+                  "object" : "block",
+                  "type" : "list-item"
                 } ],
                 "object" : "block",
-                "type" : "paragraph"
+                "type" : "list"
               } ],
               "object" : "widget",
               "type" : "text"
@@ -1324,8 +1734,80 @@
       "object" : "block",
       "type" : "page"
     },
-    "325dd8c3-605c-0218-501b-0212a98d8179" : {
-      "key" : "files/325dd8c3-605c-0218-501b-0212a98d8179",
+    "3cf4ec8b-cd70-cdf5-77b2-c484a3914628" : {
+      "key" : "files/3cf4ec8b-cd70-cdf5-77b2-c484a3914628",
+      "nodes" : [ {
+        "background" : {
+          "position" : "center center",
+          "size" : "contain"
+        },
+        "layout" : "container",
+        "object" : "block",
+        "padding" : "with-padding",
+        "snapping" : "none",
+        "type" : "layout-section"
+      } ],
+      "object" : "block",
+      "type" : "page"
+    },
+    "3dd60bb0-eef1-8d05-f1ee-808f7b1ea979" : {
+      "key" : "files/3dd60bb0-eef1-8d05-f1ee-808f7b1ea979",
+      "nodes" : [ {
+        "background" : {
+          "position" : "center center",
+          "size" : "contain"
+        },
+        "layout" : "container-thinner",
+        "nodes" : [ {
+          "nodes" : [ {
+            "nodes" : [ {
+              "nodes" : [ {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "For contributors"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "heading-one"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              } ],
+              "object" : "widget",
+              "type" : "text"
+            } ],
+            "object" : "block",
+            "size" : {
+              "lg" : "12",
+              "md" : "12",
+              "sm" : "12"
+            },
+            "type" : "layout-column"
+          } ],
+          "object" : "block",
+          "type" : "layout-row"
+        } ],
+        "object" : "block",
+        "padding" : "with-padding",
+        "snapping" : "none",
+        "type" : "layout-section"
+      } ],
+      "object" : "block",
+      "type" : "page"
+    },
+    "47475941-a758-0f10-aa97-be6063d109c8" : {
+      "key" : "files/47475941-a758-0f10-aa97-be6063d109c8",
       "nodes" : [ {
         "background" : {
           "position" : "center center",
@@ -1333,9 +1815,124 @@
         },
         "layout" : "container",
         "nodes" : [ {
-          "align" : {
-            "md" : "center"
-          },
+          "nodes" : [ {
+            "object" : "block",
+            "size" : {
+              "lg" : "3",
+              "md" : "3",
+              "sm" : "3"
+            },
+            "type" : "layout-column"
+          }, {
+            "object" : "block",
+            "size" : {
+              "lg" : "3",
+              "md" : "3",
+              "sm" : "3"
+            },
+            "type" : "layout-column"
+          }, {
+            "object" : "block",
+            "size" : {
+              "lg" : "3",
+              "md" : "3",
+              "sm" : "3"
+            },
+            "type" : "layout-column"
+          }, {
+            "object" : "block",
+            "size" : {
+              "lg" : "3",
+              "md" : "3",
+              "sm" : "3"
+            },
+            "type" : "layout-column"
+          } ],
+          "object" : "block",
+          "type" : "layout-row"
+        } ],
+        "object" : "block",
+        "padding" : "with-padding",
+        "snapping" : "none",
+        "type" : "layout-section"
+      } ],
+      "object" : "block",
+      "type" : "page"
+    },
+    "53711494-c18b-cd7b-6513-2f090b8b82cb" : {
+      "key" : "files/3cf4ec8b-cd70-cdf5-77b2-c484a3914628",
+      "nodes" : [ {
+        "object" : "block",
+        "type" : "layout-section"
+      } ],
+      "object" : "block",
+      "type" : "page"
+    },
+    "5f2b76a1-f8f2-0890-6f5e-e02e67fb2916" : {
+      "key" : "files/5f2b76a1-f8f2-0890-6f5e-e02e67fb2916",
+      "nodes" : [ {
+        "background" : {
+          "position" : "center center",
+          "size" : "contain"
+        },
+        "layout" : "container",
+        "nodes" : [ {
+          "nodes" : [ {
+            "nodes" : [ {
+              "nodes" : [ {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Roadmap"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "heading-one"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              } ],
+              "object" : "widget",
+              "type" : "text"
+            } ],
+            "object" : "block",
+            "size" : {
+              "lg" : "12",
+              "md" : "12",
+              "sm" : "12"
+            },
+            "type" : "layout-column"
+          } ],
+          "object" : "block",
+          "type" : "layout-row"
+        } ],
+        "object" : "block",
+        "padding" : "with-padding",
+        "snapping" : "none",
+        "type" : "layout-section"
+      } ],
+      "object" : "block",
+      "type" : "page"
+    },
+    "7a56ddeb-d72b-1f34-fecc-4738fcceedcb" : {
+      "key" : "files/7a56ddeb-d72b-1f34-fecc-4738fcceedcb",
+      "nodes" : [ {
+        "background" : {
+          "position" : "center center",
+          "size" : "contain"
+        },
+        "layout" : "container",
+        "nodes" : [ {
           "nodes" : [ {
             "nodes" : [ {
               "nodes" : [ {
@@ -1352,7 +1949,7 @@
                 "nodes" : [ {
                   "leaves" : [ {
                     "object" : "leaf",
-                    "text" : "Getting Started"
+                    "text" : "Getting started"
                   } ],
                   "object" : "text"
                 } ],
@@ -1882,7 +2479,7 @@
                   "object" : "text"
                 }, {
                   "data" : {
-                    "href" : "/wiki",
+                    "href" : "/docs",
                     "permalinkKey" : "permalinks/550117b4-59fe-36b1-88f3-1e9674ef0017",
                     "target" : "_blank"
                   },
@@ -1900,138 +2497,6 @@
                   "leaves" : [ {
                     "object" : "leaf",
                     "text" : "."
-                  } ],
-                  "object" : "text"
-                } ],
-                "object" : "block",
-                "type" : "paragraph"
-              } ],
-              "object" : "widget",
-              "type" : "text"
-            } ],
-            "object" : "block",
-            "size" : {
-              "md" : "12"
-            },
-            "type" : "layout-column"
-          } ],
-          "object" : "block",
-          "type" : "layout-row"
-        } ],
-        "object" : "block",
-        "padding" : "with-padding",
-        "snapping" : "none",
-        "type" : "layout-section"
-      } ],
-      "object" : "block",
-      "type" : "page"
-    },
-    "3cf4ec8b-cd70-cdf5-77b2-c484a3914628" : {
-      "key" : "files/3cf4ec8b-cd70-cdf5-77b2-c484a3914628",
-      "nodes" : [ {
-        "background" : {
-          "position" : "center center",
-          "size" : "contain"
-        },
-        "layout" : "container",
-        "object" : "block",
-        "padding" : "with-padding",
-        "snapping" : "none",
-        "type" : "layout-section"
-      } ],
-      "object" : "block",
-      "type" : "page"
-    },
-    "47475941-a758-0f10-aa97-be6063d109c8" : {
-      "key" : "files/47475941-a758-0f10-aa97-be6063d109c8",
-      "nodes" : [ {
-        "background" : {
-          "position" : "center center",
-          "size" : "contain"
-        },
-        "layout" : "container",
-        "nodes" : [ {
-          "nodes" : [ {
-            "object" : "block",
-            "size" : {
-              "lg" : "3",
-              "md" : "3",
-              "sm" : "3"
-            },
-            "type" : "layout-column"
-          }, {
-            "object" : "block",
-            "size" : {
-              "lg" : "3",
-              "md" : "3",
-              "sm" : "3"
-            },
-            "type" : "layout-column"
-          }, {
-            "object" : "block",
-            "size" : {
-              "lg" : "3",
-              "md" : "3",
-              "sm" : "3"
-            },
-            "type" : "layout-column"
-          }, {
-            "object" : "block",
-            "size" : {
-              "lg" : "3",
-              "md" : "3",
-              "sm" : "3"
-            },
-            "type" : "layout-column"
-          } ],
-          "object" : "block",
-          "type" : "layout-row"
-        } ],
-        "object" : "block",
-        "padding" : "with-padding",
-        "snapping" : "none",
-        "type" : "layout-section"
-      } ],
-      "object" : "block",
-      "type" : "page"
-    },
-    "53711494-c18b-cd7b-6513-2f090b8b82cb" : {
-      "key" : "files/3cf4ec8b-cd70-cdf5-77b2-c484a3914628",
-      "nodes" : [ {
-        "object" : "block",
-        "type" : "layout-section"
-      } ],
-      "object" : "block",
-      "type" : "page"
-    },
-    "5f2b76a1-f8f2-0890-6f5e-e02e67fb2916" : {
-      "key" : "files/5f2b76a1-f8f2-0890-6f5e-e02e67fb2916",
-      "nodes" : [ {
-        "background" : {
-          "position" : "center center",
-          "size" : "contain"
-        },
-        "layout" : "container",
-        "nodes" : [ {
-          "nodes" : [ {
-            "nodes" : [ {
-              "nodes" : [ {
-                "isVoid" : false,
-                "nodes" : [ {
-                  "leaves" : [ {
-                    "object" : "leaf",
-                    "text" : "Roadmap"
-                  } ],
-                  "object" : "text"
-                } ],
-                "object" : "block",
-                "type" : "heading-one"
-              }, {
-                "isVoid" : false,
-                "nodes" : [ {
-                  "leaves" : [ {
-                    "object" : "leaf",
-                    "text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
                   } ],
                   "object" : "text"
                 } ],
@@ -2079,7 +2544,7 @@
             },
             "nodes" : [ {
               "object" : "block",
-              "pictureSourceKey" : "permalinks/4cfcb0a0-4839-26de-6057-038bc28622ff",
+              "pictureSourceKey" : "permalinks/88238d72-237d-eefc-da3e-19bef9506808",
               "rootKey" : "navigationItems/main",
               "type" : "navbar"
             } ],
@@ -2099,470 +2564,6 @@
         "snapping" : "none",
         "type" : "layout-section"
       }, {
-        "nodes" : [ {
-          "background" : {
-            "position" : "center center",
-            "size" : "contain"
-          },
-          "layout" : "container",
-          "nodes" : [ {
-            "nodes" : [ {
-              "nodes" : [ {
-                "nodes" : [ {
-                  "isVoid" : false,
-                  "nodes" : [ {
-                    "leaves" : [ {
-                      "object" : "leaf",
-                      "text" : "How to create my first website with Paperbits"
-                    } ],
-                    "object" : "text"
-                  } ],
-                  "object" : "block",
-                  "type" : "heading-one"
-                } ],
-                "object" : "widget",
-                "type" : "text"
-              } ],
-              "object" : "block",
-              "size" : {
-                "lg" : "12",
-                "md" : "12",
-                "sm" : "12"
-              },
-              "type" : "layout-column"
-            } ],
-            "object" : "block",
-            "type" : "layout-row"
-          } ],
-          "object" : "block",
-          "padding" : "with-padding",
-          "snapping" : "none",
-          "type" : "layout-section"
-        }, {
-          "background" : {
-            "position" : "center center",
-            "size" : "contain"
-          },
-          "layout" : "container",
-          "nodes" : [ {
-            "nodes" : [ {
-              "nodes" : [ {
-                "nodes" : [ {
-                  "isVoid" : false,
-                  "nodes" : [ {
-                    "leaves" : [ {
-                      "object" : "leaf",
-                      "text" : "On this page:"
-                    } ],
-                    "object" : "text"
-                  } ],
-                  "object" : "block",
-                  "type" : "paragraph"
-                }, {
-                  "isVoid" : false,
-                  "nodes" : [ {
-                    "isVoid" : false,
-                    "nodes" : [ {
-                      "leaves" : [ {
-                        "object" : "leaf",
-                        "text" : "Overview"
-                      } ],
-                      "object" : "text"
-                    } ],
-                    "object" : "block",
-                    "type" : "list-item"
-                  }, {
-                    "isVoid" : false,
-                    "nodes" : [ {
-                      "leaves" : [ {
-                        "object" : "leaf",
-                        "text" : "Prerequisites"
-                      } ],
-                      "object" : "text"
-                    } ],
-                    "object" : "block",
-                    "type" : "list-item"
-                  }, {
-                    "isVoid" : false,
-                    "nodes" : [ {
-                      "leaves" : [ {
-                        "object" : "leaf",
-                        "text" : "Steps"
-                      } ],
-                      "object" : "text"
-                    } ],
-                    "object" : "block",
-                    "type" : "list-item"
-                  }, {
-                    "isVoid" : false,
-                    "nodes" : [ {
-                      "leaves" : [ {
-                        "object" : "leaf",
-                        "text" : "What's next"
-                      } ],
-                      "object" : "text"
-                    } ],
-                    "object" : "block",
-                    "type" : "list-item"
-                  } ],
-                  "object" : "block",
-                  "type" : "bulleted-list"
-                } ],
-                "object" : "widget",
-                "type" : "text"
-              } ],
-              "object" : "block",
-              "size" : {
-                "lg" : "12",
-                "md" : "12",
-                "sm" : "12"
-              },
-              "type" : "layout-column"
-            } ],
-            "object" : "block",
-            "type" : "layout-row"
-          } ],
-          "object" : "block",
-          "padding" : "with-padding",
-          "snapping" : "none",
-          "type" : "layout-section"
-        }, {
-          "background" : {
-            "position" : "center center",
-            "size" : "contain"
-          },
-          "layout" : "container",
-          "nodes" : [ {
-            "nodes" : [ {
-              "nodes" : [ {
-                "nodes" : [ {
-                  "isVoid" : false,
-                  "nodes" : [ {
-                    "leaves" : [ {
-                      "object" : "leaf",
-                      "text" : "Overview"
-                    } ],
-                    "object" : "text"
-                  } ],
-                  "object" : "block",
-                  "type" : "heading-two"
-                }, {
-                  "isVoid" : false,
-                  "nodes" : [ {
-                    "leaves" : [ {
-                      "object" : "leaf",
-                      "text" : "This tutorial uses the preset boilerplate website which is available on GitHub. For demo purposes, we will use Firebase real-time database as a storage and hosting platform. "
-                    } ],
-                    "object" : "text"
-                  } ],
-                  "object" : "block",
-                  "type" : "paragraph"
-                }, {
-                  "isVoid" : false,
-                  "nodes" : [ {
-                    "leaves" : [ {
-                      "object" : "leaf",
-                      "text" : "By the end of this tutorial, you will have a working website available from around the world, the editor, that you can deploy or run locally, and learn how to publish the generated static content to Firebase and store the content there."
-                    } ],
-                    "object" : "text"
-                  } ],
-                  "object" : "block",
-                  "type" : "paragraph"
-                } ],
-                "object" : "widget",
-                "type" : "text"
-              } ],
-              "object" : "block",
-              "size" : {
-                "lg" : "12",
-                "md" : "12",
-                "sm" : "12"
-              },
-              "type" : "layout-column"
-            } ],
-            "object" : "block",
-            "type" : "layout-row"
-          }, {
-            "nodes" : [ {
-              "nodes" : [ {
-                "nodes" : [ {
-                  "isVoid" : false,
-                  "nodes" : [ {
-                    "leaves" : [ {
-                      "object" : "leaf",
-                      "text" : "Prerequisites"
-                    } ],
-                    "object" : "text"
-                  } ],
-                  "object" : "block",
-                  "type" : "heading-two"
-                }, {
-                  "isVoid" : false,
-                  "nodes" : [ {
-                    "isVoid" : false,
-                    "nodes" : [ {
-                      "leaves" : [ {
-                        "object" : "leaf",
-                        "text" : "You need have a Firebase account. Follow this "
-                      } ],
-                      "object" : "text"
-                    }, {
-                      "data" : {
-                        "href" : "https://firebase.google.com/",
-                        "target" : "_blank"
-                      },
-                      "isVoid" : false,
-                      "nodes" : [ {
-                        "leaves" : [ {
-                          "object" : "leaf",
-                          "text" : "link"
-                        } ],
-                        "object" : "text"
-                      } ],
-                      "object" : "inline",
-                      "type" : "link"
-                    }, {
-                      "leaves" : [ {
-                        "object" : "leaf",
-                        "text" : " to sign in and create a Firebase account if don't have one."
-                      } ],
-                      "object" : "text"
-                    } ],
-                    "object" : "block",
-                    "type" : "list-item"
-                  } ],
-                  "object" : "block",
-                  "type" : "bulleted-list"
-                } ],
-                "object" : "widget",
-                "type" : "text"
-              }, {
-                "nodes" : [ {
-                  "isVoid" : false,
-                  "nodes" : [ {
-                    "leaves" : [ {
-                      "object" : "leaf",
-                      "text" : "Steps"
-                    } ],
-                    "object" : "text"
-                  } ],
-                  "object" : "block",
-                  "type" : "heading-two"
-                }, {
-                  "isVoid" : false,
-                  "nodes" : [ {
-                    "isVoid" : false,
-                    "nodes" : [ {
-                      "leaves" : [ {
-                        "object" : "leaf",
-                        "text" : "Clone the "
-                      } ],
-                      "object" : "text"
-                    }, {
-                      "data" : {
-                        "href" : "https://github.com/paperbits/paperbits-demo",
-                        "target" : "_blank"
-                      },
-                      "isVoid" : false,
-                      "nodes" : [ {
-                        "leaves" : [ {
-                          "object" : "leaf",
-                          "text" : "paperbits-demo"
-                        } ],
-                        "object" : "text"
-                      } ],
-                      "object" : "inline",
-                      "type" : "link"
-                    }, {
-                      "leaves" : [ {
-                        "object" : "leaf",
-                        "text" : " repository into that folder"
-                      } ],
-                      "object" : "text"
-                    } ],
-                    "object" : "block",
-                    "type" : "list-item"
-                  } ],
-                  "object" : "block",
-                  "type" : "bulleted-list"
-                }, {
-                  "isVoid" : false,
-                  "nodes" : [ {
-                    "leaves" : [ {
-                      "object" : "leaf",
-                      "text" : "clone https://github.com/paperbits/paperbits-demo.git "
-                    } ],
-                    "object" : "text"
-                  } ],
-                  "object" : "block",
-                  "type" : "code"
-                }, {
-                  "isVoid" : false,
-                  "nodes" : [ {
-                    "isVoid" : false,
-                    "nodes" : [ {
-                      "leaves" : [ {
-                        "object" : "leaf",
-                        "text" : "If you don't have a git installed download the zip archive and unzip into the 'paperbits-demo' directory."
-                      } ],
-                      "object" : "text"
-                    } ],
-                    "object" : "block",
-                    "type" : "list-item"
-                  }, {
-                    "isVoid" : false,
-                    "nodes" : [ {
-                      "leaves" : [ {
-                        "object" : "leaf",
-                        "text" : "Run this script to install dependencies: "
-                      } ],
-                      "object" : "text"
-                    } ],
-                    "object" : "block",
-                    "type" : "list-item"
-                  } ],
-                  "object" : "block",
-                  "type" : "bulleted-list"
-                }, {
-                  "isVoid" : false,
-                  "nodes" : [ {
-                    "leaves" : [ {
-                      "object" : "leaf",
-                      "text" : "cd paperbits-demo"
-                    } ],
-                    "object" : "text"
-                  } ],
-                  "object" : "block",
-                  "type" : "code"
-                }, {
-                  "isVoid" : false,
-                  "nodes" : [ {
-                    "leaves" : [ {
-                      "object" : "leaf",
-                      "text" : "npm install "
-                    } ],
-                    "object" : "text"
-                  } ],
-                  "object" : "block",
-                  "type" : "code"
-                }, {
-                  "isVoid" : false,
-                  "nodes" : [ {
-                    "isVoid" : false,
-                    "nodes" : [ {
-                      "leaves" : [ {
-                        "object" : "leaf",
-                        "text" : "To run editor locally run the following command:"
-                      } ],
-                      "object" : "text"
-                    } ],
-                    "object" : "block",
-                    "type" : "list-item"
-                  } ],
-                  "object" : "block",
-                  "type" : "bulleted-list"
-                }, {
-                  "isVoid" : false,
-                  "nodes" : [ {
-                    "leaves" : [ {
-                      "object" : "leaf",
-                      "text" : "npm start"
-                    } ],
-                    "object" : "text"
-                  } ],
-                  "object" : "block",
-                  "type" : "code"
-                }, {
-                  "isVoid" : false,
-                  "nodes" : [ {
-                    "isVoid" : false,
-                    "nodes" : [ {
-                      "leaves" : [ {
-                        "object" : "leaf",
-                        "text" : "Open browser and go to the: http://localhost:8080. On the opened page you will see the fully functional editor. You can start to edit content, add pages, upload images or try any other Paperbits feature to evaluate its functionality. In this demo all content is stored in the browser's local storage."
-                      } ],
-                      "object" : "text"
-                    } ],
-                    "object" : "block",
-                    "type" : "list-item"
-                  }, {
-                    "isVoid" : false,
-                    "nodes" : [ {
-                      "leaves" : [ {
-                        "object" : "leaf",
-                        "text" : "To add a real storage you need to configure FIrebase in the paperbits-demo configuration file. In the editor you use "
-                      } ],
-                      "object" : "text"
-                    } ],
-                    "object" : "block",
-                    "type" : "list-item"
-                  } ],
-                  "object" : "block",
-                  "type" : "bulleted-list"
-                } ],
-                "object" : "widget",
-                "type" : "text"
-              } ],
-              "object" : "block",
-              "size" : {
-                "lg" : "12",
-                "md" : "12",
-                "sm" : "12"
-              },
-              "type" : "layout-column"
-            } ],
-            "object" : "block",
-            "type" : "layout-row"
-          }, {
-            "nodes" : [ {
-              "nodes" : [ {
-                "animation" : "none",
-                "caption" : "Picture",
-                "layout" : "noframe",
-                "object" : "block",
-                "sourceKey" : "permalinks/8e7766d2-c970-df1c-c2a9-880d0d4abe52",
-                "type" : "picture"
-              } ],
-              "object" : "block",
-              "size" : {
-                "lg" : "3",
-                "md" : "3",
-                "sm" : "3"
-              },
-              "type" : "layout-column"
-            }, {
-              "nodes" : [ {
-                "nodes" : [ {
-                  "isVoid" : false,
-                  "nodes" : [ {
-                    "leaves" : [ {
-                      "object" : "leaf",
-                      "text" : ""
-                    } ],
-                    "object" : "text"
-                  } ],
-                  "object" : "block",
-                  "type" : "paragraph"
-                } ],
-                "object" : "widget",
-                "type" : "text"
-              } ],
-              "object" : "block",
-              "size" : {
-                "lg" : "9",
-                "md" : "9",
-                "sm" : "9"
-              },
-              "type" : "layout-column"
-            } ],
-            "object" : "block",
-            "type" : "layout-row"
-          } ],
-          "object" : "block",
-          "padding" : "with-padding",
-          "snapping" : "none",
-          "type" : "layout-section"
-        } ],
         "object" : "block",
         "type" : "page"
       }, {
@@ -2573,6 +2574,520 @@
         },
         "layout" : "container",
         "nodes" : [ {
+          "nodes" : [ {
+            "nodes" : [ {
+              "nodes" : [ {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "marks" : [ {
+                      "object" : "mark",
+                      "type" : "bold"
+                    } ],
+                    "object" : "leaf",
+                    "text" : "Product"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "heading-four"
+              }, {
+                "data" : {
+                  "intentions" : {
+                    "container" : {
+                      "list" : {
+                        "unordered" : {
+                          "none" : true
+                        }
+                      }
+                    }
+                  }
+                },
+                "isVoid" : false,
+                "nodes" : [ {
+                  "isVoid" : false,
+                  "nodes" : [ {
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "leaves" : [ {
+                        "object" : "leaf",
+                        "text" : ""
+                      } ],
+                      "object" : "text"
+                    }, {
+                      "data" : {
+                        "href" : "/features",
+                        "permalinkKey" : "permalinks/00cb6c38-f172-8382-2ef5-348d3b88b387",
+                        "target" : "_blank"
+                      },
+                      "isVoid" : false,
+                      "nodes" : [ {
+                        "leaves" : [ {
+                          "object" : "leaf",
+                          "text" : "Features"
+                        } ],
+                        "object" : "text"
+                      } ],
+                      "object" : "inline",
+                      "type" : "link"
+                    }, {
+                      "leaves" : [ {
+                        "object" : "leaf",
+                        "text" : ""
+                      } ],
+                      "object" : "text"
+                    } ],
+                    "object" : "block",
+                    "type" : "paragraph"
+                  } ],
+                  "object" : "block",
+                  "type" : "list-item"
+                }, {
+                  "isVoid" : false,
+                  "nodes" : [ {
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "leaves" : [ {
+                        "object" : "leaf",
+                        "text" : ""
+                      } ],
+                      "object" : "text"
+                    }, {
+                      "data" : {
+                        "href" : "/roadmap",
+                        "permalinkKey" : "permalinks/f7be3fb1-d18b-24fc-1f8e-c1150f29c426",
+                        "target" : "_blank"
+                      },
+                      "isVoid" : false,
+                      "nodes" : [ {
+                        "leaves" : [ {
+                          "object" : "leaf",
+                          "text" : "Roadmap"
+                        } ],
+                        "object" : "text"
+                      } ],
+                      "object" : "inline",
+                      "type" : "link"
+                    }, {
+                      "leaves" : [ {
+                        "object" : "leaf",
+                        "text" : ""
+                      } ],
+                      "object" : "text"
+                    } ],
+                    "object" : "block",
+                    "type" : "paragraph"
+                  } ],
+                  "object" : "block",
+                  "type" : "list-item"
+                } ],
+                "object" : "block",
+                "type" : "list"
+              } ],
+              "object" : "widget",
+              "type" : "text"
+            } ],
+            "object" : "block",
+            "size" : {
+              "lg" : "3",
+              "md" : "3",
+              "sm" : "3"
+            },
+            "type" : "layout-column"
+          }, {
+            "nodes" : [ {
+              "nodes" : [ {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "marks" : [ {
+                      "object" : "mark",
+                      "type" : "bold"
+                    } ],
+                    "object" : "leaf",
+                    "text" : "Docs"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "heading-four"
+              }, {
+                "data" : {
+                  "intentions" : {
+                    "container" : {
+                      "list" : {
+                        "unordered" : {
+                          "none" : true
+                        }
+                      }
+                    }
+                  }
+                },
+                "isVoid" : false,
+                "nodes" : [ {
+                  "isVoid" : false,
+                  "nodes" : [ {
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "leaves" : [ {
+                        "object" : "leaf",
+                        "text" : "Getting started"
+                      } ],
+                      "object" : "text"
+                    } ],
+                    "object" : "block",
+                    "type" : "paragraph"
+                  } ],
+                  "object" : "block",
+                  "type" : "list-item"
+                } ],
+                "object" : "block",
+                "type" : "list"
+              } ],
+              "object" : "widget",
+              "type" : "text"
+            } ],
+            "object" : "block",
+            "size" : {
+              "lg" : "3",
+              "md" : "3",
+              "sm" : "3"
+            },
+            "type" : "layout-column"
+          }, {
+            "nodes" : [ {
+              "nodes" : [ {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "marks" : [ {
+                      "object" : "mark",
+                      "type" : "bold"
+                    } ],
+                    "object" : "leaf",
+                    "text" : "Company"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "heading-four"
+              }, {
+                "data" : {
+                  "intentions" : {
+                    "container" : {
+                      "list" : {
+                        "unordered" : {
+                          "none" : true
+                        }
+                      }
+                    }
+                  }
+                },
+                "isVoid" : false,
+                "nodes" : [ {
+                  "isVoid" : false,
+                  "nodes" : [ {
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "leaves" : [ {
+                        "object" : "leaf",
+                        "text" : ""
+                      } ],
+                      "object" : "text"
+                    }, {
+                      "data" : {
+                        "href" : "/about",
+                        "permalinkKey" : "permalinks/3f2f6620-7c84-b265-597a-8a7ea9cb907c",
+                        "target" : "_blank"
+                      },
+                      "isVoid" : false,
+                      "nodes" : [ {
+                        "leaves" : [ {
+                          "object" : "leaf",
+                          "text" : "About"
+                        } ],
+                        "object" : "text"
+                      } ],
+                      "object" : "inline",
+                      "type" : "link"
+                    }, {
+                      "leaves" : [ {
+                        "object" : "leaf",
+                        "text" : ""
+                      } ],
+                      "object" : "text"
+                    } ],
+                    "object" : "block",
+                    "type" : "paragraph"
+                  } ],
+                  "object" : "block",
+                  "type" : "list-item"
+                }, {
+                  "isVoid" : false,
+                  "nodes" : [ {
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "leaves" : [ {
+                        "object" : "leaf",
+                        "text" : "Customers"
+                      } ],
+                      "object" : "text"
+                    } ],
+                    "object" : "block",
+                    "type" : "paragraph"
+                  } ],
+                  "object" : "block",
+                  "type" : "list-item"
+                }, {
+                  "isVoid" : false,
+                  "nodes" : [ {
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "leaves" : [ {
+                        "object" : "leaf",
+                        "text" : ""
+                      } ],
+                      "object" : "text"
+                    }, {
+                      "data" : {
+                        "href" : "/blog",
+                        "permalinkKey" : "permalinks/8a3f97cf-0c91-002a-1528-9b13eabcab0a",
+                        "target" : "_blank"
+                      },
+                      "isVoid" : false,
+                      "nodes" : [ {
+                        "leaves" : [ {
+                          "object" : "leaf",
+                          "text" : "Blog"
+                        } ],
+                        "object" : "text"
+                      } ],
+                      "object" : "inline",
+                      "type" : "link"
+                    }, {
+                      "leaves" : [ {
+                        "object" : "leaf",
+                        "text" : ""
+                      } ],
+                      "object" : "text"
+                    } ],
+                    "object" : "block",
+                    "type" : "paragraph"
+                  } ],
+                  "object" : "block",
+                  "type" : "list-item"
+                }, {
+                  "isVoid" : false,
+                  "nodes" : [ {
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "leaves" : [ {
+                        "object" : "leaf",
+                        "text" : ""
+                      } ],
+                      "object" : "text"
+                    }, {
+                      "data" : {
+                        "href" : "/privacy",
+                        "permalinkKey" : "permalinks/211b6d29-bda4-9fe1-8100-589e3cf67451",
+                        "target" : "_blank"
+                      },
+                      "isVoid" : false,
+                      "nodes" : [ {
+                        "leaves" : [ {
+                          "object" : "leaf",
+                          "text" : "Privacy"
+                        } ],
+                        "object" : "text"
+                      } ],
+                      "object" : "inline",
+                      "type" : "link"
+                    }, {
+                      "leaves" : [ {
+                        "object" : "leaf",
+                        "text" : ""
+                      } ],
+                      "object" : "text"
+                    } ],
+                    "object" : "block",
+                    "type" : "paragraph"
+                  } ],
+                  "object" : "block",
+                  "type" : "list-item"
+                }, {
+                  "isVoid" : false,
+                  "nodes" : [ {
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "leaves" : [ {
+                        "object" : "leaf",
+                        "text" : ""
+                      } ],
+                      "object" : "text"
+                    }, {
+                      "data" : {
+                        "href" : "/terms-of-use",
+                        "permalinkKey" : "permalinks/68cb74e8-c5b6-dd05-a1cf-5035c1334a25",
+                        "target" : "_blank"
+                      },
+                      "isVoid" : false,
+                      "nodes" : [ {
+                        "leaves" : [ {
+                          "object" : "leaf",
+                          "text" : "Terms of use"
+                        } ],
+                        "object" : "text"
+                      } ],
+                      "object" : "inline",
+                      "type" : "link"
+                    }, {
+                      "leaves" : [ {
+                        "object" : "leaf",
+                        "text" : ""
+                      } ],
+                      "object" : "text"
+                    } ],
+                    "object" : "block",
+                    "type" : "paragraph"
+                  } ],
+                  "object" : "block",
+                  "type" : "list-item"
+                } ],
+                "object" : "block",
+                "type" : "list"
+              } ],
+              "object" : "widget",
+              "type" : "text"
+            } ],
+            "object" : "block",
+            "size" : {
+              "lg" : "3",
+              "md" : "3",
+              "sm" : "3"
+            },
+            "type" : "layout-column"
+          }, {
+            "nodes" : [ {
+              "nodes" : [ {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "marks" : [ {
+                      "object" : "mark",
+                      "type" : "bold"
+                    } ],
+                    "object" : "leaf",
+                    "text" : "Follow us"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "heading-four"
+              }, {
+                "data" : {
+                  "intentions" : {
+                    "container" : {
+                      "list" : {
+                        "unordered" : {
+                          "none" : true
+                        }
+                      }
+                    }
+                  }
+                },
+                "isVoid" : false,
+                "nodes" : [ {
+                  "isVoid" : false,
+                  "nodes" : [ {
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "leaves" : [ {
+                        "object" : "leaf",
+                        "text" : ""
+                      } ],
+                      "object" : "text"
+                    }, {
+                      "data" : {
+                        "href" : "https://twitter.com/paperbitsproj",
+                        "target" : "_blank"
+                      },
+                      "isVoid" : false,
+                      "nodes" : [ {
+                        "leaves" : [ {
+                          "object" : "leaf",
+                          "text" : "Twitter"
+                        } ],
+                        "object" : "text"
+                      } ],
+                      "object" : "inline",
+                      "type" : "link"
+                    }, {
+                      "leaves" : [ {
+                        "object" : "leaf",
+                        "text" : ""
+                      } ],
+                      "object" : "text"
+                    } ],
+                    "object" : "block",
+                    "type" : "paragraph"
+                  } ],
+                  "object" : "block",
+                  "type" : "list-item"
+                }, {
+                  "isVoid" : false,
+                  "nodes" : [ {
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "leaves" : [ {
+                        "object" : "leaf",
+                        "text" : ""
+                      } ],
+                      "object" : "text"
+                    }, {
+                      "data" : {
+                        "href" : "https://www.linkedin.com/company/paperbits",
+                        "target" : "_blank"
+                      },
+                      "isVoid" : false,
+                      "nodes" : [ {
+                        "leaves" : [ {
+                          "object" : "leaf",
+                          "text" : "LinkedIn"
+                        } ],
+                        "object" : "text"
+                      } ],
+                      "object" : "inline",
+                      "type" : "link"
+                    }, {
+                      "leaves" : [ {
+                        "object" : "leaf",
+                        "text" : ""
+                      } ],
+                      "object" : "text"
+                    } ],
+                    "object" : "block",
+                    "type" : "paragraph"
+                  } ],
+                  "object" : "block",
+                  "type" : "list-item"
+                } ],
+                "object" : "block",
+                "type" : "list"
+              } ],
+              "object" : "widget",
+              "type" : "text"
+            } ],
+            "object" : "block",
+            "size" : {
+              "lg" : "3",
+              "md" : "3",
+              "sm" : "3"
+            },
+            "type" : "layout-column"
+          } ],
+          "object" : "block",
+          "type" : "layout-row"
+        }, {
           "nodes" : [ {
             "nodes" : [ {
               "nodes" : [ {
@@ -3048,6 +3563,373 @@
       "object" : "block",
       "type" : "page"
     },
+    "a5308e3f-c75d-9850-f2d8-c77fee8da9d1" : {
+      "key" : "files/a5308e3f-c75d-9850-f2d8-c77fee8da9d1",
+      "nodes" : [ {
+        "background" : {
+          "position" : "center center",
+          "size" : "contain"
+        },
+        "layout" : "container-thinner",
+        "nodes" : [ {
+          "nodes" : [ {
+            "nodes" : [ {
+              "nodes" : [ {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "marks" : [ {
+                      "object" : "mark",
+                      "type" : "bold"
+                    } ],
+                    "object" : "leaf",
+                    "text" : "Terms of Use\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "heading-one"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Please read these Terms of Use (\"Terms\", \"Terms of Use\") carefully before using the https://paperbits.io website (the \"Service\") operated by Vienna LLC (\"us\", \"we\", or \"our\").\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Your access to and use of the Service is conditioned upon your acceptance of and compliance with these Terms. These Terms apply to all visitors, users and others who wish to access or use the Service.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "By accessing or using the Service you agree to be bound by these Terms. If you disagree with any part of the terms then you do not have permission to access the Service.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Intellectual Property The Service and its original content, features and functionality are and will remain the exclusive property of Vienna LLC and its licensors. The Service is protected by copyright, trademark, and other laws of both the United States and foreign countries. Our trademarks and trade dress may not be used in connection with any product or service without the prior written consent of Vienna LLC.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Links to other web sites\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "heading-two"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Our Service may contain links to third party web sites or services that are not owned or controlled by Vienna LLC.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Vienna LLC has no control over, and assumes no responsibility for the content, privacy policies, or practices of any third party web sites or services. We do not warrant the offerings of any of these entities/individuals or their websites.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "You acknowledge and agree that Vienna LLC shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with use of or reliance on any such content, goods or services available on or through any such third party web sites or services.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "We strongly advise you to read the terms and conditions and privacy policies of any third party web sites or services that you visit.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Indemnification\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "heading-two"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "You agree to defend, indemnify and hold harmless Vienna LLC and its licensee and licensors, and their employees, contractors, agents, officers and directors, from and against any and all claims, damages, obligations, losses, liabilities, costs or debt, and expenses (including but not limited to attorney's fees), resulting from or arising out of a) your use and access of the Service, or b) a breach of these Terms.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Limitation of liability\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "heading-two"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "In no event shall Vienna LLC, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from (i) your access to or use of or inability to access or use the Service; (ii) any conduct or content of any third party on the Service; (iii) any content obtained from the Service; and (iv) unauthorized access, use or alteration of your transmissions or content, whether based on warranty, contract, tort (including negligence) or any other legal theory, whether or not we have been informed of the possibility of such damage, and even if a remedy set forth herein is found to have failed of its essential purpose.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Disclaimer\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "heading-two"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Your use of the Service is at your sole risk. The Service is provided on an \"AS IS\" and \"AS AVAILABLE\" basis. The Service is provided without warranties of any kind, whether express or implied, including, but not limited to, implied warranties of merchantability, fitness for a particular purpose, non-infringement or course of performance.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Vienna LLC its subsidiaries, affiliates, and its licensors do not warrant that a) the Service will function uninterrupted, secure or available at any particular time or location; b) any errors or defects will be corrected; c) the Service is free of viruses or other harmful components; or d) the results of using the Service will meet your requirements.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Exclusions\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "heading-two"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Some jurisdictions do not allow the exclusion of certain warranties or the exclusion or limitation of liability for consequential or incidental damages, so the limitations above may not apply to you.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Governing law\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "heading-two"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "These Terms shall be governed and construed in accordance with the laws of Washington, United States, without regard to its conflict of law provisions.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights. If any provision of these Terms is held to be invalid or unenforceable by a court, the remaining provisions of these Terms will remain in effect. These Terms constitute the entire agreement between us regarding our Service, and supersede and replace any prior agreements we might have had between us regarding the Service.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Changes\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "heading-two"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material we will provide at least 30 days notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "By continuing to access or use our Service after any revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new terms, you are no longer authorized to use the Service.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Contact us\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "heading-two"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "If you have any questions about these Terms, please "
+                  } ],
+                  "object" : "text"
+                }, {
+                  "data" : {
+                    "href" : "mailto:support@paperbits.io",
+                    "target" : "_blank"
+                  },
+                  "isVoid" : false,
+                  "nodes" : [ {
+                    "leaves" : [ {
+                      "object" : "leaf",
+                      "text" : "contact us"
+                    } ],
+                    "object" : "text"
+                  } ],
+                  "object" : "inline",
+                  "type" : "link"
+                }, {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : ".\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : ""
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              } ],
+              "object" : "widget",
+              "type" : "text"
+            } ],
+            "object" : "block",
+            "size" : {
+              "lg" : "12",
+              "md" : "12",
+              "sm" : "12"
+            },
+            "type" : "layout-column"
+          } ],
+          "object" : "block",
+          "type" : "layout-row"
+        } ],
+        "object" : "block",
+        "padding" : "with-padding",
+        "snapping" : "none",
+        "type" : "layout-section"
+      } ],
+      "object" : "block",
+      "type" : "page"
+    },
     "a74a4283-a58c-c51f-382b-116c2fdf645a" : {
       "key" : "files/a74a4283-a58c-c51f-382b-116c2fdf645a",
       "nodes" : [ {
@@ -3180,6 +4062,66 @@
         "nodes" : [ {
           "nodes" : [ {
             "nodes" : [ {
+              "nodes" : [ {
+                "data" : {
+                  "intentions" : {
+                    "text" : {
+                      "alignment" : {
+                        "xl" : "center"
+                      },
+                      "font" : "text_font_cursive"
+                    }
+                  }
+                },
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "404"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "heading-one"
+              }, {
+                "data" : {
+                  "intentions" : {
+                    "text" : {
+                      "alignment" : {
+                        "xl" : "center"
+                      },
+                      "font" : "text_font_cursive"
+                    }
+                  }
+                },
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Page you're looking for doesn't exists"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "heading-one"
+              } ],
+              "object" : "widget",
+              "type" : "text"
+            } ],
+            "object" : "block",
+            "size" : {
+              "lg" : "12",
+              "md" : "12",
+              "sm" : "12"
+            },
+            "type" : "layout-column"
+          } ],
+          "object" : "block",
+          "type" : "layout-row"
+        }, {
+          "nodes" : [ {
+            "nodes" : [ {
+              "animation" : "none",
               "caption" : "Picture",
               "layout" : "noframe",
               "object" : "block",
@@ -3261,37 +4203,114 @@
       "object" : "block",
       "type" : "page"
     },
-    "ca4052ac-e4f4-82a8-e341-be5517db366f" : {
-      "key" : "files/ca4052ac-e4f4-82a8-e341-be5517db366f",
+    "ffdcdb4e-bad4-dfd7-3e9c-c0b2a917b66a" : {
+      "key" : "files/ffdcdb4e-bad4-dfd7-3e9c-c0b2a917b66a",
       "nodes" : [ {
         "background" : {
           "position" : "center center",
-          "size" : "contain"
+          "size" : "cover"
         },
         "layout" : "container",
         "nodes" : [ {
           "nodes" : [ {
             "nodes" : [ {
+              "animation" : "none",
+              "caption" : "Picture",
+              "layout" : "noframe",
+              "object" : "block",
+              "sourceKey" : "permalinks/c7a63e62-bfb9-464a-ce18-662564681a72",
+              "type" : "picture"
+            } ],
+            "object" : "block",
+            "size" : {
+              "md" : "6"
+            },
+            "type" : "layout-column"
+          }, {
+            "nodes" : [ {
               "nodes" : [ {
+                "data" : {
+                  "intentions" : {
+                    "text" : {
+                      "alignment" : {
+                        "xl" : {
+                          "center" : true
+                        },
+                        "xs" : {
+                          "center" : true
+                        }
+                      },
+                      "font" : {
+                        "text_font_display" : true
+                      }
+                    }
+                  }
+                },
                 "isVoid" : false,
                 "nodes" : [ {
                   "leaves" : [ {
                     "object" : "leaf",
-                    "text" : "Latest Blog Posts"
+                    "text" : "Drag 'n' drop content builder"
+                  }, {
+                    "marks" : [ {
+                      "object" : "mark",
+                      "type" : "bold"
+                    } ],
+                    "object" : "leaf",
+                    "text" : " "
+                  }, {
+                    "object" : "leaf",
+                    "text" : "for web apps"
                   } ],
                   "object" : "text"
                 } ],
                 "object" : "block",
                 "type" : "heading-one"
+              }, {
+                "data" : {
+                  "intentions" : {
+                    "text" : {
+                      "alignment" : {
+                        "xl" : {
+                          "center" : true
+                        },
+                        "xs" : {
+                          "center" : true
+                        }
+                      },
+                      "font" : {
+                        "text_font_display" : true
+                      }
+                    }
+                  }
+                },
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Give your users a tool to create professional web pages, forms, email templates and more"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
               } ],
               "object" : "widget",
               "type" : "text"
+            }, {
+              "hyperlink" : {
+                "href" : "http://demo.paperbits.io",
+                "target" : "_blank"
+              },
+              "label" : "Try it live NOW!",
+              "object" : "block",
+              "size" : "large",
+              "style" : "primary",
+              "type" : "button"
             } ],
             "object" : "block",
             "size" : {
-              "lg" : "12",
-              "md" : "12",
-              "sm" : "12"
+              "md" : "6"
             },
             "type" : "layout-column"
           } ],
@@ -3304,26 +4323,543 @@
         "type" : "layout-section"
       }, {
         "background" : {
-          "color" : "section_bg_2",
           "position" : "center center",
           "size" : "contain"
         },
         "layout" : "container",
         "nodes" : [ {
           "nodes" : [ {
+            "alignment" : {
+              "lg" : "start start",
+              "md" : "start start",
+              "xl" : "start start"
+            },
+            "nodes" : [ {
+              "nodes" : [ {
+                "data" : {
+                  "intentions" : {
+                    "text" : {
+                      "alignment" : {
+                        "md" : {
+                          "left" : true
+                        },
+                        "xl" : "left",
+                        "xs" : {
+                          "center" : true
+                        }
+                      },
+                      "font" : {
+                        "text_font_display" : true
+                      }
+                    }
+                  }
+                },
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Simple and powerful"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "heading-two"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "data" : {
+                    "intentions" : {
+                      "container" : {
+                        "list" : {
+                          "unordered" : {
+                            "disc" : true
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "isVoid" : false,
+                  "nodes" : [ {
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "data" : {
+                        "intentions" : {
+                          "text" : {
+                            "font" : {
+                              "text_font_display" : true
+                            }
+                          }
+                        }
+                      },
+                      "isVoid" : false,
+                      "nodes" : [ {
+                        "leaves" : [ {
+                          "object" : "leaf",
+                          "text" : "in-place editing"
+                        } ],
+                        "object" : "text"
+                      } ],
+                      "object" : "block",
+                      "type" : "paragraph"
+                    } ],
+                    "object" : "block",
+                    "type" : "list-item"
+                  }, {
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "data" : {
+                        "intentions" : {
+                          "text" : {
+                            "font" : {
+                              "text_font_display" : true
+                            }
+                          }
+                        }
+                      },
+                      "isVoid" : false,
+                      "nodes" : [ {
+                        "leaves" : [ {
+                          "object" : "leaf",
+                          "text" : "drag and drop eveywhere"
+                        } ],
+                        "object" : "text"
+                      } ],
+                      "object" : "block",
+                      "type" : "paragraph"
+                    } ],
+                    "object" : "block",
+                    "type" : "list-item"
+                  }, {
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "data" : {
+                        "intentions" : {
+                          "text" : {
+                            "alignment" : {
+                              "xl" : {
+                                "left" : true
+                              }
+                            },
+                            "font" : {
+                              "text_font_display" : true
+                            }
+                          }
+                        }
+                      },
+                      "isVoid" : false,
+                      "nodes" : [ {
+                        "leaves" : [ {
+                          "object" : "leaf",
+                          "text" : "responsive layout"
+                        } ],
+                        "object" : "text"
+                      } ],
+                      "object" : "block",
+                      "type" : "paragraph"
+                    } ],
+                    "object" : "block",
+                    "type" : "list-item"
+                  }, {
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "data" : {
+                        "intentions" : {
+                          "text" : {
+                            "alignment" : {
+                              "xl" : {
+                                "left" : true
+                              }
+                            },
+                            "font" : {
+                              "text_font_display" : true
+                            }
+                          }
+                        }
+                      },
+                      "isVoid" : false,
+                      "nodes" : [ {
+                        "leaves" : [ {
+                          "object" : "leaf",
+                          "text" : "permalink tracking"
+                        } ],
+                        "object" : "text"
+                      } ],
+                      "object" : "block",
+                      "type" : "paragraph"
+                    } ],
+                    "object" : "block",
+                    "type" : "list-item"
+                  } ],
+                  "object" : "block",
+                  "type" : "list"
+                } ],
+                "object" : "block",
+                "type" : "bulleted-list"
+              } ],
+              "object" : "widget",
+              "type" : "text"
+            }, {
+              "hyperlink" : {
+                "href" : "/features",
+                "permalinkKey" : "permalinks/00cb6c38-f172-8382-2ef5-348d3b88b387",
+                "target" : "_blank"
+              },
+              "label" : "Learn more >",
+              "object" : "block",
+              "size" : "regular",
+              "style" : "default",
+              "type" : "button"
+            } ],
+            "object" : "block",
+            "size" : {
+              "md" : "6"
+            },
+            "type" : "layout-column"
+          }, {
+            "alignment" : {
+              "xs" : "center center"
+            },
+            "nodes" : [ {
+              "animation" : "none",
+              "caption" : "editors.png",
+              "layout" : "noframe",
+              "object" : "block",
+              "sourceKey" : "permalinks/f4f94aa8-269b-9d08-4247-07981b8476c3",
+              "type" : "picture"
+            } ],
+            "object" : "block",
+            "size" : {
+              "md" : "6"
+            },
+            "type" : "layout-column"
+          } ],
+          "object" : "block",
+          "type" : "layout-row"
+        } ],
+        "object" : "block",
+        "padding" : "with-padding",
+        "snapping" : "none",
+        "type" : "layout-section"
+      }, {
+        "background" : {
+          "position" : "center center",
+          "size" : "contain"
+        },
+        "layout" : "container",
+        "nodes" : [ {
+          "nodes" : [ {
+            "alignment" : {
+              "lg" : "start start",
+              "md" : "start start",
+              "xl" : "start start"
+            },
+            "nodes" : [ {
+              "nodes" : [ {
+                "data" : {
+                  "intentions" : {
+                    "text" : {
+                      "alignment" : {
+                        "lg" : {
+                          "left" : true
+                        },
+                        "md" : "left",
+                        "xl" : {
+                          "left" : true
+                        },
+                        "xs" : {
+                          "center" : true
+                        }
+                      },
+                      "font" : {
+                        "text_font_display" : true
+                      }
+                    }
+                  }
+                },
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Theme and framework agnostic"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "heading-two"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "data" : {
+                    "intentions" : {
+                      "container" : {
+                        "list" : {
+                          "unordered" : {
+                            "disc" : true
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "isVoid" : false,
+                  "nodes" : [ {
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "data" : {
+                        "intentions" : {
+                          "text" : {
+                            "font" : {
+                              "text_font_display" : true
+                            }
+                          }
+                        }
+                      },
+                      "isVoid" : false,
+                      "nodes" : [ {
+                        "leaves" : [ {
+                          "object" : "leaf",
+                          "text" : "ouputs data as JSON"
+                        } ],
+                        "object" : "text"
+                      } ],
+                      "object" : "block",
+                      "type" : "paragraph"
+                    } ],
+                    "object" : "block",
+                    "type" : "list-item"
+                  }, {
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "data" : {
+                        "intentions" : {
+                          "text" : {
+                            "font" : {
+                              "text_font_display" : true
+                            }
+                          }
+                        }
+                      },
+                      "isVoid" : false,
+                      "nodes" : [ {
+                        "leaves" : [ {
+                          "object" : "leaf",
+                          "text" : "uses intents rather than specific styles"
+                        } ],
+                        "object" : "text"
+                      } ],
+                      "object" : "block",
+                      "type" : "paragraph"
+                    } ],
+                    "object" : "block",
+                    "type" : "list-item"
+                  } ],
+                  "object" : "block",
+                  "type" : "list"
+                } ],
+                "object" : "block",
+                "type" : "bulleted-list"
+              } ],
+              "object" : "widget",
+              "type" : "text"
+            }, {
+              "hyperlink" : {
+                "href" : "/blog/key-concepts",
+                "permalinkKey" : "permalinks/17aa0884-88c0-8b1d-3856-38f9f1b04cf0",
+                "target" : "_blank"
+              },
+              "label" : "Learn more >",
+              "object" : "block",
+              "size" : "medium",
+              "style" : "default",
+              "type" : "button"
+            } ],
+            "object" : "block",
+            "order" : {
+              "lg" : "1",
+              "md" : "1"
+            },
+            "size" : {
+              "md" : "6"
+            },
+            "type" : "layout-column"
+          }, {
             "nodes" : [ {
               "animation" : "none",
               "caption" : "Picture",
               "layout" : "noframe",
               "object" : "block",
-              "sourceKey" : "permalinks/275773e2-9018-4646-7d06-7f5cea3660fc",
+              "sourceKey" : "permalinks/e0e5eb90-7ebe-e85a-dedb-ea17daf73201",
               "type" : "picture"
             } ],
             "object" : "block",
             "size" : {
-              "lg" : "3",
-              "md" : "3",
-              "sm" : "3"
+              "md" : "6"
+            },
+            "type" : "layout-column"
+          } ],
+          "object" : "block",
+          "type" : "layout-row"
+        } ],
+        "object" : "block",
+        "padding" : "with-padding",
+        "snapping" : "none",
+        "type" : "layout-section"
+      }, {
+        "background" : {
+          "position" : "center center",
+          "size" : "contain"
+        },
+        "layout" : "container",
+        "nodes" : [ {
+          "nodes" : [ {
+            "alignment" : {
+              "lg" : "start start",
+              "md" : "start start",
+              "xl" : "start start"
+            },
+            "nodes" : [ {
+              "nodes" : [ {
+                "data" : {
+                  "intentions" : {
+                    "text" : {
+                      "alignment" : {
+                        "md" : {
+                          "left" : true
+                        },
+                        "xl" : "left",
+                        "xs" : {
+                          "center" : true
+                        }
+                      },
+                      "font" : {
+                        "text_font_display" : true
+                      }
+                    }
+                  }
+                },
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "API-first. Offline-first. Mobile-first."
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "heading-two"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "data" : {
+                    "intentions" : {
+                      "container" : {
+                        "list" : {
+                          "unordered" : {
+                            "disc" : true
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "isVoid" : false,
+                  "nodes" : [ {
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "data" : {
+                        "intentions" : {
+                          "text" : {
+                            "font" : {
+                              "text_font_display" : true
+                            }
+                          }
+                        }
+                      },
+                      "isVoid" : false,
+                      "nodes" : [ {
+                        "leaves" : [ {
+                          "object" : "leaf",
+                          "text" : "uses your API as a backend"
+                        } ],
+                        "object" : "text"
+                      } ],
+                      "object" : "block",
+                      "type" : "paragraph"
+                    } ],
+                    "object" : "block",
+                    "type" : "list-item"
+                  }, {
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "data" : {
+                        "intentions" : {
+                          "text" : {
+                            "font" : {
+                              "text_font_display" : true
+                            }
+                          }
+                        }
+                      },
+                      "isVoid" : false,
+                      "nodes" : [ {
+                        "leaves" : [ {
+                          "object" : "leaf",
+                          "text" : "continues work in absence of network"
+                        } ],
+                        "object" : "text"
+                      } ],
+                      "object" : "block",
+                      "type" : "paragraph"
+                    } ],
+                    "object" : "block",
+                    "type" : "list-item"
+                  }, {
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "data" : {
+                        "intentions" : {
+                          "text" : {
+                            "font" : {
+                              "text_font_display" : true
+                            }
+                          }
+                        }
+                      },
+                      "isVoid" : false,
+                      "nodes" : [ {
+                        "leaves" : [ {
+                          "object" : "leaf",
+                          "text" : "supports touch and runs on any device"
+                        } ],
+                        "object" : "text"
+                      } ],
+                      "object" : "block",
+                      "type" : "paragraph"
+                    } ],
+                    "object" : "block",
+                    "type" : "list-item"
+                  } ],
+                  "object" : "block",
+                  "type" : "list"
+                } ],
+                "object" : "block",
+                "type" : "bulleted-list"
+              } ],
+              "object" : "widget",
+              "type" : "text"
+            }, {
+              "hyperlink" : {
+                "href" : "/blog/key-concepts",
+                "permalinkKey" : "permalinks/17aa0884-88c0-8b1d-3856-38f9f1b04cf0",
+                "target" : "_blank"
+              },
+              "label" : "Learn more >",
+              "object" : "block",
+              "size" : "regular",
+              "style" : "default",
+              "type" : "button"
+            } ],
+            "object" : "block",
+            "size" : {
+              "md" : "6"
             },
             "type" : "layout-column"
           }, {
@@ -3336,39 +4872,6 @@
                     "text" : ""
                   } ],
                   "object" : "text"
-                }, {
-                  "data" : {
-                    "href" : "/wiki/developers/Getting-Started",
-                    "permalinkKey" : "permalinks/cb706473-6d7f-3706-7f9e-6700cbc45690",
-                    "target" : "_blank"
-                  },
-                  "isVoid" : false,
-                  "nodes" : [ {
-                    "leaves" : [ {
-                      "object" : "leaf",
-                      "text" : "Getting Started - Developers Guide"
-                    } ],
-                    "object" : "text"
-                  } ],
-                  "object" : "inline",
-                  "type" : "link"
-                }, {
-                  "leaves" : [ {
-                    "object" : "leaf",
-                    "text" : ""
-                  } ],
-                  "object" : "text"
-                } ],
-                "object" : "block",
-                "type" : "heading-one"
-              }, {
-                "isVoid" : false,
-                "nodes" : [ {
-                  "leaves" : [ {
-                    "object" : "leaf",
-                    "text" : "You can quickly get started with Paperbits by using the demo website, samples, and how-tos. "
-                  } ],
-                  "object" : "text"
                 } ],
                 "object" : "block",
                 "type" : "paragraph"
@@ -3378,9 +4881,7 @@
             } ],
             "object" : "block",
             "size" : {
-              "lg" : "9",
-              "md" : "9",
-              "sm" : "9"
+              "md" : "6"
             },
             "type" : "layout-column"
           } ],
@@ -3391,51 +4892,35 @@
         "padding" : "with-padding",
         "snapping" : "none",
         "type" : "layout-section"
-      } ],
-      "object" : "block",
-      "type" : "page"
-    },
-    "ffdcdb4e-bad4-dfd7-3e9c-c0b2a917b66a" : {
-      "key" : "files/ffdcdb4e-bad4-dfd7-3e9c-c0b2a917b66a",
-      "nodes" : [ {
+      }, {
         "background" : {
           "position" : "center center",
-          "size" : "cover"
+          "size" : "contain"
         },
         "layout" : "container",
         "nodes" : [ {
           "nodes" : [ {
             "alignment" : {
-              "xl" : "center center"
+              "lg" : "start start",
+              "md" : "start start",
+              "xl" : "start start"
             },
-            "nodes" : [ {
-              "animation" : "none",
-              "caption" : "Picture",
-              "layout" : "noframe",
-              "object" : "block",
-              "sourceKey" : "permalinks/c7a63e62-bfb9-464a-ce18-662564681a72",
-              "type" : "picture"
-            } ],
-            "object" : "block",
-            "size" : {
-              "lg" : "12",
-              "md" : "12",
-              "sm" : "12"
-            },
-            "type" : "layout-column"
-          } ],
-          "object" : "block",
-          "type" : "layout-row"
-        }, {
-          "nodes" : [ {
             "nodes" : [ {
               "nodes" : [ {
                 "data" : {
                   "intentions" : {
                     "text" : {
                       "alignment" : {
-                        "xl" : "center",
-                        "xs" : "center"
+                        "md" : {
+                          "left" : true
+                        },
+                        "xl" : "left",
+                        "xs" : {
+                          "center" : true
+                        }
+                      },
+                      "font" : {
+                        "text_font_display" : true
                       }
                     }
                   }
@@ -3444,19 +4929,23 @@
                 "nodes" : [ {
                   "leaves" : [ {
                     "object" : "leaf",
-                    "text" : "Content authoring tools for web apps"
+                    "text" : "Built for multiple UI frameworks"
                   } ],
                   "object" : "text"
                 } ],
                 "object" : "block",
-                "type" : "heading-one"
+                "type" : "heading-two"
               }, {
                 "data" : {
                   "intentions" : {
                     "text" : {
                       "alignment" : {
-                        "xl" : "center",
+                        "md" : "left",
+                        "xl" : "left",
                         "xs" : "center"
+                      },
+                      "font" : {
+                        "text_font_display" : true
                       }
                     }
                   }
@@ -3465,7 +4954,7 @@
                 "nodes" : [ {
                   "leaves" : [ {
                     "object" : "leaf",
-                    "text" : "This is an Open Source product which offers a set of components and tools for developing web applications with rich content authoring capabilities."
+                    "text" : "Comes with components for most popular UI frameworks like Vue, Knockout, Angular and React."
                   } ],
                   "object" : "text"
                 } ],
@@ -3475,6 +4964,176 @@
               "object" : "widget",
               "type" : "text"
             }, {
+              "hyperlink" : {
+                "href" : "/blog/key-concepts",
+                "permalinkKey" : "permalinks/17aa0884-88c0-8b1d-3856-38f9f1b04cf0",
+                "target" : "_blank"
+              },
+              "label" : "Learn more >",
+              "object" : "block",
+              "style" : "default",
+              "type" : "button"
+            } ],
+            "object" : "block",
+            "order" : {
+              "lg" : "1",
+              "md" : "1",
+              "xl" : "1"
+            },
+            "size" : {
+              "md" : "6"
+            },
+            "type" : "layout-column"
+          }, {
+            "alignment" : {
+              "xs" : "center center"
+            },
+            "nodes" : [ {
+              "animation" : "none",
+              "caption" : "Picture",
+              "layout" : "noframe",
+              "object" : "block",
+              "sourceKey" : "permalinks/5b9a572c-5ede-0da1-1ffa-f2ce06ba0fae",
+              "type" : "picture"
+            } ],
+            "object" : "block",
+            "size" : {
+              "md" : "6"
+            },
+            "type" : "layout-column"
+          } ],
+          "object" : "block",
+          "type" : "layout-row"
+        } ],
+        "object" : "block",
+        "padding" : "with-padding",
+        "snapping" : "none",
+        "type" : "layout-section"
+      }, {
+        "background" : {
+          "position" : "center center",
+          "size" : "contain"
+        },
+        "layout" : "container",
+        "nodes" : [ {
+          "nodes" : [ {
+            "alignment" : {
+              "lg" : "start start",
+              "md" : "start start",
+              "xl" : "start start"
+            },
+            "nodes" : [ {
+              "nodes" : [ {
+                "data" : {
+                  "intentions" : {
+                    "text" : {
+                      "alignment" : {
+                        "md" : {
+                          "left" : true
+                        },
+                        "xl" : "left",
+                        "xs" : {
+                          "center" : true
+                        }
+                      },
+                      "font" : {
+                        "text_font_display" : true
+                      }
+                    }
+                  }
+                },
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Easy to get started"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "heading-two"
+              }, {
+                "data" : {
+                  "intentions" : {
+                    "text" : {
+                      "alignment" : {
+                        "md" : {
+                          "left" : true
+                        },
+                        "xl" : "left",
+                        "xs" : {
+                          "center" : true
+                        }
+                      },
+                      "font" : {
+                        "text_font_display" : true
+                      }
+                    }
+                  }
+                },
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Clone, install packages and launch!"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              } ],
+              "object" : "widget",
+              "type" : "text"
+            }, {
+              "hyperlink" : {
+                "href" : "https://github.com/paperbits/paperbits-demo",
+                "target" : "_blank"
+              },
+              "label" : "Fork on GitHub >",
+              "object" : "block",
+              "size" : "regular",
+              "style" : "default",
+              "type" : "button"
+            } ],
+            "object" : "block",
+            "size" : {
+              "md" : "6"
+            },
+            "type" : "layout-column"
+          }, {
+            "alignment" : {
+              "xs" : "center center"
+            },
+            "nodes" : [ {
+              "animation" : "none",
+              "caption" : "Picture",
+              "layout" : "noframe",
+              "object" : "block",
+              "sourceKey" : "permalinks/20f7f107-54da-4643-8544-554879790ed0",
+              "type" : "picture"
+            } ],
+            "object" : "block",
+            "size" : {
+              "md" : "6"
+            },
+            "type" : "layout-column"
+          } ],
+          "object" : "block",
+          "type" : "layout-row"
+        } ],
+        "object" : "block",
+        "padding" : "with-padding",
+        "snapping" : "none",
+        "type" : "layout-section"
+      }, {
+        "background" : {
+          "position" : "center center",
+          "size" : "contain"
+        },
+        "layout" : "container",
+        "nodes" : [ {
+          "nodes" : [ {
+            "nodes" : [ {
               "object" : "block",
               "type" : "form"
             } ],
@@ -3490,7 +5149,7 @@
           "type" : "layout-row"
         } ],
         "object" : "block",
-        "padding" : "with-padding",
+        "padding" : "without-padding",
         "snapping" : "none",
         "type" : "layout-section"
       } ],
@@ -3524,7 +5183,7 @@
       }, {
         "key" : "000ef996-5895-ff21-1883-b1f415def573",
         "label" : "Blog",
-        "permalinkKey" : "permalinks/53cd1571-5da7-b592-99ec-ab14600e8114"
+        "permalinkKey" : "permalinks/8a3f97cf-0c91-002a-1528-9b13eabcab0a"
       }, {
         "externalUrl" : "https://github.com/paperbits",
         "key" : "e815a458-4562-7c58-8f11-9c65334d0d46",
@@ -3548,6 +5207,14 @@
       "keywords" : "wiki documentation",
       "permalinkKey" : "permalinks/550117b4-59fe-36b1-88f3-1e9674ef0017",
       "title" : "Documentation"
+    },
+    "3b3eb3a7-ce49-0a68-b57f-e37c732072bc" : {
+      "contentKey" : "files/a5308e3f-c75d-9850-f2d8-c77fee8da9d1",
+      "description" : "",
+      "key" : "pages/3b3eb3a7-ce49-0a68-b57f-e37c732072bc",
+      "keywords" : "",
+      "permalinkKey" : "permalinks/68cb74e8-c5b6-dd05-a1cf-5035c1334a25",
+      "title" : "Terms of use"
     },
     "4b2abc1f-b194-09ca-fa20-2142c9a70cc7" : {
       "contentKey" : "files/3cf4ec8b-cd70-cdf5-77b2-c484a3914628",
@@ -3589,21 +5256,29 @@
       "permalinkKey" : "permalinks/00cb6c38-f172-8382-2ef5-348d3b88b387",
       "title" : "Features"
     },
-    "b56b71e3-2868-91bd-c8a0-5b8ea62dc558" : {
-      "contentKey" : "files/ca4052ac-e4f4-82a8-e341-be5517db366f",
-      "description" : "",
-      "key" : "pages/b56b71e3-2868-91bd-c8a0-5b8ea62dc558",
-      "keywords" : "",
-      "permalinkKey" : "permalinks/53cd1571-5da7-b592-99ec-ab14600e8114",
-      "title" : "Blog"
+    "b7380467-ea85-cc0a-f066-2a91e79c3ddf" : {
+      "contentKey" : "files/7a56ddeb-d72b-1f34-fecc-4738fcceedcb",
+      "description" : "You can quickly get started with Paperbits by using the demo website, samples, and how-tos. Read more about these options.",
+      "key" : "pages/b7380467-ea85-cc0a-f066-2a91e79c3ddf",
+      "keywords" : "wiki",
+      "permalinkKey" : "permalinks/9e5d8f54-0b2e-d1b5-8c6f-1aa409d6e1f5",
+      "title" : "Getting started"
     },
-    "d5dbe5d3-3222-66cb-1047-e2be066b8810" : {
-      "contentKey" : "files/1c9b4755-23da-0edb-576e-bd73be0d1cf9",
+    "bdae5aa1-d763-c51b-0d1b-02cb23ab8153" : {
+      "contentKey" : "files/0821fa4a-4f91-6682-ef83-43d28da7784e",
       "description" : "",
-      "key" : "pages/d5dbe5d3-3222-66cb-1047-e2be066b8810",
-      "keywords" : "wiki tutorial",
-      "permalinkKey" : "permalinks/59c88a84-aa47-a498-2199-79409d3d237e",
-      "title" : "How to create my first website with Paperbits"
+      "key" : "pages/bdae5aa1-d763-c51b-0d1b-02cb23ab8153",
+      "keywords" : "",
+      "permalinkKey" : "permalinks/211b6d29-bda4-9fe1-8100-589e3cf67451",
+      "title" : "Privacy"
+    },
+    "be8331a9-afe7-ff90-0441-7b3b7a4595e9" : {
+      "contentKey" : "files/3dd60bb0-eef1-8d05-f1ee-808f7b1ea979",
+      "description" : "",
+      "key" : "pages/be8331a9-afe7-ff90-0441-7b3b7a4595e9",
+      "keywords" : "",
+      "permalinkKey" : "permalinks/523c71a7-790f-4f30-adb1-2268047a2733",
+      "title" : "For contributors"
     },
     "e0987ca1-f458-b546-7697-7be594b35583" : {
       "anchors" : {
@@ -3669,6 +5344,16 @@
       "key" : "permalinks/1f0d7238-1bb7-1d88-c754-26d46e67e5f0",
       "targetKey" : "uploads/9530cb42-5465-0938-adfb-9a906b15945d",
       "uri" : "/content/pen-and-ruler.svg"
+    },
+    "20f7f107-54da-4643-8544-554879790ed0" : {
+      "key" : "permalinks/20f7f107-54da-4643-8544-554879790ed0",
+      "targetKey" : "uploads/20f7f107-54da-4643-8544-554879790ed0",
+      "uri" : "/content/getting-started.svg"
+    },
+    "211b6d29-bda4-9fe1-8100-589e3cf67451" : {
+      "key" : "permalinks/211b6d29-bda4-9fe1-8100-589e3cf67451",
+      "targetKey" : "pages/bdae5aa1-d763-c51b-0d1b-02cb23ab8153",
+      "uri" : "/privacy"
     },
     "26dc1a4a-e193-4ce5-9833-66ce8d4b71e6" : {
       "key" : "permalinks/26dc1a4a-e193-4ce5-9833-66ce8d4b71e6",
@@ -3755,10 +5440,10 @@
       "targetKey" : "pages/0e175532-f336-2fe0-ba19-2f36623b3953",
       "uri" : "/wiki/tutorials/How-to-store-data-in-Firebase"
     },
-    "53cd1571-5da7-b592-99ec-ab14600e8114" : {
-      "key" : "permalinks/53cd1571-5da7-b592-99ec-ab14600e8114",
-      "targetKey" : "pages/b56b71e3-2868-91bd-c8a0-5b8ea62dc558",
-      "uri" : "/blog"
+    "523c71a7-790f-4f30-adb1-2268047a2733" : {
+      "key" : "permalinks/523c71a7-790f-4f30-adb1-2268047a2733",
+      "targetKey" : "pages/be8331a9-afe7-ff90-0441-7b3b7a4595e9",
+      "uri" : "/contribution"
     },
     "550117b4-59fe-36b1-88f3-1e9674ef0017" : {
       "key" : "permalinks/550117b4-59fe-36b1-88f3-1e9674ef0017",
@@ -3770,15 +5455,20 @@
       "targetKey" : "pages/e0987ca1-f458-b546-7697-7be594b35583",
       "uri" : "/"
     },
-    "59c88a84-aa47-a498-2199-79409d3d237e" : {
-      "key" : "permalinks/59c88a84-aa47-a498-2199-79409d3d237e",
-      "targetKey" : "pages/d5dbe5d3-3222-66cb-1047-e2be066b8810",
-      "uri" : "/How-to-create-my-first-website-with-Paperbits"
-    },
     "5a28503e-06ff-6b73-57e9-3c2439283e9e" : {
       "key" : "permalinks/5a28503e-06ff-6b73-57e9-3c2439283e9e",
       "targetKey" : "uploads/5a28503e-06ff-6b73-57e9-3c2439283e9e",
       "uri" : "/content/math 1-13 001.jpg"
+    },
+    "5a9c3033-5947-ea02-facb-39bc0463c179" : {
+      "key" : "permalinks/5a9c3033-5947-ea02-facb-39bc0463c179",
+      "parentKey" : "permalinks/59c88a84-aa47-a498-2199-79409d3d237e",
+      "uri" : "10e86420-64f7-6257-4a60-6d2a09b690dc"
+    },
+    "5b9a572c-5ede-0da1-1ffa-f2ce06ba0fae" : {
+      "key" : "permalinks/5b9a572c-5ede-0da1-1ffa-f2ce06ba0fae",
+      "targetKey" : "uploads/5b9a572c-5ede-0da1-1ffa-f2ce06ba0fae",
+      "uri" : "/content/frameworks.svg"
     },
     "64708262-8fd6-d041-89bc-f4f4ce3c0c07" : {
       "key" : "permalinks/64708262-8fd6-d041-89bc-f4f4ce3c0c07",
@@ -3789,6 +5479,11 @@
       "key" : "permalinks/68bd01c5-aad4-218c-9cf5-04a46dcb7931",
       "targetKey" : "uploads/485d52ec-aafb-bf9f-ac07-b523301f17b3",
       "uri" : "/content/leopold-cover.jpg"
+    },
+    "68cb74e8-c5b6-dd05-a1cf-5035c1334a25" : {
+      "key" : "permalinks/68cb74e8-c5b6-dd05-a1cf-5035c1334a25",
+      "targetKey" : "pages/3b3eb3a7-ce49-0a68-b57f-e37c732072bc",
+      "uri" : "/terms-of-use"
     },
     "6b53d195-3eda-2eb9-8028-fd347aa14feb" : {
       "key" : "permalinks/6b53d195-3eda-2eb9-8028-fd347aa14feb",
@@ -3810,20 +5505,30 @@
       "targetKey" : "uploads/37b55285-cf44-3e0e-ad1c-7b9d11410664",
       "uri" : "/content/json-output-example.svg"
     },
+    "88238d72-237d-eefc-da3e-19bef9506808" : {
+      "key" : "permalinks/88238d72-237d-eefc-da3e-19bef9506808",
+      "targetKey" : "uploads/88238d72-237d-eefc-da3e-19bef9506808",
+      "uri" : "/content/logo.svg"
+    },
     "8a3f97cf-0c91-002a-1528-9b13eabcab0a" : {
       "key" : "permalinks/8a3f97cf-0c91-002a-1528-9b13eabcab0a",
       "targetKey" : "posts/94ae0c09-7983-4bb2-d04e-51246c155081",
-      "uri" : "/blog/meet-paperbits"
+      "uri" : "/blog"
     },
-    "8e7766d2-c970-df1c-c2a9-880d0d4abe52" : {
-      "key" : "permalinks/8e7766d2-c970-df1c-c2a9-880d0d4abe52",
-      "targetKey" : "uploads/8e7766d2-c970-df1c-c2a9-880d0d4abe52",
-      "uri" : "/content/getting-started.svg"
+    "92770700-96ec-c90a-10cf-9b5678273357" : {
+      "key" : "permalinks/92770700-96ec-c90a-10cf-9b5678273357",
+      "parentKey" : "permalinks/59c88a84-aa47-a498-2199-79409d3d237e",
+      "uri" : "cc201505-b644-7ec2-f891-130da9a133b8"
     },
     "96562577-5dc3-2644-b510-757acbbdabd3" : {
       "key" : "permalinks/96562577-5dc3-2644-b510-757acbbdabd3",
       "targetKey" : "uploads/8b7bdb01-5ea3-3b39-7a21-6f32e6f58bf0",
       "uri" : "/content/pen-fight.svg"
+    },
+    "9e5d8f54-0b2e-d1b5-8c6f-1aa409d6e1f5" : {
+      "key" : "permalinks/9e5d8f54-0b2e-d1b5-8c6f-1aa409d6e1f5",
+      "targetKey" : "pages/b7380467-ea85-cc0a-f066-2a91e79c3ddf",
+      "uri" : "/wiki/developers/getting-started"
     },
     "a3311ec4-4521-12a5-9a49-a65deae36c8e" : {
       "key" : "permalinks/a3311ec4-4521-12a5-9a49-a65deae36c8e",
@@ -3850,15 +5555,15 @@
       "targetKey" : "uploads/b4c9720c-d790-8392-d8ff-f09b6302c062",
       "uri" : "/content/5-technologies.jpg"
     },
+    "b3d88057-431f-9b1c-bd17-336d26db923c" : {
+      "key" : "permalinks/b3d88057-431f-9b1c-bd17-336d26db923c",
+      "parentKey" : "permalinks/59c88a84-aa47-a498-2199-79409d3d237e",
+      "uri" : "81b9f3ea-7a10-fc07-92bc-2acc8e6783da"
+    },
     "b6dffe3a-3dfb-a691-beeb-1d9b3577a0e5" : {
       "key" : "permalinks/b6dffe3a-3dfb-a691-beeb-1d9b3577a0e5",
       "targetKey" : "uploads/04b0622e-f88d-e5ff-11a8-cbfa0e2d379b",
       "uri" : "/content/header-bg-2-right@2x.jpg"
-    },
-    "bb88e60f-80b3-65b2-1bf3-703e55dfd0f9" : {
-      "key" : "permalinks/bb88e60f-80b3-65b2-1bf3-703e55dfd0f9",
-      "targetKey" : "uploads/bb88e60f-80b3-65b2-1bf3-703e55dfd0f9",
-      "uri" : "/content/frameworks.svg"
     },
     "bd3fbac8-e823-a795-84ce-3dfe4407f9a9" : {
       "key" : "permalinks/bd3fbac8-e823-a795-84ce-3dfe4407f9a9",
@@ -3884,11 +5589,6 @@
       "key" : "permalinks/ca4ad134-875c-bbad-be98-047557eaceb7",
       "targetKey" : "uploads/68aa54b5-9780-b1ed-6020-fbcb7933dc26",
       "uri" : "/content/favicon.ico"
-    },
-    "cb706473-6d7f-3706-7f9e-6700cbc45690" : {
-      "key" : "permalinks/cb706473-6d7f-3706-7f9e-6700cbc45690",
-      "targetKey" : "posts/c0697561-73be-28bc-612e-435db1f9dd26",
-      "uri" : "/wiki/developers/getting-started"
     },
     "d1fde25a-c1d0-5bd6-8c1c-d1a4196dff1b" : {
       "key" : "permalinks/d1fde25a-c1d0-5bd6-8c1c-d1a4196dff1b",
@@ -3945,6 +5645,11 @@
       "parentKey" : "permalinks/cb706473-6d7f-3706-7f9e-6700cbc45690",
       "uri" : "0c7db09e-095c-1bc2-7ea8-e0faa362826a"
     },
+    "f4f94aa8-269b-9d08-4247-07981b8476c3" : {
+      "key" : "permalinks/f4f94aa8-269b-9d08-4247-07981b8476c3",
+      "targetKey" : "uploads/f4f94aa8-269b-9d08-4247-07981b8476c3",
+      "uri" : "/content/editors.png"
+    },
     "f5978304-e5be-5384-3d0c-6381b230521e" : {
       "key" : "permalinks/f5978304-e5be-5384-3d0c-6381b230521e",
       "parentKey" : "permalinks/cb706473-6d7f-3706-7f9e-6700cbc45690",
@@ -3954,6 +5659,11 @@
       "key" : "permalinks/f7be3fb1-d18b-24fc-1f8e-c1150f29c426",
       "targetKey" : "pages/62a8276a-23b8-5c7a-591b-269933cfaeff",
       "uri" : "/roadmap"
+    },
+    "ff5352a4-7188-5f72-cc50-e23d5cd9418b" : {
+      "key" : "permalinks/ff5352a4-7188-5f72-cc50-e23d5cd9418b",
+      "parentKey" : "permalinks/59c88a84-aa47-a498-2199-79409d3d237e",
+      "uri" : "b386becf-4398-aaab-2da7-17f5015728d4"
     }
   },
   "posts" : {
@@ -3972,22 +5682,6 @@
       "keywords" : "",
       "permalinkKey" : "permalinks/8a3f97cf-0c91-002a-1528-9b13eabcab0a",
       "title" : "Meet Paperbits!"
-    },
-    "c0697561-73be-28bc-612e-435db1f9dd26" : {
-      "anchors" : {
-        "permalinks|05cb9672-e104-32f1-3b54-4d828562c061" : "Tutorials",
-        "permalinks|2a86460a-3af2-a5dc-0b81-c32532d26a99" : "Demo",
-        "permalinks|41349bc3-90ac-dcba-1efc-08c52e97d0e0" : "Demo",
-        "permalinks|4a31d27f-357b-68ed-e142-3e7a2e394247" : "Code samples",
-        "permalinks|f418f1fa-d943-8967-fa89-7727bb15ff19" : "Documentation",
-        "permalinks|f5978304-e5be-5384-3d0c-6381b230521e" : "Demo"
-      },
-      "contentKey" : "files/325dd8c3-605c-0218-501b-0212a98d8179",
-      "description" : "You can quickly get started with Paperbits by using the demo website, samples, and how-tos. Read more about these options.",
-      "key" : "posts/c0697561-73be-28bc-612e-435db1f9dd26",
-      "keywords" : "wiki",
-      "permalinkKey" : "permalinks/cb706473-6d7f-3706-7f9e-6700cbc45690",
-      "title" : "Getting started"
     }
   },
   "settings" : {
@@ -4023,75 +5717,76 @@
     "title" : "PaperBits - Content authoring tools for web apps!"
   },
   "uploads" : {
-    "09bf17e5-3828-86c3-2c5a-96af1f3a0493" : {
+    "20f7f107-54da-4643-8544-554879790ed0" : {
+      "blobKey" : "20f7f107-54da-4643-8544-554879790ed0",
       "contentType" : "image/svg+xml",
       "description" : "",
-      "downloadUrl" : "http://cdn.paperbits.io/images/logo.svg",
-      "filename" : "logo.svg",
-      "key" : "uploads/09bf17e5-3828-86c3-2c5a-96af1f3a0493",
+      "downloadUrl" : "https://firebasestorage.googleapis.com/v0/b/project-7669095260722476815.appspot.com/o/tenants%2Fdefault%2F20f7f107-54da-4643-8544-554879790ed0?alt=media&token=abfda415-ff59-4b0c-ad11-1e009bc8db5d",
+      "filename" : "getting-started.svg",
+      "key" : "uploads/20f7f107-54da-4643-8544-554879790ed0",
       "keywords" : "",
-      "permalinkKey" : "permalinks/4cfcb0a0-4839-26de-6057-038bc28622ff"
+      "permalinkKey" : "permalinks/20f7f107-54da-4643-8544-554879790ed0"
     },
     "350b10ca-9a15-7fbb-5bc4-ea5260936803" : {
       "contentType" : "image/svg+xml",
       "description" : "",
-      "downloadUrl" : "http://cdn.paperbits.io/images/plane-launch.svg",
+      "downloadUrl" : "https://firebasestorage.googleapis.com/v0/b/project-7669095260722476815.appspot.com/o/tenants%2Fdefault%2Fd5359bd1-143e-e342-2637-b42af94e0785?alt=media&token=ff7de7f7-be80-426e-b37e-30a26544d1a5",
       "filename" : "plane-launch.svg",
       "key" : "uploads/350b10ca-9a15-7fbb-5bc4-ea5260936803",
       "keywords" : "",
       "permalinkKey" : "permalinks/d5359bd1-143e-e342-2637-b42af94e0785"
     },
+    "5b9a572c-5ede-0da1-1ffa-f2ce06ba0fae" : {
+      "blobKey" : "5b9a572c-5ede-0da1-1ffa-f2ce06ba0fae",
+      "contentType" : "image/svg+xml",
+      "description" : "",
+      "downloadUrl" : "https://firebasestorage.googleapis.com/v0/b/project-7669095260722476815.appspot.com/o/tenants%2Fdefault%2F5b9a572c-5ede-0da1-1ffa-f2ce06ba0fae?alt=media&token=510f4e28-5990-4bb0-a3c1-18a13be6fd5c",
+      "filename" : "frameworks.svg",
+      "key" : "uploads/5b9a572c-5ede-0da1-1ffa-f2ce06ba0fae",
+      "keywords" : "",
+      "permalinkKey" : "permalinks/5b9a572c-5ede-0da1-1ffa-f2ce06ba0fae"
+    },
     "68aa54b5-9780-b1ed-6020-fbcb7933dc26" : {
       "contentType" : "image/x-icon",
       "description" : "",
-      "downloadUrl" : "http://cdn.paperbits.io/images/favicon.ico",
+      "downloadUrl" : "https://firebasestorage.googleapis.com/v0/b/project-7669095260722476815.appspot.com/o/tenants%2Fdefault%2Ffavicon.ico?alt=media&token=4d33e214-11f6-4488-9671-6ef77fda3d43",
       "filename" : "favicon.ico",
       "key" : "uploads/68aa54b5-9780-b1ed-6020-fbcb7933dc26",
       "keywords" : "",
       "permalinkKey" : "permalinks/ca4ad134-875c-bbad-be98-047557eaceb7"
     },
+    "88238d72-237d-eefc-da3e-19bef9506808" : {
+      "blobKey" : "88238d72-237d-eefc-da3e-19bef9506808",
+      "contentType" : "image/svg+xml",
+      "description" : "",
+      "downloadUrl" : "https://firebasestorage.googleapis.com/v0/b/project-7669095260722476815.appspot.com/o/tenants%2Fdefault%2F88238d72-237d-eefc-da3e-19bef9506808?alt=media&token=6af482e8-70ff-4a33-861c-84bd9e7378a4",
+      "filename" : "logo.svg",
+      "key" : "uploads/88238d72-237d-eefc-da3e-19bef9506808",
+      "keywords" : "",
+      "permalinkKey" : "permalinks/88238d72-237d-eefc-da3e-19bef9506808"
+    },
     "8b7bdb01-5ea3-3b39-7a21-6f32e6f58bf0" : {
       "contentType" : "image/svg+xml",
       "description" : "",
-      "downloadUrl" : "http://cdn.paperbits.io/images/pen-fight.svg",
+      "downloadUrl" : "https://firebasestorage.googleapis.com/v0/b/project-7669095260722476815.appspot.com/o/tenants%2Fdefault%2F96562577-5dc3-2644-b510-757acbbdabd3?alt=media&token=5e06d546-8355-43f0-8de8-cc941cc01bea",
       "filename" : "pen-fight.svg",
       "key" : "uploads/8b7bdb01-5ea3-3b39-7a21-6f32e6f58bf0",
       "keywords" : "",
       "permalinkKey" : "permalinks/96562577-5dc3-2644-b510-757acbbdabd3"
     },
-    "8e7766d2-c970-df1c-c2a9-880d0d4abe52" : {
-      "blobKey" : "8e7766d2-c970-df1c-c2a9-880d0d4abe52",
-      "contentType" : "image/svg+xml",
-      "description" : "",
-      "downloadUrl" : "http://cdn.paperbits.io/images/getting-started.svg",
-      "filename" : "getting-started.svg",
-      "key" : "uploads/8e7766d2-c970-df1c-c2a9-880d0d4abe52",
-      "keywords" : "",
-      "permalinkKey" : "permalinks/8e7766d2-c970-df1c-c2a9-880d0d4abe52"
-    },
     "92c8f9aa-e2d1-7a73-1cdd-1b9e39ba41e4" : {
       "contentType" : "image/svg+xml",
       "description" : "",
-      "downloadUrl" : "http://cdn.paperbits.io/images/finding-way.svg",
+      "downloadUrl" : "https://firebasestorage.googleapis.com/v0/b/project-7669095260722476815.appspot.com/o/tenants%2Fdefault%2Ffinding-way.svg?alt=media&token=92c66137-8d3a-473f-bbdd-37901a6b8ce2",
       "filename" : "finding-way.svg",
       "key" : "uploads/92c8f9aa-e2d1-7a73-1cdd-1b9e39ba41e4",
       "keywords" : "",
       "permalinkKey" : "permalinks/275773e2-9018-4646-7d06-7f5cea3660fc"
     },
-    "bb88e60f-80b3-65b2-1bf3-703e55dfd0f9" : {
-      "blobKey" : "bb88e60f-80b3-65b2-1bf3-703e55dfd0f9",
-      "contentType" : "image/svg+xml",
-      "description" : "",
-      "downloadUrl" : "http://cdn.paperbits.io/images/frameworks.svg",
-      "filename" : "frameworks.svg",
-      "key" : "uploads/bb88e60f-80b3-65b2-1bf3-703e55dfd0f9",
-      "keywords" : "",
-      "permalinkKey" : "permalinks/bb88e60f-80b3-65b2-1bf3-703e55dfd0f9"
-    },
     "bf423581-8039-b02c-0fe8-7d678534a568" : {
       "contentType" : "image/x-icon",
       "description" : "",
-      "downloadUrl" : "http://cdn.paperbits.io/images/Ph03nyx-Super-Mario-Mushroom-1UP.ico",
+      "downloadUrl" : "https://firebasestorage.googleapis.com/v0/b/project-7669095260722476815.appspot.com/o/tenants%2Fdefault%2FPh03nyx-Super-Mario-Mushroom-1UP.ico?alt=media&token=c8ebe2f2-0b05-4991-9f90-25bb56b44938",
       "filename" : "Ph03nyx-Super-Mario-Mushroom-1UP.ico",
       "key" : "uploads/bf423581-8039-b02c-0fe8-7d678534a568",
       "keywords" : "",
@@ -4100,7 +5795,7 @@
     "e688898b-b9a2-240f-6da0-346b6b0d02e1" : {
       "contentType" : "image/svg+xml",
       "description" : "",
-      "downloadUrl" : "http://cdn.paperbits.io/images/json-output-example.svg",
+      "downloadUrl" : "https://firebasestorage.googleapis.com/v0/b/project-7669095260722476815.appspot.com/o/tenants%2Fdefault%2Fe0e5eb90-7ebe-e85a-dedb-ea17daf73201?alt=media&token=1f9ebe05-87ec-4f48-a6e8-daf280a1eb3e",
       "filename" : "json-output-example.svg",
       "key" : "uploads/e688898b-b9a2-240f-6da0-346b6b0d02e1",
       "keywords" : "",
@@ -4109,11 +5804,21 @@
     "f0b568bf-703a-0fa5-58b0-5b4574b18b93" : {
       "contentType" : "image/svg+xml",
       "description" : "",
-      "downloadUrl" : "http://cdn.paperbits.io/images/pen-and-ruler.svg",
+      "downloadUrl" : "https://firebasestorage.googleapis.com/v0/b/project-7669095260722476815.appspot.com/o/tenants%2Fdefault%2Fc7a63e62-bfb9-464a-ce18-662564681a72?alt=media&token=19a6c922-134b-4c0a-923a-173852d40063",
       "filename" : "pen-and-ruler.svg",
       "key" : "uploads/f0b568bf-703a-0fa5-58b0-5b4574b18b93",
       "keywords" : "",
       "permalinkKey" : "permalinks/c7a63e62-bfb9-464a-ce18-662564681a72"
+    },
+    "f4f94aa8-269b-9d08-4247-07981b8476c3" : {
+      "blobKey" : "f4f94aa8-269b-9d08-4247-07981b8476c3",
+      "contentType" : "image/png",
+      "description" : "",
+      "downloadUrl" : "https://firebasestorage.googleapis.com/v0/b/project-7669095260722476815.appspot.com/o/tenants%2Fdefault%2Ff4f94aa8-269b-9d08-4247-07981b8476c3?alt=media&token=ce7384e4-f659-48a3-af4f-007c79b0e731",
+      "filename" : "editors.png",
+      "key" : "uploads/f4f94aa8-269b-9d08-4247-07981b8476c3",
+      "keywords" : "",
+      "permalinkKey" : "permalinks/f4f94aa8-269b-9d08-4247-07981b8476c3"
     }
   }
 }
