@@ -144,7 +144,7 @@ export class Publisher {
         injector.bind("formViewModelBinder", FormViewModelBinder);
         viewModelBinders.push(injector.resolve("formViewModelBinder"));
         
-        await publishNodeModule.register(injector);
+        publishNodeModule.register(injector);
         
         /*** Autostart ***/
         injector.resolve("widgetBindingHandler");
