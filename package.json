@@ -28,14 +28,16 @@
         "style-loader": "^0.19.1",
         "ts-loader": "^2.3.6",
         "typescript": "2.6.2",
+        "uglifyjs-webpack-plugin": "^1.2.3",
         "url-loader": "^0.6.2",
         "webpack": "^3.11.0",
         "webpack-dev-server": "^2.10.0"
     },
     "dependencies": {
-        "@paperbits/common": "0.0.61",
-        "@paperbits/knockout": "0.0.61",
+        "@paperbits/common": "0.0.66",
+        "@paperbits/knockout": "0.0.66",
         "@paperbits/publishing": "0.0.9",
+        "@paperbits/slate": "0.0.66",
         "es6-shim": "^0.35.3",
         "knockout": "^3.4.2",
         "setimmediate": "^1.0.5",

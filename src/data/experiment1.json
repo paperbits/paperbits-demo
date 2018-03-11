@@ -133,7 +133,7 @@
           "position" : "center center",
           "size" : "contain"
         },
-        "layout" : "container",
+        "layout" : "container-thinner",
         "nodes" : [ {
           "nodes" : [ {
             "nodes" : [ {
@@ -1217,7 +1217,7 @@
                 "nodes" : [ {
                   "leaves" : [ {
                     "object" : "leaf",
-                    "text" : "These days we see many products (to name a few: Wordpress,  MailChimp, Constant Contact, Unbounce, Remote, etc.) that include rich content authoring as one of their core features. Usually, their functionality incorporates simple drag & drop interface, a library of design blocks and a number of themes. Teams behind those products are all trying to do their best to enable non-professional users to create high-quality content with ease.\r"
+                    "text" : "These days we see many products (to name a few: Wordpress,  MailChimp, Constant Contact, Unbounce, Remote, etc.) that include rich content authoring tools as one of their core features. Usually, their functionality incorporates simple drag & drop interface, a library of design blocks and a number of themes. Teams behind those products are all trying to do their best to enable non-professional users to create high-quality content with ease.\r"
                   } ],
                   "object" : "text"
                 } ],
@@ -1777,7 +1777,622 @@
                 "nodes" : [ {
                   "leaves" : [ {
                     "object" : "leaf",
-                    "text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    "text" : "\rWriting a commit message"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "heading-two"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "After making changes on Paperbits, please make sure your commit message contains enough contextual information so that anyone understands the intention of the changes. Unless the commit is trivial, please use the following form:"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "data" : {
+                  "intentions" : {
+                    "container" : {
+                      "list" : {
+                        "ordered" : {
+                          "numbers" : true
+                        }
+                      }
+                    }
+                  }
+                },
+                "isVoid" : false,
+                "nodes" : [ {
+                  "isVoid" : false,
+                  "nodes" : [ {
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "leaves" : [ {
+                        "marks" : [ {
+                          "object" : "mark",
+                          "type" : "bold"
+                        } ],
+                        "object" : "leaf",
+                        "text" : "Description"
+                      } ],
+                      "object" : "text"
+                    } ],
+                    "object" : "block",
+                    "type" : "paragraph"
+                  }, {
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "leaves" : [ {
+                        "object" : "leaf",
+                        "text" : "One line description of your change."
+                      } ],
+                      "object" : "text"
+                    } ],
+                    "object" : "block",
+                    "type" : "paragraph"
+                  }, {
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "leaves" : [ {
+                        "object" : "leaf",
+                        "text" : ""
+                      } ],
+                      "object" : "text"
+                    } ],
+                    "object" : "block",
+                    "type" : "paragraph"
+                  } ],
+                  "object" : "block",
+                  "type" : "list-item"
+                }, {
+                  "isVoid" : false,
+                  "nodes" : [ {
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "leaves" : [ {
+                        "marks" : [ {
+                          "object" : "mark",
+                          "type" : "bold"
+                        } ],
+                        "object" : "leaf",
+                        "text" : "Motivation"
+                      } ],
+                      "object" : "text"
+                    } ],
+                    "object" : "block",
+                    "type" : "paragraph"
+                  }, {
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "leaves" : [ {
+                        "object" : "leaf",
+                        "text" : "Explain here the context, and why you're making that change. What is the problem you're trying to solve."
+                      } ],
+                      "object" : "text"
+                    } ],
+                    "object" : "block",
+                    "type" : "paragraph"
+                  }, {
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "leaves" : [ {
+                        "object" : "leaf",
+                        "text" : "\r"
+                      } ],
+                      "object" : "text"
+                    } ],
+                    "object" : "block",
+                    "type" : "paragraph"
+                  } ],
+                  "object" : "block",
+                  "type" : "list-item"
+                }, {
+                  "isVoid" : false,
+                  "nodes" : [ {
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "leaves" : [ {
+                        "marks" : [ {
+                          "object" : "mark",
+                          "type" : "bold"
+                        } ],
+                        "object" : "leaf",
+                        "text" : "Modifications"
+                      } ],
+                      "object" : "text"
+                    } ],
+                    "object" : "block",
+                    "type" : "paragraph"
+                  }, {
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "leaves" : [ {
+                        "object" : "leaf",
+                        "text" : "Describe the modifications you've done.\r"
+                      } ],
+                      "object" : "text"
+                    } ],
+                    "object" : "block",
+                    "type" : "paragraph"
+                  }, {
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "leaves" : [ {
+                        "object" : "leaf",
+                        "text" : ""
+                      } ],
+                      "object" : "text"
+                    } ],
+                    "object" : "block",
+                    "type" : "paragraph"
+                  } ],
+                  "object" : "block",
+                  "type" : "list-item"
+                }, {
+                  "isVoid" : false,
+                  "nodes" : [ {
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "leaves" : [ {
+                        "marks" : [ {
+                          "object" : "mark",
+                          "type" : "bold"
+                        } ],
+                        "object" : "leaf",
+                        "text" : "Result"
+                      } ],
+                      "object" : "text"
+                    } ],
+                    "object" : "block",
+                    "type" : "paragraph"
+                  }, {
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "leaves" : [ {
+                        "object" : "leaf",
+                        "text" : "After your change, what will change."
+                      } ],
+                      "object" : "text"
+                    } ],
+                    "object" : "block",
+                    "type" : "paragraph"
+                  } ],
+                  "object" : "block",
+                  "type" : "list-item"
+                } ],
+                "object" : "block",
+                "type" : "list"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Our Pledge\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "heading-two"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "In the interest of fostering an open and welcoming environment, we as\r contributors and maintainers pledge to making participation in our project and\r our community a harassment-free experience for everyone, regardless of age, body\r size, disability, ethnicity, gender identity and expression, level of experience,\r education, socio-economic status, nationality, personal appearance, race,\r religion, or sexual identity and orientation.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "\rOur Standards\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "heading-two"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "\rExamples of behavior that contributes to creating a positive environment\r include:\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "data" : {
+                  "intentions" : {
+                    "container" : {
+                      "list" : {
+                        "unordered" : {
+                          "disc" : true
+                        }
+                      }
+                    }
+                  }
+                },
+                "isVoid" : false,
+                "nodes" : [ {
+                  "isVoid" : false,
+                  "nodes" : [ {
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "leaves" : [ {
+                        "object" : "leaf",
+                        "text" : "using welcoming and inclusive language;"
+                      } ],
+                      "object" : "text"
+                    } ],
+                    "object" : "block",
+                    "type" : "paragraph"
+                  } ],
+                  "object" : "block",
+                  "type" : "list-item"
+                }, {
+                  "isVoid" : false,
+                  "nodes" : [ {
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "leaves" : [ {
+                        "object" : "leaf",
+                        "text" : "being respectful of differing viewpoints and experience;"
+                      } ],
+                      "object" : "text"
+                    } ],
+                    "object" : "block",
+                    "type" : "paragraph"
+                  } ],
+                  "object" : "block",
+                  "type" : "list-item"
+                }, {
+                  "isVoid" : false,
+                  "nodes" : [ {
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "leaves" : [ {
+                        "object" : "leaf",
+                        "text" : "gracefully accepting constructive criticism;"
+                      } ],
+                      "object" : "text"
+                    } ],
+                    "object" : "block",
+                    "type" : "paragraph"
+                  } ],
+                  "object" : "block",
+                  "type" : "list-item"
+                }, {
+                  "isVoid" : false,
+                  "nodes" : [ {
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "leaves" : [ {
+                        "object" : "leaf",
+                        "text" : "focusing on what is best for the community;"
+                      } ],
+                      "object" : "text"
+                    } ],
+                    "object" : "block",
+                    "type" : "paragraph"
+                  } ],
+                  "object" : "block",
+                  "type" : "list-item"
+                }, {
+                  "isVoid" : false,
+                  "nodes" : [ {
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "leaves" : [ {
+                        "object" : "leaf",
+                        "text" : "showing empathy towards other community members;"
+                      } ],
+                      "object" : "text"
+                    } ],
+                    "object" : "block",
+                    "type" : "paragraph"
+                  } ],
+                  "object" : "block",
+                  "type" : "list-item"
+                } ],
+                "object" : "block",
+                "type" : "list"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Examples of unacceptable behavior by participants include:\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "data" : {
+                  "intentions" : {
+                    "container" : {
+                      "list" : {
+                        "unordered" : {
+                          "disc" : true
+                        }
+                      }
+                    }
+                  }
+                },
+                "isVoid" : false,
+                "nodes" : [ {
+                  "isVoid" : false,
+                  "nodes" : [ {
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "leaves" : [ {
+                        "object" : "leaf",
+                        "text" : "the use of sexualized language or imagery and unwelcome sexual attention or advances;"
+                      } ],
+                      "object" : "text"
+                    } ],
+                    "object" : "block",
+                    "type" : "paragraph"
+                  } ],
+                  "object" : "block",
+                  "type" : "list-item"
+                }, {
+                  "isVoid" : false,
+                  "nodes" : [ {
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "leaves" : [ {
+                        "object" : "leaf",
+                        "text" : "trolling, insulting/derogatory comments, and personal or political attacks;"
+                      } ],
+                      "object" : "text"
+                    } ],
+                    "object" : "block",
+                    "type" : "paragraph"
+                  } ],
+                  "object" : "block",
+                  "type" : "list-item"
+                }, {
+                  "isVoid" : false,
+                  "nodes" : [ {
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "leaves" : [ {
+                        "object" : "leaf",
+                        "text" : "public or private harassment;"
+                      } ],
+                      "object" : "text"
+                    } ],
+                    "object" : "block",
+                    "type" : "paragraph"
+                  } ],
+                  "object" : "block",
+                  "type" : "list-item"
+                }, {
+                  "isVoid" : false,
+                  "nodes" : [ {
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "leaves" : [ {
+                        "object" : "leaf",
+                        "text" : "publishing others' private information, such as a physical or electronic\r address, without explicit permission;"
+                      } ],
+                      "object" : "text"
+                    } ],
+                    "object" : "block",
+                    "type" : "paragraph"
+                  } ],
+                  "object" : "block",
+                  "type" : "list-item"
+                }, {
+                  "isVoid" : false,
+                  "nodes" : [ {
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "leaves" : [ {
+                        "object" : "leaf",
+                        "text" : "other conduct which could reasonably be considered inappropriate in a\r professional setting;"
+                      } ],
+                      "object" : "text"
+                    } ],
+                    "object" : "block",
+                    "type" : "paragraph"
+                  } ],
+                  "object" : "block",
+                  "type" : "list-item"
+                } ],
+                "object" : "block",
+                "type" : "list"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "\rOur Responsibilities\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "heading-two"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "\rProject maintainers are responsible for clarifying the standards of acceptable\r behavior and are expected to take appropriate and fair corrective action in\r response to any instances of unacceptable behavior.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "\rProject maintainers have the right and responsibility to remove, edit, or\r reject comments, commits, code, wiki edits, issues, and other contributions\r that are not aligned to this Code of Conduct, or to ban temporarily or\r permanently any contributor for other behaviors that they deem inappropriate,\r threatening, offensive, or harmful.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "\rScope\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "heading-two"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "This Code of Conduct applies both within project spaces and in public spaces\r when an individual is representing the project or its community. Examples of\r representing a project or community include using an official project e-mail\r address, posting via an official social media account, or acting as an appointed\r representative at an online or offline event. Representation of a project may be\r further defined and clarified by project maintainers.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "\rEnforcement\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "heading-two"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "\rInstances of abusive, harassing, or otherwise unacceptable behavior may be\r reported by contacting the project team at "
+                  } ],
+                  "object" : "text"
+                }, {
+                  "data" : {
+                    "href" : "mailto:support@paperbits.io",
+                    "target" : "_blank"
+                  },
+                  "isVoid" : false,
+                  "nodes" : [ {
+                    "leaves" : [ {
+                      "object" : "leaf",
+                      "text" : "support@paperbits.io"
+                    } ],
+                    "object" : "text"
+                  } ],
+                  "object" : "inline",
+                  "type" : "link"
+                }, {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : ". All\r complaints will be reviewed and investigated and will result in a response that\r is deemed necessary and appropriate to the circumstances. The project team is\r obligated to maintain confidentiality with regard to the reporter of an incident.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Further details of specific enforcement policies may be posted separately.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "\rProject maintainers who do not follow or enforce the Code of Conduct in good\r faith may face temporary or permanent repercussions as determined by other\r members of the project's leadership.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "\rAttribution\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "heading-two"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "\rThis Code of Conduct is adapted from the "
+                  } ],
+                  "object" : "text"
+                }, {
+                  "data" : {
+                    "href" : "http://contributor-covenant.org/",
+                    "target" : "_blank"
+                  },
+                  "isVoid" : false,
+                  "nodes" : [ {
+                    "leaves" : [ {
+                      "object" : "leaf",
+                      "text" : "Contributor Covenant"
+                    } ],
+                    "object" : "text"
+                  } ],
+                  "object" : "inline",
+                  "type" : "link"
+                }, {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : ", version 1.4,\r available at "
+                  } ],
+                  "object" : "text"
+                }, {
+                  "data" : {
+                    "href" : "http://contributor-covenant.org/version/1/4",
+                    "target" : "_blank"
+                  },
+                  "isVoid" : false,
+                  "nodes" : [ {
+                    "leaves" : [ {
+                      "object" : "leaf",
+                      "text" : "https://www.contributor-covenant.org/version/1/4/code-of-conduct.html"
+                    } ],
+                    "object" : "text"
+                  } ],
+                  "object" : "inline",
+                  "type" : "link"
+                }, {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : ""
                   } ],
                   "object" : "text"
                 } ],
@@ -2564,6 +3179,672 @@
         "snapping" : "none",
         "type" : "layout-section"
       }, {
+        "nodes" : [ {
+          "background" : {
+            "position" : "center center",
+            "size" : "contain"
+          },
+          "layout" : "container-thinner",
+          "nodes" : [ {
+            "nodes" : [ {
+              "nodes" : [ {
+                "nodes" : [ {
+                  "isVoid" : false,
+                  "nodes" : [ {
+                    "leaves" : [ {
+                      "object" : "leaf",
+                      "text" : "For contributors"
+                    } ],
+                    "object" : "text"
+                  } ],
+                  "object" : "block",
+                  "type" : "heading-one"
+                }, {
+                  "isVoid" : false,
+                  "nodes" : [ {
+                    "leaves" : [ {
+                      "object" : "leaf",
+                      "text" : "\rWriting a commit message"
+                    } ],
+                    "object" : "text"
+                  } ],
+                  "object" : "block",
+                  "type" : "heading-two"
+                }, {
+                  "isVoid" : false,
+                  "nodes" : [ {
+                    "leaves" : [ {
+                      "object" : "leaf",
+                      "text" : "After making changes on Paperbits, please make sure your commit message contains enough contextual information so that anyone understands the intention of the changes. Unless the commit is trivial, please use the following form:"
+                    } ],
+                    "object" : "text"
+                  } ],
+                  "object" : "block",
+                  "type" : "paragraph"
+                }, {
+                  "data" : {
+                    "intentions" : {
+                      "container" : {
+                        "list" : {
+                          "ordered" : {
+                            "numbers" : true
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "isVoid" : false,
+                  "nodes" : [ {
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "isVoid" : false,
+                      "nodes" : [ {
+                        "leaves" : [ {
+                          "marks" : [ {
+                            "object" : "mark",
+                            "type" : "bold"
+                          } ],
+                          "object" : "leaf",
+                          "text" : "Description"
+                        } ],
+                        "object" : "text"
+                      } ],
+                      "object" : "block",
+                      "type" : "paragraph"
+                    }, {
+                      "isVoid" : false,
+                      "nodes" : [ {
+                        "leaves" : [ {
+                          "object" : "leaf",
+                          "text" : "One line description of your change."
+                        } ],
+                        "object" : "text"
+                      } ],
+                      "object" : "block",
+                      "type" : "paragraph"
+                    }, {
+                      "isVoid" : false,
+                      "nodes" : [ {
+                        "leaves" : [ {
+                          "object" : "leaf",
+                          "text" : ""
+                        } ],
+                        "object" : "text"
+                      } ],
+                      "object" : "block",
+                      "type" : "paragraph"
+                    } ],
+                    "object" : "block",
+                    "type" : "list-item"
+                  }, {
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "isVoid" : false,
+                      "nodes" : [ {
+                        "leaves" : [ {
+                          "marks" : [ {
+                            "object" : "mark",
+                            "type" : "bold"
+                          } ],
+                          "object" : "leaf",
+                          "text" : "Motivation"
+                        } ],
+                        "object" : "text"
+                      } ],
+                      "object" : "block",
+                      "type" : "paragraph"
+                    }, {
+                      "isVoid" : false,
+                      "nodes" : [ {
+                        "leaves" : [ {
+                          "object" : "leaf",
+                          "text" : "Explain here the context, and why you're making that change. What is the problem you're trying to solve."
+                        } ],
+                        "object" : "text"
+                      } ],
+                      "object" : "block",
+                      "type" : "paragraph"
+                    }, {
+                      "isVoid" : false,
+                      "nodes" : [ {
+                        "leaves" : [ {
+                          "object" : "leaf",
+                          "text" : "\r"
+                        } ],
+                        "object" : "text"
+                      } ],
+                      "object" : "block",
+                      "type" : "paragraph"
+                    } ],
+                    "object" : "block",
+                    "type" : "list-item"
+                  }, {
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "isVoid" : false,
+                      "nodes" : [ {
+                        "leaves" : [ {
+                          "marks" : [ {
+                            "object" : "mark",
+                            "type" : "bold"
+                          } ],
+                          "object" : "leaf",
+                          "text" : "Modifications"
+                        } ],
+                        "object" : "text"
+                      } ],
+                      "object" : "block",
+                      "type" : "paragraph"
+                    }, {
+                      "isVoid" : false,
+                      "nodes" : [ {
+                        "leaves" : [ {
+                          "object" : "leaf",
+                          "text" : "Describe the modifications you've done.\r"
+                        } ],
+                        "object" : "text"
+                      } ],
+                      "object" : "block",
+                      "type" : "paragraph"
+                    }, {
+                      "isVoid" : false,
+                      "nodes" : [ {
+                        "leaves" : [ {
+                          "object" : "leaf",
+                          "text" : ""
+                        } ],
+                        "object" : "text"
+                      } ],
+                      "object" : "block",
+                      "type" : "paragraph"
+                    } ],
+                    "object" : "block",
+                    "type" : "list-item"
+                  }, {
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "isVoid" : false,
+                      "nodes" : [ {
+                        "leaves" : [ {
+                          "marks" : [ {
+                            "object" : "mark",
+                            "type" : "bold"
+                          } ],
+                          "object" : "leaf",
+                          "text" : "Result"
+                        } ],
+                        "object" : "text"
+                      } ],
+                      "object" : "block",
+                      "type" : "paragraph"
+                    }, {
+                      "isVoid" : false,
+                      "nodes" : [ {
+                        "leaves" : [ {
+                          "object" : "leaf",
+                          "text" : "After your change, what will change."
+                        } ],
+                        "object" : "text"
+                      } ],
+                      "object" : "block",
+                      "type" : "paragraph"
+                    } ],
+                    "object" : "block",
+                    "type" : "list-item"
+                  } ],
+                  "object" : "block",
+                  "type" : "list"
+                }, {
+                  "isVoid" : false,
+                  "nodes" : [ {
+                    "leaves" : [ {
+                      "object" : "leaf",
+                      "text" : "Our Pledge\r"
+                    } ],
+                    "object" : "text"
+                  } ],
+                  "object" : "block",
+                  "type" : "heading-two"
+                }, {
+                  "isVoid" : false,
+                  "nodes" : [ {
+                    "leaves" : [ {
+                      "object" : "leaf",
+                      "text" : "In the interest of fostering an open and welcoming environment, we as\r contributors and maintainers pledge to making participation in our project and\r our community a harassment-free experience for everyone, regardless of age, body\r size, disability, ethnicity, gender identity and expression, level of experience,\r education, socio-economic status, nationality, personal appearance, race,\r religion, or sexual identity and orientation.\r"
+                    } ],
+                    "object" : "text"
+                  } ],
+                  "object" : "block",
+                  "type" : "paragraph"
+                }, {
+                  "isVoid" : false,
+                  "nodes" : [ {
+                    "leaves" : [ {
+                      "object" : "leaf",
+                      "text" : "\rOur Standards\r"
+                    } ],
+                    "object" : "text"
+                  } ],
+                  "object" : "block",
+                  "type" : "heading-two"
+                }, {
+                  "isVoid" : false,
+                  "nodes" : [ {
+                    "leaves" : [ {
+                      "object" : "leaf",
+                      "text" : "\rExamples of behavior that contributes to creating a positive environment\r include:\r"
+                    } ],
+                    "object" : "text"
+                  } ],
+                  "object" : "block",
+                  "type" : "paragraph"
+                }, {
+                  "data" : {
+                    "intentions" : {
+                      "container" : {
+                        "list" : {
+                          "unordered" : {
+                            "disc" : true
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "isVoid" : false,
+                  "nodes" : [ {
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "isVoid" : false,
+                      "nodes" : [ {
+                        "leaves" : [ {
+                          "object" : "leaf",
+                          "text" : "using welcoming and inclusive language;"
+                        } ],
+                        "object" : "text"
+                      } ],
+                      "object" : "block",
+                      "type" : "paragraph"
+                    } ],
+                    "object" : "block",
+                    "type" : "list-item"
+                  }, {
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "isVoid" : false,
+                      "nodes" : [ {
+                        "leaves" : [ {
+                          "object" : "leaf",
+                          "text" : "being respectful of differing viewpoints and experience;"
+                        } ],
+                        "object" : "text"
+                      } ],
+                      "object" : "block",
+                      "type" : "paragraph"
+                    } ],
+                    "object" : "block",
+                    "type" : "list-item"
+                  }, {
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "isVoid" : false,
+                      "nodes" : [ {
+                        "leaves" : [ {
+                          "object" : "leaf",
+                          "text" : "gracefully accepting constructive criticism;"
+                        } ],
+                        "object" : "text"
+                      } ],
+                      "object" : "block",
+                      "type" : "paragraph"
+                    } ],
+                    "object" : "block",
+                    "type" : "list-item"
+                  }, {
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "isVoid" : false,
+                      "nodes" : [ {
+                        "leaves" : [ {
+                          "object" : "leaf",
+                          "text" : "focusing on what is best for the community;"
+                        } ],
+                        "object" : "text"
+                      } ],
+                      "object" : "block",
+                      "type" : "paragraph"
+                    } ],
+                    "object" : "block",
+                    "type" : "list-item"
+                  }, {
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "isVoid" : false,
+                      "nodes" : [ {
+                        "leaves" : [ {
+                          "object" : "leaf",
+                          "text" : "showing empathy towards other community members;"
+                        } ],
+                        "object" : "text"
+                      } ],
+                      "object" : "block",
+                      "type" : "paragraph"
+                    } ],
+                    "object" : "block",
+                    "type" : "list-item"
+                  } ],
+                  "object" : "block",
+                  "type" : "list"
+                }, {
+                  "isVoid" : false,
+                  "nodes" : [ {
+                    "leaves" : [ {
+                      "object" : "leaf",
+                      "text" : "Examples of unacceptable behavior by participants include:\r"
+                    } ],
+                    "object" : "text"
+                  } ],
+                  "object" : "block",
+                  "type" : "paragraph"
+                }, {
+                  "data" : {
+                    "intentions" : {
+                      "container" : {
+                        "list" : {
+                          "unordered" : {
+                            "disc" : true
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "isVoid" : false,
+                  "nodes" : [ {
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "isVoid" : false,
+                      "nodes" : [ {
+                        "leaves" : [ {
+                          "object" : "leaf",
+                          "text" : "the use of sexualized language or imagery and unwelcome sexual attention or advances;"
+                        } ],
+                        "object" : "text"
+                      } ],
+                      "object" : "block",
+                      "type" : "paragraph"
+                    } ],
+                    "object" : "block",
+                    "type" : "list-item"
+                  }, {
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "isVoid" : false,
+                      "nodes" : [ {
+                        "leaves" : [ {
+                          "object" : "leaf",
+                          "text" : "trolling, insulting/derogatory comments, and personal or political attacks;"
+                        } ],
+                        "object" : "text"
+                      } ],
+                      "object" : "block",
+                      "type" : "paragraph"
+                    } ],
+                    "object" : "block",
+                    "type" : "list-item"
+                  }, {
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "isVoid" : false,
+                      "nodes" : [ {
+                        "leaves" : [ {
+                          "object" : "leaf",
+                          "text" : "public or private harassment;"
+                        } ],
+                        "object" : "text"
+                      } ],
+                      "object" : "block",
+                      "type" : "paragraph"
+                    } ],
+                    "object" : "block",
+                    "type" : "list-item"
+                  }, {
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "isVoid" : false,
+                      "nodes" : [ {
+                        "leaves" : [ {
+                          "object" : "leaf",
+                          "text" : "publishing others' private information, such as a physical or electronic\r address, without explicit permission;"
+                        } ],
+                        "object" : "text"
+                      } ],
+                      "object" : "block",
+                      "type" : "paragraph"
+                    } ],
+                    "object" : "block",
+                    "type" : "list-item"
+                  }, {
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "isVoid" : false,
+                      "nodes" : [ {
+                        "leaves" : [ {
+                          "object" : "leaf",
+                          "text" : "other conduct which could reasonably be considered inappropriate in a\r professional setting;"
+                        } ],
+                        "object" : "text"
+                      } ],
+                      "object" : "block",
+                      "type" : "paragraph"
+                    } ],
+                    "object" : "block",
+                    "type" : "list-item"
+                  } ],
+                  "object" : "block",
+                  "type" : "list"
+                }, {
+                  "isVoid" : false,
+                  "nodes" : [ {
+                    "leaves" : [ {
+                      "object" : "leaf",
+                      "text" : "\rOur Responsibilities\r"
+                    } ],
+                    "object" : "text"
+                  } ],
+                  "object" : "block",
+                  "type" : "heading-two"
+                }, {
+                  "isVoid" : false,
+                  "nodes" : [ {
+                    "leaves" : [ {
+                      "object" : "leaf",
+                      "text" : "\rProject maintainers are responsible for clarifying the standards of acceptable\r behavior and are expected to take appropriate and fair corrective action in\r response to any instances of unacceptable behavior.\r"
+                    } ],
+                    "object" : "text"
+                  } ],
+                  "object" : "block",
+                  "type" : "paragraph"
+                }, {
+                  "isVoid" : false,
+                  "nodes" : [ {
+                    "leaves" : [ {
+                      "object" : "leaf",
+                      "text" : "\rProject maintainers have the right and responsibility to remove, edit, or\r reject comments, commits, code, wiki edits, issues, and other contributions\r that are not aligned to this Code of Conduct, or to ban temporarily or\r permanently any contributor for other behaviors that they deem inappropriate,\r threatening, offensive, or harmful.\r"
+                    } ],
+                    "object" : "text"
+                  } ],
+                  "object" : "block",
+                  "type" : "paragraph"
+                }, {
+                  "isVoid" : false,
+                  "nodes" : [ {
+                    "leaves" : [ {
+                      "object" : "leaf",
+                      "text" : "\rScope\r"
+                    } ],
+                    "object" : "text"
+                  } ],
+                  "object" : "block",
+                  "type" : "heading-two"
+                }, {
+                  "isVoid" : false,
+                  "nodes" : [ {
+                    "leaves" : [ {
+                      "object" : "leaf",
+                      "text" : "This Code of Conduct applies both within project spaces and in public spaces\r when an individual is representing the project or its community. Examples of\r representing a project or community include using an official project e-mail\r address, posting via an official social media account, or acting as an appointed\r representative at an online or offline event. Representation of a project may be\r further defined and clarified by project maintainers.\r"
+                    } ],
+                    "object" : "text"
+                  } ],
+                  "object" : "block",
+                  "type" : "paragraph"
+                }, {
+                  "isVoid" : false,
+                  "nodes" : [ {
+                    "leaves" : [ {
+                      "object" : "leaf",
+                      "text" : "\rEnforcement\r"
+                    } ],
+                    "object" : "text"
+                  } ],
+                  "object" : "block",
+                  "type" : "heading-two"
+                }, {
+                  "isVoid" : false,
+                  "nodes" : [ {
+                    "leaves" : [ {
+                      "object" : "leaf",
+                      "text" : "\rInstances of abusive, harassing, or otherwise unacceptable behavior may be\r reported by contacting the project team at "
+                    } ],
+                    "object" : "text"
+                  }, {
+                    "data" : {
+                      "href" : "mailto:support@paperbits.io",
+                      "target" : "_blank"
+                    },
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "leaves" : [ {
+                        "object" : "leaf",
+                        "text" : "support@paperbits.io"
+                      } ],
+                      "object" : "text"
+                    } ],
+                    "object" : "inline",
+                    "type" : "link"
+                  }, {
+                    "leaves" : [ {
+                      "object" : "leaf",
+                      "text" : ". All\r complaints will be reviewed and investigated and will result in a response that\r is deemed necessary and appropriate to the circumstances. The project team is\r obligated to maintain confidentiality with regard to the reporter of an incident.\r"
+                    } ],
+                    "object" : "text"
+                  } ],
+                  "object" : "block",
+                  "type" : "paragraph"
+                }, {
+                  "isVoid" : false,
+                  "nodes" : [ {
+                    "leaves" : [ {
+                      "object" : "leaf",
+                      "text" : "Further details of specific enforcement policies may be posted separately.\r"
+                    } ],
+                    "object" : "text"
+                  } ],
+                  "object" : "block",
+                  "type" : "paragraph"
+                }, {
+                  "isVoid" : false,
+                  "nodes" : [ {
+                    "leaves" : [ {
+                      "object" : "leaf",
+                      "text" : "\rProject maintainers who do not follow or enforce the Code of Conduct in good\r faith may face temporary or permanent repercussions as determined by other\r members of the project's leadership.\r"
+                    } ],
+                    "object" : "text"
+                  } ],
+                  "object" : "block",
+                  "type" : "paragraph"
+                }, {
+                  "isVoid" : false,
+                  "nodes" : [ {
+                    "leaves" : [ {
+                      "object" : "leaf",
+                      "text" : "\rAttribution\r"
+                    } ],
+                    "object" : "text"
+                  } ],
+                  "object" : "block",
+                  "type" : "heading-two"
+                }, {
+                  "isVoid" : false,
+                  "nodes" : [ {
+                    "leaves" : [ {
+                      "object" : "leaf",
+                      "text" : "\rThis Code of Conduct is adapted from the "
+                    } ],
+                    "object" : "text"
+                  }, {
+                    "data" : {
+                      "href" : "http://contributor-covenant.org/",
+                      "target" : "_blank"
+                    },
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "leaves" : [ {
+                        "object" : "leaf",
+                        "text" : "Contributor Covenant"
+                      } ],
+                      "object" : "text"
+                    } ],
+                    "object" : "inline",
+                    "type" : "link"
+                  }, {
+                    "leaves" : [ {
+                      "object" : "leaf",
+                      "text" : ", version 1.4,\r available at "
+                    } ],
+                    "object" : "text"
+                  }, {
+                    "data" : {
+                      "href" : "http://contributor-covenant.org/version/1/4",
+                      "target" : "_blank"
+                    },
+                    "isVoid" : false,
+                    "nodes" : [ {
+                      "leaves" : [ {
+                        "object" : "leaf",
+                        "text" : "https://www.contributor-covenant.org/version/1/4/code-of-conduct.html"
+                      } ],
+                      "object" : "text"
+                    } ],
+                    "object" : "inline",
+                    "type" : "link"
+                  }, {
+                    "leaves" : [ {
+                      "object" : "leaf",
+                      "text" : ""
+                    } ],
+                    "object" : "text"
+                  } ],
+                  "object" : "block",
+                  "type" : "paragraph"
+                } ],
+                "object" : "widget",
+                "type" : "text"
+              } ],
+              "object" : "block",
+              "size" : {
+                "lg" : "12",
+                "md" : "12",
+                "sm" : "12"
+              },
+              "type" : "layout-column"
+            } ],
+            "object" : "block",
+            "type" : "layout-row"
+          } ],
+          "object" : "block",
+          "padding" : "with-padding",
+          "snapping" : "none",
+          "type" : "layout-section"
+        } ],
         "object" : "block",
         "type" : "page"
       }, {
@@ -2577,6 +3858,20 @@
           "nodes" : [ {
             "nodes" : [ {
               "nodes" : [ {
+                "data" : {
+                  "intentions" : {
+                    "text" : {
+                      "alignment" : {
+                        "sm" : {
+                          "left" : true
+                        },
+                        "xs" : {
+                          "center" : true
+                        }
+                      }
+                    }
+                  }
+                },
                 "isVoid" : false,
                 "nodes" : [ {
                   "leaves" : [ {
@@ -2607,6 +3902,20 @@
                 "nodes" : [ {
                   "isVoid" : false,
                   "nodes" : [ {
+                    "data" : {
+                      "intentions" : {
+                        "text" : {
+                          "alignment" : {
+                            "sm" : {
+                              "left" : true
+                            },
+                            "xs" : {
+                              "center" : true
+                            }
+                          }
+                        }
+                      }
+                    },
                     "isVoid" : false,
                     "nodes" : [ {
                       "leaves" : [ {
@@ -2645,6 +3954,20 @@
                 }, {
                   "isVoid" : false,
                   "nodes" : [ {
+                    "data" : {
+                      "intentions" : {
+                        "text" : {
+                          "alignment" : {
+                            "sm" : {
+                              "left" : true
+                            },
+                            "xs" : {
+                              "center" : true
+                            }
+                          }
+                        }
+                      }
+                    },
                     "isVoid" : false,
                     "nodes" : [ {
                       "leaves" : [ {
@@ -2697,6 +4020,20 @@
           }, {
             "nodes" : [ {
               "nodes" : [ {
+                "data" : {
+                  "intentions" : {
+                    "text" : {
+                      "alignment" : {
+                        "sm" : {
+                          "left" : true
+                        },
+                        "xs" : {
+                          "center" : true
+                        }
+                      }
+                    }
+                  }
+                },
                 "isVoid" : false,
                 "nodes" : [ {
                   "leaves" : [ {
@@ -2727,6 +4064,20 @@
                 "nodes" : [ {
                   "isVoid" : false,
                   "nodes" : [ {
+                    "data" : {
+                      "intentions" : {
+                        "text" : {
+                          "alignment" : {
+                            "sm" : {
+                              "left" : true
+                            },
+                            "xs" : {
+                              "center" : true
+                            }
+                          }
+                        }
+                      }
+                    },
                     "isVoid" : false,
                     "nodes" : [ {
                       "leaves" : [ {
@@ -2757,6 +4108,20 @@
           }, {
             "nodes" : [ {
               "nodes" : [ {
+                "data" : {
+                  "intentions" : {
+                    "text" : {
+                      "alignment" : {
+                        "sm" : {
+                          "left" : true
+                        },
+                        "xs" : {
+                          "center" : true
+                        }
+                      }
+                    }
+                  }
+                },
                 "isVoid" : false,
                 "nodes" : [ {
                   "leaves" : [ {
@@ -2787,6 +4152,20 @@
                 "nodes" : [ {
                   "isVoid" : false,
                   "nodes" : [ {
+                    "data" : {
+                      "intentions" : {
+                        "text" : {
+                          "alignment" : {
+                            "sm" : {
+                              "left" : true
+                            },
+                            "xs" : {
+                              "center" : true
+                            }
+                          }
+                        }
+                      }
+                    },
                     "isVoid" : false,
                     "nodes" : [ {
                       "leaves" : [ {
@@ -2825,6 +4204,20 @@
                 }, {
                   "isVoid" : false,
                   "nodes" : [ {
+                    "data" : {
+                      "intentions" : {
+                        "text" : {
+                          "alignment" : {
+                            "sm" : {
+                              "left" : true
+                            },
+                            "xs" : {
+                              "center" : true
+                            }
+                          }
+                        }
+                      }
+                    },
                     "isVoid" : false,
                     "nodes" : [ {
                       "leaves" : [ {
@@ -2841,6 +4234,20 @@
                 }, {
                   "isVoid" : false,
                   "nodes" : [ {
+                    "data" : {
+                      "intentions" : {
+                        "text" : {
+                          "alignment" : {
+                            "sm" : {
+                              "left" : true
+                            },
+                            "xs" : {
+                              "center" : true
+                            }
+                          }
+                        }
+                      }
+                    },
                     "isVoid" : false,
                     "nodes" : [ {
                       "leaves" : [ {
@@ -2879,6 +4286,20 @@
                 }, {
                   "isVoid" : false,
                   "nodes" : [ {
+                    "data" : {
+                      "intentions" : {
+                        "text" : {
+                          "alignment" : {
+                            "sm" : {
+                              "left" : true
+                            },
+                            "xs" : {
+                              "center" : true
+                            }
+                          }
+                        }
+                      }
+                    },
                     "isVoid" : false,
                     "nodes" : [ {
                       "leaves" : [ {
@@ -2917,6 +4338,20 @@
                 }, {
                   "isVoid" : false,
                   "nodes" : [ {
+                    "data" : {
+                      "intentions" : {
+                        "text" : {
+                          "alignment" : {
+                            "sm" : {
+                              "left" : true
+                            },
+                            "xs" : {
+                              "center" : true
+                            }
+                          }
+                        }
+                      }
+                    },
                     "isVoid" : false,
                     "nodes" : [ {
                       "leaves" : [ {
@@ -2969,6 +4404,20 @@
           }, {
             "nodes" : [ {
               "nodes" : [ {
+                "data" : {
+                  "intentions" : {
+                    "text" : {
+                      "alignment" : {
+                        "sm" : {
+                          "left" : true
+                        },
+                        "xs" : {
+                          "center" : true
+                        }
+                      }
+                    }
+                  }
+                },
                 "isVoid" : false,
                 "nodes" : [ {
                   "leaves" : [ {
@@ -2999,6 +4448,20 @@
                 "nodes" : [ {
                   "isVoid" : false,
                   "nodes" : [ {
+                    "data" : {
+                      "intentions" : {
+                        "text" : {
+                          "alignment" : {
+                            "sm" : {
+                              "left" : true
+                            },
+                            "xs" : {
+                              "center" : true
+                            }
+                          }
+                        }
+                      }
+                    },
                     "isVoid" : false,
                     "nodes" : [ {
                       "leaves" : [ {
@@ -3036,6 +4499,20 @@
                 }, {
                   "isVoid" : false,
                   "nodes" : [ {
+                    "data" : {
+                      "intentions" : {
+                        "text" : {
+                          "alignment" : {
+                            "sm" : {
+                              "left" : true
+                            },
+                            "xs" : {
+                              "center" : true
+                            }
+                          }
+                        }
+                      }
+                    },
                     "isVoid" : false,
                     "nodes" : [ {
                       "leaves" : [ {
@@ -3096,7 +4573,9 @@
                     "text" : {
                       "alignment" : {
                         "xl" : "center",
-                        "xs" : "center"
+                        "xs" : {
+                          "center" : true
+                        }
                       }
                     }
                   }
@@ -4163,7 +5642,88 @@
                 "nodes" : [ {
                   "leaves" : [ {
                     "object" : "leaf",
-                    "text" : "Heading 1"
+                    "text" : "WYSIWYG editor"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "heading-three"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Edit content right in place. Change page layouts as you want."
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              } ],
+              "object" : "widget",
+              "type" : "text"
+            } ],
+            "object" : "block",
+            "size" : {
+              "md" : "4"
+            },
+            "type" : "layout-column"
+          }, {
+            "nodes" : [ {
+              "nodes" : [ {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : ""
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              } ],
+              "object" : "widget",
+              "type" : "text"
+            } ],
+            "object" : "block",
+            "size" : {
+              "md" : "4"
+            },
+            "type" : "layout-column"
+          }, {
+            "nodes" : [ {
+              "nodes" : [ {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : ""
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              } ],
+              "object" : "widget",
+              "type" : "text"
+            } ],
+            "object" : "block",
+            "size" : {
+              "md" : "4"
+            },
+            "type" : "layout-column"
+          } ],
+          "object" : "block",
+          "type" : "layout-row"
+        }, {
+          "nodes" : [ {
+            "nodes" : [ {
+              "nodes" : [ {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Feature index"
                   } ],
                   "object" : "text"
                 } ],
@@ -4175,6 +5735,468 @@
                   "leaves" : [ {
                     "object" : "leaf",
                     "text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Widgets"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "heading-two"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "WYSIWYG editor\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Edit content right in place. Change page layouts as you want.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Content integrity checking\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Get notified when "
+                  } ],
+                  "object" : "text"
+                }, {
+                  "data" : {
+                    "href" : "/features",
+                    "permalinkKey" : "permalinks/00cb6c38-f172-8382-2ef5-348d3b88b387",
+                    "target" : "_blank"
+                  },
+                  "isVoid" : false,
+                  "nodes" : [ {
+                    "leaves" : [ {
+                      "object" : "leaf",
+                      "text" : "deleting"
+                    } ],
+                    "object" : "text"
+                  } ],
+                  "object" : "inline",
+                  "type" : "link"
+                }, {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : " a page, image or anchor referenced in other page.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Multi-target publishing\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Publish same content into VK, Facebook, Github Wiki, Medium and other systems.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Offline work\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Continue creating content even when network is gone. It will synchronize all the data when you’re back online.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Users collaboration\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Author your content with your colleagues at the same time.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Content annotation\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Leave comments on any selected piece of content.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Email template editor\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Create\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Advanced responsive grid\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Change content ordering, sizing, alignment at 5 break-points to better form-factor precision.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Drop-bucket\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Drop text, video, pictures (any format, even PSD), text, links, etc.  to instantly make widgets or upload to media library.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Narrating\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Use your microphone to input your text content and command.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "AI assistance\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Get help from AI with image recognition and annotation, compliance checking and moderation.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Grammar checking\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "{To be described]\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Accessibility\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "{To be described]\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "First class drag & drop\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Drag everything around: text, pictures, columns, rows, sections and editor windows themselves.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Choice of themes\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "{To be described]\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Multi-language content\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "[To be described]\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Full-text search\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "[To be described]\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Markdown support\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Copy paste markdown or type it in directly.\r"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : ""
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "paragraph"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : "Integrations"
+                  } ],
+                  "object" : "text"
+                } ],
+                "object" : "block",
+                "type" : "heading-two"
+              }, {
+                "isVoid" : false,
+                "nodes" : [ {
+                  "leaves" : [ {
+                    "object" : "leaf",
+                    "text" : ""
                   } ],
                   "object" : "text"
                 } ],
