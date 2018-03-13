@@ -39,6 +39,8 @@ import { ViewModelBinderSelector } from "@paperbits/knockout/widgets/viewModelBi
 
 import { FormModelBinder } from "@paperbits/common/widgets/form/formModelBinder";
 import { FormViewModelBinder } from "@paperbits/knockout/widgets/form/formViewModelBinder";
+import { TestimonialsModelBinder } from "@paperbits/knockout/widgets/testimonials/testimonialsModelBinder";
+import { TestimonialsViewModelBinder } from "@paperbits/knockout/widgets/testimonials/testimonialsViewModelBinder";
 
 import { OfflineObjectStorage } from "@paperbits/common/persistence/offlineObjectStorage";
 import { AnchorMiddleware } from "@paperbits/common/persistence/AnchorMiddleware";
@@ -108,6 +110,11 @@ document.addEventListener("DOMContentLoaded", () => {
     modelBinders.push(injector.resolve("formModelBinder"));
     injector.bind("formViewModelBinder", FormViewModelBinder);
     viewModelBinders.push(injector.resolve("formViewModelBinder"));
+
+    injector.bind("testimonialsModelBinder", TestimonialsModelBinder);
+    modelBinders.push(injector.resolve("testimonialsModelBinder"));
+    injector.bind("testimonialsViewModelBinder", TestimonialsViewModelBinder);
+    viewModelBinders.push(injector.resolve("testimonialsViewModelBinder"));
 
     viewModelBinders.push(injector.resolve("pageViewModelBinder"));
     viewModelBinders.push(injector.resolve("sectionViewModelBinder"));
