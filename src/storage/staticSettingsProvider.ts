@@ -1,6 +1,5 @@
 import * as fs from 'fs';
 import { ISettingsProvider } from "@paperbits/common/configuration/ISettingsProvider";
-import { IEventManager } from "@paperbits/common/events/IEventManager";
 
 
 export class StaticSettingsProvider implements ISettingsProvider {

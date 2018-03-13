@@ -1,13 +1,20 @@
 import * as Utils from "@paperbits/common/utils";
-import { OfflineObjectStorage } from "@paperbits/common/persistence/offlineObjectStorage";
-import { IInjector, IInjectorModule } from "@paperbits/common/injection";
 import { IBlobStorage } from '@paperbits/common/persistence/IBlobStorage';
 import { ProgressPromise } from '@paperbits/common/progressPromise';
 
 
+/**
+ * Static blob storage for demo purposes. It stores all the uploaded blobs in memory.
+ */
 export class StaticBlobStorage implements IBlobStorage {
     private storageDataObject = {};
 
+    /**
+     * Uploads specified content into browser memory and stores it as base64 string.
+     * @param blobKey 
+     * @param content 
+     * @param contentType 
+     */
     public async uploadBlob(blobKey: string, content: Uint8Array, contentType?: string): ProgressPromise<void> {
         return new ProgressPromise<void>((resolve, reject, progress) => {
             const base64String = Utils.arrayBufferToBase64(content);
@@ -18,19 +25,27 @@ export class StaticBlobStorage implements IBlobStorage {
         });
     }
 
-    public async getDownloadUrl(fileName: string): Promise<string> {
-        const downloadUrl = this.storageDataObject[fileName];
+    /**
+     * Returns download URL of uploaded blob.
+     * @param blobKey 
+     */
+    public async getDownloadUrl(blobKey: string): Promise<string> {
+        const downloadUrl = this.storageDataObject[blobKey];
 
         if (downloadUrl) {
             return downloadUrl;
         }
         else {
-            throw "file not found";
+            throw `File ${blobKey} not found`;
         }
     }
 
-    public async deleteBlob(fileName: string): Promise<void> {
-        delete this.storageDataObject[fileName];
+    /**
+     * Removes specified blob from memory.
+     * @param blobKey 
+     */
+    public async deleteBlob(blobKey: string): Promise<void> {
+        delete this.storageDataObject[blobKey];
     }
 }
 

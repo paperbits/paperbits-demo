@@ -7,6 +7,7 @@ import { StaticLocalObjectStorage } from "./staticLocalObjectStorage";
 
 export class StaticLocalStorageModule implements IInjectorModule {
     private dataSourceUrl: string;
+    
     constructor() {
         this.register = this.register.bind(this);
     }
@@ -23,7 +24,6 @@ export class StaticLocalStorageModule implements IInjectorModule {
         injector.bindSingleton("userService", StaticUserService);
 
         injector.bindSingletonFactory<IObjectStorage>("objectStorage", (ctx: IInjector) => {
-            
             const offlineObjectStorage = ctx.resolve<OfflineObjectStorage>("offlineObjectStorage");
             const objectStorage = new StaticLocalObjectStorage(this.dataSourceUrl);
 

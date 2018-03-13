@@ -4,16 +4,19 @@ import { IHttpClient } from "@paperbits/common/http/IHttpClient";
 import { IObjectStorage } from "@paperbits/common/persistence/IObjectStorage";
 
 
+/**
+ * Static object storage for demo purposes. It stores all the uploaded blobs in memory.
+ */
 export class StaticObjectStorage implements IObjectStorage {
-    protected storageDataObject: Object;
+    private storageDataObject: Object;
     private splitter = "/";
 
     constructor(
-        protected readonly datasourceUrl: string,
-        protected readonly httpClient: IHttpClient
+        private readonly datasourceUrl: string,
+        private readonly httpClient: IHttpClient
     ) { }
 
-    protected async getData(): Promise<Object> {
+    private async getData(): Promise<Object> {
         if (!this.storageDataObject) {
             const response = await this.httpClient.send({
                 url: this.datasourceUrl,

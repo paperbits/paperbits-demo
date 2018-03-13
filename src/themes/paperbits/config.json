@@ -2,11 +2,11 @@
     "default": {
         "tenantId": "default",
         "firebase": {
-            "apiKey": "AIzaSyB5OCRbwJpE2tDYsMkDXZAVugGCyvYvXsI",
-            "authDomain": "project-7669095260722476815.firebaseapp.com",
-            "databaseURL": "https://project-7669095260722476815.firebaseio.com",
-            "projectId": "project-7669095260722476815",
-            "storageBucket": "project-7669095260722476815.appspot.com",
+            "apiKey": "< your API key >",
+            "authDomain": "< your domain >.firebaseapp.com",
+            "databaseURL": "https://< your database URL >.firebaseio.com",
+            "projectId": "< your project ID >",
+            "storageBucket": "< your storage bucket >.appspot.com",
             "auth": {
                 "google": {
                     "scopes": []
@@ -14,13 +14,13 @@
             }
         },
         "googlemaps": {
-            "apiKey": "AIzaSyC7eT_xRPt3EjX3GuzSvlaZzJmlyFxvFFs"
+            "apiKey": "< your API key >"
         },
         "intercom": {
-            "appId": "l560nd3j"
+            "appId": "< your application ID >"
         },
         "gtm": {
-            "containerId": "GTM-NZM93W"
+            "containerId": "< your container ID >"
         }
     }
 }
