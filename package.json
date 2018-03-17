@@ -8,22 +8,25 @@
         "paperbits",
         "demo"
     ],
+    "scripts": {
+        "develop": "webpack-dev-server --open --config webpack.dev.js",
+        "build": "webpack --config webpack.prod.js",
+        "publish": "gulp publish"
+    },
     "devDependencies": {
         "autoprefixer": "^7.2.4",
         "awesome-typescript-loader": "^3.4.1",
+        "clean-webpack-plugin": "^0.1.19",
         "copy-webpack-plugin": "^4.3.1",
         "css-loader": "^0.28.7",
-        "del": "^3.0.0",
         "extract-text-webpack-plugin": "^3.0.2",
         "file-loader": "^1.1.6",
         "gulp": "^3.9.1",
         "gutil": "^1.6.4",
         "html-loader": "^0.5.1",
-        "merge2": "^1.2.0",
         "node-sass": "^4.7.2",
         "path": "^0.12.7",
         "postcss-loader": "^2.0.6",
-        "run-sequence": "^2.2.1",
         "sass-loader": "^6.0.6",
         "style-loader": "^0.19.1",
         "ts-loader": "^2.3.6",
@@ -31,7 +34,8 @@
         "uglifyjs-webpack-plugin": "^1.2.3",
         "url-loader": "^0.6.2",
         "webpack": "^3.11.0",
-        "webpack-dev-server": "^2.10.0"
+        "webpack-dev-server": "^2.10.0",
+        "webpack-merge": "^4.1.2"
     },
     "dependencies": {
         "@paperbits/common": "0.0.66",

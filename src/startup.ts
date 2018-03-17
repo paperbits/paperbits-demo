@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
     injector.bindModule(new KnockoutRegistrationCommon());
     injector.bindModule(new KnockoutRegistrationWidgets());
     // injector.bindModule(new FirebaseModule());
-    injector.bindModule(new StaticStorageModule());
+    injector.bindModule(new StaticStorageModule("data/demo.json"));
 
     let modelBinders = new Array();
     injector.bindInstance("modelBinderSelector", new ModelBinderSelector(modelBinders));

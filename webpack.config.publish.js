@@ -2,9 +2,10 @@ const path = require('path');
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 const selectedTheme = "paperbits";
-// const selectedTheme = "hostmeapp";
 
 const extractSass = new ExtractTextPlugin({
     filename: (resultPath) => {
@@ -27,20 +28,18 @@ module.exports = {
         library: 'paperbitsPublisher',	
         libraryTarget: 'commonjs2'
     },
-    devtool: 'source-map',
     module: {
         rules: [
-            { // sass / scss loader for webpack
+            {
                 test: /\.scss$/,
                 use: extractSass.extract({        
                     use: [
-                        { loader: "css-loader", options: { url: false, minimize: true, sourceMap: true } },
-                        { loader: 'postcss-loader', options: { sourceMap: true, options: { plugins: () => [autoprefixer] } } },
-                        { loader: "sass-loader", options: { sourceMap: true } }
+                        { loader: "css-loader", options: { url: false, minimize: true, sourceMap: false } },
+                        { loader: 'postcss-loader', options: { sourceMap: false, options: { plugins: () => [autoprefixer] } } },
+                        { loader: "sass-loader", options: { sourceMap: false } }
                     ],
                     fallback: "style-loader"
-                }),
-                //exclude: /node_modules/
+                })
             },
             {
                 test: /\.tsx?$/,
@@ -52,7 +51,6 @@ module.exports = {
             },
             {
                 test: /\.html$/,
-                //exclude: /node_modules/,
                 loader: "html-loader?exportAsEs6Default"
             },
             {
@@ -62,24 +60,15 @@ module.exports = {
         ]
     },
     plugins: [
-        extractSass,      
-        /**
-         * Plugin: CopyWebpackPlugin
-         * Description: Copy files and directories in webpack.
-         *
-         * Copies project static assets.
-         *
-         * See: https://www.npmjs.com/package/copy-webpack-plugin
-         */
+        new CleanWebpackPlugin(['dist']),
+        new webpack.DefinePlugin({	
+            'process.env.NODE_ENV': JSON.stringify('production')
+        }),
+        extractSass,
         new CopyWebpackPlugin([   
             { from: `./src/themes/${selectedTheme}/assets`, to: "theme"},
-            { from: `./src/themes/${selectedTheme}/config.publishing.json`}  
-        ]),
-        // new webpack.DefinePlugin({	
-        //     'process.env': {	
-        //       'NODE_ENV': JSON.stringify('production'),	
-        //     }	
-        // })
+            { from: `./src/themes/${selectedTheme}/config.json`}  
+        ])
     ],
     resolve: {
         extensions: [".ts", ".tsx", ".js", '.jsx', ".html", ".scss"] 

@@ -61,7 +61,7 @@ export class Publisher {
         this.inputBasePath = inputBasePath;
         this.outputBasePath = outputBasePath;
         this.indexFilePath = indexFilePath;
-        this.settingsConfigPath = settingsConfigPath || `${this.inputBasePath}/config.publishing.json`;
+        this.settingsConfigPath = settingsConfigPath || `${this.inputBasePath}/config.json`;
     }
 
     public async publish(): Promise<void> {
@@ -81,8 +81,7 @@ export class Publisher {
         injector.bindModule(new KnockoutRegistrationLoaders());
         injector.bindModule(new KnockoutRegistrationWidgets());
         
-        const staticLocalStorage = new StaticLocalStorageModule();
-        staticLocalStorage.setDataSourceUrl("./src/data/experiment1.json");
+        const staticLocalStorage = new StaticLocalStorageModule("./src/data/demo.json");
         injector.bindModule(staticLocalStorage);        
 
         const configJson = await this.loadFileAsString(this.settingsConfigPath);

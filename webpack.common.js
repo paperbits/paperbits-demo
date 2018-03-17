@@ -2,10 +2,9 @@ const path = require('path');
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 const selectedTheme = "paperbits";
-// const selectedTheme = "hostmeapp";
 
 const extractSass = new ExtractTextPlugin({
     filename: (resultPath) => {
@@ -23,12 +22,11 @@ module.exports = {
     },
     output: {
         filename: './[name].js',
-        path: path.resolve(__dirname, 'dist/dev')
+        path: path.resolve(__dirname, './dist/client')
     },
-    devtool: 'source-map',
     module: {
         rules: [
-            { // sass / scss loader for webpack
+            {
                 test: /\.scss$/,
                 use: extractSass.extract({
                     use: [
@@ -37,8 +35,7 @@ module.exports = {
                         { loader: "sass-loader", options: { sourceMap: true } }
                     ],
                     fallback: "style-loader"
-                }),
-                //exclude: /node_modules/
+                })
             },
             {
                 test: /\.tsx?$/,
@@ -50,7 +47,6 @@ module.exports = {
             },
             {
                 test: /\.html$/,
-                //exclude: /node_modules/,
                 loader: "html-loader?exportAsEs6Default"
             },
             {
@@ -60,45 +56,15 @@ module.exports = {
         ]
     },
     plugins: [
+        new CleanWebpackPlugin(['dist']),
         extractSass,
-        /**
-         * Plugin: CopyWebpackPlugin
-         * Description: Copy files and directories in webpack.
-         *
-         * Copies project static assets.
-         *
-         * See: https://www.npmjs.com/package/copy-webpack-plugin
-         */
         new CopyWebpackPlugin([
             { from: './node_modules/@paperbits/knockout/assets' },
             { from: './node_modules/@paperbits/knockout/styles/fonts', to: 'css/fonts' },
             { from: `./src/data`, to: "data" },
             { from: `./src/themes/${selectedTheme}/assets`, to: "theme" },
-            { from: `./src/themes/${selectedTheme}/config.json` },
-            { from: `./src/themes/${selectedTheme}/config.publishing.json` }
-        ]),
-        //new webpack.optimize.ModuleConcatenationPlugin(),   
-        //new webpack.HotModuleReplacementPlugin()      
-        /**
-         * Webpack plugin to optimize a JavaScript file for faster initial load
-         * by wrapping eagerly-invoked functions.
-         *
-         * See: https://github.com/vigneshshanmugam/optimize-js-plugin
-         */
-        // new OptimizeJsPlugin({            
-        //     sourceMap: false
-        // }),
-        new UglifyJsPlugin({
-            uglifyOptions: {
-                ie8: false,
-                ecma: 5,
-                mangle: false,
-                output: {
-                    comments: false,
-                    beautify: false
-                }
-            }
-        })
+            { from: `./src/themes/${selectedTheme}/config.json` }
+        ])
     ],
     resolve: {
         extensions: [".ts", ".tsx", ".js",  '.jsx', ".html", ".scss"]

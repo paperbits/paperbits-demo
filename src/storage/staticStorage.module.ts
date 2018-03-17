@@ -18,7 +18,7 @@ import { IHttpClient } from "@paperbits/common/http/IHttpClient";
 
 
 export class StaticStorageModule implements IInjectorModule {
-    constructor() {
+    constructor(private datasourceUrl) {
         this.register = this.register.bind(this);
     }
 
@@ -28,9 +28,8 @@ export class StaticStorageModule implements IInjectorModule {
 
         injector.bindSingletonFactory<IObjectStorage>("objectStorage", (ctx: IInjector) => {
             const httpClient = ctx.resolve<IHttpClient>("httpClient");
-            const datasourceUrl = "data/experiment1.json";
             const offlineObjectStorage = ctx.resolve<OfflineObjectStorage>("offlineObjectStorage");
-            const objectStorage = new StaticObjectStorage(datasourceUrl, httpClient);
+            const objectStorage = new StaticObjectStorage(this.datasourceUrl, httpClient);
 
             offlineObjectStorage.registerUnderlyingStorage(objectStorage);
 
