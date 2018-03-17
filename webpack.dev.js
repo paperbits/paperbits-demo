@@ -5,6 +5,9 @@ const common = require('./webpack.common.js');
 module.exports = merge(common, {
     devtool: 'inline-source-map',
     devServer: {
-        contentBase: './dist/client'
-    }
+        hot: true
+    },
+    plugins: [
+        new webpack.HotModuleReplacementPlugin()
+    ]
 });
