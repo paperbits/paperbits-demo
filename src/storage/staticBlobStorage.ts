@@ -1,3 +1,12 @@
+/**
+ * @license
+ * Copyright Vienna LLC. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://paperbits.io/license.
+ */
+
+
 import * as Utils from "@paperbits/common/utils";
 import { IBlobStorage } from '@paperbits/common/persistence/IBlobStorage';
 import { ProgressPromise } from '@paperbits/common/progressPromise';

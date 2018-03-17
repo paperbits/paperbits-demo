@@ -1,3 +1,12 @@
+/**
+ * @license
+ * Copyright Vienna LLC. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://paperbits.io/license.
+ */
+
+
 import "es6-shim";
 import "setimmediate";
 import "@paperbits/knockout/registrations/knockout.editors";
