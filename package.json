@@ -11,7 +11,7 @@
     "scripts": {
         "develop": "webpack-dev-server --open --config webpack.dev.js",
         "build": "webpack --config webpack.prod.js",
-        "publish": "gulp publish"
+        "publish": "webpack --config webpack.publish.js && gulp publish"
     },
     "devDependencies": {
         "autoprefixer": "^7.2.4",

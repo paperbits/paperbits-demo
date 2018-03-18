@@ -1,23 +1,7 @@
 const gulp = require("gulp");
 const gutil = require("gulp-util");
-const webpack = require("webpack");
 
-gulp.task("webpack-publish", (callback) => {
-    var webPackConfig = require("./webpack.config.publish.js");
-    webpack(webPackConfig, function (err, stats) {
-        if (err) throw new gutil.PluginError("webpack", err);
-
-        gutil.log("[webpack-publish]", stats.toString({
-            colors: true,
-            progress: true
-        }));
-
-        callback();
-    });
-});
-
-
-gulp.task("publish", ["webpack-publish"], () => {
+gulp.task("publish", () => {
     const pub = require("./dist/dev/publisher.js");
     const inputBasePath = "./dist/dev/theme";
     const outputBasePath = "./dist/published";
