@@ -25,6 +25,7 @@
         "gutil": "^1.6.4",
         "html-loader": "^0.5.1",
         "node-sass": "^4.7.2",
+        "open-browser-webpack-plugin": "0.0.5",
         "path": "^0.12.7",
         "postcss-loader": "^2.0.6",
         "sass-loader": "^6.0.6",
