@@ -4,6 +4,8 @@ This repository contains an example of how using Paperbits you can enable advanc
 
 ## Resources
 
+[Live demo](https://demo.paperbits.io)
+
 [Getting started](https://paperbits.io/wiki/getting-started)
 
 [Blog](https://paperbits.io/blog)
