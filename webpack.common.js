@@ -9,7 +9,7 @@ const selectedTheme = "paperbits";
 
 module.exports = {
     entry: {
-        "scripts/paperbits": ['./src/startup.ts'],
+        "scripts/paperbits": ['./src/startup.develop.ts'],
         "css/paperbits" : ['./node_modules/@paperbits/knockout/styles/vienna.scss'],
         "theme/scripts/theme": [`./src/themes/${selectedTheme}/scripts/index.ts`],
         "theme/css/theme" : [`./src/themes/${selectedTheme}/styles/styles.scss`]
