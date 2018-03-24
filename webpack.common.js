@@ -3,22 +3,16 @@ const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin"); 
 
 const selectedTheme = "paperbits";
 
-const extractSass = new ExtractTextPlugin({
-    filename: (resultPath) => {
-        let path = resultPath('./[name].css');
-        console.log("css path:" + path);
-        return resultPath('./[name].css').replace("scripts", "css");
-    },
-    allChunks: true
-});
-
 module.exports = {
     entry: {
-        "scripts/paperbits": ['./src/startup.ts', './node_modules/@paperbits/knockout/styles/vienna.scss'],
-        "theme/scripts/theme": [`./src/themes/${selectedTheme}/scripts/index.ts`, `./src/themes/${selectedTheme}/styles/styles.scss`]
+        "scripts/paperbits": ['./src/startup.ts'],
+        "css/paperbits" : ['./node_modules/@paperbits/knockout/styles/vienna.scss'],
+        "theme/scripts/theme": [`./src/themes/${selectedTheme}/scripts/index.ts`],
+        "theme/css/theme" : [`./src/themes/${selectedTheme}/styles/styles.scss`]
     },
     output: {
         filename: './[name].js',
@@ -28,14 +22,12 @@ module.exports = {
         rules: [
             {
                 test: /\.scss$/,
-                use: extractSass.extract({
-                    use: [
-                        { loader: "css-loader", options: { url: false, minimize: true, sourceMap: true } },
-                        { loader: 'postcss-loader', options: { sourceMap: true, options: { plugins: () => [autoprefixer] } } },
-                        { loader: "sass-loader", options: { sourceMap: true } }
-                    ],
-                    fallback: "style-loader"
-                })
+                use: [ 
+                    MiniCssExtractPlugin.loader, 
+                    { loader: "css-loader", options: { url: false, minimize: true, sourceMap: true } },
+                    { loader: 'postcss-loader', options: { sourceMap: true, options: { plugins: () => [autoprefixer] } } },
+                    { loader: "sass-loader", options: { sourceMap: true } }                
+                ]
             },
             {
                 test: /\.tsx?$/,
@@ -57,7 +49,10 @@ module.exports = {
     },
     plugins: [
         new CleanWebpackPlugin(['dist']),
-        extractSass,
+        new MiniCssExtractPlugin({
+            filename: "[name].css",
+            chunkFilename: "[id].css"
+        }),      
         new CopyWebpackPlugin([
             { from: './node_modules/@paperbits/knockout/assets' },
             { from: './node_modules/@paperbits/knockout/styles/fonts', to: 'css/fonts' },
