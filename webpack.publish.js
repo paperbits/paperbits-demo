@@ -18,7 +18,7 @@ const extractSass = new ExtractTextPlugin({
 module.exports = {
     target: 'node', 
     entry: {
-        "publisher": ['./src/publisher.ts'],
+        "publisher": ['./src/startup.publish.ts'],
         "theme/scripts/theme": [`./src/themes/${selectedTheme}/scripts/index.ts`, `./src/themes/${selectedTheme}/styles/styles.scss`]
     },
     output: {

@@ -17,7 +17,7 @@ const extractSass = new ExtractTextPlugin({
 
 module.exports = {
     entry: {
-        "scripts/paperbits": ['./src/startup.ts', './node_modules/@paperbits/knockout/styles/vienna.scss'],
+        "scripts/paperbits": ['./src/startup.develop.ts', './node_modules/@paperbits/knockout/styles/vienna.scss'],
         "theme/scripts/theme": [`./src/themes/${selectedTheme}/scripts/index.ts`, `./src/themes/${selectedTheme}/styles/styles.scss`]
     },
     output: {
