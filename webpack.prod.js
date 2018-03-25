@@ -6,22 +6,23 @@ const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 module.exports = merge(common, {
     mode: "production",
     optimization: {
-        minimize: false
+        minimizer: [
+            new UglifyJSPlugin({
+                uglifyOptions: {
+                    ie8: false,
+                    ecma: 5,
+                    mangle: false,
+                    output: {
+                        comments: false,
+                        beautify: false
+                    }
+                }
+            })
+        ]
     },
     plugins: [
         new webpack.DefinePlugin({	
             'process.env.NODE_ENV': JSON.stringify('production')
-        }),
-        // new UglifyJSPlugin({
-        //     uglifyOptions: {
-        //         ie8: false,
-        //         ecma: 5,
-        //         mangle: false,
-        //         output: {
-        //             comments: false,
-        //             beautify: false
-        //         }
-        //     }
-        // })
+        })
     ]
 });

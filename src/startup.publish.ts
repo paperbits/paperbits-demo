@@ -51,10 +51,10 @@ import { PublishingNodeModule } from "@paperbits/publishing/publishers/publishin
 import { FormModelBinder } from "@paperbits/common/widgets/form/formModelBinder";
 import { FormViewModelBinder } from "@paperbits/knockout/widgets/form/formViewModelBinder";
 import { SlateModule } from "@paperbits/slate/slate.module";
-import { StaticLocalStorageModule } from "./storage/staticLocalStorage.module";
-import { StaticSettingsProvider } from "./storage/staticSettingsProvider";
+import { StaticLocalStorageModule } from "./components/staticLocalStorage.module";
+import { StaticSettingsProvider } from "./components/staticSettingsProvider";
 import { FileSystemBlobStorage } from "@paperbits/publishing/node/filesystemBlobStorage";
-import { StaticRouteHandler } from "./storage/staticRouteHandler";
+import { StaticRouteHandler } from "./components/staticRouteHandler";
 
 export class Publisher {
     constructor(private inputBasePath, private outputBasePath, private indexFilePath, private settingsConfigPath?) {
