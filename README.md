@@ -10,7 +10,7 @@ This repository contains an example of how using Paperbits you can enable advanc
 
 [Blog](https://paperbits.io/blog)
 
-[Contributing guide](https://paperbits/contributing)
+[Contributing guide](https://paperbits.io/contributing)
 
 
 ## License
