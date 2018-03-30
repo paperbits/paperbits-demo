@@ -2,7 +2,7 @@
 
 This repository contains an example of how using Paperbits you can enable advanced content authoring tools in your web apps.
 
-[![Join the chat at https://https://gitter.im/paperbits-demo/discussions](https://badges.gitter.im/Join%20Chat.svg)](https://https://gitter.im/paperbits-demo/discussions)
+[![Join the chat at https://https://gitter.im/paperbits-demo/discussions](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/paperbits-demo/discussions)
 
 ## Resources
 
