@@ -1,6 +1,6 @@
 {
     "name": "paperbits-demo",
-    "version": "0.0.69",
+    "version": "0.0.70",
     "description": "An example of using PaperBits to build web apps with rich content editing capability.",
     "author": "Vienna LLC",
     "license": "GPL-3.0",
@@ -37,12 +37,12 @@
         "webpack-merge": "^4.1.2"
     },
     "dependencies": {
-        "@paperbits/common": "0.0.69",
-        "@paperbits/knockout": "0.0.69",
+        "@paperbits/common": "0.0.70",
+        "@paperbits/knockout": "0.0.70",
         "@paperbits/publishing": "0.0.9",
-        "@paperbits/slate": "0.0.69",
+        "@paperbits/slate": "0.0.70",
         "es6-shim": "^0.35.3",
-        "knockout": "^3.4.2",
+        "knockout": "^3.5.0-beta",
         "setimmediate": "^1.0.5",
         "xhr2": "^0.1.4"
     }
