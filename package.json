@@ -39,7 +39,7 @@
     "dependencies": {
         "@paperbits/common": "0.0.70",
         "@paperbits/knockout": "0.0.70",
-        "@paperbits/publishing": "0.0.9",
+        "@paperbits/publishing": "0.0.70",
         "@paperbits/slate": "0.0.70",
         "es6-shim": "^0.35.3",
         "knockout": "^3.5.0-beta",
