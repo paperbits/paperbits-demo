@@ -10,7 +10,7 @@
     ],
     "scripts": {
         "develop": "webpack-dev-server --open --config webpack.dev.js",
-        "build": "webpack --config webpack.prod.js",
+        "build": "webpack --config webpack.build.js",
         "publish": "webpack --config webpack.publish.js && gulp publish"
     },
     "devDependencies": {
