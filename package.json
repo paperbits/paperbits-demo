@@ -3,7 +3,7 @@
     "version": "0.0.70",
     "description": "An example of using PaperBits to build web apps with rich content editing capability.",
     "author": "Vienna LLC",
-    "license": "GPL-3.0",
+    "license": "MIT",
     "keywords": [
         "paperbits",
         "demo"
