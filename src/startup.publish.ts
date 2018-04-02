@@ -91,7 +91,6 @@ export class Publisher {
         
         injector.bindInstance("inputBlobStorage", new FileSystemBlobStorage(path.resolve(this.inputBasePath)));
         injector.bindInstance("outputBlobStorage", new FileSystemBlobStorage(path.resolve(this.outputBasePath)));
-        publishNodeModule.registerComponents(injector);
     
         let modelBinders = new Array<IModelBinder>();
         injector.bindInstance("modelBinderSelector", new ModelBinderSelector(modelBinders));
