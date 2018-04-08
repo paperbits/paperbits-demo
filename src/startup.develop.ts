@@ -50,6 +50,8 @@ import { FormModelBinder } from "@paperbits/common/widgets/form/formModelBinder"
 import { FormViewModelBinder } from "@paperbits/knockout/widgets/form/formViewModelBinder";
 import { TestimonialsModelBinder } from "@paperbits/knockout/widgets/testimonials/testimonialsModelBinder";
 import { TestimonialsViewModelBinder } from "@paperbits/knockout/widgets/testimonials/testimonialsViewModelBinder";
+import { ContentTableModelBinder } from "@paperbits/common/widgets/content-table/contentTableModelBinder";
+import { ContentTableViewModelBinder } from "@paperbits/knockout/widgets/content-table/contentTableViewModelBinder";
 
 import { OfflineObjectStorage } from "@paperbits/common/persistence/offlineObjectStorage";
 import { AnchorMiddleware } from "@paperbits/common/persistence/AnchorMiddleware";
@@ -71,7 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
     injector.bindModule(new KnockoutRegistrationCommon());
     injector.bindModule(new KnockoutRegistrationWidgets());
     // injector.bindModule(new FirebaseModule());
-    injector.bindModule(new DemoModule("data/demo.json"));
+    injector.bindModule(new DemoModule("/data/demo.json"));
 
     let modelBinders = new Array();
     injector.bindInstance("modelBinderSelector", new ModelBinderSelector(modelBinders));
@@ -124,6 +126,11 @@ document.addEventListener("DOMContentLoaded", () => {
     modelBinders.push(injector.resolve("testimonialsModelBinder"));
     injector.bind("testimonialsViewModelBinder", TestimonialsViewModelBinder);
     viewModelBinders.push(injector.resolve("testimonialsViewModelBinder"));
+
+    injector.bind("contentTableModelBinder", ContentTableModelBinder);
+    modelBinders.push(injector.resolve("contentTableModelBinder"));
+    injector.bind("contentTableViewModelBinder", ContentTableViewModelBinder);
+    viewModelBinders.push(injector.resolve("contentTableViewModelBinder"));
 
     viewModelBinders.push(injector.resolve("pageViewModelBinder"));
     viewModelBinders.push(injector.resolve("sectionViewModelBinder"));
