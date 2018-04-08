@@ -22,9 +22,6 @@ html {
 ol,
 p,
 ul {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-
     p {
         margin-top: 0;
         margin-bottom: 0;
@@ -34,6 +31,8 @@ ul {
 h1 {
     font-size: 1.7rem;
     font-weight: bold;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
 
     &.text-font-display {
         font-size: 2rem;
@@ -44,8 +43,8 @@ h1 {
 h2 {
     font-size: 1.2rem;
     font-weight: bold;
-    margin-top: 1.2rem;
-    margin-bottom: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 
     &.text-font-display {
         font-weight: normal;
@@ -53,16 +52,22 @@ h2 {
 }
 
 h3 {
-    font-size: $font-size-h3;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
 }
 
 h4 {
     font-size: $font-size-h4;
-    margin-bottom: 1.5rem;
+    font-weight: bold;
+    margin-top: .2rem;
+    margin-bottom: .2rem;
 }
 
 h5 {
     font-size: $font-size-h5;
+    font-weight: bold;
 }
 
 h6 {
@@ -113,10 +118,22 @@ h6 {
     max-width: 900px;
 }
 
-code, pre {
+code,
+pre {
     color: #FEFEFE;
     background: #4B4B4D;
     padding: 15px 25px;
     border-radius: 10px;
-    font-size: .8em;
+    font-size: .7em;
+}
+
+a {
+    color: $link-color;
+
+    &:hover {
+        color: $link-hover-color;
+        text-decoration: none;
+        //text-decoration: underline;
+        //text-decoration-style: dashed;
+    }
 }
