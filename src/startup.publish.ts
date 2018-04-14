@@ -18,7 +18,7 @@ import { ISiteSettings } from "@paperbits/common/sites/ISettings";
 import { InversifyInjector } from "@paperbits/common/injection/inversifyInjector";
 import { ISiteService } from "@paperbits/common/sites/ISiteService";
 import { ISettingsProvider, Settings } from "@paperbits/common/configuration/ISettingsProvider";
-import { IEventManager } from "@paperbits/common/events/IEventManager";
+import { IEventManager } from "@paperbits/common/events";
 import { ComponentRegistrationCommon } from "@paperbits/knockout/registrations/components.common";
 import { KnockoutRegistrationCommon } from "@paperbits/knockout/registrations/knockout.common";
 import { KnockoutRegistrationWidgets } from "@paperbits/knockout/registrations/knockout.widgets";

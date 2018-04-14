@@ -22,8 +22,8 @@ import { KnockoutRegistrationWidgets } from "@paperbits/knockout/registrations/k
 import { KnockoutRegistrationLoaders } from "@paperbits/knockout/registrations/knockout.loaders";
 // import { FirebaseModule } from "@paperbits/firebase/firebase.module";
 import { DemoModule } from "./components/demo.module";
-import { GlobalEventHandler } from "@paperbits/common/events/globalEventHandler";
-import { IEventManager } from "@paperbits/common/events/IEventManager";
+import { GlobalEventHandler } from "@paperbits/common/events";
+import { IEventManager } from "@paperbits/common/events";
 import { SlateModule } from "@paperbits/slate/slate.module";
 import { IModelBinder } from "@paperbits/common/editing/IModelBinder";
 import { ModelBinderSelector } from "@paperbits/common/widgets/modelBinderSelector";

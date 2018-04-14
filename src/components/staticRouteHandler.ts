@@ -8,7 +8,7 @@
 
 
 import { IRouteHandler } from "@paperbits/common/routing/IRouteHandler";
-import { IEventManager } from "@paperbits/common/events/IEventManager";
+import { IEventManager } from "@paperbits/common/events";
 
 
 export class StaticRouteHandler implements IRouteHandler {
