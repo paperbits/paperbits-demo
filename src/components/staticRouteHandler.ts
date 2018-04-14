@@ -7,7 +7,7 @@
  */
 
 
-import { IRouteHandler } from "@paperbits/common/routing/IRouteHandler";
+import { IRouteHandler } from "@paperbits/common/routing";
 import { IEventManager } from "@paperbits/common/events";
 
 
