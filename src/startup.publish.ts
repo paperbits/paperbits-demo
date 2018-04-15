@@ -50,7 +50,7 @@ import { FormModelBinder } from "@paperbits/common/widgets/form/formModelBinder"
 import { FormViewModelBinder } from "@paperbits/knockout/widgets/form/formViewModelBinder";
 import { SlateModule } from "@paperbits/slate/slate.module";
 import { StaticSettingsProvider } from "./components/staticSettingsProvider";
-import { FileSystemBlobStorage } from "@paperbits/publishing/node/filesystemBlobStorage";
+import { FileSystemBlobStorage } from "@paperbits/publishing/persistence";
 import { StaticRouteHandler } from "./components/staticRouteHandler";
 
 //import { FirebaseModule } from "@paperbits/firebase/firebase.module";
