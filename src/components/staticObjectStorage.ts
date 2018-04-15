@@ -33,7 +33,9 @@ export class StaticObjectStorage implements IObjectStorage {
                 method: "GET"
             })
 
-            this.storageDataObject = response.toObject();
+            const dataObject = response.toObject();
+
+            this.storageDataObject = dataObject["tenants"]["default"];
         }
 
         return this.storageDataObject;
@@ -174,7 +176,7 @@ export class StaticObjectStorage implements IObjectStorage {
     public async saveChanges(delta: Object): Promise<void> {
         const content = JSON.stringify(this.storageDataObject);
         const blob = new Blob([content], { type: "text/plain;charset=utf-8" });
-        
+
         FileSaver.saveAs(blob, "demo.json");
     }
 }

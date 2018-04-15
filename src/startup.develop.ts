@@ -10,8 +10,8 @@
 import "es6-shim";
 import "setimmediate";
 import "@paperbits/knockout/registrations/knockout.editors";
-
 import * as ko from "knockout";
+import * as Utils from "./utils";
 import { IntercomService } from "@paperbits/common/intercom/intercomService";
 import { IInjector, IInjectorModule } from "@paperbits/common/injection";
 import { InversifyInjector } from "@paperbits/common/injection/inversifyInjector";
@@ -20,15 +20,12 @@ import { ComponentRegistrationEditors } from "@paperbits/knockout/registrations/
 import { KnockoutRegistrationCommon } from "@paperbits/knockout/registrations/knockout.common";
 import { KnockoutRegistrationWidgets } from "@paperbits/knockout/registrations/knockout.widgets";
 import { KnockoutRegistrationLoaders } from "@paperbits/knockout/registrations/knockout.loaders";
-// import { FirebaseModule } from "@paperbits/firebase/firebase.module";
-import { DemoModule } from "./components/demo.module";
 import { GlobalEventHandler } from "@paperbits/common/events";
 import { IEventManager } from "@paperbits/common/events";
 import { SlateModule } from "@paperbits/slate/slate.module";
 import { IModelBinder } from "@paperbits/common/editing/IModelBinder";
 import { ModelBinderSelector } from "@paperbits/common/widgets/modelBinderSelector";
 import { theme } from "@paperbits/knockout/application/theme";
-
 import { PageViewModelBinder } from "@paperbits/knockout/widgets/page/pageViewModelBinder";
 import { LayoutViewModelBinder } from "@paperbits/knockout/widgets/layout/layoutViewModelBinder";
 import { RowViewModelBinder } from "@paperbits/knockout/widgets/row/rowViewModelBinder";
@@ -45,19 +42,20 @@ import { MapViewModelBinder } from "@paperbits/knockout/widgets/map/mapViewModel
 import { SliderViewModelBinder } from "@paperbits/knockout/widgets/slider/sliderViewModelBinder";
 import { IViewModelBinder } from "@paperbits/common/widgets/IViewModelBinder";
 import { ViewModelBinderSelector } from "@paperbits/knockout/widgets/viewModelBinderSelector";
-
 import { FormModelBinder } from "@paperbits/common/widgets/form/formModelBinder";
 import { FormViewModelBinder } from "@paperbits/knockout/widgets/form/formViewModelBinder";
 import { TestimonialsModelBinder } from "@paperbits/knockout/widgets/testimonials/testimonialsModelBinder";
 import { TestimonialsViewModelBinder } from "@paperbits/knockout/widgets/testimonials/testimonialsViewModelBinder";
 import { ContentTableModelBinder } from "@paperbits/common/widgets/content-table/contentTableModelBinder";
 import { ContentTableViewModelBinder } from "@paperbits/knockout/widgets/content-table/contentTableViewModelBinder";
-
 import { OfflineObjectStorage } from "@paperbits/common/persistence/offlineObjectStorage";
 import { AnchorMiddleware } from "@paperbits/common/persistence/AnchorMiddleware";
 import { IntentionsBuilder } from "@paperbits/common/appearance/intentionsBuilder";
 import { IntentionsProvider } from "@paperbits/knockout/application/intentionsProvider";
 import { IIntentionsBuilder } from "@paperbits/common/appearance/intention";
+
+//import { FirebaseModule } from "@paperbits/firebase/firebase.module";
+import { DemoModule } from "./components/demo.module";
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -72,7 +70,8 @@ document.addEventListener("DOMContentLoaded", () => {
     injector.bindModule(new KnockoutRegistrationLoaders());
     injector.bindModule(new KnockoutRegistrationCommon());
     injector.bindModule(new KnockoutRegistrationWidgets());
-    // injector.bindModule(new FirebaseModule());
+
+    //injector.bindModule(new FirebaseModule());
     injector.bindModule(new DemoModule("/data/demo.json"));
 
     let modelBinders = new Array();
@@ -166,5 +165,3 @@ document.addEventListener("DOMContentLoaded", () => {
     ko.options["createChildContextWithAs"] = true;
     ko.applyBindings();
 });
-
-

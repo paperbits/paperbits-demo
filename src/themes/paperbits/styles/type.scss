@@ -120,8 +120,8 @@ h6 {
 
 code,
 pre {
-    color: #FEFEFE;
-    background: #4B4B4D;
+    color: #37474f;
+    background: #f7f7f7;
     padding: 15px 25px;
     border-radius: 10px;
     font-size: .7em;
@@ -133,7 +133,5 @@ a {
     &:hover {
         color: $link-hover-color;
         text-decoration: none;
-        //text-decoration: underline;
-        //text-decoration-style: dashed;
     }
 }
