@@ -156,6 +156,8 @@ document.addEventListener("DOMContentLoaded", () => {
     injector.resolve("backgroundBindingHandler");
     injector.resolve("resizableBindingHandler");
     injector.resolve("savingHandler");
+    injector.resolve("errorHandler");
+    injector.resolve("knockoutValidation");
 
     const offlineObjectStorage = injector.resolve<OfflineObjectStorage>("offlineObjectStorage");
     const anchorMiddleware = injector.resolve<AnchorMiddleware>("anchorMiddleware");

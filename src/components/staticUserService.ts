@@ -16,6 +16,6 @@ export class StaticUserService implements IUserService {
     constructor() { }
 
     public async getUserPhotoUrl(): Promise<string> {
-        return "http://cdn.paperbits.io/images/portrait.svg";
+        return "https://cdn.paperbits.io/images/portrait.svg";
     }
 }
