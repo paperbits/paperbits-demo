@@ -3,23 +3,18 @@ const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-
+const MiniCssExtractPlugin = require("mini-css-extract-plugin"); 
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const selectedTheme = "paperbits";
 
-const extractSass = new ExtractTextPlugin({
-    filename: (resultPath) => {
-        let path = resultPath('./[name].css');
-        console.log("css path:" + path);
-        return resultPath('./[name].css').replace("scripts", "css");
-    },
-    allChunks: true
-});
-
 module.exports = {
+    mode: "development",
     target: 'node', 
     entry: {
         "publisher": ['./src/startup.publish.ts'],
-        "theme/scripts/theme": [`./src/themes/${selectedTheme}/scripts/index.ts`, `./src/themes/${selectedTheme}/styles/styles.scss`]
+        "css/paperbits" : ['./node_modules/@paperbits/knockout/styles/vienna.scss'],
+        "theme/scripts/theme": [`./src/themes/${selectedTheme}/scripts/index.ts`],
+        "theme/css/theme" : [`./src/themes/${selectedTheme}/styles/styles.scss`]
     },
     output: {
         filename: './[name].js',
@@ -31,14 +26,12 @@ module.exports = {
         rules: [
             {
                 test: /\.scss$/,
-                use: extractSass.extract({        
-                    use: [
-                        { loader: "css-loader", options: { url: false, minimize: true, sourceMap: false } },
-                        { loader: 'postcss-loader', options: { sourceMap: false, options: { plugins: () => [autoprefixer] } } },
-                        { loader: "sass-loader", options: { sourceMap: false } }
-                    ],
-                    fallback: "style-loader"
-                })
+                use: [ 
+                    MiniCssExtractPlugin.loader, 
+                    { loader: "css-loader", options: { url: false, minimize: true, sourceMap: true } },
+                    { loader: 'postcss-loader', options: { sourceMap: true, options: { plugins: () => [autoprefixer] } } },
+                    { loader: "sass-loader", options: { sourceMap: true } }                
+                ]
             },
             {
                 test: /\.tsx?$/,
@@ -53,17 +46,17 @@ module.exports = {
                 loader: "html-loader?exportAsEs6Default"
             },
             {
-                test: /\.(png|woff|woff2|eot|ttf|svg)$/, 
+                test: /\.(png|woff|woff2|eot|ttf|svg)$/,
                 loader: 'url-loader?limit=100000'
             }
         ]
     },
     plugins: [
         new CleanWebpackPlugin(['dist']),
-        new webpack.DefinePlugin({	
-            'process.env.NODE_ENV': JSON.stringify('production')
+        new MiniCssExtractPlugin({
+            filename: "[name].css",
+            chunkFilename: "[id].css"
         }),
-        extractSass,
         new CopyWebpackPlugin([   
             { from: `./src/themes/${selectedTheme}/assets`, to: "theme"},
             { from: `./src/themes/${selectedTheme}/config.json`}  
