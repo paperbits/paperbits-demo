@@ -11,14 +11,13 @@ import "setimmediate";
 import * as fs from "fs";
 import * as path from "path";
 import * as ko from "knockout";
-
+import * as Utils from "./utils";
 import { IInjector, IInjectorModule } from "@paperbits/common/injection";
 import { ISiteSettings } from "@paperbits/common/sites/ISettings";
-
 import { InversifyInjector } from "@paperbits/common/injection/inversifyInjector";
 import { ISiteService } from "@paperbits/common/sites/ISiteService";
 import { ISettingsProvider, Settings } from "@paperbits/common/configuration/ISettingsProvider";
-import { IEventManager } from "@paperbits/common/events/IEventManager";
+import { IEventManager } from "@paperbits/common/events";
 import { ComponentRegistrationCommon } from "@paperbits/knockout/registrations/components.common";
 import { KnockoutRegistrationCommon } from "@paperbits/knockout/registrations/knockout.common";
 import { KnockoutRegistrationWidgets } from "@paperbits/knockout/registrations/knockout.widgets";
@@ -29,7 +28,6 @@ import { IntentionsBuilder } from "@paperbits/common/appearance/intentionsBuilde
 import { IntentionsProvider } from "@paperbits/knockout/application/intentionsProvider";
 import { IIntentionsBuilder } from "@paperbits/common/appearance/intention";
 import { theme } from "@paperbits/knockout/application/theme";
-
 import { PageViewModelBinder } from "@paperbits/knockout/widgets/page/pageViewModelBinder";
 import { LayoutViewModelBinder } from "@paperbits/knockout/widgets/layout/layoutViewModelBinder";
 import { RowViewModelBinder } from "@paperbits/knockout/widgets/row/rowViewModelBinder";
@@ -51,10 +49,12 @@ import { PublishingNodeModule } from "@paperbits/publishing/publishers/publishin
 import { FormModelBinder } from "@paperbits/common/widgets/form/formModelBinder";
 import { FormViewModelBinder } from "@paperbits/knockout/widgets/form/formViewModelBinder";
 import { SlateModule } from "@paperbits/slate/slate.module";
-import { StaticLocalStorageModule } from "./components/staticLocalStorage.module";
 import { StaticSettingsProvider } from "./components/staticSettingsProvider";
-import { FileSystemBlobStorage } from "@paperbits/publishing/node/filesystemBlobStorage";
+import { FileSystemBlobStorage } from "@paperbits/publishing/persistence";
 import { StaticRouteHandler } from "./components/staticRouteHandler";
+
+//import { FirebaseModule } from "@paperbits/firebase/firebase.module";
+import { StaticLocalStorageModule } from "./components/staticLocalStorage.module";
 
 export class Publisher {
     constructor(private inputBasePath, private outputBasePath, private indexFilePath, private settingsConfigPath?) {
@@ -65,35 +65,34 @@ export class Publisher {
     }
 
     public async publish(): Promise<void> {
-        let html = await this.loadFileAsString(this.indexFilePath);
-        
+        const html = await Utils.loadFileAsString(this.indexFilePath);
+
         const publishNodeModule = new PublishingNodeModule(html);
         publishNodeModule.initDocument();
-        
+
         const injector = new InversifyInjector();
-    
+
         const intentionsBuilder: IIntentionsBuilder = new IntentionsBuilder(theme);
         injector.bindInstance("intentionsProvider", new IntentionsProvider(intentionsBuilder));
 
         injector.bindModule(new SlateModule());
-        injector.bindModule(new ComponentRegistrationCommon());        
+        injector.bindModule(new ComponentRegistrationCommon());
         injector.bindModule(new KnockoutRegistrationCommon());
         injector.bindModule(new KnockoutRegistrationLoaders());
         injector.bindModule(new KnockoutRegistrationWidgets());
-        
-        const staticLocalStorage = new StaticLocalStorageModule("./src/data/demo.json");
-        injector.bindModule(staticLocalStorage);        
 
-        const configJson = await this.loadFileAsString(this.settingsConfigPath);
+        //injector.bindModule(new FirebaseModule());
+        injector.bindModule(new StaticLocalStorageModule("./src/data/demo.json"));
+
+        const configJson = await Utils.loadFileAsString(this.settingsConfigPath);
         const settings = JSON.parse(configJson);
         injector.bindInstance("settingsProvider", new StaticSettingsProvider(settings));
         injector.bindSingleton("routeHandler", StaticRouteHandler);
-        
+
         injector.bindInstance("inputBlobStorage", new FileSystemBlobStorage(path.resolve(this.inputBasePath)));
         injector.bindInstance("outputBlobStorage", new FileSystemBlobStorage(path.resolve(this.outputBasePath)));
-        publishNodeModule.registerComponents(injector);
-    
-        let modelBinders = new Array<IModelBinder>();
+
+        const modelBinders = new Array<IModelBinder>();
         injector.bindInstance("modelBinderSelector", new ModelBinderSelector(modelBinders));
         modelBinders.push(injector.resolve("navbarModelBinder"));
         modelBinders.push(injector.resolve("textModelBinder"));
@@ -107,8 +106,8 @@ export class Publisher {
         modelBinders.push(injector.resolve("pageModelBinder"));
         modelBinders.push(injector.resolve("blogModelBinder"));
         modelBinders.push(injector.resolve("sliderModelBinder"));
-        
-       
+
+
         injector.bind("htmlEditorFactory", () => {
             return {
                 createHtmlEditor: () => {
@@ -116,9 +115,9 @@ export class Publisher {
                 }
             }
         })
-    
-    
-        let viewModelBinders = new Array<IViewModelBinder<any, any>>();
+
+
+        const viewModelBinders = new Array<IViewModelBinder<any, any>>();
         injector.bindInstance("viewModelBinderSelector", new ViewModelBinderSelector(viewModelBinders));
         injector.bind("pageViewModelBinder", PageViewModelBinder);
         injector.bind("layoutViewModelBinder", LayoutViewModelBinder);
@@ -134,7 +133,7 @@ export class Publisher {
         injector.bind("youtubePlayerViewModelBinder", YoutubePlayerViewModelBinder);
         injector.bind("videoPlayerViewModelBinder", VideoPlayerViewModelBinder);
         injector.bind("mapViewModelBinder", MapViewModelBinder);
-    
+
         viewModelBinders.push(injector.resolve("pageViewModelBinder"));
         viewModelBinders.push(injector.resolve("sectionViewModelBinder"));
         viewModelBinders.push(injector.resolve("sliderViewModelBinder"));
@@ -146,24 +145,24 @@ export class Publisher {
         viewModelBinders.push(injector.resolve("youtubePlayerViewModelBinder"));
         viewModelBinders.push(injector.resolve("videoPlayerViewModelBinder"));
         viewModelBinders.push(injector.resolve("mapViewModelBinder"));
-    
+
         injector.bind("formModelBinder", FormModelBinder);
         modelBinders.push(injector.resolve("formModelBinder"));
         injector.bind("formViewModelBinder", FormViewModelBinder);
         viewModelBinders.push(injector.resolve("formViewModelBinder"));
-        
+
         publishNodeModule.register(injector);
-        
+
         /*** Autostart ***/
         injector.resolve("widgetBindingHandler");
         injector.resolve("slateBindingHandler");
         injector.resolve("backgroundBindingHandler");
-    
+
         ko.options["createChildContextWithAs"] = true;
         ko.applyBindings();
-    
+
         const publisher = injector.resolve<IPublisher>("sitePublisher");
-    
+
         try {
             console.log(new Date());
             await publisher.publish();
@@ -172,18 +171,5 @@ export class Publisher {
         catch (error) {
             console.log(error);
         }
-    }
-
-    private async loadFileAsString(filepath: string): Promise<string> {
-        return new Promise<string>((resolve, reject) => {
-            fs.readFile(filepath, "utf8", (error, content) => {
-                if (error) {
-                    reject(error);
-                    return;
-                }
-    
-                resolve(content);
-            });
-        });
     }
 }

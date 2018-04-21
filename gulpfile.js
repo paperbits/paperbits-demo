@@ -23,5 +23,3 @@ gulp.task("publish", () => {
         process.exit();
     });
 });
-
-gulp.task("default", ["webpack-dev"]);

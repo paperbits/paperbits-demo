@@ -8,6 +8,7 @@
 
 
 import * as _ from "lodash";
+import * as FileSaver from "file-saver";
 import * as Utils from "@paperbits/common/utils";
 import { IHttpClient } from "@paperbits/common/http/IHttpClient";
 import { IObjectStorage } from "@paperbits/common/persistence/IObjectStorage";
@@ -32,7 +33,9 @@ export class StaticObjectStorage implements IObjectStorage {
                 method: "GET"
             })
 
-            this.storageDataObject = response.toObject();
+            const dataObject = response.toObject();
+
+            this.storageDataObject = dataObject["tenants"]["default"];
         }
 
         return this.storageDataObject;
@@ -116,18 +119,15 @@ export class StaticObjectStorage implements IObjectStorage {
             return [];
         }
 
-        let result: Array<T> = [];
-        let pathParts = path.split(this.splitter);
-
-        let data = await this.getData();
+        const result: Array<T> = [];
+        const data = await this.getData();
 
         if (!data) {
             return result;
         }
 
-        let searchObj = Utils.getObjectAt(path, data);
-
-        let keys = Object.keys(searchObj);
+        const searchObj = Utils.getObjectAt(path, data);
+        const keys = Object.keys(searchObj);
 
         if (propertyNames && propertyNames.length && searchValue) {
             let searchProps = propertyNames.map(name => {
@@ -137,8 +137,8 @@ export class StaticObjectStorage implements IObjectStorage {
             });
 
             keys.forEach(key => {
-                let matchedObj = searchObj[key];
-                let searchProperty = _.find(searchProps, (prop) => {
+                const matchedObj = searchObj[key];
+                const searchProperty = _.find(searchProps, (prop) => {
                     if (startAtSearch) {
                         var propName = _.keys(prop)[0];
 
@@ -156,7 +156,7 @@ export class StaticObjectStorage implements IObjectStorage {
         }
         else {
             keys.forEach(key => {
-                let matchedObj = searchObj[key];
+                const matchedObj = searchObj[key];
 
                 if (path === "navigationItems" && key === "navigationItems") {
                     result.push(matchedObj);
@@ -171,5 +171,12 @@ export class StaticObjectStorage implements IObjectStorage {
             });
         }
         return result;
+    }
+
+    public async saveChanges(delta: Object): Promise<void> {
+        const content = JSON.stringify(this.storageDataObject);
+        const blob = new Blob([content], { type: "text/plain;charset=utf-8" });
+
+        FileSaver.saveAs(blob, "demo.json");
     }
 }

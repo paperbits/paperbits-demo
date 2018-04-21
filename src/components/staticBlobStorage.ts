@@ -8,8 +8,8 @@
 
 
 import * as Utils from "@paperbits/common/utils";
-import { IBlobStorage } from '@paperbits/common/persistence/IBlobStorage';
-import { ProgressPromise } from '@paperbits/common/progressPromise';
+import { IBlobStorage } from '@paperbits/common/persistence';
+import { ProgressPromise } from '@paperbits/common';
 
 
 /**

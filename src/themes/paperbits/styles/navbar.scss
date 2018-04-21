@@ -16,35 +16,24 @@
     line-height: 20px;
     width: 100%;
 
-    .nav-item {
-        text-align: center;
+}
 
+.navbar-default,
+.navbar-light {
+    .nav-item {
         .nav-link {
             display: inline-block;
             padding: 15px 20px;
-            color: #5CC6D0;
-        }
-    }
-}
+            color: $link-color;
 
-.navbar-default {
-    .navbar-nav {
-        .nav-item {
-            .nav-link {
-                font-size: 15px;
-                font-weight: 400;
-                text-transform: uppercase;
-                color: #4C4C4C;
-                padding: 15px 18px;
-            }
-
-            &.active,
             &:focus,
             &:hover {
-                .nav-link {
-                    color: #e16640 !important;
-                }
+                color: $link-hover-color;
             }
+        }
+
+        &.active > .nav-link {
+            color: $link-active-color;
         }
     }
 }
