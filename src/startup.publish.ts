@@ -48,6 +48,8 @@ import { IPublisher } from "@paperbits/publishing/publishers/IPublisher";
 import { PublishingNodeModule } from "@paperbits/publishing/publishers/publishing.module";
 import { FormModelBinder } from "@paperbits/common/widgets/form/formModelBinder";
 import { FormViewModelBinder } from "@paperbits/knockout/widgets/form/formViewModelBinder";
+import { TableOfContentsModelBinder } from "@paperbits/common/widgets/table-of-contents";
+import { TableOfContentsViewModelBinder } from "@paperbits/knockout/widgets/table-of-contents";
 import { SlateModule } from "@paperbits/slate/slate.module";
 import { StaticSettingsProvider } from "./components/staticSettingsProvider";
 import { FileSystemBlobStorage } from "@paperbits/publishing/persistence";
@@ -150,6 +152,11 @@ export class Publisher {
         modelBinders.push(injector.resolve("formModelBinder"));
         injector.bind("formViewModelBinder", FormViewModelBinder);
         viewModelBinders.push(injector.resolve("formViewModelBinder"));
+
+        injector.bind("tableOfContentsModelBinder", TableOfContentsModelBinder);
+        modelBinders.push(injector.resolve("tableOfContentsModelBinder"));
+        injector.bind("tableOfContentsViewModelBinder", TableOfContentsViewModelBinder);
+        viewModelBinders.push(injector.resolve("tableOfContentsViewModelBinder"));
 
         publishNodeModule.register(injector);
 

@@ -157,17 +157,7 @@ export class StaticObjectStorage implements IObjectStorage {
         else {
             keys.forEach(key => {
                 const matchedObj = searchObj[key];
-
-                if (path === "navigationItems" && key === "navigationItems") {
-                    result.push(matchedObj);
-                }
-                else {
-                    let searchId = matchedObj.key;
-
-                    if (searchId && searchId.endsWith(key)) {
-                        result.push(matchedObj);
-                    }
-                }
+                result.push(matchedObj);
             });
         }
         return result;
