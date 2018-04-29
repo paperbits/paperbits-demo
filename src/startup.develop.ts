@@ -46,8 +46,8 @@ import { FormModelBinder } from "@paperbits/common/widgets/form/formModelBinder"
 import { FormViewModelBinder } from "@paperbits/knockout/widgets/form/formViewModelBinder";
 import { TestimonialsModelBinder } from "@paperbits/knockout/widgets/testimonials/testimonialsModelBinder";
 import { TestimonialsViewModelBinder } from "@paperbits/knockout/widgets/testimonials/testimonialsViewModelBinder";
-import { ContentTableModelBinder } from "@paperbits/common/widgets/content-table/contentTableModelBinder";
-import { ContentTableViewModelBinder } from "@paperbits/knockout/widgets/content-table/contentTableViewModelBinder";
+import { TableOfContentsModelBinder } from "@paperbits/common/widgets/table-of-contents/tableOfContentsModelBinder";
+import { TableOfContentsViewModelBinder } from "@paperbits/knockout/widgets/table-of-contents/tableOfContentsViewModelBinder";
 import { OfflineObjectStorage } from "@paperbits/common/persistence/offlineObjectStorage";
 import { AnchorMiddleware } from "@paperbits/common/persistence/AnchorMiddleware";
 import { IntentionsBuilder } from "@paperbits/common/appearance/intentionsBuilder";
@@ -126,10 +126,10 @@ document.addEventListener("DOMContentLoaded", () => {
     injector.bind("testimonialsViewModelBinder", TestimonialsViewModelBinder);
     viewModelBinders.push(injector.resolve("testimonialsViewModelBinder"));
 
-    injector.bind("contentTableModelBinder", ContentTableModelBinder);
-    modelBinders.push(injector.resolve("contentTableModelBinder"));
-    injector.bind("contentTableViewModelBinder", ContentTableViewModelBinder);
-    viewModelBinders.push(injector.resolve("contentTableViewModelBinder"));
+    injector.bind("tableOfContentsModelBinder", TableOfContentsModelBinder);
+    modelBinders.push(injector.resolve("tableOfContentsModelBinder"));
+    injector.bind("tableOfContentsViewModelBinder", TableOfContentsViewModelBinder);
+    viewModelBinders.push(injector.resolve("tableOfContentsViewModelBinder"));
 
     viewModelBinders.push(injector.resolve("pageViewModelBinder"));
     viewModelBinders.push(injector.resolve("sectionViewModelBinder"));
