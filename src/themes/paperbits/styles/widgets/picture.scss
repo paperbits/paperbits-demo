@@ -1,6 +1,7 @@
 ﻿.picture {
     text-align: center;
     max-width: 100%;
+    user-select: none;
 
     * {
         pointer-events: none;
