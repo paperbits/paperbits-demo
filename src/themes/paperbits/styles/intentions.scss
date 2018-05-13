@@ -31,10 +31,8 @@ placeholder {
 }
 
 .empty-item {
-    width: 100%;
-    min-height: 150px;
+    @include fit(5px);
     background: repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0) 10px, rgba(0, 0, 0, 0.05) 10px, rgba(0, 0, 0, 0.05) 20px);
-    position: relative;
 
     &:after {
         content: attr(placeholder);
@@ -55,10 +53,8 @@ placeholder {
     z-index: 9999;
 }
 
-.placeholder {
-    border: none;
-    outline: 4px dashed #ccc;
-    transition: height .5s ease-in-out;
-    position: relative;
-    opacity: .5;
+.not-configured {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    text-align: center;
 }

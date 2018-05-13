@@ -1,8 +1,19 @@
+* {
+    position: relative;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+
 section {
     padding: 10px;
 
     .row {
         padding: 10px;
+        min-height: 90px;
 
         .col-flex {
             padding: 10px;
@@ -17,4 +28,20 @@ section {
     &.with-padding {
         padding: 40px;
     }
+}
+
+.fit {
+    @include fit;
+}
+
+.container,
+.placeholder {
+    min-height: 80px;
+}
+
+.placeholder {
+    font-size: .7em;
+    font-family: monospace;
+    text-transform: uppercase;
+    height: 100%;
 }
