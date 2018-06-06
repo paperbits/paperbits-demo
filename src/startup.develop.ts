@@ -51,6 +51,7 @@ import { AnchorMiddleware } from "@paperbits/common/persistence/AnchorMiddleware
 import { IntentionsBuilder } from "@paperbits/common/appearance/intentionsBuilder";
 import { IntentionsProvider } from "@paperbits/knockout/application/intentionsProvider";
 import { IIntentionsBuilder } from "@paperbits/common/appearance/intention";
+import { FormsModule } from "@paperbits/forms/forms.module";
 
 //import { FirebaseModule } from "@paperbits/firebase/firebase.module";
 import { DemoModule } from "./components/demo.module";
@@ -135,6 +136,8 @@ document.addEventListener("DOMContentLoaded", () => {
     viewModelBinders.push(injector.resolve("youtubePlayerViewModelBinder"));
     viewModelBinders.push(injector.resolve("videoPlayerViewModelBinder"));
     viewModelBinders.push(injector.resolve("mapViewModelBinder"));
+
+    injector.bindModule(new FormsModule(modelBinders, viewModelBinders));  
 
 
     /*** Autostart ***/
