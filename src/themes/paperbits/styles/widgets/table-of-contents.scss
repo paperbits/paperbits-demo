@@ -26,4 +26,9 @@
             font-weight: bold;
         }
     }
+
+    .nav-link.active {
+        color: $link-active-color;
+        font-weight: bold;
+    }
 }

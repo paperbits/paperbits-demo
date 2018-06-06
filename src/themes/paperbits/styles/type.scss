@@ -19,6 +19,10 @@ html {
     color: #5B5F61;
 }
 
+p {
+    min-height: 1em;
+}
+
 ol,
 p,
 ul {
@@ -78,8 +82,13 @@ h6 {
     font-family: $font-family-script;
 }
 
-.lead {
+.text-lg {
     font-size: 1.5em;
+}
+
+.text-sm {
+    font-size: .7rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .numbers {
@@ -134,4 +143,21 @@ a {
         color: $link-hover-color;
         text-decoration: none;
     }
+}
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.caret {
+    animation: blink 1s infinite step-start;
 }

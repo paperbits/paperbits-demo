@@ -1,9 +1,8 @@
 .btn {
     font-family: Arial, Helvetica, sans-serif;
-    padding: 5px 20px;
     color: #252525;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    border: none;
+    margin: 0 5px;
 
     &:active,
     &:focus,
@@ -21,11 +20,13 @@
 .btn-primary {
     color: #fff;
     background: #4AB3F4;
+    border-color: #4AB3F4;
 
     &:active,
     &:focus,
     &:hover {
         color: #fff;
         background: darken($color: #4AB3F4, $amount: 20%);
+        border-color: darken($color: #4AB3F4, $amount: 20%);
     }
 }

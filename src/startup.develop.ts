@@ -22,7 +22,7 @@ import { KnockoutRegistrationWidgets } from "@paperbits/knockout/registrations/k
 import { KnockoutRegistrationLoaders } from "@paperbits/knockout/registrations/knockout.loaders";
 import { GlobalEventHandler } from "@paperbits/common/events";
 import { IEventManager } from "@paperbits/common/events";
-import { SlateModule } from "@paperbits/slate/slate.module";
+import { HtmlModule } from "@paperbits/html/html.module";
 import { IModelBinder } from "@paperbits/common/editing/IModelBinder";
 import { ModelBinderSelector } from "@paperbits/common/widgets/modelBinderSelector";
 import { theme } from "@paperbits/knockout/application/theme";
@@ -42,8 +42,6 @@ import { MapViewModelBinder } from "@paperbits/knockout/widgets/map/mapViewModel
 import { SliderViewModelBinder } from "@paperbits/knockout/widgets/slider/sliderViewModelBinder";
 import { IViewModelBinder } from "@paperbits/common/widgets/IViewModelBinder";
 import { ViewModelBinderSelector } from "@paperbits/knockout/widgets/viewModelBinderSelector";
-import { FormModelBinder } from "@paperbits/common/widgets/form/formModelBinder";
-import { FormViewModelBinder } from "@paperbits/knockout/widgets/form/formViewModelBinder";
 import { TestimonialsModelBinder } from "@paperbits/knockout/widgets/testimonials/testimonialsModelBinder";
 import { TestimonialsViewModelBinder } from "@paperbits/knockout/widgets/testimonials/testimonialsViewModelBinder";
 import { TableOfContentsModelBinder } from "@paperbits/common/widgets/table-of-contents/tableOfContentsModelBinder";
@@ -64,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const intentionsBuilder: IIntentionsBuilder = new IntentionsBuilder(theme);
     injector.bindInstance("intentionsProvider", new IntentionsProvider(intentionsBuilder));
 
-    injector.bindModule(new SlateModule());
+    injector.bindModule(new HtmlModule());
     injector.bindModule(new ComponentRegistrationCommon());
     injector.bindModule(new ComponentRegistrationEditors());
     injector.bindModule(new KnockoutRegistrationLoaders());
@@ -116,11 +114,6 @@ document.addEventListener("DOMContentLoaded", () => {
     injector.bind("videoPlayerViewModelBinder", VideoPlayerViewModelBinder);
     injector.bind("mapViewModelBinder", MapViewModelBinder);
 
-    injector.bind("formModelBinder", FormModelBinder);
-    modelBinders.push(injector.resolve("formModelBinder"));
-    injector.bind("formViewModelBinder", FormViewModelBinder);
-    viewModelBinders.push(injector.resolve("formViewModelBinder"));
-
     injector.bind("testimonialsModelBinder", TestimonialsModelBinder);
     modelBinders.push(injector.resolve("testimonialsModelBinder"));
     injector.bind("testimonialsViewModelBinder", TestimonialsViewModelBinder);
@@ -151,7 +144,7 @@ document.addEventListener("DOMContentLoaded", () => {
     injector.resolve("draggablesBindingHandler");
     injector.resolve("widgetBindingHandler");
     injector.resolve("hostBindingHandler");
-    injector.resolve("slateBindingHandler");
+    injector.resolve("htmlEditorBindingHandler");
     injector.resolve("balloonBindingHandler");
     injector.resolve("backgroundBindingHandler");
     injector.resolve("resizableBindingHandler");

@@ -41,11 +41,9 @@ import { IViewModelBinder } from "@paperbits/common/widgets";
 import { SliderViewModelBinder } from "@paperbits/knockout/widgets/slider";
 import { IPublisher } from "@paperbits/publishing/publishers";
 import { PublishingNodeModule } from "@paperbits/publishing/publishers";
-import { FormModelBinder } from "@paperbits/common/widgets/form";
-import { FormViewModelBinder } from "@paperbits/knockout/widgets/form";
 import { TableOfContentsModelBinder } from "@paperbits/common/widgets/table-of-contents";
 import { TableOfContentsViewModelBinder } from "@paperbits/knockout/widgets/table-of-contents";
-import { SlateModule } from "@paperbits/slate/slate.module";
+import { HtmlModule } from "@paperbits/html/html.module";
 import { StaticSettingsProvider } from "./components/staticSettingsProvider";
 import { FileSystemBlobStorage } from "@paperbits/publishing/persistence";
 import { StaticRouteHandler } from "./components/staticRouteHandler";
@@ -72,7 +70,7 @@ export class Publisher {
         const intentionsBuilder: IIntentionsBuilder = new IntentionsBuilder(theme);
         injector.bindInstance("intentionsProvider", new IntentionsProvider(intentionsBuilder));
 
-        injector.bindModule(new SlateModule());
+        injector.bindModule(new HtmlModule());
         injector.bindModule(new ComponentRegistrationCommon());
         injector.bindModule(new KnockoutRegistrationCommon());
         injector.bindModule(new KnockoutRegistrationLoaders());
@@ -143,11 +141,6 @@ export class Publisher {
         viewModelBinders.push(injector.resolve("videoPlayerViewModelBinder"));
         viewModelBinders.push(injector.resolve("mapViewModelBinder"));
 
-        injector.bind("formModelBinder", FormModelBinder);
-        modelBinders.push(injector.resolve("formModelBinder"));
-        injector.bind("formViewModelBinder", FormViewModelBinder);
-        viewModelBinders.push(injector.resolve("formViewModelBinder"));
-
         injector.bind("tableOfContentsModelBinder", TableOfContentsModelBinder);
         modelBinders.push(injector.resolve("tableOfContentsModelBinder"));
         injector.bind("tableOfContentsViewModelBinder", TableOfContentsViewModelBinder);
@@ -157,7 +150,7 @@ export class Publisher {
 
         /*** Autostart ***/
         injector.resolve("widgetBindingHandler");
-        injector.resolve("slateBindingHandler");
+        injector.resolve("htmlEditorBindingHandler");
         injector.resolve("backgroundBindingHandler");
 
         ko.options["createChildContextWithAs"] = true;
