@@ -50,6 +50,7 @@ import { StaticRouteHandler } from "./components/staticRouteHandler";
 
 //import { FirebaseModule } from "@paperbits/firebase/firebase.module";
 import { StaticLocalStorageModule } from "./components/staticLocalStorage.module";
+import { FormsModule } from "@paperbits/forms/forms.module";
 
 export class Publisher {
     constructor(private inputBasePath, private outputBasePath, private indexFilePath, private settingsConfigPath?) {
@@ -147,6 +148,8 @@ export class Publisher {
         viewModelBinders.push(injector.resolve("tableOfContentsViewModelBinder"));
 
         publishNodeModule.register(injector);
+
+        injector.bindModule(new FormsModule(modelBinders, viewModelBinders));  
 
         /*** Autostart ***/
         injector.resolve("widgetBindingHandler");
