@@ -35,7 +35,6 @@ import { ButtonViewModelBinder } from "@paperbits/knockout/widgets/button/button
 import { PictureViewModelBinder } from "@paperbits/knockout/widgets/picture/pictureViewModelBinder";
 import { TextblockViewModelBinder } from "@paperbits/knockout/widgets/textblock/textblockViewModelBinder";
 import { NavbarViewModelBinder } from "@paperbits/knockout/widgets/navbar/navbarViewModelBinder";
-import { AudioPlayerViewModelBinder } from "@paperbits/knockout/widgets/audio-player/audioPlayerViewModelBinder";
 import { YoutubePlayerViewModelBinder } from "@paperbits/knockout/widgets/youtube-player/youtubePlayerViewModelBinder";
 import { VideoPlayerViewModelBinder } from "@paperbits/knockout/widgets/video-player/videoPlayerViewModelBinder";
 import { MapViewModelBinder } from "@paperbits/knockout/widgets/map/mapViewModelBinder";
@@ -81,7 +80,6 @@ document.addEventListener("DOMContentLoaded", () => {
     modelBinders.push(injector.resolve("mapModelBinder"));
     modelBinders.push(injector.resolve("youtubeModelBinder"));
     modelBinders.push(injector.resolve("videoPlayerModelBinder"));
-    modelBinders.push(injector.resolve("audioPlayerModelBinder"));
     modelBinders.push(injector.resolve("buttonModelBinder"));
     modelBinders.push(injector.resolve("sectionModelBinder"));
     modelBinders.push(injector.resolve("pageModelBinder"));
@@ -110,7 +108,6 @@ document.addEventListener("DOMContentLoaded", () => {
     injector.bind("pictureViewModelBinder", PictureViewModelBinder);
     injector.bind("textblockViewModelBinder", TextblockViewModelBinder);
     injector.bind("navbarViewModelBinder", NavbarViewModelBinder);
-    injector.bind("audioPlayerViewModelBinder", AudioPlayerViewModelBinder);
     injector.bind("youtubePlayerViewModelBinder", YoutubePlayerViewModelBinder);
     injector.bind("videoPlayerViewModelBinder", VideoPlayerViewModelBinder);
     injector.bind("mapViewModelBinder", MapViewModelBinder);
@@ -132,7 +129,6 @@ document.addEventListener("DOMContentLoaded", () => {
     viewModelBinders.push(injector.resolve("pictureViewModelBinder"));
     viewModelBinders.push(injector.resolve("textblockViewModelBinder"));
     viewModelBinders.push(injector.resolve("navbarViewModelBinder"));
-    viewModelBinders.push(injector.resolve("audioPlayerViewModelBinder"));
     viewModelBinders.push(injector.resolve("youtubePlayerViewModelBinder"));
     viewModelBinders.push(injector.resolve("videoPlayerViewModelBinder"));
     viewModelBinders.push(injector.resolve("mapViewModelBinder"));
