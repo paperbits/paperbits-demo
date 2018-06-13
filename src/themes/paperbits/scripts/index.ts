@@ -6,4 +6,4 @@
  * found in the LICENSE file at https://paperbits.io/license.
  */
 
-
+export * from "./theme.module";
