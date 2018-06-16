@@ -12,20 +12,13 @@ import * as ko from "knockout";
 
 import "@paperbits/knockout/registrations/knockout.editors";
 import { InversifyInjector } from "@paperbits/common/injection";
+import { ModelBinderSelector } from "@paperbits/common/widgets";
 import { ComponentRegistrationCommon } from "@paperbits/knockout/registrations/components.common";
 import { ComponentRegistrationEditors } from "@paperbits/knockout/registrations/components.editors";
 import { KnockoutRegistrationCommon } from "@paperbits/knockout/registrations/knockout.common";
 import { KnockoutRegistrationWidgets } from "@paperbits/knockout/registrations/knockout.widgets";
 import { KnockoutRegistrationLoaders } from "@paperbits/knockout/registrations/knockout.loaders";
-
-import { DemoModule } from "./components/demo.module";
-// import { FirebaseModule } from "@paperbits/firebase/firebase.module";
-
 import { HtmlModule } from "@paperbits/html/html.module";
-import { ModelBinderSelector } from "@paperbits/common/widgets";
-
-import { PageViewModelBinder } from "@paperbits/knockout/widgets/page";
-import { LayoutViewModelBinder } from "@paperbits/knockout/widgets/layout";
 import { RowViewModelBinder } from "@paperbits/knockout/widgets/row";
 import { ColumnViewModelBinder } from "@paperbits/knockout/widgets/column";
 import { SectionViewModelBinder } from "@paperbits/knockout/widgets/section";
@@ -34,11 +27,13 @@ import { SliderViewModelBinder } from "@paperbits/knockout/widgets/slider";
 import { IViewModelBinder } from "@paperbits/common/widgets";
 import { ViewModelBinderSelector } from "@paperbits/knockout/widgets";
 
-import { OfflineObjectStorage } from "@paperbits/common/persistence";
-import { AnchorMiddleware } from "@paperbits/common/persistence";
+import { OfflineObjectStorage } from "@paperbits/common/persistence/offlineObjectStorage";
+import { AnchorMiddleware } from "@paperbits/common/persistence/anchorMiddleware";
 import { CoreEditModule } from "@paperbits/core/core.edit.module";
 import { FormsEditModule } from "@paperbits/forms/forms.edit.module";
 
+//import { FirebaseModule } from "@paperbits/firebase/firebase.module";
+import { DemoModule } from "./components/demo.module";
 
 document.addEventListener("DOMContentLoaded", () => {
     var injector = new InversifyInjector();
@@ -57,10 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
     injector.bindInstance("modelBinderSelector", new ModelBinderSelector(modelBinders));
     modelBinders.push(injector.resolve("textModelBinder"));
     modelBinders.push(injector.resolve("sectionModelBinder"));
-    modelBinders.push(injector.resolve("pageModelBinder"));
-    modelBinders.push(injector.resolve("blogModelBinder"));
     modelBinders.push(injector.resolve("sliderModelBinder"));
-    //editors.push(ctx.resolve("codeblockModelBinder"));
 
     injector.bind("htmlEditorFactory", () => {
         return {
@@ -72,21 +64,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let viewModelBinders = new Array<IViewModelBinder<any, any>>();
     injector.bindInstance("viewModelBinderSelector", new ViewModelBinderSelector(viewModelBinders));
-    injector.bind("pageViewModelBinder", PageViewModelBinder);
-    injector.bind("layoutViewModelBinder", LayoutViewModelBinder);
     injector.bind("sectionViewModelBinder", SectionViewModelBinder);
     injector.bind("rowViewModelBinder", RowViewModelBinder);
     injector.bind("columnViewModelBinder", ColumnViewModelBinder);
     injector.bind("sliderViewModelBinder", SliderViewModelBinder);
     injector.bind("textblockViewModelBinder", TextblockViewModelBinder);
 
-    viewModelBinders.push(injector.resolve("pageViewModelBinder"));
     viewModelBinders.push(injector.resolve("sectionViewModelBinder"));
-    viewModelBinders.push(injector.resolve("sliderViewModelBinder"));
+    viewModelBinders.push(injector.resolve("sliderViewModelBinder"));   
     viewModelBinders.push(injector.resolve("textblockViewModelBinder"));
 
-    injector.bindModule(new CoreEditModule(modelBinders, viewModelBinders));
-    injector.bindModule(new FormsEditModule(modelBinders, viewModelBinders));
+    injector.bindModule(new CoreEditModule(modelBinders, viewModelBinders));  
+    injector.bindModule(new FormsEditModule(modelBinders, viewModelBinders));  
 
     /*** Autostart ***/
     injector.resolve("contentBindingHandler");
@@ -100,7 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
     injector.resolve("backgroundBindingHandler");
     injector.resolve("resizableBindingHandler");
     injector.resolve("savingHandler");
-    // injector.resolve("errorHandler");
+    injector.resolve("errorHandler");
     injector.resolve("knockoutValidation");
 
     const offlineObjectStorage = injector.resolve<OfflineObjectStorage>("offlineObjectStorage");
@@ -111,5 +100,3 @@ document.addEventListener("DOMContentLoaded", () => {
     ko.options["createChildContextWithAs"] = true;
     ko.applyBindings();
 });
-
-

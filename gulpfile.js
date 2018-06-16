@@ -1,5 +1,4 @@
 const gulp = require("gulp");
-const gutil = require("gulp-util");
 
 gulp.task("publish", () => {
     const pub = require("./dist/dev/publisher.js");
