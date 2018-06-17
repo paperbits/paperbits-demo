@@ -19,11 +19,7 @@ import { KnockoutRegistrationCommon } from "@paperbits/knockout/registrations/kn
 import { KnockoutRegistrationWidgets } from "@paperbits/knockout/registrations/knockout.widgets";
 import { KnockoutRegistrationLoaders } from "@paperbits/knockout/registrations/knockout.loaders";
 import { HtmlModule } from "@paperbits/html/html.module";
-import { RowViewModelBinder } from "@paperbits/knockout/widgets/row";
-import { ColumnViewModelBinder } from "@paperbits/knockout/widgets/column";
-import { SectionViewModelBinder } from "@paperbits/knockout/widgets/section";
 import { TextblockViewModelBinder } from "@paperbits/knockout/widgets/textblock";
-import { SliderViewModelBinder } from "@paperbits/knockout/widgets/slider";
 import { IViewModelBinder } from "@paperbits/common/widgets";
 import { ViewModelBinderSelector } from "@paperbits/knockout/widgets";
 
@@ -51,8 +47,6 @@ document.addEventListener("DOMContentLoaded", () => {
     let modelBinders = new Array();
     injector.bindInstance("modelBinderSelector", new ModelBinderSelector(modelBinders));
     modelBinders.push(injector.resolve("textModelBinder"));
-    modelBinders.push(injector.resolve("sectionModelBinder"));
-    modelBinders.push(injector.resolve("sliderModelBinder"));
 
     injector.bind("htmlEditorFactory", () => {
         return {
@@ -64,14 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let viewModelBinders = new Array<IViewModelBinder<any, any>>();
     injector.bindInstance("viewModelBinderSelector", new ViewModelBinderSelector(viewModelBinders));
-    injector.bind("sectionViewModelBinder", SectionViewModelBinder);
-    injector.bind("rowViewModelBinder", RowViewModelBinder);
-    injector.bind("columnViewModelBinder", ColumnViewModelBinder);
-    injector.bind("sliderViewModelBinder", SliderViewModelBinder);
     injector.bind("textblockViewModelBinder", TextblockViewModelBinder);
-
-    viewModelBinders.push(injector.resolve("sectionViewModelBinder"));
-    viewModelBinders.push(injector.resolve("sliderViewModelBinder"));   
     viewModelBinders.push(injector.resolve("textblockViewModelBinder"));
 
     injector.bindModule(new CoreEditModule(modelBinders, viewModelBinders));  

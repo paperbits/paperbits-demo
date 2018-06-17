@@ -19,13 +19,9 @@ import { KnockoutRegistrationWidgets } from "@paperbits/knockout/registrations/k
 import { KnockoutRegistrationLoaders } from "@paperbits/knockout/registrations/knockout.loaders";
 import { IModelBinder } from "@paperbits/common/editing";
 import { ModelBinderSelector } from "@paperbits/common/widgets";
-import { RowViewModelBinder } from "@paperbits/knockout/widgets/row";
-import { ColumnViewModelBinder } from "@paperbits/knockout/widgets/column";
-import { SectionViewModelBinder } from "@paperbits/knockout/widgets/section";
 import { TextblockViewModelBinder } from "@paperbits/knockout/widgets/textblock";
 import { ViewModelBinderSelector } from "@paperbits/knockout/widgets";
 import { IViewModelBinder } from "@paperbits/common/widgets";
-import { SliderViewModelBinder } from "@paperbits/knockout/widgets/slider";
 import { IPublisher } from "@paperbits/publishing/publishers";
 import { PublishingNodeModule } from "@paperbits/publishing/publishers";
 import { HtmlModule } from "@paperbits/html/html.module";
@@ -74,8 +70,6 @@ export class Publisher {
         let modelBinders = new Array<IModelBinder>();
         injector.bindInstance("modelBinderSelector", new ModelBinderSelector(modelBinders));
         modelBinders.push(injector.resolve("textModelBinder"));
-        modelBinders.push(injector.resolve("sectionModelBinder"));
-        modelBinders.push(injector.resolve("sliderModelBinder"));
 
         injector.bind("htmlEditorFactory", () => {
             return {
@@ -87,14 +81,7 @@ export class Publisher {
 
         let viewModelBinders = new Array<IViewModelBinder<any, any>>();
         injector.bindInstance("viewModelBinderSelector", new ViewModelBinderSelector(viewModelBinders));
-        injector.bind("sectionViewModelBinder", SectionViewModelBinder);
-        injector.bind("rowViewModelBinder", RowViewModelBinder);
-        injector.bind("columnViewModelBinder", ColumnViewModelBinder);
-        injector.bind("sliderViewModelBinder", SliderViewModelBinder);
         injector.bind("textblockViewModelBinder", TextblockViewModelBinder);
-
-        viewModelBinders.push(injector.resolve("sectionViewModelBinder"));
-        viewModelBinders.push(injector.resolve("sliderViewModelBinder"));
         viewModelBinders.push(injector.resolve("textblockViewModelBinder"));
 
         injector.bindModule(new CoreModule(modelBinders, viewModelBinders));
