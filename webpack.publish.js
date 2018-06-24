@@ -1,18 +1,17 @@
 const path = require('path');
-const webpack = require('webpack');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-const MiniCssExtractPlugin = require("mini-css-extract-plugin"); 
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+
 const selectedTheme = "paperbits";
+const editorTheme = "paperbits-editor";
 
 module.exports = {
     mode: "development",
     target: 'node', 
     entry: {
         "publisher": ['./src/startup.publish.ts'],
-        "css/paperbits" : ['./node_modules/@paperbits/knockout/styles/vienna.scss'],
+        "css/paperbits" : [`./src/themes/${editorTheme}/styles/vienna.scss`],
         "theme/scripts/theme": [`./src/themes/${selectedTheme}/scripts/index.ts`],
         "theme/css/theme" : [`./src/themes/${selectedTheme}/styles/styles.scss`]
     },
@@ -58,6 +57,9 @@ module.exports = {
             { from: `./src/themes/${selectedTheme}/config.json`}  
         ])
     ],
+    optimization: {
+        concatenateModules: true //ModuleConcatenationPlugin
+    },
     resolve: {
         extensions: [".ts", ".tsx", ".js", '.jsx', ".html", ".scss"] 
     }

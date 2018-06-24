@@ -10,59 +10,34 @@ import "es6-shim";
 import "setimmediate";
 import * as ko from "knockout";
 
-import "@paperbits/knockout/registrations/knockout.editors";
 import { InversifyInjector } from "@paperbits/common/injection";
-import { ModelBinderSelector } from "@paperbits/common/widgets";
-import { ComponentRegistrationCommon } from "@paperbits/knockout/registrations/components.common";
-import { ComponentRegistrationEditors } from "@paperbits/knockout/registrations/components.editors";
-import { KnockoutRegistrationCommon } from "@paperbits/knockout/registrations/knockout.common";
-import { KnockoutRegistrationWidgets } from "@paperbits/knockout/registrations/knockout.widgets";
-import { KnockoutRegistrationLoaders } from "@paperbits/knockout/registrations/knockout.loaders";
 import { HtmlModule } from "@paperbits/html/html.module";
-import { TextblockViewModelBinder } from "@paperbits/knockout/widgets/textblock";
-import { IViewModelBinder } from "@paperbits/common/widgets";
-import { ViewModelBinderSelector } from "@paperbits/knockout/widgets";
 
 import { OfflineObjectStorage } from "@paperbits/common/persistence/offlineObjectStorage";
 import { AnchorMiddleware } from "@paperbits/common/persistence/anchorMiddleware";
+import { CoreModule } from "@paperbits/core/core.module";
 import { CoreEditModule } from "@paperbits/core/core.edit.module";
 import { FormsEditModule } from "@paperbits/forms/forms.edit.module";
 
 //import { FirebaseModule } from "@paperbits/firebase/firebase.module";
 import { DemoModule } from "./components/demo.module";
+import { SettingsProvider } from "@paperbits/common/configuration";
+import { DefaultRouteHandler } from "@paperbits/common/routing";
 
 document.addEventListener("DOMContentLoaded", () => {
     var injector = new InversifyInjector();
 
     injector.bindModule(new HtmlModule());
-    injector.bindModule(new ComponentRegistrationCommon());
-    injector.bindModule(new ComponentRegistrationEditors());
-    injector.bindModule(new KnockoutRegistrationLoaders());
-    injector.bindModule(new KnockoutRegistrationCommon());
-    injector.bindModule(new KnockoutRegistrationWidgets());
+    injector.bindSingleton("settingsProvider", SettingsProvider);
+    injector.bindSingleton("routeHandler", DefaultRouteHandler);
+    const coreModule = new CoreModule();
+    const coreEditModule = new CoreEditModule();
+    injector.bindModule(coreModule);  
+    injector.bindModule(coreEditModule);  
 
     //injector.bindModule(new FirebaseModule());
-    injector.bindModule(new DemoModule("/data/demo.json"));
-
-    let modelBinders = new Array();
-    injector.bindInstance("modelBinderSelector", new ModelBinderSelector(modelBinders));
-    modelBinders.push(injector.resolve("textModelBinder"));
-
-    injector.bind("htmlEditorFactory", () => {
-        return {
-            createHtmlEditor: () => {
-                return injector.resolve("htmlEditor");
-            }
-        }
-    })
-
-    let viewModelBinders = new Array<IViewModelBinder<any, any>>();
-    injector.bindInstance("viewModelBinderSelector", new ViewModelBinderSelector(viewModelBinders));
-    injector.bind("textblockViewModelBinder", TextblockViewModelBinder);
-    viewModelBinders.push(injector.resolve("textblockViewModelBinder"));
-
-    injector.bindModule(new CoreEditModule(modelBinders, viewModelBinders));  
-    injector.bindModule(new FormsEditModule(modelBinders, viewModelBinders));  
+    injector.bindModule(new DemoModule("/data/demo.json")); 
+    injector.bindModule(new FormsEditModule(coreModule.modelBinders, coreModule.viewModelBinders));  
 
     /*** Autostart ***/
     injector.resolve("contentBindingHandler");

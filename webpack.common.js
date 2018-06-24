@@ -1,14 +1,14 @@
 const path = require("path");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
-const CleanWebpackPlugin = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const selectedTheme = "paperbits";
+const editorTheme = "paperbits-editor";
 
 module.exports = {
     entry: {
         "scripts/paperbits": ["./src/startup.develop.ts"],
-        "css/paperbits": ["./node_modules/@paperbits/knockout/styles/vienna.scss"],
+        "css/paperbits": [`./src/themes/${editorTheme}/styles/vienna.scss`],
         "theme/scripts/theme": [`./src/themes/${selectedTheme}/scripts/index.ts`],
         "theme/css/theme": [`./src/themes/${selectedTheme}/styles/styles.scss`]
     },
@@ -42,14 +42,13 @@ module.exports = {
         ]
     },
     plugins: [
-        new CleanWebpackPlugin(["dist"]),
         new MiniCssExtractPlugin({
             filename: "[name].css",
             chunkFilename: "[id].css"
         }),
         new CopyWebpackPlugin([
-            { from: "./node_modules/@paperbits/knockout/assets" },
-            { from: "./node_modules/@paperbits/knockout/styles/fonts", to: "css/fonts" },
+            { from: `./src/themes/${editorTheme}/assets`},
+            { from: `./src/themes/${editorTheme}/styles/fonts`, to: "css/fonts" },
             { from: `./src/data`, to: "data" },
             { from: `./src/themes/${selectedTheme}/assets`, to: "theme" },
             { from: `./src/themes/${selectedTheme}/config.json` }
