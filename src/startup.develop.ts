@@ -25,18 +25,18 @@ import { SettingsProvider } from "@paperbits/common/configuration";
 import { DefaultRouteHandler } from "@paperbits/common/routing";
 
 document.addEventListener("DOMContentLoaded", () => {
-    var injector = new InversifyInjector();
+    const injector = new InversifyInjector();
 
+    //injector.bindModule(new FirebaseModule());
+    injector.bindModule(new DemoModule("/data/demo.json"));
     injector.bindModule(new HtmlModule());
     injector.bindSingleton("settingsProvider", SettingsProvider);
     injector.bindSingleton("routeHandler", DefaultRouteHandler);
     const coreModule = new CoreModule();
     const coreEditModule = new CoreEditModule();
-    injector.bindModule(coreModule);  
+    injector.bindModule(coreModule);   
     injector.bindModule(coreEditModule);  
 
-    //injector.bindModule(new FirebaseModule());
-    injector.bindModule(new DemoModule("/data/demo.json")); 
     injector.bindModule(new FormsEditModule(coreModule.modelBinders, coreModule.viewModelBinders));  
 
     /*** Autostart ***/
