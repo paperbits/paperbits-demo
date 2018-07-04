@@ -12,9 +12,8 @@ import * as ko from "knockout";
 
 import { InversifyInjector } from "@paperbits/common/injection";
 import { HtmlModule } from "@paperbits/html/html.module";
-
-import { OfflineObjectStorage } from "@paperbits/common/persistence/offlineObjectStorage";
-import { AnchorMiddleware } from "@paperbits/common/persistence/anchorMiddleware";
+import { OfflineObjectStorage } from "@paperbits/common/persistence";
+import { AnchorMiddleware } from "@paperbits/common/persistence";
 import { CoreModule } from "@paperbits/core/core.module";
 import { CoreEditModule } from "@paperbits/core/core.edit.module";
 import { FormsEditModule } from "@paperbits/forms/forms.edit.module";
