@@ -25,15 +25,15 @@ import { FormsModule } from "@paperbits/forms/forms.module";
 import { CoreModule } from "@paperbits/core/core.module";
 
 export class Publisher {
-    constructor(private inputBasePath, private outputBasePath, private indexFilePath, private settingsConfigPath) {
-        this.inputBasePath = inputBasePath;
-        this.outputBasePath = outputBasePath;
-        this.indexFilePath = indexFilePath;
-        this.settingsConfigPath = settingsConfigPath;
+    constructor(
+        private readonly inputBasePath,
+        private readonly outputBasePath,
+        private readonly indexFilePath,
+        private readonly settingsConfigPath) {
     }
 
     public async publish(): Promise<void> {
-        let html = await Utils.loadFileAsString(this.indexFilePath);
+        const html = await Utils.loadFileAsString(this.indexFilePath);
 
         const publishNodeModule = new PublishingNodeModule(html);
         publishNodeModule.initDocument();
@@ -45,14 +45,13 @@ export class Publisher {
         // injector.bindModule(new FirebaseModule());
         injector.bindModule(new StaticLocalStorageModule("./src/data/demo.json"));
 
+        injector.bindSingleton("routeHandler", StaticRouteHandler);
         const configJson = await Utils.loadFileAsString(this.settingsConfigPath);
         const settings = JSON.parse(configJson);
         injector.bindInstance("settingsProvider", new StaticSettingsProvider(settings));
-        injector.bindSingleton("routeHandler", StaticRouteHandler);
-
-        const coreModule = new CoreModule();
-        injector.bindModule(coreModule);
-        injector.bindModule(new FormsModule(coreModule.modelBinders, coreModule.viewModelBinders));
+        
+        injector.bindModule(new CoreModule());
+        injector.bindModule(new FormsModule());
 
         injector.bindInstance("inputBlobStorage", new FileSystemBlobStorage(path.resolve(this.inputBasePath)));
         injector.bindInstance("outputBlobStorage", new FileSystemBlobStorage(path.resolve(this.outputBasePath)));

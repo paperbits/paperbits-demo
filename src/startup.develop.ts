@@ -23,6 +23,7 @@ import { FormsEditModule } from "@paperbits/forms/forms.edit.module";
 import { DemoModule } from "./components/demo.module";
 import { SettingsProvider } from "@paperbits/common/configuration";
 import { DefaultRouteHandler } from "@paperbits/common/routing";
+import { FormsModule } from "@paperbits/forms/forms.module";
 
 document.addEventListener("DOMContentLoaded", () => {
     const injector = new InversifyInjector();
@@ -32,12 +33,10 @@ document.addEventListener("DOMContentLoaded", () => {
     injector.bindModule(new HtmlModule());
     injector.bindSingleton("settingsProvider", SettingsProvider);
     injector.bindSingleton("routeHandler", DefaultRouteHandler);
-    const coreModule = new CoreModule();
-    const coreEditModule = new CoreEditModule();
-    injector.bindModule(coreModule);   
-    injector.bindModule(coreEditModule);  
-
-    injector.bindModule(new FormsEditModule(coreModule.modelBinders, coreModule.viewModelBinders));  
+    injector.bindModule(new CoreModule());
+    injector.bindModule(new CoreEditModule());
+    injector.bindModule(new FormsModule());
+    injector.bindModule(new FormsEditModule());  
 
     /*** Autostart ***/
     injector.resolve("contentBindingHandler");

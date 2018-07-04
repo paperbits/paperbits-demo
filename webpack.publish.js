@@ -1,6 +1,6 @@
-const path = require('path');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const path = require("path");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
+const CleanWebpackPlugin = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const selectedTheme = "paperbits";
@@ -8,18 +8,16 @@ const editorTheme = "paperbits-editor";
 
 module.exports = {
     mode: "development",
-    target: 'node', 
+    target: "node", 
     entry: {
-        "publisher": ['./src/startup.publish.ts'],
-        "styles/paperbits" : [`./src/themes/${editorTheme}/styles/paperbits.scss`],
-        "theme/scripts/theme": [`./src/themes/${selectedTheme}/scripts/index.ts`],
-        "theme/styles/theme" : [`./src/themes/${selectedTheme}/styles/styles.scss`]
+        "publisher": ["./src/startup.publish.ts"],
+        "styles/paperbits" : [`./src/themes/${editorTheme}/styles/paperbits.scss`]
     },
     output: {
-        filename: './[name].js',
-        path: path.resolve(__dirname, 'dist/dev'),
-        library: 'paperbitsPublisher',	
-        libraryTarget: 'commonjs2'
+        filename: "./[name].js",
+        path: path.resolve(__dirname, "dist/dev"),
+        library: "paperbitsPublisher",	
+        libraryTarget: "commonjs2"
     },
     module: {
         rules: [
@@ -28,7 +26,7 @@ module.exports = {
                 use: [ 
                     MiniCssExtractPlugin.loader, 
                     { loader: "css-loader", options: { url: false, minimize: true, sourceMap: true } },
-                    { loader: 'postcss-loader', options: { sourceMap: true, options: { plugins: () => [autoprefixer] } } },
+                    { loader: "postcss-loader", options: { sourceMap: true, options: { plugins: () => [autoprefixer] } } },
                     { loader: "sass-loader", options: { sourceMap: true } }                
                 ]
             },
@@ -42,12 +40,12 @@ module.exports = {
             },
             {
                 test: /\.(png|woff|woff2|eot|ttf|svg)$/,
-                loader: 'url-loader?limit=100000'
+                loader: "url-loader?limit=100000"
             }
         ]
     },
     plugins: [
-        new CleanWebpackPlugin(['dist']),
+        new CleanWebpackPlugin(["dist"]),
         new MiniCssExtractPlugin({
             filename: "[name].css",
             chunkFilename: "[id].css"
@@ -61,6 +59,6 @@ module.exports = {
         concatenateModules: true //ModuleConcatenationPlugin
     },
     resolve: {
-        extensions: [".ts", ".tsx", ".js", '.jsx', ".html", ".scss"] 
+        extensions: [".ts", ".tsx", ".js", ".jsx", ".html", ".scss"] 
     }
 };

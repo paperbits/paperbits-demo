@@ -9,9 +9,9 @@
         "demo"
     ],
     "scripts": {
-        "develop": "webpack-dev-server --open --config webpack.dev.js",
-        "build": "webpack --config webpack.build.js",
-        "publish": "webpack --config webpack.publish.js && gulp publish"
+        "develop": "webpack-dev-server --open --config webpack.dev.js && webpack --config webpack.theme.js",
+        "build": "webpack --config webpack.build.js && webpack --config webpack.theme.js",
+        "publish": "webpack --config webpack.publish.js && gulp publish && webpack --config webpack.theme.js"
     },
     "devDependencies": {
         "@types/google-maps": "^3.2.0",
@@ -48,11 +48,13 @@
         "@paperbits/publishing": "0.1.13",
         "@types/knockout.mapping": "^2.0.33",
         "@webcomponents/webcomponentsjs": "^2.0.2",
+        "domino": "^2.0.2",
         "es6-shim": "^0.35.3",
         "file-saver": "^1.3.8",
         "google-maps": "^3.3.0",
         "knockout": "^3.5.0-beta",
         "knockout-validation": "^0.1.1",
+        "lunr": "^2.3.0",
         "setimmediate": "^1.0.5",
         "xhr2": "^0.1.4"
     }
