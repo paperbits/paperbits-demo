@@ -47,6 +47,7 @@
         "@paperbits/html": "0.1.13",
         "@paperbits/publishing": "0.1.13",
         "@types/knockout.mapping": "^2.0.33",
+        "@webcomponents/webcomponentsjs": "^2.0.2",
         "es6-shim": "^0.35.3",
         "file-saver": "^1.3.8",
         "google-maps": "^3.3.0",

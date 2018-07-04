@@ -11,6 +11,13 @@
     src: local("Mate-Regular"), url("//cdn.paperbits.io/fonts/Mate.woff2") format("woff2"), url("//cdn.paperbits.io/fonts/Mate.woff") format("woff");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+@font-face {
+    font-family: 'paperbits';
+    src: url('fonts/paperbits-theme.eot');
+    src: url('fonts/paperbits-theme.eot') format('embedded-opentype'), url('fonts/paperbits-theme.woff2') format('woff2'), url('fonts/paperbits-theme.woff') format('woff'), url('fonts/paperbits-theme.ttf') format('truetype'), url('fonts/paperbits-theme.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 body,
 html {
@@ -19,10 +26,10 @@ html {
     color: #5B5F61;
 }
 
-p,
+li,
 ol,
-ul,
-li {
+p,
+ul {
     min-height: 1em;
 }
 

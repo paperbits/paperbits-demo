@@ -8,9 +8,9 @@ const editorTheme = "paperbits-editor";
 module.exports = {
     entry: {
         "scripts/paperbits": ["./src/startup.develop.ts"],
-        "css/paperbits": [`./src/themes/${editorTheme}/styles/vienna.scss`],
+        "styles/paperbits": [`./src/themes/${editorTheme}/styles/paperbits.scss`],
         "theme/scripts/theme": [`./src/themes/${selectedTheme}/scripts/index.ts`],
-        "theme/css/theme": [`./src/themes/${selectedTheme}/styles/styles.scss`]
+        "theme/styles/theme": [`./src/themes/${selectedTheme}/styles/styles.scss`]
     },
     output: {
         filename: "./[name].js",
@@ -47,10 +47,11 @@ module.exports = {
             chunkFilename: "[id].css"
         }),
         new CopyWebpackPlugin([
-            { from: `./src/themes/${editorTheme}/assets`},
-            { from: `./src/themes/${editorTheme}/styles/fonts`, to: "css/fonts" },
             { from: `./src/data`, to: "data" },
+            { from: `./src/themes/${editorTheme}/assets`},
+            { from: `./src/themes/${editorTheme}/styles/fonts`, to: "styles/fonts" },
             { from: `./src/themes/${selectedTheme}/assets`, to: "theme" },
+            { from: `./src/themes/${selectedTheme}/styles/fonts`, to: "theme/styles/fonts" },
             { from: `./src/themes/${selectedTheme}/config.json` }
         ])
     ],

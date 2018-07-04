@@ -11,9 +11,9 @@ module.exports = {
     target: 'node', 
     entry: {
         "publisher": ['./src/startup.publish.ts'],
-        "css/paperbits" : [`./src/themes/${editorTheme}/styles/vienna.scss`],
+        "styles/paperbits" : [`./src/themes/${editorTheme}/styles/paperbits.scss`],
         "theme/scripts/theme": [`./src/themes/${selectedTheme}/scripts/index.ts`],
-        "theme/css/theme" : [`./src/themes/${selectedTheme}/styles/styles.scss`]
+        "theme/styles/theme" : [`./src/themes/${selectedTheme}/styles/styles.scss`]
     },
     output: {
         filename: './[name].js',
