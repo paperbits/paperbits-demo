@@ -140,7 +140,7 @@ export class StaticObjectStorage implements IObjectStorage {
                 const matchedObj = searchObj[key];
                 const searchProperty = _.find(searchProps, (prop) => {
                     if (startAtSearch) {
-                        var propName = _.keys(prop)[0];
+                        let propName = _.keys(prop)[0];
 
                         let test = matchedObj[propName];
                         return test && test.toUpperCase().startsWith(prop[propName].toUpperCase());
