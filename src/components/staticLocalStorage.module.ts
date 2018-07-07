@@ -14,7 +14,7 @@ import { IObjectStorage } from "@paperbits/common/persistence/IObjectStorage";
 import { OfflineObjectStorage } from "@paperbits/common/persistence/offlineObjectStorage";
 import { StaticLocalObjectStorage } from "./staticLocalObjectStorage";
 
-export class StaticLocalStorageModule implements IInjectorModule {    
+export class StaticLocalStorageModule implements IInjectorModule {
     constructor(private dataSourceUrl: string) {
         this.register = this.register.bind(this);
     }
