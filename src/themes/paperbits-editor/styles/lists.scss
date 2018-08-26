@@ -8,6 +8,7 @@
     height: 100%;
     width: 100%;
 
+
     .list-item {
         line-height: $list-item-size;
         position: relative;
@@ -27,19 +28,13 @@
         }
 
         .list-item-label {
+            padding: 0 5px;
             @include text-overflow();
         }
 
-        a {
-            color: $color-base;
-            text-decoration: none;
-            display: block;
-            flex: 1;
-
-            &:focus,
-            &:hover {
-                outline: none;
-            }
+        &:focus,
+        &:hover {
+            outline: none;
         }
 
         &:hover {
@@ -104,6 +99,7 @@
         }
 
         &.list-item-large {
+            display: block;
             width: 130px;
             text-align: center;
             padding: 5px;
