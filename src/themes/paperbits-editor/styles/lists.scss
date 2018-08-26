@@ -18,6 +18,7 @@
         
         display: flex;
         flex-wrap: wrap;
+        
 
         &.dragged {
             pointer-events: none;
@@ -29,6 +30,7 @@
 
         .list-item-label {
             padding: 0 5px;
+            flex: 1;
             @include text-overflow();
         }
 
