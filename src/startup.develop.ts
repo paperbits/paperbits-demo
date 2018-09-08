@@ -6,8 +6,7 @@
  * found in the LICENSE file at https://paperbits.io/license.
  */
 
-import "es6-shim";
-import "setimmediate";
+import "./polyfills";
 import * as ko from "knockout";
 
 import { InversifyInjector } from "@paperbits/common/injection";

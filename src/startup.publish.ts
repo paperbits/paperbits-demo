@@ -6,7 +6,7 @@
  * found in the LICENSE file at https://paperbits.io/license.
  */
 
-import "es6-shim";
+import "./polyfills";
 import "setimmediate";
 import * as path from "path";
 import * as ko from "knockout";

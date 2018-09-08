@@ -195,9 +195,16 @@ h2 {
         }
     }
 
+     &.resized-horizontally {
+        .resizable-content {
+        }
+    }
+
     &.resized-vertically {
         .resizable-content {
             height: 100%;
+            display: flex;
+            flex-direction: column;
         }
     }
 }
