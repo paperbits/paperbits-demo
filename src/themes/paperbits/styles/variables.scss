@@ -5,6 +5,8 @@ $breakpoint-md: 768px;
 $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
 
+$grid-breakpoints: ( xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px ) !default;
+
 $font-size-base: calc(10px + .8vw);
 $font-size-h6: $font-size-base;
 $font-size-h5: calc(8px + 1vw);

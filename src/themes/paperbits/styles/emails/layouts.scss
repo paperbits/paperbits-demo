@@ -1,0 +1,65 @@
+@mixin fit($spacing: 0) {
+    top: $spacing;
+    left: $spacing;
+    right: $spacing;
+    bottom: $spacing;
+    position: absolute;
+}
+
+.placeholder {
+    position: relative;
+    min-height: 80px;
+    font-size: 1em;
+    font-family: monospace;
+    text-transform: uppercase;
+    height: 100%;
+    pointer-events: none;
+}
+
+.empty-item {
+    @include fit();
+    background: repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0) 10px, rgba(0, 0, 0, 0.05) 10px, rgba(0, 0, 0, 0.05) 20px);
+
+    &:after {
+        content: attr(placeholder);
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        text-align: center;
+    }
+}
+@function breakpoint-min($name, $breakpoints: $grid-breakpoints) {
+    $min: map-get($breakpoints, $name);
+    @return if($min != 0, $min, null);
+}
+@function breakpoint-infix($name, $breakpoints: $grid-breakpoints) {
+     @return if(breakpoint-min($name, $breakpoints) == null, "", "-#{$name}");
+}
+@each $breakpoint in map-keys($grid-breakpoints) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    .align-horizontally#{$infix}-left {
+        text-align: left;
+    }
+
+    .align-horizontally#{$infix}-center {
+        text-align: center;
+    }
+
+    .align-horizontally#{$infix}-right {
+        text-align: right;
+    }
+
+    .align-vertically#{$infix}-top {
+        vertical-align: top;
+    }
+
+    .align-vertically#{$infix}-center {
+        vertical-align: middle;
+    }
+
+    .align-vertically#{$infix}-bottom {
+        vertical-align: bottom;
+    }
+}

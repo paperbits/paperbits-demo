@@ -1,0 +1,27 @@
+@import "emails.scss";
+
+
+
+// col-sm-12 col-md-12 col-lg-12
+
+table.design-time {
+    tr {
+        display: flex;
+        border: 1px solid #ccc;
+
+        td {
+            display: block;
+            border: 1px dashed #ccc;
+        }
+    }
+}
+
+.sss {
+    // border: 1px solid blue;
+    padding: 20px;
+    display: block;
+}
+
+body {
+    padding: 20px;
+}
