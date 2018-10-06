@@ -7,14 +7,15 @@ const editorTheme = "paperbits-editor";
 
 module.exports = {
     entry: {
-        "scripts/paperbits": ["./src/startup.develop.ts"],
-        "styles/paperbits": [`./src/themes/${editorTheme}/styles/paperbits.scss`],
-        "theme/scripts/theme": [`./src/themes/${selectedTheme}/scripts/index.ts`],
-        "theme/styles/theme": [`./src/themes/${selectedTheme}/styles/styles.scss`]
+        "editors/scripts/paperbits": ["./src/startup.develop.ts"],
+        "editors/styles/paperbits": [`./src/themes/${editorTheme}/styles/paperbits.scss`],
+        "scripts/theme": [`./src/themes/${selectedTheme}/scripts/index.ts`],
+        "styles/theme": [`./src/themes/${selectedTheme}/styles/styles.scss`],
+        "email-templates/theme": [`./src/themes/${selectedTheme}/styles/emails/emails.scss`]
     },
     output: {
         filename: "./[name].js",
-        path: path.resolve(__dirname, "./dist/editors")
+        path: path.resolve(__dirname, "./dist")
     },
     module: {
         rules: [
@@ -48,11 +49,11 @@ module.exports = {
         }),
         new CopyWebpackPlugin([
             { from: `./src/data`, to: "data" },
-            { from: `./src/themes/${editorTheme}/assets`},
-            { from: `./src/themes/${editorTheme}/styles/fonts`, to: "styles/fonts" },
-            { from: `./src/themes/${selectedTheme}/assets`, to: "theme" },
-            { from: `./src/themes/${selectedTheme}/styles/fonts`, to: "theme/styles/fonts" },
-            { from: `./src/themes/${selectedTheme}/config.json` }
+            { from: `./src/themes/${editorTheme}/assets/index.html`, to: "editors.html"},
+            { from: `./src/themes/${editorTheme}/styles/fonts`, to: "editors/styles/fonts" },
+            { from: `./src/themes/${selectedTheme}/assets`, to: "" },
+            { from: `./src/themes/${selectedTheme}/styles/fonts`, to: "styles/fonts" },
+            { from: `./src/config.json` }
         ])
     ],
     resolve: {

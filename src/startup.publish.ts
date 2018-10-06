@@ -6,43 +6,47 @@
  * found in the LICENSE file and at https://paperbits.io/license.
  */
 
-import "./polyfills";
+
 import "setimmediate";
 import * as path from "path";
 import * as ko from "knockout";
 import * as Utils from "./utils";
+import { createDocument } from "@paperbits/core/ko/knockout-rendring";
+
 
 import { InversifyInjector } from "@paperbits/common/injection";
-import { IPublisher, PublishingNodeModule } from "@paperbits/publishing/publishers";
+import { IPublisher } from "@paperbits/common/publishing";
+import { PublishingNodeModule } from "./publishing";
 import { HtmlModule } from "@paperbits/html/html.module";
 import { StaticSettingsProvider } from "./components/staticSettingsProvider";
-import { FileSystemBlobStorage } from "@paperbits/publishing/persistence";
-import { StaticRouteHandler } from "./components/staticRouteHandler";
-import { FormsModule } from "@paperbits/forms/forms.module";
-import { CoreModule } from "@paperbits/core/core.module";
-
-
+import { FileSystemBlobStorage } from "./components/filesystemBlobStorage";
+import { StaticRouteHandler } from "@paperbits/core/staticRouteHandler";
 // import { FirebaseModule } from "@paperbits/firebase/firebase.module";
 import { StaticLocalStorageModule } from "./components/staticLocalStorage.module";
+import { FormsModule } from "@paperbits/forms/forms.module";
+import { CoreModule } from "@paperbits/core/core.module";
+import { EmailsModule } from "@paperbits/emails/emails.module";
+import { EmailPublisher } from "@paperbits/emails/publishers/emailPublisher";
+
 
 export class Publisher {
     constructor(
-        private readonly inputBasePath: string,
-        private readonly outputBasePath: string,
-        private readonly indexFilePath: string,
-        private readonly settingsConfigPath: string,
-        private readonly demoDataPath: string
-    ) {
-    }
+        private readonly inputBasePath,
+        private readonly outputBasePath,
+        private readonly pageTemplatePath,
+        private readonly emailTemplatePath,
+        private readonly settingsConfigPath,
+        private readonly demoDataPath
+    ) { }
 
     public async publish(): Promise<void> {
-        const html = await Utils.loadFileAsString(this.indexFilePath);
-
-        const publishNodeModule = new PublishingNodeModule(html);
-        publishNodeModule.initDocument();
+        createDocument();
 
         const injector = new InversifyInjector();
 
+        injector.bind("emailPublisher", EmailPublisher);
+
+        const publishNodeModule = new PublishingNodeModule();
         injector.bindModule(new HtmlModule());
 
         // injector.bindModule(new FirebaseModule());
@@ -51,10 +55,20 @@ export class Publisher {
         injector.bindSingleton("routeHandler", StaticRouteHandler);
         const configJson = await Utils.loadFileAsString(this.settingsConfigPath);
         const settings = JSON.parse(configJson);
-        injector.bindInstance("settingsProvider", new StaticSettingsProvider(settings));
+
+        const settingsProvider = new StaticSettingsProvider(settings);
+
+        const pageTemplate = await Utils.loadFileAsString(this.pageTemplatePath);
+        settingsProvider.setSetting("pageTemplate", pageTemplate);
+
+        const emailTemplate = await Utils.loadFileAsString(this.emailTemplatePath);
+        settingsProvider.setSetting("emailTemplate", emailTemplate);
+
+        injector.bindInstance("settingsProvider", settingsProvider);
 
         injector.bindModule(new CoreModule());
         injector.bindModule(new FormsModule());
+        injector.bindModule(new EmailsModule());
 
         injector.bindInstance("inputBlobStorage", new FileSystemBlobStorage(path.resolve(this.inputBasePath)));
         injector.bindInstance("outputBlobStorage", new FileSystemBlobStorage(path.resolve(this.outputBasePath)));
@@ -65,6 +79,7 @@ export class Publisher {
         injector.resolve("widgetBindingHandler");
         injector.resolve("htmlEditorBindingHandler");
         injector.resolve("backgroundBindingHandler");
+        injector.resolve("inputBindingHandler");
 
         ko.options["createChildContextWithAs"] = true;
         ko.applyBindings();

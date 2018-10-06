@@ -2,9 +2,9 @@
     "compilerOptions": {
         "target": "es5",
         "lib": [
-            "es2015",
-            "es6",
-            "dom"
+            "dom",
+            "es5",
+            "es6"
         ],
         "module": "commonjs",
         "moduleResolution": "node",
@@ -18,10 +18,10 @@
         "emitDecoratorMetadata": true,
         "allowUnreachableCode": true,
         "listFiles": false,
-        "sourceMap": true,
+        "sourceMap": false,
         "allowSyntheticDefaultImports": true
     },
     "exclude": [
-        "node_modules"
+        "./node_modules"
     ]
 }

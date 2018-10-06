@@ -6,12 +6,13 @@ const selectedTheme = "paperbits";
 module.exports = {
     mode: "development",
     entry: {
-        "scripts/theme.js": [`./src/themes/${selectedTheme}/scripts/index.ts`],
-        "styles/theme": [`./src/themes/${selectedTheme}/styles/styles.scss`]
+        "website/scripts/theme.js": [`./src/themes/${selectedTheme}/scripts/index.ts`],
+        "website/styles/theme": [`./src/themes/${selectedTheme}/styles/styles.scss`],
+        "email-templates/theme": [`./src/themes/${selectedTheme}/styles/emails/emails.scss`]
     },
     output: {
         filename: "./[name]",
-        path: path.resolve(__dirname, "./dist/published/theme")
+        path: path.resolve(__dirname, "./dist/published")
     },
     module: {
         rules: [
@@ -36,16 +37,19 @@ module.exports = {
         ]
     },
     plugins: [
+        new CopyWebpackPlugin([
+            { from: `./src/themes/${selectedTheme}/styles/fonts`, to: "website/styles/fonts" },
+            { from: `./src/themes/${selectedTheme}/assets/index.html`, to: "website"},
+            { from: `./src/themes/${selectedTheme}/assets/email.html`, to: "email-templates"},
+            { from: `./src/themes/${selectedTheme}/assets/search-index.json`, to: "website"},
+        ]),
         new MiniCssExtractPlugin({
             filename: "[name].css",
             chunkFilename: "[id].css"
-        }),
-        new CopyWebpackPlugin([
-            { from: `./src/themes/${selectedTheme}/styles/fonts`, to: "styles/fonts" }
-        ])
+        })
     ],
     optimization: {
-        concatenateModules: true //ModuleConcatenationPlugin
+        concatenateModules: true
     },
     resolve: {
         extensions: [".tsx", ".ts", ".html", ".scss"]

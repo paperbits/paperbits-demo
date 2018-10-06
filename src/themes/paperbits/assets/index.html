@@ -12,8 +12,7 @@
 
     <meta property="og:site_name" content="PaperBits" />
     <meta property="og:title" content="Drag 'n' drop content builder for web apps" />
-    <meta property="og:description" content="Give your users a tool to create professional web pages, forms, email templates and more."
-    />
+    <meta property="og:description" content="Give your users a tool to create professional web pages, forms, email templates and more." />
     <meta property="og:url" content="https://paperbits.io/" />
     <meta property="og:type" content="website" />
 
@@ -22,7 +21,7 @@
     <link href="favicon.ico" rel="shortcut icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
         crossorigin="anonymous">
-    <link href="/theme/styles/theme.css" rel="stylesheet" type="text/css">
+    <link href="/styles/theme.css" rel="stylesheet" type="text/css">
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -34,7 +33,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2.0.2/custom-elements-es5-adapter.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2.0.2/webcomponents-bundle.min.js"></script>
 
-    <script type="application/ld+json"> 
+    <script type="application/ld+json">
         {
             "@context": "http://schema.org",
             "@type": "Organization",
@@ -51,11 +50,24 @@
 </head>
 
 <body data-spy="scroll" data-target="#table-of-content">
+    <script id="tableOfContentsItem" type="text/html">
+            <ul class="nav" data-bind="foreach: { data: $data.nodes, as: 'item' }">
+                <li class="nav-item" data-bind="css: { active: item.isActive }">
+                    <a class="nav-link" data-bind="text: item.label, attr: { href: item.url }"></a>
+        
+                    <!--ko if: item.nodes.length > 0 -->
+                    <!--ko template: { name: 'tableOfContentsItem', data: item }--><!--/ko-->
+                    <!--/ko-->
+                </li>
+            </ul>
+    </script>
+
     <page-document class="fit"></page-document>
 
     <div class="cookies alert" role="alert">
         <div class="container">
-            This website uses cookies to ensure you get the best experience possible. By continuing to browse, you agree to our
+            This website uses cookies to ensure you get the best experience possible. By continuing to browse, you
+            agree to our
             use of cookies to analyze site usage and assist in our marketing efforts.
             <a href="/terms-of-use">Learn more.</a>
             <a href="#" class="dismiss" data-dismiss="alert" aria-label="Close">
@@ -64,7 +76,7 @@
         </div>
     </div>
 
-    <script src="/theme/scripts/theme.js"></script>
+    <script src="/scripts/theme.js"></script>
 </body>
 
 </html>

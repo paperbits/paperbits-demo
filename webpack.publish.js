@@ -3,19 +3,15 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
-const selectedTheme = "paperbits";
-const editorTheme = "paperbits-editor";
-
 module.exports = {
     mode: "development",
     target: "node", 
     entry: {
-        "publisher": ["./src/startup.publish.ts"],
-        "styles/paperbits" : [`./src/themes/${editorTheme}/styles/paperbits.scss`]
+        "publisher": ["./src/startup.publish.ts"]
     },
     output: {
         filename: "./[name].js",
-        path: path.resolve(__dirname, "dist/dev"),
+        path: path.resolve(__dirname, "dist"),
         library: "paperbitsPublisher",	
         libraryTarget: "commonjs2"
     },
@@ -51,8 +47,7 @@ module.exports = {
             chunkFilename: "[id].css"
         }),
         new CopyWebpackPlugin([   
-            { from: `./src/themes/${selectedTheme}/assets`, to: "theme"},
-            { from: `./src/themes/${selectedTheme}/config.json`}  
+            { from: `./src/config.json`}  
         ])
     ],
     optimization: {

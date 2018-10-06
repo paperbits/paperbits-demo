@@ -18,6 +18,9 @@ import { SettingsProvider } from "@paperbits/common/configuration";
 import { DefaultRouteHandler } from "@paperbits/common/routing";
 import { FormsModule } from "@paperbits/forms/forms.module";
 import { FormsEditModule } from "@paperbits/forms/forms.edit.module";
+import { EmailsModule } from "@paperbits/emails/emails.module";
+import { EmailsEditModule } from "@paperbits/emails/emails.edit.module";
+
 
 // import { FirebaseModule } from "@paperbits/firebase/firebase.module";
 import { DemoModule } from "./components/demo.module";
@@ -34,6 +37,8 @@ document.addEventListener("DOMContentLoaded", () => {
     injector.bindModule(new CoreEditModule());
     injector.bindModule(new FormsModule());
     injector.bindModule(new FormsEditModule());
+    injector.bindModule(new EmailsModule());
+    injector.bindModule(new EmailsEditModule());
 
     const offlineObjectStorage = injector.resolve<OfflineObjectStorage>("offlineObjectStorage");
     const anchorMiddleware = injector.resolve<AnchorMiddleware>("anchorMiddleware");
@@ -42,6 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
     /*** Autostart ***/
     injector.resolve("contentBindingHandler");
     injector.resolve("gridBindingHandler");
+    injector.resolve("emailGridBindingHandler");
     injector.resolve("lighboxBindingHandler");
     injector.resolve("draggablesBindingHandler");
     injector.resolve("widgetBindingHandler");
@@ -53,6 +59,8 @@ document.addEventListener("DOMContentLoaded", () => {
     injector.resolve("savingHandler");
     injector.resolve("errorHandler");
     injector.resolve("knockoutValidation");
+    injector.resolve("inputBindingHandler");
+    injector.resolve("cropperBindingHandler");
 
     ko.options["createChildContextWithAs"] = true;
     ko.applyBindings();
