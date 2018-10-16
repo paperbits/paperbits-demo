@@ -47,7 +47,6 @@ document.addEventListener("DOMContentLoaded", () => {
     /*** Autostart ***/
     injector.resolve("contentBindingHandler");
     injector.resolve("gridBindingHandler");
-    injector.resolve("emailGridBindingHandler");
     injector.resolve("lighboxBindingHandler");
     injector.resolve("draggablesBindingHandler");
     injector.resolve("widgetBindingHandler");
@@ -62,6 +61,5 @@ document.addEventListener("DOMContentLoaded", () => {
     injector.resolve("inputBindingHandler");
     injector.resolve("cropperBindingHandler");
 
-    ko.options["createChildContextWithAs"] = true;
-    ko.applyBindings();
+    ko.applyBindings(undefined, document.body);
 });

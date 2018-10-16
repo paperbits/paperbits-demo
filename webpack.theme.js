@@ -39,8 +39,8 @@ module.exports = {
     plugins: [
         new CopyWebpackPlugin([
             { from: `./src/themes/${selectedTheme}/styles/fonts`, to: "website/styles/fonts" },
-            { from: `./src/themes/${selectedTheme}/assets/index.html`, to: "website"},
-            { from: `./src/themes/${selectedTheme}/assets/email.html`, to: "email-templates"},
+            { from: `./src/themes/${selectedTheme}/assets/page.html`, to: "website/page.html"},
+            { from: `./src/themes/${selectedTheme}/assets/email.html`, to: "email-templates/email.html"},
             { from: `./src/themes/${selectedTheme}/assets/search-index.json`, to: "website"},
         ]),
         new MiniCssExtractPlugin({

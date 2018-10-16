@@ -113,6 +113,10 @@ textarea {
         color: $color-danger;
         border-color: $color-danger;
     }
+
+    &[readonly]{
+        background-color: #f5f5f5;
+    }
 }
 
 input[type=search] {

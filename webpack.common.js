@@ -49,9 +49,10 @@ module.exports = {
         }),
         new CopyWebpackPlugin([
             { from: `./src/data`, to: "data" },
-            { from: `./src/themes/${editorTheme}/assets/index.html`, to: "editors.html"},
+            { from: `./src/themes/${editorTheme}/assets/index.html`, to: "index.html"},
             { from: `./src/themes/${editorTheme}/styles/fonts`, to: "editors/styles/fonts" },
-            { from: `./src/themes/${selectedTheme}/assets`, to: "" },
+            { from: `./src/themes/${selectedTheme}/assets/page.html`, to: "page.html" },
+            { from: `./src/themes/${selectedTheme}/assets/email.html`, to: "email.html" },
             { from: `./src/themes/${selectedTheme}/styles/fonts`, to: "styles/fonts" },
             { from: `./src/config.json` }
         ])

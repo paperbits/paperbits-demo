@@ -1,18 +1,5 @@
 @import "emails.scss";
 
-
-table.design-time {
-    tr {
-        display: flex;
-        border: 1px solid #ccc;
-
-        td {
-            display: block;
-            border: 1px dashed #ccc;
-        }
-    }
-}
-
 body {
     padding: 20px;
 }

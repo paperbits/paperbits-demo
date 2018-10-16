@@ -7,8 +7,7 @@ module.exports = merge(common, {
     devtool: "inline-source-map",
     devServer: {
         hot: true,
-        historyApiFallback: true,
-        index: 'editors.html'
+        historyApiFallback: true
     },
     plugins: [
         new webpack.HotModuleReplacementPlugin()
