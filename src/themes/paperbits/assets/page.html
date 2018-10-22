@@ -32,6 +32,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2.0.2/custom-elements-es5-adapter.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2.0.2/webcomponents-bundle.min.js"></script>
+    <script src="/scripts/theme.js"></script>
 
     <script type="application/ld+json">
         {
@@ -50,20 +51,6 @@
 </head>
 
 <body data-spy="scroll" data-target="#table-of-content">
-    <script id="tableOfContentsItem" type="text/html">
-            <ul class="nav" data-bind="foreach: { data: $data.nodes, as: 'item' }">
-                <li class="nav-item" data-bind="css: { active: item.isActive }">
-                    <a class="nav-link" data-bind="text: item.label, attr: { href: item.url }"></a>
-        
-                    <!--ko if: item.nodes.length > 0 -->
-                    <!--ko template: { name: 'tableOfContentsItem', data: item }--><!--/ko-->
-                    <!--/ko-->
-                </li>
-            </ul>
-    </script>
-
-    <page-document class="fit"></page-document>
-
     <div class="cookies alert" role="alert">
         <div class="container">
             This website uses cookies to ensure you get the best experience possible. By continuing to browse, you
@@ -76,7 +63,7 @@
         </div>
     </div>
 
-    <script src="/scripts/theme.js"></script>
+    
 </body>
 
 </html>

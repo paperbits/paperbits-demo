@@ -34,7 +34,6 @@ export class Publisher {
         private readonly inputBasePath,
         private readonly outputBasePath,
         private readonly pageTemplatePath,
-        private readonly emailTemplatePath,
         private readonly settingsConfigPath,
         private readonly demoDataPath
     ) { }
@@ -60,9 +59,6 @@ export class Publisher {
 
         const pageTemplate = await Utils.loadFileAsString(this.pageTemplatePath);
         settingsProvider.setSetting("pageTemplate", pageTemplate);
-
-        const emailTemplate = await Utils.loadFileAsString(this.emailTemplatePath);
-        settingsProvider.setSetting("emailTemplate", emailTemplate);
 
         injector.bindInstance("settingsProvider", settingsProvider);
 

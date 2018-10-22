@@ -8,7 +8,6 @@ import { ISettings, ISiteService } from "@paperbits/common/sites";
 import { IPermalinkService } from "@paperbits/common/permalinks";
 import { IMediaService, MediaContract } from "@paperbits/common/media";
 import { MetaDataSetter } from "@paperbits/common/meta";
-import { LayoutModelBinder } from "@paperbits/core/layout";
 import { LayoutViewModelBinder } from "@paperbits/core/layout/ko";
 import { createDocument } from "@paperbits/core/ko/knockout-rendring";
 import { ISettingsProvider } from "@paperbits/common/configuration";
@@ -20,7 +19,6 @@ export class BlogPublisher implements IPublisher {
         private readonly permalinkService: IPermalinkService,
         private readonly siteService: ISiteService,
         private readonly outputBlobStorage: IBlobStorage,
-        private readonly layoutModelBinder: LayoutModelBinder,
         private readonly layoutViewModelBinder: LayoutViewModelBinder,
         private readonly mediaService: IMediaService,
         private readonly settingsProvider: ISettingsProvider
@@ -53,30 +51,11 @@ export class BlogPublisher implements IPublisher {
 
             this.routeHandler.navigateTo(resourceUri);
 
-            const layoutModel = await this.layoutModelBinder.getLayoutModel();
-            const viewModel = await this.layoutViewModelBinder.modelToViewModel(layoutModel);
-
-            const element = templateDocument.createElement("div");
-            element.innerHTML = `
-            <paperbits-intercom></paperbits-intercom>
-            <paperbits-gtm></paperbits-gtm>
-            <!-- ko if: widgets().length > 0 -->
-            <!-- ko foreach: { data: widgets, as: 'widget'  } -->
-            <!-- ko widget: widget --><!-- /ko -->
-            <!-- /ko -->
-            <!-- /ko -->
-            <!-- ko if: widgets().length === 0 -->
-            Add page or section
-            <!-- /ko -->`;
-
-            ko.applyBindings(viewModel, element);
+            const layoutViewModel = await this.layoutViewModelBinder.getLayoutViewModel();
+            ko.applyBindingsToNode(templateDocument.body, { widget: layoutViewModel });
 
             setTimeout(() => {
-                const layoutElement = templateDocument.documentElement.querySelector("page-document");
-                layoutElement.innerHTML = element.innerHTML;
-
                 this.setSiteSettings(templateDocument, settings, iconFile, post);
-
                 htmlContent = templateDocument.documentElement.outerHTML;
                 resolve();
             }, 10);
