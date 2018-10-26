@@ -6,10 +6,21 @@ body,
 html {
     height: 100%;
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 section {
+    display: flex;
+    flex-direction: column;
+    flex: none;
     padding: 10px;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
 
     .row {
         padding: 10px;
@@ -17,6 +28,7 @@ section {
 
         .col {
             display: flex;
+            flex-direction: column;
             flex-wrap: wrap;
             align-content: start;
             align-items: start;
@@ -26,6 +38,27 @@ section {
     &.with-padding {
         padding: 40px;
     }
+
+    /* TODO: Enable row height through editor */
+    &.stretch > .container, .container-fluid > .row {
+        flex: 1;
+    }
+}
+
+.stretch {
+    flex: 1;
+}
+
+.overflow {
+    overflow: auto;
+}
+
+.overflow-x {
+    overflow-x: auto;
+}
+
+.overflow-y {
+    overflow-y: auto;
 }
 
 .fit {
