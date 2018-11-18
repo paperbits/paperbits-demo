@@ -1,0 +1,99 @@
+@import "styles.scss";
+
+$style-guide-font-family: "Arial";
+$style-guide-font-size: 12px;
+$style-guide-color: #000;
+
+.living-style-guide {
+    .fonts {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .font {
+        border: 1px solid #ededed;
+        padding: 20px 30px;
+        display: inline-block;
+        min-width: 100px;
+        text-align: center;
+        margin: 5px;
+
+        .font-sample {
+            padding: 0;
+            margin: 0;
+            font-size: 20px;
+        }
+
+        .font-name {
+            color: $style-guide-color;
+            font-size: 10px;
+            font-family: $style-guide-font-family;
+        }
+    }
+
+    .font-primary {
+        padding: 40px 0;
+
+        .font-sample {
+            font-size: 150px;
+
+        }
+    }
+
+    .heading {
+        color: $style-guide-color;
+        font-family: $style-guide-font-family;
+        font-size: 30px;
+        font-weight: normal;
+    }
+
+    .category-name {
+        color: $style-guide-color;
+        font-size: $style-guide-font-size;
+        font-family: $style-guide-font-family;
+    }
+
+    .samples {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .sample {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .sample-name {
+                text-align: center;
+                display: block;
+                color: $style-guide-color;
+                font-size: $style-guide-font-size;
+                font-family: $style-guide-font-family;
+            }
+
+            .sample-shadow {
+                width: 100px;
+                height: 100px;
+            }
+
+            .sample-color {
+                cursor: pointer;
+                border-radius: 50%;
+                box-shadow: inset -1px 1px 1px 0 rgba(0, 0, 0, 0.1);
+                width: 60px;
+                height: 60px;
+                margin: 10px;
+                padding: 0;
+                display: block;
+                position: relative;
+                text-align: center;
+            }
+        }
+    }
+
+    article {
+        padding-bottom: 50px;
+    }
+}

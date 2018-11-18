@@ -27,6 +27,7 @@ import { FormsModule } from "@paperbits/forms/forms.module";
 import { CoreModule } from "@paperbits/core/core.module";
 import { EmailsModule } from "@paperbits/emails/emails.module";
 import { EmailPublisher } from "@paperbits/emails/publishers/emailPublisher";
+import { StyleModule } from "@paperbits/styles/style.module";
 
 
 export class Publisher {
@@ -43,6 +44,7 @@ export class Publisher {
 
         const injector = new InversifyInjector();
 
+        injector.bindModule(new StyleModule());
         injector.bind("emailPublisher", EmailPublisher);
 
         const publishNodeModule = new PublishingNodeModule();

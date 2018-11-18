@@ -21,6 +21,10 @@ import { FormsEditModule } from "@paperbits/forms/forms.edit.module";
 import { EmailsModule } from "@paperbits/emails/emails.module";
 import { EmailsEditModule } from "@paperbits/emails/emails.edit.module";
 
+import { StylingEditModule } from "../../paperbits-styles/src/styling.edit.module";
+
+
+
 
 // import { FirebaseModule } from "@paperbits/firebase/firebase.module";
 import { DemoModule } from "./components/demo.module";
@@ -39,6 +43,8 @@ document.addEventListener("DOMContentLoaded", () => {
     injector.bindModule(new FormsEditModule());
     injector.bindModule(new EmailsModule());
     injector.bindModule(new EmailsEditModule());
+
+    injector.bindModule(new StylingEditModule());
 
     const offlineObjectStorage = injector.resolve<OfflineObjectStorage>("offlineObjectStorage");
     const anchorMiddleware = injector.resolve<AnchorMiddleware>("anchorMiddleware");

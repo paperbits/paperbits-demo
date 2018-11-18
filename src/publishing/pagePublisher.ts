@@ -35,20 +35,11 @@ export class PagePublisher implements IPublisher {
         const pageTemplate = <string>await this.settingsProvider.getSetting("pageTemplate");
         const templateDocument = createDocument(pageTemplate);
 
-        const documentModel = {
-            siteSettings: null,
-            pageModel: page,
-            pageContentModel: {},
-            layoutContentModel: {},
-            permalink: null
-        };
-
         let resourceUri: string;
         let htmlContent: string;
 
         const buildContentPromise = new Promise<void>(async (resolve, reject) => {
             const permalink = await this.permalinkService.getPermalinkByKey(page.permalinkKey);
-            documentModel.permalink = permalink;
             resourceUri = permalink.uri;
 
             this.routeHandler.navigateTo(resourceUri);

@@ -1,6 +1,7 @@
 import "setimmediate";
 import { IInjector } from "@paperbits/common/injection";
 import { IBlobStorage } from "@paperbits/common/persistence";
+import { StylePublisher } from "@paperbits/styles/publishing";
 import { SitePublisher } from "./sitePublisher";
 import { PagePublisher } from "./pagePublisher";
 import { BlogPublisher } from "./blogPublisher";
@@ -18,7 +19,9 @@ export class PublishingNodeModule {
         injector.bindSingleton("pagePublisher", PagePublisher);
         injector.bindSingleton("blogPublisher", BlogPublisher);
         injector.bindSingleton("mediaPublisher", MediaPublisher);
+        
 
+        const stylePublisher = injector.resolve("stylePublisher");
         const pagePublisher = injector.resolve("pagePublisher");
         const mediaPublisher = injector.resolve("mediaPublisher");
         const assetPublisher = injector.resolve("assetPublisher");
@@ -26,6 +29,7 @@ export class PublishingNodeModule {
         const emailPublisher = injector.resolve("emailPublisher");
 
         injector.bindInstance("publishers", [
+            stylePublisher,
             assetPublisher,
             mediaPublisher,
             emailPublisher,

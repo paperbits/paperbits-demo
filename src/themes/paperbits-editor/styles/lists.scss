@@ -13,12 +13,10 @@
         line-height: $list-item-size;
         position: relative;
         cursor: pointer;
-        
         vertical-align: middle;
-        
         display: flex;
         flex-wrap: wrap;
-        
+
         .paperbits-icon {
             padding: 0 5px 0 10px;
         }
@@ -26,6 +24,8 @@
         .list-item-label {
             padding: 0 5px;
             flex: 1;
+            text-decoration: none;
+            color: $color-base;
             @include text-overflow();
         }
 
