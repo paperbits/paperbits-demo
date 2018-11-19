@@ -12,8 +12,6 @@ import * as path from "path";
 import * as ko from "knockout";
 import * as Utils from "./utils";
 import { createDocument } from "@paperbits/core/ko/knockout-rendring";
-
-
 import { InversifyInjector } from "@paperbits/common/injection";
 import { IPublisher } from "@paperbits/common/publishing";
 import { PublishingNodeModule } from "./publishing";
@@ -27,7 +25,7 @@ import { FormsModule } from "@paperbits/forms/forms.module";
 import { CoreModule } from "@paperbits/core/core.module";
 import { EmailsModule } from "@paperbits/emails/emails.module";
 import { EmailPublisher } from "@paperbits/emails/publishers/emailPublisher";
-import { StyleModule } from "@paperbits/styles/style.module";
+import { StyleModule } from "@paperbits/styles/styles.module";
 
 
 export class Publisher {

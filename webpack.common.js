@@ -11,6 +11,7 @@ module.exports = {
         "editors/styles/paperbits": [`./src/themes/${editorTheme}/styles/paperbits.scss`],
         "scripts/theme": [`./src/themes/${selectedTheme}/scripts/index.ts`],
         "styles/theme": [`./src/themes/${selectedTheme}/styles/styles.scss`],
+        "styles/theme.design": [`./src/themes/${selectedTheme}/styles/styles-design-time.scss`],
         "email-templates/theme": [`./src/themes/${selectedTheme}/styles/emails/emails.scss`]
     },
     output: {
@@ -53,6 +54,7 @@ module.exports = {
             { from: `./src/themes/${editorTheme}/styles/fonts`, to: "editors/styles/fonts" },
             { from: `./src/themes/${selectedTheme}/assets/page.html`, to: "page.html" },
             { from: `./src/themes/${selectedTheme}/assets/email.html`, to: "email.html" },
+            { from: `./src/themes/${selectedTheme}/assets/theme.html`, to: "theme.html" },
             { from: `./src/themes/${selectedTheme}/styles/fonts`, to: "styles/fonts" },
             { from: `./src/config.json` }
         ])
