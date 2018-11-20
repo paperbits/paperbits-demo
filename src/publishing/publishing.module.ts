@@ -1,7 +1,6 @@
 import "setimmediate";
 import { IInjector } from "@paperbits/common/injection";
 import { IBlobStorage } from "@paperbits/common/persistence";
-import { StylePublisher } from "@paperbits/styles/publishing";
 import { SitePublisher } from "./sitePublisher";
 import { PagePublisher } from "./pagePublisher";
 import { BlogPublisher } from "./blogPublisher";
