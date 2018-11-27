@@ -11,7 +11,8 @@
     "scripts": {
         "develop": "webpack-dev-server --open --config webpack.develop.js && webpack --config webpack.theme.js",
         "build": "webpack --config webpack.build.js && webpack --config webpack.theme.js",
-        "publish": "webpack --config webpack.publish.js && webpack --config webpack.theme.js && node publish.js"
+        "publish": "webpack --config webpack.publish.js && webpack --config webpack.theme.js && node publish.js",
+        "postinstall": "npm rebuild node-sass"
     },
     "devDependencies": {
         "@types/google-maps": "^3.2.0",
