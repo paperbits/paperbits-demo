@@ -42,7 +42,6 @@ export class Publisher {
 
         const injector = new InversifyInjector();
 
-        injector.bindModule(new StyleModule());
         injector.bind("emailPublisher", EmailPublisher);
 
         const publishNodeModule = new PublishingNodeModule();
@@ -65,6 +64,7 @@ export class Publisher {
         injector.bindModule(new CoreModule());
         injector.bindModule(new FormsModule());
         injector.bindModule(new EmailsModule());
+        injector.bindModule(new StyleModule());
 
         injector.bindInstance("inputBlobStorage", new FileSystemBlobStorage(path.resolve(this.inputBasePath)));
         injector.bindInstance("outputBlobStorage", new FileSystemBlobStorage(path.resolve(this.outputBasePath)));

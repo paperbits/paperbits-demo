@@ -47,7 +47,7 @@ export class BlogPublisher implements IPublisher {
 
             setTimeout(() => {
                 this.setSiteSettings(templateDocument, settings, iconFile, post);
-                htmlContent = templateDocument.documentElement.outerHTML;
+                htmlContent = "<!DOCTYPE html>" + templateDocument.documentElement.outerHTML;
                 resolve();
             }, 10);
         });

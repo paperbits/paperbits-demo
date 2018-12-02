@@ -54,7 +54,7 @@ export class PagePublisher implements IPublisher {
             this.setSiteSettings(templateDocument, settings, iconFile, imageFile, page, resourceUri);
 
             setTimeout(() => {
-                htmlContent = templateDocument.documentElement.outerHTML;
+                htmlContent = "<!DOCTYPE html>" + templateDocument.documentElement.outerHTML;
                 resolve();
             }, 10);
         });
