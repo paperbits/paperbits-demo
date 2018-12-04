@@ -31,7 +31,7 @@ export class StaticObjectStorage implements IObjectStorage {
             const response = await this.httpClient.send({
                 url: this.datasourceUrl,
                 method: "GET"
-            })
+            });
 
             const dataObject = response.toObject();
 
@@ -42,7 +42,7 @@ export class StaticObjectStorage implements IObjectStorage {
     }
 
     private getPathObject(pathParts: string[]) {
-        if (pathParts.length == 1 || (pathParts.length == 2 && !pathParts[1])) {
+        if (pathParts.length === 1 || (pathParts.length === 2 && !pathParts[1])) {
             return this.storageDataObject[pathParts[0]];
         } else {
             return this.storageDataObject[pathParts[0]][pathParts[1]];
@@ -51,10 +51,10 @@ export class StaticObjectStorage implements IObjectStorage {
 
     public async addObject(path: string, dataObject: Object): Promise<void> {
         if (path) {
-            let pathParts = path.split(this.splitter);
-            let mainNode = pathParts[0];
+            const pathParts = path.split(this.splitter);
+            const mainNode = pathParts[0];
 
-            if (pathParts.length == 1 || (pathParts.length == 2 && !pathParts[1])) {
+            if (pathParts.length === 1 || (pathParts.length === 2 && !pathParts[1])) {
                 this.storageDataObject[mainNode] = dataObject;
             }
             else {
@@ -66,11 +66,11 @@ export class StaticObjectStorage implements IObjectStorage {
         }
         else {
             Object.keys(dataObject).forEach(prop => {
-                let obj = dataObject[prop];
-                let pathParts = prop.split(this.splitter);
-                let mainNode = pathParts[0];
+                const obj = dataObject[prop];
+                const pathParts = prop.split(this.splitter);
+                const mainNode = pathParts[0];
 
-                if (pathParts.length == 1 || (pathParts.length == 2 && !pathParts[1])) {
+                if (pathParts.length === 1 || (pathParts.length === 2 && !pathParts[1])) {
                     this.storageDataObject[mainNode] = obj;
                 }
                 else {
@@ -96,7 +96,7 @@ export class StaticObjectStorage implements IObjectStorage {
 
         const pathParts = path.split(this.splitter);
 
-        if (pathParts.length == 1 || (pathParts.length == 2 && !pathParts[1])) {
+        if (pathParts.length === 1 || (pathParts.length === 2 && !pathParts[1])) {
             delete this.storageDataObject[pathParts[0]];
         }
         else {
@@ -114,12 +114,12 @@ export class StaticObjectStorage implements IObjectStorage {
         Object.assign(updateObj, dataObject);
     }
 
-    public async searchObjects<T>(path: string, propertyNames?: Array<string>, searchValue?: string, startAtSearch?: boolean, skipLoadObject?: boolean): Promise<Array<T>> {
+    public async searchObjects<T>(path: string, propertyNames?: string[], searchValue?: string, startAtSearch?: boolean, skipLoadObject?: boolean): Promise<T[]> {
         if (!path) {
             return [];
         }
 
-        const result: Array<T> = [];
+        const result: T[] = [];
         const data = await this.getData();
 
         if (!data) {
@@ -130,8 +130,8 @@ export class StaticObjectStorage implements IObjectStorage {
         const keys = Object.keys(searchObj);
 
         if (propertyNames && propertyNames.length && searchValue) {
-            let searchProps = propertyNames.map(name => {
-                let prop = {};
+            const searchProps = propertyNames.map(name => {
+                const prop = {};
                 prop[name] = searchValue;
                 return prop;
             });
@@ -140,9 +140,9 @@ export class StaticObjectStorage implements IObjectStorage {
                 const matchedObj = searchObj[key];
                 const searchProperty = _.find(searchProps, (prop) => {
                     if (startAtSearch) {
-                        let propName = _.keys(prop)[0];
+                        const propName = _.keys(prop)[0];
 
-                        let test = matchedObj[propName];
+                        const test = matchedObj[propName];
                         return test && test.toUpperCase().startsWith(prop[propName].toUpperCase());
                     }
                     else {

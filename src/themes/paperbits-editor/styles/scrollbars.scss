@@ -14,7 +14,7 @@
    */
 .ps__rail-x {
     display: none;
-    opacity: 0;
+    opacity: .2;
     transition: background-color .2s linear, opacity .2s linear;
     -webkit-transition: background-color .2s linear, opacity .2s linear;
     height: 15px;
@@ -22,11 +22,12 @@
     bottom: 0;
     /* please don't change 'position' */
     position: absolute;
+    border-radius: 20px;
 }
 
 .ps__rail-y {
     display: none;
-    opacity: 0;
+    opacity: .2;
     transition: background-color .2s linear, opacity .2s linear;
     -webkit-transition: background-color .2s linear, opacity .2s linear;
     width: 15px;
@@ -34,6 +35,7 @@
     right: 0;
     /* please don't change 'position' */
     position: absolute;
+    border-radius: 20px;
 }
 
 .ps--active-x > .ps__rail-x,
