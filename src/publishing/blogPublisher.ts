@@ -5,7 +5,6 @@ import { IPublisher } from "@paperbits/common/publishing";
 import { IRouteHandler } from "@paperbits/common/routing";
 import { IBlobStorage } from "@paperbits/common/persistence";
 import { ISettings, ISiteService } from "@paperbits/common/sites";
-import { IPermalinkService } from "@paperbits/common/permalinks";
 import { IMediaService, MediaContract } from "@paperbits/common/media";
 import { MetaDataSetter } from "@paperbits/common/meta";
 import { LayoutViewModelBinder } from "@paperbits/core/layout/ko";
@@ -16,7 +15,6 @@ export class BlogPublisher implements IPublisher {
     constructor(
         private readonly routeHandler: IRouteHandler,
         private readonly blogService: IBlogService,
-        private readonly permalinkService: IPermalinkService,
         private readonly siteService: ISiteService,
         private readonly outputBlobStorage: IBlobStorage,
         private readonly layoutViewModelBinder: LayoutViewModelBinder,
@@ -37,10 +35,7 @@ export class BlogPublisher implements IPublisher {
         let htmlContent: string;
 
         const buildContentPromise = new Promise(async (resolve, reject) => {
-            const permalink = await this.permalinkService.getPermalinkByKey(post.permalinkKey);
-            resourceUri = permalink.uri;
-
-            this.routeHandler.navigateTo(resourceUri);
+            this.routeHandler.navigateTo(post.permalink);
 
             const layoutViewModel = await this.layoutViewModelBinder.getLayoutViewModel();
             ko.applyBindingsToNode(templateDocument.body, { widget: layoutViewModel });

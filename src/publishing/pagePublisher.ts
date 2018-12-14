@@ -2,7 +2,6 @@ import * as ko from "knockout";
 import * as Utils from "@paperbits/common/utils";
 import { IPublisher } from "@paperbits/common/publishing";
 import { IRouteHandler } from "@paperbits/common/routing";
-import { IPermalinkService } from "@paperbits/common/permalinks";
 import { IBlobStorage } from "@paperbits/common/persistence";
 import { IPageService, PageContract } from "@paperbits/common/pages";
 import { ISiteService, ISettings } from "@paperbits/common/sites";
@@ -17,7 +16,6 @@ export class PagePublisher implements IPublisher {
     constructor(
         private readonly routeHandler: IRouteHandler,
         private readonly pageService: IPageService,
-        private readonly permalinkService: IPermalinkService,
         private readonly siteService: ISiteService,
         private readonly outputBlobStorage: IBlobStorage,
         private readonly layoutViewModelBinder: LayoutViewModelBinder,
@@ -39,16 +37,13 @@ export class PagePublisher implements IPublisher {
         let htmlContent: string;
 
         const buildContentPromise = new Promise<void>(async (resolve, reject) => {
-            const permalink = await this.permalinkService.getPermalinkByKey(page.permalinkKey);
-            resourceUri = permalink.uri;
-
-            this.routeHandler.navigateTo(resourceUri);
+            this.routeHandler.navigateTo(page.permalink);
 
             const layoutViewModel = await this.layoutViewModelBinder.getLayoutViewModel();
             ko.applyBindingsToNode(templateDocument.body, { widget: layoutViewModel });
 
-            if (page.ogImagePermalinkKey) {
-                imageFile = await this.mediaService.getMediaByPermalinkKey(page.ogImagePermalinkKey);
+            if (page.ogImageSourceKey) {
+                imageFile = await this.mediaService.getMediaByKey(page.ogImageSourceKey);
             }
 
             this.setSiteSettings(templateDocument, settings, iconFile, imageFile, page, resourceUri);
@@ -84,7 +79,7 @@ export class PagePublisher implements IPublisher {
         let iconFile;
 
         if (settings && settings.site.faviconPermalinkKey) {
-            iconFile = await this.mediaService.getMediaByPermalinkKey(settings.site.faviconPermalinkKey);
+            iconFile = await this.mediaService.getMediaByKey(settings.site.faviconPermalinkKey);
         }
 
         let imageFile;
