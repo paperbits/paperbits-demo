@@ -27,7 +27,7 @@ export class PagePublisher implements IPublisher {
         this.setSiteSettings = this.setSiteSettings.bind(this);
     }
 
-    private async renderPage(page: PageContract, settings: ISettings, iconFile: MediaContract, imageFile: MediaContract): Promise<{ name, bytes }> {
+    private async renderPage(page: PageContract, settings: ISettings, iconMedia: MediaContract, imageMedia: MediaContract): Promise<{ name, bytes }> {
         console.log(`Publishing page ${page.title}...`);
 
         const pageTemplate = <string>await this.settingsProvider.getSetting("pageTemplate");
@@ -43,10 +43,10 @@ export class PagePublisher implements IPublisher {
             ko.applyBindingsToNode(templateDocument.body, { widget: layoutViewModel });
 
             if (page.ogImageSourceKey) {
-                imageFile = await this.mediaService.getMediaByKey(page.ogImageSourceKey);
+                imageMedia = await this.mediaService.getMediaByKey(page.ogImageSourceKey);
             }
 
-            this.setSiteSettings(templateDocument, settings, iconFile, imageFile, page, resourceUri);
+            this.setSiteSettings(templateDocument, settings, iconMedia, imageMedia, page, resourceUri);
 
             setTimeout(() => {
                 htmlContent = "<!DOCTYPE html>" + templateDocument.documentElement.outerHTML;
@@ -78,14 +78,14 @@ export class PagePublisher implements IPublisher {
 
         let iconFile;
 
-        if (settings && settings.site.faviconPermalinkKey) {
-            iconFile = await this.mediaService.getMediaByKey(settings.site.faviconPermalinkKey);
+        if (settings && settings.site.faviconSourceKey) {
+            iconFile = await this.mediaService.getMediaByKey(settings.site.faviconSourceKey);
         }
 
         let imageFile;
 
-        if (settings && settings.site.ogImagePermalinkKey) {
-            imageFile = await this.mediaService.getMediaByPermalinkKey(settings.site.ogImagePermalinkKey);
+        if (settings && settings.site.ogImageSourceKey) {
+            imageFile = await this.mediaService.getMediaByKey(settings.site.ogImageSourceKey);
         }
 
         // const renderAndUpload = async (page): Promise<void> => {

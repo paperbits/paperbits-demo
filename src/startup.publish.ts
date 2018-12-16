@@ -15,7 +15,6 @@ import { createDocument } from "@paperbits/core/ko/knockout-rendring";
 import { InversifyInjector } from "@paperbits/common/injection";
 import { IPublisher } from "@paperbits/common/publishing";
 import { PublishingNodeModule } from "./publishing";
-import { HtmlModule } from "@paperbits/html/html.module";
 import { StaticSettingsProvider } from "./components/staticSettingsProvider";
 import { FileSystemBlobStorage } from "./components/filesystemBlobStorage";
 import { StaticRouteHandler } from "@paperbits/core/staticRouteHandler";
@@ -26,7 +25,7 @@ import { CoreModule } from "@paperbits/core/core.module";
 import { EmailsModule } from "@paperbits/emails/emails.module";
 import { EmailPublisher } from "@paperbits/emails/publishers/emailPublisher";
 import { StyleModule } from "@paperbits/styles/styles.module";
-
+import { ProseMirrorModule } from "@paperbits/prosemirror/prosemirror.module";
 
 export class Publisher {
     constructor(
@@ -65,6 +64,7 @@ export class Publisher {
         injector.bindModule(new FormsModule());
         injector.bindModule(new EmailsModule());
         injector.bindModule(new StyleModule());
+        injector.bindModule(new ProseMirrorModule());
 
         injector.bindInstance("inputBlobStorage", new FileSystemBlobStorage(path.resolve(this.inputBasePath)));
         injector.bindInstance("outputBlobStorage", new FileSystemBlobStorage(path.resolve(this.outputBasePath)));

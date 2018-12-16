@@ -18,7 +18,7 @@ export class PublishingNodeModule {
         injector.bindSingleton("pagePublisher", PagePublisher);
         injector.bindSingleton("blogPublisher", BlogPublisher);
         injector.bindSingleton("mediaPublisher", MediaPublisher);
-        
+
 
         const stylePublisher = injector.resolve("stylePublisher");
         const pagePublisher = injector.resolve("pagePublisher");
@@ -31,8 +31,8 @@ export class PublishingNodeModule {
             stylePublisher,
             assetPublisher,
             mediaPublisher,
-            emailPublisher,
-            blogPublisher,
+            // emailPublisher,
+            // blogPublisher,
             pagePublisher
         ]);
     }

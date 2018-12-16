@@ -10,7 +10,6 @@ import "./polyfills";
 import * as ko from "knockout";
 
 import { InversifyInjector } from "@paperbits/common/injection";
-import { HtmlModule } from "@paperbits/html/html.module";
 import { OfflineObjectStorage, AnchorMiddleware } from "@paperbits/common/persistence";
 import { CoreModule } from "@paperbits/core/core.module";
 import { CoreEditModule } from "@paperbits/core/core.edit.module";
@@ -21,6 +20,7 @@ import { FormsEditModule } from "@paperbits/forms/forms.edit.module";
 import { EmailsModule } from "@paperbits/emails/emails.module";
 import { EmailsEditModule } from "@paperbits/emails/emails.edit.module";
 import { StylingEditModule } from "@paperbits/styles/styles.edit.module";
+import { ProseMirrorModule } from "@paperbits/prosemirror/prosemirror.module";
 
 
 // import { FirebaseModule } from "@paperbits/firebase/firebase.module";
@@ -31,7 +31,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // injector.bindModule(new FirebaseModule());
     injector.bindModule(new DemoModule("/data/demo.json"));
-    injector.bindModule(new HtmlModule());
     injector.bindSingleton("settingsProvider", SettingsProvider);
     injector.bindSingleton("routeHandler", DefaultRouteHandler);
     injector.bindModule(new CoreModule());
@@ -41,6 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
     injector.bindModule(new EmailsModule());
     injector.bindModule(new EmailsEditModule());
     injector.bindModule(new StylingEditModule());
+    injector.bindModule(new ProseMirrorModule());
 
     const offlineObjectStorage = injector.resolve<OfflineObjectStorage>("offlineObjectStorage");
     const anchorMiddleware = injector.resolve<AnchorMiddleware>("anchorMiddleware");

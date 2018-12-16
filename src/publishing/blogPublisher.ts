@@ -71,8 +71,8 @@ export class BlogPublisher implements IPublisher {
 
         let iconFile;
 
-        if (settings && settings.site.faviconPermalinkKey) {
-            iconFile = await this.mediaService.getMediaByPermalinkKey(settings.site.faviconPermalinkKey);
+        if (settings && settings.site.faviconSourceKey) {
+            iconFile = await this.mediaService.getMediaByKey(settings.site.faviconSourceKey);
         }
 
         const renderAndUpload = async (page): Promise<void> => {
@@ -89,7 +89,7 @@ export class BlogPublisher implements IPublisher {
 
     public setSiteSettings(templateDocument: Document, settings: ISettings, iconFile: MediaContract, post: BlogPostContract): void {
         if (settings && post) {
-            if (settings.site.faviconPermalinkKey) {
+            if (settings.site.faviconSourceKey) {
                 if (iconFile && iconFile.downloadUrl) {
                     MetaDataSetter.setFavIcon(iconFile.downloadUrl);
                 }
