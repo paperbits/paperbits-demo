@@ -44,7 +44,6 @@ export class Publisher {
         injector.bind("emailPublisher", EmailPublisher);
 
         const publishNodeModule = new PublishingNodeModule();
-        injector.bindModule(new HtmlModule());
 
         // injector.bindModule(new FirebaseModule());
         injector.bindModule(new StaticLocalStorageModule(this.demoDataPath));
