@@ -119,7 +119,7 @@ export class StaticObjectStorage implements IObjectStorage {
             return [];
         }
 
-        const result: T[] = [];
+        const result: any = {};
         const data = await this.getData();
 
         if (!data) {
@@ -150,23 +150,23 @@ export class StaticObjectStorage implements IObjectStorage {
                     }
                 });
                 if (searchProperty) {
-                    result.push(matchedObj);
+                    Utils.mergeDeepAt(`${path}/${key}`, result, matchedObj);
                 }
             });
         }
         else {
             keys.forEach(key => {
                 const matchedObj = searchObj[key];
-                result.push(matchedObj);
+                Utils.mergeDeepAt(`${path}/${key}`, result, matchedObj);
             });
         }
         return result;
     }
 
     public async saveChanges(delta: Object): Promise<void> {
-        const content = JSON.stringify(this.storageDataObject);
-        const blob = new Blob([content], { type: "text/plain;charset=utf-8" });
+        // const content = JSON.stringify(this.storageDataObject);
+        // const blob = new Blob([content], { type: "text/plain;charset=utf-8" });
 
-        FileSaver.saveAs(blob, "demo.json");
+        // FileSaver.saveAs(blob, "demo.json");
     }
 }
