@@ -11,7 +11,6 @@ module.exports = {
         "editors/styles/paperbits": [`./src/themes/${editorTheme}/styles/paperbits.scss`],
         "scripts/theme": [`./src/themes/${selectedTheme}/scripts/index.ts`],
         "styles/theme": [`./src/themes/${selectedTheme}/styles/styles.scss`],
-        "styles/theme.design": [`./src/themes/${selectedTheme}/styles/styles-design-time.scss`],
         "email-templates/theme": [`./src/themes/${selectedTheme}/styles/emails/emails.scss`]
     },
     output: {

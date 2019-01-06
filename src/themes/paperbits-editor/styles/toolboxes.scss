@@ -26,7 +26,7 @@ h2 {
     display: block;
     padding: 7px;
     z-index: $z-index-base;
-    max-height: calc(100% - 20px);
+    max-height: calc(100% - 40px);
     @include surface();
     display: flex;
     flex-wrap: wrap;
@@ -212,6 +212,12 @@ h2 {
 .editor {
     padding: 10px;
     flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    .flex-container-row {
+        flex-wrap: wrap;
+    }
 }
 
 .no-pointer-events {
