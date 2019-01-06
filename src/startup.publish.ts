@@ -8,9 +8,7 @@
 
 
 import "setimmediate";
-import * as path from "path";
 import * as ko from "knockout";
-import * as Utils from "./utils";
 import { createDocument } from "@paperbits/core/ko/knockout-rendring";
 import { InversifyInjector } from "@paperbits/common/injection";
 import { IPublisher } from "@paperbits/common/publishing";
@@ -26,17 +24,15 @@ import { EmailsModule } from "@paperbits/emails/emails.module";
 import { EmailPublisher } from "@paperbits/emails/publishers/emailPublisher";
 import { StyleModule } from "@paperbits/styles/styles.module";
 import { ProseMirrorModule } from "@paperbits/prosemirror/prosemirror.module";
+import { IBlobStorage } from "@paperbits/common/persistence";
 
 export class Publisher {
     constructor(
-        private readonly inputBasePath,
-        private readonly outputBasePath,
-        private readonly pageTemplatePath,
-        private readonly settingsConfigPath,
+        private readonly settings: Object,
         private readonly demoDataPath
     ) { }
 
-    public async publish(): Promise<void> {
+    public async publish(inputStorage: IBlobStorage, outputStorage: IBlobStorage): Promise<void> {
         createDocument();
 
         const injector = new InversifyInjector();
@@ -46,15 +42,14 @@ export class Publisher {
         const publishNodeModule = new PublishingNodeModule();
 
         // injector.bindModule(new FirebaseModule());
-        injector.bindModule(new StaticLocalStorageModule(this.demoDataPath));
+        injector.bindModule(new StaticLocalStorageModule(this.demoDataPath)); 
 
         injector.bindSingleton("routeHandler", StaticRouteHandler);
-        const configJson = await Utils.loadFileAsString(this.settingsConfigPath);
-        const settings = JSON.parse(configJson);
 
-        const settingsProvider = new StaticSettingsProvider(settings);
-
-        const pageTemplate = await Utils.loadFileAsString(this.pageTemplatePath);
+        const settingsProvider = new StaticSettingsProvider(this.settings);
+        
+        const pageTemplateData = await inputStorage.downloadBlob("page.html");
+        const pageTemplate = new Buffer(pageTemplateData);
         settingsProvider.setSetting("pageTemplate", pageTemplate);
 
         injector.bindInstance("settingsProvider", settingsProvider);
@@ -65,8 +60,8 @@ export class Publisher {
         injector.bindModule(new StyleModule());
         injector.bindModule(new ProseMirrorModule());
 
-        injector.bindInstance("inputBlobStorage", new FileSystemBlobStorage(path.resolve(this.inputBasePath)));
-        injector.bindInstance("outputBlobStorage", new FileSystemBlobStorage(path.resolve(this.outputBasePath)));
+        injector.bindInstance("inputBlobStorage", inputStorage);
+        injector.bindInstance("outputBlobStorage", outputStorage);
 
         publishNodeModule.register(injector);
 

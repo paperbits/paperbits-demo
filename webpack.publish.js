@@ -7,7 +7,8 @@ module.exports = {
     mode: "development",
     target: "node", 
     entry: {
-        "publisher": ["./src/startup.publish.ts"]
+        "publisher": ["./src/startup.publish.ts"],
+        "publishFromFS": ["./src/publishFromFS.ts"]
     },
     output: {
         filename: "./[name].js",

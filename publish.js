@@ -1,9 +1,17 @@
-const pub = require("./dist/publisher.js");
-const inputBasePath = "./dist/published/website";
-const outputBasePath = "./dist/published";
-const settingsConfigPath = "./dist/config.json";
-const demoDataPath = "./src/data/demo.json";
-const pageTemplatePath =  "./dist/published/website/page.html";
+const publisher = require("./dist/publisher.js");
+const runner = require("./dist/publishFromFS.js");
 
-const publisher = new pub.Publisher(inputBasePath, outputBasePath, pageTemplatePath, settingsConfigPath, demoDataPath);
-publisher.publish().then(() => process.exit());
+const inputBasePath = "./dist";
+const outputBasePath = "./dist/published";
+const configPath = "./dist/config.json";
+const demoDataPath = "./src/data/demo.json";
+
+const fsPublisher = new runner.PublishFromFS(inputBasePath, outputBasePath, configPath, demoDataPath);
+
+fsPublisher.run(publisher).then(() => {
+    console.log("done");
+    process.exit();
+}).catch((err) => {
+    console.log(err);
+    process.exit();
+});

@@ -77,7 +77,7 @@ export class BlogPublisher implements IPublisher {
 
         const renderAndUpload = async (page): Promise<void> => {
             const pageRenderResult = await this.renderBlogPost(page, settings, iconFile);
-            await this.outputBlobStorage.uploadBlob(`website\\${pageRenderResult.name}`, pageRenderResult.bytes);
+            await this.outputBlobStorage.uploadBlob(pageRenderResult.name, pageRenderResult.bytes, "text/html");
         };
 
         for (const post of posts) {

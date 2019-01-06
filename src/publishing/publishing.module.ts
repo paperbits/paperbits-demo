@@ -13,7 +13,7 @@ export class PublishingNodeModule {
         const inputBlobStorage = injector.resolve<IBlobStorage>("inputBlobStorage");
         const outputBlobStorage = injector.resolve<IBlobStorage>("outputBlobStorage");
 
-        injector.bindInstance("assetPublisher", new AssetPublisher(inputBlobStorage, outputBlobStorage, "assets"));
+        injector.bindInstance("assetPublisher", new AssetPublisher(inputBlobStorage, outputBlobStorage));
         injector.bindSingleton("sitePublisher", SitePublisher);
         injector.bindSingleton("pagePublisher", PagePublisher);
         injector.bindSingleton("blogPublisher", BlogPublisher);

@@ -4,36 +4,27 @@ import { IBlobStorage } from "@paperbits/common/persistence";
 export class AssetPublisher implements IPublisher {
     private readonly inputBlobStorage: IBlobStorage;
     private readonly outputBlobStorage: IBlobStorage;
-    private readonly assetsBasePath: string;
 
-    constructor(inputBlobStorage: IBlobStorage, outputBlobStorage: IBlobStorage, assetsBasePath: string) {
+    constructor(inputBlobStorage: IBlobStorage, outputBlobStorage: IBlobStorage) {
         this.inputBlobStorage = inputBlobStorage;
         this.outputBlobStorage = outputBlobStorage;
-        this.assetsBasePath = assetsBasePath;
     }
 
     private async copyAssetFrom(assetPath: string): Promise<void> {
-        const copyFrom = assetPath;
-        const cutOut = `/${this.assetsBasePath}/`;
-        const copyTo = copyFrom.replace(cutOut, "");
-        const byteArray = await this.inputBlobStorage.downloadBlob(copyFrom);
-
-        console.log(`Publishing "${copyFrom}" to "${copyTo}"...`);
-
-        await this.outputBlobStorage.uploadBlob(`website\\${copyTo}`, byteArray);
+        try {
+            const byteArray = await this.inputBlobStorage.downloadBlob(assetPath);            
+            await this.outputBlobStorage.uploadBlob(assetPath, byteArray);
+        } catch (error) {
+            console.log(assetPath + " assets error:" + error);            
+        }
     }
 
     private async copyAssets(): Promise<void> {
-        const copyPromises = new Array<Promise<void>>();
         const assetPaths = await this.inputBlobStorage.listBlobs();
-
-        assetPaths.forEach((assetPath) => {
-            if (assetPath.startsWith(`/${this.assetsBasePath}/`)) {
-                copyPromises.push(this.copyAssetFrom(assetPath));
-            }
-        });
-
-        await Promise.all(copyPromises);
+        if (assetPaths.length > 0) {
+            const copyPromises = assetPaths.map(assetPath => this.copyAssetFrom(assetPath));
+            await Promise.all(copyPromises);
+        }
     }
 
     public async publish(): Promise<void> {

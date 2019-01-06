@@ -4,7 +4,6 @@ import * as mkdirp from "mkdirp";
 import { ProgressPromise } from "@paperbits/common";
 import { IBlobStorage } from "@paperbits/common/persistence";
 
-
 export class FileSystemBlobStorage implements IBlobStorage {
     private basePath: string;
 
@@ -14,8 +13,7 @@ export class FileSystemBlobStorage implements IBlobStorage {
 
     public uploadBlob(blobPath: string, content: Uint8Array): ProgressPromise<void> {
         return new ProgressPromise<void>((resolve, reject) => {
-            const partPath = blobPath.replace("//", "/");
-            const fullpath = `${this.basePath}/${partPath}`;
+            const fullpath = `${this.basePath}/${blobPath}`.replace("//", "/");
 
             mkdirp(path.dirname(fullpath), (error) => {
                 if (error) {
@@ -36,7 +34,7 @@ export class FileSystemBlobStorage implements IBlobStorage {
 
     public downloadBlob(blobPath: string): Promise<Uint8Array> {
         return new Promise<Uint8Array>((resolve, reject) => {
-            const fullpath = `${this.basePath}/${blobPath}`;
+            const fullpath = `${this.basePath}/${blobPath}`.replace("//", "/");
 
             fs.readFile(fullpath, (error, buffer: Buffer) => {
                 if (error) {
@@ -57,31 +55,29 @@ export class FileSystemBlobStorage implements IBlobStorage {
     }
 
     public async listBlobs(): Promise<string[]> {
-        function getFilesFromDir(dir, fileTypes?) {
-            const filesToReturn = [];
-
-            function walkDir(currentPath) {
-                const files = fs.readdirSync(currentPath);
-
-                for (const file of files) {
-                    const curFile = path.join(currentPath, file);
-
-                    if (fs.statSync(curFile).isFile()) {
-                        const filepath = curFile.replace(dir, "").replace(/\\/g, "\/");
-                        filesToReturn.push(filepath);
-                    }
-                    else if (fs.statSync(curFile).isDirectory()) {
-                        walkDir(curFile);
-                    }
-                }
-            }
-
-            walkDir(dir);
-
-            return filesToReturn;
+        const files = this.listAllFilesInDirectory(this.basePath);
+        if (files.length > 0) {
+            return files.map(file => file.split(this.basePath).pop());
         }
+        return [];
+    }
 
-        return getFilesFromDir(this.basePath);
+    private listAllFilesInDirectory(dir: string): string[] {
+        const results = [];
+    
+        fs.readdirSync(dir).forEach((file) => {    
+            file = dir+'/'+file;
+            const stat = fs.statSync(file);
+    
+            if (stat && stat.isDirectory()) {
+                results.push(...this.listAllFilesInDirectory(file))
+            } else {
+                results.push(file);
+            }
+    
+        });
+    
+        return results;    
     }
 
     public getDownloadUrl(filename: string): Promise<string> {

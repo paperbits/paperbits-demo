@@ -22,7 +22,7 @@ export class MediaPublisher implements IPublisher {
 
     private async renderMediaFile(mediaFile: MediaContract): Promise<void> {
         const response = await this.httpClient.send({ url: mediaFile.downloadUrl });
-        await this.outputBlobStorage.uploadBlob(`website\\${mediaFile.permalink}` , response.toByteArray());
+        await this.outputBlobStorage.uploadBlob(mediaFile.permalink, response.toByteArray(), mediaFile.mimeType);
     }
 
     private async renderMedia(mediaFiles: MediaContract[]): Promise<void> {

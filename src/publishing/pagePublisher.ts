@@ -27,13 +27,13 @@ export class PagePublisher implements IPublisher {
         this.setSiteSettings = this.setSiteSettings.bind(this);
     }
 
-    private async renderPage(page: PageContract, settings: ISettings, iconMedia: MediaContract, imageMedia: MediaContract): Promise<{ name, bytes }> {
+    private async renderPage(page: PageContract, settings: ISettings, iconMedia: MediaContract, imageMedia: MediaContract): Promise<{ permalink, bytes }> {
         console.log(`Publishing page ${page.title}...`);
 
         const pageTemplate = <string>await this.settingsProvider.getSetting("pageTemplate");
         const templateDocument = createDocument(pageTemplate);
 
-        let resourceUri: string;
+        let permalink = page.permalink;
         let htmlContent: string;
 
         const buildContentPromise = new Promise<void>(async (resolve, reject) => {
@@ -46,7 +46,7 @@ export class PagePublisher implements IPublisher {
                 imageMedia = await this.mediaService.getMediaByKey(page.ogImageSourceKey);
             }
 
-            this.setSiteSettings(templateDocument, settings, iconMedia, imageMedia, page, resourceUri);
+            this.setSiteSettings(templateDocument, settings, iconMedia, imageMedia, page, page.permalink);
 
             setTimeout(() => {
                 htmlContent = "<!DOCTYPE html>" + templateDocument.documentElement.outerHTML;
@@ -58,17 +58,17 @@ export class PagePublisher implements IPublisher {
 
         const contentBytes = Utils.stringToUnit8Array(htmlContent);
 
-        if (!resourceUri || resourceUri === "/") {
-            resourceUri = "/index.html";
+        if (!permalink || permalink === "/") {
+            permalink = "/index.html";
         }
         else {
             // if filename has no extension we publish it to a dedicated folder with index.html
-            if (!resourceUri.substr((~-resourceUri.lastIndexOf(".") >>> 0) + 2)) {
-                resourceUri = `/${resourceUri}/index.html`;
+            if (!permalink.substr((~-permalink.lastIndexOf(".") >>> 0) + 2)) {
+                permalink = `/${permalink}/index.html`;
             }
         }
 
-        return { name: resourceUri, bytes: contentBytes };
+        return { permalink: permalink, bytes: contentBytes };
     }
 
     public async publish(): Promise<void> {
@@ -99,13 +99,13 @@ export class PagePublisher implements IPublisher {
 
         for (const page of pages) {
             const pageRenderResult = await this.renderPage(page, settings, iconFile, imageFile);
-            results.push(this.outputBlobStorage.uploadBlob(`website\\${pageRenderResult.name}`, pageRenderResult.bytes));
+            results.push(this.outputBlobStorage.uploadBlob(pageRenderResult.permalink, pageRenderResult.bytes, "text/html"));
         }
 
         await Promise.all(results);
     }
 
-    public setSiteSettings(templateDocument: Document, settings: ISettings, iconFile: MediaContract, imageFile: MediaContract, page: PageContract, pageUri: string): void {
+    public setSiteSettings(templateDocument: Document, settings: ISettings, iconFile: MediaContract, imageFile: MediaContract, page: PageContract, permalink: string): void {
         if (settings && page) {
             if (iconFile && iconFile.downloadUrl) {
                 MetaDataSetter.setFavIcon(iconFile.downloadUrl);
@@ -123,7 +123,7 @@ export class PagePublisher implements IPublisher {
 
             let documentTitle = settings.site.title;
 
-            if (page.title && pageUri !== "/") {
+            if (page.title && permalink !== "/") {
                 documentTitle = `${page.title} | ${settings.site.title}`;
             }
 
@@ -139,9 +139,9 @@ export class PagePublisher implements IPublisher {
                 ogMeta["og:type"] = page.ogType;
             }
 
-            if (pageUri && settings.site.ogUrl) {
-                ogMeta["og:url"] = `${settings.site.ogUrl}${pageUri}`;
-                twitterMeta["twitter:url"] = `${settings.site.ogUrl}${pageUri}`;
+            if (permalink && settings.site.ogUrl) {
+                ogMeta["og:url"] = `${settings.site.ogUrl}${permalink}`;
+                twitterMeta["twitter:url"] = `${settings.site.ogUrl}${permalink}`;
             }
 
             if (imageFile && imageFile.downloadUrl) {
