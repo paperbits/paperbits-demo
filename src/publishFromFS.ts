@@ -1,5 +1,5 @@
-import * as fs from 'fs';
-import { FileSystemBlobStorage } from './components/fileSystemBlobStorage';
+import * as fs from "fs";
+import { FileSystemBlobStorage } from "./components/fileSystemBlobStorage";
 
 export class PublishFromFS {
     private sourceStorage: FileSystemBlobStorage;
@@ -17,11 +17,10 @@ export class PublishFromFS {
 
     public async run(publishModule): Promise<void> {
         const publishConfig = fs.readFileSync(this.configPath, "utf8").toString();
-        
         const publisher = new publishModule.Publisher(JSON.parse(publishConfig), this.demoDataPath);
 
         console.log("start publishing ...");
 
         await publisher.publish(this.sourceStorage, this.publishStorage);
     }
-};
+}

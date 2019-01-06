@@ -64,13 +64,4 @@ document.addEventListener("DOMContentLoaded", () => {
     injector.resolve("cropperBindingHandler");
 
     ko.applyBindings(undefined, document.body);
-
-    const viewManager = <any>injector.resolve("viewManager");
-    const layoutViewModelBinder = <any>injector.resolve("layoutViewModelBinder");
-
-    viewManager.setDocument({
-        src: "/page.html",
-        componentName: "page-document",
-        getLayoutViewModel: layoutViewModelBinder.getLayoutViewModel
-    });
 });

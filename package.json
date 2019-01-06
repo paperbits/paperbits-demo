@@ -41,12 +41,12 @@
         "webpack-merge": "^4.1.4"
     },
     "dependencies": {
-        "@paperbits/common": "0.1.32",
-        "@paperbits/core": "0.1.32",
-        "@paperbits/emails": "0.1.32",
-        "@paperbits/forms": "0.1.32",
-        "@paperbits/styles": "^0.1.32",
-        "@paperbits/prosemirror": "^0.1.32",
+        "@paperbits/common": "0.1.35",
+        "@paperbits/core": "0.1.35",
+        "@paperbits/emails": "0.1.35",
+        "@paperbits/forms": "0.1.35",
+        "@paperbits/styles": "^0.1.35",
+        "@paperbits/prosemirror": "^0.1.35",
         "@types/knockout.mapping": "^2.0.33",
         "@webcomponents/webcomponentsjs": "^2.2.0",
         "cheerio": "^1.0.0-rc.2",
