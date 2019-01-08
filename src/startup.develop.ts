@@ -62,6 +62,8 @@ document.addEventListener("DOMContentLoaded", () => {
     injector.resolve("knockoutValidation");
     injector.resolve("inputBindingHandler");
     injector.resolve("cropperBindingHandler");
+    injector.resolve("styleableBindingHandler");
+    injector.resolve("stylesheetBindingHandler");
 
     ko.applyBindings(undefined, document.body);
 });
