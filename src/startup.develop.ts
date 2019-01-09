@@ -31,8 +31,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // injector.bindModule(new FirebaseModule());
     injector.bindModule(new DemoModule("/data/demo.json"));
-    injector.bindSingleton("settingsProvider", SettingsProvider);
-    injector.bindSingleton("routeHandler", DefaultRouteHandler);
     injector.bindModule(new CoreModule());
     injector.bindModule(new CoreEditModule());
     injector.bindModule(new FormsModule());
@@ -41,10 +39,6 @@ document.addEventListener("DOMContentLoaded", () => {
     injector.bindModule(new EmailsEditModule());
     injector.bindModule(new StylingEditModule());
     injector.bindModule(new ProseMirrorModule());
-
-    const offlineObjectStorage = injector.resolve<OfflineObjectStorage>("offlineObjectStorage");
-    const anchorMiddleware = injector.resolve<AnchorMiddleware>("anchorMiddleware");
-    offlineObjectStorage.registerMiddleware(anchorMiddleware);
 
     /*** Autostart ***/
     injector.resolve("contentBindingHandler");
