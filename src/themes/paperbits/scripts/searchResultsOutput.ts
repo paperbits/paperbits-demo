@@ -1,7 +1,7 @@
 import * as lunr from "lunr";
 import template from "./searchResultsOutput.html";
 import { XmlHttpRequestClient } from "@paperbits/common/http";
-import { RuntimeComponent } from "@paperbits/core/ko/runtimeComponent";
+import { RuntimeComponent } from "@paperbits/common/ko/decorators";
 
 
 export interface SearchResult {
