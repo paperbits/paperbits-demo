@@ -10,7 +10,7 @@
 import { IInjector, IInjectorModule } from "@paperbits/common/injection";
 import { IObjectStorage } from "@paperbits/common/persistence/IObjectStorage";
 import { OfflineObjectStorage } from "@paperbits/common/persistence/offlineObjectStorage";
-import { IHttpClient } from "@paperbits/common/http/IHttpClient";
+import { HttpClient } from "@paperbits/common/http";
 import { StaticObjectStorage } from "./staticObjectStorage";
 import { StaticBlobStorage } from "./staticBlobStorage";
 import { StaticUserService } from "./staticUserService";
@@ -26,7 +26,7 @@ export class DemoModule implements IInjectorModule {
         injector.bindSingleton("userService", StaticUserService);
 
         injector.bindSingletonFactory<IObjectStorage>("objectStorage", (ctx: IInjector) => {
-            const httpClient = ctx.resolve<IHttpClient>("httpClient");
+            const httpClient = ctx.resolve<HttpClient>("httpClient");
             const offlineObjectStorage = ctx.resolve<OfflineObjectStorage>("offlineObjectStorage");
             const objectStorage = new StaticObjectStorage(this.datasourceUrl, httpClient);
 

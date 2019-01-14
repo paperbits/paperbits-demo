@@ -4,7 +4,7 @@ import { IPublisher } from "@paperbits/common/publishing";
 import { IRouteHandler } from "@paperbits/common/routing";
 import { IBlobStorage } from "@paperbits/common/persistence";
 import { IPageService, PageContract } from "@paperbits/common/pages";
-import { ISiteService, ISettings } from "@paperbits/common/sites";
+import { ISiteService, SettingsContract } from "@paperbits/common/sites";
 import { LayoutViewModelBinder } from "@paperbits/core/layout/ko";
 import { MetaDataSetter } from "@paperbits/common/meta";
 import { MediaService, MediaContract } from "@paperbits/common/media";
@@ -27,7 +27,7 @@ export class PagePublisher implements IPublisher {
         this.setSiteSettings = this.setSiteSettings.bind(this);
     }
 
-    private async renderPage(page: PageContract, settings: ISettings, iconMedia: MediaContract, imageMedia: MediaContract): Promise<{ permalink, bytes }> {
+    private async renderPage(page: PageContract, settings: SettingsContract, iconMedia: MediaContract, imageMedia: MediaContract): Promise<{ permalink, bytes }> {
         console.log(`Publishing page ${page.title}...`);
 
         const pageTemplate = <string>await this.settingsProvider.getSetting("pageTemplate");
@@ -105,7 +105,7 @@ export class PagePublisher implements IPublisher {
         await Promise.all(results);
     }
 
-    public setSiteSettings(templateDocument: Document, settings: ISettings, iconFile: MediaContract, imageFile: MediaContract, page: PageContract, permalink: string): void {
+    public setSiteSettings(templateDocument: Document, settings: SettingsContract, iconFile: MediaContract, imageFile: MediaContract, page: PageContract, permalink: string): void {
         if (settings && page) {
             if (iconFile && iconFile.downloadUrl) {
                 MetaDataSetter.setFavIcon(iconFile.downloadUrl);

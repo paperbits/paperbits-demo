@@ -23,14 +23,14 @@ import { StylingEditModule } from "@paperbits/styles/styles.edit.module";
 import { ProseMirrorModule } from "@paperbits/prosemirror/prosemirror.module";
 
 
-// import { FirebaseModule } from "@paperbits/firebase/firebase.module";
+import { FirebaseModule } from "@paperbits/firebase/firebase.module";
 import { DemoModule } from "./components/demo.module";
 
 document.addEventListener("DOMContentLoaded", () => {
     const injector = new InversifyInjector();
 
-    // injector.bindModule(new FirebaseModule());
-    injector.bindModule(new DemoModule("/data/demo.json"));
+    injector.bindModule(new FirebaseModule());
+    // injector.bindModule(new DemoModule("/data/demo.json"));
     injector.bindModule(new CoreModule());
     injector.bindModule(new CoreEditModule());
     injector.bindModule(new FormsModule());

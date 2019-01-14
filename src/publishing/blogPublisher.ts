@@ -4,7 +4,7 @@ import { IBlogService, BlogPostContract } from "@paperbits/common/blogs";
 import { IPublisher } from "@paperbits/common/publishing";
 import { IRouteHandler } from "@paperbits/common/routing";
 import { IBlobStorage } from "@paperbits/common/persistence";
-import { ISettings, ISiteService } from "@paperbits/common/sites";
+import { SettingsContract, ISiteService } from "@paperbits/common/sites";
 import { IMediaService, MediaContract } from "@paperbits/common/media";
 import { MetaDataSetter } from "@paperbits/common/meta";
 import { LayoutViewModelBinder } from "@paperbits/core/layout/ko";
@@ -25,7 +25,7 @@ export class BlogPublisher implements IPublisher {
         this.renderBlogPost = this.renderBlogPost.bind(this);
     }
 
-    private async renderBlogPost(post: BlogPostContract, settings: ISettings, iconFile: MediaContract): Promise<{ name, bytes }> {
+    private async renderBlogPost(post: BlogPostContract, settings: SettingsContract, iconFile: MediaContract): Promise<{ name, bytes }> {
         console.log(`Publishing blog post ${post.title}...`);
 
         const pageTemplate = <string>await this.settingsProvider.getSetting("pageTemplate");
@@ -87,7 +87,7 @@ export class BlogPublisher implements IPublisher {
         await Promise.all(results);
     }
 
-    public setSiteSettings(templateDocument: Document, settings: ISettings, iconFile: MediaContract, post: BlogPostContract): void {
+    public setSiteSettings(templateDocument: Document, settings: SettingsContract, iconFile: MediaContract, post: BlogPostContract): void {
         if (settings && post) {
             if (settings.site.faviconSourceKey) {
                 if (iconFile && iconFile.downloadUrl) {

@@ -10,7 +10,7 @@
 import * as _ from "lodash";
 import * as FileSaver from "file-saver";
 import * as Utils from "@paperbits/common/utils";
-import { IHttpClient } from "@paperbits/common/http/IHttpClient";
+import { HttpClient } from "@paperbits/common/http";
 import { IObjectStorage } from "@paperbits/common/persistence/IObjectStorage";
 
 
@@ -23,7 +23,7 @@ export class StaticObjectStorage implements IObjectStorage {
 
     constructor(
         protected readonly datasourceUrl: string,
-        private readonly httpClient: IHttpClient
+        private readonly httpClient: HttpClient
     ) { }
 
     protected async getData(): Promise<Object> {
