@@ -1,4 +1,3 @@
-
 .paperbits-icon {
     display: inline-block;
     font: normal normal normal 1em/1 "paperbits";
@@ -504,4 +503,8 @@
 
 .paperbits-gradient::before {
     content: "\ea64";
+}
+
+.paperbits-polaroid::before {
+    content: "\ea65";
 }

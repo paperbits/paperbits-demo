@@ -14,6 +14,8 @@ dropbucket {
         @include animation-fadein();
         position: relative;
         border-radius: $toolbox-border-radius;
+        display: flex;
+        flex-direction: column;
     }
 
     .droppedcontent-details {
