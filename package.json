@@ -9,9 +9,9 @@
         "demo"
     ],
     "scripts": {
-        "develop": "webpack-dev-server --open --config webpack.develop.js && webpack --config webpack.theme.js",
+        "start": "webpack-dev-server --open --config webpack.design.js && webpack --config webpack.theme.js",
         "build": "webpack --config webpack.build.js && webpack --config webpack.theme.js",
-        "publish": "webpack --config webpack.publish.js && webpack --config webpack.theme.js && node publish.js",
+        "publish": "webpack --config webpack.publish.js && node dist/publisher/index.js",
         "postinstall": "npm rebuild node-sass"
     },
     "devDependencies": {

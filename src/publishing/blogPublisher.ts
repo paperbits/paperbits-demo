@@ -1,5 +1,6 @@
 import * as ko from "knockout";
 import * as Utils from "@paperbits/common/utils";
+import template from "../themes/paperbits/assets/page.html";
 import { IBlogService, BlogPostContract } from "@paperbits/common/blogs";
 import { IPublisher } from "@paperbits/common/publishing";
 import { IRouteHandler } from "@paperbits/common/routing";
@@ -27,9 +28,7 @@ export class BlogPublisher implements IPublisher {
 
     private async renderBlogPost(post: BlogPostContract, settings: SettingsContract, iconFile: MediaContract): Promise<{ name, bytes }> {
         console.log(`Publishing blog post ${post.title}...`);
-
-        const pageTemplate = <string>await this.settingsProvider.getSetting("pageTemplate");
-        const templateDocument = createDocument(pageTemplate);
+        const templateDocument = createDocument(template);
 
         let resourceUri: string;
         let htmlContent: string;

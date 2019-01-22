@@ -1,57 +1,56 @@
 const path = require("path");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+
 const selectedTheme = "paperbits";
 
 module.exports = {
     mode: "development",
+    target: "web",
     entry: {
-        "website/scripts/theme.js": [`./src/themes/${selectedTheme}/scripts/index.ts`],
-        "website/styles/theme": [`./src/themes/${selectedTheme}/styles/styles.scss`],
-        "email-templates/theme": [`./src/themes/${selectedTheme}/styles/emails/emails.scss`]
+        "assets/styles/theme": [`./src/themes/${selectedTheme}/styles/styles.scss`],
+        "assets/scripts/theme": ["./src/startup.runtime.ts"]
     },
     output: {
-        filename: "./[name]",
-        path: path.resolve(__dirname, "./dist")
+        filename: "./[name].js",
+        path: path.resolve(__dirname, "dist"),
     },
     module: {
         rules: [
+            {
+                test: /\.scss$/,
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    { loader: "css-loader", options: { url: false, minimize: true, sourceMap: true } },
+                    { loader: "postcss-loader", options: { sourceMap: true, options: { plugins: () => [autoprefixer] } } },
+                    { loader: "sass-loader", options: { sourceMap: true } }
+                ]
+            },
             {
                 test: /\.tsx?$/,
                 loader: "awesome-typescript-loader"
             },
             {
-                test: /\.scss$/,
-                use: [
-                    MiniCssExtractPlugin.loader,
-                    { loader: "css-loader", options: { url: false, minimize: true, sourceMap: false } },
-                    { loader: "postcss-loader", options: { sourceMap: false, options: { plugins: () => [autoprefixer] } } },
-                    { loader: "sass-loader", options: { sourceMap: false } }
-                ],
-                exclude: /node_modules/
-            },
-            {
                 test: /\.html$/,
                 loader: "html-loader?exportAsEs6Default"
+            },
+            {
+                test: /\.(png|woff|woff2|eot|ttf|svg)$/,
+                loader: "url-loader?limit=100000"
+            },
+            {
+                test: /\.liquid$/,
+                loader: "raw-loader"
             }
         ]
     },
     plugins: [
+        new MiniCssExtractPlugin({ filename: "[name].css", chunkFilename: "[id].css" }),
         new CopyWebpackPlugin([
-            { from: `./src/themes/${selectedTheme}/styles/fonts`, to: "website/styles/fonts" },
-            { from: `./src/themes/${selectedTheme}/assets/page.html`, to: "website/page.html"},
-            { from: `./src/themes/${selectedTheme}/assets/email.html`, to: "email-templates/email.html"},
-            { from: `./src/themes/${selectedTheme}/assets/search-index.json`, to: "website"},
-        ]),
-        new MiniCssExtractPlugin({
-            filename: "[name].css",
-            chunkFilename: "[id].css"
-        })
+            { from: `./src/config.runtime.json`, to: `./assets/config.json` }
+        ])
     ],
-    optimization: {
-        concatenateModules: true
-    },
     resolve: {
-        extensions: [".tsx", ".ts", ".html", ".scss"]
+        extensions: [".ts", ".tsx", ".js", ".jsx", ".html", ".scss"]
     }
 };

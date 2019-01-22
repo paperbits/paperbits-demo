@@ -1,0 +1,9 @@
+{
+    "firebase": {
+        "apiKey": "< your API key >",
+        "authDomain": "< your domain >.firebaseapp.com",
+        "databaseURL": "https://< your database URL >.firebaseio.com",
+        "projectId": "< your project ID >",
+        "storageBucket": "< your storage bucket >.appspot.com"
+    }
+}

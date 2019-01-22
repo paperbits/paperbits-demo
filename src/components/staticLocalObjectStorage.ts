@@ -7,22 +7,18 @@
  */
 
 
-import * as fs from "fs";
-import * as Utils from "../utils";
+import * as Utils from "./utils";
 import { StaticObjectStorage } from "./staticObjectStorage";
 
 export class StaticLocalObjectStorage extends StaticObjectStorage {
-    constructor(datasourceUrl: string) {
-        super(datasourceUrl, null);
+    constructor(private readonly dataPath: string) {
+        super(null);
     }
 
     protected async getData(): Promise<Object> {
         if (!this.storageDataObject) {
-            const data = await Utils.loadFileAsString(this.datasourceUrl);
-            const dataObject = JSON.parse(data);
-            this.storageDataObject = dataObject["tenants"]["default"];
+            this.storageDataObject = JSON.parse(await Utils.loadFileAsString(this.dataPath));
         }
-
         return this.storageDataObject;
     }
 }

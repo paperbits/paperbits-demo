@@ -13,7 +13,6 @@ import * as Utils from "@paperbits/common/utils";
 import { HttpClient } from "@paperbits/common/http";
 import { IObjectStorage } from "@paperbits/common/persistence/IObjectStorage";
 
-
 /**
  * Static object storage for demo purposes. It stores all the uploaded blobs in memory.
  */
@@ -21,24 +20,21 @@ export class StaticObjectStorage implements IObjectStorage {
     protected storageDataObject: Object;
     private splitter = "/";
 
-    constructor(
-        protected readonly datasourceUrl: string,
-        private readonly httpClient: HttpClient
-    ) { }
+    constructor(private readonly httpClient: HttpClient) { }
 
     protected async getData(): Promise<Object> {
         if (!this.storageDataObject) {
             const response = await this.httpClient.send({
-                url: this.datasourceUrl,
+                url: "/data/demo.json",
                 method: "GET"
             });
 
-            const dataObject = response.toObject();
-
-            this.storageDataObject = dataObject["tenants"]["default"];
+            this.storageDataObject = response.toObject();
         }
 
-        return this.storageDataObject;
+        return new Promise<Object>((resolve) => {
+            setImmediate(() => resolve(this.storageDataObject));
+        });
     }
 
     private getPathObject(pathParts: string[]) {
@@ -94,14 +90,7 @@ export class StaticObjectStorage implements IObjectStorage {
             return;
         }
 
-        const pathParts = path.split(this.splitter);
-
-        if (pathParts.length === 1 || (pathParts.length === 2 && !pathParts[1])) {
-            delete this.storageDataObject[pathParts[0]];
-        }
-        else {
-            delete this.storageDataObject[pathParts[0]][pathParts[1]];
-        }
+        Utils.deleteNodeAt(path, this.storageDataObject);
     }
 
     public async updateObject<T>(path: string, dataObject: T): Promise<void> {
@@ -114,16 +103,12 @@ export class StaticObjectStorage implements IObjectStorage {
         Object.assign(updateObj, dataObject);
     }
 
-    public async searchObjects<T>(path: string, propertyNames?: string[], searchValue?: string, startAtSearch?: boolean, skipLoadObject?: boolean): Promise<T[]> {
-        if (!path) {
-            return [];
-        }
-
-        const result: any = {};
+    public async searchObjects<T>(path: string, propertyNames?: string[], searchValue?: string): Promise<T> {
+        const searchResultObject: any = {};
         const data = await this.getData();
 
         if (!data) {
-            return result;
+            return searchResultObject;
         }
 
         const searchObj = Utils.getObjectAt(path, data);
@@ -139,28 +124,25 @@ export class StaticObjectStorage implements IObjectStorage {
             keys.forEach(key => {
                 const matchedObj = searchObj[key];
                 const searchProperty = _.find(searchProps, (prop) => {
-                    if (startAtSearch) {
-                        const propName = _.keys(prop)[0];
-
-                        const test = matchedObj[propName];
-                        return test && test.toUpperCase().startsWith(prop[propName].toUpperCase());
-                    }
-                    else {
-                        return _.isMatch(matchedObj, prop);
-                    }
+                    const propName = _.keys(prop)[0];
+                    const test = matchedObj[propName];
+                    return test && test.toUpperCase() === prop[propName].toUpperCase();
                 });
+
                 if (searchProperty) {
-                    Utils.mergeDeepAt(`${path}/${key}`, result, matchedObj);
+                    Utils.mergeDeepAt(`${path}/${key}`, searchResultObject, matchedObj);
                 }
             });
         }
         else {
             keys.forEach(key => {
                 const matchedObj = searchObj[key];
-                Utils.mergeDeepAt(`${path}/${key}`, result, matchedObj);
+                Utils.mergeDeepAt(`${path}/${key}`, searchResultObject, matchedObj);
             });
         }
-        return result;
+
+        const resultObject = Utils.getObjectAt(path, searchResultObject);
+        return <T>(resultObject || {});
     }
 
     public async saveChanges(delta: Object): Promise<void> {

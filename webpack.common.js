@@ -7,7 +7,7 @@ const editorTheme = "paperbits-editor";
 
 module.exports = {
     entry: {
-        "editors/scripts/paperbits": ["./src/startup.develop.ts"],
+        "editors/scripts/paperbits": ["./src/startup.design.ts"],
         "editors/styles/paperbits": [`./src/themes/${editorTheme}/styles/paperbits.scss`],
         "scripts/theme": [`./src/themes/${selectedTheme}/scripts/index.ts`],
         "styles/theme": [`./src/themes/${selectedTheme}/styles/styles.scss`],
@@ -55,7 +55,7 @@ module.exports = {
             { from: `./src/themes/${selectedTheme}/assets/email.html`, to: "email.html" },
             { from: `./src/themes/${selectedTheme}/assets/theme.html`, to: "theme.html" },
             { from: `./src/themes/${selectedTheme}/styles/fonts`, to: "styles/fonts" },
-            { from: `./src/config.json` }
+            { from: `./src/config.design.json` }
         ])
     ],
     resolve: {

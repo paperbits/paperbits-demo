@@ -1,1 +1,2971 @@
-{"tenants":{"default":{"blocks":{"new-page-template":{"content":{"layout":"container","nodes":[{"nodes":[{"nodes":[{"nodes":[{"content":[{"text":"Heading","type":"text"}],"type":"heading1"},{"content":[{"text":"Yeah, sure, okay. This is it. This is the answer. It says here that a bolt of lightning is gonna strike the clock tower precisely at 10:04 p.m. next Saturday night. If we could somehow harness this bolt of lightning, channel it into the flux capacitor, it just might work. Next Saturday night, we're sending you back to the future. Will you take care of that? Stand tall, boy, have some respect for yourself. Don't you know that if you let people walk all over you know, they'll be walking all over you for the rest of your life? Listen to me, do you think I'm gonna spend the rest of my life in this slop house? Well, you mean, it makes perfect sense.","type":"text"}],"type":"paragraph"}],"object":"widget","type":"text"}],"object":"block","size":{"lg":"12","md":"12","sm":"12"},"type":"layout-column"}],"object":"block","type":"layout-row"}],"object":"block","padding":"with-padding","type":"layout-section"},"description":"","key":"blocks/8730d297-af39-8166-83b6-9439addca789","title":"New page template","type":"page"}},"emailTemplates":{"c17ea920-cc6b-b3b5-6da4-ef8d19b758ff":{"contentKey":"files/517fcb46-55ba-8776-3300-d596919a6f6f","description":"","key":"emailTemplates/c17ea920-cc6b-b3b5-6da4-ef8d19b758ff","title":"Confirm email"}},"files":{"53036dc7-b1eb-4abe-34f7-25b71e6b2cbb":{"nodes":[{"layout":"container","object":"block","padding":"with-padding","snapping":"none","type":"layout-section"},{"object":"block","type":"page"},{"layout":"container","object":"block","padding":"with-padding","snapping":"none","type":"layout-section"}],"object":"block","type":"layout"},"7fe21f13-d1dd-00c1-c00e-a296b2cdcdca":{"description":"default layout","key":"files/7fe21f13-d1dd-00c1-c00e-a296b2cdcdca","nodes":[{"layout":"container","nodes":[{"nodes":[{"nodes":[{"object":"block","rootKey":"main","sourceKey":"uploads/88238d72-237d-eefc-da3e-19bef9506808","type":"navbar"}],"object":"block","size":{"lg":"12"},"type":"layout-column"}],"object":"block","type":"layout-row"}],"object":"block","padding":"without-padding","snapping":"none","type":"layout-section"},{"object":"block","type":"page"},{"layout":"container","nodes":[{"nodes":[{"alignment":{"xl":"center center"},"nodes":[{"nodes":[{"attrs":{"styles":{"alignment":{"xl":"globals/text/centered"}}},"content":[{"text":"© 2018 Paperbits. All rights reserved.","type":"text"}],"type":"paragraph"}],"object":"widget","type":"text"}],"object":"block","size":{"md":"12"},"type":"layout-column"}],"object":"block","type":"layout-row"}],"object":"block","padding":"with-padding","snapping":"none","type":"layout-section"}],"object":"block","title":"Default","type":"layout","permalinkTemplate":"/"},"86583574-16ee-4a3c-a787-6b5415f56117":{"nodes":[{"layout":"container","nodes":[{"nodes":[{"nodes":[{"nodes":[{"content":[{"text":"Heading","type":"text"}],"type":"heading1"},{"content":[{"text":"Yeah, sure, okay. This is it. This is the answer. It says here that a bolt of lightning is gonna strike the clock tower precisely at 10:04 p.m. next Saturday night. If we could somehow harness this bolt of lightning, channel it into the flux capacitor, it just might work. Next Saturday night, we're sending you back to the future. Will you take care of that? Stand tall, boy, have some respect for yourself. Don't you know that if you let people walk all over you know, they'll be walking all over you for the rest of your life? Listen to me, do you think I'm gonna spend the rest of my life in this slop house? Well, you mean, it makes perfect sense.","type":"text"}],"type":"paragraph"}],"object":"widget","type":"text"}],"object":"block","size":{"sm":"12"},"type":"layout-column"}],"object":"block","type":"layout-row"}],"object":"block","padding":"with-padding","type":"layout-section"}]},"e4dc7929-6721-6c25-66af-86b450239bd3":{"nodes":[{"layout":"container","nodes":[{"nodes":[{"nodes":[{"nodes":[{"content":[{"text":"Heading","type":"text"}],"type":"heading1"},{"content":[{"text":"Yeah, sure, okay. This is it. This is the answer. It says here that a bolt of lightning is gonna strike the clock tower precisely at 10:04 p.m. next Saturday night. If we could somehow harness this bolt of lightning, channel it into the flux capacitor, it just might work. Next Saturday night, we're sending you back to the future. Will you take care of that? Stand tall, boy, have some respect for yourself. Don't you know that if you let people walk all over you know, they'll be walking all over you for the rest of your life? Listen to me, do you think I'm gonna spend the rest of my life in this slop house? Well, you mean, it makes perfect sense.","type":"text"}],"type":"paragraph"}],"object":"widget","type":"text"}],"object":"block","size":{"lg":"12","md":"12","sm":"12"},"type":"layout-column"}],"object":"block","type":"layout-row"}],"object":"block","padding":"with-padding","type":"layout-section"}]},"ffdcdb4e-bad4-dfd7-3e9c-c0b2a917b66a":{"key":"files/ffdcdb4e-bad4-dfd7-3e9c-c0b2a917b66a","nodes":[{"layout":"container","nodes":[{"nodes":[{"alignment":{"xs":"center center"},"nodes":[{"animation":"none","caption":"Picture","layout":"noframe","object":"block","sourceKey":"uploads/f0b568bf-703a-0fa5-58b0-5b4574b18b93","type":"picture"}],"object":"block","size":{"md":"6","xs":12},"type":"layout-column"},{"alignment":{"xl":"start center","xs":"center start"},"nodes":[{"nodes":[{"attrs":{"styles":{"alignment":{"xl":"globals/text/alignedLeft","xs":"globals/text/centered"}}},"content":[{"text":"Drag","type":"text"},{"marks":[{"type":"bold"}],"text":" ","type":"text"},{"text":"'n' drop content builder for web apps","type":"text"}],"type":"heading1"},{"content":[{"text":"Give your users a tool to create professional web pages, forms, email templates and more","type":"text"}],"type":"paragraph"}],"object":"widget","type":"text"},{"encType":"application/x-www-form-urlencoded","formAction":"","formMethod":"post","formTarget":"_self","isInline":true,"nodes":[{"inputProperties":[{"propertyName":"inputName","propertyValue":"email"},{"propertyName":"placeholderText","propertyValue":"Enter your email"},{"propertyName":"labelText","propertyValue":""},{"propertyName":"inputValue","propertyValue":""},{"propertyName":"maxLength"},{"propertyName":"patternRegexp","propertyValue":""},{"propertyName":"isRequired"},{"propertyName":"isReadonly"}],"object":"block","type":"input:email"},{"inputProperties":[{"propertyName":"inputName","propertyValue":"subscribe"},{"propertyName":"labelText","propertyValue":"Subscribe"},{"propertyName":"inputValue","propertyValue":""}],"object":"block","type":"input:submit"}],"object":"block","type":"form"}],"object":"block","size":{"md":"6","xs":12},"type":"layout-column"}],"object":"block","type":"layout-row"}],"object":"block","padding":"with-padding","snapping":"none","type":"layout-section"},{"layout":"container","nodes":[{"nodes":[{"alignment":{"xl":"start start","xs":"center start"},"nodes":[{"nodes":[{"attrs":{"styles":{"alignment":{"xl":"globals/text/alignedLeft","xs":"globals/text/centered"}}},"content":[{"text":"Simple and powerful`","type":"text"}],"type":"heading2"},{"content":[{"content":[{"text":"first class drag and drop","type":"text"}],"type":"list_item"},{"content":[{"text":"responsive layouts","type":"text"}],"type":"list_item"},{"content":[{"text":"full-text search","type":"text"}],"type":"list_item"},{"content":[{"text":"website hyperlink consistency","type":"text"}],"type":"list_item"}],"type":"bulleted_list"}],"object":"widget","type":"text"},{"hyperlink":{"href":"/features","target":"_blank"},"label":"Learn more >","object":"block","styles":{"appearance":"components/button/default"},"type":"button"}],"object":"block","size":{"md":"6","xs":12},"type":"layout-column"},{"alignment":{"xs":"start start"},"nodes":[{"animation":"none","caption":"editors.png","layout":"noframe","object":"block","sourceKey":"uploads/f4f94aa8-269b-9d08-4247-07981b8476c3","type":"picture"}],"object":"block","order":{"xs":"0"},"size":{"md":"6","xs":12},"type":"layout-column"}],"object":"block","type":"layout-row"}],"object":"block","padding":"with-padding","snapping":"none","type":"layout-section"},{"layout":"container","nodes":[{"nodes":[{"alignment":{"xl":"start start","xs":"center start"},"nodes":[{"nodes":[{"attrs":{"styles":{"alignment":{"xl":"globals/text/alignedLeft","xs":"globals/text/centered"}}},"content":[{"text":"Theme and framework agnostic","type":"text"}],"type":"heading2"},{"content":[{"content":[{"text":"stores intents rather than specific markup","type":"text"}],"type":"list_item"},{"content":[{"text":"describes everything including page structure","type":"text"}],"type":"list_item"},{"content":[{"text":"publishes HTML, markdown, plain text, etc.","type":"text"}],"type":"list_item"}],"type":"bulleted_list"}],"object":"widget","type":"text"},{"hyperlink":{"href":"/blog/key-concepts","target":"_blank"},"label":"Learn more >","object":"block","styles":{"appearance":"components/button/default"},"type":"button"}],"object":"block","order":{"md":"1"},"size":{"md":"6","xs":12},"type":"layout-column"},{"nodes":[{"animation":"none","caption":"Picture","layout":"noframe","object":"block","sourceKey":"uploads/e688898b-b9a2-240f-6da0-346b6b0d02e1","type":"picture"}],"object":"block","size":{"md":"6","xs":12},"type":"layout-column"}],"object":"block","type":"layout-row"}],"object":"block","padding":"with-padding","snapping":"none","type":"layout-section"},{"layout":"container","nodes":[{"nodes":[{"alignment":{"xl":"start start","xs":"center start"},"nodes":[{"nodes":[{"attrs":{"styles":{"alignment":{"xl":"globals/text/alignedLeft","xs":"globals/text/centered"}}},"content":[{"text":"API-first. Offline-first. Mobile-first.","type":"text"}],"type":"heading2"},{"content":[{"content":[{"text":"continues work in absence of network","type":"text"}],"type":"list_item"},{"content":[{"text":"supports \"touch\" and runs on any device","type":"text"}],"type":"list_item"}],"type":"bulleted_list"}],"object":"widget","type":"text"},{"hyperlink":{"href":"/blog/key-concepts","target":"_blank"},"label":"Learn more >","object":"block","styles":{"appearance":"components/button/default"},"type":"button"}],"object":"block","size":{"md":"6","xs":12},"type":"layout-column"},{"nodes":[{"animation":"none","caption":"Picture","layout":"noframe","object":"block","sourceKey":"uploads/adfbffad-ac01-ed54-fbe0-6253d0c663fd","type":"picture"}],"object":"block","size":{"md":"6","xs":12},"type":"layout-column"}],"object":"block","type":"layout-row"}],"object":"block","padding":"with-padding","snapping":"none","type":"layout-section"},{"layout":"container","nodes":[{"nodes":[{"alignment":{"xl":"start start","xs":"center start"},"nodes":[{"nodes":[{"attrs":{"styles":{"alignment":{"xl":"globals/text/alignedLeft","xs":"globals/text/centered"}}},"content":[{"text":"Built for multiple UI frameworks","type":"text"}],"type":"heading2"},{"attrs":{"styles":{"alignment":{"xl":"globals/text/alignedLeft","xs":"globals/text/centered"}}},"content":[{"text":"Comes with components for most popular UI frameworks like Vue, Knockout, Angular and React.","type":"text"}],"type":"paragraph"}],"object":"widget","type":"text"},{"hyperlink":{"href":"/blog/key-concepts","target":"_blank"},"label":"Learn more >","object":"block","styles":{"appearance":"components/button/default"},"type":"button"}],"object":"block","order":{"md":"1"},"size":{"md":"6","xs":12},"type":"layout-column"},{"alignment":{"xl":"center center","xs":"center start"},"nodes":[{"animation":"none","caption":"Picture","layout":"noframe","object":"block","sourceKey":"uploads/5b9a572c-5ede-0da1-1ffa-f2ce06ba0fae","type":"picture"}],"object":"block","size":{"md":"6","xs":12},"type":"layout-column"}],"object":"block","type":"layout-row"}],"object":"block","padding":"with-padding","snapping":"none","type":"layout-section"},{"layout":"container","nodes":[{"nodes":[{"alignment":{"xl":"start start","xs":"center start"},"nodes":[{"nodes":[{"attrs":{"styles":{"alignment":{"xl":"globals/text/alignedLeft","xs":"globals/text/centered"}}},"content":[{"text":"Easy to get started","type":"text"}],"type":"heading2"},{"attrs":{"styles":{"alignment":{"xl":"globals/text/alignedLeft","xs":"globals/text/centered"}}},"content":[{"text":"Clone, install packages and launch!","type":"text"}],"type":"paragraph"}],"object":"widget","type":"text"},{"hyperlink":{"href":"https://github.com/paperbits/paperbits-demo","target":"_blank"},"label":"Fork on GitHub >","object":"block","styles":{"appearance":"components/button/default"},"type":"button"}],"object":"block","size":{"md":"6","xs":12},"type":"layout-column"},{"alignment":{"xl":"center center"},"nodes":[{"animation":"none","caption":"Picture","layout":"noframe","object":"block","sourceKey":"uploads/20f7f107-54da-4643-8544-554879790ed0","type":"picture"}],"object":"block","size":{"md":"6","xs":12},"type":"layout-column"}],"object":"block","type":"layout-row"}],"object":"block","padding":"with-padding","snapping":"none","type":"layout-section"}],"object":"block","type":"page"}},"groups":{"admin":{"name":"Administrator"}},"layouts":{"53036dc7-b1eb-4abe-34f7-25b71e6b2cbb":{"contentKey":"files/53036dc7-b1eb-4abe-34f7-25b71e6b2cbb","description":"","key":"layouts/53036dc7-b1eb-4abe-34f7-25b71e6b2cbb","title":"New Layout","permalinkTemplate":"/aaa/{bbb}"},"e5de2977-1176-6b9d-f4ef-50c77ea1c60f":{"contentKey":"files/7fe21f13-d1dd-00c1-c00e-a296b2cdcdca","description":"default layout","key":"layouts/e5de2977-1176-6b9d-f4ef-50c77ea1c60f","keywords":"key","title":"Default","permalinkTemplate":"/"}},"navigationItems":[{"key":"main","label":"Main menu","navigationItems":[{"key":"e815a458-4562-7c58-8f11-9c65334d0d46","label":"Github","targetKey":"urls/aad6187b-08cb-d1ab-d373-c19ae9686efb"},{"key":"7e903f51-905d-9eae-e183-2434353b507e","label":"Demo","targetKey":"urls/c59fcf7f-fb27-7c27-08b5-61684e11912d"}]}],"pages":{"86583574-16ee-4a3c-a787-6b5415f56117":{"contentKey":"files/86583574-16ee-4a3c-a787-6b5415f56117","description":"","key":"pages/86583574-16ee-4a3c-a787-6b5415f56117","keywords":"","permalink":"/aaa/111","title":"New page"},"e0987ca1-f458-b546-7697-7be594b35583":{"contentKey":"files/ffdcdb4e-bad4-dfd7-3e9c-c0b2a917b66a","description":"","key":"pages/e0987ca1-f458-b546-7697-7be594b35583","keywords":"","permalink":"/","title":"Home"}},"posts":{"e4dc7929-6721-6c25-66af-86b450239bd3":{"contentKey":"files/e4dc7929-6721-6c25-66af-86b450239bd3","description":"","key":"posts/e4dc7929-6721-6c25-66af-86b450239bd3","keywords":"","permalink":"/blog/new","title":"New blog post"}},"settings":{"integration":{"googlemaps":{"apiKey":null},"gtm":{"containerId":null,"dataLayerName":null},"intercom":{"appId":null}},"site":{"author":"Paperbits","description":"Give your users a tool to create professional web pages, forms, email templates and more.","faviconPermalinkKey":"permalinks/ca4ad134-875c-bbad-be98-047557eaceb7","keywords":"content builder, visual editor, drag & drop, open source, javascript, content management","ogImagePermalinkKey":"permalinks/1f0d7238-1bb7-1d88-c754-26d46e67e5f0","ogSiteName":"PaperBits","ogType":"website","ogUrl":"https://paperbits.io","title":"Paperbits - Drag 'n' drop content builder for web apps","url":"https://paperbits.io/"}},"styles":{"animations":{"bounce":{"displayName":"Bounce","duration":1000,"iterationCount":"1","key":"animations/bounce","name":"bounce","timingFunction":"linear"},"bounceIn":{"displayName":"Bounce in","duration":1000,"iterationCount":"1","key":"animations/bounceIn","name":"bounceIn","timingFunction":"linear"},"bounceInDown":{"displayName":"Bounce in down","duration":1000,"iterationCount":"1","key":"animations/bounceInDown","name":"bounceInDown","timingFunction":"linear"},"bounceInLeft":{"displayName":"Bounce in left","duration":1000,"iterationCount":"1","key":"animations/bounceInLeft","name":"bounceInLeft","timingFunction":"linear"},"bounceInRight":{"displayName":"Bounce in right","duration":1000,"iterationCount":"1","key":"animations/bounceInRight","name":"bounceInRight","timingFunction":"linear"},"bounceInUp":{"displayName":"Bounce in up","duration":1000,"iterationCount":"1","key":"animations/bounceInUp","name":"bounceInUp","timingFunction":"linear"},"bounceOut":{"displayName":"Bounce out","duration":1000,"iterationCount":"1","key":"animations/bounceOut","name":"bounceOut","timingFunction":"linear"},"bounceOutDown":{"displayName":"Bounce out down","duration":1000,"iterationCount":"1","key":"animations/bounceOutDown","name":"bounceOutDown","timingFunction":"linear"},"bounceOutLeft":{"displayName":"Bounce out left","duration":1000,"iterationCount":"1","key":"animations/bounceOutLeft","name":"bounceOutLeft","timingFunction":"linear"},"bounceOutRight":{"displayName":"Bounce out right","duration":1000,"iterationCount":"1","key":"animations/bounceOutRight","name":"bounceOutRight","timingFunction":"linear"},"bounceOutUp":{"displayName":"Bounce out up","duration":1000,"iterationCount":"1","key":"animations/bounceOutUp","name":"bounceOutUp","timingFunction":"linear"},"fadeIn":{"displayName":"Fade in","duration":1000,"iterationCount":"1","key":"animations/fadeIn","name":"fadeIn","timingFunction":"linear"},"fadeInDown":{"displayName":"Fade in down","duration":1000,"iterationCount":"1","key":"animations/fadeInDown","name":"fadeInDown","timingFunction":"linear"},"fadeInDownBig":{"displayName":"Fade in down big","duration":1000,"iterationCount":"1","key":"animations/fadeInDownBig","name":"fadeInDownBig","timingFunction":"linear"},"fadeInLeft":{"displayName":"Fade in left","duration":1000,"iterationCount":"1","key":"animations/fadeInLeft","name":"fadeInLeft","timingFunction":"linear"},"fadeInLeftBig":{"displayName":"Fade in left big","duration":1000,"iterationCount":"1","key":"animations/fadeInLeftBig","name":"fadeInLeftBig","timingFunction":"linear"},"fadeInRight":{"displayName":"Fade in right","duration":1000,"iterationCount":"1","key":"animations/fadeInRight","name":"fadeInRight","timingFunction":"linear"},"fadeInRightBig":{"displayName":"Fade in right big","duration":1000,"iterationCount":"1","key":"animations/fadeInRightBig","name":"fadeInRightBig","timingFunction":"linear"},"fadeInUp":{"displayName":"Fade in up","duration":1000,"iterationCount":"1","key":"animations/fadeInUp","name":"fadeInUp","timingFunction":"linear"},"fadeInUpBig":{"displayName":"Fade in up big","duration":1000,"iterationCount":"1","key":"animations/fadeInUpBig","name":"fadeInUpBig","timingFunction":"linear"},"fadeOut":{"displayName":"Fade out","duration":1000,"iterationCount":"1","key":"animations/fadeOut","name":"fadeOut","timingFunction":"linear"},"fadeOutDown":{"displayName":"Fade out down","duration":1000,"iterationCount":"1","key":"animations/fadeOutDown","name":"fadeOutDown","timingFunction":"linear"},"fadeOutDownBig":{"displayName":"Fade out down big","duration":1000,"iterationCount":"1","key":"animations/fadeOutDownBig","name":"fadeOutDownBig","timingFunction":"linear"},"fadeOutLeft":{"displayName":"Fade out left","duration":1000,"iterationCount":"1","key":"animations/fadeOutLeft","name":"fadeOutLeft","timingFunction":"linear"},"fadeOutLeftBig":{"displayName":"Fade out left big","duration":1000,"iterationCount":"1","key":"animations/fadeOutLeftBig","name":"fadeOutLeftBig","timingFunction":"linear"},"fadeOutRight":{"displayName":"Fade out right","duration":1000,"iterationCount":"1","key":"animations/fadeOutRight","name":"fadeOutRight","timingFunction":"linear"},"fadeOutRightBig":{"displayName":"Fade out right big","duration":1000,"iterationCount":"1","key":"animations/fadeOutRightBig","name":"fadeOutRightBig","timingFunction":"linear"},"fadeOutUp":{"displayName":"Fade out up","duration":1000,"iterationCount":"1","key":"animations/fadeOutUp","name":"fadeOutUp","timingFunction":"linear"},"fadeOutUpBig":{"displayName":"Fade out up big","duration":1000,"iterationCount":"1","key":"animations/fadeOutUpBig","name":"fadeOutUpBig","timingFunction":"linear"},"flash":{"displayName":"Flash","duration":1000,"iterationCount":"1","key":"animations/flash","name":"flash","timingFunction":"linear"},"flipInX":{"displayName":"Flip in X","duration":1000,"iterationCount":"1","key":"animations/flipInX","name":"flipInX","timingFunction":"linear"},"flipInY":{"displayName":"Flip in Y","duration":1000,"iterationCount":"1","key":"animations/flipInY","name":"flipInY","timingFunction":"linear"},"flipOutX":{"displayName":"Flip out X","duration":1000,"iterationCount":"1","key":"animations/flipOutX","name":"flipOutX","timingFunction":"linear"},"flipOutY":{"displayName":"Flip out Y","duration":1000,"iterationCount":"1","key":"animations/flipOutY","name":"flipOutY","timingFunction":"linear"},"headShake":{"displayName":"Head shake","duration":1000,"iterationCount":"1","key":"animations/headShake","name":"headShake","timingFunction":"linear"},"heartBeat":{"displayName":"Heart beat","duration":1000,"iterationCount":"1","key":"animations/heartBeat","name":"heartBeat","timingFunction":"linear"},"hinge":{"displayName":"Hinge","duration":1000,"iterationCount":"1","key":"animations/hinge","name":"hinge","timingFunction":"linear"},"jackInTheBox":{"displayName":"Jack in the box","duration":1000,"iterationCount":"1","key":"animations/jackInTheBox","name":"jackInTheBox","timingFunction":"linear"},"jello":{"displayName":"Jello","duration":1000,"iterationCount":"1","key":"animations/jello","name":"jello","timingFunction":"linear"},"lightSpeedIn":{"displayName":"Light speed in","duration":1000,"iterationCount":"1","key":"animations/lightSpeedIn","name":"lightSpeedIn","timingFunction":"linear"},"lightSpeedOut":{"displayName":"Light speed out","duration":1000,"iterationCount":"1","key":"animations/lightSpeedOut","name":"lightSpeedOut","timingFunction":"linear"},"pulse":{"displayName":"Pulse","duration":1000,"iterationCount":"1","key":"animations/pulse","name":"pulse","timingFunction":"linear"},"rollIn":{"displayName":"Roll in","duration":1000,"iterationCount":"1","key":"animations/rollIn","name":"rollIn","timingFunction":"linear"},"rollOut":{"displayName":"Roll out","duration":1000,"iterationCount":"1","key":"animations/rollOut","name":"rollOut","timingFunction":"linear"},"rotateIn":{"displayName":"Rotate in","duration":1000,"iterationCount":"1","key":"animations/rotateIn","name":"rotateIn","timingFunction":"linear"},"rotateInDownLeft":{"displayName":"Rotate in down left","duration":1000,"iterationCount":"1","key":"animations/rotateInDownLeft","name":"rotateInDownLeft","timingFunction":"linear"},"rotateInDownRight":{"displayName":"Rotate in down right","duration":1000,"iterationCount":"1","key":"animations/rotateInDownRight","name":"rotateInDownRight","timingFunction":"linear"},"rotateInUpLeft":{"displayName":"Rotate in up left","duration":1000,"iterationCount":"1","key":"animations/rotateInUpLeft","name":"rotateInUpLeft","timingFunction":"linear"},"rotateInUpRight":{"displayName":"Rotate in up right","duration":1000,"iterationCount":"1","key":"animations/rotateInUpRight","name":"rotateInUpRight","timingFunction":"linear"},"rotateOut":{"displayName":"Rotate out","duration":1000,"iterationCount":"1","key":"animations/rotateOut","name":"rotateOut","timingFunction":"linear"},"rotateOutDownLeft":{"displayName":"Rotate out down left","duration":1000,"iterationCount":"1","key":"animations/rotateOutDownLeft","name":"rotateOutDownLeft","timingFunction":"linear"},"rotateOutDownRight":{"displayName":"Rotate out down right","duration":1000,"iterationCount":"1","key":"animations/rotateOutDownRight","name":"rotateOutDownRight","timingFunction":"linear"},"rotateOutUpLeft":{"displayName":"Rotate out up left","duration":1000,"iterationCount":"1","key":"animations/rotateOutUpLeft","name":"rotateOutUpLeft","timingFunction":"linear"},"rotateOutUpRight":{"displayName":"Rotate out up right","duration":1000,"iterationCount":"1","key":"animations/rotateOutUpRight","name":"rotateOutUpRight","timingFunction":"linear"},"rubberBand":{"displayName":"Rubber band","duration":1000,"iterationCount":"1","key":"animations/rubberBand","name":"rubberBand","timingFunction":"linear"},"shake":{"displayName":"Shake","duration":1000,"iterationCount":"1","key":"animations/shake","name":"shake","timingFunction":"linear"},"slideInDown":{"displayName":"Slide in down","duration":1000,"iterationCount":"1","key":"animations/slideInDown","name":"slideInDown","timingFunction":"linear"},"slideInLeft":{"displayName":"Slide in left","duration":1000,"iterationCount":"1","key":"animations/slideInLeft","name":"slideInLeft","timingFunction":"linear"},"slideInRight":{"displayName":"Slide in right","duration":1000,"iterationCount":"1","key":"animations/slideInRight","name":"slideInRight","timingFunction":"linear"},"slideInUp":{"displayName":"Slide in up","duration":1000,"iterationCount":"1","key":"animations/slideInUp","name":"slideInUp","timingFunction":"linear"},"slideOutDown":{"displayName":"Slide out down","duration":1000,"iterationCount":"1","key":"animations/slideOutDown","name":"slideOutDown","timingFunction":"linear"},"slideOutLeft":{"displayName":"Slide out left","duration":1000,"iterationCount":"1","key":"animations/slideOutLeft","name":"slideOutLeft","timingFunction":"linear"},"slideOutRight":{"displayName":"Slide out right","duration":1000,"iterationCount":"1","key":"animations/slideOutRight","name":"slideOutRight","timingFunction":"linear"},"slideOutUp":{"displayName":"Slide out up","duration":1000,"iterationCount":"1","key":"animations/slideOutUp","name":"slideOutUp","timingFunction":"linear"},"swing":{"displayName":"Swing","duration":1000,"iterationCount":"1","key":"animations/swing","name":"swing","timingFunction":"linear"},"tada":{"displayName":"Tada","duration":1000,"iterationCount":"1","key":"animations/tada","name":"tada","timingFunction":"linear"},"wobble":{"displayName":"Wobble","duration":1000,"iterationCount":"1","key":"animations/wobble","name":"wobble","timingFunction":"linear"},"zoomIn":{"displayName":"Zoom in","duration":1000,"iterationCount":"1","key":"animations/zoomIn","name":"zoomIn","timingFunction":"linear"},"zoomInDown":{"displayName":"Zoom in down","duration":1000,"iterationCount":"1","key":"animations/zoomInDown","name":"zoomInDown","timingFunction":"linear"},"zoomInLeft":{"displayName":"Zoom in left","duration":1000,"iterationCount":"1","key":"animations/zoomInLeft","name":"zoomInLeft","timingFunction":"linear"},"zoomInRight":{"displayName":"Zoom in right","duration":1000,"iterationCount":"1","key":"animations/zoomInRight","name":"zoomInRight","timingFunction":"linear"},"zoomInUp":{"displayName":"Zoom in up","duration":1000,"iterationCount":"1","key":"animations/zoomInUp","name":"zoomInUp","timingFunction":"linear"},"zoomOut":{"displayName":"Zoom out","duration":1000,"iterationCount":"1","key":"animations/zoomOut","name":"zoomOut","timingFunction":"linear"},"zoomOutDown":{"displayName":"Zoom out down","duration":1000,"iterationCount":"1","key":"animations/zoomOutDown","name":"zoomOutDown","timingFunction":"linear"},"zoomOutLeft":{"displayName":"Zoom out left","duration":1000,"iterationCount":"1","key":"animations/zoomOutLeft","name":"zoomOutLeft","timingFunction":"linear"},"zoomOutRight":{"displayName":"Zoom out right","duration":1000,"iterationCount":"1","key":"animations/zoomOutRight","name":"zoomOutRight","timingFunction":"linear"},"zoomOutUp":{"displayName":"Zoom out up","duration":1000,"iterationCount":"1","key":"animations/zoomOutUp","name":"zoomOutUp","timingFunction":"linear"}},"colors":{"dark":{"displayName":"Dark Bg","key":"colors/dark","value":"#2a2a59"},"default":{"displayName":"Default text","key":"colors/default","value":"#5b5f61"},"defaultBg":{"displayName":"Default Bg","key":"colors/defaultBg","value":"#fff"},"links":{"displayName":"Links","key":"colors/links","value":"#5cc6d0"},"primaryBg":{"displayName":"Primary Bg","key":"colors/primaryBg","value":"#4AB3F4"},"primaryText":{"displayName":"Primary text","key":"colors/primaryText","value":"#fff"}},"components":{"button":{"calck":{"background":{"colorKey":"colors/links"},"border":{"bottom":{"color":"orange","style":"solid","width":0},"left":{"color":"orange","style":"solid","width":0},"right":{"color":"orange","style":"solid","width":0},"top":{"color":"orange","style":"solid","width":0}},"borderRadius":{"bottomLeftRadius":5,"bottomRightRadius":5,"topLeftRadius":5,"topRightRadius":5},"category":"appearance","displayName":"Another button","key":"components/button/calck","margin":{"bottom":10,"left":10,"right":10,"top":10},"padding":{"bottom":9,"left":30,"right":30,"top":9},"shadow":{"shadowKey":"shadows/shadow1"},"typography":{"colorKey":"colors/default","fontStyle":"normal","fontWeight":"normal"}},"default":{"background":{"colorKey":"colors/defaultBg"},"border":{"bottom":{"color":"orange","style":"solid","width":0},"left":{"color":"orange","style":"solid","width":0},"right":{"color":"orange","style":"solid","width":0},"top":{"color":"orange","style":"solid","width":0}},"borderRadius":{"bottomLeftRadius":5,"bottomRightRadius":5,"topLeftRadius":5,"topRightRadius":5},"category":"appearance","displayName":"Normal button","key":"components/button/default","margin":{"bottom":10,"left":10,"right":10,"top":10},"padding":{"bottom":9,"left":30,"right":30,"top":9},"shadow":{"shadowKey":"shadows/shadow1"},"typography":{"colorKey":"colors/default","fontStyle":"normal"}},"primary":{"background":{"colorKey":"colors/primaryBg"},"category":"appearance","displayName":"Primary button","key":"components/button/primary","typography":{"colorKey":"colors/primaryText"}}},"card":{"default":{"border":{"bottom":{"color":"orange","style":"solid","width":0},"left":{"color":"orange","style":"solid","width":0},"right":{"color":"orange","style":"solid","width":0},"top":{"color":"orange","style":"solid","width":0}},"borderRadius":{"bottomLeftRadius":5,"bottomRightRadius":5,"topLeftRadius":5,"topRightRadius":5},"category":"appearance","displayName":"Normal card","key":"components/card/default","margin":{"bottom":10,"left":10,"right":10,"top":10},"padding":{"bottom":9,"left":30,"right":30,"top":9},"shadow":{"shadowKey":"shadows/shadow1"},"typography":{"colorKey":"colors/default","fontStyle":"normal"}}},"formControl":{"default":{"border":{"bottom":{"color":"#ced4da","style":"solid","width":1},"left":{"color":"#ced4da","style":"solid","width":1},"right":{"color":"#ced4da","style":"solid","width":1},"top":{"color":"#ced4da","style":"solid","width":1}},"borderRadius":{"bottomLeftRadius":5,"bottomRightRadius":5,"topLeftRadius":5,"topRightRadius":5},"displayName":"Text box","key":"components/formControl/default","margin":{"bottom":0,"left":0,"right":0,"top":0},"padding":{"bottom":10,"left":10,"right":10,"top":10},"shadow":{"shadowKey":"shadows/shadow3"},"typography":{"fontStyle":"normal","fontWeight":"normal"}}},"navbar":{"default":{"border":{"bottom":{"color":"orange","style":"solid"},"left":{"color":"orange","style":"solid"},"right":{"color":"orange","style":"solid"},"top":{"color":"orange","style":"solid"}},"components":{"navLink":{"border":{"bottom":{"color":"orange","style":"solid"},"left":{"color":"orange","style":"solid"},"right":{"color":"orange","style":"solid"},"top":{"color":"orange","style":"solid"}},"displayName":"Navigation link","key":"components/navbar/default/components/navLink","margin":{"left":15}}},"displayName":"Navigation bar","key":"components/navbar/default","typography":{"fontKey":"fonts/jollyGood","fontSize":24,"textTransform":"lowercase"}}}},"fonts":{"default":{"category":"sans-serif","displayName":"Advent Pro","family":"Advent Pro","key":"fonts/default","kind":"webfonts#webfont","lastModified":"2017-10-10","variants":[{"file":"http://fonts.gstatic.com/s/adventpro/v7/V8mCoQfxVT4Dvddr_yOwjVmtLQ.ttf","style":"normal","weight":100},{"file":"http://fonts.gstatic.com/s/adventpro/v7/V8mDoQfxVT4Dvddr_yOwjfWMDbY.ttf","style":"normal","weight":200},{"file":"http://fonts.gstatic.com/s/adventpro/v7/V8mDoQfxVT4Dvddr_yOwjZGPDbY.ttf","style":"normal","weight":300},{"file":"http://fonts.gstatic.com/s/adventpro/v7/V8mAoQfxVT4Dvddr_yOwtT0.ttf","style":"normal","weight":400},{"file":"http://fonts.gstatic.com/s/adventpro/v7/V8mDoQfxVT4Dvddr_yOwjcmODbY.ttf","style":"normal","weight":500},{"file":"http://fonts.gstatic.com/s/adventpro/v7/V8mDoQfxVT4Dvddr_yOwjeWJDbY.ttf","style":"normal","weight":600},{"file":"http://fonts.gstatic.com/s/adventpro/v7/V8mDoQfxVT4Dvddr_yOwjYGIDbY.ttf","style":"normal","weight":700}],"version":"v7"},"jollyGood":{"displayName":"Jolly Good","family":"JollyGoodSans-Basic","key":"fonts/jollyGood","variants":[{"file":"http://cdn.paperbits.io/fonts/JollyGoodSans-Basic.woff2","style":"normal","weight":"400"}]},"quicksand":{"displayName":"Quicksand","family":"Quicksand","key":"fonts/quicksand","variants":[{"file":"http://fonts.gstatic.com/s/quicksand/v8/6xKodSZaM9iE8KbpRA_pgHYoSA.ttf","style":"normal","weight":"300"},{"file":"http://fonts.gstatic.com/s/quicksand/v8/6xKtdSZaM9iE8KbpRA_RLA.ttf","style":"regular","weight":400},{"file":"http://fonts.gstatic.com/s/quicksand/v8/6xKodSZaM9iE8KbpRA_p2HcoSA.ttf","style":"normal","weight":"500"},{"file":"http://fonts.gstatic.com/s/quicksand/v8/6xKodSZaM9iE8KbpRA_pkHEoSA.ttf","style":"normal","weight":"700"}]}},"globals":{"a":{"displayName":"Link","typography":{"colorKey":"colors/links"}},"blockquote":{"displayName":"Quote","key":"globals/blockquote","typography":{"fontSize":30,"fontStyle":"italic","fontWeight":"normal","textAlign":"center"}},"body":{"displayName":"Text","key":"globals/body","typography":{"colorKey":"colors/default","fontKey":"fonts/quicksand","fontSize":18,"fontStyle":"normal","fontWeight":"normal"}},"h1":{"displayName":"Heading Level 1","key":"globals/h1","typography":{"fontSize":45,"fontStyle":"normal","fontWeight":"400"}},"h2":{"displayName":"Heading Level 2","key":"globals/h2","typography":{"fontSize":30,"fontStyle":"normal","fontWeight":"400"}},"h3":{"displayName":"Heading Level 3","key":"globals/h3","typography":{"fontSize":25,"fontStyle":"normal","fontWeight":"normal"}},"h4":{"displayName":"Heading Level 4","key":"globals/h4","typography":{"fontSize":20,"fontStyle":"normal","fontWeight":"normal"}},"h5":{"displayName":"Heading Level 5","key":"globals/h5","typography":{"fontSize":18,"fontStyle":"normal","fontWeight":"normal"}},"h6":{"displayName":"Heading Level 6","key":"globals/h6","typography":{"fontSize":16,"fontStyle":"normal","fontWeight":"normal"}},"p":{"displayName":"Paragraph","key":"globals/p","typography":{"fontSize":18}},"text":{"alignedLeft":{"displayName":"Align left","typography":{"lg":{"textAlign":"left"},"md":{"textAlign":"left"},"sm":{"textAlign":"left"},"xl":{"textAlign":"left"},"xs":{"textAlign":"left"}}},"alignedRight":{"typography":{"lg":{"textAlign":"right"},"md":{"textAlign":"right"},"sm":{"textAlign":"right"},"xl":{"textAlign":"right"},"xs":{"textAlign":"right"}}},"centered":{"typography":{"lg":{"textAlign":"center"},"md":{"textAlign":"center"},"sm":{"textAlign":"center"},"xl":{"textAlign":"center"},"xs":{"textAlign":"center"}}},"justified":{"typography":{"lg":{"textAlign":"justify"},"md":{"textAlign":"justify"},"sm":{"textAlign":"justify"},"xl":{"textAlign":"justify"},"xs":{"textAlign":"justify"}}},"key":"globals/text"},"ul":{"components":{"li":{"displayName":"List item","key":"globals/ul/components/li","typography":{"fontWeight":"bold"}}},"displayName":"Bulleted list","key":"globals/ul","typography":{"fontWeight":"normal"}}},"gradients":{"gradient1":{"colorStops":[{"color":"#87e0fd","length":"0"},{"color":"#53cbf1","length":"40"},{"color":"#05abe0","length":"100"}],"direction":"45deg","displayName":"Gradient 1","key":"gradients/gradient1"}},"shadows":{"shadow1":{"blur":3,"color":"rgba(0, 0, 0, 0.5)","displayName":"Light shadow","key":"shadows/shadow1","offsetX":1,"offsetY":1,"spread":0},"shadow2":{"blur":10,"color":"rgba(0, 0, 0, 0.5)","displayName":"Medium shadow","key":"shadows/shadow2","offsetX":2,"offsetY":2,"spread":0},"shadow3":{"blur":2,"color":"rgba(0, 0, 0, 0.1)","displayName":"Inset shadow","inset":true,"key":"shadows/shadow3","offsetX":1,"offsetY":1,"spread":0}}},"uploads":{"0303ed5f-a407-85df-c0ce-b5915246b4f5":{"blobKey":"0303ed5f-a407-85df-c0ce-b5915246b4f5","description":"","downloadUrl":"https://cdn.paperbits.io/images/twitter.png","filename":"twitter.png","key":"uploads/0303ed5f-a407-85df-c0ce-b5915246b4f5","keywords":"","mimeType":"image/png","permalink":"/content/twitter.png","targetKey":"permalinks/0303ed5f-a407-85df-c0ce-b5915246b4f5"},"20f7f107-54da-4643-8544-554879790ed0":{"blobKey":"20f7f107-54da-4643-8544-554879790ed0","description":"","downloadUrl":"https://cdn.paperbits.io/images/getting-started.svg","filename":"getting-started.svg","key":"uploads/20f7f107-54da-4643-8544-554879790ed0","keywords":"","mimeType":"image/svg+xml","permalink":"/content/getting-started.svg","targetKey":"permalinks/20f7f107-54da-4643-8544-554879790ed0"},"2651704d-31d7-bf35-45d5-33d0968254be":{"blobKey":"2651704d-31d7-bf35-45d5-33d0968254be","description":"","downloadUrl":"https://cdn.paperbits.io/images/linkedin.png","filename":"linkedin.png","key":"uploads/2651704d-31d7-bf35-45d5-33d0968254be","keywords":"","mimeType":"image/png","permalink":"/content/linkedin.png","targetKey":"permalinks/2651704d-31d7-bf35-45d5-33d0968254be"},"350b10ca-9a15-7fbb-5bc4-ea5260936803":{"description":"","downloadUrl":"https://cdn.paperbits.io/images/plane-launch.svg","filename":"plane-launch.svg","key":"uploads/350b10ca-9a15-7fbb-5bc4-ea5260936803","keywords":"","mimeType":"image/svg+xml","permalink":"/content/plane-launch.svg","targetKey":"permalinks/d5359bd1-143e-e342-2637-b42af94e0785"},"4358184d-6658-a520-e924-795dfb8df162":{"blobKey":"4358184d-6658-a520-e924-795dfb8df162","description":"","downloadUrl":"https://cdn.paperbits.io/videos/planet-earth.mp4","filename":"planet-earth.mp4","key":"uploads/4358184d-6658-a520-e924-795dfb8df162","keywords":"","mimeType":"video/mp4","permalink":"/content/planet-earth.mp4","targetKey":"permalinks/4358184d-6658-a520-e924-795dfb8df162"},"5b9a572c-5ede-0da1-1ffa-f2ce06ba0fae":{"blobKey":"5b9a572c-5ede-0da1-1ffa-f2ce06ba0fae","description":"","downloadUrl":"https://cdn.paperbits.io/images/frameworks.svg","filename":"frameworks.svg","key":"uploads/5b9a572c-5ede-0da1-1ffa-f2ce06ba0fae","keywords":"","mimeType":"image/svg+xml","permalink":"/content/frameworks.svg","targetKey":"permalinks/5b9a572c-5ede-0da1-1ffa-f2ce06ba0fae"},"68aa54b5-9780-b1ed-6020-fbcb7933dc26":{"description":"","downloadUrl":"https://cdn.paperbits.io/images/favicon.ico","filename":"favicon.ico","key":"uploads/68aa54b5-9780-b1ed-6020-fbcb7933dc26","keywords":"","mimeType":"image/x-icon","permalink":"/content/favicon.ico","targetKey":"permalinks/ca4ad134-875c-bbad-be98-047557eaceb7"},"88238d72-237d-eefc-da3e-19bef9506808":{"blobKey":"88238d72-237d-eefc-da3e-19bef9506808","description":"","downloadUrl":"https://cdn.paperbits.io/images/logo.svg","filename":"logo.svg","key":"uploads/88238d72-237d-eefc-da3e-19bef9506808","keywords":"","mimeType":"image/svg+xml","permalink":"/content/logo.svg","targetKey":"permalinks/88238d72-237d-eefc-da3e-19bef9506808"},"8b7bdb01-5ea3-3b39-7a21-6f32e6f58bf0":{"description":"","downloadUrl":"https://cdn.paperbits.io/images/pen-fight.svg","filename":"pen-fight.svg","key":"uploads/8b7bdb01-5ea3-3b39-7a21-6f32e6f58bf0","keywords":"","mimeType":"image/svg+xml","permalink":"/content/pen-fight.svg","targetKey":"permalinks/96562577-5dc3-2644-b510-757acbbdabd3"},"92c8f9aa-e2d1-7a73-1cdd-1b9e39ba41e4":{"description":"","downloadUrl":"https://cdn.paperbits.io/images/finding-way.svg","filename":"finding-way.svg","key":"uploads/92c8f9aa-e2d1-7a73-1cdd-1b9e39ba41e4","keywords":"","mimeType":"image/svg+xml","permalink":"/content/finding-way.svg","targetKey":"permalinks/275773e2-9018-4646-7d06-7f5cea3660fc"},"adfbffad-ac01-ed54-fbe0-6253d0c663fd":{"blobKey":"adfbffad-ac01-ed54-fbe0-6253d0c663fd","description":"","downloadUrl":"https://cdn.paperbits.io/images/api-first.png","filename":"api-first.png","key":"uploads/adfbffad-ac01-ed54-fbe0-6253d0c663fd","keywords":"","mimeType":"image/png","permalink":"/content/api-first.png","targetKey":"permalinks/adfbffad-ac01-ed54-fbe0-6253d0c663fd"},"bf423581-8039-b02c-0fe8-7d678534a568":{"description":"","downloadUrl":"https://cdn.paperbits.io/images/Ph03nyx-Super-Mario-Mushroom-1UP.ico","filename":"Ph03nyx-Super-Mario-Mushroom-1UP.ico","key":"uploads/bf423581-8039-b02c-0fe8-7d678534a568","keywords":"","mimeType":"image/x-icon","permalink":"/content/Ph03nyx-Super-Mario-Mushroom-1UP.ico","targetKey":"permalinks/de69895e-3232-c767-53e6-49ed801557b8"},"e688898b-b9a2-240f-6da0-346b6b0d02e1":{"description":"","downloadUrl":"https://cdn.paperbits.io/images/json-output-example.svg","filename":"json-output-example.svg","key":"uploads/e688898b-b9a2-240f-6da0-346b6b0d02e1","keywords":"","mimeType":"image/svg+xml","permalink":"/content/Ph03nyx-Super-Mario-Mushroom-1UP.ico","targetKey":"permalinks/e0e5eb90-7ebe-e85a-dedb-ea17daf73201"},"f0b568bf-703a-0fa5-58b0-5b4574b18b93":{"description":"","downloadUrl":"https://cdn.paperbits.io/images/pen-and-ruler.svg","filename":"pen-and-ruler.svg","key":"uploads/f0b568bf-703a-0fa5-58b0-5b4574b18b93","keywords":"","mimeType":"image/svg+xml","permalink":"/content/pen-and-ruler.svg","targetKey":"permalinks/c7a63e62-bfb9-464a-ce18-662564681a72"},"f4f94aa8-269b-9d08-4247-07981b8476c3":{"blobKey":"f4f94aa8-269b-9d08-4247-07981b8476c3","description":"","downloadUrl":"https://cdn.paperbits.io/images/editors.png","filename":"editors.png","key":"uploads/f4f94aa8-269b-9d08-4247-07981b8476c3","keywords":"","mimeType":"image/png","permalink":"/content/editors.png","targetKey":"permalinks/f4f94aa8-269b-9d08-4247-07981b8476c3"}},"urls":{"05faa2cf-eb84-82fb-a8be-bf9e8a3a9fca":{"key":"urls/05faa2cf-eb84-82fb-a8be-bf9e8a3a9fca","permalink":"https://dashboard.stripe.com/register","title":"https://dashboard.stripe.com/register"},"21d050c7-015a-0dc6-60f1-f0fc66330c25":{"key":"urls/21d050c7-015a-0dc6-60f1-f0fc66330c25","permalink":"https://github.com/paperbits/examples/tree/master/forms","title":"https://github.com/paperbits/examples/tree/master/forms"},"4a0ebab0-f605-e452-f546-e94a5a3860c4":{"key":"urls/4a0ebab0-f605-e452-f546-e94a5a3860c4","permalink":"https://stripe.com","title":"https://stripe.com"},"5bd8f50b-997b-c014-322c-928541b22ae9":{"key":"urls/5bd8f50b-997b-c014-322c-928541b22ae9","permalink":"https://twitter.com/paperbitsproj","title":"https://twitter.com/paperbitsproj"},"680ed397-07df-5554-790b-acbd11090b4e":{"key":"urls/680ed397-07df-5554-790b-acbd11090b4e","permalink":"https://stripe.com/docs/api","title":"https://stripe.com/docs/api"},"6f6d6de6-4321-8ea1-e9c7-aca1b713db9e":{"key":"urls/6f6d6de6-4321-8ea1-e9c7-aca1b713db9e","permalink":"https://formspark.io/","title":"https://formspark.io/"},"71c1e85b-7796-f171-9126-a4725c67b7f9":{"key":"urls/71c1e85b-7796-f171-9126-a4725c67b7f9","permalink":"https://azure.microsoft.com/en-us/services/api-management/","title":"https://azure.microsoft.com/en-us/services/api-management/"},"757bdcf0-7237-9747-5368-974f180fb33b":{"key":"urls/757bdcf0-7237-9747-5368-974f180fb33b","permalink":"https://www.netlify.com","title":"https://www.netlify.com"},"7e33e979-8a6d-3834-c605-8d60d18e3d11":{"key":"urls/7e33e979-8a6d-3834-c605-8d60d18e3d11","targetKey":"permalinks/1498569f-0a5d-6d6f-5653-083925f4ec55","title":"mailto:support@paperbits.io"},"82e518bc-3144-7fd0-aa60-9b10341077e3":{"key":"urls/82e518bc-3144-7fd0-aa60-9b10341077e3","permalink":"https://dashboard.stripe.com/test/events","title":"https://dashboard.stripe.com/test/events"},"aad6187b-08cb-d1ab-d373-c19ae9686efb":{"key":"urls/aad6187b-08cb-d1ab-d373-c19ae9686efb","permalink":"https://github.com/paperbits","title":"https://github.com/paperbits"},"c59fcf7f-fb27-7c27-08b5-61684e11912d":{"key":"urls/c59fcf7f-fb27-7c27-08b5-61684e11912d","permalink":"https://demo.paperbits.io","title":"https://demo.paperbits.io"},"c98dbd9f-3c0f-eba8-fbeb-49216da7ee56":{"key":"urls/c98dbd9f-3c0f-eba8-fbeb-49216da7ee56","permalink":"https://vuejs.org","title":"https://vuejs.org"},"c9a948dc-ccbc-6814-9a10-09b8c5716631":{"key":"urls/c9a948dc-ccbc-6814-9a10-09b8c5716631","permalink":"https://dashboard.stripe.com/account/apikeys","title":"https://dashboard.stripe.com/account/apikeys"},"e7da07b8-d303-a860-acc7-9a01ea87e88a":{"key":"urls/e7da07b8-d303-a860-acc7-9a01ea87e88a","permalink":"https://www.linkedin.com/company/paperbits","title":"https://www.linkedin.com/company/paperbits"},"eb25e97c-bf4f-c4c9-f417-7ea0292badc6":{"key":"urls/eb25e97c-bf4f-c4c9-f417-7ea0292badc6","permalink":"https://firebase.google.com/pricing","title":"https://firebase.google.com/pricing"},"ef640d0c-2677-8c30-a0ba-e2abb3eb2964":{"key":"urls/ef640d0c-2677-8c30-a0ba-e2abb3eb2964","permalink":"https://www.algolia.com","title":"https://www.algolia.com"}}}}}
+{
+    "blocks": {
+        "new-page-template": {
+            "content": {
+                "layout": "container",
+                "nodes": [
+                    {
+                        "nodes": [
+                            {
+                                "nodes": [
+                                    {
+                                        "nodes": [
+                                            {
+                                                "content": [
+                                                    {
+                                                        "text": "Heading",
+                                                        "type": "text"
+                                                    }
+                                                ],
+                                                "type": "heading1"
+                                            },
+                                            {
+                                                "content": [
+                                                    {
+                                                        "text": "Yeah, sure, okay. This is it. This is the answer. It says here that a bolt of lightning is gonna strike the clock tower precisely at 10:04 p.m. next Saturday night. If we could somehow harness this bolt of lightning, channel it into the flux capacitor, it just might work. Next Saturday night, we're sending you back to the future. Will you take care of that? Stand tall, boy, have some respect for yourself. Don't you know that if you let people walk all over you know, they'll be walking all over you for the rest of your life? Listen to me, do you think I'm gonna spend the rest of my life in this slop house? Well, you mean, it makes perfect sense.",
+                                                        "type": "text"
+                                                    }
+                                                ],
+                                                "type": "paragraph"
+                                            }
+                                        ],
+                                        "object": "widget",
+                                        "type": "text"
+                                    }
+                                ],
+                                "object": "block",
+                                "size": {
+                                    "lg": "12",
+                                    "md": "12",
+                                    "sm": "12"
+                                },
+                                "type": "layout-column"
+                            }
+                        ],
+                        "object": "block",
+                        "type": "layout-row"
+                    }
+                ],
+                "object": "block",
+                "padding": "with-padding",
+                "type": "layout-section"
+            },
+            "description": "",
+            "key": "blocks/8730d297-af39-8166-83b6-9439addca789",
+            "title": "New page template",
+            "type": "page"
+        }
+    },
+    "emailTemplates": {
+        "c17ea920-cc6b-b3b5-6da4-ef8d19b758ff": {
+            "contentKey": "files/517fcb46-55ba-8776-3300-d596919a6f6f",
+            "description": "",
+            "key": "emailTemplates/c17ea920-cc6b-b3b5-6da4-ef8d19b758ff",
+            "title": "Confirm email"
+        }
+    },
+    "files": {
+        "0fad98ca-b406-0848-14cf-705a9d51df39": {
+            "nodes": [
+                {
+                    "layout": "container",
+                    "nodes": [
+                        {
+                            "nodes": [
+                                {
+                                    "nodes": [
+                                        {
+                                            "object": "block",
+                                            "rootKey": "main",
+                                            "sourceKey": "uploads/88238d72-237d-eefc-da3e-19bef9506808",
+                                            "type": "navbar"
+                                        }
+                                    ],
+                                    "object": "block",
+                                    "size": {
+                                        "xs": 12
+                                    },
+                                    "type": "layout-column"
+                                }
+                            ],
+                            "object": "block",
+                            "type": "layout-row"
+                        }
+                    ],
+                    "object": "block",
+                    "padding": "with-padding",
+                    "snapping": "none",
+                    "type": "layout-section"
+                },
+                {
+                    "layout": "container",
+                    "nodes": [
+                        {
+                            "nodes": [
+                                {
+                                    "nodes": [
+                                        {
+                                            "navigationItemKey": "328e5870-b83f-ae04-10da-e2d30374f181",
+                                            "object": "block",
+                                            "type": "table-of-contents"
+                                        }
+                                    ],
+                                    "object": "block",
+                                    "size": {
+                                        "md": 3,
+                                        "xs": 12
+                                    },
+                                    "type": "layout-column"
+                                },
+                                {
+                                    "nodes": [
+                                        {
+                                            "object": "block",
+                                            "type": "page"
+                                        }
+                                    ],
+                                    "object": "block",
+                                    "size": {
+                                        "md": 9,
+                                        "xs": 12
+                                    },
+                                    "type": "layout-column"
+                                }
+                            ],
+                            "object": "block",
+                            "type": "layout-row"
+                        }
+                    ],
+                    "object": "block",
+                    "padding": "with-padding",
+                    "snapping": "none",
+                    "type": "layout-section"
+                }
+            ],
+            "object": "block",
+            "type": "layout"
+        },
+        "cd8e1361-fbb1-4696-2079-536dd93e4c54": {
+            "nodes": [
+                {
+                    "layout": "container",
+                    "nodes": [
+                        {
+                            "nodes": [
+                                {
+                                    "nodes": [
+                                        {
+                                            "object": "block",
+                                            "rootKey": "main",
+                                            "sourceKey": "uploads/88238d72-237d-eefc-da3e-19bef9506808",
+                                            "type": "navbar"
+                                        }
+                                    ],
+                                    "object": "block",
+                                    "size": {
+                                        "xs": 12
+                                    },
+                                    "type": "layout-column"
+                                }
+                            ],
+                            "object": "block",
+                            "type": "layout-row"
+                        }
+                    ],
+                    "object": "block",
+                    "padding": "with-padding",
+                    "snapping": "none",
+                    "type": "layout-section"
+                },
+                {
+                    "object": "block",
+                    "type": "page"
+                },
+                {
+                    "layout": "container",
+                    "nodes": [
+                        {
+                            "nodes": [
+                                {
+                                    "alignment": {
+                                        "xl": "start center"
+                                    },
+                                    "nodes": [
+                                        {
+                                            "nodes": [
+                                                {
+                                                    "content": [
+                                                        {
+                                                            "text": "© 2019  Papersbits LLC. All rights reserved.",
+                                                            "type": "text"
+                                                        }
+                                                    ],
+                                                    "type": "tmp"
+                                                }
+                                            ],
+                                            "object": "widget",
+                                            "type": "text"
+                                        }
+                                    ],
+                                    "object": "block",
+                                    "size": {
+                                        "xs": 12
+                                    },
+                                    "type": "layout-column"
+                                }
+                            ],
+                            "object": "block",
+                            "type": "layout-row"
+                        }
+                    ],
+                    "object": "block",
+                    "padding": "with-padding",
+                    "snapping": "none",
+                    "type": "layout-section"
+                }
+            ],
+            "object": "block",
+            "type": "layout"
+        },
+        "dbdf346e-867f-0e23-0117-450584eacaba": {
+            "nodes": [
+                {
+                    "layout": "container",
+                    "nodes": [
+                        {
+                            "nodes": [
+                                {
+                                    "nodes": [
+                                        {
+                                            "nodes": [
+                                                {
+                                                    "content": [
+                                                        {
+                                                            "text": "How to create a widget",
+                                                            "type": "text"
+                                                        }
+                                                    ],
+                                                    "type": "heading1"
+                                                },
+                                                {
+                                                    "content": [
+                                                        {
+                                                            "text": "Yeah, sure, okay. This is it. This is the answer. It says here that a bolt of lightning is gonna strike the clock tower precisely at 10:04 p.m. next Saturday night. If we could somehow harness this bolt of lightning, channel it into the flux capacitor, it just might work. Next Saturday night, we're sending you back to the future. Will you take care of that? Stand tall, boy, have some respect for yourself. Don't you know that if you let people walk all over you know, they'll be walking all over you for the rest of your life? Listen to me, do you think I'm gonna spend the rest of my life in this slop house? Well, you mean, it makes perfect sense.",
+                                                            "type": "text"
+                                                        }
+                                                    ],
+                                                    "type": "paragraph"
+                                                }
+                                            ],
+                                            "object": "widget",
+                                            "type": "text"
+                                        }
+                                    ],
+                                    "object": "block",
+                                    "size": {
+                                        "sm": "12"
+                                    },
+                                    "type": "layout-column"
+                                }
+                            ],
+                            "object": "block",
+                            "type": "layout-row"
+                        }
+                    ],
+                    "object": "block",
+                    "padding": "with-padding",
+                    "type": "layout-section"
+                }
+            ]
+        },
+        "e2d71b1d-6201-7d11-125d-b7118a65f13c": {
+            "nodes": [
+                {
+                    "layout": "container",
+                    "nodes": [
+                        {
+                            "nodes": [
+                                {
+                                    "nodes": [
+                                        {
+                                            "nodes": [
+                                                {
+                                                    "content": [
+                                                        {
+                                                            "text": "Getting started",
+                                                            "type": "text"
+                                                        }
+                                                    ],
+                                                    "type": "heading1"
+                                                },
+                                                {
+                                                    "content": [
+                                                        {
+                                                            "text": "Yeah, sure, okay. This is it. This is the answer. It says here that a bolt of lightning is gonna strike the clock tower precisely at 10:04 p.m. next Saturday night. If we could somehow harness this bolt of lightning, channel it into the flux capacitor, it just might work. Next Saturday night, we're sending you back to the future. Will you take care of that? Stand tall, boy, have some respect for yourself. Don't you know that if you let people walk all over you know, they'll be walking all over you for the rest of your life? Listen to me, do you think I'm gonna spend the rest of my life in this slop house? Well, you mean, it makes perfect sense.",
+                                                            "type": "text"
+                                                        }
+                                                    ],
+                                                    "type": "paragraph"
+                                                }
+                                            ],
+                                            "object": "widget",
+                                            "type": "text"
+                                        }
+                                    ],
+                                    "object": "block",
+                                    "size": {
+                                        "sm": "12"
+                                    },
+                                    "type": "layout-column"
+                                }
+                            ],
+                            "object": "block",
+                            "type": "layout-row"
+                        }
+                    ],
+                    "object": "block",
+                    "padding": "with-padding",
+                    "type": "layout-section"
+                },
+                {
+                    "layout": "container",
+                    "nodes": [
+                        {
+                            "nodes": [
+                                {
+                                    "nodes": [
+                                        {
+                                            "alignment": {
+                                                "xl": "start center"
+                                            },
+                                            "nodes": [
+                                                {
+                                                    "nodes": [
+                                                        {
+                                                            "content": [
+                                                                {
+                                                                    "text": "Card",
+                                                                    "type": "text"
+                                                                }
+                                                            ],
+                                                            "type": "heading1"
+                                                        },
+                                                        {
+                                                            "content": [
+                                                                {
+                                                                    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...",
+                                                                    "type": "text"
+                                                                }
+                                                            ],
+                                                            "type": "paragraph"
+                                                        }
+                                                    ],
+                                                    "object": "widget",
+                                                    "type": "text"
+                                                },
+                                                {
+                                                    "label": "Button",
+                                                    "object": "block",
+                                                    "styles": {
+                                                        "appearance": "components/button/default"
+                                                    },
+                                                    "type": "button"
+                                                }
+                                            ],
+                                            "object": "block",
+                                            "styles": {
+                                                "instance": "instances/card-iS8Vb"
+                                            },
+                                            "type": "card"
+                                        }
+                                    ],
+                                    "object": "block",
+                                    "size": {
+                                        "md": 6,
+                                        "xs": 12
+                                    },
+                                    "type": "layout-column"
+                                },
+                                {
+                                    "object": "block",
+                                    "size": {
+                                        "md": 6,
+                                        "xs": 12
+                                    },
+                                    "type": "layout-column"
+                                }
+                            ],
+                            "object": "block",
+                            "type": "layout-row"
+                        }
+                    ],
+                    "object": "block",
+                    "padding": "with-padding",
+                    "snapping": "none",
+                    "type": "layout-section"
+                }
+            ]
+        },
+        "e4dc7929-6721-6c25-66af-86b450239bd3": {
+            "nodes": [
+                {
+                    "layout": "container",
+                    "nodes": [
+                        {
+                            "nodes": [
+                                {
+                                    "nodes": [
+                                        {
+                                            "nodes": [
+                                                {
+                                                    "content": [
+                                                        {
+                                                            "text": "Heading",
+                                                            "type": "text"
+                                                        }
+                                                    ],
+                                                    "type": "heading1"
+                                                },
+                                                {
+                                                    "content": [
+                                                        {
+                                                            "text": "Yeah, sure, okay. This is it. This is the answer. It says here that a bolt of lightning is gonna strike the clock tower precisely at 10:04 p.m. next Saturday night. If we could somehow harness this bolt of lightning, channel it into the flux capacitor, it just might work. Next Saturday night, we're sending you back to the future. Will you take care of that? Stand tall, boy, have some respect for yourself. Don't you know that if you let people walk all over you know, they'll be walking all over you for the rest of your life? Listen to me, do you think I'm gonna spend the rest of my life in this slop house? Well, you mean, it makes perfect sense.",
+                                                            "type": "text"
+                                                        }
+                                                    ],
+                                                    "type": "paragraph"
+                                                }
+                                            ],
+                                            "object": "widget",
+                                            "type": "text"
+                                        }
+                                    ],
+                                    "object": "block",
+                                    "size": {
+                                        "lg": "12",
+                                        "md": "12",
+                                        "sm": "12"
+                                    },
+                                    "type": "layout-column"
+                                }
+                            ],
+                            "object": "block",
+                            "type": "layout-row"
+                        }
+                    ],
+                    "object": "block",
+                    "padding": "with-padding",
+                    "type": "layout-section"
+                }
+            ]
+        },
+        "ffdcdb4e-bad4-dfd7-3e9c-c0b2a917b66a": {
+            "key": "files/ffdcdb4e-bad4-dfd7-3e9c-c0b2a917b66a",
+            "nodes": [
+                {
+                    "layout": "container",
+                    "nodes": [
+                        {
+                            "nodes": [
+                                {
+                                    "alignment": {
+                                        "xs": "center center"
+                                    },
+                                    "nodes": [
+                                        {
+                                            "animation": "none",
+                                            "caption": "Picture",
+                                            "layout": "noframe",
+                                            "object": "block",
+                                            "sourceKey": "uploads/f0b568bf-703a-0fa5-58b0-5b4574b18b93",
+                                            "type": "picture"
+                                        }
+                                    ],
+                                    "object": "block",
+                                    "size": {
+                                        "md": "6",
+                                        "xs": 12
+                                    },
+                                    "type": "layout-column"
+                                },
+                                {
+                                    "alignment": {
+                                        "xs": "center start"
+                                    },
+                                    "nodes": [
+                                        {
+                                            "nodes": [
+                                                {
+                                                    "attrs": {
+                                                        "styles": {
+                                                            "alignment": {
+                                                                "xl": "utils/text/alignLeft",
+                                                                "xs": "utils/text/alignCenter"
+                                                            }
+                                                        }
+                                                    },
+                                                    "content": [
+                                                        {
+                                                            "text": "Drag 'n' drop content builder for web apps",
+                                                            "type": "text"
+                                                        }
+                                                    ],
+                                                    "type": "heading1"
+                                                },
+                                                {
+                                                    "content": [
+                                                        {
+                                                            "text": "Give your users a tool to create professional web pages, forms, email templates and more",
+                                                            "type": "text"
+                                                        }
+                                                    ],
+                                                    "type": "paragraph"
+                                                }
+                                            ],
+                                            "object": "widget",
+                                            "type": "text"
+                                        },
+                                        {
+                                            "encType": "application/x-www-form-urlencoded",
+                                            "formAction": "",
+                                            "formMethod": "post",
+                                            "formTarget": "_self",
+                                            "isInline": true,
+                                            "nodes": [
+                                                {
+                                                    "inputProperties": [
+                                                        {
+                                                            "propertyName": "inputName",
+                                                            "propertyValue": "email"
+                                                        },
+                                                        {
+                                                            "propertyName": "placeholderText",
+                                                            "propertyValue": "Enter your email"
+                                                        },
+                                                        {
+                                                            "propertyName": "labelText",
+                                                            "propertyValue": ""
+                                                        },
+                                                        {
+                                                            "propertyName": "inputValue",
+                                                            "propertyValue": ""
+                                                        },
+                                                        {
+                                                            "propertyName": "maxLength"
+                                                        },
+                                                        {
+                                                            "propertyName": "patternRegexp",
+                                                            "propertyValue": ""
+                                                        },
+                                                        {
+                                                            "propertyName": "isRequired"
+                                                        },
+                                                        {
+                                                            "propertyName": "isReadonly"
+                                                        }
+                                                    ],
+                                                    "object": "block",
+                                                    "type": "input:email"
+                                                },
+                                                {
+                                                    "inputProperties": [
+                                                        {
+                                                            "propertyName": "inputName",
+                                                            "propertyValue": "subscribe"
+                                                        },
+                                                        {
+                                                            "propertyName": "labelText",
+                                                            "propertyValue": "Subscribe"
+                                                        },
+                                                        {
+                                                            "propertyName": "inputValue",
+                                                            "propertyValue": ""
+                                                        }
+                                                    ],
+                                                    "object": "block",
+                                                    "type": "input:submit"
+                                                }
+                                            ],
+                                            "object": "block",
+                                            "type": "form"
+                                        }
+                                    ],
+                                    "object": "block",
+                                    "size": {
+                                        "md": "6",
+                                        "xs": 12
+                                    },
+                                    "type": "layout-column"
+                                }
+                            ],
+                            "object": "block",
+                            "type": "layout-row"
+                        }
+                    ],
+                    "object": "block",
+                    "padding": "with-padding",
+                    "snapping": "none",
+                    "type": "layout-section"
+                },
+                {
+                    "layout": "container",
+                    "nodes": [
+                        {
+                            "nodes": [
+                                {
+                                    "alignment": {
+                                        "xs": "center start"
+                                    },
+                                    "nodes": [
+                                        {
+                                            "nodes": [
+                                                {
+                                                    "content": [
+                                                        {
+                                                            "text": "Simple and powerful",
+                                                            "type": "text"
+                                                        }
+                                                    ],
+                                                    "type": "heading2"
+                                                },
+                                                {
+                                                    "content": [
+                                                        {
+                                                            "content": [
+                                                                {
+                                                                    "content": [
+                                                                        {
+                                                                            "text": "first class drag and drop",
+                                                                            "type": "text"
+                                                                        }
+                                                                    ],
+                                                                    "type": "paragraph"
+                                                                }
+                                                            ],
+                                                            "type": "list_item"
+                                                        },
+                                                        {
+                                                            "content": [
+                                                                {
+                                                                    "content": [
+                                                                        {
+                                                                            "text": "responsive layouts",
+                                                                            "type": "text"
+                                                                        }
+                                                                    ],
+                                                                    "type": "paragraph"
+                                                                }
+                                                            ],
+                                                            "type": "list_item"
+                                                        },
+                                                        {
+                                                            "content": [
+                                                                {
+                                                                    "content": [
+                                                                        {
+                                                                            "text": "full-text search",
+                                                                            "type": "text"
+                                                                        }
+                                                                    ],
+                                                                    "type": "paragraph"
+                                                                }
+                                                            ],
+                                                            "type": "list_item"
+                                                        },
+                                                        {
+                                                            "content": [
+                                                                {
+                                                                    "content": [
+                                                                        {
+                                                                            "text": "website hyperlink consistency",
+                                                                            "type": "text"
+                                                                        }
+                                                                    ],
+                                                                    "type": "paragraph"
+                                                                }
+                                                            ],
+                                                            "type": "list_item"
+                                                        }
+                                                    ],
+                                                    "type": "bulleted_list"
+                                                }
+                                            ],
+                                            "object": "widget",
+                                            "type": "text"
+                                        },
+                                        {
+                                            "hyperlink": {
+                                                "href": "/features",
+                                                "target": "_blank"
+                                            },
+                                            "label": "Learn more >",
+                                            "object": "block",
+                                            "styles": {
+                                                "appearance": "components/button/default"
+                                            },
+                                            "type": "button"
+                                        }
+                                    ],
+                                    "object": "block",
+                                    "size": {
+                                        "md": "6",
+                                        "xs": 12
+                                    },
+                                    "type": "layout-column"
+                                },
+                                {
+                                    "alignment": {
+                                        "xs": "start start"
+                                    },
+                                    "nodes": [
+                                        {
+                                            "animation": "none",
+                                            "caption": "editors.png",
+                                            "layout": "noframe",
+                                            "object": "block",
+                                            "sourceKey": "uploads/f4f94aa8-269b-9d08-4247-07981b8476c3",
+                                            "type": "picture"
+                                        }
+                                    ],
+                                    "object": "block",
+                                    "order": {
+                                        "xs": "0"
+                                    },
+                                    "size": {
+                                        "md": "6",
+                                        "xs": 12
+                                    },
+                                    "type": "layout-column"
+                                }
+                            ],
+                            "object": "block",
+                            "type": "layout-row"
+                        }
+                    ],
+                    "object": "block",
+                    "padding": "with-padding",
+                    "snapping": "none",
+                    "type": "layout-section"
+                },
+                {
+                    "layout": "container",
+                    "nodes": [
+                        {
+                            "nodes": [
+                                {
+                                    "alignment": {
+                                        "xs": "center start"
+                                    },
+                                    "nodes": [
+                                        {
+                                            "nodes": [
+                                                {
+                                                    "content": [
+                                                        {
+                                                            "text": "Theme and framework agnostic",
+                                                            "type": "text"
+                                                        }
+                                                    ],
+                                                    "type": "heading2"
+                                                },
+                                                {
+                                                    "content": [
+                                                        {
+                                                            "content": [
+                                                                {
+                                                                    "content": [
+                                                                        {
+                                                                            "text": "stores intents rather than specific markup",
+                                                                            "type": "text"
+                                                                        }
+                                                                    ],
+                                                                    "type": "paragraph"
+                                                                }
+                                                            ],
+                                                            "type": "list_item"
+                                                        },
+                                                        {
+                                                            "content": [
+                                                                {
+                                                                    "content": [
+                                                                        {
+                                                                            "text": "describes everything including page structure",
+                                                                            "type": "text"
+                                                                        }
+                                                                    ],
+                                                                    "type": "paragraph"
+                                                                }
+                                                            ],
+                                                            "type": "list_item"
+                                                        },
+                                                        {
+                                                            "content": [
+                                                                {
+                                                                    "content": [
+                                                                        {
+                                                                            "text": "publishes HTML, markdown, plain text, etc.",
+                                                                            "type": "text"
+                                                                        }
+                                                                    ],
+                                                                    "type": "paragraph"
+                                                                }
+                                                            ],
+                                                            "type": "list_item"
+                                                        }
+                                                    ],
+                                                    "type": "bulleted_list"
+                                                }
+                                            ],
+                                            "object": "widget",
+                                            "type": "text"
+                                        },
+                                        {
+                                            "hyperlink": {
+                                                "href": "/blog/key-concepts",
+                                                "target": "_blank"
+                                            },
+                                            "label": "Learn more >",
+                                            "object": "block",
+                                            "styles": {
+                                                "appearance": "components/button/default"
+                                            },
+                                            "type": "button"
+                                        }
+                                    ],
+                                    "object": "block",
+                                    "order": {
+                                        "md": "1"
+                                    },
+                                    "size": {
+                                        "md": "6",
+                                        "xs": 12
+                                    },
+                                    "type": "layout-column"
+                                },
+                                {
+                                    "nodes": [
+                                        {
+                                            "animation": "none",
+                                            "caption": "Picture",
+                                            "layout": "noframe",
+                                            "object": "block",
+                                            "sourceKey": "uploads/e688898b-b9a2-240f-6da0-346b6b0d02e1",
+                                            "type": "picture"
+                                        }
+                                    ],
+                                    "object": "block",
+                                    "size": {
+                                        "md": "6",
+                                        "xs": 12
+                                    },
+                                    "type": "layout-column"
+                                }
+                            ],
+                            "object": "block",
+                            "type": "layout-row"
+                        }
+                    ],
+                    "object": "block",
+                    "padding": "with-padding",
+                    "snapping": "none",
+                    "type": "layout-section"
+                },
+                {
+                    "layout": "container",
+                    "nodes": [
+                        {
+                            "nodes": [
+                                {
+                                    "alignment": {
+                                        "xs": "center start"
+                                    },
+                                    "nodes": [
+                                        {
+                                            "nodes": [
+                                                {
+                                                    "attrs": {
+                                                        "styles": {
+                                                            "alignment": {
+                                                                "xl": "utils/text/alignLeft"
+                                                            }
+                                                        }
+                                                    },
+                                                    "content": [
+                                                        {
+                                                            "text": "API-first. Offline-first. Mobile-first.",
+                                                            "type": "text"
+                                                        }
+                                                    ],
+                                                    "type": "heading2"
+                                                },
+                                                {
+                                                    "content": [
+                                                        {
+                                                            "content": [
+                                                                {
+                                                                    "content": [
+                                                                        {
+                                                                            "text": "continues work in absence of network",
+                                                                            "type": "text"
+                                                                        }
+                                                                    ],
+                                                                    "type": "paragraph"
+                                                                }
+                                                            ],
+                                                            "type": "list_item"
+                                                        },
+                                                        {
+                                                            "content": [
+                                                                {
+                                                                    "content": [
+                                                                        {
+                                                                            "text": "supports \"touch\" and runs on any device",
+                                                                            "type": "text"
+                                                                        }
+                                                                    ],
+                                                                    "type": "paragraph"
+                                                                }
+                                                            ],
+                                                            "type": "list_item"
+                                                        }
+                                                    ],
+                                                    "type": "bulleted_list"
+                                                }
+                                            ],
+                                            "object": "widget",
+                                            "type": "text"
+                                        },
+                                        {
+                                            "hyperlink": {
+                                                "href": "/blog/key-concepts",
+                                                "target": "_blank"
+                                            },
+                                            "label": "Learn more >",
+                                            "object": "block",
+                                            "styles": {
+                                                "appearance": "components/button/default"
+                                            },
+                                            "type": "button"
+                                        }
+                                    ],
+                                    "object": "block",
+                                    "order": {
+                                        "xl": "0"
+                                    },
+                                    "size": {
+                                        "md": "6",
+                                        "xs": 12
+                                    },
+                                    "type": "layout-column"
+                                },
+                                {
+                                    "nodes": [
+                                        {
+                                            "animation": "none",
+                                            "caption": "Picture",
+                                            "layout": "noframe",
+                                            "object": "block",
+                                            "sourceKey": "uploads/adfbffad-ac01-ed54-fbe0-6253d0c663fd",
+                                            "type": "picture"
+                                        }
+                                    ],
+                                    "object": "block",
+                                    "size": {
+                                        "md": "6",
+                                        "xs": 12
+                                    },
+                                    "type": "layout-column"
+                                }
+                            ],
+                            "object": "block",
+                            "type": "layout-row"
+                        }
+                    ],
+                    "object": "block",
+                    "padding": "with-padding",
+                    "snapping": "none",
+                    "type": "layout-section"
+                },
+                {
+                    "layout": "container",
+                    "nodes": [
+                        {
+                            "nodes": [
+                                {
+                                    "alignment": {
+                                        "xl": "start start",
+                                        "xs": "center start"
+                                    },
+                                    "nodes": [
+                                        {
+                                            "nodes": [
+                                                {
+                                                    "attrs": {
+                                                        "styles": {
+                                                            "alignment": {
+                                                                "xl": "utils/text/alignLeft",
+                                                                "xs": "utils/text/alignCenter"
+                                                            }
+                                                        }
+                                                    },
+                                                    "content": [
+                                                        {
+                                                            "text": "Built for multiple UI frameworks",
+                                                            "type": "text"
+                                                        }
+                                                    ],
+                                                    "type": "heading2"
+                                                },
+                                                {
+                                                    "attrs": {
+                                                        "styles": {
+                                                            "alignment": {
+                                                                "xl": "utils/text/alignLeft",
+                                                                "xs": "utils/text/alignCenter"
+                                                            }
+                                                        }
+                                                    },
+                                                    "content": [
+                                                        {
+                                                            "text": "Comes with components for most popular UI frameworks like Vue, Knockout, Angular and React.",
+                                                            "type": "text"
+                                                        }
+                                                    ],
+                                                    "type": "paragraph"
+                                                }
+                                            ],
+                                            "object": "widget",
+                                            "type": "text"
+                                        },
+                                        {
+                                            "hyperlink": {
+                                                "href": "/blog/key-concepts",
+                                                "target": "_blank"
+                                            },
+                                            "label": "Learn more >",
+                                            "object": "block",
+                                            "styles": {
+                                                "appearance": "components/button/default"
+                                            },
+                                            "type": "button"
+                                        }
+                                    ],
+                                    "object": "block",
+                                    "order": {
+                                        "md": "1"
+                                    },
+                                    "size": {
+                                        "md": "6",
+                                        "xs": 12
+                                    },
+                                    "type": "layout-column"
+                                },
+                                {
+                                    "alignment": {
+                                        "xl": "center center",
+                                        "xs": "center start"
+                                    },
+                                    "nodes": [
+                                        {
+                                            "animation": "none",
+                                            "caption": "Picture",
+                                            "layout": "noframe",
+                                            "object": "block",
+                                            "sourceKey": "uploads/5b9a572c-5ede-0da1-1ffa-f2ce06ba0fae",
+                                            "type": "picture"
+                                        }
+                                    ],
+                                    "object": "block",
+                                    "size": {
+                                        "md": "6",
+                                        "xs": 12
+                                    },
+                                    "type": "layout-column"
+                                }
+                            ],
+                            "object": "block",
+                            "type": "layout-row"
+                        }
+                    ],
+                    "object": "block",
+                    "padding": "with-padding",
+                    "snapping": "none",
+                    "type": "layout-section"
+                },
+                {
+                    "layout": "container",
+                    "nodes": [
+                        {
+                            "nodes": [
+                                {
+                                    "alignment": {
+                                        "xl": "start start",
+                                        "xs": "center start"
+                                    },
+                                    "nodes": [
+                                        {
+                                            "nodes": [
+                                                {
+                                                    "attrs": {
+                                                        "styles": {
+                                                            "alignment": {
+                                                                "xl": "utils/text/alignLeft",
+                                                                "xs": "utils/text/alignCenter"
+                                                            }
+                                                        }
+                                                    },
+                                                    "content": [
+                                                        {
+                                                            "text": "Easy to get started",
+                                                            "type": "text"
+                                                        }
+                                                    ],
+                                                    "type": "heading2"
+                                                },
+                                                {
+                                                    "attrs": {
+                                                        "styles": {
+                                                            "alignment": {
+                                                                "xl": "utils/text/alignLeft",
+                                                                "xs": "utils/text/alignCenter"
+                                                            }
+                                                        }
+                                                    },
+                                                    "content": [
+                                                        {
+                                                            "text": "Clone, install packages and launch!",
+                                                            "type": "text"
+                                                        }
+                                                    ],
+                                                    "type": "paragraph"
+                                                }
+                                            ],
+                                            "object": "widget",
+                                            "type": "text"
+                                        },
+                                        {
+                                            "hyperlink": {
+                                                "href": "https://github.com/paperbits/paperbits-demo",
+                                                "target": "_blank"
+                                            },
+                                            "label": "Fork on GitHub >",
+                                            "object": "block",
+                                            "styles": {
+                                                "appearance": "components/button/default"
+                                            },
+                                            "type": "button"
+                                        }
+                                    ],
+                                    "object": "block",
+                                    "size": {
+                                        "md": "6",
+                                        "xs": 12
+                                    },
+                                    "type": "layout-column"
+                                },
+                                {
+                                    "alignment": {
+                                        "xl": "center center"
+                                    },
+                                    "nodes": [
+                                        {
+                                            "animation": "none",
+                                            "caption": "Picture",
+                                            "layout": "noframe",
+                                            "object": "block",
+                                            "sourceKey": "uploads/20f7f107-54da-4643-8544-554879790ed0",
+                                            "type": "picture"
+                                        }
+                                    ],
+                                    "object": "block",
+                                    "size": {
+                                        "md": "6",
+                                        "xs": 12
+                                    },
+                                    "type": "layout-column"
+                                }
+                            ],
+                            "object": "block",
+                            "type": "layout-row"
+                        }
+                    ],
+                    "object": "block",
+                    "padding": "with-padding",
+                    "snapping": "none",
+                    "type": "layout-section"
+                }
+            ],
+            "object": "block",
+            "type": "page"
+        }
+    },
+    "groups": {
+        "admin": {
+            "name": "Administrator"
+        }
+    },
+    "layouts": {
+        "0fad98ca-b406-0848-14cf-705a9d51df39": {
+            "contentKey": "files/0fad98ca-b406-0848-14cf-705a9d51df39",
+            "description": "",
+            "key": "layouts/0fad98ca-b406-0848-14cf-705a9d51df39",
+            "permalinkTemplate": "/wiki/*",
+            "title": "Wiki"
+        },
+        "cd8e1361-fbb1-4696-2079-536dd93e4c54": {
+            "contentKey": "files/cd8e1361-fbb1-4696-2079-536dd93e4c54",
+            "description": "",
+            "key": "layouts/cd8e1361-fbb1-4696-2079-536dd93e4c54",
+            "permalinkTemplate": "/",
+            "title": "Default"
+        }
+    },
+    "navigationItems": [
+        {
+            "key": "main",
+            "label": "Main menu",
+            "navigationItems": [
+                {
+                    "key": "e815a458-4562-7c58-8f11-9c65334d0d46",
+                    "label": "Github",
+                    "targetKey": "urls/aad6187b-08cb-d1ab-d373-c19ae9686efb"
+                },
+                {
+                    "key": "7e903f51-905d-9eae-e183-2434353b507e",
+                    "label": "Demo",
+                    "targetKey": "urls/c59fcf7f-fb27-7c27-08b5-61684e11912d"
+                }
+            ]
+        },
+        {
+            "key": "328e5870-b83f-ae04-10da-e2d30374f181",
+            "label": "Wiki",
+            "navigationItems": [
+                {
+                    "key": "871eec63-ec68-8422-b593-8768c5ad6c0d",
+                    "label": "Getting started",
+                    "targetKey": "pages/e2d71b1d-6201-7d11-125d-b7118a65f13c"
+                },
+                {
+                    "key": "e9677ef2-a388-3627-62ac-e046694b2e76",
+                    "label": "How to create a widget",
+                    "targetKey": "pages/dbdf346e-867f-0e23-0117-450584eacaba"
+                }
+            ],
+            "targetKey": "pages/e2d71b1d-6201-7d11-125d-b7118a65f13c"
+        }
+    ],
+    "pages": {
+        "dbdf346e-867f-0e23-0117-450584eacaba": {
+            "contentKey": "files/dbdf346e-867f-0e23-0117-450584eacaba",
+            "description": "",
+            "key": "pages/dbdf346e-867f-0e23-0117-450584eacaba",
+            "keywords": "",
+            "permalink": "/wiki/how-to-create-a-widget",
+            "title": "How to create a widget"
+        },
+        "e0987ca1-f458-b546-7697-7be594b35583": {
+            "contentKey": "files/ffdcdb4e-bad4-dfd7-3e9c-c0b2a917b66a",
+            "description": "",
+            "key": "pages/e0987ca1-f458-b546-7697-7be594b35583",
+            "keywords": "",
+            "permalink": "/",
+            "title": "Home"
+        },
+        "e2d71b1d-6201-7d11-125d-b7118a65f13c": {
+            "contentKey": "files/e2d71b1d-6201-7d11-125d-b7118a65f13c",
+            "description": "",
+            "key": "pages/e2d71b1d-6201-7d11-125d-b7118a65f13c",
+            "keywords": "",
+            "permalink": "/wiki/getting-started",
+            "title": "Getting started"
+        }
+    },
+    "posts": {
+        "e4dc7929-6721-6c25-66af-86b450239bd3": {
+            "contentKey": "files/e4dc7929-6721-6c25-66af-86b450239bd3",
+            "description": "",
+            "key": "posts/e4dc7929-6721-6c25-66af-86b450239bd3",
+            "keywords": "",
+            "permalink": "/blog/new",
+            "title": "New blog post"
+        }
+    },
+    "settings": {
+        "integration": {
+            "googleMaps": {
+                "apiKey": null
+            },
+            "gtm": {
+                "containerId": null,
+                "dataLayerName": null
+            },
+            "intercom": {
+                "appId": null
+            }
+        },
+        "site": {
+            "author": "Paperbits",
+            "description": "Give your users a tool to create professional web pages, forms, email templates and more.",
+            "faviconPermalinkKey": "permalinks/ca4ad134-875c-bbad-be98-047557eaceb7",
+            "keywords": "content builder, visual editor, drag & drop, open source, javascript, content management",
+            "ogImagePermalinkKey": "permalinks/1f0d7238-1bb7-1d88-c754-26d46e67e5f0",
+            "ogSiteName": "PaperBits",
+            "ogType": "website",
+            "ogUrl": "https://paperbits.io",
+            "title": "Paperbits - Drag 'n' drop content builder for web apps",
+            "url": "https://paperbits.io/"
+        }
+    },
+    "styles": {
+        "animations": {
+            "bounce": {
+                "displayName": "Bounce",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/bounce",
+                "name": "bounce",
+                "timingFunction": "linear"
+            },
+            "bounceIn": {
+                "displayName": "Bounce in",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/bounceIn",
+                "name": "bounceIn",
+                "timingFunction": "linear"
+            },
+            "bounceInDown": {
+                "displayName": "Bounce in down",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/bounceInDown",
+                "name": "bounceInDown",
+                "timingFunction": "linear"
+            },
+            "bounceInLeft": {
+                "displayName": "Bounce in left",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/bounceInLeft",
+                "name": "bounceInLeft",
+                "timingFunction": "linear"
+            },
+            "bounceInRight": {
+                "displayName": "Bounce in right",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/bounceInRight",
+                "name": "bounceInRight",
+                "timingFunction": "linear"
+            },
+            "bounceInUp": {
+                "displayName": "Bounce in up",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/bounceInUp",
+                "name": "bounceInUp",
+                "timingFunction": "linear"
+            },
+            "bounceOut": {
+                "displayName": "Bounce out",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/bounceOut",
+                "name": "bounceOut",
+                "timingFunction": "linear"
+            },
+            "bounceOutDown": {
+                "displayName": "Bounce out down",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/bounceOutDown",
+                "name": "bounceOutDown",
+                "timingFunction": "linear"
+            },
+            "bounceOutLeft": {
+                "displayName": "Bounce out left",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/bounceOutLeft",
+                "name": "bounceOutLeft",
+                "timingFunction": "linear"
+            },
+            "bounceOutRight": {
+                "displayName": "Bounce out right",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/bounceOutRight",
+                "name": "bounceOutRight",
+                "timingFunction": "linear"
+            },
+            "bounceOutUp": {
+                "displayName": "Bounce out up",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/bounceOutUp",
+                "name": "bounceOutUp",
+                "timingFunction": "linear"
+            },
+            "fadeIn": {
+                "displayName": "Fade in",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/fadeIn",
+                "name": "fadeIn",
+                "timingFunction": "linear"
+            },
+            "fadeInDown": {
+                "displayName": "Fade in down",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/fadeInDown",
+                "name": "fadeInDown",
+                "timingFunction": "linear"
+            },
+            "fadeInDownBig": {
+                "displayName": "Fade in down big",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/fadeInDownBig",
+                "name": "fadeInDownBig",
+                "timingFunction": "linear"
+            },
+            "fadeInLeft": {
+                "displayName": "Fade in left",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/fadeInLeft",
+                "name": "fadeInLeft",
+                "timingFunction": "linear"
+            },
+            "fadeInLeftBig": {
+                "displayName": "Fade in left big",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/fadeInLeftBig",
+                "name": "fadeInLeftBig",
+                "timingFunction": "linear"
+            },
+            "fadeInRight": {
+                "displayName": "Fade in right",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/fadeInRight",
+                "name": "fadeInRight",
+                "timingFunction": "linear"
+            },
+            "fadeInRightBig": {
+                "displayName": "Fade in right big",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/fadeInRightBig",
+                "name": "fadeInRightBig",
+                "timingFunction": "linear"
+            },
+            "fadeInUp": {
+                "displayName": "Fade in up",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/fadeInUp",
+                "name": "fadeInUp",
+                "timingFunction": "linear"
+            },
+            "fadeInUpBig": {
+                "displayName": "Fade in up big",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/fadeInUpBig",
+                "name": "fadeInUpBig",
+                "timingFunction": "linear"
+            },
+            "fadeOut": {
+                "displayName": "Fade out",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/fadeOut",
+                "name": "fadeOut",
+                "timingFunction": "linear"
+            },
+            "fadeOutDown": {
+                "displayName": "Fade out down",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/fadeOutDown",
+                "name": "fadeOutDown",
+                "timingFunction": "linear"
+            },
+            "fadeOutDownBig": {
+                "displayName": "Fade out down big",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/fadeOutDownBig",
+                "name": "fadeOutDownBig",
+                "timingFunction": "linear"
+            },
+            "fadeOutLeft": {
+                "displayName": "Fade out left",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/fadeOutLeft",
+                "name": "fadeOutLeft",
+                "timingFunction": "linear"
+            },
+            "fadeOutLeftBig": {
+                "displayName": "Fade out left big",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/fadeOutLeftBig",
+                "name": "fadeOutLeftBig",
+                "timingFunction": "linear"
+            },
+            "fadeOutRight": {
+                "displayName": "Fade out right",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/fadeOutRight",
+                "name": "fadeOutRight",
+                "timingFunction": "linear"
+            },
+            "fadeOutRightBig": {
+                "displayName": "Fade out right big",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/fadeOutRightBig",
+                "name": "fadeOutRightBig",
+                "timingFunction": "linear"
+            },
+            "fadeOutUp": {
+                "displayName": "Fade out up",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/fadeOutUp",
+                "name": "fadeOutUp",
+                "timingFunction": "linear"
+            },
+            "fadeOutUpBig": {
+                "displayName": "Fade out up big",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/fadeOutUpBig",
+                "name": "fadeOutUpBig",
+                "timingFunction": "linear"
+            },
+            "flash": {
+                "displayName": "Flash",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/flash",
+                "name": "flash",
+                "timingFunction": "linear"
+            },
+            "flipInX": {
+                "displayName": "Flip in X",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/flipInX",
+                "name": "flipInX",
+                "timingFunction": "linear"
+            },
+            "flipInY": {
+                "displayName": "Flip in Y",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/flipInY",
+                "name": "flipInY",
+                "timingFunction": "linear"
+            },
+            "flipOutX": {
+                "displayName": "Flip out X",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/flipOutX",
+                "name": "flipOutX",
+                "timingFunction": "linear"
+            },
+            "flipOutY": {
+                "displayName": "Flip out Y",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/flipOutY",
+                "name": "flipOutY",
+                "timingFunction": "linear"
+            },
+            "headShake": {
+                "displayName": "Head shake",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/headShake",
+                "name": "headShake",
+                "timingFunction": "linear"
+            },
+            "heartBeat": {
+                "displayName": "Heart beat",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/heartBeat",
+                "name": "heartBeat",
+                "timingFunction": "linear"
+            },
+            "hinge": {
+                "displayName": "Hinge",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/hinge",
+                "name": "hinge",
+                "timingFunction": "linear"
+            },
+            "jackInTheBox": {
+                "displayName": "Jack in the box",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/jackInTheBox",
+                "name": "jackInTheBox",
+                "timingFunction": "linear"
+            },
+            "jello": {
+                "displayName": "Jello",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/jello",
+                "name": "jello",
+                "timingFunction": "linear"
+            },
+            "lightSpeedIn": {
+                "displayName": "Light speed in",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/lightSpeedIn",
+                "name": "lightSpeedIn",
+                "timingFunction": "linear"
+            },
+            "lightSpeedOut": {
+                "displayName": "Light speed out",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/lightSpeedOut",
+                "name": "lightSpeedOut",
+                "timingFunction": "linear"
+            },
+            "pulse": {
+                "displayName": "Pulse",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/pulse",
+                "name": "pulse",
+                "timingFunction": "linear"
+            },
+            "rollIn": {
+                "displayName": "Roll in",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/rollIn",
+                "name": "rollIn",
+                "timingFunction": "linear"
+            },
+            "rollOut": {
+                "displayName": "Roll out",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/rollOut",
+                "name": "rollOut",
+                "timingFunction": "linear"
+            },
+            "rotateIn": {
+                "displayName": "Rotate in",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/rotateIn",
+                "name": "rotateIn",
+                "timingFunction": "linear"
+            },
+            "rotateInDownLeft": {
+                "displayName": "Rotate in down left",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/rotateInDownLeft",
+                "name": "rotateInDownLeft",
+                "timingFunction": "linear"
+            },
+            "rotateInDownRight": {
+                "displayName": "Rotate in down right",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/rotateInDownRight",
+                "name": "rotateInDownRight",
+                "timingFunction": "linear"
+            },
+            "rotateInUpLeft": {
+                "displayName": "Rotate in up left",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/rotateInUpLeft",
+                "name": "rotateInUpLeft",
+                "timingFunction": "linear"
+            },
+            "rotateInUpRight": {
+                "displayName": "Rotate in up right",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/rotateInUpRight",
+                "name": "rotateInUpRight",
+                "timingFunction": "linear"
+            },
+            "rotateOut": {
+                "displayName": "Rotate out",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/rotateOut",
+                "name": "rotateOut",
+                "timingFunction": "linear"
+            },
+            "rotateOutDownLeft": {
+                "displayName": "Rotate out down left",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/rotateOutDownLeft",
+                "name": "rotateOutDownLeft",
+                "timingFunction": "linear"
+            },
+            "rotateOutDownRight": {
+                "displayName": "Rotate out down right",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/rotateOutDownRight",
+                "name": "rotateOutDownRight",
+                "timingFunction": "linear"
+            },
+            "rotateOutUpLeft": {
+                "displayName": "Rotate out up left",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/rotateOutUpLeft",
+                "name": "rotateOutUpLeft",
+                "timingFunction": "linear"
+            },
+            "rotateOutUpRight": {
+                "displayName": "Rotate out up right",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/rotateOutUpRight",
+                "name": "rotateOutUpRight",
+                "timingFunction": "linear"
+            },
+            "rubberBand": {
+                "displayName": "Rubber band",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/rubberBand",
+                "name": "rubberBand",
+                "timingFunction": "linear"
+            },
+            "shake": {
+                "displayName": "Shake",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/shake",
+                "name": "shake",
+                "timingFunction": "linear"
+            },
+            "slideInDown": {
+                "displayName": "Slide in down",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/slideInDown",
+                "name": "slideInDown",
+                "timingFunction": "linear"
+            },
+            "slideInLeft": {
+                "displayName": "Slide in left",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/slideInLeft",
+                "name": "slideInLeft",
+                "timingFunction": "linear"
+            },
+            "slideInRight": {
+                "displayName": "Slide in right",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/slideInRight",
+                "name": "slideInRight",
+                "timingFunction": "linear"
+            },
+            "slideInUp": {
+                "displayName": "Slide in up",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/slideInUp",
+                "name": "slideInUp",
+                "timingFunction": "linear"
+            },
+            "slideOutDown": {
+                "displayName": "Slide out down",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/slideOutDown",
+                "name": "slideOutDown",
+                "timingFunction": "linear"
+            },
+            "slideOutLeft": {
+                "displayName": "Slide out left",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/slideOutLeft",
+                "name": "slideOutLeft",
+                "timingFunction": "linear"
+            },
+            "slideOutRight": {
+                "displayName": "Slide out right",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/slideOutRight",
+                "name": "slideOutRight",
+                "timingFunction": "linear"
+            },
+            "slideOutUp": {
+                "displayName": "Slide out up",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/slideOutUp",
+                "name": "slideOutUp",
+                "timingFunction": "linear"
+            },
+            "swing": {
+                "displayName": "Swing",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/swing",
+                "name": "swing",
+                "timingFunction": "linear"
+            },
+            "tada": {
+                "displayName": "Tada",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/tada",
+                "name": "tada",
+                "timingFunction": "linear"
+            },
+            "wobble": {
+                "displayName": "Wobble",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/wobble",
+                "name": "wobble",
+                "timingFunction": "linear"
+            },
+            "zoomIn": {
+                "displayName": "Zoom in",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/zoomIn",
+                "name": "zoomIn",
+                "timingFunction": "linear"
+            },
+            "zoomInDown": {
+                "displayName": "Zoom in down",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/zoomInDown",
+                "name": "zoomInDown",
+                "timingFunction": "linear"
+            },
+            "zoomInLeft": {
+                "displayName": "Zoom in left",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/zoomInLeft",
+                "name": "zoomInLeft",
+                "timingFunction": "linear"
+            },
+            "zoomInRight": {
+                "displayName": "Zoom in right",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/zoomInRight",
+                "name": "zoomInRight",
+                "timingFunction": "linear"
+            },
+            "zoomInUp": {
+                "displayName": "Zoom in up",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/zoomInUp",
+                "name": "zoomInUp",
+                "timingFunction": "linear"
+            },
+            "zoomOut": {
+                "displayName": "Zoom out",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/zoomOut",
+                "name": "zoomOut",
+                "timingFunction": "linear"
+            },
+            "zoomOutDown": {
+                "displayName": "Zoom out down",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/zoomOutDown",
+                "name": "zoomOutDown",
+                "timingFunction": "linear"
+            },
+            "zoomOutLeft": {
+                "displayName": "Zoom out left",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/zoomOutLeft",
+                "name": "zoomOutLeft",
+                "timingFunction": "linear"
+            },
+            "zoomOutRight": {
+                "displayName": "Zoom out right",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/zoomOutRight",
+                "name": "zoomOutRight",
+                "timingFunction": "linear"
+            },
+            "zoomOutUp": {
+                "displayName": "Zoom out up",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/zoomOutUp",
+                "name": "zoomOutUp",
+                "timingFunction": "linear"
+            }
+        },
+        "colors": {
+            "dark": {
+                "displayName": "Dark Bg",
+                "key": "colors/dark",
+                "value": "#2a2a59"
+            },
+            "default": {
+                "displayName": "Default text",
+                "key": "colors/default",
+                "value": "#5b5f61"
+            },
+            "defaultBg": {
+                "displayName": "Default Bg",
+                "key": "colors/defaultBg",
+                "value": "#fff"
+            },
+            "links": {
+                "displayName": "Links",
+                "key": "colors/links",
+                "value": "#5cc6d0"
+            },
+            "primaryBg": {
+                "displayName": "Primary Bg",
+                "key": "colors/primaryBg",
+                "value": "#4AB3F4"
+            },
+            "primaryText": {
+                "displayName": "Primary text",
+                "key": "colors/primaryText",
+                "value": "#fff"
+            }
+        },
+        "components": {
+            "button": {
+                "calck": {
+                    "background": {
+                        "colorKey": "colors/links"
+                    },
+                    "border": {
+                        "bottom": {
+                            "color": "orange",
+                            "style": "solid",
+                            "width": 0
+                        },
+                        "left": {
+                            "color": "orange",
+                            "style": "solid",
+                            "width": 0
+                        },
+                        "right": {
+                            "color": "orange",
+                            "style": "solid",
+                            "width": 0
+                        },
+                        "top": {
+                            "color": "orange",
+                            "style": "solid",
+                            "width": 0
+                        }
+                    },
+                    "borderRadius": {
+                        "bottomLeftRadius": 5,
+                        "bottomRightRadius": 5,
+                        "topLeftRadius": 5,
+                        "topRightRadius": 5
+                    },
+                    "category": "appearance",
+                    "displayName": "Another button",
+                    "key": "components/button/calck",
+                    "margin": {
+                        "bottom": 10,
+                        "left": 10,
+                        "right": 10,
+                        "top": 10
+                    },
+                    "padding": {
+                        "bottom": 9,
+                        "left": 30,
+                        "right": 30,
+                        "top": 9
+                    },
+                    "shadow": {
+                        "shadowKey": "shadows/shadow1"
+                    },
+                    "typography": {
+                        "colorKey": "colors/default",
+                        "fontStyle": "normal",
+                        "fontWeight": "normal"
+                    }
+                },
+                "default": {
+                    "background": {
+                        "colorKey": "colors/defaultBg"
+                    },
+                    "border": {
+                        "bottom": {
+                            "color": "orange",
+                            "style": "solid",
+                            "width": 0
+                        },
+                        "left": {
+                            "color": "orange",
+                            "style": "solid",
+                            "width": 0
+                        },
+                        "right": {
+                            "color": "orange",
+                            "style": "solid",
+                            "width": 0
+                        },
+                        "top": {
+                            "color": "orange",
+                            "style": "solid",
+                            "width": 0
+                        }
+                    },
+                    "borderRadius": {
+                        "bottomLeftRadius": 5,
+                        "bottomRightRadius": 5,
+                        "topLeftRadius": 5,
+                        "topRightRadius": 5
+                    },
+                    "category": "appearance",
+                    "displayName": "Normal button",
+                    "key": "components/button/default",
+                    "margin": {
+                        "bottom": 10,
+                        "left": 10,
+                        "right": 10,
+                        "top": 10
+                    },
+                    "padding": {
+                        "bottom": 9,
+                        "left": 30,
+                        "right": 30,
+                        "top": 9
+                    },
+                    "shadow": {
+                        "shadowKey": "shadows/shadow1"
+                    },
+                    "typography": {
+                        "colorKey": "colors/default",
+                        "fontStyle": "normal"
+                    }
+                },
+                "primary": {
+                    "background": {
+                        "colorKey": "colors/primaryBg"
+                    },
+                    "category": "appearance",
+                    "displayName": "Primary button",
+                    "key": "components/button/primary",
+                    "typography": {
+                        "colorKey": "colors/primaryText",
+                        "shadowKey": "shadows/none"
+                    },
+                    "states": {
+                        "hover": {
+                            "background": {
+                                "colorKey": "colors/defaultBg"
+                            }
+                        }
+                    }
+                }
+            },
+            "card": {
+                "default": {
+                    "border": {
+                        "bottom": {
+                            "color": "orange",
+                            "style": "solid"
+                        },
+                        "left": {
+                            "color": "orange",
+                            "style": "solid"
+                        },
+                        "right": {
+                            "color": "orange",
+                            "style": "solid"
+                        },
+                        "top": {
+                            "color": "orange",
+                            "style": "solid"
+                        }
+                    },
+                    "borderRadius": {
+                        "bottomLeftRadius": 5,
+                        "bottomRightRadius": 5,
+                        "topLeftRadius": 5,
+                        "topRightRadius": 5
+                    },
+                    "category": "appearance",
+                    "displayName": "Normal card",
+                    "key": "components/card/default",
+                    "margin": {
+                        "bottom": 10,
+                        "right": 10,
+                        "top": 10
+                    },
+                    "padding": {
+                        "bottom": 30,
+                        "left": 60,
+                        "right": 30,
+                        "top": 30
+                    },
+                    "shadow": {
+                        "shadowKey": "shadows/shadow1"
+                    },
+                    "typography": {
+                        "colorKey": "colors/default",
+                        "fontStyle": "normal"
+                    }
+                }
+            },
+            "formControl": {
+                "default": {
+                    "border": {
+                        "bottom": {
+                            "color": "#ced4da",
+                            "style": "solid",
+                            "width": 1
+                        },
+                        "left": {
+                            "color": "#ced4da",
+                            "style": "solid",
+                            "width": 1
+                        },
+                        "right": {
+                            "color": "#ced4da",
+                            "style": "solid",
+                            "width": 1
+                        },
+                        "top": {
+                            "color": "#ced4da",
+                            "style": "solid",
+                            "width": 1
+                        }
+                    },
+                    "borderRadius": {
+                        "bottomLeftRadius": 5,
+                        "bottomRightRadius": 5,
+                        "topLeftRadius": 5,
+                        "topRightRadius": 5
+                    },
+                    "displayName": "Text box",
+                    "key": "components/formControl/default",
+                    "margin": {
+                        "bottom": 0,
+                        "left": 0,
+                        "right": 0,
+                        "top": 0
+                    },
+                    "padding": {
+                        "bottom": 10,
+                        "left": 10,
+                        "right": 10,
+                        "top": 10
+                    },
+                    "shadow": {
+                        "shadowKey": "shadows/shadow3"
+                    },
+                    "typography": {
+                        "fontStyle": "normal",
+                        "fontWeight": "normal"
+                    }
+                }
+            },
+            "navbar": {
+                "default": {
+                    "border": {
+                        "bottom": {
+                            "color": "orange",
+                            "style": "solid"
+                        },
+                        "left": {
+                            "color": "orange",
+                            "style": "solid"
+                        },
+                        "right": {
+                            "color": "orange",
+                            "style": "solid"
+                        },
+                        "top": {
+                            "color": "orange",
+                            "style": "solid"
+                        }
+                    },
+                    "components": {
+                        "navLink": {
+                            "border": {
+                                "bottom": {
+                                    "color": "orange",
+                                    "style": "solid"
+                                },
+                                "left": {
+                                    "color": "orange",
+                                    "style": "solid"
+                                },
+                                "right": {
+                                    "color": "orange",
+                                    "style": "solid"
+                                },
+                                "top": {
+                                    "color": "orange",
+                                    "style": "solid"
+                                }
+                            },
+                            "displayName": "Navigation link",
+                            "key": "components/navbar/default/components/navLink",
+                            "margin": {
+                                "left": 15
+                            }
+                        }
+                    },
+                    "displayName": "Navigation bar",
+                    "key": "components/navbar/default",
+                    "typography": {
+                        "fontKey": "fonts/jollyGood",
+                        "fontSize": 24,
+                        "textTransform": "lowercase"
+                    }
+                }
+            }
+        },
+        "fonts": {
+            "default": {
+                "category": "sans-serif",
+                "displayName": "Advent Pro",
+                "family": "Advent Pro",
+                "key": "fonts/default",
+                "kind": "webfonts#webfont",
+                "lastModified": "2017-10-10",
+                "variants": [
+                    {
+                        "file": "http://fonts.gstatic.com/s/adventpro/v7/V8mCoQfxVT4Dvddr_yOwjVmtLQ.ttf",
+                        "style": "normal",
+                        "weight": 100
+                    },
+                    {
+                        "file": "http://fonts.gstatic.com/s/adventpro/v7/V8mDoQfxVT4Dvddr_yOwjfWMDbY.ttf",
+                        "style": "normal",
+                        "weight": 200
+                    },
+                    {
+                        "file": "http://fonts.gstatic.com/s/adventpro/v7/V8mDoQfxVT4Dvddr_yOwjZGPDbY.ttf",
+                        "style": "normal",
+                        "weight": 300
+                    },
+                    {
+                        "file": "http://fonts.gstatic.com/s/adventpro/v7/V8mAoQfxVT4Dvddr_yOwtT0.ttf",
+                        "style": "normal",
+                        "weight": 400
+                    },
+                    {
+                        "file": "http://fonts.gstatic.com/s/adventpro/v7/V8mDoQfxVT4Dvddr_yOwjcmODbY.ttf",
+                        "style": "normal",
+                        "weight": 500
+                    },
+                    {
+                        "file": "http://fonts.gstatic.com/s/adventpro/v7/V8mDoQfxVT4Dvddr_yOwjeWJDbY.ttf",
+                        "style": "normal",
+                        "weight": 600
+                    },
+                    {
+                        "file": "http://fonts.gstatic.com/s/adventpro/v7/V8mDoQfxVT4Dvddr_yOwjYGIDbY.ttf",
+                        "style": "normal",
+                        "weight": 700
+                    }
+                ],
+                "version": "v7"
+            },
+            "jollyGood": {
+                "displayName": "Jolly Good",
+                "family": "JollyGoodSans-Basic",
+                "key": "fonts/jollyGood",
+                "variants": [
+                    {
+                        "file": "http://cdn.paperbits.io/fonts/JollyGoodSans-Basic.woff2",
+                        "style": "normal",
+                        "weight": "400"
+                    }
+                ]
+            },
+            "quicksand": {
+                "displayName": "Quicksand",
+                "family": "Quicksand",
+                "key": "fonts/quicksand",
+                "variants": [
+                    {
+                        "file": "http://fonts.gstatic.com/s/quicksand/v8/6xKodSZaM9iE8KbpRA_pgHYoSA.ttf",
+                        "style": "normal",
+                        "weight": "300"
+                    },
+                    {
+                        "file": "http://fonts.gstatic.com/s/quicksand/v8/6xKtdSZaM9iE8KbpRA_RLA.ttf",
+                        "style": "regular",
+                        "weight": 400
+                    },
+                    {
+                        "file": "http://fonts.gstatic.com/s/quicksand/v8/6xKodSZaM9iE8KbpRA_p2HcoSA.ttf",
+                        "style": "normal",
+                        "weight": "500"
+                    },
+                    {
+                        "file": "http://fonts.gstatic.com/s/quicksand/v8/6xKodSZaM9iE8KbpRA_pkHEoSA.ttf",
+                        "style": "normal",
+                        "weight": "700"
+                    }
+                ]
+            }
+        },
+        "globals": {
+            "a": {
+                "displayName": "Link",
+                "typography": {
+                    "colorKey": "colors/links"
+                }
+            },
+            "blockquote": {
+                "displayName": "Quote",
+                "key": "globals/blockquote",
+                "typography": {
+                    "fontSize": 30,
+                    "fontStyle": "italic",
+                    "fontWeight": "normal",
+                    "textAlign": "center"
+                }
+            },
+            "body": {
+                "displayName": "Text",
+                "key": "globals/body",
+                "typography": {
+                    "colorKey": "colors/default",
+                    "fontKey": "fonts/quicksand",
+                    "fontSize": 18,
+                    "fontStyle": "normal",
+                    "fontWeight": "normal"
+                }
+            },
+            "h1": {
+                "displayName": "Heading Level 1",
+                "key": "globals/h1",
+                "typography": {
+                    "fontSize": 45,
+                    "fontStyle": "normal",
+                    "fontWeight": "400"
+                }
+            },
+            "h2": {
+                "displayName": "Heading Level 2",
+                "key": "globals/h2",
+                "typography": {
+                    "fontSize": 30,
+                    "fontStyle": "normal",
+                    "fontWeight": "400"
+                }
+            },
+            "h3": {
+                "displayName": "Heading Level 3",
+                "key": "globals/h3",
+                "typography": {
+                    "fontSize": 25,
+                    "fontStyle": "normal",
+                    "fontWeight": "normal"
+                }
+            },
+            "h4": {
+                "displayName": "Heading Level 4",
+                "key": "globals/h4",
+                "typography": {
+                    "fontSize": 20,
+                    "fontStyle": "normal",
+                    "fontWeight": "normal"
+                }
+            },
+            "h5": {
+                "displayName": "Heading Level 5",
+                "key": "globals/h5",
+                "typography": {
+                    "fontSize": 18,
+                    "fontStyle": "normal",
+                    "fontWeight": "normal"
+                }
+            },
+            "h6": {
+                "displayName": "Heading Level 6",
+                "key": "globals/h6",
+                "typography": {
+                    "fontSize": 16,
+                    "fontStyle": "normal",
+                    "fontWeight": "normal"
+                }
+            },
+            "p": {
+                "displayName": "Paragraph",
+                "key": "globals/p",
+                "typography": {
+                    "fontSize": 18
+                }
+            },
+            "ul": {
+                "components": {
+                    "li": {
+                        "displayName": "List item",
+                        "key": "globals/ul/components/li",
+                        "typography": {
+                            "fontWeight": "bold"
+                        }
+                    }
+                },
+                "displayName": "Bulleted list",
+                "key": "globals/ul",
+                "typography": {
+                    "fontWeight": "normal"
+                }
+            }
+        },
+        "gradients": {
+            "gradient1": {
+                "colorStops": [
+                    {
+                        "color": "#87e0fd",
+                        "length": "0"
+                    },
+                    {
+                        "color": "#53cbf1",
+                        "length": "40"
+                    },
+                    {
+                        "color": "#05abe0",
+                        "length": "100"
+                    }
+                ],
+                "direction": "45deg",
+                "displayName": "Gradient 1",
+                "key": "gradients/gradient1"
+            }
+        },
+        "instances": {
+            "card-iS8Vb": {
+                "background": {
+                    "colorKey": "colors/primaryBg",
+                    "images": [
+                        {
+                            "position": "center left",
+                            "repeat": "no-repeat",
+                            "size": "contain",
+                            "sourceKey": "uploads/bf423581-8039-b02c-0fe8-7d678534a568"
+                        }
+                    ]
+                }
+            },
+            "section-pGYj1": {
+                "background": {
+                    "images": [
+                        {
+                            "position": "center center",
+                            "repeat": "no-repeat",
+                            "size": "contain",
+                            "sourceKey": "uploads/68aa54b5-9780-b1ed-6020-fbcb7933dc26"
+                        }
+                    ]
+                }
+            }
+        },
+        "shadows": {
+            "none": {
+                "displayName": "No shadow",
+                "key": "shadows/none"
+            },
+            "shadow1": {
+                "blur": 3,
+                "color": "rgba(0, 0, 0, 0.5)",
+                "displayName": "Light shadow",
+                "key": "shadows/shadow1",
+                "offsetX": 1,
+                "offsetY": 1,
+                "spread": 0
+            },
+            "shadow2": {
+                "blur": 10,
+                "color": "rgba(0, 0, 0, 0.5)",
+                "displayName": "Medium shadow",
+                "key": "shadows/shadow2",
+                "offsetX": 2,
+                "offsetY": 2,
+                "spread": 0
+            },
+            "shadow3": {
+                "blur": 2,
+                "color": "rgba(0, 0, 0, 0.1)",
+                "displayName": "Inset shadow",
+                "inset": true,
+                "key": "shadows/shadow3",
+                "offsetX": 1,
+                "offsetY": 1,
+                "spread": 0
+            }
+        },
+        "utils": {
+            "content": {
+                "alignHorizontallyAround": {
+                    "class": {
+                        "lg": "align-items-lg-around",
+                        "md": "align-items-md-around",
+                        "sm": "align-items-sm-around",
+                        "xl": "align-items-xl-around",
+                        "xs": "align-items-around"
+                    },
+                    "displayName": "Align around"
+                },
+                "alignHorizontallyBetween": {
+                    "class": {
+                        "lg": "align-items-lg-between",
+                        "md": "align-items-md-between",
+                        "sm": "align-items-sm-between",
+                        "xl": "align-items-xl-between",
+                        "xs": "align-items-between"
+                    },
+                    "displayName": "Align between"
+                },
+                "alignHorizontallyCenter": {
+                    "class": {
+                        "lg": "align-items-lg-center",
+                        "md": "align-items-md-center",
+                        "sm": "align-items-sm-center",
+                        "xl": "align-items-xl-center",
+                        "xs": "align-items-center"
+                    },
+                    "displayName": "Align center"
+                },
+                "alignHorizontallyEnd": {
+                    "class": {
+                        "lg": "align-items-lg-end",
+                        "md": "align-items-md-end",
+                        "sm": "align-items-sm-end",
+                        "xl": "align-items-xl-end",
+                        "xs": "align-items-end"
+                    },
+                    "displayName": "Align right"
+                },
+                "alignHorizontallyStart": {
+                    "class": {
+                        "lg": "align-items-lg-start",
+                        "md": "align-items-md-start",
+                        "sm": "align-items-sm-start",
+                        "xl": "align-items-xl-start",
+                        "xs": "align-items-start"
+                    },
+                    "displayName": "Align left"
+                },
+                "alignVerticallyAround": {
+                    "class": {
+                        "lg": "justify-content-lg-around",
+                        "md": "justify-content-md-around",
+                        "sm": "justify-content-sm-around",
+                        "xl": "justify-content-xl-around",
+                        "xs": "justify-content-around"
+                    },
+                    "displayName": "Align around"
+                },
+                "alignVerticallyBetween": {
+                    "class": {
+                        "lg": "justify-content-lg-between",
+                        "md": "justify-content-md-between",
+                        "sm": "justify-content-sm-between",
+                        "xl": "justify-content-xl-between",
+                        "xs": "justify-content-between"
+                    },
+                    "displayName": "Align between"
+                },
+                "alignVerticallyCenter": {
+                    "class": {
+                        "lg": "justify-content-lg-center",
+                        "md": "justify-content-md-center",
+                        "sm": "justify-content-sm-center",
+                        "xl": "justify-content-xl-center",
+                        "xs": "justify-content-center"
+                    },
+                    "displayName": "Align center"
+                },
+                "alignVerticallyEnd": {
+                    "class": {
+                        "lg": "justify-content-lg-end",
+                        "md": "justify-content-md-end",
+                        "sm": "justify-content-sm-end",
+                        "xl": "justify-content-xl-end",
+                        "xs": "justify-content-end"
+                    },
+                    "displayName": "Align bottom"
+                },
+                "alignVerticallyStart": {
+                    "class": {
+                        "lg": "justify-content-lg-start",
+                        "md": "justify-content-md-start",
+                        "sm": "justify-content-sm-start",
+                        "xl": "justify-content-xl-start",
+                        "xs": "justify-content-start"
+                    },
+                    "displayName": "Align top"
+                },
+                "key": "utils/content"
+            },
+            "text": {
+                "alignCenter": {
+                    "typography": {
+                        "lg": {
+                            "textAlign": "center"
+                        },
+                        "md": {
+                            "textAlign": "center"
+                        },
+                        "sm": {
+                            "textAlign": "center"
+                        },
+                        "xl": {
+                            "textAlign": "center"
+                        },
+                        "xs": {
+                            "textAlign": "center"
+                        }
+                    }
+                },
+                "alignLeft": {
+                    "displayName": "Align left",
+                    "typography": {
+                        "lg": {
+                            "textAlign": "left"
+                        },
+                        "md": {
+                            "textAlign": "left"
+                        },
+                        "sm": {
+                            "textAlign": "left"
+                        },
+                        "xl": {
+                            "textAlign": "left"
+                        },
+                        "xs": {
+                            "textAlign": "left"
+                        }
+                    }
+                },
+                "alignRight": {
+                    "typography": {
+                        "lg": {
+                            "textAlign": "right"
+                        },
+                        "md": {
+                            "textAlign": "right"
+                        },
+                        "sm": {
+                            "textAlign": "right"
+                        },
+                        "xl": {
+                            "textAlign": "right"
+                        },
+                        "xs": {
+                            "textAlign": "right"
+                        }
+                    }
+                },
+                "justify": {
+                    "typography": {
+                        "lg": {
+                            "textAlign": "justify"
+                        },
+                        "md": {
+                            "textAlign": "justify"
+                        },
+                        "sm": {
+                            "textAlign": "justify"
+                        },
+                        "xl": {
+                            "textAlign": "justify"
+                        },
+                        "xs": {
+                            "textAlign": "justify"
+                        }
+                    }
+                },
+                "key": "utils/text"
+            }
+        }
+    },
+    "uploads": {
+        "0303ed5f-a407-85df-c0ce-b5915246b4f5": {
+            "blobKey": "0303ed5f-a407-85df-c0ce-b5915246b4f5",
+            "description": "",
+            "downloadUrl": "https://cdn.paperbits.io/images/twitter.png",
+            "filename": "twitter.png",
+            "key": "uploads/0303ed5f-a407-85df-c0ce-b5915246b4f5",
+            "keywords": "",
+            "mimeType": "image/png",
+            "permalink": "/content/twitter.png",
+            "targetKey": "permalinks/0303ed5f-a407-85df-c0ce-b5915246b4f5"
+        },
+        "20f7f107-54da-4643-8544-554879790ed0": {
+            "blobKey": "20f7f107-54da-4643-8544-554879790ed0",
+            "description": "",
+            "downloadUrl": "https://cdn.paperbits.io/images/getting-started.svg",
+            "filename": "getting-started.svg",
+            "key": "uploads/20f7f107-54da-4643-8544-554879790ed0",
+            "keywords": "",
+            "mimeType": "image/svg+xml",
+            "permalink": "/content/getting-started.svg",
+            "targetKey": "permalinks/20f7f107-54da-4643-8544-554879790ed0"
+        },
+        "2651704d-31d7-bf35-45d5-33d0968254be": {
+            "blobKey": "2651704d-31d7-bf35-45d5-33d0968254be",
+            "description": "",
+            "downloadUrl": "https://cdn.paperbits.io/images/linkedin.png",
+            "filename": "linkedin.png",
+            "key": "uploads/2651704d-31d7-bf35-45d5-33d0968254be",
+            "keywords": "",
+            "mimeType": "image/png",
+            "permalink": "/content/linkedin.png",
+            "targetKey": "permalinks/2651704d-31d7-bf35-45d5-33d0968254be"
+        },
+        "350b10ca-9a15-7fbb-5bc4-ea5260936803": {
+            "description": "",
+            "downloadUrl": "https://cdn.paperbits.io/images/plane-launch.svg",
+            "filename": "plane-launch.svg",
+            "key": "uploads/350b10ca-9a15-7fbb-5bc4-ea5260936803",
+            "keywords": "",
+            "mimeType": "image/svg+xml",
+            "permalink": "/content/plane-launch.svg",
+            "targetKey": "permalinks/d5359bd1-143e-e342-2637-b42af94e0785"
+        },
+        "4358184d-6658-a520-e924-795dfb8df162": {
+            "blobKey": "4358184d-6658-a520-e924-795dfb8df162",
+            "description": "",
+            "downloadUrl": "https://cdn.paperbits.io/videos/planet-earth.mp4",
+            "filename": "planet-earth.mp4",
+            "key": "uploads/4358184d-6658-a520-e924-795dfb8df162",
+            "keywords": "",
+            "mimeType": "video/mp4",
+            "permalink": "/content/planet-earth.mp4",
+            "targetKey": "permalinks/4358184d-6658-a520-e924-795dfb8df162"
+        },
+        "5b9a572c-5ede-0da1-1ffa-f2ce06ba0fae": {
+            "blobKey": "5b9a572c-5ede-0da1-1ffa-f2ce06ba0fae",
+            "description": "",
+            "downloadUrl": "https://cdn.paperbits.io/images/frameworks.svg",
+            "filename": "frameworks.svg",
+            "key": "uploads/5b9a572c-5ede-0da1-1ffa-f2ce06ba0fae",
+            "keywords": "",
+            "mimeType": "image/svg+xml",
+            "permalink": "/content/frameworks.svg",
+            "targetKey": "permalinks/5b9a572c-5ede-0da1-1ffa-f2ce06ba0fae"
+        },
+        "68aa54b5-9780-b1ed-6020-fbcb7933dc26": {
+            "description": "",
+            "downloadUrl": "https://cdn.paperbits.io/images/favicon.ico",
+            "filename": "favicon.ico",
+            "key": "uploads/68aa54b5-9780-b1ed-6020-fbcb7933dc26",
+            "keywords": "",
+            "mimeType": "image/x-icon",
+            "permalink": "/content/favicon.ico",
+            "targetKey": "permalinks/ca4ad134-875c-bbad-be98-047557eaceb7"
+        },
+        "88238d72-237d-eefc-da3e-19bef9506808": {
+            "blobKey": "88238d72-237d-eefc-da3e-19bef9506808",
+            "description": "",
+            "downloadUrl": "https://cdn.paperbits.io/images/logo.svg",
+            "filename": "logo.svg",
+            "key": "uploads/88238d72-237d-eefc-da3e-19bef9506808",
+            "keywords": "",
+            "mimeType": "image/svg+xml",
+            "permalink": "/content/logo.svg",
+            "targetKey": "permalinks/88238d72-237d-eefc-da3e-19bef9506808"
+        },
+        "8b7bdb01-5ea3-3b39-7a21-6f32e6f58bf0": {
+            "description": "",
+            "downloadUrl": "https://cdn.paperbits.io/images/pen-fight.svg",
+            "filename": "pen-fight.svg",
+            "key": "uploads/8b7bdb01-5ea3-3b39-7a21-6f32e6f58bf0",
+            "keywords": "",
+            "mimeType": "image/svg+xml",
+            "permalink": "/content/pen-fight.svg",
+            "targetKey": "permalinks/96562577-5dc3-2644-b510-757acbbdabd3"
+        },
+        "92c8f9aa-e2d1-7a73-1cdd-1b9e39ba41e4": {
+            "description": "",
+            "downloadUrl": "https://cdn.paperbits.io/images/finding-way.svg",
+            "filename": "finding-way.svg",
+            "key": "uploads/92c8f9aa-e2d1-7a73-1cdd-1b9e39ba41e4",
+            "keywords": "",
+            "mimeType": "image/svg+xml",
+            "permalink": "/content/finding-way.svg",
+            "targetKey": "permalinks/275773e2-9018-4646-7d06-7f5cea3660fc"
+        },
+        "adfbffad-ac01-ed54-fbe0-6253d0c663fd": {
+            "blobKey": "adfbffad-ac01-ed54-fbe0-6253d0c663fd",
+            "description": "",
+            "downloadUrl": "https://cdn.paperbits.io/images/api-first.png",
+            "filename": "api-first.png",
+            "key": "uploads/adfbffad-ac01-ed54-fbe0-6253d0c663fd",
+            "keywords": "",
+            "mimeType": "image/png",
+            "permalink": "/content/api-first.png",
+            "targetKey": "permalinks/adfbffad-ac01-ed54-fbe0-6253d0c663fd"
+        },
+        "bf423581-8039-b02c-0fe8-7d678534a568": {
+            "description": "",
+            "downloadUrl": "https://cdn.paperbits.io/images/Ph03nyx-Super-Mario-Mushroom-1UP.ico",
+            "filename": "Ph03nyx-Super-Mario-Mushroom-1UP.ico",
+            "key": "uploads/bf423581-8039-b02c-0fe8-7d678534a568",
+            "keywords": "",
+            "mimeType": "image/x-icon",
+            "permalink": "/content/Ph03nyx-Super-Mario-Mushroom-1UP.ico",
+            "targetKey": "permalinks/de69895e-3232-c767-53e6-49ed801557b8"
+        },
+        "e688898b-b9a2-240f-6da0-346b6b0d02e1": {
+            "description": "",
+            "downloadUrl": "https://cdn.paperbits.io/images/json-output-example.svg",
+            "filename": "json-output-example.svg",
+            "key": "uploads/e688898b-b9a2-240f-6da0-346b6b0d02e1",
+            "keywords": "",
+            "mimeType": "image/svg+xml",
+            "permalink": "/content/Ph03nyx-Super-Mario-Mushroom-1UP.ico",
+            "targetKey": "permalinks/e0e5eb90-7ebe-e85a-dedb-ea17daf73201"
+        },
+        "f0b568bf-703a-0fa5-58b0-5b4574b18b93": {
+            "description": "",
+            "downloadUrl": "https://cdn.paperbits.io/images/pen-and-ruler.svg",
+            "filename": "pen-and-ruler.svg",
+            "key": "uploads/f0b568bf-703a-0fa5-58b0-5b4574b18b93",
+            "keywords": "",
+            "mimeType": "image/svg+xml",
+            "permalink": "/content/pen-and-ruler.svg",
+            "targetKey": "permalinks/c7a63e62-bfb9-464a-ce18-662564681a72"
+        },
+        "f4f94aa8-269b-9d08-4247-07981b8476c3": {
+            "blobKey": "f4f94aa8-269b-9d08-4247-07981b8476c3",
+            "description": "",
+            "downloadUrl": "https://cdn.paperbits.io/images/editors.png",
+            "filename": "editors.png",
+            "key": "uploads/f4f94aa8-269b-9d08-4247-07981b8476c3",
+            "keywords": "",
+            "mimeType": "image/png",
+            "permalink": "/content/editors.png",
+            "targetKey": "permalinks/f4f94aa8-269b-9d08-4247-07981b8476c3"
+        }
+    },
+    "urls": {
+        "05faa2cf-eb84-82fb-a8be-bf9e8a3a9fca": {
+            "key": "urls/05faa2cf-eb84-82fb-a8be-bf9e8a3a9fca",
+            "permalink": "https://dashboard.stripe.com/register",
+            "title": "https://dashboard.stripe.com/register"
+        },
+        "21d050c7-015a-0dc6-60f1-f0fc66330c25": {
+            "key": "urls/21d050c7-015a-0dc6-60f1-f0fc66330c25",
+            "permalink": "https://github.com/paperbits/examples/tree/master/forms",
+            "title": "https://github.com/paperbits/examples/tree/master/forms"
+        },
+        "4a0ebab0-f605-e452-f546-e94a5a3860c4": {
+            "key": "urls/4a0ebab0-f605-e452-f546-e94a5a3860c4",
+            "permalink": "https://stripe.com",
+            "title": "https://stripe.com"
+        },
+        "5bd8f50b-997b-c014-322c-928541b22ae9": {
+            "key": "urls/5bd8f50b-997b-c014-322c-928541b22ae9",
+            "permalink": "https://twitter.com/paperbitsproj",
+            "title": "https://twitter.com/paperbitsproj"
+        },
+        "680ed397-07df-5554-790b-acbd11090b4e": {
+            "key": "urls/680ed397-07df-5554-790b-acbd11090b4e",
+            "permalink": "https://stripe.com/docs/api",
+            "title": "https://stripe.com/docs/api"
+        },
+        "6f6d6de6-4321-8ea1-e9c7-aca1b713db9e": {
+            "key": "urls/6f6d6de6-4321-8ea1-e9c7-aca1b713db9e",
+            "permalink": "https://formspark.io/",
+            "title": "https://formspark.io/"
+        },
+        "71c1e85b-7796-f171-9126-a4725c67b7f9": {
+            "key": "urls/71c1e85b-7796-f171-9126-a4725c67b7f9",
+            "permalink": "https://azure.microsoft.com/en-us/services/api-management/",
+            "title": "https://azure.microsoft.com/en-us/services/api-management/"
+        },
+        "757bdcf0-7237-9747-5368-974f180fb33b": {
+            "key": "urls/757bdcf0-7237-9747-5368-974f180fb33b",
+            "permalink": "https://www.netlify.com",
+            "title": "https://www.netlify.com"
+        },
+        "7e33e979-8a6d-3834-c605-8d60d18e3d11": {
+            "key": "urls/7e33e979-8a6d-3834-c605-8d60d18e3d11",
+            "targetKey": "permalinks/1498569f-0a5d-6d6f-5653-083925f4ec55",
+            "title": "mailto:support@paperbits.io"
+        },
+        "82e518bc-3144-7fd0-aa60-9b10341077e3": {
+            "key": "urls/82e518bc-3144-7fd0-aa60-9b10341077e3",
+            "permalink": "https://dashboard.stripe.com/test/events",
+            "title": "https://dashboard.stripe.com/test/events"
+        },
+        "aad6187b-08cb-d1ab-d373-c19ae9686efb": {
+            "key": "urls/aad6187b-08cb-d1ab-d373-c19ae9686efb",
+            "permalink": "https://github.com/paperbits",
+            "title": "https://github.com/paperbits"
+        },
+        "c59fcf7f-fb27-7c27-08b5-61684e11912d": {
+            "key": "urls/c59fcf7f-fb27-7c27-08b5-61684e11912d",
+            "permalink": "https://demo.paperbits.io",
+            "title": "https://demo.paperbits.io"
+        },
+        "c98dbd9f-3c0f-eba8-fbeb-49216da7ee56": {
+            "key": "urls/c98dbd9f-3c0f-eba8-fbeb-49216da7ee56",
+            "permalink": "https://vuejs.org",
+            "title": "https://vuejs.org"
+        },
+        "c9a948dc-ccbc-6814-9a10-09b8c5716631": {
+            "key": "urls/c9a948dc-ccbc-6814-9a10-09b8c5716631",
+            "permalink": "https://dashboard.stripe.com/account/apikeys",
+            "title": "https://dashboard.stripe.com/account/apikeys"
+        },
+        "e7da07b8-d303-a860-acc7-9a01ea87e88a": {
+            "key": "urls/e7da07b8-d303-a860-acc7-9a01ea87e88a",
+            "permalink": "https://www.linkedin.com/company/paperbits",
+            "title": "https://www.linkedin.com/company/paperbits"
+        },
+        "eb25e97c-bf4f-c4c9-f417-7ea0292badc6": {
+            "key": "urls/eb25e97c-bf4f-c4c9-f417-7ea0292badc6",
+            "permalink": "https://firebase.google.com/pricing",
+            "title": "https://firebase.google.com/pricing"
+        },
+        "ef640d0c-2677-8c30-a0ba-e2abb3eb2964": {
+            "key": "urls/ef640d0c-2677-8c30-a0ba-e2abb3eb2964",
+            "permalink": "https://www.algolia.com",
+            "title": "https://www.algolia.com"
+        }
+    }
+}

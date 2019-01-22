@@ -1,3 +1,5 @@
+
+
 /**
  * @license
  * Copyright Paperbits. All Rights Reserved.
@@ -6,33 +8,28 @@
  * found in the LICENSE file and at https://paperbits.io/license.
  */
 
-
-import { IInjector, IInjectorModule } from "@paperbits/common/injection";
-import { IObjectStorage } from "@paperbits/common/persistence/IObjectStorage";
-import { OfflineObjectStorage } from "@paperbits/common/persistence/offlineObjectStorage";
-import { HttpClient } from "@paperbits/common/http";
-import { StaticObjectStorage } from "./staticObjectStorage";
+import * as path from "path";
 import { StaticBlobStorage } from "./staticBlobStorage";
 import { StaticUserService } from "./staticUserService";
-
+import { IInjector, IInjectorModule } from "@paperbits/common/injection";
+import { StaticLocalObjectStorage } from "./staticLocalObjectStorage";
+import { FileSystemBlobStorage } from "./filesystemBlobStorage";
+import { StaticSettingsProvider } from "./staticSettingsProvider";
+import { StaticRouteHandler } from "./staticRouteHandler";
 
 export class DemoModule implements IInjectorModule {
-    constructor(private datasourceUrl) {
-        this.register = this.register.bind(this);
-    }
+    constructor(
+        private readonly dataPath: string,
+        private readonly settingsPath: string,
+        private readonly outputBasePath: string
+    ) { }
 
     public register(injector: IInjector): void {
-        injector.bindSingleton("blobStorage", StaticBlobStorage);
         injector.bindSingleton("userService", StaticUserService);
-
-        injector.bindSingletonFactory<IObjectStorage>("objectStorage", (ctx: IInjector) => {
-            const httpClient = ctx.resolve<HttpClient>("httpClient");
-            const offlineObjectStorage = ctx.resolve<OfflineObjectStorage>("offlineObjectStorage");
-            const objectStorage = new StaticObjectStorage(this.datasourceUrl, httpClient);
-
-            offlineObjectStorage.registerUnderlyingStorage(objectStorage);
-
-            return offlineObjectStorage;
-        });
+        injector.bindSingleton("routeHandler", StaticRouteHandler);
+        injector.bindSingleton("blobStorage", StaticBlobStorage);
+        injector.bindInstance("objectStorage", new StaticLocalObjectStorage(path.resolve(this.dataPath)));
+        injector.bindInstance("settingsProvider", new StaticSettingsProvider(path.resolve(this.settingsPath)));
+        injector.bindInstance("outputBlobStorage", new FileSystemBlobStorage(path.resolve(this.outputBasePath)));
     }
 }

@@ -7,25 +7,14 @@
  */
 
 
-import * as fs from 'fs';
+import * as Utils from "./utils";
 import { ISettingsProvider } from "@paperbits/common/configuration/ISettingsProvider";
 
 
 export class StaticSettingsProvider implements ISettingsProvider {
-    private readonly configuration: Object;
-    private loadingPromise: Promise<Object>;
-    private configFilePath: string;
+    private configuration: Object;
 
-    constructor(config: Object) {
-        const tenants = Object.keys(config);
-        const tenantHostname = tenants[0];
-
-        if (tenants.length > 1) {
-            console.log(`Multiple tenants defined in config.json. Taking the first one "${tenantHostname}..."`);
-        }
-
-        this.configuration = config[tenantHostname];
-    }
+    constructor(private readonly settingsPath: string) { }
 
     public getSetting(name: string): Promise<Object> {
         return this.configuration[name];
@@ -36,6 +25,9 @@ export class StaticSettingsProvider implements ISettingsProvider {
     }
 
     public async getSettings(): Promise<Object> {
+        const settings = await Utils.loadFileAsString(this.settingsPath);
+        this.configuration = JSON.parse(settings);
+
         return this.configuration;
     }
 }

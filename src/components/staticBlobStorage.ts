@@ -8,8 +8,8 @@
 
 
 import * as Utils from "@paperbits/common/utils";
-import { IBlobStorage } from '@paperbits/common/persistence';
-import { ProgressPromise } from '@paperbits/common';
+import { IBlobStorage } from "@paperbits/common/persistence";
+import { ProgressPromise } from "@paperbits/common";
 
 
 /**
@@ -26,9 +26,10 @@ export class StaticBlobStorage implements IBlobStorage {
      */
     public async uploadBlob(blobKey: string, content: Uint8Array, contentType?: string): ProgressPromise<void> {
         return new ProgressPromise<void>((resolve, reject, progress) => {
-            const base64String = Utils.arrayBufferToBase64(content);
-
-            this.storageDataObject[blobKey] = `data:${contentType};base64,${base64String}`;
+            this.storageDataObject[blobKey] = {
+                contentType: contentType,
+                content: content
+            };
 
             resolve();
         });
@@ -39,13 +40,13 @@ export class StaticBlobStorage implements IBlobStorage {
      * @param blobKey 
      */
     public async getDownloadUrl(blobKey: string): Promise<string> {
-        const downloadUrl = this.storageDataObject[blobKey];
+        const blobRecord = this.storageDataObject[blobKey];
 
-        if (downloadUrl) {
-            return downloadUrl;
+        if (blobRecord) {
+            return `data:${blobRecord.contentType};base64,${Utils.arrayBufferToBase64(blobRecord.content)}`;
         }
         else {
-            throw `File ${blobKey} not found`;
+            throw new Error(`File ${blobKey} not found`);
         }
     }
 
@@ -55,6 +56,17 @@ export class StaticBlobStorage implements IBlobStorage {
      */
     public async deleteBlob(blobKey: string): Promise<void> {
         delete this.storageDataObject[blobKey];
+    }
+
+    public async downloadBlob?(blobKey: string): Promise<Uint8Array> {
+        const blobRecord = this.storageDataObject[blobKey];
+
+        if (blobRecord) {
+            return blobRecord.content;
+        }
+        else {
+            return null;
+        }
     }
 }
 

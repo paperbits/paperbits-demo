@@ -6,83 +6,55 @@
  * found in the LICENSE file and at https://paperbits.io/license.
  */
 
-
-import "setimmediate";
+import * as path from "path";
 import * as ko from "knockout";
+import * as Utils from "./components/utils";
 import { createDocument } from "@paperbits/core/ko/knockout-rendring";
 import { InversifyInjector } from "@paperbits/common/injection";
 import { IPublisher } from "@paperbits/common/publishing";
 import { PublishingNodeModule } from "./publishing";
 import { StaticSettingsProvider } from "./components/staticSettingsProvider";
 import { FileSystemBlobStorage } from "./components/filesystemBlobStorage";
-import { StaticRouteHandler } from "@paperbits/core/staticRouteHandler";
-// import { FirebaseModule } from "@paperbits/firebase/firebase.module";
-import { StaticLocalStorageModule } from "./components/staticLocalStorage.module";
+import { StaticRouteHandler } from "./components/staticRouteHandler";
 import { FormsModule } from "@paperbits/forms/forms.module";
-import { CoreModule } from "@paperbits/core/core.module";
 import { EmailsModule } from "@paperbits/emails/emails.module";
-import { EmailPublisher } from "@paperbits/emails/publishers/emailPublisher";
+import { CoreModule } from "@paperbits/core/core.module";
 import { StyleModule } from "@paperbits/styles/styles.module";
 import { ProseMirrorModule } from "@paperbits/prosemirror/prosemirror.module";
-import { IBlobStorage } from "@paperbits/common/persistence";
+import { DemoModule } from "./components/demo.module";
+// import { FirebaseModule } from "@paperbits/firebase/firebase.module";
 
-export class Publisher {
-    constructor(
-        private readonly settings: Object,
-        private readonly demoDataPath
-    ) { }
 
-    public async publish(inputStorage: IBlobStorage, outputStorage: IBlobStorage): Promise<void> {
-        createDocument();
+const inputBasePath = "./dist/published/website";
+const outputBasePath = "./dist/published";
+const settingsPath = "./dist/config.publish.json";
+const dataPath = "./dist/publisher/data/demo.json";
 
-        const injector = new InversifyInjector();
+createDocument();
 
-        injector.bind("emailPublisher", EmailPublisher);
+const injector = new InversifyInjector();
+injector.bindModule(new CoreModule());
+injector.bindModule(new FormsModule());
+injector.bindModule(new EmailsModule());
+injector.bindModule(new StyleModule());
+injector.bindModule(new ProseMirrorModule());
+injector.bindModule(new DemoModule(dataPath, settingsPath, inputBasePath, outputBasePath));
+// injector.bindModule(new FirebaseModule());
 
-        const publishNodeModule = new PublishingNodeModule();
+injector.bindModule(new PublishingNodeModule());
+injector.resolve("autostart");
 
-        // injector.bindModule(new FirebaseModule());
-        injector.bindModule(new StaticLocalStorageModule(this.demoDataPath)); 
+ko.options["createChildContextWithAs"] = true;
+ko.applyBindings();
 
-        injector.bindSingleton("routeHandler", StaticRouteHandler);
+const publisher = injector.resolve<IPublisher>("sitePublisher");
 
-        const settingsProvider = new StaticSettingsProvider(this.settings);
-        
-        const pageTemplateData = await inputStorage.downloadBlob("page.html");
-        const pageTemplate = new Buffer(pageTemplateData);
-        settingsProvider.setSetting("pageTemplate", pageTemplate);
-
-        injector.bindInstance("settingsProvider", settingsProvider);
-
-        injector.bindModule(new CoreModule());
-        injector.bindModule(new FormsModule());
-        injector.bindModule(new EmailsModule());
-        injector.bindModule(new StyleModule());
-        injector.bindModule(new ProseMirrorModule());
-
-        injector.bindInstance("inputBlobStorage", inputStorage);
-        injector.bindInstance("outputBlobStorage", outputStorage);
-
-        publishNodeModule.register(injector);
-
-        /*** Autostart ***/
-        injector.resolve("widgetBindingHandler");
-        injector.resolve("htmlEditorBindingHandler");
-        injector.resolve("backgroundBindingHandler");
-        injector.resolve("inputBindingHandler");
-
-        ko.options["createChildContextWithAs"] = true;
-        ko.applyBindings();
-
-        const publisher = injector.resolve<IPublisher>("sitePublisher");
-
-        try {
-            console.log(new Date());
-            await publisher.publish();
-            console.log(new Date());
-        }
-        catch (error) {
-            console.log(error);
-        }
-    }
-}
+publisher.publish()
+    .then(() => {
+        console.log("DONE.");
+        process.exit();
+    })
+    .catch((error) => {
+        console.log(error);
+        process.exit();
+    });

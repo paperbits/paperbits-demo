@@ -1,28 +1,38 @@
-import { IPublisher } from "@paperbits/common/publishing";
 import { HttpClient } from "@paperbits/common/http";
+import { IPublisher } from "@paperbits/common/publishing";
 import { IBlobStorage } from "@paperbits/common/persistence";
-import { IMediaService } from "@paperbits/common/media";
-import { MediaContract } from "@paperbits/common/media/mediaContract";
+import { IMediaService, MediaContract } from "@paperbits/common/media";
 
 
 export class MediaPublisher implements IPublisher {
-    private readonly httpClient: HttpClient;
-    private readonly outputBlobStorage: IBlobStorage;
-    private readonly mediaService: IMediaService;
-
-    constructor(httpClient: HttpClient, mediaService: IMediaService, outputBlobStorage: IBlobStorage) {
-        this.httpClient = httpClient;
-        this.mediaService = mediaService;
-        this.outputBlobStorage = outputBlobStorage;
-
+    constructor(
+        private readonly mediaService: IMediaService,
+        private readonly blobStorage: IBlobStorage,
+        private readonly outputBlobStorage: IBlobStorage,
+        private readonly httpClient: HttpClient
+    ) {
         this.publish = this.publish.bind(this);
         this.renderMediaFile = this.renderMediaFile.bind(this);
         this.renderMedia = this.renderMedia.bind(this);
     }
 
     private async renderMediaFile(mediaFile: MediaContract): Promise<void> {
-        const response = await this.httpClient.send({ url: mediaFile.downloadUrl });
-        await this.outputBlobStorage.uploadBlob(mediaFile.permalink, response.toByteArray(), mediaFile.mimeType);
+        try {
+            const blob = await this.blobStorage.downloadBlob(mediaFile.blobKey);
+
+            if (blob) {
+                await this.outputBlobStorage.uploadBlob(mediaFile.permalink, blob, mediaFile.mimeType);
+                return;
+            }
+            
+            if (mediaFile.downloadUrl) { // if blob doesn't exit check if direct download URL is specifed:
+                const response = await this.httpClient.send({ url: mediaFile.downloadUrl });
+                await this.outputBlobStorage.uploadBlob(mediaFile.permalink, response.toByteArray(), mediaFile.mimeType);
+            }
+        }
+        catch (error) {
+            console.warn(error);
+        }
     }
 
     private async renderMedia(mediaFiles: MediaContract[]): Promise<void> {
