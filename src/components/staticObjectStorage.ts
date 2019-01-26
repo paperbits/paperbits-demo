@@ -97,10 +97,8 @@ export class StaticObjectStorage implements IObjectStorage {
         if (!path) {
             return;
         }
-        const pathParts = path.split(this.splitter);
-        const updateObj: T = this.getPathObject(pathParts);
 
-        Object.assign(updateObj, dataObject);
+        Utils.setValueAt(path, this.storageDataObject, dataObject);        
     }
 
     public async searchObjects<T>(path: string, propertyNames?: string[], searchValue?: string): Promise<T> {
