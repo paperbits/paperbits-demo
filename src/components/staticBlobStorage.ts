@@ -46,7 +46,7 @@ export class StaticBlobStorage implements IBlobStorage {
             return `data:${blobRecord.contentType};base64,${Utils.arrayBufferToBase64(blobRecord.content)}`;
         }
         else {
-            throw new Error(`File ${blobKey} not found`);
+            throw new Error(`Blob with key "${blobKey}" not found.`);
         }
     }
 
