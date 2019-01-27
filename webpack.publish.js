@@ -21,15 +21,18 @@ const publisherConfig = {
         library: "publisher",
         libraryTarget: "commonjs2"
     },
+    externals: {
+        "firebase-admin": "firebase-admin"
+    },
     module: {
         rules: [
             {
                 test: /\.scss$/,
                 use: [
                     MiniCssExtractPlugin.loader,
-                    { loader: "css-loader", options: { url: false, minimize: true, sourceMap: true } },
-                    { loader: "postcss-loader", options: { sourceMap: true, options: { plugins: () => [autoprefixer] } } },
-                    { loader: "sass-loader", options: { sourceMap: true } }
+                    { loader: "css-loader" },
+                    { loader: "postcss-loader" },
+                    { loader: "sass-loader" }
                 ]
             },
             {
@@ -57,7 +60,7 @@ const publisherConfig = {
             { from: `./src/data/demo.json`, to: `./data/demo.json` },
             { from: `./src/config.publish.json`, to: `./config.json` },
             { from: `./src/config.runtime.json`, to: `./assets/config.json` }
-        ])        
+        ])
     ],
     optimization: {
         concatenateModules: true //ModuleConcatenationPlugin
@@ -70,4 +73,4 @@ const publisherConfig = {
 
 themeConfig.output.path = path.resolve(__dirname, "dist/publisher"),
 
-module.exports = [ publisherConfig, themeConfig ];
+    module.exports = [publisherConfig, themeConfig];

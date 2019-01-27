@@ -22,12 +22,12 @@ import { CoreModule } from "@paperbits/core/core.module";
 import { StyleModule } from "@paperbits/styles/styles.module";
 import { ProseMirrorModule } from "@paperbits/prosemirror/prosemirror.module";
 import { DemoModule } from "./components/demo.module";
-// import { FirebaseModule } from "@paperbits/firebase/firebase.module";
+// import { FirebaseModule } from "@paperbits/firebase/firebase.admin.module";
 
 
 const inputBasePath = "./dist/published/website";
 const outputBasePath = "./dist/published";
-const settingsPath = "./dist/config.publish.json";
+const settingsPath = "./dist/publisher/config.json";
 const dataPath = "./dist/publisher/data/demo.json";
 
 createDocument();
@@ -38,7 +38,7 @@ injector.bindModule(new FormsModule());
 injector.bindModule(new EmailsModule());
 injector.bindModule(new StyleModule());
 injector.bindModule(new ProseMirrorModule());
-injector.bindModule(new DemoModule(dataPath, settingsPath, inputBasePath, outputBasePath));
+injector.bindModule(new DemoModule(dataPath, settingsPath, outputBasePath));
 // injector.bindModule(new FirebaseModule());
 
 injector.bindModule(new PublishingNodeModule());
