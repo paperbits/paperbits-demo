@@ -3,9 +3,26 @@ $style-guide-font-size: 12px;
 $style-guide-color: #000;
 
 .living-style-guide {
+    .style-card {
+        cursor: default;
+        user-select: none;
+
+        * {
+            pointer-events: none;
+        }
+
+        .sample-name {
+            text-align: center;
+            display: block;
+            color: $style-guide-color;
+            font-size: $style-guide-font-size;
+            font-family: $style-guide-font-family;
+        }
+    }
+
     .fonts {
         display: flex;
-        justify-content: flex-end;
+        // justify-content: flex-end;
     }
 
     .font {
@@ -34,7 +51,6 @@ $style-guide-color: #000;
 
         .font-sample {
             font-size: 150px;
-
         }
     }
 

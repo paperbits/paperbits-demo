@@ -52,10 +52,6 @@ widget {
 }
 
 .layout-editor-selection {
-    @include selection(20px, -7px);
-    // @include animation-fadein(.2s);
-    // border: $selection-width solid cornflowerblue;
-    border-radius: 4px;
     position: fixed;
     pointer-events: none;
     z-index: $z-index-selection;

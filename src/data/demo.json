@@ -2350,6 +2350,7 @@
         "globals": {
             "a": {
                 "displayName": "Link",
+                "key": "globals/a",
                 "typography": {
                     "colorKey": "colors/links"
                 }
@@ -2431,10 +2432,7 @@
             },
             "p": {
                 "displayName": "Paragraph",
-                "key": "globals/p",
-                "typography": {
-                    "fontSize": 18
-                }
+                "key": "globals/p"
             },
             "ul": {
                 "components": {
