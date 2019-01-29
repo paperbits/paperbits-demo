@@ -33,7 +33,8 @@ h2 {
 
     &.toolbox-position-left {
         position: fixed;
-        top: 20px;
+        top: 45%;
+        transform: translateY(-50%);
         left: 20px;
     }
 
