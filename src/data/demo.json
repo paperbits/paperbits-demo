@@ -2534,6 +2534,23 @@
             }
         },
         "utils": {
+            "block": {
+                "stretch": {
+                    "class": {
+                        "xs": "stretch"
+                    }
+                },
+                "snapToTop": {
+                    "class": {
+                        "xs": "sticky-top"
+                    }
+                },
+                "snapToBottom": {
+                    "class": {
+                        "xs": "sticky-bottom"
+                    }
+                }
+            },
             "content": {
                 "alignHorizontallyAround": {
                     "class": {

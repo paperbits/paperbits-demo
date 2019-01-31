@@ -95,3 +95,15 @@ main {
     flex: 1;
     width: 100%;
 }
+
+.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
+
+.sticky-bottom {
+    position: sticky;
+    bottom: 0;
+    z-index: 1020;
+}
