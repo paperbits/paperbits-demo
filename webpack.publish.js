@@ -2,6 +2,7 @@ const path = require("path");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const TerserPlugin = require("terser-webpack-plugin");
 const themeConfig = require("./webpack.theme");
 
 
@@ -63,7 +64,17 @@ const publisherConfig = {
         ])
     ],
     optimization: {
-        concatenateModules: true //ModuleConcatenationPlugin
+        minimizer: [
+            new TerserPlugin({
+                terserOptions: {
+                    sourceMap: false,
+                    mangle: false,
+                    output: {
+                        comments: false,
+                    }
+                }
+            })
+        ]
     },
     resolve: {
         extensions: [".ts", ".tsx", ".js", ".jsx", ".html", ".scss"]
@@ -71,6 +82,6 @@ const publisherConfig = {
 };
 
 
-themeConfig.output.path = path.resolve(__dirname, "dist/publisher"),
+themeConfig.output.path = path.resolve(__dirname, "dist/publisher");
 
-    module.exports = [publisherConfig, themeConfig];
+module.exports = [publisherConfig, themeConfig];

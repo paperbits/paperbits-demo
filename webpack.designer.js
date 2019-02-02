@@ -2,20 +2,20 @@ const path = require("path");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
-const selectedTheme = "paperbits";
+const websiteTheme = "paperbits";
 const editorTheme = "paperbits-editor";
 
 module.exports = {
+    target: "web",
     entry: {
         "editors/scripts/paperbits": ["./src/startup.design.ts"],
         "editors/styles/paperbits": [`./src/themes/${editorTheme}/styles/paperbits.scss`],
-        "scripts/theme": [`./src/themes/${selectedTheme}/scripts/index.ts`],
-        "styles/theme": [`./src/themes/${selectedTheme}/styles/styles.scss`],
-        "email-templates/theme": [`./src/themes/${selectedTheme}/styles/emails/emails.scss`]
+        "scripts/theme": ["./src/startup.runtime.ts"],
+        "styles/theme": [`./src/themes/${websiteTheme}/styles/styles.scss`]
     },
     output: {
         filename: "./[name].js",
-        path: path.resolve(__dirname, "./dist")
+        path: path.resolve(__dirname, "./dist/designer")
     },
     module: {
         rules: [
@@ -39,6 +39,10 @@ module.exports = {
             {
                 test: /\.(png|woff|woff2|eot|ttf|svg)$/,
                 loader: "url-loader?limit=100000"
+            },
+            {
+                test: /\.liquid$/,
+                loader: "raw-loader"
             }
         ]
     },
@@ -48,14 +52,9 @@ module.exports = {
             chunkFilename: "[id].css"
         }),
         new CopyWebpackPlugin([
-            { from: `./src/data`, to: "data" },
-            { from: `./src/themes/${editorTheme}/assets/index.html`, to: "index.html"},
+            { from: `./src/themes/${editorTheme}/assets/index.html`, to: "index.html" },
             { from: `./src/themes/${editorTheme}/styles/fonts`, to: "editors/styles/fonts" },
-            { from: `./src/themes/${selectedTheme}/assets/page.html`, to: "page.html" },
-            { from: `./src/themes/${selectedTheme}/assets/email.html`, to: "email.html" },
-            { from: `./src/themes/${selectedTheme}/assets/theme.html`, to: "theme.html" },
-            { from: `./src/themes/${selectedTheme}/styles/fonts`, to: "styles/fonts" },
-            { from: `./src/config.design.json` }
+            { from: `./src/themes/${websiteTheme}/assets` }
         ])
     ],
     resolve: {

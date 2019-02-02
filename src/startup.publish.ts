@@ -6,16 +6,11 @@
  * found in the LICENSE file and at https://paperbits.io/license.
  */
 
-import * as path from "path";
 import * as ko from "knockout";
-import * as Utils from "./components/utils";
 import { createDocument } from "@paperbits/core/ko/knockout-rendring";
 import { InversifyInjector } from "@paperbits/common/injection";
 import { IPublisher } from "@paperbits/common/publishing";
 import { PublishingNodeModule } from "./publishing";
-import { StaticSettingsProvider } from "./components/staticSettingsProvider";
-import { FileSystemBlobStorage } from "./components/filesystemBlobStorage";
-import { StaticRouteHandler } from "./components/staticRouteHandler";
 import { FormsModule } from "@paperbits/forms/forms.module";
 import { EmailsModule } from "@paperbits/emails/emails.module";
 import { CoreModule } from "@paperbits/core/core.module";
@@ -25,8 +20,7 @@ import { DemoModule } from "./components/demo.module";
 // import { FirebaseModule } from "@paperbits/firebase/firebase.admin.module";
 
 
-const inputBasePath = "./dist/published/website";
-const outputBasePath = "./dist/published";
+const outputBasePath = "./dist/website";
 const settingsPath = "./dist/publisher/config.json";
 const dataPath = "./dist/publisher/data/demo.json";
 

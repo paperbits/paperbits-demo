@@ -9,8 +9,9 @@
         "demo"
     ],
     "scripts": {
-        "start": "webpack-dev-server --open --config webpack.design.js && webpack --config webpack.theme.js",
-        "build": "webpack --config webpack.build.js && webpack --config webpack.theme.js",
+        "start": "webpack-dev-server --open --config webpack.develop.js && webpack --config webpack.theme.js",
+        "build-designer": "webpack --config webpack.build.js && webpack --config webpack.theme.js",
+        "build-publisher": "webpack --config webpack.publish.js",
         "publish": "webpack --config webpack.publish.js && node dist/publisher/index.js",
         "postinstall": "npm rebuild node-sass"
     },
@@ -32,6 +33,7 @@
         "postcss-loader": "^3.0.0",
         "sass-loader": "^7.1.0",
         "style-loader": "^0.23.1",
+        "terser-webpack-plugin": "^1.2.1",
         "typescript": "3.1.6",
         "url-loader": "^1.1.2",
         "webpack": "^4.29.0",
@@ -40,13 +42,13 @@
         "webpack-merge": "^4.2.1"
     },
     "dependencies": {
-        "@paperbits/common": "0.1.44",
-        "@paperbits/core": "0.1.44",
-        "@paperbits/emails": "0.1.44",
-        "@paperbits/firebase": "^0.1.44",
-        "@paperbits/forms": "0.1.44",
-        "@paperbits/prosemirror": "^0.1.44",
-        "@paperbits/styles": "^0.1.44",
+        "@paperbits/common": "0.1.52",
+        "@paperbits/core": "0.1.52",
+        "@paperbits/emails": "0.1.52",
+        "@paperbits/firebase": "0.1.52",
+        "@paperbits/forms": "0.1.52",
+        "@paperbits/prosemirror": "0.1.52",
+        "@paperbits/styles": "0.1.52",
         "@types/knockout.mapping": "^2.0.33",
         "@webcomponents/webcomponentsjs": "^2.2.4",
         "cheerio": "^1.0.0-rc.2",

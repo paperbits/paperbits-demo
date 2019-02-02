@@ -15,7 +15,7 @@ import { EmailsEditModule } from "@paperbits/emails/emails.edit.module";
 import { StylingEditModule } from "@paperbits/styles/styles.edit.module";
 import { ProseMirrorModule } from "@paperbits/prosemirror/prosemirror.module";
 import { OfflineModule } from "@paperbits/common/persistence/offline.module";
-// import { FirebaseModule } from "@paperbits/firebase/firebase.module";
+import { FirebaseModule } from "@paperbits/firebase/firebase.module";
 import { DemoEditModule } from "./components/demo.edit.module";
 
 const injector = new InversifyInjector();
@@ -24,8 +24,8 @@ injector.bindModule(new FormsEditModule());
 injector.bindModule(new EmailsEditModule());
 injector.bindModule(new StylingEditModule());
 injector.bindModule(new ProseMirrorModule());
-// injector.bindModule(new FirebaseModule());
-injector.bindModule(new DemoEditModule());
+injector.bindModule(new FirebaseModule());
+// injector.bindModule(new DemoEditModule());
 // injector.bindModule(new OfflineModule());
 injector.resolve("autostart");
 

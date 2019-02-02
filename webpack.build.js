@@ -3,6 +3,7 @@ const merge = require("webpack-merge");
 const common = require("./webpack.common.js");
 const TerserPlugin = require("terser-webpack-plugin");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 
 module.exports = merge(common, {
@@ -21,8 +22,11 @@ module.exports = merge(common, {
         ]
     },
     plugins: [
-        new CleanWebpackPlugin(["dist"]),
-        new webpack.DefinePlugin({	
+        new CleanWebpackPlugin(["dist/designer"]),
+        new CopyWebpackPlugin([
+            { from: `./src/config.design.json`, to: `./config.json` }
+        ]),
+        new webpack.DefinePlugin({
             "process.env.NODE_ENV": JSON.stringify("production")
         })
     ]
