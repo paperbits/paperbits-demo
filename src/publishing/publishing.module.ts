@@ -1,4 +1,5 @@
 import "setimmediate";
+import { createDocument } from "@paperbits/core/ko/knockout-rendring";
 import { IInjector } from "@paperbits/common/injection";
 import { SitePublisher } from "./sitePublisher";
 import { PagePublisher } from "./pagePublisher";
@@ -16,6 +17,8 @@ export class PublishingNodeModule {
         injector.bindSingleton("blogPublisher", BlogPublisher);
         injector.bindSingleton("mediaPublisher", MediaPublisher);
         injector.bindSingleton("emailPublisher", EmailPublisher);
+
+        createDocument();
 
         const stylePublisher = injector.resolve("stylePublisher");
         const pagePublisher = injector.resolve("pagePublisher");

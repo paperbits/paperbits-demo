@@ -7,7 +7,6 @@
  */
 
 import * as ko from "knockout";
-import { createDocument } from "@paperbits/core/ko/knockout-rendring";
 import { InversifyInjector } from "@paperbits/common/injection";
 import { IPublisher } from "@paperbits/common/publishing";
 import { PublishingNodeModule } from "./publishing";
@@ -19,12 +18,9 @@ import { ProseMirrorModule } from "@paperbits/prosemirror/prosemirror.module";
 import { DemoModule } from "./components/demo.module";
 // import { FirebaseModule } from "@paperbits/firebase/firebase.admin.module";
 
-
 const outputBasePath = "./dist/website";
 const settingsPath = "./dist/publisher/config.json";
 const dataPath = "./dist/publisher/data/demo.json";
-
-createDocument();
 
 const injector = new InversifyInjector();
 injector.bindModule(new CoreModule());
