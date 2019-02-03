@@ -18,13 +18,15 @@ export class MediaPublisher implements IPublisher {
 
     private async renderMediaFile(mediaFile: MediaContract): Promise<void> {
         try {
-            const blob = await this.blobStorage.downloadBlob(mediaFile.blobKey);
+            if (mediaFile.blobKey) {
+                const blob = await this.blobStorage.downloadBlob(mediaFile.blobKey);
 
-            if (blob) {
-                await this.outputBlobStorage.uploadBlob(mediaFile.permalink, blob, mediaFile.mimeType);
-                return;
+                if (blob) {
+                    await this.outputBlobStorage.uploadBlob(mediaFile.permalink, blob, mediaFile.mimeType);
+                    return;
+                }
             }
-            
+
             if (mediaFile.downloadUrl) { // if blob doesn't exit check if direct download URL is specifed:
                 const response = await this.httpClient.send({ url: mediaFile.downloadUrl });
                 await this.outputBlobStorage.uploadBlob(mediaFile.permalink, response.toByteArray(), mediaFile.mimeType);

@@ -52,6 +52,7 @@ module.exports = {
             chunkFilename: "[id].css"
         }),
         new CopyWebpackPlugin([
+            { from: `./src/data/demo.json`, to: `./data/demo.json` },
             { from: `./src/themes/${editorTheme}/assets/index.html`, to: "index.html" },
             { from: `./src/themes/${editorTheme}/styles/fonts`, to: "editors/styles/fonts" },
             { from: `./src/themes/${websiteTheme}/assets` }
