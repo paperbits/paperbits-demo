@@ -15,6 +15,9 @@
         "publish": "webpack --config webpack.publish.js && node dist/publisher/index.js",
         "postinstall": "npm rebuild node-sass"
     },
+    "resolutions": {
+        "terser": "3.14.1"
+    },
     "devDependencies": {
         "@types/google-maps": "^3.2.0",
         "@types/knockout": "^3.4.63",
@@ -33,6 +36,7 @@
         "postcss-loader": "^3.0.0",
         "sass-loader": "^7.1.0",
         "style-loader": "^0.23.1",
+        "terser": "^3.14.1",
         "terser-webpack-plugin": "^1.2.1",
         "typescript": "3.1.6",
         "url-loader": "^1.1.2",
