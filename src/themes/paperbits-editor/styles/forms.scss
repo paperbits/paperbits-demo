@@ -210,13 +210,3 @@ hr {
     }
 }
 
-.info-icon-btn {
-    min-width: 1.5em;
-    border: none;
-    position: absolute;
-    right: 0px;
-    color: $collapse-button-color;
-    z-index: 99999;
-    @extend .paperbits-icon;
-    @extend .paperbits-alert-circle-i;
-}
