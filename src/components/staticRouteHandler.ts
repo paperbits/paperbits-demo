@@ -43,6 +43,14 @@ export class StaticRouteHandler implements IRouteHandler {
         return this.currentUrl;
     }
 
+    public getPath(): string {
+        return this.currentUrl;
+    }
+
+    public getHash(): string {
+        return "";
+    }
+
     public getCurrentUrlMetadata(): Object {
         return this.metadata;
     }

@@ -2,11 +2,12 @@
     "compilerOptions": {
         "target": "es5",
         "lib": [
-            "dom",
             "es2015",
             "es2016",
-            "es5",
-            "es6"
+            "es2018",
+            "es6",
+            "es7",
+            "dom"
         ],
         "module": "commonjs",
         "moduleResolution": "node",
@@ -21,7 +22,8 @@
         "allowUnreachableCode": true,
         "listFiles": false,
         "sourceMap": false,
-        "allowSyntheticDefaultImports": true
+        "allowSyntheticDefaultImports": true,
+        "forceConsistentCasingInFileNames": true
     },
     "exclude": [
         "./node_modules"

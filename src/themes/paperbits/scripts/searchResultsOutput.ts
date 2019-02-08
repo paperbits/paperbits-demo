@@ -16,8 +16,8 @@ export interface SearchResult {
     template: template
 })
 export class SearchResultOutput {
-    public pattern: KnockoutObservable<string>;
-    public results: KnockoutObservableArray<SearchResult>;
+    public pattern: ko.Observable<string>;
+    public results: ko.ObservableArray<SearchResult>;
 
     private searchTimeout: any;
     private idexer: any;
