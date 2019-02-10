@@ -37,7 +37,7 @@ injector.bindModule(new DemoModule(dataPath, settingsPath, outputBasePath));
 injector.bindModule(new PublishingNodeModule());
 injector.resolve("autostart");
 
-/* Bulding dependency injection container */
+/* Building dependency injection container */
 const publisher = injector.resolve<IPublisher>("sitePublisher");
 
 /* Running actual publishing */
