@@ -1,12 +1,12 @@
 const webpack = require("webpack");
 const merge = require("webpack-merge");
-const designerConfig = require("./webpack.designer.js");
+const designConfig = require("./webpack.design.js");
 const TerserPlugin = require("terser-webpack-plugin");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 
-module.exports = merge(designerConfig, {
+module.exports = merge(designConfig, {
     mode: "production",
     optimization: {
         minimizer: [

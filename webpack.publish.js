@@ -3,7 +3,7 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
-const themeConfig = require("./webpack.theme");
+const runtimeConfig = require("./webpack.runtime");
 
 
 const publisherConfig = {
@@ -82,6 +82,6 @@ const publisherConfig = {
 };
 
 
-themeConfig.output.path = path.resolve(__dirname, "dist/publisher");
+runtimeConfig.output.path = path.resolve(__dirname, "dist/publisher");
 
-module.exports = [publisherConfig, themeConfig];
+module.exports = [publisherConfig, runtimeConfig];

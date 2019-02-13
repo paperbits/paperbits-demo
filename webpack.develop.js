@@ -1,9 +1,9 @@
 const webpack = require("webpack");
 const merge = require("webpack-merge");
-const designerConfig = require("./webpack.designer.js");
+const desigConfig = require("./webpack.design.js");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 
-module.exports = merge(designerConfig, {
+module.exports = merge(desigConfig, {
     mode: "development",
     devtool: "inline-source-map",
     devServer: {

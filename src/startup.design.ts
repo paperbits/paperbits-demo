@@ -26,6 +26,7 @@ injector.bindModule(new DemoEditModule());
 
 /* Uncomment to enable Firebase module */
 // injector.bindModule(new FirebaseModule());
+// injector.bindModule(new OfflineModule());
 
 injector.resolve("autostart");
 

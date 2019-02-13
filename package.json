@@ -9,8 +9,8 @@
         "demo"
     ],
     "scripts": {
-        "start": "webpack-dev-server --open --config webpack.develop.js && webpack --config webpack.theme.js",
-        "build-designer": "webpack --config webpack.build.js && webpack --config webpack.theme.js",
+        "start": "webpack-dev-server --open --config webpack.develop.js && webpack --config webpack.runtime.js",
+        "build-designer": "webpack --config webpack.build.js && webpack --config webpack.runtime.js",
         "build-publisher": "webpack --config webpack.publish.js",
         "publish": "webpack --config webpack.publish.js && node dist/publisher/index.js",
         "postinstall": "npm rebuild node-sass"
@@ -46,12 +46,12 @@
         "webpack-merge": "^4.2.1"
     },
     "dependencies": {
-        "@paperbits/common": "0.1.61",
-        "@paperbits/core": "0.1.61",
-        "@paperbits/firebase": "0.1.61",
-        "@paperbits/forms": "0.1.61",
-        "@paperbits/prosemirror": "0.1.61",
-        "@paperbits/styles": "0.1.61",
+        "@paperbits/common": "0.1.62",
+        "@paperbits/core": "0.1.62",
+        "@paperbits/firebase": "0.1.62",
+        "@paperbits/forms": "0.1.62",
+        "@paperbits/prosemirror": "0.1.62",
+        "@paperbits/styles": "0.1.62",
         "@types/knockout.mapping": "^2.0.33",
         "@webcomponents/webcomponentsjs": "^2.2.7",
         "cheerio": "^1.0.0-rc.2",
