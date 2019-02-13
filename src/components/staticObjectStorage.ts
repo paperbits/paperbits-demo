@@ -10,6 +10,7 @@
 import * as _ from "lodash";
 import * as FileSaver from "file-saver";
 import * as Utils from "@paperbits/common/utils";
+import * as Objects from "@paperbits/common/objects";
 import { HttpClient } from "@paperbits/common/http";
 import { IObjectStorage } from "@paperbits/common/persistence/IObjectStorage";
 
@@ -82,7 +83,7 @@ export class StaticObjectStorage implements IObjectStorage {
     public async getObject<T>(path: string): Promise<T> {
         const data = await this.getData();
 
-        return Utils.getObjectAt(path, data);
+        return Objects.getObjectAt(path, data);
     }
 
     public async deleteObject(path: string): Promise<void> {
@@ -90,7 +91,7 @@ export class StaticObjectStorage implements IObjectStorage {
             return;
         }
 
-        Utils.deleteNodeAt(path, this.storageDataObject);
+        Objects.deleteNodeAt(path, this.storageDataObject);
     }
 
     public async updateObject<T>(path: string, dataObject: T): Promise<void> {
@@ -98,7 +99,7 @@ export class StaticObjectStorage implements IObjectStorage {
             return;
         }
 
-        Utils.setValueAt(path, this.storageDataObject, dataObject);        
+        Objects.setValueAt(path, this.storageDataObject, dataObject);        
     }
 
     public async searchObjects<T>(path: string, propertyNames?: string[], searchValue?: string): Promise<T> {
@@ -109,7 +110,7 @@ export class StaticObjectStorage implements IObjectStorage {
             return searchResultObject;
         }
 
-        const searchObj = Utils.getObjectAt(path, data);
+        const searchObj = Objects.getObjectAt(path, data);
         const keys = Object.keys(searchObj);
 
         if (propertyNames && propertyNames.length && searchValue) {
@@ -128,18 +129,18 @@ export class StaticObjectStorage implements IObjectStorage {
                 });
 
                 if (searchProperty) {
-                    Utils.mergeDeepAt(`${path}/${key}`, searchResultObject, matchedObj);
+                    Objects.mergeDeepAt(`${path}/${key}`, searchResultObject, matchedObj);
                 }
             });
         }
         else {
             keys.forEach(key => {
                 const matchedObj = searchObj[key];
-                Utils.mergeDeepAt(`${path}/${key}`, searchResultObject, matchedObj);
+                Objects.mergeDeepAt(`${path}/${key}`, searchResultObject, matchedObj);
             });
         }
 
-        const resultObject = Utils.getObjectAt(path, searchResultObject);
+        const resultObject = Objects.getObjectAt(path, searchResultObject);
         return <T>(resultObject || {});
     }
 
