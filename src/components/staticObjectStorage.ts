@@ -9,7 +9,6 @@
 
 import * as _ from "lodash";
 import * as FileSaver from "file-saver";
-import * as Utils from "@paperbits/common/utils";
 import * as Objects from "@paperbits/common/objects";
 import { HttpClient } from "@paperbits/common/http";
 import { IObjectStorage } from "@paperbits/common/persistence/IObjectStorage";
@@ -36,14 +35,6 @@ export class StaticObjectStorage implements IObjectStorage {
         return new Promise<Object>((resolve) => {
             setImmediate(() => resolve(this.storageDataObject));
         });
-    }
-
-    private getPathObject(pathParts: string[]) {
-        if (pathParts.length === 1 || (pathParts.length === 2 && !pathParts[1])) {
-            return this.storageDataObject[pathParts[0]];
-        } else {
-            return this.storageDataObject[pathParts[0]][pathParts[1]];
-        }
     }
 
     public async addObject(path: string, dataObject: Object): Promise<void> {
@@ -83,7 +74,7 @@ export class StaticObjectStorage implements IObjectStorage {
     public async getObject<T>(path: string): Promise<T> {
         const data = await this.getData();
 
-        return Objects.getObjectAt(path, data);
+        return Objects.getObjectAt(path, Objects.clone(data));
     }
 
     public async deleteObject(path: string): Promise<void> {
@@ -99,7 +90,7 @@ export class StaticObjectStorage implements IObjectStorage {
             return;
         }
 
-        Objects.setValueAt(path, this.storageDataObject, dataObject);        
+        Objects.setValueAt(path, this.storageDataObject, Objects.clone(dataObject));
     }
 
     public async searchObjects<T>(path: string, propertyNames?: string[], searchValue?: string): Promise<T> {
@@ -125,6 +116,7 @@ export class StaticObjectStorage implements IObjectStorage {
                 const searchProperty = _.find(searchProps, (prop) => {
                     const propName = _.keys(prop)[0];
                     const test = matchedObj[propName];
+
                     return test && test.toUpperCase() === prop[propName].toUpperCase();
                 });
 
@@ -133,7 +125,7 @@ export class StaticObjectStorage implements IObjectStorage {
                 }
             });
         }
-        else {
+        else { // if no search criteria specified, just return all objects in specified path
             keys.forEach(key => {
                 const matchedObj = searchObj[key];
                 Objects.mergeDeepAt(`${path}/${key}`, searchResultObject, matchedObj);
@@ -145,9 +137,14 @@ export class StaticObjectStorage implements IObjectStorage {
     }
 
     public async saveChanges(delta: Object): Promise<void> {
-        // const content = JSON.stringify(this.storageDataObject);
-        // const blob = new Blob([content], { type: "text/plain;charset=utf-8" });
+        const state = JSON.stringify(this.storageDataObject);
+        const stateBlob = new Blob([state], { type: "text/plain;charset=utf-8" });
 
-        // FileSaver.saveAs(blob, "demo.json");
+        FileSaver.saveAs(stateBlob, "demo.json");
+
+        /* Uncomment to save changes in a separate file */
+        // const changes = JSON.stringify(delta);
+        // const deltaBlob = new Blob([changes], { type: "text/plain;charset=utf-8" });
+        // FileSaver.saveAs(deltaBlob, "changes.json");
     }
 }
