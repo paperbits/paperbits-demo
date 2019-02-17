@@ -159,7 +159,10 @@ export class StaticObjectStorage implements IObjectStorage {
         }
 
         collection.forEach(item => {
-            searchResultObject[item["key"]] = item;
+            const segments = item.key.split("/");
+            const key = segments[1];
+            
+            Objects.setValueAt(key, searchResultObject, item);
         });
 
         return searchResultObject;
