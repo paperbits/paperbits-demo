@@ -11,7 +11,8 @@ import * as _ from "lodash";
 import * as FileSaver from "file-saver";
 import * as Objects from "@paperbits/common/objects";
 import { HttpClient } from "@paperbits/common/http";
-import { IObjectStorage } from "@paperbits/common/persistence/IObjectStorage";
+import { IObjectStorage, Query, Operator, OrderDirection } from "@paperbits/common/persistence";
+import { Bag } from "@paperbits/common";
 
 /**
  * Static object storage for demo purposes. It stores all the uploaded blobs in memory.
@@ -93,8 +94,8 @@ export class StaticObjectStorage implements IObjectStorage {
         Objects.setValueAt(path, this.storageDataObject, Objects.clone(dataObject));
     }
 
-    public async searchObjects<T>(path: string, propertyNames?: string[], searchValue?: string): Promise<T> {
-        const searchResultObject: any = {};
+    public async searchObjects<T>(path: string, query: Query<T>): Promise<Bag<T>> {
+        const searchResultObject: Bag<T> = {};
         const data = await this.getData();
 
         if (!data) {
@@ -102,38 +103,66 @@ export class StaticObjectStorage implements IObjectStorage {
         }
 
         const searchObj = Objects.getObjectAt(path, data);
-        const keys = Object.keys(searchObj);
+        let collection = Object.values(searchObj);
 
-        if (propertyNames && propertyNames.length && searchValue) {
-            const searchProps = propertyNames.map(name => {
-                const prop = {};
-                prop[name] = searchValue;
-                return prop;
-            });
+        if (query) {
+            if (query.filters.length > 0) {
+                collection = collection.filter(x => {
+                    let meetsCriteria = true;
 
-            keys.forEach(key => {
-                const matchedObj = searchObj[key];
-                const searchProperty = _.find(searchProps, (prop) => {
-                    const propName = _.keys(prop)[0];
-                    const test = matchedObj[propName];
+                    for (const filter of query.filters) {
+                        const left = x[filter.left].toUpperCase();
+                        const right = filter.right.toUpperCase();
+                        const operator = filter.operator;
 
-                    return test && test.toUpperCase() === prop[propName].toUpperCase();
+                        switch (operator) {
+                            case Operator.contains:
+                                if (!left.contains(right)) {
+                                    meetsCriteria = false;
+                                }
+                                break;
+
+                            case Operator.equals:
+                                if (left !== right) {
+                                    meetsCriteria = false;
+                                }
+                                break;
+
+                            default:
+                                throw new Error("Cannot translate operator into Firebase Realtime Database query.");
+                        }
+                    }
+
+                    return meetsCriteria;
                 });
+            }
 
-                if (searchProperty) {
-                    Objects.mergeDeepAt(`${path}/${key}`, searchResultObject, matchedObj);
-                }
-            });
-        }
-        else { // if no search criteria specified, just return all objects in specified path
-            keys.forEach(key => {
-                const matchedObj = searchObj[key];
-                Objects.mergeDeepAt(`${path}/${key}`, searchResultObject, matchedObj);
-            });
+            if (query.orderingBy) {
+                const property = query.orderingBy;
+
+                collection = collection.sort((x, y) => {
+                    const a = x[property].toUpperCase();
+                    const b = y[property].toUpperCase();
+                    const modifier = query.orderDirection === OrderDirection.accending ? 1 : -1;
+
+                    if (a > b) {
+                        return modifier;
+                    }
+
+                    if (a < b) {
+                        return -modifier;
+                    }
+
+                    return 0;
+                });
+            }
         }
 
-        const resultObject = Objects.getObjectAt(path, searchResultObject);
-        return <T>(resultObject || {});
+        collection.forEach(item => {
+            searchResultObject[item["key"]] = item;
+        });
+
+        return searchResultObject;
     }
 
     public async saveChanges(delta: Object): Promise<void> {
