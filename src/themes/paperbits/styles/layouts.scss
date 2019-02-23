@@ -16,7 +16,8 @@ section {
     flex: none;
     padding: 10px;
 
-    .container {
+    .container,
+    .container-fluid {
         display: flex;
         flex-direction: column;
         flex: 1;
@@ -25,12 +26,13 @@ section {
     .row {
         padding: 10px;
         min-height: 90px;
+        flex-wrap: nowrap;
+        flex: 1;
 
         .col {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            align-content: flex-start;
             align-items: flex-start;
         }
     }
@@ -38,7 +40,6 @@ section {
     &.with-padding {
         padding: 40px;
     }
-
     /* TODO: Enable row height through editor */
     &.stretch > .container, .container-fluid > .row {
         flex: 1;
@@ -47,6 +48,7 @@ section {
 
 .stretch {
     flex: 1;
+    height: 100%;
 }
 
 .overflow {
@@ -59,6 +61,18 @@ section {
 
 .overflow-y {
     overflow-y: auto;
+}
+
+.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
+
+.sticky-bottom {
+    position: sticky;
+    bottom: 0;
+    z-index: 1020;
 }
 
 .fit {
@@ -92,18 +106,6 @@ section {
 }
 
 main {
-    flex: 1;
-    width: 100%;
-}
-
-.sticky-top {
-    position: sticky;
-    top: 0;
-    z-index: 1020;
-}
-
-.sticky-bottom {
-    position: sticky;
-    bottom: 0;
-    z-index: 1020;
+    flex-basis: 100%;
+    align-self: stretch;
 }
