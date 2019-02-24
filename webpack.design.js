@@ -11,7 +11,7 @@ module.exports = {
         "editors/scripts/paperbits": ["./src/startup.design.ts"],
         "editors/styles/paperbits": [`./src/themes/${editorTheme}/styles/paperbits.scss`],
         "scripts/theme": ["./src/startup.runtime.ts"],
-        "styles/theme": [`./src/themes/${websiteTheme}/styles/styles.scss`]
+        "styles/theme": [`./src/themes/${websiteTheme}/styles/styles.design.scss`]
     },
     output: {
         filename: "./[name].js",
