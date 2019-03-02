@@ -3,53 +3,40 @@
 @import "picture.scss";
 @import "layouts.scss";
 
-
-* {
-    box-sizing: border-box;
-    position: relative;
+.email-layout {
+    max-width: 600px;
 }
 
-body {
-    background-color: #fff;
-    padding: 0 !important;
-    margin: 0 !important;
-    width: 100% !important;
-    -webkit-text-size-adjust: 100% !important;
-    -ms-text-size-adjust: 100% !important;
-    -webkit-font-smoothing: antialiased !important;
-    font-family: "Times New Roman", serif;
+.email-layout-section,
+.email-layout-row {
+    width: 100%;
 }
 
-table tr td {
-    a,
-    button,
-    p {
-        font-family: "Times New Roman", serif;
-        text-align: left;
-        color: #5b5f61;
-        font-size: 22px;
-        font-weight: normal;
-        line-height: 35.2px;
-        margin-bottom: 25px;
-    }
-
-    a {
-        color: #5cc6d0;
-        text-decoration: none;
-    }
+.email-layout-column-12 {
+    width: 100%;
 }
 
-div,
-p,
-ul {
-    margin: 0;
-    text-align: left;
+.email-layout-column-9 {
+    width: 75%;
 }
 
-ul {
-    list-style: disc;
-    padding-left: 20px;
+.email-layout-column-8 {
+    width: 66.666667%;
 }
+
+.email-layout-column-6 {
+    width: 50%;
+}
+
+.email-layout-column-4 {
+    width: 33.333333%s;
+}
+
+.email-layout-column-3 {
+    width: 25%;
+}
+
+
 
 $grid-padding: 10px;
 
@@ -65,58 +52,4 @@ table {
             }
         }
     }
-}
-
-.container {
-    max-width: 600px;
-    padding: $grid-padding;
-
-    table {
-        padding: $grid-padding;
-        width: 100%;
-
-        tr {
-            td {
-                padding: $grid-padding;
-            }
-        }
-    }
-}
-
-.main p,
-.main ul {
-    text-align: left;
-    color: #5b5f61;
-    font-size: 22px;
-    font-weight: normal;
-    line-height: 35.2px;
-    margin-bottom: 25px;
-}
-
-.footer p {
-    text-align: center;
-    font-size: 15px;
-    font-weight: normal;
-    line-height: 25px;
-}
-
-.social {
-    margin: 20px 0;
-}
-
-.btn {
-    font-size: 22px;
-    text-decoration: none;
-    padding: 15px 18px;
-    border-radius: 4px;
-    display: inline-block;
-}
-
-.btn-default {
-    background: #f79740;
-    color: #ffffff;
-}
-
-picture {
-    display: inline-block;
 }
