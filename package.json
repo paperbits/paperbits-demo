@@ -1,6 +1,6 @@
 {
     "name": "paperbits-demo",
-    "version": "0.1.30",
+    "version": "0.1.79",
     "description": "An example of using Paperbits to build web apps with rich content editing capability.",
     "author": "Paperbits",
     "license": "MIT",
@@ -46,32 +46,23 @@
         "webpack-merge": "^4.2.1"
     },
     "dependencies": {
-        "@paperbits/common": "0.1.78",
-        "@paperbits/core": "0.1.78",
-        "@paperbits/firebase": "0.1.78",
-        "@paperbits/forms": "0.1.78",
-        "@paperbits/emails": "0.1.78",
-        "@paperbits/prosemirror": "0.1.78",
-        "@paperbits/styles": "0.1.78",
+        "@paperbits/common": "0.1.79",
+        "@paperbits/core": "0.1.79",
+        "@paperbits/firebase": "0.1.79",
+        "@paperbits/forms": "0.1.79",
+        "@paperbits/emails": "0.1.79",
+        "@paperbits/prosemirror": "0.1.79",
+        "@paperbits/styles": "0.1.79",
         "@types/knockout.mapping": "^2.0.33",
         "@webcomponents/webcomponentsjs": "^2.2.7",
-        "cheerio": "^1.0.0-rc.2",
         "core-js": "^2.6.5",
-        "cropperjs": "^1.4.3",
-        "css-rules": "^1.0.4",
         "cssom": "^0.3.6",
         "domino": "^2.1.2",
         "emitter": "0.0.5",
-        "file-saver": "^2.0.1",
-        "flatten": "^1.0.2",
         "google-maps": "^3.3.0",
         "knockout": "^3.5.0",
         "knockout-mapping": "^2.6.0",
         "knockout.validation": "^2.0.3",
-        "lunr": "^2.3.5",
-        "setimmediate": "^1.0.5",
-        "slick": "^1.12.2",
-        "specificity": "^0.4.1",
-        "xhr2": "^0.1.4"
+        "lunr": "^2.3.5"
     }
 }
