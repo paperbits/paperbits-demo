@@ -9,7 +9,7 @@ import { SettingsContract, ISiteService } from "@paperbits/common/sites";
 import { IMediaService, MediaContract } from "@paperbits/common/media";
 import { MetaDataSetter } from "@paperbits/common/meta";
 import { LayoutViewModelBinder } from "@paperbits/core/layout/ko";
-import { createDocument } from "@paperbits/core/ko/knockout-rendring";
+import { createDocument } from "@paperbits/core/ko/knockout-rendering";
 import { ISettingsProvider } from "@paperbits/common/configuration";
 
 export class BlogPublisher implements IPublisher {

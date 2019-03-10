@@ -10,7 +10,7 @@ import { LayoutViewModelBinder } from "@paperbits/core/layout/ko";
 import { MetaDataSetter } from "@paperbits/common/meta";
 import { MediaService, MediaContract } from "@paperbits/common/media";
 import { ISettingsProvider } from "@paperbits/common/configuration";
-import { createDocument } from "@paperbits/core/ko/knockout-rendring";
+import { createDocument } from "@paperbits/core/ko/knockout-rendering";
 
 
 export class PagePublisher implements IPublisher {

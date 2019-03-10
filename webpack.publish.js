@@ -47,10 +47,6 @@ const publisherConfig = {
             {
                 test: /\.(png|woff|woff2|eot|ttf|svg)$/,
                 loader: "url-loader?limit=100000"
-            },
-            {
-                test: /\.liquid$/,
-                loader: "raw-loader"
             }
         ]
     },

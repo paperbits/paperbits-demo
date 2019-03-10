@@ -8,7 +8,7 @@
 
 import { InversifyInjector } from "@paperbits/common/injection";
 import { IPublisher } from "@paperbits/common/publishing";
-import { PublishingNodeModule } from "./publishing";
+import { PublishingModule } from "./publishing";
 import { FormsModule } from "@paperbits/forms/forms.module";
 import { CoreModule } from "@paperbits/core/core.module";
 import { StyleModule } from "@paperbits/styles/styles.module";
@@ -34,7 +34,7 @@ injector.bindModule(new DemoModule(dataPath, settingsPath, outputBasePath));
 /* Uncomment to enable Firebase module */
 // injector.bindModule(new FirebaseModule());
 
-injector.bindModule(new PublishingNodeModule());
+injector.bindModule(new PublishingModule());
 injector.resolve("autostart");
 
 /* Building dependency injection container */
