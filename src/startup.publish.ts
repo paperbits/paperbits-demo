@@ -10,6 +10,7 @@ import { InversifyInjector } from "@paperbits/common/injection";
 import { IPublisher } from "@paperbits/common/publishing";
 import { PublishingModule } from "./publishing";
 import { FormsModule } from "@paperbits/forms/forms.module";
+import { EmailsModule } from "@paperbits/emails/emails.module";
 import { CoreModule } from "@paperbits/core/core.module";
 import { StyleModule } from "@paperbits/styles/styles.module";
 import { ProseMirrorModule } from "@paperbits/prosemirror/prosemirror.module";
@@ -22,6 +23,7 @@ import { DemoModule } from "./components/demo.module";
 const injector = new InversifyInjector();
 injector.bindModule(new CoreModule());
 injector.bindModule(new FormsModule());
+injector.bindModule(new EmailsModule());
 injector.bindModule(new StyleModule());
 injector.bindModule(new ProseMirrorModule());
 

@@ -21,5 +21,10 @@
         },
         "rootKey": "/",
         "storageBasePath": "/"
-    }
+    },
+    "emailTemplates": {
+        "permalinkBaseUrl": "https://paperbits.io",
+        "mediaBaseUrl": "https://cdn.paperbits.io"
+    },
+    "environment": "publish"
 }
