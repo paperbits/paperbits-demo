@@ -1,0 +1,18 @@
+{
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
+    "files.exclude": {
+        "**/dist": true,
+        "**/node_modules": true,
+        "**/.vscode": true
+    },
+    "search.exclude": {
+        "**/dist": true,
+        "**/node_modules": true,
+        "**/.vscode": true
+    },
+    "mochaExplorer.files": "**/*.spec.ts",
+    "mochaExplorer.require": "mocha",
+    "mochaExplorer.timeout": 30000
+}
