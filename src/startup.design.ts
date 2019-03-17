@@ -15,8 +15,10 @@ import { EmailsDesignModule } from "@paperbits/emails/emails.design.module";
 import { StylingEditModule } from "@paperbits/styles/styles.edit.module";
 import { ProseMirrorModule } from "@paperbits/prosemirror/prosemirror.module";
 import { OfflineModule } from "@paperbits/common/persistence/offline.module";
-import { FirebaseModule } from "@paperbits/firebase/firebase.module";
 import { DemoEditModule } from "./components/demo.edit.module";
+
+/* Uncomment to enable Firebase module */
+// import { FirebaseModule } from "@paperbits/firebase/firebase.module";
 
 const injector = new InversifyInjector();
 injector.bindModule(new CoreEditModule());
