@@ -22,7 +22,7 @@ module.exports = merge(designConfig, {
         ]
     },
     plugins: [
-        new CleanWebpackPlugin(["dist/designer"]),
+        new CleanWebpackPlugin(),
         new CopyWebpackPlugin([
             { from: `./src/config.design.json`, to: `./config.json` }
         ]),

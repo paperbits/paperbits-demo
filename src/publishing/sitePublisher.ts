@@ -1,11 +1,7 @@
 import { IPublisher } from "@paperbits/common/publishing";
 
 export class SitePublisher implements IPublisher {
-    private readonly publishers: IPublisher[];
-
-    constructor(publishers: IPublisher[]) {
-        this.publishers = publishers;
-    }
+    constructor(private readonly publishers: IPublisher[]) { }
 
     public async publish(): Promise<any> {
         console.info("Publishing...");

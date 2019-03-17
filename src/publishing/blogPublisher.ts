@@ -43,7 +43,7 @@ export class BlogPublisher implements IPublisher {
                 this.setSiteSettings(templateDocument, settings, iconFile, post);
                 htmlContent = "<!DOCTYPE html>" + templateDocument.documentElement.outerHTML;
                 resolve();
-            }, 1000);
+            }, 10);
         });
 
         await buildContentPromise;

@@ -51,7 +51,7 @@ const publisherConfig = {
         ]
     },
     plugins: [
-        new CleanWebpackPlugin(["dist/publisher"]),
+        new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({ filename: "[name].css", chunkFilename: "[id].css" }),
         new CopyWebpackPlugin([
             { from: `./src/data/demo.json`, to: `./data/demo.json` },
