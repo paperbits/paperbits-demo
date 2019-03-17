@@ -18,4 +18,4 @@ This repository contains an example of how using Paperbits you can enable advanc
 ## License
 Use of this source code is governed by an MIT-style license that can be found in the LICENSE file and at https://paperbits.io/license/mit.
 
-2018 (c) Copyright Paperbits. All Rights Reserved.
+2019 (c) Copyright Paperbits. All Rights Reserved.
