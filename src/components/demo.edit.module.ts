@@ -11,10 +11,12 @@ import { IInjector, IInjectorModule } from "@paperbits/common/injection";
 import { StaticObjectStorage } from "./staticObjectStorage";
 import { StaticBlobStorage } from "./staticBlobStorage";
 import { StaticUserService } from "./staticUserService";
-
+import { YourWidgetEditorModule } from "./your-widget/ko/yourWidgetEditor.module";
 
 export class DemoEditModule implements IInjectorModule {
     public register(injector: IInjector): void {
+        injector.bindModule(new YourWidgetEditorModule());
+
         injector.bindSingleton("blobStorage", StaticBlobStorage);
         injector.bindSingleton("userService", StaticUserService);
         injector.bindSingleton("objectStorage", StaticObjectStorage);
