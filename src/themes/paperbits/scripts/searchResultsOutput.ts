@@ -1,7 +1,7 @@
 import * as lunr from "lunr";
 import template from "./searchResultsOutput.html";
 import { XmlHttpRequestClient } from "@paperbits/common/http";
-import { RuntimeComponent } from "@paperbits/common/ko/decorators";
+import { Component, RuntimeComponent, OnMounted } from "@paperbits/common/ko/decorators";
 
 
 export interface SearchResult {
@@ -9,15 +9,16 @@ export interface SearchResult {
     fragment: string;
     url: string;
 }
-
-
-@RuntimeComponent({
+@RuntimeComponent({ selector: "search-results-output" })
+@Component({
     selector: "search-results-output",
-    template: template
+    template: template,
+    injectable: "searchResultOutput"
 })
 export class SearchResultOutput {
     public pattern: ko.Observable<string>;
     public results: ko.ObservableArray<SearchResult>;
+    public hasResults: ko.Computed<boolean>;
 
     private searchTimeout: any;
     private idexer: any;
@@ -29,9 +30,9 @@ export class SearchResultOutput {
         const results = regex.exec(location.search);
 
         return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
-    };
+    }
 
-    constructor(params) {
+    constructor() {
         const searchString = this.getUrlParameter("q");
 
         this.pattern = ko.observable(searchString);
@@ -44,15 +45,15 @@ export class SearchResultOutput {
         });
 
         this.results = ko.observableArray([]);
-
-        this.loadIndex();
+        this.hasResults = ko.computed(() => this.results.length > 0);
     }
 
-    private async loadIndex(): Promise<void> {
+    @OnMounted()
+    public async loadiIndex(): Promise<void> {
         const httpClient = new XmlHttpRequestClient();
 
         try {
-            const response = await httpClient.send({ url: "/search-index.json", method: "GET" })
+            const response = await httpClient.send({ url: "/search-index.json", method: "GET" });
             const indexData = response.toObject();
 
             this.idexer = lunr.Index.load(indexData);
@@ -68,15 +69,15 @@ export class SearchResultOutput {
 
     private doSearch(): void {
         this.results([]);
-        
-        const searchRawResults = this.idexer.search(this.pattern()+"*");
+
+        const searchRawResults = this.idexer.search(this.pattern() + "*");
 
         searchRawResults.slice(0, 5).forEach(async result => {
             const searchTerm = Object.keys(result.matchData.metadata)[0];
             const searchResult = await this.fetchResults(searchTerm, result.ref);
 
             this.results.push(searchResult);
-        })
+        });
     }
 
     private async fetchResults(term: string, url: string): Promise<SearchResult> {
@@ -85,7 +86,7 @@ export class SearchResultOutput {
         const response = await httpClient.send({
             url: url,
             method: "GET"
-        })
+        });
 
         const text = response.toText();
         const el = document.createElement("div");
@@ -111,6 +112,6 @@ export class SearchResultOutput {
             title: title,
             fragment: fragment,
             url: url
-        }
+        };
     }
 }

@@ -48,7 +48,6 @@
 img:not([src]) {
     width: 270px;
     height: 270px;
-    display: block;
     position: relative;
 
     &:before {

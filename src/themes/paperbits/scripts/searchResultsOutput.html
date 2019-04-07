@@ -9,9 +9,15 @@
     </div>
 </form>
 
+<!-- ko if: hasResults -->
 <article data-bind="foreach: results">
     <h2>
         <a data-bind="attr: { href: $data.url }, text: $data.title"></a>
     </h2>
     <p data-bind="text: $data.fragment"></p>
 </article>
+<!-- /ko -->
+
+<!-- ko ifnot: hasResults -->
+<p>No results</p>
+<!-- /ko -->
