@@ -1238,7 +1238,7 @@
                                     "nodes": [
                                         {
                                             "rootKey": "main",
-                                            "sourceKey": "uploads/88238d72-237d-eefc-da3e-19bef9506808",
+                                            "pictureSourceKey": "uploads/88238d72-237d-eefc-da3e-19bef9506808",
                                             "type": "navbar"
                                         }
                                     ],
@@ -5143,7 +5143,7 @@
                                     "nodes": [
                                         {
                                             "rootKey": "main",
-                                            "sourceKey": "uploads/88238d72-237d-eefc-da3e-19bef9506808",
+                                            "pictureSourceKey": "uploads/88238d72-237d-eefc-da3e-19bef9506808",
                                             "type": "navbar"
                                         }
                                     ],
