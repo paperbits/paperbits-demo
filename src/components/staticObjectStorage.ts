@@ -91,7 +91,7 @@ export class StaticObjectStorage implements IObjectStorage {
             return;
         }
 
-        Objects.setValue(path, this.storageDataObject, Objects.clone(dataObject));
+        Objects.setValueAt(path, this.storageDataObject, Objects.clone(dataObject));
     }
 
     public async searchObjects<T>(path: string, query: Query<T>): Promise<Bag<T>> {
@@ -162,7 +162,7 @@ export class StaticObjectStorage implements IObjectStorage {
             const segments = item.key.split("/");
             const key = segments[1];
             
-            Objects.setValue(key, searchResultObject, item);
+            Objects.setValueAt(key, searchResultObject, item);
         });
 
         return searchResultObject;
