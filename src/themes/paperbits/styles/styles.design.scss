@@ -32,6 +32,12 @@ $style-guide-color: #000;
             }
         }
 
+        &.style-card-framed {
+            padding: 20px 20px;
+            min-width: 100px;
+            text-align: center;
+        }
+
         * {
             pointer-events: none;
         }
@@ -84,17 +90,14 @@ $style-guide-color: #000;
     }
 
     .font {
-        border: 1px solid #ededed;
-        padding: 20px 30px;
         display: inline-block;
-        min-width: 100px;
         text-align: center;
         margin: 5px;
 
         .font-sample {
             padding: 0;
             margin: 0;
-            font-size: 20px;
+            font-size: 40px;
         }
 
         .font-name {
