@@ -1,5 +1,6 @@
 import * as fs from "fs";
 import * as path from "path";
+import * as mime from "mime-types";
 import { IPublisher } from "@paperbits/common/publishing";
 import { IBlobStorage } from "@paperbits/common/persistence";
 
@@ -12,7 +13,10 @@ export class AssetPublisher implements IPublisher {
     private async copyAssetFrom(assetPath: string): Promise<void> {
         try {
             const byteArray = await this.downloadBlob(assetPath);
-            await this.outputBlobStorage.uploadBlob(assetPath, byteArray);
+            const fileName = assetPath.split("/").pop();
+            const contentType = mime.lookup(fileName) || "application/octet-stream";
+
+            await this.outputBlobStorage.uploadBlob(assetPath, byteArray, contentType);
         }
         catch (error) {
             console.log(assetPath + " assets error:" + error);

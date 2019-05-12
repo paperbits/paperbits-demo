@@ -63,6 +63,7 @@
         "knockout": "^3.5.0",
         "knockout-mapping": "^2.6.0",
         "knockout.validation": "^2.0.3",
-        "lunr": "^2.3.6"
+        "lunr": "^2.3.6",
+        "mime-types": "^2.1.23"
     }
 }
