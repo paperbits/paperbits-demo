@@ -81,8 +81,8 @@ section {
 
 .placeholder {
     min-height: 80px;
-    font-size: .7em;
     font-family: monospace;
+    font-size: 12px;
     text-transform: uppercase;
     height: 100%;
     width: 100%;
@@ -98,9 +98,8 @@ section {
         content: attr(placeholder);
         position: absolute;
         top: 50%;
-        transform: translateY(-50%);
-        width: 100%;
-        text-align: center;
+        left: 50%;
+        transform: translateY(-50%) translatex(-50%);
     }
 }
 
