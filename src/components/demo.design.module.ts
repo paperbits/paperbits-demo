@@ -13,7 +13,7 @@ import { StaticBlobStorage } from "./staticBlobStorage";
 import { StaticUserService } from "./staticUserService";
 import { YourWidgetEditorModule } from "./your-widget/ko/yourWidgetEditor.module";
 
-export class DemoEditModule implements IInjectorModule {
+export class DemoDesignModule implements IInjectorModule {
     public register(injector: IInjector): void {
         injector.bindModule(new YourWidgetEditorModule());
 
