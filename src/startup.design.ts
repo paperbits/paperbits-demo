@@ -12,7 +12,7 @@ import { InversifyInjector } from "@paperbits/common/injection";
 import { CoreDesignModule } from "@paperbits/core/core.design.module";
 import { FormsDesignModule } from "@paperbits/forms/forms.design.module";
 import { EmailsDesignModule } from "@paperbits/emails/emails.design.module";
-import { StylingDesignModule } from "@paperbits/styles/styles.design.module";
+import { StylesDesignModule } from "@paperbits/styles/styles.design.module";
 import { ProseMirrorModule } from "@paperbits/prosemirror/prosemirror.module";
 import { OfflineModule } from "@paperbits/common/persistence/offline.module";
 import { DemoDesignModule } from "./components/demo.design.module";
@@ -21,10 +21,10 @@ import { DemoDesignModule } from "./components/demo.design.module";
 // import { FirebaseModule } from "@paperbits/firebase/firebase.module";
 
 const injector = new InversifyInjector();
-injector.bindModule(new CoreEditModule());
-injector.bindModule(new FormsEditModule());
+injector.bindModule(new CoreDesignModule());
+injector.bindModule(new FormsDesignModule());
 injector.bindModule(new EmailsDesignModule());
-injector.bindModule(new StylingEditModule());
+injector.bindModule(new StylesDesignModule());
 injector.bindModule(new ProseMirrorModule());
 injector.bindModule(new DemoDesignModule());
 

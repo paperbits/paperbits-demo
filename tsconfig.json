@@ -19,7 +19,7 @@
         "listFiles": false,
         "sourceMap": false,
         "allowSyntheticDefaultImports": true,
-        "forceConsistentCasingInFileNames": true
+        "incremental": true
     },
     "exclude": [
         "./node_modules"
