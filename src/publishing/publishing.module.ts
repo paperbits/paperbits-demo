@@ -1,5 +1,3 @@
-import "setimmediate";
-import { createDocument } from "@paperbits/core/ko/knockout-rendering";
 import { IInjector } from "@paperbits/common/injection";
 import { EmailPublisher } from "@paperbits/emails/publishers";
 import { SitePublisher } from "./sitePublisher";
@@ -18,8 +16,6 @@ export class PublishingModule {
         injector.bindSingleton("mediaPublisher", MediaPublisher);
         injector.bindSingleton("emailPublisher", EmailPublisher);
 
-        createDocument();
-
         const stylePublisher = injector.resolve("stylePublisher");
         const pagePublisher = injector.resolve("pagePublisher");
         const mediaPublisher = injector.resolve("mediaPublisher");
@@ -33,7 +29,7 @@ export class PublishingModule {
             mediaPublisher,
             // blogPublisher,
             pagePublisher,
-            emailPublisher
+            // emailPublisher
         ]);
     }
 }

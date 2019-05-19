@@ -1,167 +1,43 @@
-:root {
-    // Grid proportions
-    --grid-width: 1140;
-    --grid-cells: 12;
-    --grid-column-width: calc(var(--grid-width) / var(--grid-cells));
-
-    // Grid logic
-    --grid-gutters: calc(var(--grid-cells) - 1);
-
-    // Grid proportion logic
-    --column-proportion: calc(var(--grid-column-width) / var(--grid-width));
-    --gutter-proportion: calc((1 - (var(--grid-cells) * var(--column-proportion))) / var(--grid-gutters));
-
-    // Container Units
-    --column-unit: calc(var(--column-proportion) * var(--container-width));
-    --gutter-unit: calc(var(--gutter-proportion) * var(--container-width));
-    --column-and-gutter-unit: calc(var(--column-unit) + var(--gutter-unit));
-
-    // Container Width
-    --container-width: 80vw;
-
-    // @media (min-width: 1000px) {
-    //     :root {
-    //         --container-width: 90vw;
-    //     }
-    // }
-
-    // @media (min-width: 1400px) {
-    //     :root {
-    //         --container-width: 1300px;
-    //     }
-    // }
-}
-
-$cells: 12;
-$breakpoint: "md";
-
-$breakpoints: (
-    xs: 0,
-    sm: 576px,
-    md: 768px,
-    lg: 992px,
-    xl: 1200px
-) !default;
-
 // .cell {
-//     border: 3px dashed #ccc;
+//     border: 1px dashed #ccc;
 //     text-align: center;
-//     position: absolute;
+//     position: relative;
+//     overflow: auto;
 // }
-// @each $breakpoint, $breakpoint-viewport in $breakpoints {
-//     @media (min-width: $breakpoint-viewport) {
-//         @for $i from 0 through $cells {
-//             .cell-#{$breakpoint}-width-#{$i} {
-//                 width: calc(var(--column-unit) * #{$i});
-//             }
 
-//             .cell-#{$breakpoint}-height-#{$i} {
-//                 height: calc(var(--column-unit) * #{$i});
-//             }
+// .resize-handle {
+//     position: absolute;
+//     border-radius: 50%;
+//     width: 15px;
+//     height: 15px;
+//     background: #00afef;
 
-//             .cell-#{$breakpoint}-top-#{$i} {
-//                 top: calc(var(--column-and-gutter-unit) * #{$i});
-//             }
-
-//             .cell-#{$breakpoint}-left-#{$i} {
-//                 left: calc(var(--column-and-gutter-unit) * #{$i});
-//             }
-
-//             .cell-#{$breakpoint}-right-#{$i} {
-//                 right: calc(var(--column-and-gutter-unit) * #{$i});
-//             }
-
-//             .cell-#{$breakpoint}-bottom-#{$i} {
-//                 bottom: calc(var(--column-and-gutter-unit) * #{$i});
-//             }
-//         }
+//     &.resize-handle-top {
+//         top: 0;
+//         left: 50%;
+//         transform: translateX(-50%) translateY(-50%);
+//         cursor: ns-resize;
+//     }
+//     &.resize-handle-bottom {
+//         bottom: 0;
+//         left: 50%;
+//         transform: translateX(-50%) translateY(50%);
+//         cursor: ns-resize;
+//     }
+//     &.resize-handle-left {
+//         top: 50%;
+//         left: 0;
+//         transform: translateX(-50%) translateY(-50%);
+//         cursor: ew-resize;
+//     }
+//     &.resize-handle-right {
+//         top: 50%;
+//         right: 0;
+//         transform: translateX(50%) translateY(-50%);
+//         cursor: ew-resize;
 //     }
 // }
 
-.cell {
-    border: 1px dashed #ccc;
-    text-align: center;
-    position: relative;
-    overflow: auto;
-}
-
-.resize-handle {
-    position: absolute;
-    border-radius: 50%;
-    width: 15px;
-    height: 15px;
-    background: #00afef;
-
-    &.resize-handle-top {
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%) translateY(-50%);
-        cursor: ns-resize;
-    }
-    &.resize-handle-bottom {
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%) translateY(50%);
-        cursor: ns-resize;
-    }
-    &.resize-handle-left {
-        top: 50%;
-        left: 0;
-        transform: translateX(-50%) translateY(-50%);
-        cursor: ew-resize;
-    }
-    &.resize-handle-right {
-        top: 50%;
-        right: 0;
-        transform: translateX(50%) translateY(-50%);
-        cursor: ew-resize;
-    }
-}
-
-.container2 {
-    display: grid;
-    grid-template-columns: repeat(12, 6vw);
-    grid-template-rows: repeat(12, 6vw);
-    margin: auto;
-}
-
-@each $breakpoint, $breakpoint-viewport in $breakpoints {
-    @media (min-width: $breakpoint-viewport) {
-        @for $i from 1 through $cells {
-            .cell-#{$breakpoint}-width-#{$i} {
-                grid-column-end: span #{$i};
-            }
-
-            .cell-#{$breakpoint}-height-#{$i} {
-                grid-row-end: span #{$i};
-            }
-
-            .cell-#{$breakpoint}-top-#{$i} {
-                grid-row-start: #{$i};
-            }
-
-            .cell-#{$breakpoint}-left-#{$i} {
-                grid-column-start: #{$i};
-
-                // &.cell-#{$breakpoint}-width-#{$i} {
-                //     grid-column-end: span #{$i};
-                // }
-            }
-
-            .cell-#{$breakpoint}-right-#{$i} {
-                grid-column-end: -#{$i};
-
-                // &.cell-#{$breakpoint}-width-#{$i} {
-                //     grid-column-start: span #{$i};
-                // }
-            }
-
-            .cell-#{$breakpoint}-bottom-#{$i} {
-                grid-row-end: -#{$i + 1};
-            }
-        }
-    }
-}
 
 .snippet-grid {
     display: grid;
