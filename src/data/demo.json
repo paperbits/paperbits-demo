@@ -9591,51 +9591,17 @@
             },
             "navbar": {
                 "default": {
-                    "border": {
-                        "bottom": {
-                            "color": "orange",
-                            "style": "solid"
-                        },
-                        "left": {
-                            "color": "orange",
-                            "style": "solid"
-                        },
-                        "right": {
-                            "color": "orange",
-                            "style": "solid"
-                        },
-                        "top": {
-                            "color": "orange",
-                            "style": "solid"
-                        }
-                    },
                     "components": {
                         "navLink": {
-                            "border": {
-                                "bottom": {
-                                    "color": "orange",
-                                    "style": "solid"
+                            "default": {
+                                "displayName": "Navigation link",
+                                "key": "components/navbar/default/components/navLink/default",
+                                "margin": {
+                                    "left": 25
                                 },
-                                "left": {
-                                    "color": "orange",
-                                    "style": "solid"
-                                },
-                                "right": {
-                                    "color": "orange",
-                                    "style": "solid"
-                                },
-                                "top": {
-                                    "color": "orange",
-                                    "style": "solid"
+                                "padding": {
+                                    "left": 0
                                 }
-                            },
-                            "displayName": "Navigation link",
-                            "key": "components/navbar/default/components/navLink",
-                            "margin": {
-                                "left": 25
-                            },
-                            "padding": {
-                                "left": 0
                             }
                         }
                     },
@@ -9885,26 +9851,24 @@
                 "default": {
                     "components": {
                         "li": {
-                            "displayName": "List item",
-                            "key": "globals/ul/components/li",
-                            "typography": {
-                                "fontWeight": "bold"
+                            "default": {
+                                "displayName": "List item",
+                                "key": "globals/ul/default/components/li/default"
                             }
                         }
                     },
                     "displayName": "Bulleted list",
-                    "key": "globals/ul/default",
-                    "typography": {
-                        "fontWeight": "normal"
-                    }
+                    "key": "globals/ul/default"
                 }
             },
             "ol": {
                 "default": {
                     "components": {
                         "li": {
-                            "displayName": "List item",
-                            "key": "globals/ol/components/li"
+                            "default": {
+                                "displayName": "List item",
+                                "key": "globals/ol/default/components/li/default"
+                            }
                         }
                     },
                     "displayName": "Numbered list",
