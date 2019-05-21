@@ -9898,6 +9898,18 @@
                         "fontWeight": "normal"
                     }
                 }
+            },
+            "ol": {
+                "default": {
+                    "components": {
+                        "li": {
+                            "displayName": "List item",
+                            "key": "globals/ol/components/li"
+                        }
+                    },
+                    "displayName": "Numbered list",
+                    "key": "globals/ol/default"
+                }
             }
         },
         "gradients": {
