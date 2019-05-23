@@ -24,7 +24,7 @@ export class StaticBlobStorage implements IBlobStorage {
      * @param content 
      * @param contentType 
      */
-    public async uploadBlob(blobKey: string, content: Uint8Array, contentType?: string): ProgressPromise<void> {
+    public uploadBlob(blobKey: string, content: Uint8Array, contentType?: string): ProgressPromise<void> {
         return new ProgressPromise<void>((resolve, reject, progress) => {
             this.storageDataObject[blobKey] = {
                 contentType: contentType,
