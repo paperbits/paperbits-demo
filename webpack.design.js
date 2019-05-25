@@ -3,7 +3,7 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const websiteTheme = "paperbits";
-const editorTheme = "paperbits-editor";
+const editorTheme = "designer";
 
 module.exports = {
     target: "web",

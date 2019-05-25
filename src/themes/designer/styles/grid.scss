@@ -39,6 +39,7 @@
 // }
 
 
+
 .snippet-grid {
     display: grid;
     grid-template-columns: repeat(12, 10px);
@@ -58,7 +59,7 @@
     min-width: 15px;
     min-height: 20px;
     margin: 2px;
-    &[role=article] {
-        background: #bfbfbf
+    &[role="article"] {
+        background: #bfbfbf;
     }
 }
