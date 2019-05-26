@@ -37,7 +37,7 @@ export class PagePublisher implements IPublisher {
         let htmlContent: string;
 
         const buildContentPromise = new Promise<void>(async (resolve, reject) => {
-            const layoutViewModel = await this.layoutViewModelBinder.getLayoutViewModel(page.permalink);
+            const layoutViewModel = await this.layoutViewModelBinder.getLayoutViewModel(page.permalink, null);
             ko.applyBindingsToNode(templateDocument.body, { widget: layoutViewModel }, null);
 
             if (page.ogImageSourceKey) {
@@ -49,7 +49,7 @@ export class PagePublisher implements IPublisher {
             setTimeout(() => {
                 htmlContent = "<!DOCTYPE html>" + templateDocument.documentElement.outerHTML;
                 resolve();
-            }, 10);
+            }, 500);
         });
 
         await buildContentPromise;

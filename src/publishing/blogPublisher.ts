@@ -32,14 +32,14 @@ export class BlogPublisher implements IPublisher {
         let htmlContent: string;
 
         const buildContentPromise = new Promise(async (resolve, reject) => {
-            const layoutViewModel = await this.layoutViewModelBinder.getLayoutViewModel(post.permalink);
+            const layoutViewModel = await this.layoutViewModelBinder.getLayoutViewModel(post.permalink, null);
             ko.applyBindingsToNode(templateDocument.body, { widget: layoutViewModel }, null);
 
             setTimeout(() => {
                 this.setSiteSettings(templateDocument, settings, iconFile, post);
                 htmlContent = "<!DOCTYPE html>" + templateDocument.documentElement.outerHTML;
                 resolve();
-            }, 10);
+            }, 500);
         });
 
         await buildContentPromise;

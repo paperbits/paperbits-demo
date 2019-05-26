@@ -6,7 +6,7 @@
  * found in the LICENSE file and at https://paperbits.io/license/mit.
  */
 
-import { IRouteHandler } from "@paperbits/common/routing";
+import { IRouteHandler, Route } from "@paperbits/common/routing";
 
 export class StaticRouteHandler implements IRouteHandler {
     private currentUrl: string;
@@ -30,8 +30,8 @@ export class StaticRouteHandler implements IRouteHandler {
         // this.callbacks.spliceremove(callback);
     }
 
-    public async navigateTo(hash: string): Promise<void> {
-        this.currentUrl = hash;
+    public async navigateTo(url: string): Promise<void> {
+        this.currentUrl = url;
 
         this.callbacks.forEach(callback => {
             callback();
@@ -52,5 +52,9 @@ export class StaticRouteHandler implements IRouteHandler {
 
     public getCurrentUrlMetadata(): Object {
         return this.metadata;
+    }
+
+    public getCurrentRoute(): Route {
+        return <any>{ path: this.currentUrl };
     }
 }
