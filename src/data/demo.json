@@ -9423,7 +9423,8 @@
                     "allowedStates": [
                         "hover",
                         "focus",
-                        "active"
+                        "active",
+                        "disabled"
                     ],
                     "background": {
                         "colorKey": "colors/defaultBg"
@@ -9538,6 +9539,9 @@
             },
             "formControl": {
                 "default": {
+                    "displayName": "Text box",
+                    "category": "appearance",
+                    "key": "components/formControl/default",
                     "border": {
                         "bottom": {
                             "color": "#ced4da",
@@ -9566,8 +9570,6 @@
                         "topLeftRadius": 5,
                         "topRightRadius": 5
                     },
-                    "displayName": "Text box",
-                    "key": "components/formControl/default",
                     "margin": {
                         "bottom": 0,
                         "left": 0,
@@ -9594,6 +9596,12 @@
                     "components": {
                         "navLink": {
                             "default": {
+                                "allowedStates": [
+                                    "hover",
+                                    "focus",
+                                    "active",
+                                    "disabled"
+                                ],
                                 "displayName": "Navigation link",
                                 "key": "components/navbar/default/components/navLink/default",
                                 "margin": {
@@ -9607,6 +9615,7 @@
                     },
                     "displayName": "Regular navigation bar",
                     "key": "components/navbar/default",
+                    "category": "appearance",
                     "typography": {
                         "fontKey": "fonts/jollyGood",
                         "fontSize": 24,
@@ -9617,12 +9626,14 @@
             "picture": {
                 "default": {
                     "displayName": "Normal picture",
+                    "category": "appearance",
                     "key": "components/picture/default"
                 }
             },
             "videoPlayer": {
                 "default": {
                     "displayName": "Default video player",
+                    "category": "appearance",
                     "key": "components/videoPlayer/default"
                 }
             }
@@ -9718,6 +9729,7 @@
             "a": {
                 "default": {
                     "displayName": "Link",
+                    "category": "appearance",
                     "allowedStates": [
                         "hover",
                         "focus",
@@ -9732,6 +9744,7 @@
             "blockquote": {
                 "default": {
                     "displayName": "Quote",
+                    "category": "appearance",
                     "key": "globals/blockquote/default",
                     "typography": {
                         "fontSize": 30,
@@ -9744,6 +9757,7 @@
             "body": {
                 "default": {
                     "displayName": "Regular",
+                    "category": "appearance",
                     "key": "globals/body/default",
                     "typography": {
                         "colorKey": "colors/default",
@@ -9757,6 +9771,7 @@
             "h1": {
                 "default": {
                     "displayName": "Heading Level 1",
+                    "category": "appearance",
                     "key": "globals/h1/default",
                     "typography": {
                         "fontSize": 45,
@@ -9767,25 +9782,8 @@
             },
             "h2": {
                 "default": {
-                    "border": {
-                        "bottom": {
-                            "color": "orange",
-                            "style": "solid"
-                        },
-                        "left": {
-                            "color": "orange",
-                            "style": "solid"
-                        },
-                        "right": {
-                            "color": "orange",
-                            "style": "solid"
-                        },
-                        "top": {
-                            "color": "orange",
-                            "style": "solid"
-                        }
-                    },
                     "displayName": "Heading Level 2",
+                    "category": "appearance",
                     "key": "globals/h2/default",
                     "padding": {
                         "top": 10
@@ -9800,6 +9798,7 @@
             "h3": {
                 "default": {
                     "displayName": "Heading Level 3",
+                    "category": "appearance",
                     "key": "globals/h3/default",
                     "typography": {
                         "fontSize": 25,
@@ -9811,6 +9810,7 @@
             "h4": {
                 "default": {
                     "displayName": "Heading Level 4",
+                    "category": "appearance",
                     "key": "globals/h4/default",
                     "typography": {
                         "fontSize": 20,
@@ -9822,6 +9822,7 @@
             "h5": {
                 "default": {
                     "displayName": "Heading Level 5",
+                    "category": "appearance",
                     "key": "globals/h5/default",
                     "typography": {
                         "fontSize": 18,
@@ -9833,6 +9834,7 @@
             "h6": {
                 "default": {
                     "displayName": "Heading Level 6",
+                    "category": "appearance",
                     "key": "globals/h6/default",
                     "typography": {
                         "fontSize": 16,
@@ -9844,6 +9846,7 @@
             "p": {
                 "default": {
                     "displayName": "Paragraph",
+                    "category": "appearance",
                     "key": "globals/p/default"
                 }
             },
@@ -9858,6 +9861,7 @@
                         }
                     },
                     "displayName": "Bulleted list",
+                    "category": "appearance",
                     "key": "globals/ul/default"
                 }
             },
@@ -9872,6 +9876,7 @@
                         }
                     },
                     "displayName": "Numbered list",
+                    "category": "appearance",
                     "key": "globals/ol/default"
                 }
             }
