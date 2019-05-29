@@ -91,7 +91,7 @@ export class StaticObjectStorage implements IObjectStorage {
             return;
         }
 
-        const clone = Objects.clone(dataObject);
+        const clone: any = Objects.clone(dataObject);
         Objects.setValue(path, this.storageDataObject, clone);
         Objects.cleanupObject(clone); // Ensure all "undefined" are cleaned up
     }
