@@ -1,13 +1,14 @@
 import template from "./yourWidgetEditor.html";
 import { YourWidgetModel } from "../yourWidgetModel";
 import { Component, OnMounted, Param, Event } from "@paperbits/common/ko/decorators";
+import { WidgetEditor } from "@paperbits/common/widgets";
 
 @Component({
     selector: "your-widget-editor",
     template: template,
     injectable: "yourWidgetEditor"
 })
-export class YourWidgetEditor {
+export class YourWidgetEditor implements WidgetEditor<YourWidgetModel> {
     @Param()
     public model: YourWidgetModel;
 
