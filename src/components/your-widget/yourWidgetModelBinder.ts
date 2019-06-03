@@ -2,7 +2,7 @@ import { IModelBinder } from "@paperbits/common/editing";
 import { YourWidgetModel } from "./yourWidgetModel";
 import { Contract } from "@paperbits/common";
 
-export class YourWidgetModelBinder implements IModelBinder {
+export class YourWidgetModelBinder implements IModelBinder<YourWidgetModel> {
     public canHandleContract(contract: Contract): boolean {
         return contract.type === "your-widget";
     }
