@@ -6,9 +6,9 @@
  * found in the LICENSE file and at https://paperbits.io/license/mit.
  */
 
-import { IRouteHandler, Route } from "@paperbits/common/routing";
+import { RouteHandler, Route } from "@paperbits/common/routing";
 
-export class StaticRouteHandler implements IRouteHandler {
+export class StaticRouteHandler implements RouteHandler {
     private currentUrl: string;
     private metadata: Object;
     private callbacks: any[];
