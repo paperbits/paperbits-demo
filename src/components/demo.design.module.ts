@@ -12,6 +12,7 @@ import { StaticObjectStorage } from "./staticObjectStorage";
 import { StaticBlobStorage } from "./staticBlobStorage";
 import { StaticUserService } from "./staticUserService";
 import { YourWidgetEditorModule } from "./your-widget/ko/yourWidgetEditor.module";
+import { HistoryRouteHandler } from "@paperbits/common/routing/historyRouteHandler";
 
 export class DemoDesignModule implements IInjectorModule {
     public register(injector: IInjector): void {
