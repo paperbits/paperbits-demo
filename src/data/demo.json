@@ -11111,7 +11111,7 @@
             },
             "body": {
                 "default": {
-                    "displayName": "Regular",
+                    "displayName": "Regular text",
                     "key": "globals/body/default",
                     "typography": {
                         "colorKey": "colors/default",
