@@ -46,7 +46,10 @@ const publisherConfig = {
             },
             {
                 test: /\.(png|woff|woff2|eot|ttf|svg)$/,
-                loader: "url-loader?limit=100000"
+                loader: "url-loader",
+                options: {
+                    limit: 10000
+                }
             }
         ]
     },
@@ -62,8 +65,8 @@ const publisherConfig = {
     optimization: {
         minimizer: [
             new TerserPlugin({
+                sourceMap: false,
                 terserOptions: {
-                    sourceMap: false,
                     mangle: false,
                     output: {
                         comments: false,
