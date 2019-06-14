@@ -15,7 +15,7 @@ import { IInjector, IInjectorModule } from "@paperbits/common/injection";
 import { StaticLocalObjectStorage } from "./staticLocalObjectStorage";
 import { FileSystemBlobStorage } from "./filesystemBlobStorage";
 import { StaticSettingsProvider } from "./staticSettingsProvider";
-import { StaticRouteHandler } from "./staticRouteHandler";
+import { StaticRouter } from "./staticRouter";
 
 export class DemoModule implements IInjectorModule {
     constructor(
@@ -26,7 +26,7 @@ export class DemoModule implements IInjectorModule {
 
     public register(injector: IInjector): void {
         injector.bindSingleton("userService", StaticUserService);
-        injector.bindSingleton("routeHandler", StaticRouteHandler);
+        injector.bindSingleton("router", StaticRouter);
         injector.bindSingleton("blobStorage", StaticBlobStorage);
         injector.bindInstance("objectStorage", new StaticLocalObjectStorage(path.resolve(this.dataPath)));
         injector.bindInstance("settingsProvider", new StaticSettingsProvider(path.resolve(this.settingsPath)));
