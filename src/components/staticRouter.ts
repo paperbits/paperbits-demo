@@ -8,7 +8,7 @@
 
 import { Router, Route } from "@paperbits/common/routing";
 
-export class StaticRouteHandler implements Router {
+export class StaticRouter implements Router {
     private currentUrl: string;
     private metadata: Object;
     private callbacks: any[];
