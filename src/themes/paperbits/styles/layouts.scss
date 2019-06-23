@@ -16,17 +16,6 @@ section {
     flex: none;
     padding: 10px;
 
-    .container,
-    .container-fluid {
-        display: flex;
-        flex-direction: column;
-        flex: 1;
-    }
-
-    .container-thinner {
-        max-width: 900px;
-    }
-
     .row {
         padding: 10px;
         min-height: 90px;
@@ -40,9 +29,6 @@ section {
         }
     }
 
-    &.with-padding {
-        padding: 40px;
-    }
     /* TODO: Enable row height through editor */
     &.stretch > .container, .container-fluid > .row {
         flex: 1;
