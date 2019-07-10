@@ -8,10 +8,11 @@
 
 import { InversifyInjector } from "@paperbits/common/injection";
 import { IPublisher } from "@paperbits/common/publishing";
-import { PublishingModule } from "./publishing";
 import { FormsModule } from "@paperbits/forms/forms.module";
-import { EmailsModule } from "@paperbits/emails/emails.module";
 import { CoreModule } from "@paperbits/core/core.module";
+import { CorePublishModule } from "@paperbits/core/core.publish.module";
+import { EmailsModule } from "@paperbits/emails/emails.module";
+import { EmailsPublishModule } from "@paperbits/emails/emails.publish.module";
 import { StyleModule } from "@paperbits/styles/styles.module";
 import { ProseMirrorModule } from "@paperbits/prosemirror/prosemirror.module";
 import { DemoModule } from "./components/demo.module";
@@ -22,8 +23,10 @@ import { DemoModule } from "./components/demo.module";
 /* Initializing dependency injection container */
 const injector = new InversifyInjector();
 injector.bindModule(new CoreModule());
+injector.bindModule(new CorePublishModule());
 injector.bindModule(new FormsModule());
 injector.bindModule(new EmailsModule());
+injector.bindModule(new EmailsPublishModule());
 injector.bindModule(new StyleModule());
 injector.bindModule(new ProseMirrorModule());
 
@@ -36,7 +39,6 @@ injector.bindModule(new DemoModule(dataPath, settingsPath, outputBasePath));
 /* Uncomment to enable Firebase module */
 // injector.bindModule(new FirebaseModule());
 
-injector.bindModule(new PublishingModule());
 injector.resolve("autostart");
 
 /* Building dependency injection container */
