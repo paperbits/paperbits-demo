@@ -6,8 +6,7 @@
  * found in the LICENSE file and at https://paperbits.io/license/mit.
  */
 
-import { ISettingsProvider } from "@paperbits/common/configuration/ISettingsProvider";
-import { IEventManager } from "@paperbits/common/events";
+import { ISettingsProvider } from "@paperbits/common/configuration";
 import * as Utils from "./utils";
 
 export class StaticSettingsProvider implements ISettingsProvider {
