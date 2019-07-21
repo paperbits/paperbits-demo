@@ -15,6 +15,8 @@ import { EmailsModule } from "@paperbits/emails/emails.module";
 import { EmailsPublishModule } from "@paperbits/emails/emails.publish.module";
 import { StyleModule } from "@paperbits/styles/styles.module";
 import { ProseMirrorModule } from "@paperbits/prosemirror/prosemirror.module";
+import { IntercomPublishModule } from "@paperbits/intercom/intercom.publish.module";
+import { GoogleTagManagerPublishModule } from "@paperbits/gtm/gtm.publish.module";
 import { DemoModule } from "./components/demo.module";
 
 /* Uncomment to enable Firebase module */
@@ -29,6 +31,8 @@ injector.bindModule(new EmailsModule());
 injector.bindModule(new EmailsPublishModule());
 injector.bindModule(new StyleModule());
 injector.bindModule(new ProseMirrorModule());
+injector.bindModule(new IntercomPublishModule());
+injector.bindModule(new GoogleTagManagerPublishModule());
 
 /* Initializing Demo module */
 const outputBasePath = "./dist/website";
