@@ -96,7 +96,7 @@ textarea {
     font-weight: $font-weight-base;
     font-size: $textbox-font-size;
     color: $color-base;
-    border: 1px solid #BDBFC1;
+    border: 1px solid #E6E7E8;
     display: block;
 
     &::placeholder {
@@ -189,7 +189,7 @@ hr {
 
 .input-group {
     display: flex !important;
-    border: 1px solid #BDBFC1;
+    border: 1px solid #E6E7E8;
 
     .form-control {
         border: none;
