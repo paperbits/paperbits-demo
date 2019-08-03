@@ -8,18 +8,19 @@
 
 
 import { IInjector, IInjectorModule } from "@paperbits/common/injection";
+import { App } from "./app/app";
 import { StaticObjectStorage } from "./staticObjectStorage";
 import { StaticBlobStorage } from "./staticBlobStorage";
 import { StaticUserService } from "./staticUserService";
 import { YourWidgetEditorModule } from "./your-widget/ko/yourWidgetEditor.module";
-import { HistoryRouteHandler } from "@paperbits/common/routing/historyRouteHandler";
+
 
 export class DemoDesignModule implements IInjectorModule {
     public register(injector: IInjector): void {
-        injector.bindModule(new YourWidgetEditorModule());
-
+        injector.bindSingleton("app", App);
         injector.bindSingleton("blobStorage", StaticBlobStorage);
         injector.bindSingleton("userService", StaticUserService);
         injector.bindSingleton("objectStorage", StaticObjectStorage);
+        injector.bindModule(new YourWidgetEditorModule());
     }
 }
