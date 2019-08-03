@@ -1,5 +1,3 @@
-
-
 /**
  * @license
  * Copyright Paperbits. All Rights Reserved.
@@ -9,15 +7,17 @@
  */
 
 import * as path from "path";
+import { ConsoleLogger } from "@paperbits/common/logging";
+import { IInjector, IInjectorModule } from "@paperbits/common/injection";
 import { StaticBlobStorage } from "./staticBlobStorage";
 import { StaticUserService } from "./staticUserService";
-import { IInjector, IInjectorModule } from "@paperbits/common/injection";
 import { StaticLocalObjectStorage } from "./staticLocalObjectStorage";
 import { FileSystemBlobStorage } from "./filesystemBlobStorage";
 import { StaticSettingsProvider } from "./staticSettingsProvider";
 import { StaticRouter } from "./staticRouter";
 
-export class DemoModule implements IInjectorModule {
+
+export class DemoPublishModule implements IInjectorModule {
     constructor(
         private readonly dataPath: string,
         private readonly settingsPath: string,
@@ -25,6 +25,7 @@ export class DemoModule implements IInjectorModule {
     ) { }
 
     public register(injector: IInjector): void {
+        injector.bindSingleton("logger", ConsoleLogger);
         injector.bindSingleton("userService", StaticUserService);
         injector.bindSingleton("router", StaticRouter);
         injector.bindSingleton("blobStorage", StaticBlobStorage);

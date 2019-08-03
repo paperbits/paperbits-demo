@@ -17,7 +17,7 @@ import { StyleModule } from "@paperbits/styles/styles.module";
 import { ProseMirrorModule } from "@paperbits/prosemirror/prosemirror.module";
 import { IntercomPublishModule } from "@paperbits/intercom/intercom.publish.module";
 import { GoogleTagManagerPublishModule } from "@paperbits/gtm/gtm.publish.module";
-import { DemoModule } from "./components/demo.module";
+import { DemoPublishModule } from "./components/demo.publish.module";
 
 /* Uncomment to enable Firebase module */
 // import { FirebaseModule } from "@paperbits/firebase/firebase.admin.module";
@@ -38,7 +38,7 @@ injector.bindModule(new GoogleTagManagerPublishModule());
 const outputBasePath = "./dist/website";
 const settingsPath = "./dist/publisher/config.json";
 const dataPath = "./dist/publisher/data/demo.json";
-injector.bindModule(new DemoModule(dataPath, settingsPath, outputBasePath));
+injector.bindModule(new DemoPublishModule(dataPath, settingsPath, outputBasePath));
 
 /* Uncomment to enable Firebase module */
 // injector.bindModule(new FirebaseModule());

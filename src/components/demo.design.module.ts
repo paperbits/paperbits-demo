@@ -9,6 +9,7 @@
 
 import { IInjector, IInjectorModule } from "@paperbits/common/injection";
 import { App } from "./app/app";
+import { ConsoleLogger } from "@paperbits/common/logging";
 import { StaticObjectStorage } from "./staticObjectStorage";
 import { StaticBlobStorage } from "./staticBlobStorage";
 import { StaticUserService } from "./staticUserService";
@@ -21,6 +22,7 @@ export class DemoDesignModule implements IInjectorModule {
         injector.bindSingleton("blobStorage", StaticBlobStorage);
         injector.bindSingleton("userService", StaticUserService);
         injector.bindSingleton("objectStorage", StaticObjectStorage);
+        injector.bindSingleton("logger", ConsoleLogger);
         injector.bindModule(new YourWidgetEditorModule());
     }
 }
