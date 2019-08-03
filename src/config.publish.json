@@ -19,7 +19,7 @@
                 "client_x509_cert_url": "..."
             }
         },
-        "rootKey": "/",
+        "databaseRootKey": "/",
         "storageBasePath": "/"
     },
     "emailTemplates": {

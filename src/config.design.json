@@ -4,7 +4,9 @@
         "authDomain": "< your domain >.firebaseapp.com",
         "databaseURL": "https://< your database URL >.firebaseio.com",
         "projectId": "< your project ID >",
-        "storageBucket": "< your storage bucket >.appspot.com"
+        "storageBucket": "< your storage bucket >.appspot.com",
+        "databaseRootKey": "/",
+        "storageBasePath": "/"
     },
     "environment": "design"
 }
