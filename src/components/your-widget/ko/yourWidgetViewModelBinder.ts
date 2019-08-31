@@ -19,7 +19,7 @@ export class YourWidgetViewModelBinder implements ViewModelBinder<YourWidgetMode
             model: model,
             editor: "your-widget-editor",
             applyChanges: () => {
-                this.modelToViewModel(model, viewModel);
+                this.modelToViewModel(model, viewModel, bindingContext);
                 this.eventManager.dispatchEvent("onContentUpdate");
             }
         };
