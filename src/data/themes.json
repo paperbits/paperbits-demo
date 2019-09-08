@@ -1,0 +1,1734 @@
+{
+    "test": {
+        "animations": {
+            "bounce": {
+                "displayName": "Bounce",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/bounce",
+                "name": "bounce",
+                "timingFunction": "linear"
+            },
+            "bounceIn": {
+                "displayName": "Bounce in",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/bounceIn",
+                "name": "bounceIn",
+                "timingFunction": "linear"
+            },
+            "bounceInDown": {
+                "displayName": "Bounce in down",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/bounceInDown",
+                "name": "bounceInDown",
+                "timingFunction": "linear"
+            },
+            "bounceInLeft": {
+                "displayName": "Bounce in left",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/bounceInLeft",
+                "name": "bounceInLeft",
+                "timingFunction": "linear"
+            },
+            "bounceInRight": {
+                "displayName": "Bounce in right",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/bounceInRight",
+                "name": "bounceInRight",
+                "timingFunction": "linear"
+            },
+            "bounceInUp": {
+                "displayName": "Bounce in up",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/bounceInUp",
+                "name": "bounceInUp",
+                "timingFunction": "linear"
+            },
+            "bounceOut": {
+                "displayName": "Bounce out",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/bounceOut",
+                "name": "bounceOut",
+                "timingFunction": "linear"
+            },
+            "bounceOutDown": {
+                "displayName": "Bounce out down",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/bounceOutDown",
+                "name": "bounceOutDown",
+                "timingFunction": "linear"
+            },
+            "bounceOutLeft": {
+                "displayName": "Bounce out left",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/bounceOutLeft",
+                "name": "bounceOutLeft",
+                "timingFunction": "linear"
+            },
+            "bounceOutRight": {
+                "displayName": "Bounce out right",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/bounceOutRight",
+                "name": "bounceOutRight",
+                "timingFunction": "linear"
+            },
+            "bounceOutUp": {
+                "displayName": "Bounce out up",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/bounceOutUp",
+                "name": "bounceOutUp",
+                "timingFunction": "linear"
+            },
+            "fadeIn": {
+                "displayName": "Fade in",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/fadeIn",
+                "name": "fadeIn",
+                "timingFunction": "linear"
+            },
+            "fadeInDown": {
+                "displayName": "Fade in down",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/fadeInDown",
+                "name": "fadeInDown",
+                "timingFunction": "linear"
+            },
+            "fadeInDownBig": {
+                "displayName": "Fade in down big",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/fadeInDownBig",
+                "name": "fadeInDownBig",
+                "timingFunction": "linear"
+            },
+            "fadeInLeft": {
+                "displayName": "Fade in left",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/fadeInLeft",
+                "name": "fadeInLeft",
+                "timingFunction": "linear"
+            },
+            "fadeInLeftBig": {
+                "displayName": "Fade in left big",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/fadeInLeftBig",
+                "name": "fadeInLeftBig",
+                "timingFunction": "linear"
+            },
+            "fadeInRight": {
+                "displayName": "Fade in right",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/fadeInRight",
+                "name": "fadeInRight",
+                "timingFunction": "linear"
+            },
+            "fadeInRightBig": {
+                "displayName": "Fade in right big",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/fadeInRightBig",
+                "name": "fadeInRightBig",
+                "timingFunction": "linear"
+            },
+            "fadeInUp": {
+                "displayName": "Fade in up",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/fadeInUp",
+                "name": "fadeInUp",
+                "timingFunction": "linear"
+            },
+            "fadeInUpBig": {
+                "displayName": "Fade in up big",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/fadeInUpBig",
+                "name": "fadeInUpBig",
+                "timingFunction": "linear"
+            },
+            "fadeOut": {
+                "displayName": "Fade out",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/fadeOut",
+                "name": "fadeOut",
+                "timingFunction": "linear"
+            },
+            "fadeOutDown": {
+                "displayName": "Fade out down",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/fadeOutDown",
+                "name": "fadeOutDown",
+                "timingFunction": "linear"
+            },
+            "fadeOutDownBig": {
+                "displayName": "Fade out down big",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/fadeOutDownBig",
+                "name": "fadeOutDownBig",
+                "timingFunction": "linear"
+            },
+            "fadeOutLeft": {
+                "displayName": "Fade out left",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/fadeOutLeft",
+                "name": "fadeOutLeft",
+                "timingFunction": "linear"
+            },
+            "fadeOutLeftBig": {
+                "displayName": "Fade out left big",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/fadeOutLeftBig",
+                "name": "fadeOutLeftBig",
+                "timingFunction": "linear"
+            },
+            "fadeOutRight": {
+                "displayName": "Fade out right",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/fadeOutRight",
+                "name": "fadeOutRight",
+                "timingFunction": "linear"
+            },
+            "fadeOutRightBig": {
+                "displayName": "Fade out right big",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/fadeOutRightBig",
+                "name": "fadeOutRightBig",
+                "timingFunction": "linear"
+            },
+            "fadeOutUp": {
+                "displayName": "Fade out up",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/fadeOutUp",
+                "name": "fadeOutUp",
+                "timingFunction": "linear"
+            },
+            "fadeOutUpBig": {
+                "displayName": "Fade out up big",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/fadeOutUpBig",
+                "name": "fadeOutUpBig",
+                "timingFunction": "linear"
+            },
+            "flash": {
+                "displayName": "Flash",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/flash",
+                "name": "flash",
+                "timingFunction": "linear"
+            },
+            "flipInX": {
+                "displayName": "Flip in X",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/flipInX",
+                "name": "flipInX",
+                "timingFunction": "linear"
+            },
+            "flipInY": {
+                "displayName": "Flip in Y",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/flipInY",
+                "name": "flipInY",
+                "timingFunction": "linear"
+            },
+            "flipOutX": {
+                "displayName": "Flip out X",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/flipOutX",
+                "name": "flipOutX",
+                "timingFunction": "linear"
+            },
+            "flipOutY": {
+                "displayName": "Flip out Y",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/flipOutY",
+                "name": "flipOutY",
+                "timingFunction": "linear"
+            },
+            "headShake": {
+                "displayName": "Head shake",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/headShake",
+                "name": "headShake",
+                "timingFunction": "linear"
+            },
+            "heartBeat": {
+                "displayName": "Heart beat",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/heartBeat",
+                "name": "heartBeat",
+                "timingFunction": "linear"
+            },
+            "hinge": {
+                "displayName": "Hinge",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/hinge",
+                "name": "hinge",
+                "timingFunction": "linear"
+            },
+            "jackInTheBox": {
+                "displayName": "Jack in the box",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/jackInTheBox",
+                "name": "jackInTheBox",
+                "timingFunction": "linear"
+            },
+            "jello": {
+                "displayName": "Jello",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/jello",
+                "name": "jello",
+                "timingFunction": "linear"
+            },
+            "lightSpeedIn": {
+                "displayName": "Light speed in",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/lightSpeedIn",
+                "name": "lightSpeedIn",
+                "timingFunction": "linear"
+            },
+            "lightSpeedOut": {
+                "displayName": "Light speed out",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/lightSpeedOut",
+                "name": "lightSpeedOut",
+                "timingFunction": "linear"
+            },
+            "pulse": {
+                "displayName": "Pulse",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/pulse",
+                "name": "pulse",
+                "timingFunction": "linear"
+            },
+            "rollIn": {
+                "displayName": "Roll in",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/rollIn",
+                "name": "rollIn",
+                "timingFunction": "linear"
+            },
+            "rollOut": {
+                "displayName": "Roll out",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/rollOut",
+                "name": "rollOut",
+                "timingFunction": "linear"
+            },
+            "rotateIn": {
+                "displayName": "Rotate in",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/rotateIn",
+                "name": "rotateIn",
+                "timingFunction": "linear"
+            },
+            "rotateInDownLeft": {
+                "displayName": "Rotate in down left",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/rotateInDownLeft",
+                "name": "rotateInDownLeft",
+                "timingFunction": "linear"
+            },
+            "rotateInDownRight": {
+                "displayName": "Rotate in down right",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/rotateInDownRight",
+                "name": "rotateInDownRight",
+                "timingFunction": "linear"
+            },
+            "rotateInUpLeft": {
+                "displayName": "Rotate in up left",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/rotateInUpLeft",
+                "name": "rotateInUpLeft",
+                "timingFunction": "linear"
+            },
+            "rotateInUpRight": {
+                "displayName": "Rotate in up right",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/rotateInUpRight",
+                "name": "rotateInUpRight",
+                "timingFunction": "linear"
+            },
+            "rotateOut": {
+                "displayName": "Rotate out",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/rotateOut",
+                "name": "rotateOut",
+                "timingFunction": "linear"
+            },
+            "rotateOutDownLeft": {
+                "displayName": "Rotate out down left",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/rotateOutDownLeft",
+                "name": "rotateOutDownLeft",
+                "timingFunction": "linear"
+            },
+            "rotateOutDownRight": {
+                "displayName": "Rotate out down right",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/rotateOutDownRight",
+                "name": "rotateOutDownRight",
+                "timingFunction": "linear"
+            },
+            "rotateOutUpLeft": {
+                "displayName": "Rotate out up left",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/rotateOutUpLeft",
+                "name": "rotateOutUpLeft",
+                "timingFunction": "linear"
+            },
+            "rotateOutUpRight": {
+                "displayName": "Rotate out up right",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/rotateOutUpRight",
+                "name": "rotateOutUpRight",
+                "timingFunction": "linear"
+            },
+            "rubberBand": {
+                "displayName": "Rubber band",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/rubberBand",
+                "name": "rubberBand",
+                "timingFunction": "linear"
+            },
+            "shake": {
+                "displayName": "Shake",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/shake",
+                "name": "shake",
+                "timingFunction": "linear"
+            },
+            "slideInDown": {
+                "displayName": "Slide in down",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/slideInDown",
+                "name": "slideInDown",
+                "timingFunction": "linear"
+            },
+            "slideInLeft": {
+                "displayName": "Slide in left",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/slideInLeft",
+                "name": "slideInLeft",
+                "timingFunction": "linear"
+            },
+            "slideInRight": {
+                "displayName": "Slide in right",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/slideInRight",
+                "name": "slideInRight",
+                "timingFunction": "linear"
+            },
+            "slideInUp": {
+                "displayName": "Slide in up",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/slideInUp",
+                "name": "slideInUp",
+                "timingFunction": "linear"
+            },
+            "slideOutDown": {
+                "displayName": "Slide out down",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/slideOutDown",
+                "name": "slideOutDown",
+                "timingFunction": "linear"
+            },
+            "slideOutLeft": {
+                "displayName": "Slide out left",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/slideOutLeft",
+                "name": "slideOutLeft",
+                "timingFunction": "linear"
+            },
+            "slideOutRight": {
+                "displayName": "Slide out right",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/slideOutRight",
+                "name": "slideOutRight",
+                "timingFunction": "linear"
+            },
+            "slideOutUp": {
+                "displayName": "Slide out up",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/slideOutUp",
+                "name": "slideOutUp",
+                "timingFunction": "linear"
+            },
+            "swing": {
+                "displayName": "Swing",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/swing",
+                "name": "swing",
+                "timingFunction": "linear"
+            },
+            "tada": {
+                "displayName": "Tada",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/tada",
+                "name": "tada",
+                "timingFunction": "linear"
+            },
+            "wobble": {
+                "displayName": "Wobble",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/wobble",
+                "name": "wobble",
+                "timingFunction": "linear"
+            },
+            "zoomIn": {
+                "displayName": "Zoom in",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/zoomIn",
+                "name": "zoomIn",
+                "timingFunction": "linear"
+            },
+            "zoomInDown": {
+                "displayName": "Zoom in down",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/zoomInDown",
+                "name": "zoomInDown",
+                "timingFunction": "linear"
+            },
+            "zoomInLeft": {
+                "displayName": "Zoom in left",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/zoomInLeft",
+                "name": "zoomInLeft",
+                "timingFunction": "linear"
+            },
+            "zoomInRight": {
+                "displayName": "Zoom in right",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/zoomInRight",
+                "name": "zoomInRight",
+                "timingFunction": "linear"
+            },
+            "zoomInUp": {
+                "displayName": "Zoom in up",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/zoomInUp",
+                "name": "zoomInUp",
+                "timingFunction": "linear"
+            },
+            "zoomOut": {
+                "displayName": "Zoom out",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/zoomOut",
+                "name": "zoomOut",
+                "timingFunction": "linear"
+            },
+            "zoomOutDown": {
+                "displayName": "Zoom out down",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/zoomOutDown",
+                "name": "zoomOutDown",
+                "timingFunction": "linear"
+            },
+            "zoomOutLeft": {
+                "displayName": "Zoom out left",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/zoomOutLeft",
+                "name": "zoomOutLeft",
+                "timingFunction": "linear"
+            },
+            "zoomOutRight": {
+                "displayName": "Zoom out right",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/zoomOutRight",
+                "name": "zoomOutRight",
+                "timingFunction": "linear"
+            },
+            "zoomOutUp": {
+                "displayName": "Zoom out up",
+                "duration": 1000,
+                "iterationCount": "1",
+                "key": "animations/zoomOutUp",
+                "name": "zoomOutUp",
+                "timingFunction": "linear"
+            }
+        },
+        "colors": {
+            "7y8nf": {
+                "displayName": "Light Gray Bg",
+                "key": "colors/7y8nf",
+                "value": "rgba(250, 250, 250, 1.0)"
+            },
+            "dark": {
+                "displayName": "Dark Bg",
+                "key": "colors/dark",
+                "value": "rgba(42, 48, 48, 1.0)"
+            },
+            "default": {
+                "displayName": "Default text",
+                "key": "colors/default",
+                "value": "rgba(102, 102, 102, 1.0)"
+            },
+            "defaultBg": {
+                "displayName": "Default Bg",
+                "key": "colors/defaultBg",
+                "value": "rgba(248, 248, 248, 1.0)"
+            },
+            "he49I": {
+                "displayName": "Gray Bg",
+                "key": "colors/he49I",
+                "value": "rgba(238, 241, 242, 1.0)"
+            },
+            "links": {
+                "displayName": "Links",
+                "key": "colors/links",
+                "value": "rgba(225, 103, 65, 1.0)"
+            },
+            "primaryBg": {
+                "displayName": "Primary Bg",
+                "key": "colors/primaryBg",
+                "value": "rgba(225, 103, 65, 1.0)"
+            },
+            "primaryText": {
+                "displayName": "Primary text",
+                "key": "colors/primaryText",
+                "value": "#fff"
+            },
+            "tXUwZ": {
+                "displayName": "Dark text",
+                "key": "colors/tXUwZ",
+                "value": "rgba(255, 255, 255, 1.0)"
+            }
+        },
+        "components": {
+            "button": {
+                "calck": {
+                    "background": {
+                        "colorKey": "colors/links"
+                    },
+                    "border": {
+                        "bottom": {
+                            "color": "orange",
+                            "style": "solid",
+                            "width": 0
+                        },
+                        "left": {
+                            "color": "orange",
+                            "style": "solid",
+                            "width": 0
+                        },
+                        "right": {
+                            "color": "orange",
+                            "style": "solid",
+                            "width": 0
+                        },
+                        "top": {
+                            "color": "orange",
+                            "style": "solid",
+                            "width": 0
+                        }
+                    },
+                    "borderRadius": {
+                        "bottomLeftRadius": 5,
+                        "bottomRightRadius": 5,
+                        "topLeftRadius": 5,
+                        "topRightRadius": 5
+                    },
+                    "category": "appearance",
+                    "displayName": "Another button",
+                    "key": "components/button/calck",
+                    "margin": {
+                        "bottom": 10,
+                        "left": 10,
+                        "right": 10,
+                        "top": 10
+                    },
+                    "padding": {
+                        "bottom": 9,
+                        "left": 30,
+                        "right": 30,
+                        "top": 9
+                    },
+                    "shadow": {
+                        "shadowKey": "shadows/shadow1"
+                    },
+                    "typography": {
+                        "colorKey": "colors/default",
+                        "fontStyle": "normal",
+                        "fontWeight": "bold"
+                    }
+                },
+                "default": {
+                    "background": {
+                        "colorKey": "colors/defaultBg"
+                    },
+                    "border": {
+                        "bottom": {
+                            "color": "orange",
+                            "style": "solid",
+                            "width": 0
+                        },
+                        "left": {
+                            "color": "orange",
+                            "style": "solid",
+                            "width": 0
+                        },
+                        "right": {
+                            "color": "orange",
+                            "style": "solid",
+                            "width": 0
+                        },
+                        "top": {
+                            "color": "orange",
+                            "style": "solid",
+                            "width": 0
+                        }
+                    },
+                    "borderRadius": {
+                        "bottomLeftRadius": 100,
+                        "bottomRightRadius": 100,
+                        "topLeftRadius": 100,
+                        "topRightRadius": 100
+                    },
+                    "category": "appearance",
+                    "displayName": "Normal button",
+                    "key": "components/button/default",
+                    "margin": {
+                        "bottom": 10,
+                        "left": 10,
+                        "right": 10,
+                        "top": 10
+                    },
+                    "padding": {
+                        "bottom": 9,
+                        "left": 30,
+                        "right": 30,
+                        "top": 9
+                    },
+                    "shadow": {
+                        "shadowKey": "shadows/shadow1"
+                    },
+                    "typography": {
+                        "colorKey": "colors/links",
+                        "fontStyle": "normal",
+                        "fontWeight": "normal"
+                    }
+                },
+                "primary": {
+                    "background": {
+                        "colorKey": "colors/primaryBg",
+                        "gradientKey": "gradients/gradient2"
+                    },
+                    "borderRadius": {
+                        "bottomLeftRadius": 100,
+                        "bottomRightRadius": 100,
+                        "topLeftRadius": 100,
+                        "topRightRadius": 100
+                    },
+                    "category": "appearance",
+                    "displayName": "Primary button",
+                    "key": "components/button/primary",
+                    "typography": {
+                        "colorKey": "colors/primaryText"
+                    }
+                }
+            },
+            "card": {
+                "default": {
+                    "background": {
+                        "colorKey": "colors/defaultBg"
+                    },
+                    "border": {
+                        "bottom": {
+                            "color": "orange",
+                            "style": "solid"
+                        },
+                        "left": {
+                            "color": "orange",
+                            "style": "solid"
+                        },
+                        "right": {
+                            "color": "orange",
+                            "style": "solid"
+                        },
+                        "top": {
+                            "color": "orange",
+                            "style": "solid"
+                        }
+                    },
+                    "borderRadius": {
+                        "bottomLeftRadius": 5,
+                        "bottomRightRadius": 5,
+                        "topLeftRadius": 5,
+                        "topRightRadius": 5
+                    },
+                    "category": "appearance",
+                    "displayName": "Normal card",
+                    "key": "components/card/default",
+                    "margin": {
+                        "bottom": 10,
+                        "left": 10,
+                        "right": 10,
+                        "top": 10
+                    },
+                    "padding": {
+                        "bottom": 9,
+                        "left": 10,
+                        "right": 10,
+                        "top": 9
+                    },
+                    "shadow": {
+                        "shadowKey": "shadows/shadow1"
+                    },
+                    "typography": {
+                        "colorKey": "colors/default",
+                        "fontSize": 14,
+                        "fontStyle": "normal",
+                        "fontWeight": "normal"
+                    }
+                },
+                "win2v": {
+                    "animation": {
+                        "animationKey": "animations/fadeInUp",
+                        "duration": 1,
+                        "iterationCount": "1"
+                    },
+                    "background": {
+                        "colorKey": "colors/7y8nf",
+                        "images": [
+                            {
+                                "position": "top left",
+                                "repeat": "no-repeat",
+                                "size": "2.5em",
+                                "sourceKey": "uploads/442e4d8b-227b-3516-d892-834e4a89101a"
+                            }
+                        ]
+                    },
+                    "border": {
+                        "bottom": {
+                            "color": "orange",
+                            "style": "solid"
+                        },
+                        "left": {
+                            "color": "orange",
+                            "style": "solid"
+                        },
+                        "right": {
+                            "color": "orange",
+                            "style": "solid"
+                        },
+                        "top": {
+                            "color": "orange",
+                            "style": "solid"
+                        }
+                    },
+                    "category": "appearance",
+                    "displayName": "Feature card",
+                    "key": "components/card/win2v",
+                    "padding": {
+                        "bottom": 9,
+                        "left": 50,
+                        "right": 10,
+                        "top": 9
+                    },
+                    "shadow": {
+                        "shadowKey": "shadows/none"
+                    },
+                    "typography": {
+                        "colorKey": "colors/default",
+                        "fontSize": 14,
+                        "fontStyle": "normal",
+                        "fontWeight": "normal"
+                    }
+                }
+            },
+            "formControl": {
+                "default": {
+                    "border": {
+                        "bottom": {
+                            "color": "#ced4da",
+                            "style": "solid",
+                            "width": 1
+                        },
+                        "left": {
+                            "color": "#ced4da",
+                            "style": "solid",
+                            "width": 1
+                        },
+                        "right": {
+                            "color": "#ced4da",
+                            "style": "solid",
+                            "width": 1
+                        },
+                        "top": {
+                            "color": "#ced4da",
+                            "style": "solid",
+                            "width": 1
+                        }
+                    },
+                    "borderRadius": {
+                        "bottomLeftRadius": 5,
+                        "bottomRightRadius": 5,
+                        "topLeftRadius": 5,
+                        "topRightRadius": 5
+                    },
+                    "displayName": "Text box",
+                    "key": "components/formControl/default",
+                    "margin": {
+                        "bottom": 0,
+                        "left": 0,
+                        "right": 0,
+                        "top": 0
+                    },
+                    "padding": {
+                        "bottom": 10,
+                        "left": 10,
+                        "right": 10,
+                        "top": 10
+                    },
+                    "shadow": {
+                        "shadowKey": "shadows/shadow3"
+                    },
+                    "typography": {
+                        "fontStyle": "normal",
+                        "fontWeight": "normal"
+                    }
+                }
+            },
+            "navbar": {
+                "default": {
+                    "border": {
+                        "bottom": {
+                            "color": "orange",
+                            "style": "solid"
+                        },
+                        "left": {
+                            "color": "orange",
+                            "style": "solid"
+                        },
+                        "right": {
+                            "color": "orange",
+                            "style": "solid"
+                        },
+                        "top": {
+                            "color": "orange",
+                            "style": "solid"
+                        }
+                    },
+                    "components": {
+                        "navLink": {
+                            "border": {
+                                "bottom": {
+                                    "color": "orange",
+                                    "style": "solid"
+                                },
+                                "left": {
+                                    "color": "orange",
+                                    "style": "solid"
+                                },
+                                "right": {
+                                    "color": "orange",
+                                    "style": "solid"
+                                },
+                                "top": {
+                                    "color": "orange",
+                                    "style": "solid"
+                                }
+                            },
+                            "displayName": "Navigation link",
+                            "key": "components/navbar/default/components/navLink",
+                            "margin": {
+                                "left": 15
+                            }
+                        }
+                    },
+                    "displayName": "Navigation bar",
+                    "key": "components/navbar/default",
+                    "typography": {
+                        "fontSize": 24,
+                        "textTransform": "lowercase"
+                    }
+                }
+            },
+            "picture": {
+                "default": {
+                    "displayName": "Normal picture",
+                    "key": "components/picture/default"
+                }
+            },
+            "videoPlayer": {
+                "default": {
+                    "displayName": "Default video player",
+                    "key": "components/videoPlayer/default"
+                }
+            }
+        },
+        "fonts": {
+            "RkAPA": {
+                "category": "sans-serif",
+                "displayName": "Montserrat",
+                "family": "Montserrat",
+                "key": "fonts/RkAPA",
+                "lastModified": "2017-11-07",
+                "variants": [
+                    {
+                        "file": "https://fonts.gstatic.com/s/montserrat/v12/JTUQjIg1_i6t8kCHKm45_Qphzg.ttf",
+                        "style": "normal",
+                        "weight": "100"
+                    },
+                    {
+                        "file": "https://fonts.gstatic.com/s/montserrat/v12/JTUOjIg1_i6t8kCHKm459WxZqi7j.ttf",
+                        "style": "italic",
+                        "weight": "100"
+                    },
+                    {
+                        "file": "https://fonts.gstatic.com/s/montserrat/v12/JTURjIg1_i6t8kCHKm45_aZA7g4.ttf",
+                        "style": "normal",
+                        "weight": "200"
+                    },
+                    {
+                        "file": "https://fonts.gstatic.com/s/montserrat/v12/JTUPjIg1_i6t8kCHKm459WxZBg_D-w.ttf",
+                        "style": "italic",
+                        "weight": "200"
+                    },
+                    {
+                        "file": "https://fonts.gstatic.com/s/montserrat/v12/JTURjIg1_i6t8kCHKm45_cJD7g4.ttf",
+                        "style": "normal",
+                        "weight": "300"
+                    },
+                    {
+                        "file": "https://fonts.gstatic.com/s/montserrat/v12/JTUPjIg1_i6t8kCHKm459WxZYgzD-w.ttf",
+                        "style": "italic",
+                        "weight": "300"
+                    },
+                    {
+                        "file": "https://fonts.gstatic.com/s/montserrat/v12/JTUSjIg1_i6t8kCHKm45xW4.ttf",
+                        "style": "regular",
+                        "weight": 400
+                    },
+                    {
+                        "file": "https://fonts.gstatic.com/s/montserrat/v12/JTUQjIg1_i6t8kCHKm459Wxhzg.ttf",
+                        "style": "italic",
+                        "weight": 400
+                    },
+                    {
+                        "file": "https://fonts.gstatic.com/s/montserrat/v12/JTURjIg1_i6t8kCHKm45_ZpC7g4.ttf",
+                        "style": "normal",
+                        "weight": "500"
+                    },
+                    {
+                        "file": "https://fonts.gstatic.com/s/montserrat/v12/JTUPjIg1_i6t8kCHKm459WxZOg3D-w.ttf",
+                        "style": "italic",
+                        "weight": "500"
+                    },
+                    {
+                        "file": "https://fonts.gstatic.com/s/montserrat/v12/JTURjIg1_i6t8kCHKm45_bZF7g4.ttf",
+                        "style": "normal",
+                        "weight": "600"
+                    },
+                    {
+                        "file": "https://fonts.gstatic.com/s/montserrat/v12/JTUPjIg1_i6t8kCHKm459WxZFgrD-w.ttf",
+                        "style": "italic",
+                        "weight": "600"
+                    },
+                    {
+                        "file": "https://fonts.gstatic.com/s/montserrat/v12/JTURjIg1_i6t8kCHKm45_dJE7g4.ttf",
+                        "style": "normal",
+                        "weight": "700"
+                    },
+                    {
+                        "file": "https://fonts.gstatic.com/s/montserrat/v12/JTUPjIg1_i6t8kCHKm459WxZcgvD-w.ttf",
+                        "style": "italic",
+                        "weight": "700"
+                    },
+                    {
+                        "file": "https://fonts.gstatic.com/s/montserrat/v12/JTURjIg1_i6t8kCHKm45_c5H7g4.ttf",
+                        "style": "normal",
+                        "weight": "800"
+                    },
+                    {
+                        "file": "https://fonts.gstatic.com/s/montserrat/v12/JTUPjIg1_i6t8kCHKm459WxZbgjD-w.ttf",
+                        "style": "italic",
+                        "weight": "800"
+                    },
+                    {
+                        "file": "https://fonts.gstatic.com/s/montserrat/v12/JTURjIg1_i6t8kCHKm45_epG7g4.ttf",
+                        "style": "normal",
+                        "weight": "900"
+                    },
+                    {
+                        "file": "https://fonts.gstatic.com/s/montserrat/v12/JTUPjIg1_i6t8kCHKm459WxZSgnD-w.ttf",
+                        "style": "italic",
+                        "weight": "900"
+                    }
+                ],
+                "version": "v12"
+            },
+            "default": {
+                "category": "sans-serif",
+                "displayName": "Advent Pro",
+                "family": "Advent Pro",
+                "key": "fonts/default",
+                "kind": "webfonts#webfont",
+                "lastModified": "2017-10-10",
+                "variants": [
+                    {
+                        "file": "https://fonts.gstatic.com/s/adventpro/v7/V8mCoQfxVT4Dvddr_yOwjVmtLQ.ttf",
+                        "style": "normal",
+                        "weight": 100
+                    },
+                    {
+                        "file": "https://fonts.gstatic.com/s/adventpro/v7/V8mDoQfxVT4Dvddr_yOwjfWMDbY.ttf",
+                        "style": "normal",
+                        "weight": 200
+                    },
+                    {
+                        "file": "https://fonts.gstatic.com/s/adventpro/v7/V8mDoQfxVT4Dvddr_yOwjZGPDbY.ttf",
+                        "style": "normal",
+                        "weight": 300
+                    },
+                    {
+                        "file": "https://fonts.gstatic.com/s/adventpro/v7/V8mAoQfxVT4Dvddr_yOwtT0.ttf",
+                        "style": "normal",
+                        "weight": 400
+                    },
+                    {
+                        "file": "https://fonts.gstatic.com/s/adventpro/v7/V8mDoQfxVT4Dvddr_yOwjcmODbY.ttf",
+                        "style": "normal",
+                        "weight": 500
+                    },
+                    {
+                        "file": "https://fonts.gstatic.com/s/adventpro/v7/V8mDoQfxVT4Dvddr_yOwjeWJDbY.ttf",
+                        "style": "normal",
+                        "weight": 600
+                    },
+                    {
+                        "file": "https://fonts.gstatic.com/s/adventpro/v7/V8mDoQfxVT4Dvddr_yOwjYGIDbY.ttf",
+                        "style": "normal",
+                        "weight": 700
+                    }
+                ],
+                "version": "v7"
+            },
+            "jollyGood": {
+                "displayName": "Jolly Good",
+                "family": "JollyGoodSans-Basic",
+                "key": "fonts/jollyGood",
+                "variants": [
+                    {
+                        "file": "https://cdn.paperbits.io/fonts/JollyGoodSans-Basic.woff2",
+                        "style": "normal",
+                        "weight": "400"
+                    }
+                ]
+            },
+            "quicksand": {
+                "displayName": "Quicksand",
+                "family": "Quicksand",
+                "key": "fonts/quicksand",
+                "variants": [
+                    {
+                        "file": "https://fonts.gstatic.com/s/quicksand/v8/6xKodSZaM9iE8KbpRA_pgHYoSA.ttf",
+                        "style": "normal",
+                        "weight": "300"
+                    },
+                    {
+                        "file": "https://fonts.gstatic.com/s/quicksand/v8/6xKtdSZaM9iE8KbpRA_RLA.ttf",
+                        "style": "regular",
+                        "weight": 400
+                    },
+                    {
+                        "file": "https://fonts.gstatic.com/s/quicksand/v8/6xKodSZaM9iE8KbpRA_p2HcoSA.ttf",
+                        "style": "normal",
+                        "weight": "500"
+                    },
+                    {
+                        "file": "https://fonts.gstatic.com/s/quicksand/v8/6xKodSZaM9iE8KbpRA_pkHEoSA.ttf",
+                        "style": "normal",
+                        "weight": "700"
+                    }
+                ]
+            }
+        },
+        "globals": {
+            "a": {
+                "default": {
+                    "displayName": "Link",
+                    "key": "globals/a",
+                    "typography": {
+                        "colorKey": "colors/links"
+                    }
+                }
+            },
+            "blockquote": {
+                "default": {
+                    "displayName": "Quote",
+                    "key": "globals/blockquote",
+                    "typography": {
+                        "fontSize": 30,
+                        "fontStyle": "italic",
+                        "fontWeight": "normal",
+                        "textAlign": "center"
+                    }
+                }
+            },
+            "body": {
+                "default": {
+                    "displayName": "Text",
+                    "key": "globals/body",
+                    "typography": {
+                        "colorKey": "colors/default",
+                        "fontKey": "fonts/RkAPA",
+                        "fontSize": 18,
+                        "fontStyle": "normal",
+                        "fontWeight": "normal"
+                    }
+                }
+            },
+            "h1": {
+                "default": {
+                    "displayName": "Heading Level 1",
+                    "key": "globals/h1",
+                    "typography": {
+                        "fontSize": 45,
+                        "fontStyle": "normal",
+                        "fontWeight": "normal"
+                    }
+                }
+            },
+            "h2": {
+                "default": {
+                    "displayName": "Heading Level 2",
+                    "key": "globals/h2",
+                    "typography": {
+                        "fontSize": 30,
+                        "fontStyle": "normal",
+                        "fontWeight": "normal"
+                    }
+                }
+            },
+            "h3": {
+                "default": {
+                    "displayName": "Heading Level 3",
+                    "key": "globals/h3",
+                    "typography": {
+                        "fontSize": 25,
+                        "fontStyle": "normal",
+                        "fontWeight": "normal"
+                    }
+                }
+            },
+            "h4": {
+                "default": {
+                    "displayName": "Heading Level 4",
+                    "key": "globals/h4",
+                    "typography": {
+                        "fontSize": 21,
+                        "fontStyle": "normal",
+                        "fontWeight": "bold"
+                    }
+                }
+            },
+            "h5": {
+                "default": {
+                    "displayName": "Heading Level 5",
+                    "key": "globals/h5",
+                    "typography": {
+                        "fontSize": 18,
+                        "fontStyle": "normal",
+                        "fontWeight": "normal"
+                    }
+                }
+            },
+            "h6": {
+                "default": {
+                    "displayName": "Heading Level 6",
+                    "key": "globals/h6",
+                    "typography": {
+                        "fontSize": 16,
+                        "fontStyle": "normal",
+                        "fontWeight": "normal"
+                    }
+                }
+            },
+            "p": {
+                "default": {
+                    "displayName": "Paragraph",
+                    "key": "globals/p",
+                    "typography": {
+                        "fontSize": 16,
+                        "fontStyle": "normal",
+                        "fontWeight": "normal"
+                    }
+                }
+            },
+            "ul": {
+                "default": {
+                    "components": {
+                        "li": {
+                            "displayName": "List item",
+                            "key": "globals/ul/components/li",
+                            "typography": {
+                                "fontWeight": "bold"
+                            }
+                        }
+                    },
+                    "displayName": "Bulleted list",
+                    "key": "globals/ul",
+                    "typography": {
+                        "fontWeight": "normal"
+                    }
+                }
+            }
+        },
+        "gradients": {
+            "gradient1": {
+                "colorStops": [
+                    {
+                        "color": "#87e0fd",
+                        "length": "0"
+                    },
+                    {
+                        "color": "#53cbf1",
+                        "length": "40"
+                    },
+                    {
+                        "color": "#05abe0",
+                        "length": "100"
+                    }
+                ],
+                "direction": "45deg",
+                "displayName": "Gradient 1",
+                "key": "gradients/gradient1"
+            },
+            "gradient2": {
+                "colorStops": [
+                    {
+                        "color": "#d8544d",
+                        "length": "0"
+                    },
+                    {
+                        "color": "#eeb087",
+                        "length": "100"
+                    }
+                ],
+                "direction": "30deg",
+                "displayName": "Gradient 2",
+                "key": "gradients/gradient2"
+            }
+        },
+        "instances": {
+            "section-2hKyW": {
+                "background": {
+                    "colorKey": "colors/he49I"
+                }
+            },
+            "section-4Yane": {
+                "background": {
+                    "colorKey": "colors/7y8nf"
+                }
+            },
+            "section-6C1Jz": {
+                "background": {
+                    "colorKey": "colors/he49I"
+                }
+            },
+            "section-C8Bo8": {
+                "background": {
+                    "colorKey": "colors/7y8nf"
+                }
+            },
+            "section-OjT6s": {
+                "background": {
+                    "colorKey": "colors/dark"
+                },
+                "typography": {
+                    "colorKey": "colors/tXUwZ",
+                    "textAlign": "center"
+                }
+            },
+            "section-S0ZVM": {
+                "background": {
+                    "colorKey": "colors/defaultBg"
+                }
+            },
+            "section-XCfj4": {
+                "background": {
+                    "images": [
+                        {
+                            "position": "center center",
+                            "repeat": "no-repeat",
+                            "size": "cover",
+                            "sourceKey": "uploads/e44baa24-17bf-8730-7f84-c44ac7556852"
+                        }
+                    ]
+                },
+                "typography": {
+                    "colorKey": "colors/primaryText"
+                }
+            },
+            "section-b3Itr": {
+                "background": {
+                    "images": [
+                        {
+                            "position": "center center",
+                            "repeat": "no-repeat",
+                            "size": "cover",
+                            "sourceKey": "uploads/2cc8d7e5-363c-3efc-b5a3-340fdafdbd9d"
+                        }
+                    ]
+                }
+            },
+            "section-gCTK3": {
+                "background": {
+                    "colorKey": "colors/dark"
+                },
+                "typography": {
+                    "colorKey": "colors/primaryText"
+                }
+            },
+            "section-ixZTo": {
+                "background": {
+                    "colorKey": "colors/dark"
+                }
+            },
+            "section-joOqI": {
+                "typography": {
+                    "colorKey": "colors/primaryBg"
+                }
+            },
+            "section-oHZmj": {
+                "typography": {
+                    "colorKey": "colors/default"
+                }
+            },
+            "section-qsYDT": {
+                "background": {
+                    "images": [
+                        {
+                            "position": "center center",
+                            "repeat": "no-repeat",
+                            "size": "cover",
+                            "sourceKey": "uploads/2cc8d7e5-363c-3efc-b5a3-340fdafdbd9d"
+                        }
+                    ]
+                },
+                "typography": {
+                    "colorKey": "colors/primaryText"
+                }
+            },
+            "section-wk69D": {
+                "background": {
+                    "images": [
+                        {
+                            "position": "center center",
+                            "repeat": "no-repeat",
+                            "size": "cover",
+                            "sourceKey": "uploads/5496f745-fd16-1caa-6276-fa3522360d9f"
+                        }
+                    ]
+                },
+                "typography": {
+                    "colorKey": "colors/primaryText"
+                }
+            },
+            "section-wsdK3": {
+                "background": {
+                    "colorKey": "colors/he49I"
+                }
+            }
+        },
+        "shadows": {
+            "none": {
+                "displayName": "No shadow",
+                "key": "shadows/none"
+            },
+            "shadow1": {
+                "blur": 3,
+                "color": "rgba(0, 0, 0, 0.5)",
+                "displayName": "Light shadow",
+                "key": "shadows/shadow1",
+                "offsetX": 1,
+                "offsetY": 1,
+                "spread": 0
+            },
+            "shadow2": {
+                "blur": 10,
+                "color": "rgba(0, 0, 0, 0.5)",
+                "displayName": "Medium shadow",
+                "key": "shadows/shadow2",
+                "offsetX": 2,
+                "offsetY": 2,
+                "spread": 0
+            },
+            "shadow3": {
+                "blur": 2,
+                "color": "rgba(0, 0, 0, 0.1)",
+                "displayName": "Inset shadow",
+                "inset": true,
+                "key": "shadows/shadow3",
+                "offsetX": 1,
+                "offsetY": 1,
+                "spread": 0
+            }
+        },
+        "utils": {
+            "block": {
+                "stretch": {
+                    "class": {
+                        "xs": "stretch"
+                    },
+                    "displayName": "Stretch"
+                }
+            },
+            "content": {
+                "alignHorizontallyAround": {
+                    "class": {
+                        "lg": "justify-content-lg-around",
+                        "md": "justify-content-md-around",
+                        "sm": "justify-content-sm-around",
+                        "xl": "justify-content-xl-around",
+                        "xs": "justify-content-around"
+                    },
+                    "displayName": "Align around"
+                },
+                "alignHorizontallyBetween": {
+                    "class": {
+                        "lg": "justify-content-lg-between",
+                        "md": "justify-content-md-between",
+                        "sm": "justify-content-sm-between",
+                        "xl": "justify-content-xl-between",
+                        "xs": "justify-content-between"
+                    },
+                    "displayName": "Align between"
+                },
+                "alignHorizontallyCenter": {
+                    "class": {
+                        "lg": "justify-content-lg-center",
+                        "md": "justify-content-md-center",
+                        "sm": "justify-content-sm-center",
+                        "xl": "justify-content-xl-center",
+                        "xs": "justify-content-center"
+                    },
+                    "displayName": "Align center"
+                },
+                "alignHorizontallyEnd": {
+                    "class": {
+                        "lg": "justify-content-lg-end",
+                        "md": "justify-content-md-end",
+                        "sm": "justify-content-sm-end",
+                        "xl": "justify-content-xl-end",
+                        "xs": "justify-content-end"
+                    },
+                    "displayName": "Align bottom"
+                },
+                "alignHorizontallyStart": {
+                    "class": {
+                        "lg": "justify-content-lg-start",
+                        "md": "justify-content-md-start",
+                        "sm": "justify-content-sm-start",
+                        "xl": "justify-content-xl-start",
+                        "xs": "justify-content-start"
+                    },
+                    "displayName": "Align top"
+                },
+                "alignVerticallyAround": {
+                    "class": {
+                        "lg": "align-items-lg-around",
+                        "md": "align-items-md-around",
+                        "sm": "align-items-sm-around",
+                        "xl": "align-items-xl-around",
+                        "xs": "align-items-around"
+                    },
+                    "displayName": "Align around"
+                },
+                "alignVerticallyBetween": {
+                    "class": {
+                        "lg": "align-items-lg-between",
+                        "md": "align-items-md-between",
+                        "sm": "align-items-sm-between",
+                        "xl": "align-items-xl-between",
+                        "xs": "align-items-between"
+                    },
+                    "displayName": "Align between"
+                },
+                "alignVerticallyCenter": {
+                    "class": {
+                        "lg": "align-items-lg-center",
+                        "md": "align-items-md-center",
+                        "sm": "align-items-sm-center",
+                        "xl": "align-items-xl-center",
+                        "xs": "align-items-center"
+                    },
+                    "displayName": "Align center"
+                },
+                "alignVerticallyEnd": {
+                    "class": {
+                        "lg": "align-items-lg-end",
+                        "md": "align-items-md-end",
+                        "sm": "align-items-sm-end",
+                        "xl": "align-items-xl-end",
+                        "xs": "align-items-end"
+                    },
+                    "displayName": "Align right"
+                },
+                "alignVerticallyStart": {
+                    "class": {
+                        "lg": "align-items-lg-start",
+                        "md": "align-items-md-start",
+                        "sm": "align-items-sm-start",
+                        "xl": "align-items-xl-start",
+                        "xs": "align-items-start"
+                    },
+                    "displayName": "Align left"
+                },
+                "key": "utils/content"
+            },
+            "text": {
+                "alignCenter": {
+                    "typography": {
+                        "lg": {
+                            "textAlign": "center"
+                        },
+                        "md": {
+                            "textAlign": "center"
+                        },
+                        "sm": {
+                            "textAlign": "center"
+                        },
+                        "xl": {
+                            "textAlign": "center"
+                        },
+                        "xs": {
+                            "textAlign": "center"
+                        }
+                    }
+                },
+                "alignLeft": {
+                    "displayName": "Align left",
+                    "typography": {
+                        "lg": {
+                            "textAlign": "left"
+                        },
+                        "md": {
+                            "textAlign": "left"
+                        },
+                        "sm": {
+                            "textAlign": "left"
+                        },
+                        "xl": {
+                            "textAlign": "left"
+                        },
+                        "xs": {
+                            "textAlign": "left"
+                        }
+                    }
+                },
+                "alignRight": {
+                    "typography": {
+                        "lg": {
+                            "textAlign": "right"
+                        },
+                        "md": {
+                            "textAlign": "right"
+                        },
+                        "sm": {
+                            "textAlign": "right"
+                        },
+                        "xl": {
+                            "textAlign": "right"
+                        },
+                        "xs": {
+                            "textAlign": "right"
+                        }
+                    }
+                },
+                "justify": {
+                    "typography": {
+                        "lg": {
+                            "textAlign": "justify"
+                        },
+                        "md": {
+                            "textAlign": "justify"
+                        },
+                        "sm": {
+                            "textAlign": "justify"
+                        },
+                        "xl": {
+                            "textAlign": "justify"
+                        },
+                        "xs": {
+                            "textAlign": "justify"
+                        }
+                    }
+                },
+                "key": "utils/text"
+            }
+        }
+    }
+}
