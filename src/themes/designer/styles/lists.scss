@@ -18,6 +18,26 @@
     .list-item-group {
       padding-left: 2.75em;
     }
+
+    .list-item {
+      flex-basis: unset;
+    }
+  }
+
+  .list-item-collapsible {
+    display: flex;
+    align-items: center;
+
+    .list-item-collapse {
+      display: block;
+      cursor: pointer;
+      background: none;
+      margin-right: 5px;
+
+      .paperbits-icon {
+        color: $collapse-button-color;
+      }
+    }
   }
 
   .list-item {
@@ -67,21 +87,6 @@
       transition: transform .1s ease-in-out;
       min-width: 200px;
       position: fixed;
-    }
-
-    .list-item-collapse {
-      width: $list-item-size;
-      height: $list-item-size;
-      line-height: $list-item-size;
-      display: inline-block;
-      text-align: center;
-      cursor: pointer;
-      background: none;
-      flex: 0;
-
-      .paperbits-icon {
-        color: $collapse-button-color;
-      }
     }
 
     .list-item-handle {
