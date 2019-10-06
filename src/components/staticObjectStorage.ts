@@ -113,8 +113,17 @@ export class StaticObjectStorage implements IObjectStorage {
                     let meetsCriteria = true;
 
                     for (const filter of query.filters) {
-                        const left = x[filter.left].toUpperCase();
-                        const right = filter.right.toUpperCase();
+                        let left = x[filter.left];
+                        let right = filter.right;
+
+                        if (typeof left === "string") {
+                            left = left.toUpperCase();
+                        }
+
+                        if (typeof right === "string") {
+                            right = right.toUpperCase();
+                        }
+
                         const operator = filter.operator;
 
                         switch (operator) {
@@ -163,7 +172,7 @@ export class StaticObjectStorage implements IObjectStorage {
         collection.forEach(item => {
             const segments = item.key.split("/");
             const key = segments[1];
-            
+
             Objects.setValue(key, searchResultObject, item);
             Objects.cleanupObject(item); // Ensure all "undefined" are cleaned up
         });
