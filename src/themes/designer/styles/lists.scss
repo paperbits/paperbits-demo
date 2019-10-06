@@ -129,5 +129,32 @@
         height: 1.5em;
       }
     }
+
+    &.list-item-row {
+      display: block;
+      width: 100%;
+      padding: 5px;
+      line-height: 1.5em;
+      flex-basis: auto;
+
+      a {
+        display: inline-block;
+      }
+
+      .paperbits-icon {
+        display: block;
+        padding: 0;
+        height: 1.5em;
+      }
+    }
   }
+}
+
+.list-rows-container {
+    width: 100%;
+}
+
+.list-empty {
+    padding: 10px;
+    line-height: 1.5em;
 }

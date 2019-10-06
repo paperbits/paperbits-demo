@@ -191,10 +191,11 @@ hr {
 .tabs {
   border-bottom: 1px solid $form-control-border;
   display: flex;
+  width: 100%;
 
   .tab {
     a {
-      width: 60px;
+      min-width: 60px;
       display: inline-block;
       vertical-align: middle;
       text-align: center;
