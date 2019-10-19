@@ -12,6 +12,8 @@
 
 .collapsible-panel {
     flex: 1;
+    min-width: 1px;
+
     .hamburger {
         display: none;
         border: none;
