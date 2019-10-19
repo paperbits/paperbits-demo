@@ -7,10 +7,22 @@
  */
 
 import "./polyfills";
+import * as ko from "knockout";
 import { InversifyInjector } from "@paperbits/common/injection";
-import { SearchResultOutput } from "./themes/paperbits/scripts/searchResultsOutput";
+import { DemoRuntimeModule } from "./components/demo.runtime.module";
+import { HistoryRouteHandler, LocationRouteHandler } from "@paperbits/common/routing";
+
 
 document.addEventListener("DOMContentLoaded", () => {
     const injector = new InversifyInjector();
-    injector.bind("searchResultOutput", SearchResultOutput);
+    injector.bindModule(new DemoRuntimeModule());
+
+    if (location.href.contains("designtime=true")) {
+        injector.bindToCollection("autostart", HistoryRouteHandler);
+    }
+    else {
+        injector.bindToCollection("autostart", LocationRouteHandler);
+    }
+    
+    injector.resolve("autostart");
 });

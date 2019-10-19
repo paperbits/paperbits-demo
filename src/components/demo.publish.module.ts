@@ -15,6 +15,7 @@ import { StaticLocalObjectStorage } from "./staticLocalObjectStorage";
 import { FileSystemBlobStorage } from "./filesystemBlobStorage";
 import { StaticSettingsProvider } from "./staticSettingsProvider";
 import { StaticRouter } from "./staticRouter";
+import { StaticRoleService } from "./staticRoleService";
 
 
 export class DemoPublishModule implements IInjectorModule {
@@ -27,6 +28,7 @@ export class DemoPublishModule implements IInjectorModule {
     public register(injector: IInjector): void {
         injector.bindSingleton("logger", ConsoleLogger);
         injector.bindSingleton("userService", StaticUserService);
+        injector.bindSingleton("roleService", StaticRoleService);
         injector.bindSingleton("router", StaticRouter);
         injector.bindSingleton("blobStorage", StaticBlobStorage);
         injector.bindInstance("objectStorage", new StaticLocalObjectStorage(path.resolve(this.dataPath)));

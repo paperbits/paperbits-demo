@@ -1,12 +1,12 @@
 import { YourWidgetViewModel } from "./yourWidgetViewModel";
 import { ViewModelBinder } from "@paperbits/common/widgets";
 import { YourWidgetModel } from "../yourWidgetModel";
-import { IEventManager } from "@paperbits/common/events";
+import { EventManager } from "@paperbits/common/events";
 import { IWidgetBinding } from "@paperbits/common/editing";
 import { Bag } from "@paperbits/common";
 
 export class YourWidgetViewModelBinder implements ViewModelBinder<YourWidgetModel, YourWidgetViewModel>  {
-    constructor(private readonly eventManager: IEventManager) { }
+    constructor(private readonly eventManager: EventManager) { }
 
     public async modelToViewModel(model: YourWidgetModel, viewModel?: YourWidgetViewModel, bindingContext?: Bag<any>): Promise<YourWidgetViewModel> {
         if (!viewModel) {
@@ -18,8 +18,8 @@ export class YourWidgetViewModelBinder implements ViewModelBinder<YourWidgetMode
             readonly: bindingContext ? bindingContext.readonly : false,
             model: model,
             editor: "your-widget-editor",
-            applyChanges: () => {
-                this.modelToViewModel(model, viewModel, bindingContext);
+            applyChanges: async () => {
+                await this.modelToViewModel(model, viewModel, bindingContext);
                 this.eventManager.dispatchEvent("onContentUpdate");
             }
         };

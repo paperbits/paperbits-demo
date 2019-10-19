@@ -2,16 +2,14 @@ const path = require("path");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
-const websiteTheme = "paperbits";
-const editorTheme = "designer";
 
 module.exports = {
     target: "web",
     entry: {
         "editors/scripts/paperbits": ["./src/startup.design.ts"],
-        "editors/styles/paperbits": [`./src/themes/${editorTheme}/styles/paperbits.scss`],
+        "editors/styles/paperbits": [`./src/themes/designer/styles/styles.scss`],
         "scripts/theme": ["./src/startup.runtime.ts"],
-        "styles/theme": [`./src/themes/${websiteTheme}/styles/styles.design.scss`]
+        "styles/theme": [`./src/themes/website/styles/styles.design.scss`]
     },
     output: {
         filename: "./[name].js",
@@ -56,9 +54,9 @@ module.exports = {
         }),
         new CopyWebpackPlugin([
             { from: `./src/data/demo.json`, to: `./data/demo.json` },
-            { from: `./src/themes/${editorTheme}/assets/index.html`, to: "index.html" },
-            { from: `./src/themes/${editorTheme}/styles/fonts`, to: "editors/styles/fonts" },
-            { from: `./src/themes/${websiteTheme}/assets` }
+            { from: `./src/themes/designer/assets/index.html`, to: "index.html" },
+            { from: `./src/themes/designer/styles/fonts`, to: "editors/styles/fonts" },
+            { from: `./src/themes/website/assets` }
         ])
     ],
     resolve: {

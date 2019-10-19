@@ -1,4 +1,5 @@
 import * as lunr from "lunr";
+import * as ko from "knockout";
 import template from "./searchResultsOutput.html";
 import { XmlHttpRequestClient } from "@paperbits/common/http";
 import { Component, RuntimeComponent, OnMounted } from "@paperbits/common/ko/decorators";
