@@ -25,7 +25,5 @@ export class DemoDesignModule implements IInjectorModule {
         injector.bindSingleton("objectStorage", StaticObjectStorage);
         injector.bindSingleton("logger", ConsoleLogger);
         injector.bindModule(new YourWidgetEditorModule());
-        injector.bind("roleSelector", RoleSelector);
-        injector.bind("roleInput", RoleInput);
     }
 }
