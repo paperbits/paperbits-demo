@@ -1,5 +1,5 @@
 import template from "./app.html";
-import { IViewManager } from "@paperbits/common/ui";
+import { ViewManager } from "@paperbits/common/ui";
 import { Component, OnMounted } from "@paperbits/common/ko/decorators";
 
 @Component({
@@ -8,7 +8,7 @@ import { Component, OnMounted } from "@paperbits/common/ko/decorators";
     injectable: "app"
 })
 export class App {
-    constructor(private readonly viewManager: IViewManager) { }
+    constructor(private readonly viewManager: ViewManager) { }
 
     @OnMounted()
     public async initialize(): Promise<void> {
