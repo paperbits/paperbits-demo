@@ -30,6 +30,18 @@ export class StaticRouter implements Router {
         // this.callbacks.spliceremove(callback);
     }
 
+    public addHistoryUpdateListener(eventHandler: (args?: any) => void): void {
+        // Do nothing
+    }
+
+    public removeHistoryUpdateListener(eventHandler: (args?: any) => void): void {
+        // Do nothing
+    }
+
+    public updateHistory(url: string, title: string): void {
+        // Do nothing
+    }
+
     public async navigateTo(url: string): Promise<void> {
         this.currentUrl = url;
 
