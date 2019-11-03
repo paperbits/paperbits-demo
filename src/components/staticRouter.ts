@@ -23,11 +23,11 @@ export class StaticRouter implements Router {
     }
 
     public addRouteChangeListener(callback: () => void): void {
-        // this.callbacks.push(callback);
+        // Do nothing;
     }
 
     public removeRouteChangeListener(callback: () => void): void {
-        // this.callbacks.spliceremove(callback);
+        // Do nothing;
     }
 
     public addHistoryUpdateListener(eventHandler: (args?: any) => void): void {
