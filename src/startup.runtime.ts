@@ -7,7 +7,6 @@
  */
 
 import "./polyfills";
-import * as ko from "knockout";
 import { InversifyInjector } from "@paperbits/common/injection";
 import { DemoRuntimeModule } from "./components/demo.runtime.module";
 import { HistoryRouteHandler, LocationRouteHandler } from "@paperbits/common/routing";

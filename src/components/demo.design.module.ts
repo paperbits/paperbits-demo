@@ -10,7 +10,6 @@
 import { IInjector, IInjectorModule } from "@paperbits/common/injection";
 import { App } from "./app/app";
 import { ConsoleLogger } from "@paperbits/common/logging";
-import { RoleSelector, RoleInput } from "@paperbits/core/workshops/roles/ko";
 import { StaticObjectStorage } from "./staticObjectStorage";
 import { StaticBlobStorage } from "./staticBlobStorage";
 import { StaticRoleService } from "./staticRoleService";
