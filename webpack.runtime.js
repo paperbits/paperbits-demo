@@ -2,13 +2,12 @@ const path = require("path");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
-const selectedTheme = "paperbits";
 
 module.exports = {
     mode: "development",
     target: "web",
     entry: {
-        "assets/styles/theme": [`./src/themes/${selectedTheme}/styles/styles.scss`],
+        "assets/styles/theme": [`./src/themes/website/styles/styles.scss`],
         "assets/scripts/theme": ["./src/startup.runtime.ts"]
     },
     output: {
