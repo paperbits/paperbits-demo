@@ -24,7 +24,7 @@
 }
 
 .btn-link {
-    color: #99c248;
+    color: $button-link-color;
     text-decoration: none;
 }
 
@@ -32,7 +32,7 @@
 .btn-danger:hover,
 .btn-danger:active {
     background: $color-danger;
-    color: #fff;
+    color: $button-danger-text-color;
 }
 
 .btn-group {
