@@ -12,7 +12,7 @@ export class App {
 
     @OnMounted()
     public async initialize(): Promise<void> {
-        this.viewManager.setHost({ name: "content-host" });
+        this.viewManager.setHost({ name: "page-host" });
         this.viewManager.showToolboxes();
     }
 }
