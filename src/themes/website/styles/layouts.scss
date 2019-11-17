@@ -30,7 +30,8 @@ section {
     }
 
     /* TODO: Enable row height through editor */
-    &.stretch > .container, .container-fluid > .row {
+    &.stretch > .container,
+    .container-fluid > .row {
         flex: 1;
     }
 }
@@ -68,7 +69,6 @@ section {
     @include fit;
     flex: 1 1 auto;
 }
-
 
 main {
     flex-basis: 100%;
