@@ -14,6 +14,7 @@ export class YourWidgetViewModelBinder implements ViewModelBinder<YourWidgetMode
         }
 
         const binding: IWidgetBinding<YourWidgetModel> = {
+            name: "your-widget",
             displayName: "Your widget",
             readonly: bindingContext ? bindingContext.readonly : false,
             model: model,
