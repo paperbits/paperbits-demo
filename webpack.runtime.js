@@ -1,11 +1,25 @@
 const path = require("path");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const TerserPlugin = require("terser-webpack-plugin");
 
 
 module.exports = {
-    mode: "development",
     target: "web",
+    mode: "production",
+    optimization: {
+        minimizer: [
+            new TerserPlugin({
+                sourceMap: false,
+                terserOptions: {
+                    mangle: false,
+                    output: {
+                        comments: false,
+                    }
+                }
+            })
+        ]
+    },
     entry: {
         "assets/styles/theme": [`./src/themes/website/styles/styles.scss`],
         "assets/scripts/theme": ["./src/startup.runtime.ts"]
