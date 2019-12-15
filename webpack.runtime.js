@@ -1,9 +1,11 @@
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
+const TerserPlugin = require("terser-webpack-plugin");
 
 
 module.exports = {
+    mode: "development",
     target: "web",
     entry: {
         "scripts/theme": ["./src/startup.runtime.ts"],
@@ -12,6 +14,19 @@ module.exports = {
     output: {
         filename: "./[name].js",
         path: path.resolve(__dirname, "dist"),
+    },
+    optimization: {
+        minimizer: [
+            new TerserPlugin({
+                sourceMap: false,
+                terserOptions: {
+                    mangle: false,
+                    output: {
+                        comments: false,
+                    }
+                }
+            })
+        ]
     },
     module: {
         rules: [

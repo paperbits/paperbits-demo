@@ -2,6 +2,7 @@ const path = require("path");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const TerserPlugin = require("terser-webpack-plugin");
 const runtimeConfig = require("./webpack.runtime");
 
 
@@ -14,6 +15,19 @@ const publisherConfig = {
     },
     entry: {
         "index": ["./src/startup.publish.ts"]
+    },
+    optimization: {
+        minimizer: [
+            new TerserPlugin({
+                sourceMap: false,
+                terserOptions: {
+                    mangle: false,
+                    output: {
+                        comments: false,
+                    }
+                }
+            })
+        ]
     },
     output: {
         filename: "./[name].js",
