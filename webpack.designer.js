@@ -3,7 +3,7 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 
-module.exports = {
+const designerConfig = {
     target: "web",
     entry: {
         "editors/scripts/paperbits": ["./src/startup.design.ts"],
@@ -36,10 +36,7 @@ module.exports = {
             },
             {
                 test: /\.(png|woff|woff2|eot|ttf|svg)$/,
-                loader: "url-loader",
-                options: {
-                    limit: 10000
-                }
+                loader: "url-loader?limit=100000"
             },
             {
                 test: /\.liquid$/,
@@ -54,8 +51,10 @@ module.exports = {
         }),
         new CopyWebpackPlugin([
             { from: `./src/data/demo.json`, to: `./data/demo.json` },
+            { from: `./src/config.design.json`, to: `./config.json` },
             { from: `./src/themes/designer/assets/index.html`, to: "index.html" },
             { from: `./src/themes/designer/styles/fonts`, to: "editors/styles/fonts" },
+            { from: `./src/themes/website/styles/fonts`, to: "styles/fonts" },
             { from: `./src/themes/website/assets` }
         ])
     ],
@@ -63,3 +62,5 @@ module.exports = {
         extensions: [".ts", ".tsx", ".js", ".jsx", ".html", ".scss"]
     }
 };
+
+module.exports = designerConfig;

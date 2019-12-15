@@ -1,28 +1,13 @@
 const path = require("path");
-const CopyWebpackPlugin = require("copy-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const TerserPlugin = require("terser-webpack-plugin");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 
 module.exports = {
     target: "web",
-    mode: "production",
-    optimization: {
-        minimizer: [
-            new TerserPlugin({
-                sourceMap: false,
-                terserOptions: {
-                    mangle: false,
-                    output: {
-                        comments: false,
-                    }
-                }
-            })
-        ]
-    },
     entry: {
-        "assets/styles/theme": [`./src/themes/website/styles/styles.scss`],
-        "assets/scripts/theme": ["./src/startup.runtime.ts"]
+        "scripts/theme": ["./src/startup.runtime.ts"],
+        "styles/theme": [`./src/themes/website/styles/styles.scss`]
     },
     output: {
         filename: "./[name].js",
@@ -34,7 +19,7 @@ module.exports = {
                 test: /\.scss$/,
                 use: [
                     MiniCssExtractPlugin.loader,
-                    { loader: "css-loader" },
+                    { loader: "css-loader", options: { url: false } },
                     { loader: "postcss-loader" },
                     { loader: "sass-loader" }
                 ]
@@ -49,10 +34,7 @@ module.exports = {
             },
             {
                 test: /\.(png|woff|woff2|eot|ttf|svg)$/,
-                loader: "url-loader",
-                options: {
-                    limit: 10000
-                }
+                loader: "url-loader?limit=100000"
             },
             {
                 test: /\.liquid$/,
@@ -63,7 +45,9 @@ module.exports = {
     plugins: [
         new MiniCssExtractPlugin({ filename: "[name].css", chunkFilename: "[id].css" }),
         new CopyWebpackPlugin([
-            { from: `./src/config.runtime.json`, to: `./assets/config.json` }
+            { from: `./src/config.runtime.json`, to: `config.json` },
+            { from: `./src/themes/website/styles/fonts`, to: "styles/fonts" },
+            { from: `./src/themes/website/assets` }
         ])
     ],
     resolve: {
