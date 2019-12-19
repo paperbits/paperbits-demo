@@ -7,17 +7,17 @@
  */
 
 import { IWidgetOrder, IWidgetHandler } from "@paperbits/common/editing";
-import { YourWidgetModel } from "./yourWidgetModel";
+import { ClickCounterModel } from "./clickCounterModel";
 
 
-export class YourWidgetHandlers implements IWidgetHandler {
+export class ClickCounterHandlers implements IWidgetHandler {
     public async getWidgetOrder(): Promise<IWidgetOrder> {
         const widgetOrder: IWidgetOrder = {
-            name: "yourWidget",
-            displayName: "Your widget",
+            name: "clickCounter",
+            displayName: "Click counter",
             iconClass: "paperbits-puzzle-10",
             createModel: async () => {
-                return new YourWidgetModel();
+                return new ClickCounterModel();
             }
         };
 

@@ -6,4 +6,6 @@
  * found in the LICENSE file and at https://paperbits.io/license/mit.
  */
 
-export class YourWidgetModel { }
+export class ClickCounterModel { 
+    public initialCount: number;
+}
