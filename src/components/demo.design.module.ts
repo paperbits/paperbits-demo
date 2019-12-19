@@ -13,7 +13,7 @@ import { ConsoleLogger } from "@paperbits/common/logging";
 import { StaticObjectStorage } from "./staticObjectStorage";
 import { StaticBlobStorage } from "./staticBlobStorage";
 import { StaticRoleService } from "./staticRoleService";
-import { YourWidgetEditorModule } from "./your-widget/ko/yourWidgetEditor.module";
+import { ClickCounterEditorModule } from "./click-counter/ko/clickCounterEditor.module";
 
 
 export class DemoDesignModule implements IInjectorModule {
@@ -23,6 +23,6 @@ export class DemoDesignModule implements IInjectorModule {
         injector.bindSingleton("roleService", StaticRoleService);
         injector.bindSingleton("objectStorage", StaticObjectStorage);
         injector.bindSingleton("logger", ConsoleLogger);
-        injector.bindModule(new YourWidgetEditorModule());
+        injector.bindModule(new ClickCounterEditorModule());
     }
 }

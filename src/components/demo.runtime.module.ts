@@ -17,11 +17,13 @@ import "@paperbits/core/collapsible-panel/runtime/bindingHandlers.toggleCollapsi
 import { CollapseToggle } from "@paperbits/core/collapsible-panel/collapseToggle";
 import { StaticUserService } from "./staticUserService";
 import { StaticRoleService } from "./staticRoleService";
+import { ClickCounterRuntimeModule } from "./click-counter/ko/runtime/clickCounter.runtime.module";
 
 
 export class DemoRuntimeModule implements IInjectorModule {
     public register(injector: IInjector): void {
         injector.bindModule(new KnockoutRegistrationLoaders());
+        injector.bindModule(new ClickCounterRuntimeModule());
         injector.bindSingleton("eventManager", DefaultEventManager);
         injector.bindCollection("autostart");
         injector.bindCollection("routeGuards");
@@ -31,5 +33,6 @@ export class DemoRuntimeModule implements IInjectorModule {
         injector.bindToCollection("autostart", VisibilityGuard);
         injector.bindSingleton("userService", StaticUserService);
         injector.bindSingleton("roleService", StaticRoleService);
+        
     }
 }
