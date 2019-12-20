@@ -53,6 +53,7 @@
         "@paperbits/prosemirror": "0.1.190",
         "@paperbits/styles": "0.1.190",
         "@types/knockout.mapping": "^2.0.35",
+        "@webcomponents/webcomponentsjs": "^2.4.0",
         "core-js": "^3.4.1",
         "cssom": "^0.4.4",
         "domino": "^2.1.3",
