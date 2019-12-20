@@ -181,9 +181,33 @@ export class StaticObjectStorage implements IObjectStorage {
     }
 
     public async saveChanges(delta: Object): Promise<void> {
+        const saveTasks = [];
+        const keys = [];
+
+        Object.keys(delta).map(key => {
+            const firstLevelObject = delta[key];
+
+            Object.keys(firstLevelObject).forEach(subkey => {
+                keys.push(`${key}/${subkey}`);
+            });
+        });
+
+        keys.forEach(key => {
+            const changeObject = Objects.getObjectAt(key, delta);
+
+            if (changeObject) {
+                saveTasks.push(this.updateObject(key, changeObject));
+            }
+            else {
+                saveTasks.push(this.deleteObject(key));
+            }
+        });
+
+        await Promise.all(saveTasks);
+
         const state = JSON.stringify(this.storageDataObject);
         const stateBlob = new Blob([state], { type: "text/plain;charset=utf-8" });
-
+        
         FileSaver.saveAs(stateBlob, "demo.json");
 
         /* Uncomment to save changes in a separate file */
