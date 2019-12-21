@@ -16,6 +16,7 @@ import { FileSystemBlobStorage } from "./filesystemBlobStorage";
 import { StaticSettingsProvider } from "./staticSettingsProvider";
 import { StaticRouter } from "./staticRouter";
 import { StaticRoleService } from "./staticRoleService";
+import { ClickCounterEditorModule } from "./click-counter/ko";
 
 
 export class DemoPublishModule implements IInjectorModule {
@@ -34,5 +35,6 @@ export class DemoPublishModule implements IInjectorModule {
         injector.bindInstance("objectStorage", new StaticLocalObjectStorage(path.resolve(this.dataPath)));
         injector.bindInstance("settingsProvider", new StaticSettingsProvider(path.resolve(this.settingsPath)));
         injector.bindInstance("outputBlobStorage", new FileSystemBlobStorage(path.resolve(this.outputBasePath)));
+        injector.bindModule(new ClickCounterEditorModule());
     }
 }
