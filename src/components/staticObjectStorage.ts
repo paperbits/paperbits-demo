@@ -215,4 +215,33 @@ export class StaticObjectStorage implements IObjectStorage {
         // const deltaBlob = new Blob([changes], { type: "text/plain;charset=utf-8" });
         // FileSaver.saveAs(deltaBlob, "changes.json");
     }
+
+    public async loadData(): Promise<object> {
+        return new Promise<object>((resolve, reject) => {
+            const input: HTMLInputElement = document.createElement("input");
+            input.type = "file";
+
+            input.onchange = e => { 
+
+                const target: HTMLInputElement = <HTMLInputElement> e.target;
+                const file = target.files[0]; 
+                if (!file) {
+                    resolve(undefined);
+                }
+
+                const reader = new FileReader();
+                reader.readAsText(file, "UTF-8");
+
+                reader.onload = readerEvent => {
+                    const contentString = readerEvent.target.result.toString();
+                    const dataObject = contentString ? JSON.parse(contentString) : undefined;
+                    this.storageDataObject = dataObject || this.storageDataObject;
+                    resolve(dataObject);
+                };
+
+            };
+
+            input.click();            
+        });
+    }
 }
