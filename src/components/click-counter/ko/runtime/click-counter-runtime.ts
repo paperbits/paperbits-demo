@@ -8,8 +8,7 @@ import { Component, RuntimeComponent, Param, OnMounted, OnDestroyed } from "@pap
 })
 @Component({
     selector: "click-counter-runtime",
-    template: template,
-    injectable: "clickCounterRuntime"
+    template: template
 })
 export class ClickCounterRuntime {
     public readonly clickCount: ko.Observable<number>;

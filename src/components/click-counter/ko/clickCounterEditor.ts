@@ -6,8 +6,7 @@ import { WidgetEditor } from "@paperbits/common/widgets";
 
 @Component({
     selector: "click-counter-editor",
-    template: template,
-    injectable: "clickCounterEditor"
+    template: template
 })
 export class ClickCounterEditor implements WidgetEditor<ClickCounterModel> {
     public readonly initialCount: ko.Observable<string>;

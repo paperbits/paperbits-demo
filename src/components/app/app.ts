@@ -12,8 +12,7 @@ import { Component, OnMounted } from "@paperbits/common/ko/decorators";
 
 @Component({
     selector: "app",
-    template: template,
-    injectable: "app"
+    template: template
 })
 export class App {
     constructor(private readonly viewManager: ViewManager) { }

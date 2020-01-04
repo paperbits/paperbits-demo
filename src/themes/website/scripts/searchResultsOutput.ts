@@ -13,8 +13,7 @@ export interface SearchResult {
 @RuntimeComponent({ selector: "search-results-output" })
 @Component({
     selector: "search-results-output",
-    template: template,
-    injectable: "searchResultOutput"
+    template: template
 })
 export class SearchResultOutput {
     public pattern: ko.Observable<string>;
