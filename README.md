@@ -4,7 +4,7 @@ This repository contains an example of how using Paperbits you can enable advanc
 
 [Live demo](https://demo.paperbits.io)
 
-[![Join the chat at https://https://gitter.im/paperbits-demo/discussions](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/paperbits-demo/discussions)
+[![Join the chat at https://gitter.im/paperbits/discussions](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/paperbits/discussions)
 [![Build status](https://dev.azure.com/paperbits/Paperbits/_apis/build/status/PR%20build%20-%20paperbits-demo)](https://dev.azure.com/paperbits/Paperbits/_build/latest?definitionId=4)
 
 
