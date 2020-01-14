@@ -7,10 +7,11 @@
  */
 
 import "./polyfills";
+import "./themes/website/scripts";
 import { InversifyInjector } from "@paperbits/common/injection";
 import { DemoRuntimeModule } from "./components/demo.runtime.module";
 import { HistoryRouteHandler, LocationRouteHandler } from "@paperbits/common/routing";
-import "./themes/website/scripts/collapsibles";
+
 
 document.addEventListener("DOMContentLoaded", () => {
     const injector = new InversifyInjector();

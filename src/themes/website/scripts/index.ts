@@ -6,5 +6,4 @@
  * found in the LICENSE file and at https://paperbits.io/license/mit.
  */
 
-
-import "./searchResultsOutput";
+import "./collapsibles";
