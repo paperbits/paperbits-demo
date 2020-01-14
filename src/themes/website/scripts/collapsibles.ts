@@ -1,12 +1,10 @@
-import * as Utils from "@paperbits/common/utils";
-
-const mousedown = (event: MouseEvent) => {
+const mousedown = (event: MouseEvent): void => {
     if (event.which !== 1) {
         return;
     }
-    
-    const elements = Utils.elementsFromPoint(document, event.clientX, event.clientY);
-    const toggleElement = elements.find(x => x.getAttribute("data-toggle"));
+
+    const target = <HTMLElement>event.target;
+    const toggleElement = target.closest("[data-toggle]");
 
     if (!toggleElement) {
         return;

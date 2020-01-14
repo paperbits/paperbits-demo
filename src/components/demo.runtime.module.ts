@@ -7,14 +7,12 @@
  */
 
 import "@paperbits/core/ko/bindingHandlers/bindingHandlers.component";
-import "@paperbits/core/collapsible-panel/runtime/bindingHandlers.toggleCollapsible";
 import { IInjector, IInjectorModule } from "@paperbits/common/injection";
 import { DefaultEventManager } from "@paperbits/common/events";
 import { DefaultRouter } from "@paperbits/common/routing";
 import { VisibilityGuard } from "@paperbits/common/user";
 import { XmlHttpRequestClient } from "@paperbits/common/http";
 import { KnockoutRegistrationLoaders } from "@paperbits/core/ko/knockout.loaders";
-import { CollapseToggle } from "@paperbits/core/collapsible-panel/collapseToggle";
 import { StaticUserService } from "./staticUserService";
 import { StaticRoleService } from "./staticRoleService";
 import { SearchRuntimeModule } from "@paperbits/core/search/search.runtime.module";
@@ -30,7 +28,6 @@ export class DemoRuntimeModule implements IInjectorModule {
         injector.bindCollection("autostart");
         injector.bindCollection("routeGuards");
         injector.bindSingleton("router", DefaultRouter);
-        injector.bind("collapseToggle", CollapseToggle);
         injector.bind("httpClient", XmlHttpRequestClient);
         injector.bindToCollection("autostart", VisibilityGuard);
         injector.bindSingleton("userService", StaticUserService);
