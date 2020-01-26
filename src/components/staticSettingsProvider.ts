@@ -15,17 +15,9 @@ export class StaticSettingsProvider implements ISettingsProvider {
 
     constructor(private readonly settingsPath: string) { }
 
-    public getSetting(name: string): Promise<Object> {
-        const promise = new Promise(async (resolve) => {
-            await this.getSettings();
-
-            if (this.configuration[name]) {
-                resolve(this.configuration[name]);
-                return;
-            }
-        });
-
-        return promise;
+    public async getSetting(name: string): Promise<Object> {
+        await this.getSettings();
+        return this.configuration[name];
     }
 
     public setSetting(name: string, value: Object): void {
@@ -40,8 +32,9 @@ export class StaticSettingsProvider implements ISettingsProvider {
         return this.loadingPromise;
     }
 
-    private async loadSettings(): Promise<void> {
+    private async loadSettings(): Promise<any> {
         const configFileContent = await Utils.loadFileAsString(this.settingsPath);
         this.configuration = JSON.parse(configFileContent);
+		return this.configuration;
     }
 }
