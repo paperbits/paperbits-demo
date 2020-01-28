@@ -6,23 +6,79 @@
  * found in the LICENSE file and at https://paperbits.io/license/mit.
  */
 
-const mousedown = (event: MouseEvent): void => {
+import { Keys } from "@paperbits/common";
+
+const collapsibleSelector = ".collapsible";
+const collapsibleToggleSelector = "[data-toggle]";
+const collapsibleExpandedClass = "expanded";
+const collapsibleExpandedAriaAttr = "exaria-expanded";
+
+const selfAndParents = (element: HTMLElement) => {
+    const elements = [element];
+
+    while (element.parentElement && element.parentElement.tagName !== "BODY") {
+        elements.push(element.parentElement);
+        element = element.parentElement;
+    }
+
+    return elements;
+};
+
+const onClick = (event: MouseEvent) => {
     if (event.which !== 1) {
         return;
     }
 
-    const target = <HTMLElement>event.target;
-    const toggleElement = target.closest("[data-toggle]");
+    event.preventDefault();
+    event.stopImmediatePropagation();
+    onActivate();
+};
 
-    if (!toggleElement) {
+const onKeyDown = (event: KeyboardEvent) => {
+    if (event.keyCode !== Keys.Enter && event.keyCode !== Keys.Space) {
         return;
     }
 
-    const collapsible: HTMLElement = toggleElement.closest(".collapsible");
-
-    if (collapsible) {
-        collapsible.classList.toggle("expanded");
-    }
+    event.preventDefault();
+    event.stopImmediatePropagation();
+    onActivate();
 };
 
-document.addEventListener("mousedown", mousedown, true);
+const onActivate = (): void => {
+    const target = <HTMLElement>event.target;
+    const collapsibles: HTMLElement[] = Array.prototype.slice.call(document.querySelectorAll(collapsibleSelector));
+
+    let toggleElement: HTMLElement;
+
+    if (target.closest) {
+        toggleElement = target.closest(collapsibleToggleSelector);
+    }
+
+    const exclude = selfAndParents(target);
+
+    if (toggleElement) {
+        const collapsible: HTMLElement = toggleElement.closest(collapsibleSelector);
+
+        if (collapsible) {
+            collapsible.classList.toggle(collapsibleExpandedClass);
+        }
+
+        const expanded = collapsible.classList.contains(collapsibleExpandedClass);
+        toggleElement.setAttribute(collapsibleExpandedAriaAttr, expanded.toString());
+    }
+
+    collapsibles.forEach(x => {
+        if (!exclude.includes(x)) {
+            x.classList.remove(collapsibleExpandedClass);
+
+            const toggleElement = x.querySelector(collapsibleToggleSelector);
+
+            if (toggleElement) {
+                toggleElement.setAttribute(collapsibleExpandedAriaAttr, "false");
+            }
+        }
+    });
+};
+
+document.addEventListener("click", onClick, true);
+document.addEventListener("keydown", onKeyDown, true);
