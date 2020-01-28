@@ -1,11 +1,3 @@
-/**
- * @license
- * Copyright Paperbits. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file and at https://paperbits.io/license/mit.
- */
-
 import { Keys } from "@paperbits/common";
 
 const collapsibleSelector = ".collapsible";
@@ -28,9 +20,6 @@ const onClick = (event: MouseEvent) => {
     if (event.which !== 1) {
         return;
     }
-
-    event.preventDefault();
-    event.stopImmediatePropagation();
     onActivate();
 };
 
@@ -38,9 +27,6 @@ const onKeyDown = (event: KeyboardEvent) => {
     if (event.keyCode !== Keys.Enter && event.keyCode !== Keys.Space) {
         return;
     }
-
-    event.preventDefault();
-    event.stopImmediatePropagation();
     onActivate();
 };
 
