@@ -35,6 +35,9 @@ const publisherConfig = {
         library: "publisher",
         libraryTarget: "commonjs2"
     },
+    externals: {
+        "firebase-admin": "firebase-admin"
+    },
     module: {
         rules: [
             {
