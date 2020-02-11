@@ -16,6 +16,7 @@ export class ClickCounterHandlers implements IWidgetHandler {
             name: "clickCounter",
             displayName: "Click counter",
             iconClass: "paperbits-puzzle-10",
+            requires: ["html", "js"],
             createModel: async () => {
                 return new ClickCounterModel();
             }

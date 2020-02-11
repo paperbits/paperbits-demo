@@ -76,3 +76,15 @@ main {
     flex-direction: column;
     display: flex;
 }
+
+.block {
+    display: block;
+    flex-basis: 100%;
+}
+
+html:not([amp4ads]),
+html:not([amp4ads]) body {
+    min-height: 100%;
+    display: flex;
+    flex: 1;
+}
