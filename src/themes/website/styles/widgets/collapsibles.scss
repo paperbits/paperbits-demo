@@ -13,9 +13,9 @@
 
 .collapsible-panel {
     flex: 1;
-    min-width: 1px;
+    // min-width: 1px;
 
-    .collapsible-panel-toggle {
+    .collapsible-panel-open {
         display: block;
         border: none;
         background: none;
@@ -23,8 +23,18 @@
         border-radius: 10px;
         margin: 0 10px;
         cursor: pointer;
+        margin-left: auto;
+    }
+
+    .collapsible-panel-close {
+        display: none;
+        border: none;
+        background: none;
+        padding: 10px;
+        margin: 0 10px;
+        cursor: pointer;
         position: absolute;
-        right: 0; // TODO: Should be configurable
+        right: 0;
     }
 }
 
@@ -47,7 +57,7 @@
             display: flex;
         }
 
-        .collapsible-panel-toggle {
+        .collapsible-panel-open {
             display: none;
         }
     }
@@ -69,7 +79,7 @@
         position: fixed;
         animation: slideInRight 0.2s linear forwards;
 
-        & > .collapsible-panel-toggle {
+        & > .collapsible-panel-close {
             display: block;
             top: 0;
             right: 0;
@@ -83,7 +93,7 @@
 
 @media (max-width: $breakpoint-md) {
     .collapsible-panel {
-        .collapsible-panel-toggle {
+        .collapsible-panel-open {
             display: block;
         }
     }
