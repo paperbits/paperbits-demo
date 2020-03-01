@@ -24,4 +24,10 @@ $link-hover-color: $green;
 $link-active-color: $green;
 
 $font-family-base: Arial, Helvetica, sans-serif;
-$font-family-script: JollyGoodSans-Basic, Tahoma, Geneva, Verdana, sans-serif;
+$font-family-script: Tahoma, Geneva, Verdana, sans-serif;
+
+/* Defaults */
+$default-heading-font-weight: 500;
+$default-heading-line-height: 1.2;
+$default-heading-color: inherit;
+$default-navlink-padding:  0.5rem 1rem;

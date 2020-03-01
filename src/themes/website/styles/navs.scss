@@ -8,6 +8,7 @@
 
 .nav-link {
     display: block;
+    padding: $default-navlink-padding;
 }
 
 .nav-link:hover,
@@ -20,7 +21,6 @@
     pointer-events: none;
     cursor: default;
 }
-
 
 .nav {
     display: flex;
