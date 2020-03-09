@@ -1,3 +1,12 @@
+form {
+    padding: 10px;
+    flex-grow: 1;
+}
+
+.form-control {
+    width: 100%;
+}
+
 .form-inline {
     display: flex;
     flex-flow: row wrap;
