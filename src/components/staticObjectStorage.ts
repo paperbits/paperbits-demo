@@ -18,24 +18,29 @@ import { Bag } from "@paperbits/common";
  * Static object storage for demo purposes. It stores all the uploaded blobs in memory.
  */
 export class StaticObjectStorage implements IObjectStorage {
+    private loadDataPromise: Promise<Object>;
     protected storageDataObject: Object;
     private splitter = "/";
 
     constructor(private readonly httpClient: HttpClient) { }
 
     protected async getData(): Promise<Object> {
-        if (!this.storageDataObject) {
+        if (this.loadDataPromise) {
+            return this.loadDataPromise;
+        }
+
+        this.loadDataPromise = new Promise<Object>(async (resolve) => {
             const response = await this.httpClient.send({
                 url: "/data/demo.json",
                 method: "GET"
             });
 
             this.storageDataObject = response.toObject();
-        }
 
-        return new Promise<Object>((resolve) => {
-            setImmediate(() => resolve(this.storageDataObject));
+            resolve(this.storageDataObject);
         });
+
+        return this.loadDataPromise;
     }
 
     public async addObject(path: string, dataObject: Object): Promise<void> {
@@ -105,6 +110,11 @@ export class StaticObjectStorage implements IObjectStorage {
         }
 
         const searchObj = Objects.getObjectAt(path, data);
+
+        if (!searchObj) {
+            return {};
+        }
+
         let collection = Object.values(searchObj);
 
         if (query) {
@@ -113,8 +123,13 @@ export class StaticObjectStorage implements IObjectStorage {
                     let meetsCriteria = true;
 
                     for (const filter of query.filters) {
-                        let left = x[filter.left];
+                        let left = Objects.getObjectAt<any>(filter.left, x);
                         let right = filter.right;
+
+                        if (left === undefined) {
+                            meetsCriteria = false;
+                            continue;
+                        }
 
                         if (typeof left === "string") {
                             left = left.toUpperCase();
@@ -128,7 +143,7 @@ export class StaticObjectStorage implements IObjectStorage {
 
                         switch (operator) {
                             case Operator.contains:
-                                if (!left.contains(right)) {
+                                if (left && !left.contains(right)) {
                                     meetsCriteria = false;
                                 }
                                 break;
@@ -152,8 +167,8 @@ export class StaticObjectStorage implements IObjectStorage {
                 const property = query.orderingBy;
 
                 collection = collection.sort((x, y) => {
-                    const a = x[property].toUpperCase();
-                    const b = y[property].toUpperCase();
+                    const a = Objects.getObjectAt<any>(property, x);
+                    const b = Objects.getObjectAt<any>(property, y);
                     const modifier = query.orderDirection === OrderDirection.accending ? 1 : -1;
 
                     if (a > b) {
@@ -207,7 +222,7 @@ export class StaticObjectStorage implements IObjectStorage {
 
         const state = JSON.stringify(this.storageDataObject);
         const stateBlob = new Blob([state], { type: "text/plain;charset=utf-8" });
-        
+
         FileSaver.saveAs(stateBlob, "demo.json");
 
         /* Uncomment to save changes in a separate file */
@@ -221,10 +236,10 @@ export class StaticObjectStorage implements IObjectStorage {
             const input: HTMLInputElement = document.createElement("input");
             input.type = "file";
 
-            input.onchange = e => { 
+            input.onchange = e => {
 
-                const target: HTMLInputElement = <HTMLInputElement> e.target;
-                const file = target.files[0]; 
+                const target: HTMLInputElement = <HTMLInputElement>e.target;
+                const file = target.files[0];
                 if (!file) {
                     resolve(undefined);
                 }
@@ -241,7 +256,7 @@ export class StaticObjectStorage implements IObjectStorage {
 
             };
 
-            input.click();            
+            input.click();
         });
     }
 }

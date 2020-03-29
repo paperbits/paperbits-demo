@@ -28,7 +28,7 @@ export class FileSystemBlobStorage implements IBlobStorage {
                     reject(error);
                 }
                 else {
-                    fs.writeFile(fullpath, new Buffer(content), error => {
+                    fs.writeFile(fullpath, Buffer.from(content.buffer), error => {
                         if (error) {
                             reject(error);
                         }
