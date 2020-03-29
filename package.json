@@ -19,6 +19,7 @@
         "@types/google-maps": "^3.2.2",
         "@types/knockout": "^3.4.67",
         "@types/knockout.validation": "0.0.37",
+        "@types/react": "^16.9.25",
         "autoprefixer": "^9.7.4",
         "awesome-typescript-loader": "^5.2.1",
         "clean-webpack-plugin": "2.0.2",
@@ -61,6 +62,8 @@
         "knockout": "^3.5.1",
         "knockout-mapping": "^2.6.0",
         "knockout.validation": "^2.0.4",
-        "mime-types": "^2.1.26"
+        "mime-types": "^2.1.26",
+        "react": "^16.11.0",
+        "react-dom": "^16.11.0"
     }
 }

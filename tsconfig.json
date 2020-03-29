@@ -19,7 +19,8 @@
         "listFiles": false,
         "sourceMap": false,
         "allowSyntheticDefaultImports": true,
-        "incremental": true
+        "incremental": true,
+        "jsx": "react"
     },
     "exclude": [
         "./node_modules"
