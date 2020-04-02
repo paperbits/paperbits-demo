@@ -15,7 +15,15 @@ import { XmlHttpRequestClient } from "@paperbits/common/http";
 import { StaticUserService } from "./staticUserService";
 import { StaticRoleService } from "./staticRoleService";
 import { SearchRuntimeModule } from "@paperbits/core/search/search.runtime.module";
+
+/* Knockout example component */
 import { ClickCounterRuntimeModule } from "./click-counter/ko/runtime/clickCounter.runtime.module";
+
+/* Uncomment to switch to Vue example component */
+// import { ClickCounterRuntimeModule } from "./click-counter/vue/runtime/clickCounter.runtime.module";
+
+/* Uncomment to switch to React example component */
+// import { ClickCounterRuntimeModule } from "./click-counter/react/runtime/clickCounter.runtime.module";
 
 
 export class DemoRuntimeModule implements IInjectorModule {
