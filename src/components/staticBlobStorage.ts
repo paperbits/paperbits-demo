@@ -37,12 +37,11 @@ export class StaticBlobStorage implements IBlobStorage {
     public async getDownloadUrl(blobKey: string): Promise<string> {
         const blobRecord = this.storageDataObject[blobKey];
 
-        if (blobRecord) {
-            return `data:${blobRecord.contentType};base64,${Utils.arrayBufferToBase64(blobRecord.content)}`;
+        if (!blobRecord) {
+            return null;
         }
-        else {
-            throw new Error(`Blob with key "${blobKey}" not found.`);
-        }
+
+        return `data:${blobRecord.contentType};base64,${Utils.arrayBufferToBase64(blobRecord.content)}`;
     }
 
     /**
