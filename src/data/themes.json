@@ -1347,6 +1347,21 @@
             }
         },
         "gradients": {
+            "default": {
+                "colorStops": [
+                    {
+                        "color": "#87e0fd",
+                        "length": "0"
+                    },
+                    {
+                        "color": "#FF2626",
+                        "length": "100"
+                    }
+                ],
+                "direction": "45deg",
+                "displayName": "Default",
+                "key": "gradients/default"
+            },
             "gradient1": {
                 "colorStops": [
                     {
