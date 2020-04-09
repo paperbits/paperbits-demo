@@ -161,6 +161,8 @@ textarea {
     .form-control:active,
     .form-control:focus {
         border: none;
+        background: none;
+        outline: none;
     }
 
     .input-group-btn {
