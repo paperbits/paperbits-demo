@@ -1,5 +1,5 @@
 ---
-name: Accessibility bg report
+name: Accessibility bug report
 about: Create a report to help us improve
 labels: accessibility, bug
 ---
