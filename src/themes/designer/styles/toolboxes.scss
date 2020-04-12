@@ -226,6 +226,16 @@ h2 {
     .flex-row {
         flex-wrap: wrap;
     }
+
+    h1 {
+        margin: 3px 0;
+    }
+}
+
+.balloon {
+    .editor {
+        padding: 17px;
+    }
 }
 
 .no-pointer-events {
