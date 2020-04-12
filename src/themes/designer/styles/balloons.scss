@@ -24,7 +24,7 @@ $tip-width: 10px;
     }
 
     &.balloon-is-active {
-        display: block;
+        display: flex;
     }
 
     &.balloon-top {
