@@ -46,7 +46,7 @@
                 background: none;
                 cursor: pointer;
                 vertical-align: middle;
-                color: $color-info
+                color: $color-info;
             }
         }
 
@@ -90,18 +90,9 @@ workshops {
     margin-right: 0;
 }
 
-.balloon {
-    .list-container {
-        width: 280px;
-        max-height: 350px;
-    }
-}
-
-hyperlink-selector {
-    .list-container {
-        max-height: 350px;
-        max-width: 260px;
-    }
+.list-container {
+    width: 300px;
+    max-height: 350px;
 }
 
 .hlink-container {

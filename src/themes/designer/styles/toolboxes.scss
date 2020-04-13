@@ -216,6 +216,13 @@ h2 {
     }
 }
 
+.balloon {
+    .toolbox {
+        padding: 0;
+        box-shadow: none;
+    }
+}
+
 .editor {
     padding: 10px;
     flex: 1;
@@ -229,12 +236,6 @@ h2 {
 
     h1 {
         margin: 3px 0;
-    }
-}
-
-.balloon {
-    .editor {
-        padding: 17px;
     }
 }
 
