@@ -41,6 +41,12 @@
     }
 }
 
+.list {
+    max-width: 300px;
+    min-height: 150px !important;
+    max-height: 350px;
+}
+
 .list-item {
     // line-height: $list-item-size;
     line-height: 2em;

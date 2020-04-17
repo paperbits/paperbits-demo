@@ -8,14 +8,14 @@ $tip-width: 10px;
     position: fixed;
     background-color: $balloon-background;
     z-index: $z-index-balloon;
-    box-shadow: 0 0 2px 2px rgba(0, 0, 0, .15);
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.15);
     border-radius: $toolbox-border-radius;
     padding: 7px;
     display: none;
 
     &:after {
         position: absolute;
-        content: '';
+        content: "";
         width: $tip-width;
         height: $tip-width;
         background: $balloon-background;
@@ -33,7 +33,7 @@ $tip-width: 10px;
             z-index: $z-index-balloon;
             transform: translateY(50%) rotate(45deg);
             box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
-            left: $tip-width + ($tip-width/2);
+            left: calc(50% - 5px);
             bottom: 0;
         }
     }
@@ -43,8 +43,28 @@ $tip-width: 10px;
             z-index: $z-index-balloon;
             transform: translateY(-50%) rotate(45deg);
             box-shadow: -2px -2px 2px rgba(0, 0, 0, 0.15);
-            left: $tip-width + ($tip-width/2);
+            left: calc(50% - 5px);
             top: 0;
+        }
+    }
+
+    &.balloon-left {
+        &:after {
+            z-index: $z-index-balloon;
+            transform: translateX(50%) rotate(-45deg);
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+            top: calc(50% + 5px);
+            right: 0;
+        }
+    }
+
+    &.balloon-right {
+        &:after {
+            z-index: $z-index-balloon;
+            transform: translateX(-50%) rotate(-45deg);
+            box-shadow: -2px -2px 2px rgba(0, 0, 0, 0.15);
+            top: calc(50% + 5px);
+            left: 0;
         }
     }
 }
@@ -69,7 +89,7 @@ $tip-width: 10px;
     height: 150px;
     overflow: hidden;
     margin: 8px 2px 2px 2px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 
     .zoom-item {
         transform: scale(0.32);
