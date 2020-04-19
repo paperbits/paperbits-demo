@@ -52,6 +52,13 @@ h2 {
         flex-direction: row;
     }
 
+    &.toolbox-position-right-top {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        flex-direction: row;
+    }
+
     &.toolbox-position-left-offset {
         position: fixed;
         top: 20px;
