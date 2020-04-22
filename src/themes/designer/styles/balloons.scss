@@ -53,7 +53,7 @@ $tip-width: 10px;
             z-index: $z-index-balloon;
             transform: translateX(50%) rotate(-45deg);
             box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
-            top: calc(50% + 5px);
+            top: calc(50% - 5px);
             right: 0;
         }
     }
@@ -63,7 +63,7 @@ $tip-width: 10px;
             z-index: $z-index-balloon;
             transform: translateX(-50%) rotate(-45deg);
             box-shadow: -2px -2px 2px rgba(0, 0, 0, 0.15);
-            top: calc(50% + 5px);
+            top: calc(50% - 5px);
             left: 0;
         }
     }
