@@ -3,7 +3,6 @@
 @import "icons.scss";
 
 .list-item-group {
-    flex-basis: 100%;
     width: 100%;
 
     .list-item-group {
@@ -42,9 +41,8 @@
 }
 
 .list {
-    max-width: 300px;
-    min-height: 150px !important;
-    max-height: 350px;
+    width: 300px;
+    height: 400px;
 }
 
 .list-item {
