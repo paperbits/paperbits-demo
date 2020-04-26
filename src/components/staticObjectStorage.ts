@@ -251,6 +251,9 @@ export class StaticObjectStorage implements IObjectStorage {
                     const contentString = readerEvent.target.result.toString();
                     const dataObject = contentString ? JSON.parse(contentString) : undefined;
                     this.storageDataObject = dataObject || this.storageDataObject;
+
+                    this.loadDataPromise = new Promise<Object>(resolve => resolve(this.storageDataObject));
+
                     resolve(dataObject);
                 };
 
