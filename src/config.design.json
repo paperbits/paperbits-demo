@@ -9,5 +9,6 @@
         "storageBasePath": "/"
     },
     "localizationEnabled": true,
+    "websitePreviewEnabled": true,
     "environment": "design"
 }
