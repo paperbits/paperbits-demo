@@ -188,8 +188,9 @@ hr {
     margin: 12px 0;
 }
 
-.fieldset-image {
-    max-width: 480px;
-    min-width: 100px;
-    height: auto;
+.media-preview-box {
+    max-width: 450px;
+    max-height: 450px;
+    min-width: 150px;
+    min-height: 150px;
 }
