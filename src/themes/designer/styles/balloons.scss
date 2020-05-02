@@ -13,59 +13,8 @@ $tip-width: 10px;
     padding: 7px;
     display: none;
 
-    &:after {
-        position: absolute;
-        content: "";
-        width: $tip-width;
-        height: $tip-width;
-        background: $balloon-background;
-        z-index: $z-index-balloon;
-        box-shadow: -2px -2px 2px rgba(0, 0, 0, 0.15);
-        z-index: -100;
-    }
-
     &.balloon-is-active {
         display: flex;
-    }
-
-    &.balloon-top {
-        &:after {
-            z-index: $z-index-balloon;
-            transform: translateY(50%) rotate(45deg);
-            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
-            left: calc(50% - 5px);
-            bottom: 0;
-        }
-    }
-
-    &.balloon-bottom {
-        &:after {
-            z-index: $z-index-balloon;
-            transform: translateY(-50%) rotate(45deg);
-            box-shadow: -2px -2px 2px rgba(0, 0, 0, 0.15);
-            left: calc(50% - 5px);
-            top: 0;
-        }
-    }
-
-    &.balloon-left {
-        &:after {
-            z-index: $z-index-balloon;
-            transform: translateX(50%) rotate(-45deg);
-            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
-            top: calc(50% - 5px);
-            right: 0;
-        }
-    }
-
-    &.balloon-right {
-        &:after {
-            z-index: $z-index-balloon;
-            transform: translateX(-50%) rotate(-45deg);
-            box-shadow: -2px -2px 2px rgba(0, 0, 0, 0.15);
-            top: calc(50% - 5px);
-            left: 0;
-        }
     }
 }
 
@@ -94,5 +43,34 @@ $tip-width: 10px;
     .zoom-item {
         transform: scale(0.32);
         transform-origin: 0% 0%;
+    }
+}
+
+.balloon-tip {
+    position: fixed;
+    background-color: $balloon-background;
+    width: $tip-width;
+    height: $tip-width;
+    z-index: $z-index-balloon;
+    box-shadow: -2px -2px 2px rgba(0, 0, 0, 0.15);
+
+    &.balloon-top {
+        transform: rotate(45deg);
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+    }
+
+    &.balloon-bottom {
+        transform: rotate(45deg);
+        box-shadow: -2px -2px 2px rgba(0, 0, 0, 0.15);
+    }
+
+    &.balloon-left {
+        transform: rotate(-45deg);
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+    }
+
+    &.balloon-right {
+        transform: rotate(-45deg);
+        box-shadow: -2px -2px 2px rgba(0, 0, 0, 0.15);
     }
 }
