@@ -45,6 +45,7 @@ $tip-width: 10px;
     transform: scale(0.32);
     transform-origin: 0% 0%;
     transform-origin: top left;
+    pointer-events: none;
 }
 
 .balloon-tip {
