@@ -10,5 +10,7 @@
     },
     "localizationEnabled": true,
     "websitePreviewEnabled": true,
+    "blockSnippetsUrl": "/data/snippets-blocks.json",
+    "styleSnippetsUrl": "/data/snippets-styles.json",
     "environment": "design"
 }
