@@ -24,6 +24,10 @@
             fill: $arrow-active-color;
             stroke: $arrow-active-color;
         }
+
+        &.dropzone-showbox {
+            border-color: $arrow-active-color;
+        }
     }
 
     &[alignment="top left"] {
