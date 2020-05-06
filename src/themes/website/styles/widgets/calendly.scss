@@ -1,0 +1,37 @@
+.calendly-badge-widget {
+    left: 50% !important;
+    margin-left: -100px !important;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.calendly-popup-content {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.calendly-popup-close {
+    @extend .icon;
+    @extend .icon-simple-remove;
+    
+    width: 20px;
+    height: 20px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.calendly-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ccc;
+}
