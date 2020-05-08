@@ -31,7 +31,7 @@ $basicLightbox__timing: ease !default;
         font-size: 20px;
         color: white;
         text-align: center;
-        padding-bottom: 10px;
+        padding: 10px;
     }
 
     .lightbox-img {
@@ -95,4 +95,6 @@ $basicLightbox__timing: ease !default;
 .lightbox-image {
     width: 100%; 
     height: auto;
+    max-height: 100%;
+    cursor: pointer;
 }

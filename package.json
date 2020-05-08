@@ -54,7 +54,6 @@
         "@paperbits/styles": "0.1.271",
         "@types/knockout.mapping": "^2.0.35",
         "@webcomponents/custom-elements": "^1.4.0",
-        "basiclightbox": "^5.0.3",
         "core-js": "^3.6.4",
         "cssom": "^0.4.4",
         "emitter": "0.0.5",
