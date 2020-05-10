@@ -31,7 +31,7 @@ injector.bindModule(new DemoDesignModule());
 /* Uncomment to enable Firebase module */
 // injector.bindModule(new FirebaseModule());
 
-injector.bindModule(new OfflineModule());
+injector.bindModule(new OfflineModule({ autosave: false }));
 injector.resolve("autostart");
 
 document.addEventListener("DOMContentLoaded", () => {
