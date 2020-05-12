@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const injector = new InversifyInjector();
     injector.bindModule(new DemoRuntimeModule());
 
-    if (location.href.contains("designtime=true")) {
+    if (location.href.includes("designtime=true")) {
         injector.bindToCollection("autostart", HistoryRouteHandler);
     }
     else {
