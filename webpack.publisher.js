@@ -55,7 +55,10 @@ const publisherConfig = {
             },
             {
                 test: /\.html$/,
-                loader: "html-loader?exportAsEs6Default"
+                loader: "html-loader",
+                options: {
+                    esModule: true
+                }
             },
             {
                 test: /\.(png|woff|woff2|eot|ttf|svg)$/,
@@ -73,10 +76,12 @@ const publisherConfig = {
     plugins: [
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({ filename: "[name].css", chunkFilename: "[id].css" }),
-        new CopyWebpackPlugin([
-            { from: `./src/data/demo.json`, to: `./data/demo.json` },
-            { from: `./src/config.publish.json`, to: `config.json` }
-        ])
+        new CopyWebpackPlugin({
+            patterns: [
+                { from: `./src/data/demo.json`, to: `./data/demo.json` },
+                { from: `./src/config.publish.json`, to: `config.json` }
+            ]
+        })
     ],
     resolve: {
         extensions: [".ts", ".tsx", ".js", ".jsx", ".html", ".scss"]

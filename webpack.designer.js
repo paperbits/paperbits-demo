@@ -32,7 +32,10 @@ const designerConfig = {
             },
             {
                 test: /\.html$/,
-                loader: "html-loader?exportAsEs6Default"
+                loader: "html-loader",
+                options: {
+                    esModule: true
+                }
             },
             {
                 test: /\.(png|woff|woff2|eot|ttf|svg)$/,
@@ -52,14 +55,16 @@ const designerConfig = {
             filename: "[name].css",
             chunkFilename: "[id].css"
         }),
-        new CopyWebpackPlugin([
-            { from: `./src/data`, to: `./data` },
-            { from: `./src/config.design.json`, to: `./config.json` },
-            { from: `./src/themes/designer/assets/index.html`, to: "index.html" },
-            { from: `./src/themes/designer/styles/fonts`, to: "editors/styles/fonts" },
-            { from: `./src/themes/website/styles/fonts`, to: "styles/fonts" },
-            { from: `./src/themes/website/assets` }
-        ])
+        new CopyWebpackPlugin({
+            patterns: [
+                { from: `./src/data`, to: `./data` },
+                { from: `./src/config.design.json`, to: `./config.json` },
+                { from: `./src/themes/designer/assets/index.html`, to: "index.html" },
+                { from: `./src/themes/designer/styles/fonts`, to: "editors/styles/fonts" },
+                { from: `./src/themes/website/styles/fonts`, to: "styles/fonts" },
+                { from: `./src/themes/website/assets` }
+            ]
+        })
     ],
     resolve: {
         extensions: [".ts", ".tsx", ".js", ".jsx", ".html", ".scss"]

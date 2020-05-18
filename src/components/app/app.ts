@@ -9,17 +9,22 @@
 import template from "./app.html";
 import { ViewManager } from "@paperbits/common/ui";
 import { Component, OnMounted } from "@paperbits/common/ko/decorators";
+import { Logger } from "@paperbits/common/logging";
 
 @Component({
     selector: "app",
     template: template
 })
 export class App {
-    constructor(private readonly viewManager: ViewManager) { }
+    constructor(
+        private readonly logger: Logger,
+        private readonly viewManager: ViewManager
+    ) { }
 
     @OnMounted()
     public async initialize(): Promise<void> {
         this.viewManager.setHost({ name: "page-host" });
         this.viewManager.showToolboxes();
+        this.logger.traceEvent("App started.");
     }
 }

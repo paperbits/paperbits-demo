@@ -45,7 +45,10 @@ module.exports = {
             },
             {
                 test: /\.html$/,
-                loader: "html-loader?exportAsEs6Default"
+                loader: "html-loader",
+                options: {
+                    esModule: true
+                }
             },
             {
                 test: /\.(png|woff|woff2|eot|ttf|svg)$/,
@@ -66,11 +69,13 @@ module.exports = {
     },
     plugins: [
         new MiniCssExtractPlugin({ filename: "[name].css", chunkFilename: "[id].css" }),
-        new CopyWebpackPlugin([
-            { from: `./src/config.runtime.json`, to: `config.json` },
-            { from: `./src/themes/website/styles/fonts`, to: "styles/fonts" },
-            { from: `./src/themes/website/assets` }
-        ])
+        new CopyWebpackPlugin({
+            patterns: [
+                { from: `./src/config.runtime.json`, to: `config.json` },
+                { from: `./src/themes/website/styles/fonts`, to: "styles/fonts" },
+                { from: `./src/themes/website/assets` }
+            ]
+        })
     ],
     resolve: {
         // alias: {
