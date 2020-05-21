@@ -33,7 +33,11 @@ const runtimeConfig = {
                 test: /\.html$/,
                 loader: "html-loader",
                 options: {
-                    esModule: true
+                    esModule: true,
+                    minimize: {
+                        removeComments: false,
+                        collapseWhitespace: false
+                    }
                 }
             },
             {
@@ -65,7 +69,7 @@ const runtimeConfig = {
     ],
     resolve: {
         alias: {
-            'vue$': 'vue/dist/vue.esm.js'
+            // 'vue$': 'vue/dist/vue.esm.js'
         },
         extensions: [".ts", ".tsx", ".js", ".jsx", ".html", ".scss"]
     }
