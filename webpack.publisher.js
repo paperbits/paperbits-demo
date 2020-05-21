@@ -6,7 +6,7 @@ const runtimeConfig = require("./webpack.runtime");
 
 
 const publisherConfig = {
-    mode: "development",
+    mode: "none",
     target: "node",
     node: {
         __dirname: false,
@@ -14,6 +14,9 @@ const publisherConfig = {
     },
     entry: {
         "index": ["./src/startup.publish.ts"]
+    },
+    optimization: {
+        minimize: false
     },
     output: {
         filename: "./[name].js",
@@ -43,7 +46,11 @@ const publisherConfig = {
                 test: /\.html$/,
                 loader: "html-loader",
                 options: {
-                    esModule: true
+                    esModule: true,
+                    minimize: {
+                        removeComments: false,
+                        collapseWhitespace: false
+                    }
                 }
             },
             {
