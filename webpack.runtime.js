@@ -1,32 +1,18 @@
 const path = require("path");
+const merge = require("webpack-merge");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
-const TerserPlugin = require("terser-webpack-plugin");
 
 
-module.exports = {
-    mode: "development",
+const runtimeConfig = {
+    mode: "production",
     target: "web",
     entry: {
         "scripts/theme": ["./src/startup.runtime.ts"],
-        "styles/theme": [`./src/themes/website/styles/styles.scss`]
     },
     output: {
         filename: "./[name].js",
-        path: path.resolve(__dirname, "dist"),
-    },
-    optimization: {
-        minimizer: [
-            new TerserPlugin({
-                sourceMap: false,
-                terserOptions: {
-                    mangle: false,
-                    output: {
-                        comments: false,
-                    }
-                }
-            })
-        ]
+        path: path.resolve(__dirname, "dist/runtime"),
     },
     module: {
         rules: [
@@ -78,9 +64,27 @@ module.exports = {
         })
     ],
     resolve: {
-        // alias: {
-        //     'vue$': 'vue/dist/vue.esm.js'
-        // },
+        alias: {
+            'vue$': 'vue/dist/vue.esm.js'
+        },
         extensions: [".ts", ".tsx", ".js", ".jsx", ".html", ".scss"]
     }
+}
+
+module.exports = (designer) => {
+    const modification = {
+        entry: {},
+        output: {}
+    }
+
+    if (designer) {
+        modification.entry["styles/theme"] = `./src/themes/website/styles/styles.design.scss`;
+        modification.output["path"] = path.resolve(__dirname, "dist/designer");
+    }
+    else {
+        modification.entry["styles/theme"] = `./src/themes/website/styles/styles.scss`
+        modification.output["path"] = path.resolve(__dirname, "dist/publisher/assets");
+    }
+
+    return merge(runtimeConfig, modification);
 };

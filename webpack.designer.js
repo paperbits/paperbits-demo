@@ -1,15 +1,16 @@
 const path = require("path");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
+const CleanWebpackPlugin = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const runtimeConfig = require("./webpack.runtime.js");
 
 
 const designerConfig = {
+    mode: "production",
     target: "web",
     entry: {
         "editors/scripts/paperbits": ["./src/startup.design.ts"],
         "editors/styles/paperbits": [`./src/themes/designer/styles/styles.scss`],
-        "scripts/theme": ["./src/startup.runtime.ts"],
-        "styles/theme": [`./src/themes/website/styles/styles.design.scss`]
     },
     output: {
         filename: "./[name].js",
@@ -55,6 +56,7 @@ const designerConfig = {
         ]
     },
     plugins: [
+        new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
             filename: "[name].css",
             chunkFilename: "[id].css"
@@ -65,8 +67,6 @@ const designerConfig = {
                 { from: `./src/config.design.json`, to: `./config.json` },
                 { from: `./src/themes/designer/assets/index.html`, to: "index.html" },
                 { from: `./src/themes/designer/styles/fonts`, to: "editors/styles/fonts" },
-                { from: `./src/themes/website/styles/fonts`, to: "styles/fonts" },
-                { from: `./src/themes/website/assets` }
             ]
         })
     ],
@@ -75,4 +75,4 @@ const designerConfig = {
     }
 };
 
-module.exports = designerConfig;
+module.exports = [designerConfig, runtimeConfig(true)]
