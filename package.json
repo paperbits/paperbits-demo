@@ -45,6 +45,12 @@
         "webpack-merge": "^4.2.2"
     },
     "dependencies": {
+        "@angular/common": "^9.1.9",
+        "@angular/compiler": "^9.1.9",
+        "@angular/core": "^9.1.9",
+        "@angular/elements": "^9.1.9",
+        "@angular/platform-browser": "^9.1.9",
+        "@angular/platform-browser-dynamic": "^9.1.9",
         "@paperbits/common": "0.1.288",
         "@paperbits/core": "0.1.288",
         "@paperbits/emails": "0.1.288",
@@ -62,6 +68,8 @@
         "knockout.validation": "^2.0.4",
         "mime-types": "^2.1.27",
         "react": "^16.13.1",
-        "react-dom": "^16.13.1"
+        "react-dom": "^16.13.1",
+        "rxjs": "^6.5.5",
+        "zone.js": "^0.10.3"
     }
 }
