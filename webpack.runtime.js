@@ -47,10 +47,10 @@ const runtimeConfig = {
                     limit: 10000
                 }
             },
-            // {
-            //     test: /\.vue$/,
-            //     loader: 'vue-loader'
-            // }
+            {
+                test: /\.vue$/,
+                loader: 'vue-loader'
+            },
             {
                 test: /\.liquid$/,
                 loader: "raw-loader"
@@ -69,7 +69,7 @@ const runtimeConfig = {
     ],
     resolve: {
         alias: {
-            // 'vue$': 'vue/dist/vue.esm.js'
+            "vue$": "vue/dist/vue.esm.js"
         },
         extensions: [".ts", ".tsx", ".js", ".jsx", ".html", ".scss"]
     }

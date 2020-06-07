@@ -26,6 +26,9 @@ import { ClickCounterRuntimeModule } from "./click-counter/ko/runtime/clickCount
 /* Uncomment to switch to React example component */
 // import { ClickCounterRuntimeModule } from "./click-counter/react/runtime/clickCounter.runtime.module";
 
+/* Uncomment to switch to Angular example component */
+// import { ClickCounterRuntimeModule } from "./click-counter/angular/runtime/clickCounter.runtime.module";
+
 
 export class DemoRuntimeModule implements IInjectorModule {
     public register(injector: IInjector): void {
