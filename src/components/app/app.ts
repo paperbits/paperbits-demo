@@ -53,7 +53,7 @@ export class App {
     }
 
     private async notSupportedBrowser(): Promise<void> {
-        this.viewManager.setHost({ name: "invalid-browser" });
+        this.viewManager.setHost({ name: "browser-not-supported" });
         this.viewManager.removeShutter();
         this.logger.traceEvent("App started.");
     }
