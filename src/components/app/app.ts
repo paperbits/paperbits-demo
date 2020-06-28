@@ -26,6 +26,7 @@ export class App {
     @OnMounted()
     public async initialize(): Promise<void> {
         const browser = detect();
+        
         switch(browser.name) {
             case "chrome": {
                 versionCompare(browser.version, "83.0.4103.116", null) > -1 ? this.supportedBrowser() : this.notSupportedBrowser();
