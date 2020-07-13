@@ -25,6 +25,6 @@ export class App {
     public async initialize(): Promise<void> {
         this.viewManager.setHost({ name: "page-host" });
         this.viewManager.showToolboxes();
-        this.logger.traceEvent("App started.");
+        this.logger.trackEvent("App started.");
     }
 }
