@@ -11,8 +11,8 @@ import { ConsoleLogger } from "@paperbits/common/logging";
 import { IInjector, IInjectorModule } from "@paperbits/common/injection";
 import { StaticBlobStorage } from "./staticBlobStorage";
 import { StaticUserService } from "./staticUserService";
-import { StaticLocalObjectStorage } from "./staticLocalObjectStorage";
-import { FileSystemBlobStorage } from "./filesystemBlobStorage";
+import { FileSystemObjectStorage } from "./fileSystemObjectStorage";
+import { FileSystemBlobStorage } from "./fileSystemBlobStorage";
 import { StaticSettingsProvider } from "./staticSettingsProvider";
 import { StaticRouter } from "./staticRouter";
 import { StaticRoleService } from "./staticRoleService";
@@ -33,9 +33,9 @@ export class DemoPublishModule implements IInjectorModule {
         injector.bindSingleton("roleService", StaticRoleService);
         injector.bindSingleton("router", StaticRouter);
         injector.bindSingleton("blobStorage", StaticBlobStorage);
-        injector.bindInstance("objectStorage", new StaticLocalObjectStorage(path.resolve(this.dataPath)));
-        injector.bindInstance("settingsProvider", new StaticSettingsProvider(path.resolve(this.settingsPath)));
+        injector.bindInstance("objectStorage", new FileSystemObjectStorage(path.resolve(this.dataPath)));
         injector.bindInstance("outputBlobStorage", new FileSystemBlobStorage(path.resolve(this.outputBasePath)));
+        injector.bindInstance("settingsProvider", new StaticSettingsProvider(path.resolve(this.settingsPath)));
         injector.bindModule(new SearchPublishModule());
         injector.bindModule(new ClickCounterEditorModule());
     }

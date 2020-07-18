@@ -10,7 +10,7 @@
 import * as Utils from "./utils";
 import { StaticObjectStorage } from "./staticObjectStorage";
 
-export class StaticLocalObjectStorage extends StaticObjectStorage {
+export class FileSystemObjectStorage extends StaticObjectStorage {
     constructor(private readonly dataPath: string) {
         super(null);
     }
