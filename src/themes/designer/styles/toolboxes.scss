@@ -25,7 +25,7 @@ h2 {
 .toolbox {
     display: flex;
     flex-direction: column;
-    padding: 7px;
+    padding: $toolbox-padding;
     z-index: $z-index-base;
     max-height: calc(100% - 40px);
 
