@@ -50,7 +50,7 @@ const designerConfig = {
                 }
             },
             {
-                test: /\.liquid$/,
+                test: /\.(raw|liquid)$/,
                 loader: "raw-loader"
             }
         ]

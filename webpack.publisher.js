@@ -61,7 +61,7 @@ const publisherConfig = {
                 }
             },
             {
-                test: /\.liquid$/,
+                test: /\.(raw|liquid)$/,
                 loader: "raw-loader"
             }
         ]
