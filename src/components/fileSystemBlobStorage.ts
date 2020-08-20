@@ -8,7 +8,6 @@
 
 import * as fs from "fs";
 import * as path from "path";
-import * as mkdirp from "mkdirp";
 import { IBlobStorage } from "@paperbits/common/persistence";
 
 export class FileSystemBlobStorage implements IBlobStorage {
@@ -18,25 +17,16 @@ export class FileSystemBlobStorage implements IBlobStorage {
         this.basePath = basePath;
     }
 
-    public uploadBlob(blobPath: string, content: Uint8Array): Promise<void> {
-        return new Promise<void>((resolve, reject) => {
-            const fullpath = `${this.basePath}/${blobPath}`.replace("//", "/");
+    public async uploadBlob(blobPath: string, content: Uint8Array): Promise<void> {
+        const fullpath = `${this.basePath}/${blobPath}`.replace("//", "/");
 
-            mkdirp(path.dirname(fullpath), (error) => {
-                if (error) {
-                    console.error(error);
-                    reject(error);
-                }
-                else {
-                    fs.writeFile(fullpath, Buffer.from(content.buffer), error => {
-                        if (error) {
-                            reject(error);
-                        }
-                        resolve();
-                    });
-                }
-            });
-        });
+        try {
+            await fs.promises.mkdir(path.dirname(fullpath), { recursive: true });
+            await fs.promises.writeFile(fullpath, Buffer.from(content.buffer));
+        }
+        catch (error) {
+            console.error(error);
+        }
     }
 
     public downloadBlob(blobPath: string): Promise<Uint8Array> {
