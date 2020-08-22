@@ -264,3 +264,10 @@ h2 {
     @include fit;
     background-size: cover;
 }
+
+.subtle {
+    font-size: .9em;
+    color: lighten($color-base, 10%);
+    font-family: monospace;
+    padding-top: 5px;
+}
