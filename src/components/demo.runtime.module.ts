@@ -9,7 +9,7 @@
 import "@paperbits/core/ko/bindingHandlers/bindingHandlers.component";
 import { IInjector, IInjectorModule } from "@paperbits/common/injection";
 import { DefaultEventManager } from "@paperbits/common/events";
-import { DefaultRouter } from "@paperbits/common/routing";
+import { DefaultRouter, HistoryRouteHandler, LocationRouteHandler } from "@paperbits/common/routing";
 import { VisibilityGuard } from "@paperbits/common/user";
 import { XmlHttpRequestClient } from "@paperbits/common/http";
 import { KnockoutRegistrationLoaders } from "@paperbits/core/ko/knockout.loaders";
@@ -43,5 +43,8 @@ export class DemoRuntimeModule implements IInjectorModule {
         injector.bindToCollection("autostart", VisibilityGuard);
         injector.bindSingleton("userService", StaticUserService);
         injector.bindSingleton("roleService", StaticRoleService);
+        injector.bindToCollection("autostart", location.href.includes("designtime=true")
+            ? HistoryRouteHandler
+            : LocationRouteHandler);
     }
 }
