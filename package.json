@@ -14,7 +14,8 @@
         "build-designer": "webpack --config webpack.designer.js",
         "build-publisher": "webpack --config webpack.publisher.js",
         "build-runtime": "webpack --config webpack.runtime.js",
-        "publish": "webpack --config webpack.publisher.js && node dist/publisher/index.js",
+        "publish": "webpack --config webpack.publisher.js && node dist/publisher/index.js && npm run preview",
+        "preview": "http-server ./dist/website -o -a localhost",
         "postinstall": "npm rebuild node-sass"
     },
     "devDependencies": {
@@ -28,6 +29,7 @@
         "css-loader": "4.2.1",
         "file-loader": "^6.0.0",
         "html-loader": "^1.2.1",
+        "http-server": "^0.12.3",
         "mini-css-extract-plugin": "^0.10.0",
         "node-sass": "^4.14.1",
         "path": "^0.12.7",
