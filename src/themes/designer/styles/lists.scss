@@ -127,6 +127,13 @@
     }
 }
 
+.list-edge {
+    display: block;
+    flex-basis: 100%;
+    min-height: 10px;
+    min-width: 10px;
+}
+
 .list-checkboxes {
     .list-item {
         padding-left: 25px;

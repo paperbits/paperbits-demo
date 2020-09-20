@@ -11,8 +11,9 @@ import * as _ from "lodash";
 import * as FileSaver from "file-saver";
 import * as Objects from "@paperbits/common/objects";
 import { HttpClient } from "@paperbits/common/http";
-import { IObjectStorage, Query, Operator, OrderDirection } from "@paperbits/common/persistence";
-import { Bag } from "@paperbits/common";
+import { IObjectStorage, Query, Operator, OrderDirection, Page } from "@paperbits/common/persistence";
+
+const pageSize = 20;
 
 /**
  * Static object storage for demo purposes. It stores all the uploaded blobs in memory.
@@ -101,21 +102,20 @@ export class StaticObjectStorage implements IObjectStorage {
         Objects.cleanupObject(clone); // Ensure all "undefined" are cleaned up
     }
 
-    public async searchObjects<T>(path: string, query: Query<T>): Promise<Bag<T>> {
-        const searchResultObject: Bag<T> = {};
+    public async searchObjects<T>(path: string, query: Query<T>): Promise<Page<T>> {
         const data = await this.getData();
 
         if (!data) {
-            return searchResultObject;
+            return { value: [] };
         }
 
         const searchObj = Objects.getObjectAt(path, data);
 
         if (!searchObj) {
-            return {};
+            return { value: [] };
         }
 
-        let collection = Object.values(searchObj);
+        let collection: any[] = Object.values(searchObj);
 
         if (query) {
             if (query.filters.length > 0) {
@@ -184,15 +184,9 @@ export class StaticObjectStorage implements IObjectStorage {
             }
         }
 
-        collection.forEach(item => {
-            const segments = item.key.split("/");
-            const key = segments[1];
+        const value = collection.slice(0, pageSize);
 
-            Objects.setValue(key, searchResultObject, item);
-            Objects.cleanupObject(item); // Ensure all "undefined" are cleaned up
-        });
-
-        return searchResultObject;
+        return new StaticPage(value, collection, pageSize);
     }
 
     public async saveChanges(delta: Object): Promise<void> {
@@ -240,6 +234,7 @@ export class StaticObjectStorage implements IObjectStorage {
 
                 const target: HTMLInputElement = <HTMLInputElement>e.target;
                 const file = target.files[0];
+
                 if (!file) {
                     resolve(undefined);
                 }
@@ -261,5 +256,29 @@ export class StaticObjectStorage implements IObjectStorage {
 
             input.click();
         });
+    }
+}
+
+class StaticPage<T> implements Page<T> {
+    constructor(
+        public readonly value: T[],
+        private readonly collection: any,
+        private readonly skip: number,
+    ) {
+        if (skip > this.collection.length) {
+            this.takeNext = null;
+        }
+    }
+
+    public async takePrev?(): Promise<Page<T>> {
+        throw new Error("Not implemented");
+    }
+
+    public async takeNext?(): Promise<Page<T>> {
+        const value = this.collection.slice(this.skip, this.skip + pageSize);
+        const skipNext = this.skip + pageSize;
+        const nextPage = new StaticPage<T>(value, this.collection, skipNext);
+
+        return nextPage;
     }
 }

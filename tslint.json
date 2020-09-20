@@ -144,6 +144,7 @@
         "object-literal-sort-keys": false,
         "one-variable-per-declaration": false,
         "no-string-literal": false,
-        "no-return-await": false
+        "no-return-await": false,
+        "ban-types": false
     }
 }
