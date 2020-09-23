@@ -13,12 +13,12 @@ import { DefaultRouter, HistoryRouteHandler, LocationRouteHandler } from "@paper
 import { VisibilityGuard } from "@paperbits/common/user";
 import { XmlHttpRequestClient } from "@paperbits/common/http";
 import { KnockoutRegistrationLoaders } from "@paperbits/core/ko/knockout.loaders";
-import { StaticUserService } from "./staticUserService";
-import { StaticRoleService } from "./staticRoleService";
+import { StaticUserService } from "../user/staticUserService";
+import { StaticRoleService } from "../user/staticRoleService";
 import { SearchRuntimeModule } from "@paperbits/core/search/search.runtime.module";
 
 /* Knockout example component */
-import { ClickCounterRuntimeModule } from "./click-counter/ko/runtime";
+import { ClickCounterRuntimeModule } from "../components/click-counter/ko/runtime";
 
 /* Uncomment to switch to Vue example component */
 // import { ClickCounterRuntimeModule } from "./click-counter/vue/runtime";

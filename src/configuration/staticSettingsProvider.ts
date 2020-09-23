@@ -7,7 +7,7 @@
  */
 
 import { ISettingsProvider } from "@paperbits/common/configuration";
-import * as Utils from "./utils";
+import * as Utils from "../utils";
 
 export class StaticSettingsProvider implements ISettingsProvider {
     private configuration: Object;

@@ -9,15 +9,15 @@
 import * as path from "path";
 import { ConsoleLogger } from "@paperbits/common/logging";
 import { IInjector, IInjectorModule } from "@paperbits/common/injection";
-import { StaticBlobStorage } from "./staticBlobStorage";
-import { StaticUserService } from "./staticUserService";
-import { FileSystemObjectStorage } from "./fileSystemObjectStorage";
-import { FileSystemBlobStorage } from "./fileSystemBlobStorage";
-import { StaticSettingsProvider } from "./staticSettingsProvider";
-import { StaticRouter } from "./staticRouter";
-import { StaticRoleService } from "./staticRoleService";
+import { StaticBlobStorage } from "../persistence/staticBlobStorage";
+import { StaticUserService } from "../user/staticUserService";
+import { FileSystemObjectStorage } from "../persistence/fileSystemObjectStorage";
+import { FileSystemBlobStorage } from "../persistence/fileSystemBlobStorage";
+import { StaticSettingsProvider } from "../configuration/staticSettingsProvider";
+import { StaticRouter } from "../routing/staticRouter";
+import { StaticRoleService } from "../user/staticRoleService";
 import { SearchPublishModule } from "@paperbits/core/search/search.publish.module";
-import { ClickCounterEditorModule } from "./click-counter/ko";
+import { ClickCounterEditorModule } from "../components/click-counter/ko";
 
 
 export class DemoPublishModule implements IInjectorModule {

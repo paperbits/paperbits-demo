@@ -15,11 +15,12 @@ import { EmailsDesignModule } from "@paperbits/emails/emails.design.module";
 import { StylesDesignModule } from "@paperbits/styles/styles.design.module";
 import { ProseMirrorModule } from "@paperbits/prosemirror/prosemirror.module";
 import { OfflineModule } from "@paperbits/common/persistence/offline.module";
-import { DemoDesignModule } from "./components/demo.design.module";
+import { DemoDesignModule } from "./modules/demo.design.module";
 
 /* Uncomment to enable Firebase module */
 // import { FirebaseModule } from "@paperbits/firebase/firebase.module";
 
+/* Initializing dependency injection  */
 const injector = new InversifyInjector();
 injector.bindModule(new CoreDesignModule());
 injector.bindModule(new FormsDesignModule());

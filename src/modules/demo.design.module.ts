@@ -8,13 +8,13 @@
 
 
 import { IInjector, IInjectorModule } from "@paperbits/common/injection";
-import { App } from "./app/app";
+import { App } from "../components/app/app";
 import { ConsoleLogger } from "@paperbits/common/logging";
 import { SearchDesignModule } from "@paperbits/core/search/search.design.module";
-import { StaticObjectStorage } from "./staticObjectStorage";
-import { StaticBlobStorage } from "./staticBlobStorage";
-import { StaticRoleService } from "./staticRoleService";
-import { ClickCounterEditorModule } from "./click-counter/ko/clickCounterEditor.module";
+import { StaticObjectStorage } from "../persistence/staticObjectStorage";
+import { StaticBlobStorage } from "../persistence/staticBlobStorage";
+import { StaticRoleService } from "../user/staticRoleService";
+import { ClickCounterEditorModule } from "../components/click-counter/ko/clickCounterEditor.module";
 import { HistoryRouteHandler } from "@paperbits/common/routing";
 
 

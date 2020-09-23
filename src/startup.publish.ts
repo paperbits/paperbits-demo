@@ -17,12 +17,12 @@ import { StyleModule } from "@paperbits/styles/styles.module";
 import { ProseMirrorModule } from "@paperbits/prosemirror/prosemirror.module";
 import { IntercomPublishModule } from "@paperbits/intercom/intercom.publish.module";
 import { GoogleTagManagerPublishModule } from "@paperbits/gtm/gtm.publish.module";
-import { DemoPublishModule } from "./components/demo.publish.module";
+import { DemoPublishModule } from "./modules/demo.publish.module";
 
 /* Uncomment to enable Firebase module */
 // import { FirebaseModule } from "@paperbits/firebase/firebase.admin.module";
 
-/* Initializing dependency injection container */
+/* Initializing dependency injection  */
 const injector = new InversifyInjector();
 injector.bindModule(new CoreModule());
 injector.bindModule(new CorePublishModule());
@@ -45,7 +45,6 @@ injector.bindModule(new DemoPublishModule(dataPath, settingsPath, outputBasePath
 
 injector.resolve("autostart");
 
-/* Building dependency injection container */
 const publisher = injector.resolve<IPublisher>("sitePublisher");
 
 /* Running actual publishing */

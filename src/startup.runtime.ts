@@ -9,10 +9,11 @@
 import "./polyfills";
 import "./themes/website/scripts";
 import { InversifyInjector } from "@paperbits/common/injection";
-import { DemoRuntimeModule } from "./components/demo.runtime.module";
+import { DemoRuntimeModule } from "./modules/demo.runtime.module";
 
 
 document.addEventListener("DOMContentLoaded", () => {
+    /* Initializing dependency injection  */
     const injector = new InversifyInjector();
     injector.bindModule(new DemoRuntimeModule());
     injector.resolve("autostart");

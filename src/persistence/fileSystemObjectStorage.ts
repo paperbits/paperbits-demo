@@ -7,7 +7,7 @@
  */
 
 
-import * as Utils from "./utils";
+import * as Utils from "../utils";
 import { StaticObjectStorage } from "./staticObjectStorage";
 
 export class FileSystemObjectStorage extends StaticObjectStorage {
