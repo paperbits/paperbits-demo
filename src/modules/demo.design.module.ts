@@ -11,19 +11,21 @@ import { IInjector, IInjectorModule } from "@paperbits/common/injection";
 import { App } from "../components/app/app";
 import { ConsoleLogger } from "@paperbits/common/logging";
 import { SearchDesignModule } from "@paperbits/core/search/search.design.module";
-import { StaticObjectStorage } from "../persistence/staticObjectStorage";
-import { StaticBlobStorage } from "../persistence/staticBlobStorage";
+import { MemoryObjectStorage } from "../persistence/memoryObjectStorage";
+import { MemoryBlobStorage } from "../persistence/memoryBlobStorage";
 import { StaticRoleService } from "../user/staticRoleService";
 import { ClickCounterEditorModule } from "../components/click-counter/ko/clickCounterEditor.module";
 import { HistoryRouteHandler } from "@paperbits/common/routing";
+import { HttpDataProvider } from "../persistence/httpDataProvider";
 
 
 export class DemoDesignModule implements IInjectorModule {
     public register(injector: IInjector): void {
         injector.bindSingleton("app", App);
-        injector.bindSingleton("blobStorage", StaticBlobStorage);
+        injector.bindSingleton("dataProvider", HttpDataProvider);
+        injector.bindSingleton("blobStorage", MemoryBlobStorage);
+        injector.bindSingleton("objectStorage", MemoryObjectStorage);
         injector.bindSingleton("roleService", StaticRoleService);
-        injector.bindSingleton("objectStorage", StaticObjectStorage);
         injector.bindToCollection("autostart", HistoryRouteHandler);
         injector.bindSingleton("logger", ConsoleLogger);
         injector.bindModule(new SearchDesignModule());

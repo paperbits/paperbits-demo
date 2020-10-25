@@ -7,14 +7,11 @@
  */
 
 import * as Utils from "../utils";
-import { MemoryObjectStorage } from "./memoryObjectStorage";
 
-export class FileSystemObjectStorage extends MemoryObjectStorage {
+export class FileSystemDataProvider {
     private storageDataObject: Object;
-    
-    constructor(private readonly dataPath: string) {
-        super(null);
-    }
+
+    constructor(private readonly dataPath: string) { }
 
     protected async getDataObject(): Promise<Object> {
         if (!this.storageDataObject) {

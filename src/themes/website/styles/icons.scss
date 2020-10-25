@@ -1,5 +1,5 @@
 @font-face {
-    font-family: "icons";
+    font-family: "Icons Embedded";
     src: url("/styles/fonts/icons.eot");
     src: url("/styles/fonts/icons.eot") format("embedded-opentype"), url("/styles/fonts/icons.woff2") format("woff2"),
          url("/styles/fonts/icons.woff") format("woff"), url("/styles/fonts/icons.ttf") format("truetype"),
@@ -8,9 +8,9 @@
     font-style: normal;
 }
 
-.icon {
+.icon-emb {
     display: inline-block;
-    font-family: icons;
+    font-family: "Icons Embedded";
     font-style: normal;
     font-weight: normal;
     font-size: 1em;
@@ -22,14 +22,10 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon.icon-zoom-2::before {
-    content: "\ea02";
-}
-
-.icon.icon-menu-8::before {
+.icon-emb.icon-emb-menu-8::before {
     content: "\ea05";
 }
 
-.icon.icon-simple-remove::before {
+.icon-emb.icon-emb-simple-remove::before {
     content: "\ea06";
 }

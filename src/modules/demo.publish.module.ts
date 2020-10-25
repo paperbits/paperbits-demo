@@ -9,7 +9,7 @@
 import * as path from "path";
 import { ConsoleLogger } from "@paperbits/common/logging";
 import { IInjector, IInjectorModule } from "@paperbits/common/injection";
-import { StaticBlobStorage } from "../persistence/staticBlobStorage";
+import { MemoryBlobStorage } from "../persistence/memoryBlobStorage";
 import { StaticUserService } from "../user/staticUserService";
 import { FileSystemObjectStorage } from "../persistence/fileSystemObjectStorage";
 import { FileSystemBlobStorage } from "../persistence/fileSystemBlobStorage";
@@ -18,6 +18,7 @@ import { StaticRouter } from "../routing/staticRouter";
 import { StaticRoleService } from "../user/staticRoleService";
 import { SearchPublishModule } from "@paperbits/core/search/search.publish.module";
 import { ClickCounterEditorModule } from "../components/click-counter/ko";
+import { FileSystemDataProvider } from "../persistence/fileSystemDataProvider";
 
 
 export class DemoPublishModule implements IInjectorModule {
@@ -32,7 +33,8 @@ export class DemoPublishModule implements IInjectorModule {
         injector.bindSingleton("userService", StaticUserService);
         injector.bindSingleton("roleService", StaticRoleService);
         injector.bindSingleton("router", StaticRouter);
-        injector.bindSingleton("blobStorage", StaticBlobStorage);
+        injector.bindSingleton("blobStorage", MemoryBlobStorage);
+        injector.bindInstance("dataProvider", new FileSystemDataProvider(path.resolve(this.dataPath)));
         injector.bindInstance("objectStorage", new FileSystemObjectStorage(path.resolve(this.dataPath)));
         injector.bindInstance("outputBlobStorage", new FileSystemBlobStorage(path.resolve(this.outputBasePath)));
         injector.bindInstance("settingsProvider", new StaticSettingsProvider(path.resolve(this.settingsPath)));

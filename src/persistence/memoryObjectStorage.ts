@@ -6,11 +6,9 @@
  * found in the LICENSE file and at https://paperbits.io/license/mit.
  */
 
-
 import * as _ from "lodash";
 import * as FileSaver from "file-saver";
 import * as Objects from "@paperbits/common/objects";
-import { HttpClient } from "@paperbits/common/http";
 import { IObjectStorage, Query, Operator, OrderDirection, Page } from "@paperbits/common/persistence";
 
 const pageSize = 20;
@@ -18,45 +16,34 @@ const pageSize = 20;
 /**
  * Static object storage for demo purposes. It stores all the uploaded blobs in memory.
  */
-export class StaticObjectStorage implements IObjectStorage {
-    private loadDataPromise: Promise<Object>;
-    protected storageDataObject: Object;
+export class MemoryObjectStorage implements IObjectStorage {
     private splitter = "/";
 
-    constructor(private readonly httpClient: HttpClient) { }
+    constructor(private readonly dataProvider: any) { }
 
-    protected async getData(): Promise<Object> {
-        if (this.loadDataPromise) {
-            return this.loadDataPromise;
-        }
-
-        this.loadDataPromise = new Promise<Object>(async (resolve) => {
-            const response = await this.httpClient.send({
-                url: "/data/demo.json",
-                method: "GET"
-            });
-
-            this.storageDataObject = response.toObject();
-
-            resolve(this.storageDataObject);
-        });
-
-        return this.loadDataPromise;
+    protected async getDataObject(): Promise<Object> {
+        return this.dataProvider.getDataObject();
     }
 
     public async addObject(path: string, dataObject: Object): Promise<void> {
+        const storageDataObject = await this.getDataObject();
+
+        if (!path) {
+            throw new Error(`Parameter "path" not specified.`);
+        }
+
         if (path) {
             const pathParts = path.split(this.splitter);
             const mainNode = pathParts[0];
 
             if (pathParts.length === 1 || (pathParts.length === 2 && !pathParts[1])) {
-                this.storageDataObject[mainNode] = dataObject;
+                storageDataObject[mainNode] = dataObject;
             }
             else {
-                if (!_.has(this.storageDataObject, mainNode)) {
-                    this.storageDataObject[mainNode] = {};
+                if (!_.has(storageDataObject, mainNode)) {
+                    storageDataObject[mainNode] = {};
                 }
-                this.storageDataObject[mainNode][pathParts[1]] = dataObject;
+                storageDataObject[mainNode][pathParts[1]] = dataObject;
             }
         }
         else {
@@ -66,20 +53,20 @@ export class StaticObjectStorage implements IObjectStorage {
                 const mainNode = pathParts[0];
 
                 if (pathParts.length === 1 || (pathParts.length === 2 && !pathParts[1])) {
-                    this.storageDataObject[mainNode] = obj;
+                    storageDataObject[mainNode] = obj;
                 }
                 else {
-                    if (!_.has(this.storageDataObject, mainNode)) {
-                        this.storageDataObject[mainNode] = {};
+                    if (!_.has(storageDataObject, mainNode)) {
+                        storageDataObject[mainNode] = {};
                     }
-                    this.storageDataObject[mainNode][pathParts[1]] = obj;
+                    storageDataObject[mainNode][pathParts[1]] = obj;
                 }
             });
         }
     }
 
     public async getObject<T>(path: string): Promise<T> {
-        const data = await this.getData();
+        const data = await this.getDataObject();
 
         return Objects.getObjectAt(path, Objects.clone(data));
     }
@@ -89,7 +76,8 @@ export class StaticObjectStorage implements IObjectStorage {
             return;
         }
 
-        Objects.deleteNodeAt(path, this.storageDataObject);
+        const storageDataObject = await this.getDataObject();
+        Objects.deleteNodeAt(path, storageDataObject);
     }
 
     public async updateObject<T>(path: string, dataObject: T): Promise<void> {
@@ -97,19 +85,21 @@ export class StaticObjectStorage implements IObjectStorage {
             return;
         }
 
+        const storageDataObject = await this.getDataObject();
+
         const clone: any = Objects.clone(dataObject);
-        Objects.setValue(path, this.storageDataObject, clone);
+        Objects.setValue(path, storageDataObject, clone);
         Objects.cleanupObject(clone); // Ensure all "undefined" are cleaned up
     }
 
     public async searchObjects<T>(path: string, query: Query<T>): Promise<Page<T>> {
-        const data = await this.getData();
+        const storageDataObject: any = Objects.clone(await this.getDataObject());
 
-        if (!data) {
+        if (!storageDataObject) {
             return { value: [] };
         }
 
-        const searchObj = Objects.getObjectAt(path, data);
+        const searchObj = Objects.getObjectAt(path, storageDataObject);
 
         if (!searchObj) {
             return { value: [] };
@@ -184,45 +174,18 @@ export class StaticObjectStorage implements IObjectStorage {
             }
         }
 
-        const value = collection.slice(0, pageSize);
+        const value = Objects.clone<T[]>(collection.slice(0, pageSize));
 
         return new StaticPage(value, collection, pageSize);
     }
 
-    public async saveChanges(delta: Object): Promise<void> {
-        const saveTasks = [];
-        const keys = [];
+    public async saveChanges(): Promise<void> {
+        const storageDataObject = await this.getDataObject();
 
-        Object.keys(delta).map(key => {
-            const firstLevelObject = delta[key];
-
-            Object.keys(firstLevelObject).forEach(subkey => {
-                keys.push(`${key}/${subkey}`);
-            });
-        });
-
-        keys.forEach(key => {
-            const changeObject = Objects.getObjectAt(key, delta);
-
-            if (changeObject) {
-                saveTasks.push(this.updateObject(key, changeObject));
-            }
-            else {
-                saveTasks.push(this.deleteObject(key));
-            }
-        });
-
-        await Promise.all(saveTasks);
-
-        const state = JSON.stringify(this.storageDataObject);
+        const state = JSON.stringify(storageDataObject);
         const stateBlob = new Blob([state], { type: "text/plain;charset=utf-8" });
 
         FileSaver.saveAs(stateBlob, "demo.json");
-
-        /* Uncomment to save changes in a separate file */
-        // const changes = JSON.stringify(delta);
-        // const deltaBlob = new Blob([changes], { type: "text/plain;charset=utf-8" });
-        // FileSaver.saveAs(deltaBlob, "changes.json");
     }
 
     public async loadData(): Promise<object> {
@@ -231,7 +194,6 @@ export class StaticObjectStorage implements IObjectStorage {
             input.type = "file";
 
             input.onchange = e => {
-
                 const target: HTMLInputElement = <HTMLInputElement>e.target;
                 const file = target.files[0];
 
@@ -242,16 +204,14 @@ export class StaticObjectStorage implements IObjectStorage {
                 const reader = new FileReader();
                 reader.readAsText(file, "UTF-8");
 
-                reader.onload = readerEvent => {
+                reader.onload = async (readerEvent) => {
                     const contentString = readerEvent.target.result.toString();
                     const dataObject = contentString ? JSON.parse(contentString) : undefined;
-                    this.storageDataObject = dataObject || this.storageDataObject;
 
-                    this.loadDataPromise = new Promise<Object>(resolve => resolve(this.storageDataObject));
+                    await this.dataProvider.setDataObject(dataObject);
 
                     resolve(dataObject);
                 };
-
             };
 
             input.click();
