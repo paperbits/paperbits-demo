@@ -6,7 +6,13 @@
         "projectId": "< your project ID >",
         "storageBucket": "< your storage bucket >.appspot.com",
         "databaseRootKey": "/",
-        "storageBasePath": "/"
+        "storageBasePath": "/",
+        "auth": {
+            "basic": {
+                "email": "< user email >",
+                "password": "< user password >"
+            }  
+        }
     },
     "localizationEnabled": true,
     "websitePreviewEnabled": true,
