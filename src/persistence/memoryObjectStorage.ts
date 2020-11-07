@@ -13,6 +13,7 @@ import { IObjectStorage, Query, Operator, OrderDirection, Page } from "@paperbit
 
 const pageSize = 20;
 
+
 /**
  * Static object storage for demo purposes. It stores all the uploaded blobs in memory.
  */
@@ -22,7 +23,9 @@ export class MemoryObjectStorage implements IObjectStorage {
     constructor(private readonly dataProvider: any) { }
 
     protected async getDataObject(): Promise<Object> {
-        return this.dataProvider.getDataObject();
+        const data = this.dataProvider.getDataObject();
+        Objects.deepFreeze(data);
+        return data;
     }
 
     public async addObject(path: string, dataObject: Object): Promise<void> {
@@ -67,8 +70,13 @@ export class MemoryObjectStorage implements IObjectStorage {
 
     public async getObject<T>(path: string): Promise<T> {
         const data = await this.getDataObject();
+        const node = Objects.getObjectAt<T>(path, data);
 
-        return Objects.getObjectAt(path, Objects.clone(data));
+        if (!node) {
+            return null;
+        }
+
+        return Objects.clone(node);
     }
 
     public async deleteObject(path: string): Promise<void> {
