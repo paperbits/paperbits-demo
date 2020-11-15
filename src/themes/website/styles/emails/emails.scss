@@ -8,8 +8,12 @@
 .email-layout-section,
 .email-layout-row {
     width: 100%;
+    table-layout: fixed;
 }
 
+.email-layout-column {
+    overflow: hidden;
+}
 .email-layout-column-12 {
     width: 100%;
 }
@@ -33,8 +37,6 @@
 .email-layout-column-3 {
     width: 25%;
 }
-
-
 
 $grid-padding: 10px;
 
