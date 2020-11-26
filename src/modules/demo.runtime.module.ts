@@ -9,13 +9,14 @@
 import "@paperbits/core/ko/bindingHandlers/bindingHandlers.component";
 import { IInjector, IInjectorModule } from "@paperbits/common/injection";
 import { DefaultEventManager } from "@paperbits/common/events";
+import { CoreRuntimeModule }  from "@paperbits/core/core.runtime.module";
 import { DefaultRouter, HistoryRouteHandler, LocationRouteHandler } from "@paperbits/common/routing";
 import { VisibilityGuard } from "@paperbits/common/user";
 import { XmlHttpRequestClient } from "@paperbits/common/http";
 import { KnockoutRegistrationLoaders } from "@paperbits/core/ko/knockout.loaders";
 import { StaticUserService } from "../user/staticUserService";
 import { StaticRoleService } from "../user/staticRoleService";
-import { SearchRuntimeModule } from "@paperbits/core/search/search.runtime.module";
+
 
 /* Knockout example component */
 import { ClickCounterRuntimeModule } from "../components/click-counter/ko/runtime";
@@ -33,8 +34,8 @@ import { ClickCounterRuntimeModule } from "../components/click-counter/ko/runtim
 export class DemoRuntimeModule implements IInjectorModule {
     public register(injector: IInjector): void {
         injector.bindModule(new KnockoutRegistrationLoaders());
+        injector.bindModule(new CoreRuntimeModule());
         injector.bindModule(new ClickCounterRuntimeModule());
-        injector.bindModule(new SearchRuntimeModule());
         injector.bindSingleton("eventManager", DefaultEventManager);
         injector.bindCollection("autostart");
         injector.bindCollection("routeGuards");
