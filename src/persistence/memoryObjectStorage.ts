@@ -24,7 +24,6 @@ export class MemoryObjectStorage implements IObjectStorage {
 
     protected async getDataObject(): Promise<Object> {
         const data = this.dataProvider.getDataObject();
-        Objects.deepFreeze(data);
         return data;
     }
 
@@ -187,8 +186,11 @@ export class MemoryObjectStorage implements IObjectStorage {
         return new StaticPage(value, collection, pageSize);
     }
 
-    public async saveChanges(): Promise<void> {
+    public async saveChanges(delta: Object): Promise<void> {
+        console.log("Saving changes...");
         const storageDataObject = await this.getDataObject();
+
+        Objects.mergeDeep(storageDataObject, delta, true);
 
         const state = JSON.stringify(storageDataObject);
         const stateBlob = new Blob([state], { type: "text/plain;charset=utf-8" });
