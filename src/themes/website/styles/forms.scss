@@ -17,6 +17,10 @@ form {
     width: 100%;
 }
 
+input[type=range] {
+    width: 100%;
+}
+
 @media (min-width: 576px) {
     .form-inline label {
         display: flex;
