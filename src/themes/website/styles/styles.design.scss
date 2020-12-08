@@ -246,6 +246,9 @@ $style-guide-color: #000;
     height: 100%;
     width: 100%;
     pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     &:before {
         @include fit(5px);
@@ -257,14 +260,6 @@ $style-guide-color: #000;
             rgba(0, 0, 0, 0.05) 10px,
             rgba(0, 0, 0, 0.05) 20px
         );
-    }
-
-    &:after {
-        content: attr(placeholder);
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translateY(-50%) translatex(-50%);
     }
 }
 
