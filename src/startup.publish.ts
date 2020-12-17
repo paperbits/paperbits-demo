@@ -8,6 +8,7 @@
 
 import { InversifyInjector } from "@paperbits/common/injection";
 import { IPublisher } from "@paperbits/common/publishing";
+import { CacheStorageModule } from "@paperbits/common/publishing/cacheStorageModule";
 import { FormsModule } from "@paperbits/forms/forms.module";
 import { CoreModule } from "@paperbits/core/core.module";
 import { CorePublishModule } from "@paperbits/core/core.publish.module";
@@ -43,6 +44,7 @@ injector.bindModule(new DemoPublishModule(dataPath, settingsPath, outputBasePath
 /* Uncomment to enable Firebase module */
 // injector.bindModule(new FirebaseModule());
 
+injector.bindModule(new CacheStorageModule());
 injector.resolve("autostart");
 
 const publisher = injector.resolve<IPublisher>("sitePublisher");
