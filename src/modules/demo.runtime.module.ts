@@ -34,7 +34,6 @@ import { ClickCounterRuntimeModule } from "../components/click-counter/ko/runtim
 export class DemoRuntimeModule implements IInjectorModule {
     public register(injector: IInjector): void {
         injector.bindModule(new KnockoutRegistrationLoaders());
-        injector.bindModule(new CoreRuntimeModule());
         injector.bindModule(new ClickCounterRuntimeModule());
         injector.bindSingleton("eventManager", DefaultEventManager);
         injector.bindCollection("autostart");

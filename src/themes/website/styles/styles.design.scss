@@ -249,6 +249,7 @@ $style-guide-color: #000;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex: 1;
 
     &:before {
         @include fit(5px);
