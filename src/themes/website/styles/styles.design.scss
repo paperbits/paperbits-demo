@@ -238,6 +238,7 @@ $style-guide-color: #000;
     }
 }
 
+
 .placeholder {
     min-height: 80px;
     font-family: monospace;
@@ -262,6 +263,10 @@ $style-guide-color: #000;
             rgba(0, 0, 0, 0.05) 20px
         );
     }
+}
+
+[alias]:after {
+    content: attr(alias);
 }
 
 .not-configured {
