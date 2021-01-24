@@ -8,14 +8,14 @@ import { Bag } from "@paperbits/common";
 export class ClickCounterViewModelBinder implements ViewModelBinder<ClickCounterModel, ClickCounterViewModel>  {
     constructor(private readonly eventManager: EventManager) { }
 
-    public async modelToViewModel(model: ClickCounterModel, viewModel?: ClickCounterViewModel, bindingContext?: Bag<any>): Promise<ClickCounterViewModel> {
+    public async modelToViewModel(model: ClickCounterModel, viewModel: ClickCounterViewModel, bindingContext: Bag<any>): Promise<ClickCounterViewModel> {
         if (!viewModel) {
             viewModel = new ClickCounterViewModel();
         }
 
         viewModel.runtimeConfig(JSON.stringify({ initialCount: model.initialCount }));
 
-        const binding: IWidgetBinding<ClickCounterModel> = {
+        const binding: IWidgetBinding<ClickCounterModel, ClickCounterViewModel> = {
             name: "click-counter",
             displayName: "Click counter",
             readonly: bindingContext ? bindingContext.readonly : false,
