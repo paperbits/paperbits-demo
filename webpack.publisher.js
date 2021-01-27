@@ -72,7 +72,8 @@ const publisherConfig = {
         new CopyWebpackPlugin({
             patterns: [
                 { from: `./src/data/demo.json`, to: `./data/demo.json` },
-                { from: `./src/config.publish.json`, to: `config.json` }
+                { from: `./src/config.publish.json`, to: `config.json` },
+                { from: `./src/config.runtime.json`, to: `assets/config.json` }
             ]
         })
     ],
