@@ -10,6 +10,7 @@ import template from "./app.html";
 import { ViewManager } from "@paperbits/common/ui";
 import { Component, OnMounted } from "@paperbits/common/ko/decorators";
 import { Logger } from "@paperbits/common/logging";
+import { EventManager } from "@paperbits/common/events";
 
 @Component({
     selector: "app",
@@ -18,7 +19,8 @@ import { Logger } from "@paperbits/common/logging";
 export class App {
     constructor(
         private readonly logger: Logger,
-        private readonly viewManager: ViewManager
+        private readonly viewManager: ViewManager,
+        private readonly eventManager: EventManager
     ) { }
 
     @OnMounted()
@@ -26,5 +28,10 @@ export class App {
         this.viewManager.setHost({ name: "page-host" });
         this.viewManager.showToolboxes();
         this.logger.trackEvent("Startup", { message: `App started.` });
+
+        setTimeout(() => this.eventManager.dispatchEvent("displayHint", {
+            key: "a69b",
+            content: `When you're in the administrative view, you still can navigate any website hyperlink by clicking on it holding Ctrl (Windows) or ⌘ (Mac) key.`
+        }), 5000);
     }
 }
