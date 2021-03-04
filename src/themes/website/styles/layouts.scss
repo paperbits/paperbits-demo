@@ -444,6 +444,10 @@ main {
     }
 }
 
+.legacy {
+    flex: 1;
+}
+
 html:not([amp4ads]),
 html:not([amp4ads]) body {
     min-height: 100%;
