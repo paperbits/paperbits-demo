@@ -9,7 +9,7 @@
 import "@paperbits/core/ko/bindingHandlers/bindingHandlers.component";
 import { IInjector, IInjectorModule } from "@paperbits/common/injection";
 import { DefaultEventManager } from "@paperbits/common/events";
-import { CoreRuntimeModule }  from "@paperbits/core/core.runtime.module";
+import { CoreRuntimeModule } from "@paperbits/core/core.runtime.module";
 import { DefaultRouter, HistoryRouteHandler, LocationRouteHandler } from "@paperbits/common/routing";
 import { VisibilityGuard } from "@paperbits/common/user";
 import { XmlHttpRequestClient } from "@paperbits/common/http";
