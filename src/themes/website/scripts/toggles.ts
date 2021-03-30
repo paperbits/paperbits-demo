@@ -89,6 +89,11 @@ const onShowCollapsible = (toggleElement: HTMLElement): void => {
 
 const onShowDropdown = (toggleElement: HTMLElement): void => {
     const dropdownElement = toggleElement.closest(".nav-item").querySelector(".dropdown");
+
+    if (!dropdownElement) {
+        return;
+    }
+
     dropdownElement.classList.add(showClassName);
     toggleElement.setAttribute(AriaAttributes.expanded, "true");
 
@@ -160,7 +165,7 @@ const onShowPopup = (toggleElement: HTMLElement, targetElement: HTMLElement): vo
         setTimeout(() => {
             repositionPopup();
         }, 10);
-       
+
     });
 };
 
