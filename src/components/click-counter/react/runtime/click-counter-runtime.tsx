@@ -24,15 +24,13 @@ export class ClickCounterRuntime extends React.Component {
 
     public render(): JSX.Element {
         return (
-            <div>
-                <div className="text text-align-center">
-                    <button className="button" onClick={this.increaseCount}>
-                        Click me
+            <div className="text text-align-center">
+                <button className="button" onClick={this.increaseCount}>
+                    Click me
                     </button>
-                    <div>
-                        <label htmlFor="clickCount">Click count:</label>
-                        <b id="clickCount">{this.state.clickCount}</b>
-                    </div>
+                <div>
+                    <label htmlFor="clickCount">Click count:</label>
+                    <b id="clickCount">{this.state.clickCount}</b>
                 </div>
             </div>
         );
