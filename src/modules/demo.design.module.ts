@@ -14,9 +14,10 @@ import { SearchDesignModule } from "@paperbits/core/search/search.design.module"
 import { MemoryObjectStorage } from "../persistence/memoryObjectStorage";
 import { MemoryBlobStorage } from "../persistence/memoryBlobStorage";
 import { StaticRoleService } from "../user/staticRoleService";
-import { ClickCounterEditorModule } from "../components/click-counter/ko/clickCounterEditor.module";
+import { ClickCounterEditorModule } from "../components/click-counter/clickCounter.design.module";
 import { HistoryRouteHandler } from "@paperbits/common/routing";
 import { HttpDataProvider } from "../persistence/httpDataProvider";
+import { ReactModule } from "@paperbits/react/react.module";
 
 
 export class DemoDesignModule implements IInjectorModule {
@@ -30,5 +31,6 @@ export class DemoDesignModule implements IInjectorModule {
         injector.bindSingleton("logger", ConsoleLogger);
         injector.bindModule(new SearchDesignModule());
         injector.bindModule(new ClickCounterEditorModule());
+        injector.bindModule(new ReactModule());
     }
 }

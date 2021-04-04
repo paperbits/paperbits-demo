@@ -23,13 +23,15 @@ export class ClickCounterModelBinder implements IModelBinder<ClickCounterModel> 
     public async contractToModel(contract: ClickCounterContract): Promise<ClickCounterModel> {
         const model = new ClickCounterModel();
         model.initialCount = contract.initialCount;
+        model.styles = contract.styles;
         return model;
     }
 
     public modelToContract(model: ClickCounterModel): Contract {
         const contract: ClickCounterContract = {
             type: "click-counter",
-            initialCount: model.initialCount
+            initialCount: model.initialCount,
+            styles: model.styles
         };
 
         return contract;

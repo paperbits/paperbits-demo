@@ -1,5 +1,5 @@
 import * as React from "react";
-import { RuntimeComponent } from "./runtimeComponent.decorator";
+import { RuntimeComponent } from "@paperbits/react/decorators";
 
 
 @RuntimeComponent({
@@ -12,7 +12,7 @@ export class ClickCounterRuntime extends React.Component {
         super(props);
 
         this.state = {
-            clickCount: 0
+            clickCount: props.initialCount || 0
         };
 
         this.increaseCount = this.increaseCount.bind(this);

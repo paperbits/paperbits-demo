@@ -1,12 +1,22 @@
 <div class="form" data-bind="scrollable: true">
     <p>This is your widget editor that is yet to be implemented.</p>
 
-    <div class="form-group">
+    <div class="form-group form-group-collapsible">
         <label class="form-label">
-            Initial count
-            <button class="btn btn-info" type="button"
-                data-bind="tooltip: 'Initial value that needs to be set to click counter.'"></button>
+            <a href="#" class="form-group-toggle" title="Toggle section" data-bind="collapse: '#basicCollapse'"></a>
+            <b>Basic</b>
         </label>
-        <input type="number" class="form-control" data-bind="value: initialCount" min="0" />
+        <div id="basicCollapse" class="collapse form-group-collapse">
+            <div class="form-group">
+                <label class="form-label">
+                    Initial count
+                    <button class="btn btn-info" type="button"
+                        data-bind="tooltip: 'Initial value that needs to be set to click counter.'"></button>
+                </label>
+                <input type="number" class="form-control" data-bind="textInput: initialCount" min="0" />
+            </div>
+        </div>
     </div>
+    
+    <background params="{ background: background, onUpdate: onBackgroundChange }"></background>
 </div>
