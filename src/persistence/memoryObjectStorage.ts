@@ -139,7 +139,21 @@ export class MemoryObjectStorage implements IObjectStorage {
                         const operator = filter.operator;
 
                         switch (operator) {
+                            case Operator.notEmpty:
+                                if (typeof left === "string") {
+                                    meetsCriteria = !left;
+                                    break;
+                                }
+                                if (Array.isArray(left)) {
+                                    meetsCriteria = left && left.length > 0;
+                                }
+                                break;
                             case Operator.contains:
+                                if(Array.isArray(left) && Array.isArray(right)) {
+                                    meetsCriteria = right.filter(value => left.includes(value))?.length > 0;
+                                    break;
+                                }
+
                                 if (left && !left.includes(right)) {
                                     meetsCriteria = false;
                                 }

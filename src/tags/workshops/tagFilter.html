@@ -1,0 +1,8 @@
+<div class="flex flex-wrap">    
+    <label for="showControls" class="form-label">
+        <input type="checkbox" id="groupTags" data-bind="checked: groupByTag" /> Tags
+    </label>
+    <!-- ko if: groupByTag -->
+    <tag-selector params="{ selected: tags, onChange: onTagsChange }"></tag-selector>
+    <!-- /ko -->
+</div>

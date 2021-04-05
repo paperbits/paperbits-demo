@@ -1,0 +1,87 @@
+<div class="flex flex-column fit">
+    <div class="flex-item form">
+        <div class="form-group">
+            <input class="form-control" type="search" role="searchbox"
+                data-bind="textInput: searchPattern, valueUpdate: 'keyup', focus: true" placeholder="Search media..."
+                aria-label="Search media" aria-controls="searchResult" />
+            <p id="searchResult" class="text-hide" role="region" aria-live="polite"
+                data-bind="text: `Media files found: ${mediaItems().length}`">
+            </p>
+            <tag-filter params="{ onChangeTags: onTagsChange, onChangeGroupBy: onGroupByChange }"></tag-filter>
+        </div>
+    </div>
+
+    <!-- ko if: !working() && mediaItems().length === 0 -->
+
+    <!-- ko if: searchPattern() === "" -->
+    <p class="flex-item flex-item-grow text-center">It seems that you don't have media yet. Would you like to
+        <a href="#" class="btn-link" data-bind="click: uploadMedia">upload one</a>?
+    </p>
+    <!-- /ko -->
+
+    <!-- ko if: searchPattern() !== "" -->
+    <p class="flex-item flex-item-grow text-center">Could not find anything. Try to change search criteria.</p>
+    <!-- /ko -->
+
+    <!-- /ko -->
+
+    <div class="flex flex-row flex-wrap flex-item flex-item-grow" role="list" data-bind="scrollable: true">
+        <!-- ko ifnot: groupByTag -->
+            <!-- ko foreach: { data: mediaItems, as: 'media' } -->
+            <a href="#" role="listitem" class="list-item list-item-image"
+                data-bind="click: $component.selectMedia, css: { selected: $component.isSelected(media) }, attr: { 'aria-label': media.fileName() },
+                balloon: { activateOn: 'hoverOrFocus', isDisabled: nonPreviewable, delay: 800, position: 'right', component: { name: 'media-display', params: { item: media }}}">
+                <span class="thumbnail"
+                    data-bind="style: { 'background-image': 'url('+media.thumbnailUrl()+')' }, attr: { title: media.fileName() }, event: { keydown: $component.onKeyDown }">
+                </span>
+            </a>
+            <!-- /ko -->
+        <!-- /ko -->
+        
+        <!-- ko if: groupByTag -->
+        <div class="list-item-group">
+            <!-- ko foreach: { data: taggedGroups, as: 'node' } -->
+            <div class="list-item-collapsible">
+                <button href="#" role="button" aria-label="Toggle nested items" class="list-item-collapse" data-bind="click: node.toggleCollapsed, attr: { 'aria-expanded': (!node.collapsed()).toString() }">
+                    <i aria-hidden="true" class="paperbits-icon paperbits-circle-delete" data-bind="css: { 'paperbits-circle-add': node.collapsed }"></i>
+                </button>
+                <div tabindex="0" role="listitem" class="tag-item">
+                    <span data-bind="text: node.groupName"></span>
+                </div>
+            </div>
+            <!-- ko ifnot: node.collapsed -->
+            <div class="flex flex-wrap" role="list">
+                <!-- ko foreach: { data: node.items, as: 'media' } -->
+                <a href="#" role="listitem" class="list-item list-item-image"
+                    data-bind="click: $component.selectMedia, css: { selected: $component.isSelected(media) }, attr: { 'aria-label': media.fileName() },
+                    balloon: { activateOn: 'hoverOrFocus', isDisabled: nonPreviewable, delay: 800, position: 'right', component: { name: 'media-display', params: { item: media }}}">
+                    <span class="thumbnail"
+                        data-bind="style: { 'background-image': 'url('+media.thumbnailUrl()+')' }, attr: { title: media.fileName() }, event: { keydown: $component.onKeyDown }">
+                    </span>
+                </a>
+                <!-- /ko-->
+            </div>
+            <!-- /ko -->
+            <!-- /ko-->
+        </div>
+        <!-- /ko -->        
+
+        <!-- ko if: $component.working -->
+        <spinner></spinner>
+        <!-- /ko -->
+        <!-- ko ifnot: $component.working -->
+        <div class="list-edge" data-bind="whenInView: $component.loadNextPage"></div>
+        <!-- /ko -->
+    </div>
+
+    <div class="flex-item btn-group">
+        <button class="btn btn-default" data-bind="click: uploadMedia">
+            <i aria-hidden="true" class="paperbits-icon paperbits-square-upload"></i>
+            Upload file
+        </button>
+        <button class="btn btn-default" data-bind="click: linkMedia">
+            <i aria-hidden="true" class="paperbits-icon paperbits-link-69-2"></i>
+            Link file
+        </button>
+    </div>
+</div>

@@ -16,6 +16,8 @@ import { StylesDesignModule } from "@paperbits/styles/styles.design.module";
 import { ProseMirrorModule } from "@paperbits/prosemirror/prosemirror.module";
 import { OfflineModule } from "@paperbits/common/persistence/offline.module";
 import { DemoDesignModule } from "./modules/demo.design.module";
+import { MediaWithTagsWorkshopModule } from "./tags/workshops/mediaWithTags.module";
+import { MediaWithTagsService } from "./tags/mediaWithTagsService";
 
 /* Uncomment to enable Firebase module */
 // import { FirebaseModule } from "@paperbits/firebase/firebase.module";
@@ -23,11 +25,13 @@ import { DemoDesignModule } from "./modules/demo.design.module";
 /* Initializing dependency injection  */
 const injector = new InversifyInjector();
 injector.bindModule(new CoreDesignModule());
+injector.bindModule(new MediaWithTagsWorkshopModule());
 injector.bindModule(new FormsDesignModule());
 injector.bindModule(new EmailsDesignModule());
 injector.bindModule(new StylesDesignModule());
 injector.bindModule(new ProseMirrorModule());
 injector.bindModule(new DemoDesignModule());
+injector.bindSingleton("mediaService", MediaWithTagsService);
 
 /* Uncomment to enable Firebase module */
 // injector.bindModule(new FirebaseModule());

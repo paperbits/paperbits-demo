@@ -1,0 +1,37 @@
+
+.tag-group {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    flex-basis: 100%;
+}
+
+.tag-item,
+.tag-item:active,
+.tag-item:hover {
+    border: 1px solid #0078d4;
+    padding: 2px 7px;
+    border-radius: 3px;
+    color: #0078d4;
+    cursor: default;
+    display: inline-flex;
+    text-decoration: none;
+    align-items: center;
+    margin: 2px;
+    min-height: 2em;
+}
+
+.tag-item.tag-add {
+    cursor: pointer;
+}
+
+.tag-remove {
+    font-size: .7em;
+    margin-left: 4px;
+    cursor: pointer;
+}
+
+.list {
+    .tag-item {
+        cursor: pointer;
+    }
+}

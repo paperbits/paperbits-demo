@@ -1,0 +1,55 @@
+<div class="flex flex-column">
+    <div class="flex-item form">
+        <div class="form-group">
+            <input class="form-control" type="search" role="searchbox"
+                data-bind="textInput: pattern, valueUpdate: 'keyup', focus: true, event: { keyup: onEnter }" placeholder="Search tags..."
+                aria-label="Search tags" aria-controls="searchResult" />
+            <p id="searchResult" class="text-hide" role="region" aria-live="polite"
+                data-bind="text: `Tags found: ${tags().length}`">
+            </p>
+        </div>
+    </div>
+
+    <!-- ko if: !working() && empty() -->
+    <div class="flex flex-column flex-item flex-item-grow list">
+        <!-- ko if: pattern() === "" -->
+        <p class="flex-item flex-item-grow text-center">
+            It seems that you don't have available tags.   
+        </p>
+        <!-- /ko -->
+
+        <!-- ko if: pattern() !== ""  -->
+        <p class="flex-item flex-item-grow text-center">Could not find anything. Try to change search criteria.</p>
+        
+        <!-- ko if: canCreate -->
+        <p class="flex-item flex-item-grow text-center">Please hit the Enter to create and add the tag <strong><span data-bind="text: pattern"></span></strong></p>
+        <!-- /ko -->
+
+        <!-- /ko -->
+    </div>
+    <!-- /ko -->
+
+    <div class="flex flex-column flex-item flex-item-grow" data-bind="scrollable: true" role="list">
+        <!-- ko foreach: { data: availableTags, as: 'tag' } -->
+        <div role="presentation" data-bind="activate: $parent.addTag">
+            <div tabindex="0" role="listitem" class="tag-item" data-bind="text: name"></div>
+            <!-- <button class="no-border tag-remove" aria-label="Delete tag" data-bind="activate: $parent.deleteTag">
+                <i aria-hidden="true" class="paperbits-icon paperbits-simple-remove"></i>
+            </button> -->
+        </div>
+        <!-- <div class="tag-item" role="presentation" data-bind="activate: $parent.addTag">
+            <span data-bind="text: name"></span>
+    
+            <button class="no-border tag-remove" aria-label="Remove tag" data-bind="activate: $parent.deleteTag">
+                <i aria-hidden="true" class="paperbits-icon paperbits-simple-remove"></i>
+            </button>
+        </div> -->
+        <!--/ko-->
+        <!--ko if: working -->
+        <spinner></spinner>
+        <!--/ko-->
+        <!-- ko ifnot: working -->
+        <div class="list-edge" data-bind="whenInView: loadNextPage"></div>
+        <!-- /ko -->
+    </div>
+</div>
