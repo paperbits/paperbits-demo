@@ -2,11 +2,15 @@ import * as React from "react";
 import { RuntimeComponent } from "@paperbits/react/decorators";
 
 
+export interface ClickCounterState {
+    clickCount: number;
+}
+
 @RuntimeComponent({
     selector: "click-counter-runtime"
 })
 export class ClickCounterRuntime extends React.Component {
-    public state: any;
+    public state: ClickCounterState;
 
     constructor(props) {
         super(props);
