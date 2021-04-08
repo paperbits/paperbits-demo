@@ -19,6 +19,7 @@ import { StaticRoleService } from "../user/staticRoleService";
 import { SearchPublishModule } from "@paperbits/core/search/search.publish.module";
 import { ClickCounterEditorModule } from "../components/click-counter/ko";
 import { FileSystemDataProvider } from "../persistence/fileSystemDataProvider";
+import { ReactModule } from "@paperbits/react/react.module";
 
 
 export class DemoPublishModule implements IInjectorModule {
@@ -40,5 +41,6 @@ export class DemoPublishModule implements IInjectorModule {
         injector.bindInstance("settingsProvider", new StaticSettingsProvider(path.resolve(this.settingsPath)));
         injector.bindModule(new SearchPublishModule());
         injector.bindModule(new ClickCounterEditorModule());
+        injector.bindModule(new ReactModule());
     }
 }
