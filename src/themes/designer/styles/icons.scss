@@ -636,8 +636,8 @@ $paperbits-strikethrough: unicode(ea7d);
     height: 21px;
     background-repeat: no-repeat;
     background-position: center;
-    display: inline-block !important;
-    padding: 7px im !important;
+    display: inline-block;
+    margin-bottom: 7px;
 }
 
 .widget-icon-accordion {

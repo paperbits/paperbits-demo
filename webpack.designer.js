@@ -22,7 +22,7 @@ const designerConfig = {
                 test: /\.scss$/,
                 use: [
                     MiniCssExtractPlugin.loader,
-                    { loader: "css-loader", options: { url: false } },
+                    { loader: "css-loader" },
                     { loader: "postcss-loader" },
                     { loader: "sass-loader" }
                 ]
