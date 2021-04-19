@@ -3,7 +3,8 @@
 
     <div class="form-group form-group-collapsible">
         <label class="form-label">
-            <a href="#" class="form-group-toggle" title="Toggle section" data-bind="collapse: '#basicCollapse'" aria-label="Toggle 'Basic' section"></a>
+            <a href="#" class="form-group-toggle" title="Toggle section" data-bind="collapse: '#basicCollapse'"
+                aria-label="Toggle 'Basic' section"></a>
             <b>Basic</b>
         </label>
         <div id="basicCollapse" class="collapse form-group-collapse">
@@ -17,6 +18,15 @@
             </div>
         </div>
     </div>
-    
-    <background params="{ background: background, onUpdate: onBackgroundChange }"></background>
+
+    <div class="form-group form-group-collapsible">
+        <label class="form-label">
+            <a href="#" class="form-group-toggle" title="Toggle section" data-bind="collapse: '#backgroundCollapse'"
+                aria-label="Toggle 'Basic' section"></a>
+            <b>Background</b>
+        </label>
+        <div id="backgroundCollapse" class="collapse form-group-collapse">
+            <background params="{ background: background, onUpdate: onBackgroundChange }"></background>
+        </div>
+    </div>
 </div>
