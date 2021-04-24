@@ -15,7 +15,7 @@ import { MemoryObjectStorage } from "../persistence/memoryObjectStorage";
 import { MemoryBlobStorage } from "../persistence/memoryBlobStorage";
 import { StaticRoleService } from "../user/staticRoleService";
 import { ClickCounterEditorModule } from "../components/click-counter/clickCounter.design.module";
-import { HistoryRouteHandler } from "@paperbits/common/routing";
+import { HistoryRouteHandler, AnchorRouteHandler } from "@paperbits/common/routing";
 import { HttpDataProvider } from "../persistence/httpDataProvider";
 import { ReactModule } from "@paperbits/react/react.module";
 
@@ -28,6 +28,7 @@ export class DemoDesignModule implements IInjectorModule {
         injector.bindSingleton("objectStorage", MemoryObjectStorage);
         injector.bindSingleton("roleService", StaticRoleService);
         injector.bindToCollection("autostart", HistoryRouteHandler);
+        injector.bindToCollection("autostart", AnchorRouteHandler);
         injector.bindSingleton("logger", ConsoleLogger);
         injector.bindModule(new SearchDesignModule());
         injector.bindModule(new ClickCounterEditorModule());
