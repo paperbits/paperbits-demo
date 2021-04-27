@@ -41,6 +41,13 @@
             "title": "Feature block 5",
             "description": "",
             "contentKey": "files/aa94cd9f-a76f-5ba7-ef20-086214290999"
+        },
+        "new-popup-template": {
+            "contentKey": "files/new-popup-template",
+            "description": "",
+            "key": "blocks/new-popup-template",
+            "title": "New popup template",
+            "type": "popup"
         }
     },
     "files": {
@@ -1687,6 +1694,95 @@
                             }
                         }
                     }
+                }
+            ]
+        },
+        "new-popup-template": {
+            "type": "popup",
+            "key": "popups/new-popup-template",
+            "backdrop": false,
+            "styles": {
+                "instance": {
+                    "components": {
+                        "popupContainer": {
+                            "default": {
+                                "position": {
+                                    "position": "fixed",
+                                    "top": "50%",
+                                    "left": "50%",
+                                    "zIndex": 1001
+                                },
+                                "background": {
+                                    "colorKey": "colors/defaultBg"
+                                },
+                                "transform": {
+                                    "translate": {
+                                        "x": "-50%",
+                                        "y": "-50%"
+                                    }
+                                },
+                                "size": {
+                                    "maxWidth": 500
+                                },
+                                "padding": {
+                                    "top": 20,
+                                    "left": 30,
+                                    "right": 30,
+                                    "bottom": 30
+                                },
+                                "container": {
+                                    "overflow": "scroll"
+                                },
+                                "border": {
+                                    "bottom": {
+                                        "colorKey": "colors/15o9C",
+                                        "style": "solid",
+                                        "width": "1"
+                                    },
+                                    "left": {
+                                        "colorKey": "colors/15o9C",
+                                        "style": "solid",
+                                        "width": "1"
+                                    },
+                                    "right": {
+                                        "colorKey": "colors/15o9C",
+                                        "style": "solid",
+                                        "width": "1"
+                                    },
+                                    "top": {
+                                        "colorKey": "colors/15o9C",
+                                        "style": "solid",
+                                        "width": "1"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "nodes": [
+                {
+                    "type": "text-block",
+                    "nodes": [
+                        {
+                            "type": "heading1",
+                            "nodes": [
+                                {
+                                    "type": "text",
+                                    "text": "Popup"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "paragraph",
+                            "nodes": [
+                                {
+                                    "type": "text",
+                                    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor..."
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         }
