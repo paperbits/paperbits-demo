@@ -18,6 +18,7 @@ import { ClickCounterEditorModule } from "../components/click-counter/clickCount
 import { HistoryRouteHandler, AnchorRouteHandler } from "@paperbits/common/routing";
 import { HttpDataProvider } from "../persistence/httpDataProvider";
 import { ReactModule } from "@paperbits/react/react.module";
+import { PopupDesignModule } from "@paperbits/core/popup";
 
 
 export class DemoDesignModule implements IInjectorModule {
@@ -33,5 +34,6 @@ export class DemoDesignModule implements IInjectorModule {
         injector.bindModule(new SearchDesignModule());
         injector.bindModule(new ClickCounterEditorModule());
         injector.bindModule(new ReactModule());
+        injector.bindModule(new PopupDesignModule());
     }
 }
