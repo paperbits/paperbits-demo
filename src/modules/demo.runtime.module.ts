@@ -8,7 +8,6 @@
 
 import "@paperbits/core/ko/bindingHandlers/bindingHandlers.component";
 import { IInjector, IInjectorModule } from "@paperbits/common/injection";
-import { StyleRuntimeModule } from "@paperbits/styles/styles.runtime.module";
 import { StaticUserService } from "../user/staticUserService";
 import { StaticRoleService } from "../user/staticRoleService";
 import { ClickCounterRuntimeModule } from "../components/click-counter/clickCounter.runtime.module";
@@ -17,7 +16,6 @@ import { ClickCounterRuntimeModule } from "../components/click-counter/clickCoun
 export class DemoRuntimeModule implements IInjectorModule {
     public register(injector: IInjector): void {
         injector.bindModule(new ClickCounterRuntimeModule());
-        injector.bindModule(new StyleRuntimeModule());
         injector.bindSingleton("userService", StaticUserService);
         injector.bindSingleton("roleService", StaticRoleService);
     }
