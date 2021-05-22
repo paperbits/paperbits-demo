@@ -1783,6 +1783,10 @@
                             ]
                         }
                     ]
+                },
+                {
+                    "type": "dismiss-button",
+                    "label": "Dismiss"
                 }
             ]
         }
