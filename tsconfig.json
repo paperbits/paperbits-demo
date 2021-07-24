@@ -22,6 +22,10 @@
         "incremental": true,
         "jsx": "react"
     },
+    "include": [
+        "./src/**/*",
+        "./node_modules/@paperbits/**/*"
+    ],
     "exclude": [
         "./node_modules"
     ]
