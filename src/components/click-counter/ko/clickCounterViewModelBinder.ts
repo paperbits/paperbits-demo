@@ -20,7 +20,7 @@ export class ClickCounterViewModelBinder implements ViewModelBinder<ClickCounter
             displayName: "Click counter",
             readonly: bindingContext ? bindingContext.readonly : false,
             model: model,
-            flow: "block",
+            flow: ComponentFlow.Block,
             draggable: true,
             editor: "click-counter-editor",
             applyChanges: async () => {

@@ -1305,8 +1305,13 @@
                 }
             ]
         },
-        "aa94cd9f-a76f-5ba7-ef20-086214290999": {
+        "aa94cd9f-a76f-5ba7-ef20-086214290999":   {
             "type": "layout-section",
+            "styles": {
+                "instance": {
+                    "key": "glndfxsebe"
+                }
+            },
             "nodes": [
                 {
                     "type": "grid",
@@ -1317,7 +1322,25 @@
                                 {
                                     "type": "card",
                                     "styles": {
-                                        "appearance": "components/card/default"
+                                        "appearance": "components/card/default",
+                                        "instance": {
+                                            "padding": {
+                                                "top": 0,
+                                                "left": 0,
+                                                "right": 0,
+                                                "bottom": 0
+                                            },
+                                            "margin": {
+                                                "top": 20,
+                                                "left": 20,
+                                                "right": 20,
+                                                "bottom": 20
+                                            },
+                                            "size": {
+                                                "width": 300
+                                            },
+                                            "key": "xrsrqictjg"
+                                        }
                                     },
                                     "nodes": [
                                         {
@@ -1334,6 +1357,7 @@
                                             "nodes": [
                                                 {
                                                     "type": "heading3",
+                                                    "identifier": "7yD1E",
                                                     "nodes": [
                                                         {
                                                             "type": "text",
@@ -1350,61 +1374,43 @@
                                                         }
                                                     ]
                                                 }
-                                            ]
+                                            ],
+                                            "styles": {
+                                                "instance": {
+                                                    "padding": {
+                                                        "top": 10,
+                                                        "left": 15,
+                                                        "right": 15,
+                                                        "bottom": 10
+                                                    },
+                                                    "key": "bwhlogsyed"
+                                                }
+                                            }
                                         }
                                     ]
-                                }
-                            ],
-                            "role": "article",
-                            "styles": {
-                                "instance": {
-                                    "grid-cell": {
-                                        "md": {
-                                            "position": {
-                                                "col": 1,
-                                                "row": 1
-                                            },
-                                            "span": {
-                                                "cols": 1,
-                                                "rows": 1
-                                            }
-                                        },
-                                        "xs": {
-                                            "position": {
-                                                "col": 1,
-                                                "row": 1
-                                            },
-                                            "span": {
-                                                "cols": 1,
-                                                "rows": 1
-                                            }
-                                        }
-                                    },
-                                    "key": "ixjdhkvbqw",
-                                    "padding": {
-                                        "xs": {
-                                            "top": 5,
-                                            "left": 5,
-                                            "right": 5,
-                                            "bottom": 5
-                                        },
-                                        "md": {
-                                            "top": 15,
-                                            "left": 15,
-                                            "right": 15,
-                                            "bottom": 15
-                                        }
-                                    }
-                                }
-                            }
-                        },
-                        {
-                            "type": "grid-cell",
-                            "nodes": [
+                                },
                                 {
                                     "type": "card",
                                     "styles": {
-                                        "appearance": "components/card/default"
+                                        "appearance": "components/card/default",
+                                        "instance": {
+                                            "padding": {
+                                                "top": 0,
+                                                "left": 0,
+                                                "right": 0,
+                                                "bottom": 0
+                                            },
+                                            "margin": {
+                                                "top": 20,
+                                                "left": 20,
+                                                "right": 20,
+                                                "bottom": 20
+                                            },
+                                            "size": {
+                                                "width": 300
+                                            },
+                                            "key": "xrsrqictjg"
+                                        }
                                     },
                                     "nodes": [
                                         {
@@ -1421,6 +1427,7 @@
                                             "nodes": [
                                                 {
                                                     "type": "heading3",
+                                                    "identifier": "7yD1E",
                                                     "nodes": [
                                                         {
                                                             "type": "text",
@@ -1437,65 +1444,43 @@
                                                         }
                                                     ]
                                                 }
-                                            ]
+                                            ],
+                                            "styles": {
+                                                "instance": {
+                                                    "padding": {
+                                                        "top": 10,
+                                                        "left": 15,
+                                                        "right": 15,
+                                                        "bottom": 10
+                                                    },
+                                                    "key": "bwhlogsyed"
+                                                }
+                                            }
                                         }
                                     ]
-                                }
-                            ],
-                            "role": "article",
-                            "styles": {
-                                "instance": {
-                                    "grid-cell": {
-                                        "md": {
-                                            "position": {
-                                                "col": 2,
-                                                "row": 1
-                                            },
-                                            "span": {
-                                                "cols": 1,
-                                                "rows": 1
-                                            },
-                                            "alignment": {
-                                                "vertical": "center",
-                                                "horizontal": "center"
-                                            }
-                                        },
-                                        "xs": {
-                                            "position": {
-                                                "col": 1,
-                                                "row": 2
-                                            },
-                                            "span": {
-                                                "cols": 1,
-                                                "rows": 1
-                                            }
-                                        }
-                                    },
-                                    "key": "pvnjfbsrqi",
-                                    "padding": {
-                                        "xs": {
-                                            "top": 5,
-                                            "left": 5,
-                                            "right": 5,
-                                            "bottom": 5
-                                        },
-                                        "md": {
-                                            "top": 15,
-                                            "left": 15,
-                                            "right": 15,
-                                            "bottom": 15
-                                        }
-                                    }
-                                }
-                            }
-                        },
-                        {
-                            "type": "grid-cell",
-                            "nodes": [
+                                },
                                 {
                                     "type": "card",
                                     "styles": {
-                                        "appearance": "components/card/default"
+                                        "appearance": "components/card/default",
+                                        "instance": {
+                                            "padding": {
+                                                "top": 0,
+                                                "left": 0,
+                                                "right": 0,
+                                                "bottom": 0
+                                            },
+                                            "margin": {
+                                                "top": 20,
+                                                "left": 20,
+                                                "right": 20,
+                                                "bottom": 20
+                                            },
+                                            "size": {
+                                                "width": 300
+                                            },
+                                            "key": "xrsrqictjg"
+                                        }
                                     },
                                     "nodes": [
                                         {
@@ -1512,6 +1497,7 @@
                                             "nodes": [
                                                 {
                                                     "type": "heading3",
+                                                    "identifier": "7yD1E",
                                                     "nodes": [
                                                         {
                                                             "type": "text",
@@ -1528,7 +1514,18 @@
                                                         }
                                                     ]
                                                 }
-                                            ]
+                                            ],
+                                            "styles": {
+                                                "instance": {
+                                                    "padding": {
+                                                        "top": 10,
+                                                        "left": 15,
+                                                        "right": 15,
+                                                        "bottom": 10
+                                                    },
+                                                    "key": "bwhlogsyed"
+                                                }
+                                            }
                                         }
                                     ]
                                 }
@@ -1537,9 +1534,9 @@
                             "styles": {
                                 "instance": {
                                     "grid-cell": {
-                                        "md": {
+                                        "xs": {
                                             "position": {
-                                                "col": 3,
+                                                "col": 1,
                                                 "row": 1
                                             },
                                             "span": {
@@ -1547,65 +1544,48 @@
                                                 "rows": 1
                                             },
                                             "alignment": {
-                                                "vertical": "center",
+                                                "vertical": "top",
                                                 "horizontal": "center"
-                                            }
-                                        },
-                                        "xs": {
-                                            "position": {
-                                                "col": 1,
-                                                "row": 3
-                                            },
-                                            "span": {
-                                                "cols": 1,
-                                                "rows": 1
                                             }
                                         }
                                     },
-                                    "key": "oaqpulcbbz",
-                                    "padding": {
-                                        "xs": {
-                                            "top": 5,
-                                            "left": 5,
-                                            "right": 5,
-                                            "bottom": 5
-                                        },
-                                        "md": {
-                                            "top": 15,
-                                            "left": 15,
-                                            "right": 15,
-                                            "bottom": 15
-                                        }
-                                    }
+                                    "key": "omovqpozlr"
                                 }
                             }
                         }
                     ],
                     "styles": {
                         "instance": {
-                            "grid": {
-                                "md": {
-                                    "rows": [
-                                        "auto"
-                                    ],
-                                    "cols": [
-                                        "1fr",
-                                        "1fr",
-                                        "1fr"
-                                    ]
-                                },
+                            "margin": {
                                 "xs": {
-                                    "rows": [
-                                        "auto",
-                                        "auto",
-                                        "auto"
-                                    ],
-                                    "cols": [
-                                        "1fr"
-                                    ]
+                                    "top": 10,
+                                    "bottom": 10,
+                                    "left": "auto",
+                                    "right": "auto"
+                                },
+                                "md": {
+                                    "top": 15,
+                                    "bottom": 15
+                                },
+                                "xl": {
+                                    "top": 25,
+                                    "bottom": 25
                                 }
                             },
-                            "key": "tzhggvhxxk",
+                            "padding": {
+                                "xs": {
+                                    "top": 5,
+                                    "bottom": 5,
+                                    "left": 5,
+                                    "right": 5
+                                },
+                                "md": {
+                                    "top": 15,
+                                    "bottom": 15,
+                                    "left": 15,
+                                    "right": 15
+                                }
+                            },
                             "size": {
                                 "sm": {
                                     "maxWidth": 540
@@ -1620,20 +1600,15 @@
                                     "maxWidth": 1140
                                 }
                             },
-                            "margin": {
+                            "key": "eidwzurrsq",
+                            "grid": {
                                 "xs": {
-                                    "top": 10,
-                                    "left": "auto",
-                                    "right": "auto",
-                                    "bottom": 10
-                                },
-                                "md": {
-                                    "top": 15,
-                                    "bottom": 15
-                                },
-                                "xl": {
-                                    "top": 25,
-                                    "bottom": 25
+                                    "rows": [
+                                        "auto"
+                                    ],
+                                    "cols": [
+                                        "1fr"
+                                    ]
                                 }
                             }
                         }
