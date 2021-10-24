@@ -1,23 +1,11 @@
 import { IInjectorModule, IInjector } from "@paperbits/common/injection";
-import { ClickCounterEditor } from "./ko/clickCounterEditor";
+import { ClickCounterEditor } from "./clickCounterEditor";
 import { ClickCounterHandlers } from "./clickCounterHandlers";
 import { ClickCounterModelBinder } from "./clickCounterModelBinder";
+import { ClickCounterViewModelBinder } from "./clickCounterViewModelBinder";
+import { ClickCounter } from "./clickCounter";
 
-
-/* Knockout example component */
-// import { ClickCounter, ClickCounterViewModelBinder } from "./ko";
-
-/* Uncomment to switch to Vue example component */
-// import { ClickCounter, ClickCounterViewModelBinder } from "./vue";
-
-/* Uncomment to switch to React example component */
-import { ClickCounter, ClickCounterViewModelBinder } from "./react";
-
-/* Uncomment to switch to Angular example component */
-// import { ClickCounter, ClickCounterViewModelBinder } from "./angular";
-
-
-export class ClickCounterEditorModule implements IInjectorModule {
+export class ClickCounterDesignModule implements IInjectorModule {
     public register(injector: IInjector): void {
         injector.bind("clickCounterEditor", ClickCounterEditor);
         injector.bindToCollection("widgetHandlers", ClickCounterHandlers);

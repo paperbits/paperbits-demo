@@ -1,6 +1,6 @@
 import * as ko from "knockout";
 import template from "./clickCounterEditor.html";
-import { ClickCounterModel } from "../clickCounterModel";
+import { ClickCounterModel } from "./clickCounterModel";
 import { Component, OnMounted, Param, Event } from "@paperbits/common/ko/decorators";
 import { WidgetEditor } from "@paperbits/common/widgets";
 import { ChangeRateLimit } from "@paperbits/common/ko/consts";

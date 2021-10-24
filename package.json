@@ -22,7 +22,6 @@
         "@types/knockout.mapping": "^2.0.36",
         "@types/knockout.validation": "0.0.38",
         "@types/mime": "^2.0.3",
-        "@types/react": "^16.9.53",
         "autoprefixer": "10.3.7",
         "clean-webpack-plugin": "2.0.2",
         "copy-webpack-plugin": "^6.2.1",
@@ -47,12 +46,6 @@
         "webpack-merge": "^5.1.2"
     },
     "dependencies": {
-        "@angular/common": "^10.1.6",
-        "@angular/compiler": "^10.1.6",
-        "@angular/core": "^10.1.6",
-        "@angular/elements": "^10.1.6",
-        "@angular/platform-browser": "^10.1.6",
-        "@angular/platform-browser-dynamic": "^10.1.6",
         "@paperbits/common": "0.1.455",
         "@paperbits/core": "0.1.455",
         "@paperbits/emails": "0.1.455",
@@ -61,17 +54,12 @@
         "@paperbits/gtm": "0.1.455",
         "@paperbits/intercom": "0.1.455",
         "@paperbits/prosemirror": "0.1.455",
-        "@paperbits/react": "1.0.1",
         "@paperbits/styles": "0.1.455",
         "@webcomponents/custom-elements": "^1.5.0",
         "core-js": "^3.18.2",
         "knockout": "^3.5.1",
         "knockout-mapping": "^2.6.0",
         "knockout.validation": "^2.0.4",
-        "mime": "^2.5.2",
-        "react": "^16.14.0",
-        "react-dom": "^16.14.0",
-        "rxjs": "^6.6.3",
-        "zone.js": "^0.11.2"
+        "mime": "^2.5.2"
     }
 }

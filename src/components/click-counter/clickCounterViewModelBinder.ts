@@ -2,8 +2,8 @@ import { Bag } from "@paperbits/common";
 import { ComponentFlow, IWidgetBinding } from "@paperbits/common/editing";
 import { EventManager } from "@paperbits/common/events";
 import { ViewModelBinder } from "@paperbits/common/widgets";
-import { ClickCounterModel } from "../clickCounterModel";
-import { ClickCounter } from "./clickCounterViewModel";
+import { ClickCounterModel } from "./clickCounterModel";
+import { ClickCounter } from "./clickCounter";
 
 export class ClickCounterViewModelBinder implements ViewModelBinder<ClickCounterModel, ClickCounter>  {
     constructor(private readonly eventManager: EventManager) { }
