@@ -51,10 +51,6 @@ const runtimeConfig = {
                 }
             },
             {
-                test: /\.vue$/,
-                loader: 'vue-loader'
-            },
-            {
                 test: /\.liquid$/,
                 loader: "raw-loader"
             }
@@ -70,9 +66,6 @@ const runtimeConfig = {
         })
     ],
     resolve: {
-        alias: {
-            "vue$": "vue/dist/vue.esm.js"
-        },
         extensions: [".ts", ".tsx", ".js", ".jsx", ".html", ".scss"]
     }
 }
