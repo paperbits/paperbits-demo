@@ -4,7 +4,7 @@ import { ClickCounterModel } from "../clickCounterModel";
 import { Component, OnMounted, Param, Event } from "@paperbits/common/ko/decorators";
 import { WidgetEditor } from "@paperbits/common/widgets";
 import { ChangeRateLimit } from "@paperbits/common/ko/consts";
-import { BackgroundStylePluginConfig } from "@paperbits/styles/contracts";
+import { BackgroundStylePluginConfig } from "@paperbits/styles/plugins";
 import { StyleHelper } from "@paperbits/styles";
 
 @Component({

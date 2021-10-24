@@ -1,5 +1,5 @@
 import { Bag } from "@paperbits/common";
-import { IWidgetBinding } from "@paperbits/common/editing";
+import { ComponentFlow, IWidgetBinding } from "@paperbits/common/editing";
 import { EventManager } from "@paperbits/common/events";
 import { ViewModelBinder } from "@paperbits/common/widgets";
 import { ClickCounterModel } from "../clickCounterModel";
