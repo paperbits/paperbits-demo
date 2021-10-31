@@ -1,6 +1,6 @@
 import { Bag } from "@paperbits/common";
 import { ComponentFlow, IWidgetBinding } from "@paperbits/common/editing";
-import { EventManager } from "@paperbits/common/events";
+import { EventManager, Events } from "@paperbits/common/events";
 import { ViewModelBinder } from "@paperbits/common/widgets";
 import { ClickCounterModel } from "./clickCounterModel";
 import { ClickCounter } from "./clickCounter";
@@ -25,7 +25,7 @@ export class ClickCounterViewModelBinder implements ViewModelBinder<ClickCounter
             editor: "click-counter-editor",
             applyChanges: async () => {
                 await this.modelToViewModel(model, viewModel, bindingContext);
-                this.eventManager.dispatchEvent("onContentUpdate");
+                this.eventManager.dispatchEvent(Events.ContentUpdate);
             }
         };
 
