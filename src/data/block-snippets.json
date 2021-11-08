@@ -7,40 +7,40 @@
             "description": "",
             "contentKey": "files/00ffcf96-42a4-476b-bab8-c14abe6a755d"
         },
-        "6ef8e090-2961-c892-3a13-c3f35bfcacda": {
+        "feature-block-3": {
             "type": "layout-section",
-            "key": "blocks/6ef8e090-2961-c892-3a13-c3f35bfcacda",
+            "key": "blocks/feature-block-3",
             "title": "Feature block 3",
             "description": "",
-            "contentKey": "files/6f21de91-7e76-7f24-972c-cdc190161ff0"
+            "contentKey": "files/feature-block-3"
         },
-        "1c2445c4-6fe3-a32c-0433-f3dfbd7bd7cd": {
+        "feature-block-4": {
             "type": "layout-section",
-            "key": "blocks/1c2445c4-6fe3-a32c-0433-f3dfbd7bd7cd",
+            "key": "blocks/feature-block-4",
             "title": "Feature block 4",
             "description": "",
-            "contentKey": "files/2b662b7f-9921-5e71-b227-8e9e13c792d0"
+            "contentKey": "files/feature-block-4"
         },
-        "624d7993-cb41-1814-035e-ee29005d7330": {
+        "feature-block-1": {
             "type": "layout-section",
-            "key": "blocks/624d7993-cb41-1814-035e-ee29005d7330",
+            "key": "blocks/feature-block-1",
             "title": "Feature block 1",
             "description": "",
-            "contentKey": "files/dd7a5447-04be-cb62-4f38-889662e99a3f"
+            "contentKey": "files/feature-block-1"
         },
-        "86c03180-33be-3569-c296-460f07e687fa": {
+        "feature-block-2": {
             "type": "layout-section",
-            "key": "blocks/86c03180-33be-3569-c296-460f07e687fa",
+            "key": "blocks/feature-block-2",
             "title": "Feature block 2",
             "description": "",
-            "contentKey": "files/928e21ee-5f8b-c01b-3375-69db03b9382b"
+            "contentKey": "files/feature-block-2"
         },
-        "3a0c15dc-34fe-17a0-0d13-7a55b552c145": {
+        "feature-block-5": {
             "type": "layout-section",
-            "key": "blocks/3a0c15dc-34fe-17a0-0d13-7a55b552c145",
+            "key": "blocks/feature-block-5",
             "title": "Feature block 5",
             "description": "",
-            "contentKey": "files/aa94cd9f-a76f-5ba7-ef20-086214290999"
+            "contentKey": "files/feature-block-5"
         },
         "new-popup-template": {
             "contentKey": "files/new-popup-template",
@@ -48,10 +48,17 @@
             "key": "blocks/new-popup-template",
             "title": "New popup template",
             "type": "popup"
+        },
+        "heading-block-1": {
+            "type": "layout-section",
+            "key": "blocks/heading-block-1",
+            "title": "Feature block 5",
+            "description": "",
+            "contentKey": "files/heading-block-1"
         }
     },
     "files": {
-        "dd7a5447-04be-cb62-4f38-889662e99a3f": {
+        "feature-block-1": {
             "type": "layout-section",
             "nodes": [
                 {
@@ -478,7 +485,7 @@
                 }
             ]
         },
-        "928e21ee-5f8b-c01b-3375-69db03b9382b": {
+        "feature-block-2": {
             "type": "layout-section",
             "nodes": [
                 {
@@ -837,7 +844,7 @@
                 }
             ]
         },
-        "6f21de91-7e76-7f24-972c-cdc190161ff0": {
+        "feature-block-3": {
             "type": "layout-section",
             "nodes": [
                 {
@@ -1071,7 +1078,7 @@
                 }
             ]
         },
-        "2b662b7f-9921-5e71-b227-8e9e13c792d0": {
+        "feature-block-4": {
             "type": "layout-section",
             "nodes": [
                 {
@@ -1305,7 +1312,7 @@
                 }
             ]
         },
-        "aa94cd9f-a76f-5ba7-ef20-086214290999":   {
+        "feature-block-5":   {
             "type": "layout-section",
             "styles": {
                 "instance": {
@@ -1762,6 +1769,164 @@
                 {
                     "type": "dismiss-button",
                     "label": "Dismiss"
+                }
+            ]
+        },
+        "heading-block-1": {
+            "type": "layout-section",
+            "nodes": [
+                {
+                    "type": "grid",
+                    "nodes": [
+                        {
+                            "type": "grid-cell",
+                            "nodes": [
+                                {
+                                    "type": "picture",
+                                    "width": 80,
+                                    "height": 80,
+                                    "caption": "Logo",
+                                    "styles": {
+                                        "appearance": "components/picture/default"
+                                    },
+                                    "hyperlink": {
+                                        "target": "_self",
+                                        "targetKey": "pages/e0987ca1-f458-b546-7697-7be594b35583"
+                                    }
+                                },
+                                {
+                                    "type": "button",
+                                    "label": "Menu",
+                                    "styles": {
+                                        "appearance": "components/button/default",
+                                        "instance": {
+                                            "display": {
+                                                "xs": "inline-block",
+                                                "md": "none"
+                                            },
+                                            "key": "mdinpifzdk"
+                                        }
+                                    }
+                                },
+                                {
+                                    "type": "menu",
+                                    "minHeading": null,
+                                    "maxHeading": null,
+                                    "navigationItemKey": "main",
+                                    "layout": "horizontal",
+                                    "styles": {
+                                        "appearance": "components/menu/default",
+                                        "instance": {
+                                            "display": {
+                                                "md": "inline-block",
+                                                "xs": "none"
+                                            },
+                                            "key": "shhrpwjizr"
+                                        }
+                                    }
+                                }
+                            ],
+                            "role": "article",
+                            "styles": {
+                                "instance": {
+                                    "grid-cell": {
+                                        "xs": {
+                                            "position": {
+                                                "col": 1,
+                                                "row": 1
+                                            },
+                                            "span": {
+                                                "cols": 1,
+                                                "rows": 1
+                                            },
+                                            "alignment": {
+                                                "vertical": "center",
+                                                "horizontal": "between"
+                                            }
+                                        },
+                                        "xl": {
+                                            "alignment": {
+                                                "vertical": "center",
+                                                "horizontal": "between"
+                                            }
+                                        },
+                                        "md": {
+                                            "alignment": {
+                                                "vertical": "center",
+                                                "horizontal": "center"
+                                            }
+                                        },
+                                        "lg": {
+                                            "alignment": {
+                                                "vertical": "center",
+                                                "horizontal": "between"
+                                            }
+                                        }
+                                    },
+                                    "key": "ofhhlcmhhj"
+                                }
+                            }
+                        }
+                    ],
+                    "styles": {
+                        "instance": {
+                            "margin": {
+                                "xs": {
+                                    "top": 10,
+                                    "bottom": 10,
+                                    "left": "auto",
+                                    "right": "auto"
+                                },
+                                "md": {
+                                    "top": 15,
+                                    "bottom": 15
+                                },
+                                "xl": {
+                                    "top": 25,
+                                    "bottom": 25
+                                }
+                            },
+                            "padding": {
+                                "xs": {
+                                    "top": 5,
+                                    "bottom": 5,
+                                    "left": 5,
+                                    "right": 5
+                                },
+                                "md": {
+                                    "top": 15,
+                                    "bottom": 15,
+                                    "left": 15,
+                                    "right": 15
+                                }
+                            },
+                            "size": {
+                                "sm": {
+                                    "maxWidth": 540
+                                },
+                                "md": {
+                                    "maxWidth": 720
+                                },
+                                "lg": {
+                                    "maxWidth": 960
+                                },
+                                "xl": {
+                                    "maxWidth": 1140
+                                }
+                            },
+                            "key": "qrrdzlnzwq",
+                            "grid": {
+                                "xs": {
+                                    "rows": [
+                                        "auto"
+                                    ],
+                                    "cols": [
+                                        "1fr"
+                                    ]
+                                }
+                            }
+                        }
+                    }
                 }
             ]
         }
