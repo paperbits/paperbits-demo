@@ -114,6 +114,7 @@
     &.list-item-image {
         @include pseudo-transparent-bckg();
         margin: 3px;
+        padding: 0;
         flex-basis: auto;
     }
 
