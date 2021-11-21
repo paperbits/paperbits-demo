@@ -1,6 +1,6 @@
 {
     "name": "paperbits-demo",
-    "version": "0.1.462",
+    "version": "0.1.465",
     "description": "An example of using Paperbits to build web apps with rich content editing capability.",
     "author": "Paperbits",
     "license": "MIT",
@@ -18,7 +18,7 @@
         "serve-website": "webpack-dev-server --open --contentBase dist/website --quiet"
     },
     "devDependencies": {
-        "@types/google.maps": "^3.46.0",
+        "@types/google.maps": "^3.47.0",
         "@types/knockout.mapping": "^2.0.36",
         "@types/knockout.validation": "0.0.38",
         "@types/mime": "^2.0.3",
@@ -38,7 +38,7 @@
         "terser": "5.9.0",
         "terser-webpack-plugin": "4.1.0",
         "ts-loader": "^8.3.0",
-        "typescript": "4.4.4",
+        "typescript": "4.5.2",
         "url-loader": "4.1.1",
         "webpack": "4.44.1",
         "webpack-cli": "^3.3.12",
@@ -46,20 +46,19 @@
         "webpack-merge": "^5.1.2"
     },
     "dependencies": {
-        "@paperbits/common": "0.1.462",
-        "@paperbits/core": "0.1.462",
-        "@paperbits/emails": "0.1.462",
-        "@paperbits/firebase": "0.1.462",
-        "@paperbits/forms": "0.1.462",
-        "@paperbits/gtm": "0.1.462",
-        "@paperbits/intercom": "0.1.462",
-        "@paperbits/prosemirror": "0.1.462",
-        "@paperbits/styles": "0.1.462",
+        "@paperbits/common": "0.1.465",
+        "@paperbits/core": "0.1.465",
+        "@paperbits/emails": "0.1.465",
+        "@paperbits/firebase": "0.1.465",
+        "@paperbits/forms": "0.1.465",
+        "@paperbits/gtm": "0.1.465",
+        "@paperbits/intercom": "0.1.465",
+        "@paperbits/prosemirror": "0.1.465",
+        "@paperbits/styles": "0.1.465",
         "@webcomponents/custom-elements": "^1.5.0",
-        "core-js": "^3.19.0",
+        "core-js": "^3.19.1",
         "knockout": "^3.5.1",
         "knockout-mapping": "^2.6.0",
-        "knockout.validation": "^2.0.4",
-        "mime": "^2.5.2"
+        "knockout.validation": "^2.0.4"
     }
 }
