@@ -1,11 +1,10 @@
 const path = require("path");
-const { merge } = require("webpack-merge");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 
 const runtimeConfig = {
-    mode: "none",
+    mode: "development",
     target: "web",
     entry: {
         "scripts/theme": ["./src/startup.runtime.ts"],
@@ -37,6 +36,7 @@ const runtimeConfig = {
                 loader: "html-loader",
                 options: {
                     esModule: true,
+                    sources: false,
                     minimize: {
                         removeComments: false,
                         collapseWhitespace: false
@@ -44,11 +44,8 @@ const runtimeConfig = {
                 }
             },
             {
-                test: /\.(png|woff|woff2|eot|ttf|svg)$/,
-                loader: "url-loader",
-                options: {
-                    limit: 10000
-                }
+                test: /\.(svg)$/i,
+                type: "asset/inline"
             },
             {
                 test: /\.liquid$/,
@@ -66,24 +63,12 @@ const runtimeConfig = {
         })
     ],
     resolve: {
-        extensions: [".ts", ".tsx", ".js", ".jsx", ".html", ".scss"]
+        extensions: [".js", ".ts", ".jsx", ".tsx", ".html", ".scss"],
+        fallback: {
+            "buffer": false,
+            "stream": require.resolve("stream-browserify")
+        }
     }
 }
 
-module.exports = (designer) => {
-    const modification = {
-        entry: {},
-        output: {}
-    }
-
-    if (designer) {
-        modification.entry["styles/theme"] = `./src/themes/website/styles/styles.design.scss`;
-        modification.output["path"] = path.resolve(__dirname, "dist/designer");
-    }
-    else {
-        modification.entry["styles/theme"] = `./src/themes/website/styles/styles.scss`
-        modification.output["path"] = path.resolve(__dirname, "dist/publisher/assets");
-    }
-
-    return merge(runtimeConfig, modification);
-};
+module.exports = runtimeConfig;

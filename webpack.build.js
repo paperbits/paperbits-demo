@@ -1,7 +1,7 @@
 const { merge } = require("webpack-merge");
 const TerserPlugin = require("terser-webpack-plugin");
-const designerConfig = require("./webpack.designer.js");
-const publisherConfig = require("./webpack.publisher.js");
+const { designerConfig, designerRuntimeConfig } = require("./webpack.designer.js");
+const { publisherConfig, publisherRuntimeConfig } = require("./webpack.publisher.js");
 
 
 const productionConfig = {
@@ -9,11 +9,10 @@ const productionConfig = {
     optimization: {
         minimizer: [
             new TerserPlugin({
-                sourceMap: false,
                 terserOptions: {
                     mangle: false,
                     output: {
-                        comments: false,
+                        comments: false
                     }
                 }
             })
@@ -21,6 +20,9 @@ const productionConfig = {
     }
 }
 
-module.exports = []
-    .concat(designerConfig, publisherConfig)
-    .map(x => merge(x, productionConfig));
+module.exports = [
+    designerConfig,
+    designerRuntimeConfig,
+    publisherConfig,
+    publisherRuntimeConfig
+].map(x => merge(x, productionConfig));

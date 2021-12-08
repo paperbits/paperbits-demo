@@ -1,12 +1,12 @@
 const path = require("path");
+const { merge } = require("webpack-merge");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
-const CleanWebpackPlugin = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const runtimeConfig = require("./webpack.runtime");
 
 
 const publisherConfig = {
-    mode: "none",
+    mode: "development",
     target: "node",
     node: {
         __dirname: false,
@@ -20,9 +20,7 @@ const publisherConfig = {
     },
     output: {
         filename: "./[name].js",
-        path: path.resolve(__dirname, "dist/publisher"),
-        library: "publisher",
-        libraryTarget: "commonjs2"
+        path: path.resolve(__dirname, "dist/publisher")
     },
     externals: {
         "firebase-admin": "firebase-admin"
@@ -50,6 +48,7 @@ const publisherConfig = {
                 loader: "html-loader",
                 options: {
                     esModule: true,
+                    sources: false,
                     minimize: {
                         removeComments: false,
                         collapseWhitespace: false
@@ -70,7 +69,6 @@ const publisherConfig = {
         ]
     },
     plugins: [
-        new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({ filename: "[name].css", chunkFilename: "[id].css" }),
         new CopyWebpackPlugin({
             patterns: [
@@ -85,4 +83,13 @@ const publisherConfig = {
     }
 };
 
-module.exports = [publisherConfig, runtimeConfig(false)];
+const publisherRuntimeConfig = merge(runtimeConfig, {
+    entry: { "styles/theme": `./src/themes/website/styles/styles.scss` },
+    output: { "path": path.resolve(__dirname, "dist/publisher/assets") }
+});
+
+module.exports = {
+    default: [publisherConfig, publisherRuntimeConfig],
+    publisherConfig,
+    publisherRuntimeConfig
+}
