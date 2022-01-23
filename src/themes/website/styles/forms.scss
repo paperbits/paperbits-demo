@@ -17,7 +17,7 @@ form {
     width: 100%;
 }
 
-input[type=range] {
+input[type="range"] {
     width: 100%;
 }
 
@@ -60,5 +60,40 @@ input[type=range] {
         margin-top: 0;
         margin-right: 0.25rem;
         margin-left: 0;
+    }
+}
+
+.input-group {
+    padding: 0;
+    display: inline-flex;
+
+    .form-control {
+        flex: 1;
+
+        &:not(:last-child) {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        &:not(:first-child) {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+    }
+
+    .input-group-addon {
+        line-height: normal;
+        background-color: #fff;
+        color: #000;
+
+        &:not(:last-child) {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+    
+        &:not(:first-child) {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
     }
 }
