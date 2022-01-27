@@ -71,10 +71,15 @@ const designerConfig = {
                 { from: `./src/themes/designer/assets/index.html`, to: "index.html" },
                 { from: `./src/themes/designer/styles/fonts`, to: "editors/styles/fonts" },
             ]
-        })
+        }),
+        new webpack.ProvidePlugin({ Buffer: ['buffer', 'Buffer'] })
     ],
     resolve: {
-        extensions: [".ts", ".tsx", ".js", ".jsx", ".html", ".scss"]
+        extensions: [".ts", ".tsx", ".js", ".jsx", ".html", ".scss"],
+        fallback: {
+            buffer: require.resolve("buffer"),
+            stream: require.resolve("stream-browserify")
+        }
     }
 };
 
