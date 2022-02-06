@@ -27,7 +27,12 @@ const designerConfig = {
                         loader: "css-loader",
                         options: { url: { filter: (url) => /\/icon-.*\.svg$/.test(url) } }
                     },
-                    { loader: "postcss-loader" },
+                    {
+                        loader: "postcss-loader",
+                        options: {
+                            postcssOptions: { plugins: [["autoprefixer", { sourceMap: true, minimize: true }]] }
+                        }
+                    },
                     { loader: "sass-loader" }
                 ]
             },

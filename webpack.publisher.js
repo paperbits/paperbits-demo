@@ -1,4 +1,5 @@
 const path = require("path");
+const webpack = require('webpack');
 const { merge } = require("webpack-merge");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
@@ -10,13 +11,10 @@ const publisherConfig = {
     target: "node",
     node: {
         __dirname: false,
-        __filename: false,
+        __filename: false
     },
     entry: {
         "index": ["./src/startup.publish.ts"]
-    },
-    optimization: {
-        minimize: false
     },
     output: {
         filename: "./[name].js",
@@ -69,6 +67,7 @@ const publisherConfig = {
         ]
     },
     plugins: [
+        new webpack.IgnorePlugin({ resourceRegExp: /canvas/ }, { resourceRegExp: /jsdom$/ }),
         new MiniCssExtractPlugin({ filename: "[name].css", chunkFilename: "[id].css" }),
         new CopyWebpackPlugin({
             patterns: [
