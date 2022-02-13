@@ -18,7 +18,7 @@
         "serve-website": "webpack serve --open --static ./dist/website --no-stats"
     },
     "devDependencies": {
-        "@types/google.maps": "^3.47.3",
+        "@types/google.maps": "^3.47.4",
         "@types/knockout.mapping": "^2.0.37",
         "@types/knockout.validation": "0.0.38",
         "@types/mime": "^2.0.3",
@@ -46,15 +46,15 @@
         "webpack-merge": "^5.8.0"
     },
     "dependencies": {
-        "@paperbits/common": "0.1.483",
-        "@paperbits/core": "0.1.483",
-        "@paperbits/emails": "0.1.483",
-        "@paperbits/firebase": "0.1.483",
-        "@paperbits/forms": "0.1.483",
-        "@paperbits/gtm": "0.1.483",
-        "@paperbits/intercom": "0.1.483",
-        "@paperbits/prosemirror": "0.1.483",
-        "@paperbits/styles": "0.1.483",
+        "@paperbits/common": "0.1.486",
+        "@paperbits/core": "0.1.486",
+        "@paperbits/emails": "0.1.486",
+        "@paperbits/firebase": "0.1.486",
+        "@paperbits/forms": "0.1.486",
+        "@paperbits/gtm": "0.1.486",
+        "@paperbits/intercom": "0.1.486",
+        "@paperbits/prosemirror": "0.1.486",
+        "@paperbits/styles": "0.1.486",
         "@webcomponents/custom-elements": "^1.5.0",
         "core-js": "^3.21.0",
         "knockout": "^3.5.1"

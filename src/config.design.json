@@ -14,7 +14,10 @@
             }  
         }
     },
-    "localizationEnabled": true,
-    "websitePreviewEnabled": true,
+    "features": {
+        "seo": true,
+        "localization": true,
+        "preview": true
+    },
     "environment": "design"
 }

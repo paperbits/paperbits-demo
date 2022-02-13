@@ -7,10 +7,10 @@
  */
 
 import template from "./app.html";
-import { ViewManager } from "@paperbits/common/ui";
 import { Component, OnMounted } from "@paperbits/common/ko/decorators";
 import { Logger } from "@paperbits/common/logging";
 import { EventManager } from "@paperbits/common/events";
+import { ViewManager } from "@paperbits/common/ui/viewManager";
 
 @Component({
     selector: "app",
