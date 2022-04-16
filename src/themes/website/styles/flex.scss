@@ -1,0 +1,20 @@
+.flex {
+    display: flex;
+    min-height: 0; // fixes issue with oveflow in Edge, FF and other browsers
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-grow {
+    flex: 1 1 auto;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
