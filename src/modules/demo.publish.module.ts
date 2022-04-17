@@ -29,7 +29,6 @@ export class DemoPublishModule implements IInjectorModule {
     ) { }
 
     public register(injector: IInjector): void {
-        injector.bindSingleton("logger", ConsoleLogger);
         injector.bindSingleton("userService", StaticUserService);
         injector.bindSingleton("roleService", StaticRoleService);
         injector.bindSingleton("router", StaticRouter);

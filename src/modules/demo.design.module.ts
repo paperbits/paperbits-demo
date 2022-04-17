@@ -29,7 +29,6 @@ export class DemoDesignModule implements IInjectorModule {
         injector.bindSingleton("roleService", StaticRoleService);
         injector.bindToCollection("autostart", HistoryRouteHandler);
         injector.bindToCollection("autostart", AnchorRouteHandler);
-        injector.bindSingleton("logger", ConsoleLogger);
         injector.bindModule(new SearchDesignModule());
         injector.bindModule(new ClickCounterDesignModule());
         injector.bindModule(new PopupDesignModule());
