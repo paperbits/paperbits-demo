@@ -18,8 +18,8 @@ export class ClickCounterViewModelBinder implements ViewModelBinder<ClickCounter
         const binding: IWidgetBinding<ClickCounterModel, ClickCounter> = {
             name: "click-counter",
             displayName: "Click counter",
-            readonly: bindingContext ? bindingContext.readonly : false,
             model: model,
+            layer: bindingContext?.layer,
             flow: ComponentFlow.Block,
             draggable: true,
             editor: "click-counter-editor",
