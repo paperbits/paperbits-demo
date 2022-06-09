@@ -9,7 +9,6 @@
 
 import { IInjector, IInjectorModule } from "@paperbits/common/injection";
 import { App } from "../components/app/app";
-import { ConsoleLogger } from "@paperbits/common/logging";
 import { SearchDesignModule } from "@paperbits/core/search/search.design.module";
 import { MemoryObjectStorage } from "../persistence/memoryObjectStorage";
 import { MemoryBlobStorage } from "../persistence/memoryBlobStorage";

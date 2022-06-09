@@ -7,7 +7,6 @@
  */
 
 import * as path from "path";
-import { ConsoleLogger } from "@paperbits/common/logging";
 import { IInjector, IInjectorModule } from "@paperbits/common/injection";
 import { MemoryBlobStorage } from "../persistence/memoryBlobStorage";
 import { StaticUserService } from "../user/staticUserService";

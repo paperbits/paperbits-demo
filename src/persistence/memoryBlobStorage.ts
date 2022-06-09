@@ -18,18 +18,20 @@ export class MemoryBlobStorage implements IBlobStorage {
 
     constructor(private readonly dataProvider: any) { }
 
+    private async loadData(): Promise<Object> {
+        const dataObject = await this.dataProvider.getDataObject();
+        const blobsDataObject = dataObject["blobs"] || {};
+        dataObject["blobs"] = blobsDataObject;
+
+        return dataObject;
+    }
+
     protected async getDataObject(): Promise<Object> {
         if (this.initPromise) {
             return this.initPromise;
         }
 
-        this.initPromise = new Promise<Object>(async (resolve) => {
-            const dataObject = await this.dataProvider.getDataObject();
-            const blobsDataObject = dataObject["blobs"] || {};
-            dataObject["blobs"] = blobsDataObject;
-
-            resolve(blobsDataObject);
-        });
+        this.initPromise = this.loadData();
 
         return this.initPromise;
     }

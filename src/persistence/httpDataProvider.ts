@@ -9,32 +9,25 @@
 import { HttpClient } from "@paperbits/common/http";
 
 export class HttpDataProvider {
-    private initPromise: Promise<void>;
     private dataObject: Object;
 
     constructor(private readonly httpClient: HttpClient) { }
 
-    private async initialize(): Promise<void> {
-        if (this.initPromise) {
-            return this.initPromise;
-        }
-
-        this.initPromise = new Promise<void>(async (resolve) => {
-            const response = await this.httpClient.send({
-                url: "/data/demo.json",
-                method: "GET"
-            });
-
-            this.dataObject = response.toObject();
-
-            resolve();
+    private async loadData(): Promise<Object> {
+        const response = await this.httpClient.send({
+            url: "/data/demo.json",
+            method: "GET"
         });
 
-        return this.initPromise;
+        return response.toObject();
     }
 
     public async getDataObject(): Promise<Object> {
-        await this.initialize();
+        if (this.dataObject) {
+            return this.dataObject;
+        }
+
+        this.dataObject = this.loadData();
 
         return this.dataObject;
     }

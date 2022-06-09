@@ -199,7 +199,7 @@ export class MemoryObjectStorage implements IObjectStorage {
     }
 
     public async loadData(): Promise<object> {
-        return new Promise<object>((resolve, reject) => {
+        return new Promise<object>((resolve) => {
             const input: HTMLInputElement = document.createElement("input");
             input.type = "file";
 

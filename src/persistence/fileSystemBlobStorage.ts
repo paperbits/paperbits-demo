@@ -77,11 +77,11 @@ export class FileSystemBlobStorage implements IBlobStorage {
         return results;
     }
 
-    public getDownloadUrl(filename: string): Promise<string> {
+    public getDownloadUrl(): Promise<string> {
         throw new Error("Not supported");
     }
 
-    public async deleteBlob(filename: string): Promise<void> {
+    public async deleteBlob(): Promise<void> {
         return null;
     }
 }
