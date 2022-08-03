@@ -4,6 +4,7 @@ import { EventManager, Events } from "@paperbits/common/events";
 import { ViewModelBinder } from "@paperbits/common/widgets";
 import { ClickCounterModel } from "./clickCounterModel";
 import { ClickCounter } from "./clickCounter";
+import { ClickCounterHandlers } from "./clickCounterHandlers";
 
 export class ClickCounterViewModelBinder implements ViewModelBinder<ClickCounterModel, ClickCounter>  {
     constructor(private readonly eventManager: EventManager) { }
@@ -21,6 +22,7 @@ export class ClickCounterViewModelBinder implements ViewModelBinder<ClickCounter
             model: model,
             layer: bindingContext?.layer,
             flow: ComponentFlow.Block,
+            handler: ClickCounterHandlers,
             draggable: true,
             editor: "click-counter-editor",
             applyChanges: async () => {
