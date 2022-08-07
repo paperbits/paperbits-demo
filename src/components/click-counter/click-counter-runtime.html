@@ -1,9 +1,14 @@
 <div class="text text-align-center">
-    <button class="button" data-bind="click: increaseCount">
-        Click me
-    </button>
-    <div>
+    <div class="label">
         <label for="clickCount">Click count:</label>
         <b id="clickCount" data-bind="text: clickCount"></b>
+    </div>
+    <button class="button bbb" data-bind="click: increaseCount">
+        Click me
+    </button>
+    <div style="position: absolute; z-index: 1009; background: #fff;width: 300px;height:300px;border:1px solid #ccc">
+        <button class="button bbb" data-bind="click: increaseCount">
+            Click me
+        </button>
     </div>
 </div>

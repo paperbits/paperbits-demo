@@ -5,9 +5,14 @@ import { ViewModelBinder } from "@paperbits/common/widgets";
 import { ClickCounterModel } from "./clickCounterModel";
 import { ClickCounter } from "./clickCounter";
 import { ClickCounterHandlers } from "./clickCounterHandlers";
+import { StyleCompiler } from "@paperbits/common/styles";
+
 
 export class ClickCounterViewModelBinder implements ViewModelBinder<ClickCounterModel, ClickCounter>  {
-    constructor(private readonly eventManager: EventManager) { }
+    constructor(
+        private readonly eventManager: EventManager,
+        private readonly styleCompiler: StyleCompiler
+    ) { }
 
     public async modelToViewModel(model: ClickCounterModel, viewModel?: ClickCounter, bindingContext?: Bag<any>): Promise<ClickCounter> {
         if (!viewModel) {
@@ -16,11 +21,15 @@ export class ClickCounterViewModelBinder implements ViewModelBinder<ClickCounter
 
         viewModel.runtimeConfig(JSON.stringify({ initialCount: model.initialCount }));
 
+        if (model.styles) {
+            viewModel.styles(await this.styleCompiler.getStyleModelAsync(model.styles, bindingContext?.styleManager, ClickCounterHandlers));
+        }
+
         const binding: IWidgetBinding<ClickCounterModel, ClickCounter> = {
             name: "click-counter",
             displayName: "Click counter",
-            model: model,
             layer: bindingContext?.layer,
+            model: model,
             flow: ComponentFlow.Block,
             handler: ClickCounterHandlers,
             draggable: true,

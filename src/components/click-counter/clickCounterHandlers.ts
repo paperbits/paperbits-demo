@@ -7,6 +7,7 @@
  */
 
 import { IWidgetOrder, IWidgetHandler } from "@paperbits/common/editing";
+import { StyleDefinition } from "@paperbits/common/styles";
 import { ClickCounterModel } from "./clickCounterModel";
 
 
@@ -23,5 +24,40 @@ export class ClickCounterHandlers implements IWidgetHandler {
         };
 
         return widgetOrder;
+    }
+
+    public getStyleDefinitions(): StyleDefinition {
+        return {
+            colors: {
+                labelColor: {
+                    displayName: "Label color",
+                    defaults: {
+                        value: "green"
+                    }
+                }
+            },
+            components: {
+                clickCounter: {
+                    displayName: "Click counter",
+                    plugins: ["margin", "padding", "typography"],
+                    components: {
+                        label: {
+                            displayName: "Click counter label",
+                            plugins: ["typography", "margin", "border"],
+                            defaults: {
+                                typography: {
+                                    fontSize: 50,
+                                    colorKey: "colors/labelColor"
+                                }
+                            }
+                        },
+                        button: {
+                            displayName: "Button1",
+                            plugins: ["typography", "margin", "border"]
+                        }
+                    }
+                }
+            }
+        };
     }
 }
