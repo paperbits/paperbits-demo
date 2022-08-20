@@ -1,12 +1,33 @@
-import { IInjectorModule, IInjector } from "@paperbits/common/injection";
+/**
+ * @license
+ * Copyright Paperbits. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file and at https://paperbits.io/license/mit.
+ */
+
+import { IInjector, IInjectorModule } from "@paperbits/common/injection";
+import { IWidgetService } from "@paperbits/common/widgets";
+import { KnockoutComponentBinder } from "@paperbits/core/ko/knockoutComponentBinder";
+import { ClickCounter } from "./clickCounter";
+import { ClickCounterModel } from "./clickCounterModel";
 import { ClickCounterModelBinder } from "./clickCounterModelBinder";
 import { ClickCounterViewModelBinder } from "./clickCounterViewModelBinder";
-import { ClickCounter } from "./clickCounter";
 
 export class ClickCounterModule implements IInjectorModule {
     public register(injector: IInjector): void {
         injector.bind("clickCounter", ClickCounter);
-        injector.bindToCollection("modelBinders", ClickCounterModelBinder);
-        injector.bindToCollection("viewModelBinders", ClickCounterViewModelBinder);
+        injector.bindSingleton("clickCounterModelBinder", ClickCounterModelBinder);
+        injector.bindSingleton("clickCounterViewModelBinder", ClickCounterViewModelBinder);
+
+        const widgetService = injector.resolve<IWidgetService>("widgetService");
+
+        widgetService.registerWidget("click-counter", {
+            modelDefinition: ClickCounterModel,
+            componentBinder: KnockoutComponentBinder,
+            componentDefinition: ClickCounter,
+            modelBinder: ClickCounterModelBinder,
+            viewModelBinder: ClickCounterViewModelBinder
+        });
     }
 }

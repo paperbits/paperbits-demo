@@ -1,3 +1,11 @@
+/**
+ * @license
+ * Copyright Paperbits. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file and at https://paperbits.io/license/mit.
+ */
+
 import * as ko from "knockout";
 import template from "./click-counter-runtime.html";
 import { Component, RuntimeComponent, Param, OnMounted, OnDestroyed } from "@paperbits/common/ko/decorators";
