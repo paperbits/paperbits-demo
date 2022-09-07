@@ -12,6 +12,7 @@ import { CacheStorageModule } from "@paperbits/common/publishing/cacheStorageMod
 import { FormsModule } from "@paperbits/forms/forms.module";
 import { CoreModule } from "@paperbits/core/core.module";
 import { CorePublishModule } from "@paperbits/core/core.publish.module";
+import { RoleBasedSecurityPublishModule } from "@paperbits/core/security/roleBasedSecurity.publish.module";
 import { EmailsModule } from "@paperbits/emails/emails.module";
 import { EmailsPublishModule } from "@paperbits/emails/emails.publish.module";
 import { StylePublishModule } from "@paperbits/styles/styles.publish.module";
@@ -27,6 +28,7 @@ import { DemoPublishModule } from "./modules/demo.publish.module";
 const injector = new InversifyInjector();
 injector.bindModule(new CoreModule());
 injector.bindModule(new CorePublishModule());
+injector.bindModule(new RoleBasedSecurityPublishModule());
 injector.bindModule(new FormsModule());
 injector.bindModule(new EmailsModule());
 injector.bindModule(new EmailsPublishModule());
