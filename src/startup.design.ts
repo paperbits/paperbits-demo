@@ -10,6 +10,7 @@ import "./polyfills";
 import * as ko from "knockout";
 import { InversifyInjector } from "@paperbits/common/injection";
 import { CoreDesignModule } from "@paperbits/core/core.design.module";
+import { RoleBasedSecurityDesignModule } from "@paperbits/core/security/roleBasedSecurity.design.module";
 import { FormsDesignModule } from "@paperbits/forms/forms.design.module";
 import { EmailsDesignModule } from "@paperbits/emails/emails.design.module";
 import { StylesDesignModule } from "@paperbits/styles/styles.design.module";
@@ -23,6 +24,7 @@ import { DemoDesignModule } from "./modules/demo.design.module";
 /* Initializing dependency injection  */
 const injector = new InversifyInjector();
 injector.bindModule(new CoreDesignModule());
+injector.bindModule(new RoleBasedSecurityDesignModule());
 injector.bindModule(new FormsDesignModule());
 injector.bindModule(new EmailsDesignModule());
 injector.bindModule(new StylesDesignModule());
