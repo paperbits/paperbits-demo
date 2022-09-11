@@ -17,6 +17,8 @@ import { ClickCounterDesignModule } from "../components/click-counter/clickCount
 import { HistoryRouteHandler, AnchorRouteHandler } from "@paperbits/common/routing";
 import { HttpDataProvider } from "../persistence/httpDataProvider";
 import { PopupDesignModule } from "@paperbits/core/popup";
+import { RoleBasedSecurityDesignModule } from "@paperbits/core/security";
+import { RoleBasedSecurityModelBinder } from "@paperbits/common/security/roleBasedSecurityModelBinder";
 
 
 export class DemoDesignModule implements IInjectorModule {
@@ -31,5 +33,6 @@ export class DemoDesignModule implements IInjectorModule {
         injector.bindModule(new SearchDesignModule());
         injector.bindModule(new ClickCounterDesignModule());
         injector.bindModule(new PopupDesignModule());
+        injector.bindModule(new RoleBasedSecurityDesignModule());
     }
 }
