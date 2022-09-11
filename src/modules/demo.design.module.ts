@@ -8,17 +8,16 @@
 
 
 import { IInjector, IInjectorModule } from "@paperbits/common/injection";
-import { App } from "../components/app/app";
-import { SearchDesignModule } from "@paperbits/core/search/search.design.module";
-import { MemoryObjectStorage } from "../persistence/memoryObjectStorage";
-import { MemoryBlobStorage } from "../persistence/memoryBlobStorage";
-import { StaticRoleService } from "../user/staticRoleService";
-import { ClickCounterDesignModule } from "../components/click-counter/clickCounter.design.module";
-import { HistoryRouteHandler, AnchorRouteHandler } from "@paperbits/common/routing";
-import { HttpDataProvider } from "../persistence/httpDataProvider";
+import { AnchorRouteHandler, HistoryRouteHandler } from "@paperbits/common/routing";
 import { PopupDesignModule } from "@paperbits/core/popup";
-import { RoleBasedSecurityDesignModule } from "@paperbits/core/security";
-import { RoleBasedSecurityModelBinder } from "@paperbits/common/security/roleBasedSecurityModelBinder";
+import { SearchDesignModule } from "@paperbits/core/search/search.design.module";
+import { RoleBasedSecurityDesignModule } from "@paperbits/core/security/roleBasedSecurity.design.module";
+import { App } from "../components/app/app";
+import { ClickCounterDesignModule } from "../components/click-counter/clickCounter.design.module";
+import { HttpDataProvider } from "../persistence/httpDataProvider";
+import { MemoryBlobStorage } from "../persistence/memoryBlobStorage";
+import { MemoryObjectStorage } from "../persistence/memoryObjectStorage";
+import { StaticRoleService } from "../user/staticRoleService";
 
 
 export class DemoDesignModule implements IInjectorModule {

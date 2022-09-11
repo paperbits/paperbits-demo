@@ -18,7 +18,7 @@ import { StaticRoleService } from "../user/staticRoleService";
 import { SearchPublishModule } from "@paperbits/core/search/search.publish.module";
 import { ClickCounterDesignModule } from "../components/click-counter/clickCounter.design.module";
 import { FileSystemDataProvider } from "../persistence/fileSystemDataProvider";
-import { RoleBasedSecurityPublishModule } from "@paperbits/core/security";
+import { RoleBasedSecurityPublishModule } from "@paperbits/core/security/roleBasedSecurity.publish.module";
 import { IntercomPublishModule } from "@paperbits/intercom/intercom.publish.module";
 import { GoogleTagManagerPublishModule } from "@paperbits/gtm/gtm.publish.module";
 
