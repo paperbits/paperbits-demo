@@ -238,7 +238,6 @@ $style-guide-color: #000;
     }
 }
 
-
 .placeholder {
     min-height: 80px;
     font-family: monospace;
@@ -337,4 +336,8 @@ body {
 
 .design-menu-horizontal {
     padding-bottom: 110px;
+}
+
+.external * {
+    pointer-events: none;
 }
