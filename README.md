@@ -37,7 +37,7 @@ npm start
 
 ## What's next?
 
-[Getting started](https://paperbits.io/wiki/getting-started)
+[Getting started](https://paperbits.io/wiki/get-started)
 
 [Blog](https://paperbits.io/blog)
 
