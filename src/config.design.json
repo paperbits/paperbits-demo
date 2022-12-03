@@ -19,5 +19,10 @@
         "localization": true,
         "preview": true
     },
+    "resources": {
+        "iconsFonts": "/data/icon-fonts.json",
+        "gridSnippets": "/data/grid-snippets.json",
+        "blockSnippets": "/data/block-snippets.json"
+    },
     "environment": "design"
 }
