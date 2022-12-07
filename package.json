@@ -53,7 +53,7 @@
         "@paperbits/common": "0.1.534",
         "@paperbits/core": "0.1.534",
         "@paperbits/emails": "0.1.534",
-        "@paperbits/firebase": "0.1.534",
+        "@paperbits/firebase": "^0.1.534",
         "@paperbits/forms": "0.1.534",
         "@paperbits/gtm": "0.1.534",
         "@paperbits/intercom": "0.1.534",
