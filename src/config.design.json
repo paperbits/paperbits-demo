@@ -1,16 +1,16 @@
 {
     "firebase": {
-        "apiKey": "< your API key >",
-        "authDomain": "< your domain >.firebaseapp.com",
-        "databaseURL": "https://< your database URL >.firebaseio.com",
-        "projectId": "< your project ID >",
-        "storageBucket": "< your storage bucket >.appspot.com",
+        "apiKey": "$FIREBASE_API",
+        "authDomain": "$FIREBASE_DOMAIN",
+        "databaseURL": "$FIREBASE_DOMAIN",
+        "projectId": "$FIREBASE_PROJECT_ID",
+        "storageBucket": "$FIREBASE_STORAGE_BUCKET",
         "databaseRootKey": "/",
         "storageBasePath": "/",
         "auth": {
             "basic": {
-                "email": "< user email >",
-                "password": "< user password >"
+                "email": "$FIREBASE_AUTH_EMAIL",
+                "password": "$FIREBASE_AUTH_PASSWORD"
             }  
         }
     },
