@@ -6,7 +6,6 @@
  * found in the LICENSE file and at https://paperbits.io/license/mit.
  */
 
-import * as _ from "lodash";
 import * as FileSaver from "file-saver";
 import * as Objects from "@paperbits/common/objects";
 import { IObjectStorage, Query, Operator, OrderDirection, Page } from "@paperbits/common/persistence";
@@ -42,7 +41,7 @@ export class MemoryObjectStorage implements IObjectStorage {
                 storageDataObject[mainNode] = dataObject;
             }
             else {
-                if (!_.has(storageDataObject, mainNode)) {
+                if (!storageDataObject.hasOwnProperty(mainNode)) {
                     storageDataObject[mainNode] = {};
                 }
                 storageDataObject[mainNode][pathParts[1]] = dataObject;
@@ -58,7 +57,7 @@ export class MemoryObjectStorage implements IObjectStorage {
                     storageDataObject[mainNode] = obj;
                 }
                 else {
-                    if (!_.has(storageDataObject, mainNode)) {
+                    if (!storageDataObject.hasOwnProperty(mainNode)) {
                         storageDataObject[mainNode] = {};
                     }
                     storageDataObject[mainNode][pathParts[1]] = obj;
