@@ -29,7 +29,7 @@ $style-guide-color: #000;
     pointer-events: none;
 }
 
-@mixin selection($size: 10px, $spacing: 0) {
+@mixin selection($size: 10px, $spacing: 0) { 
     &:after {
         @include fit($spacing);
         @extend .no-pointer-events;
