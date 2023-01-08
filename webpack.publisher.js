@@ -84,7 +84,18 @@ const publisherConfig = {
 
 const publisherRuntimeConfig = merge(runtimeConfig, {
     entry: { "styles/theme": `./src/themes/website/styles/styles.scss` },
-    output: { "path": path.resolve(__dirname, "dist/publisher/assets") }
+    output: { "path": path.resolve(__dirname, "dist/publisher/assets") },
+    optimization: {
+        splitChunks: {
+            cacheGroups: {
+                vendor: {
+                    test: /[\\/]node_modules[\\/]/,
+                    name: "scripts/vendor",
+                    chunks: "all"
+                }
+            }
+        }
+    }
 });
 
 module.exports = {

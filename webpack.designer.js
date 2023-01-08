@@ -17,6 +17,17 @@ const designerConfig = {
         filename: "./[name].js",
         path: path.resolve(__dirname, "./dist/designer")
     },
+    optimization: {
+        splitChunks: {
+            cacheGroups: {
+                vendor: {
+                    test: /[\\/]node_modules[\\/]/,
+                    name: "editors/scripts/vendor",
+                    chunks: "all"
+                }
+            }
+        }
+    },
     module: {
         rules: [
             {
@@ -91,7 +102,18 @@ const designerConfig = {
 
 const designerRuntimeConfig = merge(runtimeConfig, {
     entry: { "styles/theme": `./src/themes/website/styles/styles.design.scss` },
-    output: { "path": path.resolve(__dirname, "dist/designer") }
+    output: { "path": path.resolve(__dirname, "dist/designer") },
+    optimization: {
+        splitChunks: {
+            cacheGroups: {
+                vendor: {
+                    test: /[\\/]node_modules[\\/]/,
+                    name: "scripts/vendor",
+                    chunks: "all"
+                }
+            }
+        }
+    }
 });
 
 module.exports = {
