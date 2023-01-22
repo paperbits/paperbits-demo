@@ -9,8 +9,8 @@
 import "./polyfills";
 import { InversifyInjector } from "@paperbits/common/injection";
 import { CoreRuntimeModule } from "@paperbits/core/core.runtime.module";
-import { DemoRuntimeModule } from "./modules/demo.runtime.module";
 import { StyleRuntimeModule } from "@paperbits/styles/styles.runtime.module";
+import { DemoRuntimeModule } from "./modules/demo.runtime.module";
 
 
 document.addEventListener("DOMContentLoaded", () => {

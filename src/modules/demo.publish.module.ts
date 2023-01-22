@@ -18,6 +18,9 @@ import { StaticRoleService } from "../user/staticRoleService";
 import { SearchPublishModule } from "@paperbits/core/search/search.publish.module";
 import { ClickCounterDesignModule } from "../components/click-counter/clickCounter.design.module";
 import { FileSystemDataProvider } from "../persistence/fileSystemDataProvider";
+import { RoleBasedSecurityPublishModule } from "@paperbits/core/security/roleBasedSecurity.publish.module";
+import { IntercomPublishModule } from "@paperbits/intercom/intercom.publish.module";
+import { GoogleTagManagerPublishModule } from "@paperbits/gtm/gtm.publish.module";
 
 
 export class DemoPublishModule implements IInjectorModule {
@@ -38,5 +41,8 @@ export class DemoPublishModule implements IInjectorModule {
         injector.bindInstance("settingsProvider", new StaticSettingsProvider(path.resolve(this.settingsPath)));
         injector.bindModule(new SearchPublishModule());
         injector.bindModule(new ClickCounterDesignModule());
+        injector.bindModule(new IntercomPublishModule());
+        injector.bindModule(new GoogleTagManagerPublishModule());
+        injector.bindModule(new RoleBasedSecurityPublishModule());
     }
 }
