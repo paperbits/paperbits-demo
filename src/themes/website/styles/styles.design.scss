@@ -214,30 +214,6 @@ $style-guide-color: #000;
     text-transform: uppercase;
 }
 
-.snippet-grid {
-    display: grid;
-    grid-template-columns: repeat(12, 10px);
-    grid-template-rows: repeat(12, 10px);
-    margin: 5px;
-    width: 80px;
-
-    &:hover {
-        @include selection(15px, -5px);
-        cursor: pointer;
-    }
-}
-
-.snippet-grid-cell {
-    background: #d9d9d9;
-    outline: 1px solid gray;
-    min-width: 15px;
-    min-height: 20px;
-    margin: 2px;
-    &[role="article"] {
-        background: #bfbfbf;
-    }
-}
-
 .placeholder {
     min-height: 80px;
     font-family: monospace;
