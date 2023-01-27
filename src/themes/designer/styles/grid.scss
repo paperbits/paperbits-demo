@@ -48,7 +48,8 @@
   width: 80px !important;
   float: left;
 
-  &:hover {
+  &:hover,
+  &:focus {
     @include selection(15px, -5px);
     cursor: pointer;
   }
