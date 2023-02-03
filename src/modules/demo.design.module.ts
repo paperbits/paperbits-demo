@@ -13,6 +13,7 @@ import { PopupDesignModule } from "@paperbits/core/popup";
 import { SearchDesignModule } from "@paperbits/core/search/search.design.module";
 import { RoleBasedSecurityDesignModule } from "@paperbits/core/security/roleBasedSecurity.design.module";
 import { App } from "../components/app/app";
+import { ReactModule } from "@paperbits/react/react.module";
 import { ClickCounterDesignModule } from "../components/click-counter/clickCounter.design.module";
 import { HttpDataProvider } from "../persistence/httpDataProvider";
 import { MemoryBlobStorage } from "../persistence/memoryBlobStorage";
@@ -33,5 +34,6 @@ export class DemoDesignModule implements IInjectorModule {
         injector.bindModule(new ClickCounterDesignModule());
         injector.bindModule(new PopupDesignModule());
         injector.bindModule(new RoleBasedSecurityDesignModule());
+        injector.bindModule(new ReactModule());
     }
 }

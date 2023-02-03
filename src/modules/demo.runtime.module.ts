@@ -9,6 +9,7 @@
 import { IInjector, IInjectorModule } from "@paperbits/common/injection";
 import "@paperbits/core/ko/bindingHandlers/bindingHandlers.component";
 import { RoleBasedSecurityRuntimeModule } from "@paperbits/core/security/roleBasedSecurity.runtime.module";
+import { ReactModule } from "@paperbits/react/react.module";
 import { ClickCounterRuntimeModule } from "../components/click-counter/clickCounter.runtime.module";
 import { StaticRoleService } from "../user/staticRoleService";
 import { StaticUserService } from "../user/staticUserService";
@@ -19,5 +20,6 @@ export class DemoRuntimeModule implements IInjectorModule {
         injector.bindSingleton("userService", StaticUserService);
         injector.bindSingleton("roleService", StaticRoleService);
         injector.bindModule(new RoleBasedSecurityRuntimeModule());
+        injector.bindModule(new ReactModule());
     }
 }

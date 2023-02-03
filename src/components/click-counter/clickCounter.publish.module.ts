@@ -8,26 +8,26 @@
 
 import { IInjector, IInjectorModule } from "@paperbits/common/injection";
 import { IWidgetService } from "@paperbits/common/widgets";
-import { KnockoutComponentBinder } from "@paperbits/core/ko/knockoutComponentBinder";
+import { ReactComponentBinder } from "@paperbits/react/bindings";
 import { ClickCounter } from "./clickCounter";
 import { ClickCounterModel } from "./clickCounterModel";
 import { ClickCounterModelBinder } from "./clickCounterModelBinder";
 import { ClickCounterViewModelBinder } from "./clickCounterViewModelBinder";
 
-export class ClickCounterModule implements IInjectorModule {
+export class ClickCounterPublishModule implements IInjectorModule {
     public register(injector: IInjector): void {
         injector.bind("clickCounter", ClickCounter);
-        injector.bindSingleton("clickCounterModelBinder", ClickCounterModelBinder);
-        injector.bindSingleton("clickCounterViewModelBinder", ClickCounterViewModelBinder);
+        injector.bindSingleton("clickCounterModelBinders", ClickCounterModelBinder);
+        injector.bindSingleton("clickCounterViewModelBinders", ClickCounterViewModelBinder);
 
-        const widgetService = injector.resolve<IWidgetService>("widgetService");
+        const registry = injector.resolve<IWidgetService>("widgetService");
 
-        widgetService.registerWidget("click-counter", {
+        registry.registerWidget("click-counter", {
             modelDefinition: ClickCounterModel,
-            componentBinder: KnockoutComponentBinder,
-            componentDefinition: ClickCounter,
             modelBinder: ClickCounterModelBinder,
-            viewModelBinder: ClickCounterViewModelBinder
+            viewModelBinder: ClickCounterViewModelBinder,
+            componentBinder: ReactComponentBinder,
+            componentDefinition: ClickCounter
         });
     }
 }

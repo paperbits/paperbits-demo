@@ -21,6 +21,7 @@ import { FileSystemDataProvider } from "../persistence/fileSystemDataProvider";
 import { RoleBasedSecurityPublishModule } from "@paperbits/core/security/roleBasedSecurity.publish.module";
 import { IntercomPublishModule } from "@paperbits/intercom/intercom.publish.module";
 import { GoogleTagManagerPublishModule } from "@paperbits/gtm/gtm.publish.module";
+import { ReactModule } from "@paperbits/react/react.module";
 
 
 export class DemoPublishModule implements IInjectorModule {
@@ -44,5 +45,6 @@ export class DemoPublishModule implements IInjectorModule {
         injector.bindModule(new IntercomPublishModule());
         injector.bindModule(new GoogleTagManagerPublishModule());
         injector.bindModule(new RoleBasedSecurityPublishModule());
+        injector.bindModule(new ReactModule());
     }
 }

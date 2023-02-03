@@ -7,7 +7,7 @@
  */
 
 import { IInjector, IInjectorModule } from "@paperbits/common/injection";
-import { ClickCounterRuntime } from "./click-counter-runtime";
+import { ClickCounterRuntime } from "./clickCounterRuntime";
 
 export class ClickCounterRuntimeModule implements IInjectorModule {
     public register(injector: IInjector): void {

@@ -10,7 +10,7 @@ import { LocalStyles } from "@paperbits/common/styles";
 
 export class ClickCounterModel {
     /**
-     * Inital count.
+     * Initial count.
      */
     public initialCount: number;
 
@@ -21,6 +21,7 @@ export class ClickCounterModel {
 
     constructor() {
         this.initialCount = 0;
+
         this.styles = {
             appearance: "components/card/default"
         };

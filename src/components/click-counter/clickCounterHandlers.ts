@@ -13,5 +13,5 @@ import { ClickCounterModel } from "./clickCounterModel";
 export class ClickCounterHandlers implements IWidgetHandler {
     public async getWidgetModel(): Promise<ClickCounterModel> {
         return new ClickCounterModel();
-    }
+    }   
 }
