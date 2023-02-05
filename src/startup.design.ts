@@ -16,10 +16,7 @@ import { StylesDesignModule } from "@paperbits/styles/styles.design.module";
 import { ProseMirrorModule } from "@paperbits/prosemirror/prosemirror.module";
 import { OfflineModule } from "@paperbits/common/persistence/offline.module";
 import { DemoDesignModule } from "./modules/demo.design.module";
-
-import * as React from "react";
-import * as ReactDOM from "react-dom";
-import { ReactApp } from "./components/app/app";
+import { ReactApp } from "./components/app/app.react";
 import { ComponentBinder } from "@paperbits/common/editing";
 
 
