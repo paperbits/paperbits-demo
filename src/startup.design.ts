@@ -19,7 +19,7 @@ import { DemoDesignModule } from "./modules/demo.design.module";
 
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-import { ReactApp } from "./themes/app";
+import { ReactApp } from "./components/app/app";
 import { ComponentBinder } from "@paperbits/common/editing";
 
 
