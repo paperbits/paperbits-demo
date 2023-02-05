@@ -17,6 +17,12 @@ import { ProseMirrorModule } from "@paperbits/prosemirror/prosemirror.module";
 import { OfflineModule } from "@paperbits/common/persistence/offline.module";
 import { DemoDesignModule } from "./modules/demo.design.module";
 
+import * as React from "react";
+import * as ReactDOM from "react-dom";
+import { ReactApp } from "./themes/app";
+import { ComponentBinder } from "@paperbits/common/editing";
+
+
 /* Uncomment to enable Firebase module */
 // import { FirebaseModule } from "@paperbits/firebase/firebase.module";
 
@@ -35,6 +41,14 @@ injector.bindModule(new DemoDesignModule());
 injector.bindModule(new OfflineModule({ autosave: false }));
 injector.resolve("autostart");
 
+
+
 document.addEventListener("DOMContentLoaded", () => {
     setImmediate(() => ko.applyBindings(undefined, document.body));
+
+    // Binding the React app
+    const componentBinder = injector.resolve<ComponentBinder>("reactComponentBinder");
+    const element = document.getElementById("myApp");
+    componentBinder.bind(element, ReactApp); // This will bind the application to element along with container.
 });
+

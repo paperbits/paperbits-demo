@@ -7,6 +7,8 @@
  */
 
 import * as React from "react";
+import { Resolve } from "@paperbits/react/decorators"
+import { Router } from "@paperbits/common/routing";
 
 
 /**
@@ -14,6 +16,9 @@ import * as React from "react";
  */
 export class ClickCounter extends React.Component {
     public state: any;
+
+    @Resolve("router")
+    public router: Router;
 
     constructor(props) {
         super(props);
@@ -24,6 +29,8 @@ export class ClickCounter extends React.Component {
     }
 
     public render(): JSX.Element {
+        console.log(this.router.getCurrentRoute());
+
         return (
             <div className={this.state.classNames}>
                 <p className="not-configured">
