@@ -7,10 +7,21 @@
  */
 
 import { IInjector, IInjectorModule } from "@paperbits/common/injection";
+
+// Registration for classic component definition
 import { ClickCounterRuntime } from "./click-counter-runtime";
+
+// Imports for classic component definition
+// import { registerCustomElement } from "@paperbits/vue/utils";
+// import ClickCounterRuntime from "./click-counter-runtime-classic";
+
 
 export class ClickCounterRuntimeModule implements IInjectorModule {
     public register(injector: IInjector): void {
-        injector.bind("clickCounterRuntime", ClickCounterRuntime);
+        // Registration for classic component definition
+        // registerCustomElement(ClickCounterRuntime, "click-counter-runtime");
+
+        // Registration for decorator-based component definition
+        // injector.bind("click-counter-rutime", ClickCounterRuntime);
     }
 }

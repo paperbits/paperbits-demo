@@ -11,6 +11,7 @@ import { InversifyInjector } from "@paperbits/common/injection";
 import { CoreRuntimeModule } from "@paperbits/core/core.runtime.module";
 import { StyleRuntimeModule } from "@paperbits/styles/styles.runtime.module";
 import { DemoRuntimeModule } from "./modules/demo.runtime.module";
+import { VueModule } from "@paperbits/vue/vue.module";
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -19,5 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
     injector.bindModule(new CoreRuntimeModule());
     injector.bindModule(new StyleRuntimeModule());
     injector.bindModule(new DemoRuntimeModule());
+    injector.bindModule(new VueModule());
     injector.resolve("autostart");
 });

@@ -6,23 +6,15 @@
  * found in the LICENSE file and at https://paperbits.io/license/mit.
  */
 
+import { Contract } from "@paperbits/common";
 import { IModelBinder } from "@paperbits/common/editing";
 import { ClickCounterModel } from "./clickCounterModel";
-import { Contract } from "@paperbits/common";
 import { ClickCounterContract } from "./clickCounterContract";
 
 export class ClickCounterModelBinder implements IModelBinder<ClickCounterModel> {
-    public canHandleContract(contract: Contract): boolean {
-        return contract.type === "click-counter";
-    }
-
-    public canHandleModel(model: ClickCounterModel): boolean {
-        return model instanceof ClickCounterModel;
-    }
-
     public async contractToModel(contract: ClickCounterContract): Promise<ClickCounterModel> {
         const model = new ClickCounterModel();
-        model.initialCount = contract.initialCount;
+        model.initialCount = contract.initialCount || 0;
         model.styles = contract.styles;
         return model;
     }

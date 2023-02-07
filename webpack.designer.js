@@ -62,6 +62,10 @@ const designerConfig = {
             {
                 test: /\.(raw|liquid)$/,
                 loader: "raw-loader"
+            },
+            {
+                test: /\.vue$/,
+                loader: 'vue-loader'
             }
         ]
     },
@@ -85,6 +89,9 @@ const designerConfig = {
         fallback: {
             buffer: require.resolve("buffer"),
             stream: require.resolve("stream-browserify")
+        },
+        alias: {
+            "vue$": "vue/dist/vue.esm.js"
         }
     }
 };
