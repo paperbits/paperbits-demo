@@ -27,7 +27,7 @@
     }
 
     &.form-group-collapsible {
-        & > .form-label {
+        &>.form-label {
             position: unset;
         }
 
@@ -45,6 +45,7 @@
                 left: 10px;
                 border-left: 1px dotted $form-collapsible-section-gutter-color;
             }
+
             @extend .paperbits-icon;
             @extend .paperbits-circle-delete;
 
@@ -102,6 +103,23 @@ textarea {
 
     &[disabled] {
         background-color: $form-control-bg-disabled;
+    }
+}
+
+.dropdown {
+    background: $form-control-bg;
+    border: none;
+
+    .option {
+        padding: 5px;
+
+        &:hover {
+            background-color: $dropdown-option-selected-color;
+        }
+
+        &.selected {
+            background-color:$dropdown-option-selected-color;
+        }
     }
 }
 
