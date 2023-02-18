@@ -19,9 +19,9 @@ import { ClickCounterRuntime } from "./click-counter-runtime";
 export class ClickCounterRuntimeModule implements IInjectorModule {
     public register(injector: IInjector): void {
         // Registration for classic component definition
-        // registerCustomElement(ClickCounterRuntime, "click-counter-runtime");
+        //registerCustomElement(ClickCounterRuntime, "click-counter-runtime");
 
         // Registration for decorator-based component definition
-        // injector.bind("click-counter-rutime", ClickCounterRuntime);
+        injector.bind("click-counter-rutime", ClickCounterRuntime);
     }
 }

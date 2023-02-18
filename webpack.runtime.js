@@ -67,6 +67,9 @@ const runtimeConfig = {
         fallback: {
             "buffer": false,
             "stream": require.resolve("stream-browserify")
+        },
+        alias: {
+            "vue$": "vue/dist/vue.esm.js"
         }
     }
 }

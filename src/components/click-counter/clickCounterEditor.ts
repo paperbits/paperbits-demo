@@ -6,42 +6,42 @@
  * found in the LICENSE file and at https://paperbits.io/license/mit.
  */
 
-import * as ko from "knockout";
 import template from "./clickCounterEditor.html";
+import { Component, Prop, Emit, Watch, OnMounted } from "@paperbits/vue/decorators";
 import { ClickCounterModel } from "./clickCounterModel";
-import { Component, OnMounted, Param, Event } from "@paperbits/common/ko/decorators";
-import { WidgetEditor } from "@paperbits/common/widgets";
-import { ChangeRateLimit } from "@paperbits/common/ko/consts";
 
 
 @Component({
-    selector: "click-counter-editor",
+    selector: "click-counter",
     template: template
 })
-export class ClickCounterEditor implements WidgetEditor<ClickCounterModel> {
-    public readonly initialCount: ko.Observable<number>;
+export class ClickCounterEditor {
+    @Prop()
+    public initialCount: number;
 
-    constructor() {
-        this.initialCount = ko.observable(0);
-    }
-
-    @Param()
+    @Prop()
     public model: ClickCounterModel;
 
-    @Event()
+    @Emit("onChange")
     public onChange: (model: ClickCounterModel) => void;
 
     @OnMounted()
     public async initialize(): Promise<void> {
-        this.initialCount(this.model.initialCount);
+        /*
+           This method is called after component created. At this moment all the parameters,
+           includinig "model", are available.
+        */
 
-        this.initialCount
-            .extend(ChangeRateLimit)
-            .subscribe(this.applyChanges);
+        this.initialCount = this.model.initialCount;
+    }
+
+    @Watch("initialCount")
+    public onInitialCountChange(): void {
+        this.applyChanges();
     }
 
     private applyChanges(): void {
-        this.model.initialCount = this.initialCount();
+        this.model.initialCount = this.initialCount;
         this.onChange(this.model);
     }
 }

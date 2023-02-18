@@ -14,7 +14,7 @@
                     <button class="btn btn-info" type="button"
                         data-bind="tooltip: 'Initial value that needs to be set to click counter.'"></button>
                 </label>
-                <input type="number" class="form-control" data-bind="textInput: initialCount" min="0" />
+                <input type="number" class="form-control" v-model="initialCount" min="0" />
             </div>
         </div>
     </div>
