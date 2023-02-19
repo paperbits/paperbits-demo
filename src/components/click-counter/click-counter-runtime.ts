@@ -7,12 +7,9 @@
  */
 
 import template from "./click-counter-runtime.html";
-import { Component, RuntimeComponent, Prop, OnMounted, OnDestroyed, Watch } from "@paperbits/vue/decorators";
+import { Component, Prop, OnMounted, OnDestroyed, Watch } from "@paperbits/vue/decorators";
 
 
-@RuntimeComponent({
-    selector: "click-counter-runtime"
-})
 @Component({
     selector: "click-counter-runtime",
     template: template
@@ -45,6 +42,6 @@ export class ClickCounterRuntime {
     }
 
     public increaseCount(): void {
-        this.clickCount = this.clickCount + 1;
+        this.clickCount++;
     }
 }

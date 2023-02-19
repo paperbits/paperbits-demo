@@ -50,6 +50,10 @@ const runtimeConfig = {
             {
                 test: /\.liquid$/,
                 loader: "raw-loader"
+            },
+            {
+                test: /\.vue$/,
+                loader: 'vue-loader'
             }
         ]
     },
@@ -63,7 +67,7 @@ const runtimeConfig = {
         })
     ],
     resolve: {
-        extensions: [".js", ".ts", ".jsx", ".tsx", ".html", ".scss"],
+        extensions: [".js", ".ts", ".jsx", ".tsx", ".html", ".scss", ".vue"],
         fallback: {
             "buffer": false,
             "stream": require.resolve("stream-browserify")

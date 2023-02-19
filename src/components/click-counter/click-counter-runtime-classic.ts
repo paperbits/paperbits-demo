@@ -28,7 +28,7 @@ export default Vue.component("click-counter-runtime", {
 
     methods: {
         increaseCount(): void {
-            this.clickCount = this.clickCount + 1;
+            this.clickCount++;
         }
     },
 
