@@ -19,18 +19,18 @@
         "lint": "eslint src/**/*.ts"
     },
     "devDependencies": {
-        "@types/google.maps": "^3.52.0",
+        "@types/google.maps": "^3.52.1",
         "@types/knockout.mapping": "^2.0.37",
         "@types/knockout.validation": "0.0.38",
         "@types/mime": "^3.0.1",
-        "@typescript-eslint/eslint-plugin": "^5.53.0",
-        "@typescript-eslint/parser": "^5.53.0",
+        "@typescript-eslint/eslint-plugin": "^5.54.0",
+        "@typescript-eslint/parser": "^5.54.0",
         "autoprefixer": "10.4.13",
         "buffer": "^6.0.3",
         "bufferutil": "^4.0.7",
         "copy-webpack-plugin": "^11.0.0",
         "css-loader": "6.7.3",
-        "eslint": "^8.34.0",
+        "eslint": "^8.35.0",
         "file-loader": "^6.2.0",
         "html-loader": "^4.2.0",
         "mini-css-extract-plugin": "^2.7.2",
@@ -52,16 +52,16 @@
         "webpack-merge": "^5.8.0"
     },
     "dependencies": {
-        "@paperbits/common": "0.1.564",
-        "@paperbits/core": "0.1.564",
-        "@paperbits/emails": "0.1.564",
-        "@paperbits/forms": "0.1.564",
-        "@paperbits/gtm": "0.1.564",
-        "@paperbits/intercom": "0.1.564",
-        "@paperbits/prosemirror": "0.1.564",
-        "@paperbits/styles": "0.1.564",
+        "@paperbits/common": "0.1.566",
+        "@paperbits/core": "0.1.566",
+        "@paperbits/emails": "0.1.566",
+        "@paperbits/forms": "0.1.566",
+        "@paperbits/gtm": "0.1.566",
+        "@paperbits/intercom": "0.1.566",
+        "@paperbits/prosemirror": "0.1.566",
+        "@paperbits/styles": "0.1.566",
         "@webcomponents/custom-elements": "^1.5.1",
-        "core-js": "^3.28.0",
+        "core-js": "^3.29.0",
         "knockout": "^3.5.1"
     }
 }
