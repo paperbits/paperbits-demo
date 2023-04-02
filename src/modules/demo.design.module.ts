@@ -9,7 +9,6 @@
 
 import { IInjector, IInjectorModule } from "@paperbits/common/injection";
 import { AnchorRouteHandler, HistoryRouteHandler } from "@paperbits/common/routing";
-import { PopupDesignModule } from "@paperbits/core/popup/popup.design.module";
 import { SearchDesignModule } from "@paperbits/core/search/search.design.module";
 import { RoleBasedSecurityDesignModule } from "@paperbits/core/security/roleBasedSecurity.design.module";
 import { App } from "../components/app/app";
