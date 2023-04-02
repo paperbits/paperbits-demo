@@ -52,14 +52,14 @@
         "webpack-merge": "^5.8.0"
     },
     "dependencies": {
-        "@paperbits/common": "0.1.577",
-        "@paperbits/core": "0.1.577",
-        "@paperbits/emails": "0.1.577",
-        "@paperbits/forms": "0.1.577",
-        "@paperbits/gtm": "0.1.577",
-        "@paperbits/intercom": "0.1.577",
-        "@paperbits/prosemirror": "0.1.577",
-        "@paperbits/styles": "0.1.577",
+        "@paperbits/common": "0.1.578",
+        "@paperbits/core": "0.1.578",
+        "@paperbits/emails": "0.1.578",
+        "@paperbits/forms": "0.1.578",
+        "@paperbits/gtm": "0.1.578",
+        "@paperbits/intercom": "0.1.578",
+        "@paperbits/prosemirror": "0.1.578",
+        "@paperbits/styles": "0.1.578",
         "@webcomponents/custom-elements": "^1.6.0",
         "core-js": "^3.29.1",
         "knockout": "^3.5.1"
