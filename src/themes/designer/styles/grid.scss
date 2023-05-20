@@ -6,7 +6,9 @@
   column-gap: 0 !important;
   margin: 5px !important;
   width: 80px !important;
+  height: 50px !important;
   float: left;
+  padding: 2px;
 
   &:hover,
   &:focus {
@@ -18,11 +20,11 @@
 .snippet-grid-cell {
   background: #d9d9d9;
   outline: 1px solid gray;
-  min-width: 15px;
-  min-height: 20px;
+  min-width: 10px;
+  min-height: 10px;
   margin: 2px;
 
-  &[role="article"] {
+  &[future-role="article"] {
     background: #bfbfbf;
   }
 }
