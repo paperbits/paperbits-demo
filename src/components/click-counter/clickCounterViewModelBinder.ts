@@ -14,7 +14,7 @@ export class ClickCounterViewModelBinder implements ViewModelBinder<ClickCounter
         state.runtimeConfig = { initialCount: model.initialCount };
     }
 
-    public stateToIntance(state: WidgetState, componentInstance: ClickCounter): void {
+    public stateToInstance(state: WidgetState, componentInstance: ClickCounter): void {
         componentInstance.styles(state.styles);
         componentInstance.runtimeConfig(JSON.stringify(state.runtimeConfig));
     }
