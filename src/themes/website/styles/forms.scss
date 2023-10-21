@@ -17,6 +17,30 @@ form {
     width: 100%;
 }
 
+.invalid-feedback {
+    margin-top: 0.25rem;
+    font-size: 0.875em;
+    color: $form-invalid-color;
+    display: none;
+}
+
+.form-control:invalid+.invalid-feedback,
+.form-control.invalid+.invalid-feedback {
+    display: block;
+}
+
+.input-group:invalid+.invalid-feedback,
+.input-group.invalid+.invalid-feedback {
+    display: block;
+}
+
+
+form.needs-validation:invalid {
+    [type="submit"] {
+        pointer-events: none;
+    }
+}
+
 input[type="range"] {
     width: 100%;
 }
@@ -65,35 +89,44 @@ input[type="range"] {
 
 .input-group {
     padding: 0;
-    display: inline-flex;
+    display: flex;
+    flex-wrap: wrap;
+
+    & > :not(:first-child):not(.dropdown):not(.invalid-feedback) {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        margin-left: -1px;
+    }
+
+    &.has-validation > :nth-last-child(n + 3) {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        margin-left: -1px;
+    }
+
+    &:not(.has-validation) > :not(:last-child):not(.dropdown) {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
 
     .form-control {
-        flex: 1;
-
-        &:not(:last-child) {
-            border-top-right-radius: 0;
-            border-bottom-right-radius: 0;
-        }
-
-        &:not(:first-child) {
-            border-top-left-radius: 0;
-            border-bottom-left-radius: 0;
-        }
+        flex-grow: 1;
     }
 
     .input-group-addon {
         line-height: normal;
         background-color: #fff;
         color: #000;
+        border: 1px solid #000;
+    }
 
-        &:not(:last-child) {
-            border-top-right-radius: 0;
-            border-bottom-right-radius: 0;
-        }
-    
-        &:not(:first-child) {
-            border-top-left-radius: 0;
-            border-bottom-left-radius: 0;
-        }
+    .dropdown {
+        background: #fff;
+        box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        width: 100%;
+        top: 100%;
+        left: 0;
+        right: 0;
     }
 }

@@ -5,9 +5,15 @@ $breakpoint-md: 768px;
 $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
 
-$grid-breakpoints: ( xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px ) !default;
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px
+) !default;
 
-$font-size-base: calc(10px + .8vw);
+$font-size-base: calc(10px + 0.8vw);
 $font-size-h6: $font-size-base;
 $font-size-h5: calc(8px + 1vw);
 $font-size-h4: calc(10px + 1vw);
@@ -15,13 +21,9 @@ $font-size-h3: calc(12px + 1vw);
 $font-size-h2: calc(14px + 1vw);
 $font-size-h1: calc(32px + 1vw);
 
-$green: #a2b747;
-$orange: #f79740;
-$blue: #5CC6D0;
-
-$link-color: $blue;
-$link-hover-color: $green;
-$link-active-color: $green;
+$link-color: #5cc6d0;
+$link-hover-color: #a2b747;
+$link-active-color: #a2b747;
 
 $font-family-base: Arial, Helvetica, sans-serif;
 $font-family-script: Tahoma, Geneva, Verdana, sans-serif;
@@ -30,4 +32,7 @@ $font-family-script: Tahoma, Geneva, Verdana, sans-serif;
 $default-heading-font-weight: 500;
 $default-heading-line-height: 1.2;
 $default-heading-color: inherit;
-$default-navlink-padding:  0.5rem 1rem;
+$default-navlink-padding: 0.5rem 1rem;
+
+/* Forms */
+$form-invalid-color: #f58634;
