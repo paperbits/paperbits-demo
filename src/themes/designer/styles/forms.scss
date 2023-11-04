@@ -168,6 +168,12 @@ textarea {
     }
 }
 
+.form-label {
+    .btn-info {
+        top: 8px;
+    }
+}
+
 .input-group {
     display: flex !important;
     border: 1px solid $form-control-border;
@@ -185,13 +191,15 @@ textarea {
     }
 
     .input-group-btn {
-        min-width: 1.5em;
+        min-width: 2em;
         border: none;
         line-height: inherit;
         cursor: pointer;
-        display: inline-block;
         line-height: 2em;
         font-size: $form-control-font-size;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         &:active,
         &:focus,
@@ -284,6 +292,15 @@ details {
 
         &:-webkit-details-marker {
             display: none;
+        }
+
+        & > .btn-info {
+            top: 1px;
+        }
+
+        &:focus {
+            outline: 1px solid #ccc;
+            outline-offset: 2px;
         }
     }
 }
