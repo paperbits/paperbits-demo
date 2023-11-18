@@ -24,13 +24,8 @@ form {
     display: none;
 }
 
-.form-control:invalid+.invalid-feedback,
-.form-control.invalid+.invalid-feedback {
-    display: block;
-}
-
-.input-group:invalid+.invalid-feedback,
-.input-group.invalid+.invalid-feedback {
+:invalid~.invalid-feedback,
+.invalid~.invalid-feedback {
     display: block;
 }
 
