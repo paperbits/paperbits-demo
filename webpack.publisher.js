@@ -63,6 +63,10 @@ const publisherConfig = {
             {
                 test: /\.(raw|liquid)$/,
                 loader: "raw-loader"
+            },
+            {
+                test: /\.vue$/,
+                loader: 'vue-loader'
             }
         ]
     },
@@ -78,7 +82,10 @@ const publisherConfig = {
         })
     ],
     resolve: {
-        extensions: [".ts", ".tsx", ".js", ".jsx", ".html", ".scss"]
+        extensions: [".ts", ".tsx", ".js", ".jsx", ".html", ".scss"],
+        alias: {
+            "vue$": "vue/dist/vue.esm.js"
+        }
     }
 };
 
