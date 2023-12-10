@@ -20,7 +20,6 @@ export class FileSystemObjectStorage extends MemoryObjectStorage {
     protected async getDataObject(): Promise<Object> {
         if (!this.storageDataObject) {
             this.storageDataObject = JSON.parse(await Utils.loadFileAsString(this.dataPath));
-            Objects.deepFreeze(this.storageDataObject);
         }
         
         return this.storageDataObject;

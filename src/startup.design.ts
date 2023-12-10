@@ -13,7 +13,6 @@ import { CoreDesignModule } from "@paperbits/core/core.design.module";
 import { FormsDesignModule } from "@paperbits/forms/forms.design.module";
 import { EmailsDesignModule } from "@paperbits/emails/emails.design.module";
 import { StylesDesignModule } from "@paperbits/styles/styles.design.module";
-import { ProseMirrorModule } from "@paperbits/prosemirror/prosemirror.module";
 import { OfflineModule } from "@paperbits/common/persistence/offline.module";
 import { DemoDesignModule } from "./modules/demo.design.module";
 import { VueModule } from "@paperbits/vue/vue.module";
@@ -27,7 +26,6 @@ injector.bindModule(new CoreDesignModule());
 injector.bindModule(new FormsDesignModule());
 injector.bindModule(new EmailsDesignModule());
 injector.bindModule(new StylesDesignModule());
-injector.bindModule(new ProseMirrorModule());
 injector.bindModule(new DemoDesignModule());
 injector.bindModule(new VueModule());
 

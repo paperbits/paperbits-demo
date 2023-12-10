@@ -9,7 +9,6 @@
 
 import { IInjector, IInjectorModule } from "@paperbits/common/injection";
 import { AnchorRouteHandler, HistoryRouteHandler } from "@paperbits/common/routing";
-import { PopupDesignModule } from "@paperbits/core/popup";
 import { SearchDesignModule } from "@paperbits/core/search/search.design.module";
 import { RoleBasedSecurityDesignModule } from "@paperbits/core/security/roleBasedSecurity.design.module";
 import { App } from "../components/app/app";
@@ -31,7 +30,6 @@ export class DemoDesignModule implements IInjectorModule {
         injector.bindToCollection("autostart", AnchorRouteHandler);
         injector.bindModule(new SearchDesignModule());
         injector.bindModule(new ClickCounterDesignModule());
-        injector.bindModule(new PopupDesignModule());
         injector.bindModule(new RoleBasedSecurityDesignModule());
     }
 }

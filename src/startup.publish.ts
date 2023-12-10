@@ -14,7 +14,6 @@ import { CorePublishModule } from "@paperbits/core/core.publish.module";
 import { EmailsModule } from "@paperbits/emails/emails.module";
 import { EmailsPublishModule } from "@paperbits/emails/emails.publish.module";
 import { StylePublishModule } from "@paperbits/styles/styles.publish.module";
-import { ProseMirrorModule } from "@paperbits/prosemirror/prosemirror.module";
 import { DemoPublishModule } from "./modules/demo.publish.module";
 import { VueModule } from "@paperbits/vue/vue.module";
 
@@ -28,7 +27,6 @@ injector.bindModule(new FormsModule());
 injector.bindModule(new EmailsModule());
 injector.bindModule(new EmailsPublishModule());
 injector.bindModule(new StylePublishModule());
-injector.bindModule(new ProseMirrorModule());
 injector.bindModule(new VueModule());
 
 

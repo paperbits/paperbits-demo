@@ -45,6 +45,7 @@
                 left: 10px;
                 border-left: 1px dotted $form-collapsible-section-gutter-color;
             }
+
             @extend .paperbits-icon;
             @extend .paperbits-circle-delete;
 
@@ -55,15 +56,6 @@
                 &:after {
                     border: none;
                 }
-            }
-        }
-
-        .form-group-collapse {
-            padding-left: 25px;
-            padding-bottom: 10px;
-
-            &.collapsed {
-                display: none;
             }
         }
     }
@@ -102,6 +94,23 @@ textarea {
 
     &[disabled] {
         background-color: $form-control-bg-disabled;
+    }
+}
+
+.dropdown {
+    background: $form-control-bg;
+    border: none;
+
+    .option {
+        padding: 5px;
+
+        &:hover {
+            background-color: $dropdown-option-selected-color;
+        }
+
+        &.selected {
+            background-color: $dropdown-option-selected-color;
+        }
     }
 }
 
@@ -159,6 +168,12 @@ textarea {
     }
 }
 
+.form-label {
+    .btn-info {
+        top: 8px;
+    }
+}
+
 .input-group {
     display: flex !important;
     border: 1px solid $form-control-border;
@@ -176,13 +191,15 @@ textarea {
     }
 
     .input-group-btn {
-        min-width: 1.5em;
+        min-width: 2em;
         border: none;
         line-height: inherit;
         cursor: pointer;
-        display: inline-block;
         line-height: 2em;
         font-size: $form-control-font-size;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         &:active,
         &:focus,
@@ -220,4 +237,70 @@ hr {
     max-height: 450px;
     min-width: 150px;
     min-height: 150px;
+}
+
+summary {
+    display: block;
+    cursor: pointer;
+    outline: 0;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+details {
+    display: block;
+    white-space: nowrap;
+    position: relative;
+    padding-left: 20px;
+    margin: 10px 0;
+
+    &[open]:before {
+        content: "";
+        left: 7px;
+        position: absolute;
+        top: 25px;
+        height: calc(100% - 25px);
+        border-left: 1px dotted #ccc;
+        width: 1px;
+    }
+
+    &[open] > summary:before {
+        left: -25px;
+        top: 1px;
+        @extend .paperbits-icon;
+        @extend .paperbits-circle-delete;
+        color: $collapse-button-color;
+    }
+
+    & > summary {
+        font-weight: bold;
+        margin-bottom: 10px;
+
+        &:before {
+            left: -25px;
+            top: 1px;
+            position: absolute;
+            @extend .paperbits-icon;
+            @extend .paperbits-circle-add;
+            color: $collapse-button-color;
+            display: inline-block;
+            width: 1.6rem;
+            text-align: center;
+        }
+
+        &:-webkit-details-marker {
+            display: none;
+        }
+
+        & > .btn-info {
+            top: 1px;
+        }
+
+        &:focus {
+            outline: 1px solid #ccc;
+            outline-offset: 2px;
+        }
+    }
 }

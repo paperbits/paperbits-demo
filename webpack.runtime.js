@@ -70,7 +70,12 @@ const runtimeConfig = {
         extensions: [".js", ".ts", ".jsx", ".tsx", ".html", ".scss", ".vue"],
         fallback: {
             "buffer": false,
-            "stream": require.resolve("stream-browserify")
+            "stream": require.resolve("stream-browserify"),
+            vm: false,
+            os: false,
+            fs: false,
+            module: false,
+            path: false
         },
         alias: {
             "vue$": "vue/dist/vue.esm.js"

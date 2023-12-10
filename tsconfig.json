@@ -10,6 +10,7 @@
         "declaration": false,
         "noImplicitAny": false,
         "noStrictGenericChecks": true,
+        "ignoreDeprecations": "5.0",
         "removeComments": true,
         "noLib": false,
         "skipLibCheck": true,

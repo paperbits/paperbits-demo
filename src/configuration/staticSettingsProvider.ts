@@ -7,7 +7,9 @@
  */
 
 import { ISettingsProvider } from "@paperbits/common/configuration";
+import * as Objects from "@paperbits/common/objects";
 import * as Utils from "../utils";
+
 
 export class StaticSettingsProvider implements ISettingsProvider {
     private configuration: Object;
@@ -17,7 +19,7 @@ export class StaticSettingsProvider implements ISettingsProvider {
 
     public async getSetting<T>(name: string): Promise<T> {
         await this.getSettings();
-        return this.configuration[name];
+        return Objects.getObjectAt(name, this.configuration);
     }
 
     public async setSetting<T>(name: string, value: T): Promise<void> {
