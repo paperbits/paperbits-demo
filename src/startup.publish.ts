@@ -15,7 +15,7 @@ import { EmailsModule } from "@paperbits/emails/emails.module";
 import { EmailsPublishModule } from "@paperbits/emails/emails.publish.module";
 import { StylePublishModule } from "@paperbits/styles/styles.publish.module";
 import { DemoPublishModule } from "./modules/demo.publish.module";
-import { VueModule } from "@paperbits/vue/vue.module";
+import { VueModule } from "@paperbits/vue/vue.publish.module";
 
 /* Uncomment to enable Firebase module */
 // import { FirebaseModule } from "@paperbits/firebase/firebase.admin.module";

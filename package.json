@@ -63,7 +63,7 @@
         "@paperbits/intercom": "0.1.604",
         "@paperbits/prosemirror": "0.1.604",
         "@paperbits/styles": "0.1.604",
-        "@paperbits/vue": "1.0.6",
+        "@paperbits/vue": "1.0.8",
         "@webcomponents/custom-elements": "^1.6.0",
         "core-js": "^3.28.0",
         "knockout": "^3.5.1",

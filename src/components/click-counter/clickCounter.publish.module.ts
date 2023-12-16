@@ -7,12 +7,12 @@
  */
 
 import { IInjectorModule, IInjector } from "@paperbits/common/injection";
+import { IWidgetService } from "@paperbits/common/widgets";
+import { VueComponentBinder } from "@paperbits/vue/bindings/vueComponentBinder";
 import { ClickCounterModelBinder } from "./clickCounterModelBinder";
 import { ClickCounterViewModelBinder } from "./clickCounterViewModelBinder";
 import { ClickCounter } from "./clickCounter";
-import { IWidgetService } from "@paperbits/common/widgets";
 import { ClickCounterModel } from "./clickCounterModel";
-import { VueComponentBinder } from "@paperbits/vue/bindings";
 
 
 export class ClickCounterPublishModule implements IInjectorModule {
