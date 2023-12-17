@@ -10,7 +10,7 @@ import { IWidgetHandler } from "@paperbits/common/editing";
 import { ClickCounterModel } from "./clickCounterModel";
 
 
-export class ClickCounterHandlers implements IWidgetHandler {
+export class ClickCounterHandlers implements IWidgetHandler<ClickCounterModel> {
     public async getWidgetModel(): Promise<ClickCounterModel> {
         return new ClickCounterModel();
     }
