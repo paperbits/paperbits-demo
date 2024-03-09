@@ -23,6 +23,7 @@ export class StaticSettingsProvider implements ISettingsProvider {
     }
 
     public async setSetting<T>(name: string, value: T): Promise<void> {
+        await this.getSettings();
         this.configuration[name] = value;
     }
 
