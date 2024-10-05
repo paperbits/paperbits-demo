@@ -3,8 +3,11 @@
 @font-face {
     font-family: "icons";
     src: url("fonts/icons.eot");
-    src: url("fonts/icons.eot") format("embedded-opentype"), url("fonts/icons.woff2") format("woff2"),
-        url("fonts/icons.woff") format("woff"), url("fonts/icons.ttf") format("truetype"),
+    src:
+        url("fonts/icons.eot") format("embedded-opentype"),
+        url("fonts/icons.woff2") format("woff2"),
+        url("fonts/icons.woff") format("woff"),
+        url("fonts/icons.ttf") format("truetype"),
         url("fonts/icons.svg") format("svg");
     font-weight: normal;
     font-style: normal;
@@ -29,7 +32,7 @@ $style-guide-color: #000;
     pointer-events: none;
 }
 
-@mixin selection($size: 10px, $spacing: 0) { 
+@mixin selection($size: 10px, $spacing: 0) {
     &:after {
         @include fit($spacing);
         @extend .no-pointer-events;
@@ -37,7 +40,11 @@ $style-guide-color: #000;
             url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8IS0tIENyZWF0b3I6IENvcmVsRFJBVyBYNyAtLT4NCjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNDBweCIgaGVpZ2h0PSI0MHB4IiB2ZXJzaW9uPSIxLjEiIHN0eWxlPSJzaGFwZS1yZW5kZXJpbmc6Z2VvbWV0cmljUHJlY2lzaW9uOyB0ZXh0LXJlbmRlcmluZzpnZW9tZXRyaWNQcmVjaXNpb247IGltYWdlLXJlbmRlcmluZzpvcHRpbWl6ZVF1YWxpdHk7IGZpbGwtcnVsZTpldmVub2RkOyBjbGlwLXJ1bGU6ZXZlbm9kZCINCnZpZXdCb3g9IjAgMCA0MDAwIDQwMDAiDQogeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPg0KIDxkZWZzPg0KICA8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KICAgPCFbQ0RBVEFbDQogICAgLnN0cjAge3N0cm9rZTojMzczNDM1O3N0cm9rZS13aWR0aDoyMDguMzUxfQ0KICAgIC5maWwwIHtmaWxsOm5vbmV9DQogICBdXT4NCiAgPC9zdHlsZT4NCiA8L2RlZnM+DQogPGcgaWQ9IkxheWVyX3gwMDIwXzEiPg0KICA8bWV0YWRhdGEgaWQ9IkNvcmVsQ29ycElEXzBDb3JlbC1MYXllciIvPg0KICA8cG9seWxpbmUgY2xhc3M9ImZpbDAgc3RyMCIgcG9pbnRzPSI1NzEsMzQwMCAzNDI5LDM0MDAgMzQyOSw2MDAgIi8+DQogPC9nPg0KPC9zdmc+DQo="),
             url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8IS0tIENyZWF0b3I6IENvcmVsRFJBVyBYNyAtLT4NCjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNDBweCIgaGVpZ2h0PSI0MHB4IiB2ZXJzaW9uPSIxLjEiIHN0eWxlPSJzaGFwZS1yZW5kZXJpbmc6Z2VvbWV0cmljUHJlY2lzaW9uOyB0ZXh0LXJlbmRlcmluZzpnZW9tZXRyaWNQcmVjaXNpb247IGltYWdlLXJlbmRlcmluZzpvcHRpbWl6ZVF1YWxpdHk7IGZpbGwtcnVsZTpldmVub2RkOyBjbGlwLXJ1bGU6ZXZlbm9kZCINCnZpZXdCb3g9IjAgMCA0MDAwIDQwMDAiDQogeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPg0KIDxkZWZzPg0KICA8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KICAgPCFbQ0RBVEFbDQogICAgLnN0cjAge3N0cm9rZTojMzczNDM1O3N0cm9rZS13aWR0aDoyMDguMzUxfQ0KICAgIC5maWwwIHtmaWxsOm5vbmV9DQogICBdXT4NCiAgPC9zdHlsZT4NCiA8L2RlZnM+DQogPGcgaWQ9IkxheWVyX3gwMDIwXzEiPg0KICA8bWV0YWRhdGEgaWQ9IkNvcmVsQ29ycElEXzBDb3JlbC1MYXllciIvPg0KICA8cG9seWxpbmUgY2xhc3M9ImZpbDAgc3RyMCIgcG9pbnRzPSIzNDI5LDYwMCA1NzEsNjAwIDU3MSwzNDAwICIvPg0KIDwvZz4NCjwvc3ZnPg0K"),
             url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8IS0tIENyZWF0b3I6IENvcmVsRFJBVyBYNyAtLT4NCjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNDBweCIgaGVpZ2h0PSI0MHB4IiB2ZXJzaW9uPSIxLjEiIHN0eWxlPSJzaGFwZS1yZW5kZXJpbmc6Z2VvbWV0cmljUHJlY2lzaW9uOyB0ZXh0LXJlbmRlcmluZzpnZW9tZXRyaWNQcmVjaXNpb247IGltYWdlLXJlbmRlcmluZzpvcHRpbWl6ZVF1YWxpdHk7IGZpbGwtcnVsZTpldmVub2RkOyBjbGlwLXJ1bGU6ZXZlbm9kZCINCnZpZXdCb3g9IjAgMCA0MDAwIDQwMDAiDQogeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPg0KIDxkZWZzPg0KICA8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KICAgPCFbQ0RBVEFbDQogICAgLnN0cjAge3N0cm9rZTojMzczNDM1O3N0cm9rZS13aWR0aDoyMDguMzUxfQ0KICAgIC5maWwwIHtmaWxsOm5vbmV9DQogICBdXT4NCiAgPC9zdHlsZT4NCiA8L2RlZnM+DQogPGcgaWQ9IkxheWVyX3gwMDIwXzEiPg0KICA8bWV0YWRhdGEgaWQ9IkNvcmVsQ29ycElEXzBDb3JlbC1MYXllciIvPg0KICA8cG9seWxpbmUgY2xhc3M9ImZpbDAgc3RyMCIgcG9pbnRzPSI1NzEsNjAwIDM0MjksNjAwIDM0MjksMzQwMCAiLz4NCiA8L2c+DQo8L3N2Zz4NCg==");
-        background-position: bottom left, bottom right, top left, top right;
+        background-position:
+            bottom left,
+            bottom right,
+            top left,
+            top right;
         background-repeat: no-repeat;
         background-size: $size;
         z-index: 9000;
@@ -46,6 +53,8 @@ $style-guide-color: #000;
 }
 
 .style-guide {
+    padding-bottom: 50px;
+
     .style-card {
         cursor: default;
         color: $style-guide-color;
@@ -54,6 +63,16 @@ $style-guide-color: #000;
 
         .style-card-body {
             padding: 10px;
+
+            &:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                z-index: 9999;
+            }
         }
 
         &.transparent {
@@ -210,35 +229,90 @@ $style-guide-color: #000;
     }
 }
 
+.style-guide {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 576px) {
+    .style-guide {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .style-guide {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .style-guide {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .style-guide {
+        max-width: 1140px;
+    }
+}
+
+.style-guide-fluid,
+.style-guide-sm,
+.style-guide-md,
+.style-guide-lg,
+.style-guide-xl {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 576px) {
+    .style-guide,
+    .style-guide-sm {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .style-guide,
+    .style-guide-sm,
+    .style-guide-md {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .style-guide,
+    .style-guide-sm,
+    .style-guide-md,
+    .style-guide-lg {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .style-guide,
+    .style-guide-sm,
+    .style-guide-md,
+    .style-guide-lg,
+    .style-guide-xl {
+        max-width: 1140px;
+    }
+}
+
 .text-uppercase {
     text-transform: uppercase;
 }
 
-.snippet-grid {
-    display: grid;
-    grid-template-columns: repeat(12, 10px);
-    grid-template-rows: repeat(12, 10px);
-    margin: 5px;
-    width: 80px;
-
-    &:hover {
-        @include selection(15px, -5px);
-        cursor: pointer;
-    }
-}
-
-.snippet-grid-cell {
-    background: #d9d9d9;
-    outline: 1px solid gray;
-    min-width: 15px;
-    min-height: 20px;
-    margin: 2px;
-    &[role="article"] {
-        background: #bfbfbf;
-    }
-}
-
 .placeholder {
+    height: 100%;
     min-height: 80px;
     font-family: monospace;
     font-size: 12px;
@@ -262,6 +336,38 @@ $style-guide-color: #000;
     }
 }
 
+.content-part {
+    position: relative;
+    min-height: 100px;
+    padding: 15px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    display: flex;
+    user-select: none;
+    pointer-events: none;
+
+    .content-part-label {
+        display: inline-block;
+        text-align: center;
+        text-transform: lowercase;
+    }
+
+    &:after {
+        content: "";
+        font-family: "OpenSans";
+        font-weight: bold;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+        border: 2px dashed #ccc;
+        border-radius: 7px;
+    }
+}
+
 [alias]:after {
     content: attr(alias);
 }
@@ -276,7 +382,10 @@ $style-guide-color: #000;
 .dragged {
     box-shadow: 2px 2px 2px 2px rgba(128, 128, 128, 0.4);
     transform: scale(1.05);
-    transition: transform 0.3s ease-in-out, height 0.3s ease-in-out, width 0.3s ease-in-out;
+    transition:
+        transform 0.3s ease-in-out,
+        height 0.3s ease-in-out,
+        width 0.3s ease-in-out;
     background: #fff;
     opacity: 0.8;
     position: fixed;

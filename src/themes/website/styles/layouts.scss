@@ -10,84 +10,6 @@ html {
     flex-direction: column;
 }
 
-.container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-@media (min-width: 576px) {
-    .container {
-        max-width: 540px;
-    }
-}
-
-@media (min-width: 768px) {
-    .container {
-        max-width: 720px;
-    }
-}
-
-@media (min-width: 992px) {
-    .container {
-        max-width: 960px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .container {
-        max-width: 1140px;
-    }
-}
-
-.container-fluid,
-.container-sm,
-.container-md,
-.container-lg,
-.container-xl {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-@media (min-width: 576px) {
-    .container,
-    .container-sm {
-        max-width: 540px;
-    }
-}
-
-@media (min-width: 768px) {
-    .container,
-    .container-sm,
-    .container-md {
-        max-width: 720px;
-    }
-}
-
-@media (min-width: 992px) {
-    .container,
-    .container-sm,
-    .container-md,
-    .container-lg {
-        max-width: 960px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .container,
-    .container-sm,
-    .container-md,
-    .container-lg,
-    .container-xl {
-        max-width: 1140px;
-    }
-}
-
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -377,8 +299,8 @@ section {
     }
 
     /* TODO: Enable row height through editor */
-    &.stretch > .container,
-    .container-fluid > .row {
+    &.stretch > .style-guide,
+    .style-guide-fluid > .row {
         flex: 1;
     }
 }
@@ -432,6 +354,12 @@ main {
     display: flex;
 }
 
+/* Display */
+
+.contents {
+    display: contents;
+}
+
 .block {
     display: block;
     flex-basis: 100%;
@@ -452,13 +380,12 @@ main {
     }
 }
 
-.contents {
-    display: contents;
-}
-
 .legacy {
     flex: 1;
 }
+
+
+/* AMP pages defaults */
 
 html:not([amp4ads]),
 html:not([amp4ads]) body {

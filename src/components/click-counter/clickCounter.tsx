@@ -8,7 +8,6 @@
 
 import * as React from "react";
 
-
 /**
  * Click counter widget.
  */
@@ -19,11 +18,13 @@ export class ClickCounter extends React.Component {
         super(props);
 
         this.state = {
-            initialCount: props.initialCount || 0
+            runtimeConfig: props.runtimeConfig || {}
         };
     }
 
     public render(): JSX.Element {
+        const runtimeConfig = JSON.stringify(this.state.runtimeConfig);
+
         return (
             <div className={this.state.classNames}>
                 <p className="not-configured">
@@ -33,7 +34,7 @@ export class ClickCounter extends React.Component {
                     Please refer to documentation to learn about <a href="https://paperbits.io/wiki/widget-anatomy">widget anatomy</a>.
                 </p>
 
-                <div style={{ height: 100 }} dangerouslySetInnerHTML={{ __html: `<click-counter-runtime props='{ "initialCount": ${this.state.initialCount} }'></click-counter-runtime>` }} />
+                <click-counter-runtime props={runtimeConfig}></click-counter-runtime>
             </div>
         );
     }

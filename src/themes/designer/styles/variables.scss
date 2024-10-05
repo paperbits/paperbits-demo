@@ -43,6 +43,7 @@ $button-link-color: #99c248;
 
 /* Balloons */
 $balloon-background: $toolbox-background;
+$balloon-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.15);
 
 /* Palette */
 $tab-selected-color: #A8CF45;
@@ -56,7 +57,7 @@ $arrow-active-color: #F58634;
 $icon-base-color: #57585a;
 
 /* Forms */
-$form-control-font-size: 0.9em;
+$form-control-font-size: 1em;
 $form-control-border: #e6e7e8;
 $form-control-border-focused: #61b2e8;
 $form-control-bg: #ffffff;
@@ -94,3 +95,4 @@ $z-index-dragging: 9130;
 $z-index-arrows: 9140;
 $z-index-selection: 9000;
 $list-item-size: 2.5em;
+$dropdown-option-selected-color: #98e2ff;

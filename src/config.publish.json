@@ -29,6 +29,9 @@
     "googleMaps": {
         "apiKey": "< your API key >"
     },
+    "googleFonts": {
+        "apiKey": "< your API key >"
+    },
     "intercom": {
         "appId": "< your App ID >"
     },

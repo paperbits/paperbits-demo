@@ -250,11 +250,6 @@ h2 {
         }
     }
 
-    &.resized-horizontally {
-        .resizable-content {
-        }
-    }
-
     &.resized-vertically {
         .resizable-content {
             height: 100%;
@@ -286,10 +281,6 @@ h2 {
     h1 {
         margin: 3px 0;
     }
-}
-
-.no-pointer-events {
-    pointer-events: none;
 }
 
 .photo {

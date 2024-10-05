@@ -15,10 +15,10 @@ import { ClickCounter } from "./clickCounter";
 export class ClickCounterViewModelBinder implements ViewModelBinder<ClickCounterModel, ClickCounter>  {
     constructor(private readonly styleCompiler: StyleCompiler) { }
 
-    public stateToIntance(nextState: WidgetState, componentInstance: ClickCounter): void {
+    public stateToInstance(nextState: WidgetState, componentInstance: ClickCounter): void {
         componentInstance.setState(prevState => ({
-            initialCount: nextState.initialCount,
-            classNames: nextState.styles
+            classNames: nextState.styles,
+            runtimeConfig: nextState.runtimeConfig
         }));
     }
 
@@ -27,6 +27,6 @@ export class ClickCounterViewModelBinder implements ViewModelBinder<ClickCounter
             state.styles = await this.styleCompiler.getStyleModelAsync(model.styles);
         }
 
-        state.initialCount = model.initialCount;
+        state.runtimeConfig = { initialCount: model.initialCount };
     }
 }
