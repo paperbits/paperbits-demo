@@ -40,7 +40,6 @@ h2 {
 
     &.toolbox-context {
         padding: 0;
-        white-space: nowrap;
 
         .toolbox-splitter {
             width: 1px;
@@ -49,6 +48,7 @@ h2 {
         }
 
         .toolbox-button {
+            white-space: nowrap;
             padding: 0 15px;
 
             span {
