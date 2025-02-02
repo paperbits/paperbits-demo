@@ -97,6 +97,15 @@ textarea {
     }
 }
 
+
+input[type="number"].form-control  {
+    font-weight: bold;
+}
+
+input[type="number"].form-control::placeholder  {
+    font-weight: normal;
+}
+
 .dropdown {
     background: $form-control-bg;
     border: none;
