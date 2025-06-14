@@ -55,13 +55,13 @@
         "webpack-merge": "^5.9.0"
     },
     "dependencies": {
-        "@paperbits/common": "0.1.634",
-        "@paperbits/core": "0.1.634",
-        "@paperbits/emails": "0.1.634",
-        "@paperbits/forms": "0.1.634",
-        "@paperbits/gtm": "0.1.634",
-        "@paperbits/intercom": "0.1.634",
-        "@paperbits/styles": "0.1.634",
+        "@paperbits/common": "0.1.650",
+        "@paperbits/core": "0.1.650",
+        "@paperbits/emails": "0.1.650",
+        "@paperbits/forms": "0.1.650",
+        "@paperbits/gtm": "0.1.650",
+        "@paperbits/intercom": "0.1.650",
+        "@paperbits/styles": "0.1.650",
         "@webcomponents/custom-elements": "^1.6.0",
         "core-js": "^3.32.2",
         "knockout": "^3.5.1"
