@@ -30,7 +30,7 @@ h2 {
     padding: $toolbox-padding;
     z-index: $z-index-base;
     max-height: calc(100% - 40px);
-
+    position: fixed;
     @include surface();
     @include animation-fadein(0.3s);
 
@@ -97,13 +97,6 @@ h2 {
         top: 20px;
         right: 20px;
         flex-direction: row;
-    }
-
-    &.toolbox-position-left-offset {
-        position: fixed;
-        top: 20px;
-        left: 150px;
-        min-width: 320px;
     }
 
     .toolbox-btn,
