@@ -1,12 +1,129 @@
 .paperbits-icon {
-    display: inline-block;
-    font: normal normal normal 1em/1 "paperbits";
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1em;
+    height: 1em;
+    line-height: 1;
     font-size: 1.1em;
-    line-height: inherit;
     text-transform: none;
     flex-shrink: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+// Lucide SVGs get injected into `.paperbits-icon` elements at runtime.
+.paperbits-icon[data-lucide]::before {
+    content: none !important;
+}
+
+.paperbits-icon > svg {
+    display: block;
+    width: 1em;
+    height: 1em;
+}
+
+// Some SCSS rules `@extend` individual icon selectors (e.g. `.paperbits-alert-circle-i`).
+// Keep those selectors defined so Sass can resolve the extends.
+$icons: (
+    "layout-11": null,
+    "align-center": null,
+    "align-justify": null,
+    "align-left-2": null,
+    "align-right-2": null,
+    "size": null,
+    "edit-2": null,
+    "code": null,
+    "list-bullet": null,
+    "list-numbers": null,
+    "bold": null,
+    "alert-circle-i": null,
+    "chat-45-2": null,
+    "drop": null,
+    "m-location": null,
+    "mobile": null,
+    "desktop-screen": null,
+    "mobile-landscape": null,
+    "tablet-2": null,
+    "wifi-off": null,
+    "wifi": null,
+    "ban": null,
+    "single-content-03": null,
+    "single-copy-04": null,
+    "mirror-2": null,
+    "image-2": null,
+    "paint-bucket-40": null,
+    "palette": null,
+    "menu-34": null,
+    "check-2": null,
+    "preferences-circle": null,
+    "underline": null,
+    "link-69-2": null,
+    "color": null,
+    "anchor": null,
+    "italic": null,
+    "square-upload": null,
+    "square-download": null,
+    "simple-add": null,
+    "simple-remove": null,
+    "circle-delete": null,
+    "circle-add": null,
+    "enlarge-circle": null,
+    "align-bottom": null,
+    "align-right": null,
+    "align-top": null,
+    "align-center-horizontal": null,
+    "align-center-vertical": null,
+    "align-left": null,
+    "disperse": null,
+    "zoom-out": null,
+    "zoom-in": null,
+    "trash-simple": null,
+    "edit-72": null,
+    "form": null,
+    "zoom-99": null,
+    "crop": null,
+    "enlarge-vertical": null,
+    "enlarge-horizontal": null,
+    "rotate-right-2": null,
+    "rotate-left-2": null,
+    "margin-right": null,
+    "margin-left": null,
+    "alert": null,
+    "at-sign": null,
+    "gradient": null,
+    "polaroid": null,
+    "marker-2": null,
+    "undo-25": null,
+    "redo-26": null,
+    "floppy-disk": null,
+    "upload": null,
+    "world": null,
+    "wireframe": null,
+    "send": null,
+    "c-question": null,
+    "layout-11-2": null,
+    "clapperboard": null,
+    "single-02": null,
+    "lightning": null,
+    "l-search": null,
+    "small-down": null,
+    "small-up": null,
+    "menu-4": null,
+    "tablet-2-2": null,
+    "strikethrough": null,
+    "divider": null,
+    "s-add": null,
+    "curved-arrow-left": null,
+    "puzzle-10": null,
+    "a-security": null,
+    "arrow-up": null,
+    "arrow-down": null,
+);
+
+@each $name, $unused in $icons {
+    .paperbits-#{"" + $name} {
+    }
 }
 
 /* size examples - relative units */
@@ -62,109 +179,4 @@
     transform: scaleX(-1);
 }
 
-/* icons */
-$icons: (
-    "layout-11": "ea03",
-    "align-center": "ea09",
-    "align-justify": "ea0a",
-    "align-left-2": "ea0b",
-    "align-right-2": "ea0c",
-    "size": "ea0d",
-    "edit-2": "ea0e",
-    "code": "ea0f",
-    "list-bullet": "ea10",
-    "list-numbers": "ea11",
-    "bold": "ea12",
-    "alert-circle-i": "ea17",
-    "chat-45-2": "ea18",
-    "drop": "ea1a",
-    "m-location": "ea1d",
-    "mobile": "ea1f",
-    "desktop-screen": "ea20",
-    "mobile-landscape": "ea22",
-    "tablet-2": "ea24",
-    "wifi-off": "ea25",
-    "wifi": "ea26",
-    "ban": "ea27",
-    "single-content-03": "ea28",
-    "single-copy-04": "ea29",
-    "mirror-2": "ea2b",
-    "image-2": "ea31",
-    "paint-bucket-40": "ea32",
-    "palette": "ea33",
-    "menu-34": "ea36",
-    "check-2": "ea38",
-    "preferences-circle": "ea39",
-    "underline": "ea3a",
-    "link-69-2": "ea3d",
-    "color": "ea3f",
-    "anchor": "ea40",
-    "italic": "ea41",
-    "square-upload": "ea42",
-    "square-download": "ea43",
-    "simple-add": "ea44",
-    "simple-remove": "ea45",
-    "circle-delete": "ea47",
-    "circle-add": "ea48",
-    "enlarge-circle": "ea4a",
-    "align-bottom": "ea4c",
-    "align-right": "ea4d",
-    "align-top": "ea4e",
-    "align-center-horizontal": "ea4f",
-    "align-center-vertical": "ea50",
-    "align-left": "ea51",
-    "disperse": "ea52",
-    "zoom-out": "ea53",
-    "zoom-in": "ea54",
-    "trash-simple": "ea55",
-    "edit-72": "ea56",
-    "form": "ea57",
-    "zoom-99": "ea58",
-    "crop": "ea59",
-    "enlarge-vertical": "ea5a",
-    "enlarge-horizontal": "ea5b",
-    "rotate-right-2": "ea5c",
-    "rotate-left-2": "ea5d",
-    "margin-right": "ea5e",
-    "margin-left": "ea5f",
-    "alert": "ea60",
-    "at-sign": "ea63",
-    "gradient": "ea64",
-    "polaroid": "ea65",
-    "marker-2": "ea67",
-    "undo-25": "ea68",
-    "redo-26": "ea69",
-    "floppy-disk": "ea6a",
-    "upload": "ea6b",
-    "world": "ea6e",
-    "wireframe": "ea6f",
-    "send": "ea70",
-    "c-question": "ea71",
-    "layout-11-2": "ea73",
-    "clapperboard": "ea75",
-    "single-02": "ea76",
-    "lightning": "ea77",
-    "l-search": "ea78",
-    "small-down": "ea79",
-    "small-up": "ea7a",
-    "menu-4": "ea7b",
-    "tablet-2-2": "ea7c",
-    "strikethrough": "ea7d",
-    "divider": "ea7e",
-    "s-add": "ea7f",
-    "curved-arrow-left": "ea80",
-    "puzzle-10": "ea81",
-    "a-security": "ea82",
-    "arrow-up": "ea83",
-    "arrow-down": "ea84",
-);
-
-@function unicode($str) {
-    @return unquote('"\\#{$str}"');
-}
-
-@each $name, $code in $icons {
-    .paperbits-#{"" + $name}::before {
-        content: unicode($code);
-    }
-}
+// NOTE: The old icon-font glyph map was removed in favor of Lucide.

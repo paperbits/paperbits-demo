@@ -19,12 +19,27 @@ $icon-emb-font-path: "/styles/fonts" !default;
 
 /* base class */
 .icon-emb {
-  display: inline-block;
-  font: normal normal normal 1em/1 'Icons Embedded';
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1em;
+  height: 1em;
+  line-height: 1;
   color: inherit;
   flex-shrink: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+// Lucide SVGs get injected into `.icon-emb` elements at runtime.
+.icon-emb[data-lucide]::before {
+  content: none !important;
+}
+
+.icon-emb > svg {
+  display: block;
+  width: 1em;
+  height: 1em;
 }
 
 /* size examples - relative units */
@@ -92,8 +107,4 @@ $icons: (
   @return unquote("\"\\#{$str}\"");
 }
 
-@each $name, $code in $icons {
-  .icon-emb-#{""+$name}::before {
-    content: unicode($code);
-  }
-}
+// NOTE: The old icon-font glyph map is no longer used; Lucide is injected at runtime.
